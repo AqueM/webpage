@@ -1,0 +1,164 @@
+/* original source: https://codepen.io/mubangadv/pen/MYgEPez */
+
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
+
+:root {
+	--border-color: var(--color-dark);
+	--button-hover: var(--color-secondrary);
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Viaoda Libre";
+}
+
+.fancy-border {
+	border: 1px solid var(--border-color);
+	position: relative;
+	padding: 1rem;
+	margin: 1rem;
+
+	.corner {
+		width: 0.5rem;
+		height: 0.5rem;
+		border: 1px solid var(--border-color);
+		position: absolute;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+		}
+
+		&::after {
+			width: 2rem;
+			height: calc(1rem - 1px);
+		}
+
+		&::before {
+			width: calc(1rem - 1px);
+			height: 2rem;
+		}
+
+		&.left {
+			left: -0.5rem;
+
+			&::after {
+				left: calc(-2px + 1rem);
+				border-left: 1px solid var(--border-color);
+			}
+
+			&::before {
+				left: -1px;
+				border-left: 1px solid var(--border-color);
+			}
+		}
+
+		&.right {
+			right: -0.5rem;
+
+			&::after {
+				right: calc(-2px + 1rem);
+				border-right: 1px solid var(--border-color);
+			}
+
+			&::before {
+				right: -1px;
+				border-right: 1px solid var(--border-color);
+			}
+		}
+
+		&.top {
+			top: -0.5rem;
+
+			&::after {
+				top: -1px;
+				border-top: 1px solid var(--border-color);
+			}
+
+			&::before {
+				top: calc(-2px + 1rem);
+				border-top: 1px solid var(--border-color);
+			}
+		}
+
+		&.bottom {
+			bottom: -0.5rem;
+
+			&::after {
+				bottom: -1px;
+				border-bottom: 1px solid var(--border-color);
+			}
+
+			&::before {
+				bottom: calc(-2px + 1rem);
+				border-bottom: 1px solid var(--border-color);
+			}
+		}
+	}
+}
+
+.fancy-highlight {
+	font-family: "Poiret One";
+	line-height: 1.5;
+	opacity: 0.8;
+
+	margin-bottom: 4rem;
+	display: flex;
+	all: unset;
+	font-family: "Viaoda Libre";
+	text-align: center;
+	border-top: 0.01rem solid var(--border-color);
+	border-bottom: 0.01rem solid var(--border-color);
+	height: 2rem;
+	padding: 0 1rem;
+	position: relative;
+	transition: background 200ms ease-in-out;
+	background-color: var(--color-primary);
+	border-radius: var(--border-radius);
+
+	margin: 0 2rem;
+	min-width: 7vw;
+
+	.left,
+	.right {
+		position: absolute;
+		width: 1.45rem;
+		height: 1.45rem;
+		border-bottom: 0.01rem solid var(--border-color);
+		border-left: 0.01rem solid var(--border-color);
+		transition: background 200ms ease-in-out;
+
+		&::before {
+			content: "";
+			width: 0.75rem;
+			height: 0.75rem;
+			border: 0.01rem solid var(--border-color);
+			position: absolute;
+			top: calc(1rem - 0.01rem);
+			left: calc(-0.4rem - 0.01rem);
+		}
+
+		&::after {
+			content: "";
+			width: 0.5rem;
+			height: 0.5rem;
+			background: var(--border-color);
+			position: absolute;
+			top: calc(1rem - 0.01rem);
+			left: calc(-0rem - 0.01rem);
+		}
+	}
+
+	.left {
+		left: -0.75rem;
+		transform: rotate(45deg);
+	}
+
+	.right {
+		right: -0.75rem;
+		transform: rotate(-135deg);
+	}
+
+}
