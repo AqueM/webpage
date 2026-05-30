@@ -13,13 +13,19 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/layout/favicon.ico">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
     <script defer src="/assets/javascript/layout.js"></script>
+    <script defer src="/assets/javascript/activeLinks.js"></script>
 </head>
 
 <body>
     <div id="page">
         <!-- header - will be populated by layout.js -->
         <div id="top-image"><img src="/assets/images/layout/canva-vines2.webp" title="header vines"></div>
-        <header></header>
+        <header><noscript>
+                <P><span>Do it scared.</span><br>
+                    <span>Do it weird.</span><br>
+                    <span>Kill the cop inside your head.</span>
+                </P>
+            </noscript></header>
         <!-- header end -->
 
         <!-- viewport -->
@@ -27,6 +33,11 @@
             <!-- navigation - will be populated by layout.js -->
             <div id="side-image"><img src="/assets/images/layout/canva-vines1.webp" title="menu vines"></div>
             <nav class="fancy-border">
+                <noscript>
+                    <P>Hi! You're seeing this because the navigation for this site is handled via javascript on all
+                        pages so it is easy to update when I make more pages.
+                        Use the <a href="/pages/sitemap">sitemap</a> to navigate if you have JS disabled.</P>
+                </noscript>
             </nav>
             <!-- navigation end -->
 
@@ -38,6 +49,9 @@
                 <div class="corner bottom right"></div>
                 <article>
                     <section>
+                        <div class="heading">
+                            <h2 class="title">Homepage</h2>
+                        </div>
                         <div class="disclaimer">
                             <h1><span class="icon"><i class="fas fa-info-circle"></i></span> Accesibility notice <span
                                     class="icon"><i class="fas fa-wheelchair"></i></h1>
@@ -75,6 +89,7 @@
                                         </span>
                                     </div>
                                     <ul>
+                                        <li>27.05.2026 - js layout loading + all pages are now styled!</li>
                                         <li>20.05.2026 - final version of the layout and colors</li>
                                         <li>10.05.2026 - version alpha of the webpage</li>
                                     </ul>
@@ -87,9 +102,10 @@
                                         </span>
                                     </div>
                                     <ul class="horizontal horizontal-decor">
-                                        
+
                                         <li><a href="https://whiona.weblog.lol/2023/09/on-mobile-phones-the-small-web-and-able-bodied-privilege"
-                                                target="_blank">On mobile phones, the small web, and able-bodied privilege</a> by whiona [article/blog post]</li>
+                                                target="_blank">On mobile phones, the small web, and able-bodied
+                                                privilege</a> by whiona [article/blog post]</li>
                                         <li><a href="https://www.youtube.com/watch?v=YrHGbCyAqOU"
                                                 target="_blank">Theories
                                                 of Nonbinary Sexuality</a> by Carson Olshansky [comedy video]</li>

@@ -39,7 +39,7 @@
 	font-weight: bolder;
 }
 
-.menu-item .is-active {
+.menu-item .active {
 	font-weight: bolder;
 	background-color: var(--color-secondrary);
 	/* background-image: var(--aq-bg-gradient-left); */

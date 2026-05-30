@@ -26,7 +26,7 @@
 
 p:not(.noformat, .menu-label) {
 	text-indent: 1%;
-	text-align: justify;
+	text-align: left;
 }
 
 iframe {

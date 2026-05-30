@@ -9,9 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
         if (footerWrapper) { addElement(footerFile, footerWrapper); };
         if (navWrapper) { addElement(navFile, navWrapper); };
     }
-    initActiveLinks();
+    console.log('hello');
+    const menuLinks = document.querySelectorAll('div');
+    console.log(menuLinks);
+    // initActiveLinks();
+
+    // addActiveClass();
 }
 );
+
+
 const headWrapper = document.querySelector("header");
 const footerWrapper = document.querySelector("footer");
 const navWrapper = document.querySelector("nav");
@@ -28,14 +35,13 @@ const navFile = "/assets/templates/nav.html";
 function initActiveLinks() {
     // This function adds the class "active" to any link that links to the current page.
     // This is helpful for styling the active menu item.
-
     const pathname = window.location.pathname;
     [...document.querySelectorAll("a")].forEach((el) => {
         const elHref = el
             .getAttribute("href")
             .replace(".html", "")
             .replace("/public", "");
-
+        console.log('am in');
         if (pathname == "/") {
             // homepage
             if (elHref == "/" || elHref == "/index.html") el.classList.add("active");
@@ -45,6 +51,8 @@ function initActiveLinks() {
         }
     });
 }
+
+
 
 function addElement(elementPath, wrapperElement) {
     fetch(elementPath)
