@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
+
+@import url("/assets/css/theme.css");
+
+* {
+	box-sizing: border-box;
+}
+
+p:not(.noformat, .menu-label) {
+	text-indent: 1%;
+	text-align: left;
+}
+
+iframe {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border: none;
+	z-index: 2;
+}
+
+body {
+	background-color: var(--color-light);
+}
+
+#hero-bg {
+	background-color: var(--color-secondrary);
+	border-radius: var(--border-radius);
+	padding: 1%;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+	flex-basis: 25vh;
+}
+
+#nav-bg {
+	background-color: var(--color-primary);
+}
+
+ul {
+	list-style-type: circle;
+}
+
+a:not(.noformat) {
+	position: relative;
+	text-decoration: none;
+	color: var(--color-dark);
+	background-color: var(--color-accent-transparent);
+	border-radius: 1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+
+a:not(.noformat)[target="_blank"]::after {
+	content: "⭧";
+	margin-left: 0.3rem;
+	text-decoration: none;
+}
+
+.icon {
+	margin-right: 0.3rem;
+}
+
+#page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 1%;
+}
+
+#top-image {
+	position: absolute;
+	top: -3%;
+	right: 0;
+	z-index: 1;
+	/* transform: scaleX(-1); */
+}
+
+#side-image {
+	position: absolute;
+	top: -1%;
+	left: 1%;
+	z-index: 1;
+	/* left: -10%;
+	transform: scaleX(-1); */
+}
+
+#bottom-image {
+	position: absolute;
+	bottom: 12%;
+	right: 0;
+	z-index: 1;
+}
+
+#footer-bg {
+	background-color: var(--color-secondrary);
+	border-radius: var(--border-radius);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-basis: 5vh;
+	padding-left: 2%;
+}
+
+#viewport {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	margin: 0 2% 0 2%;
+}
+
+nav {
+	flex-basis: 20rem;
+	margin: 1%;
+	min-height: var(--min-column-height);
+	padding: 1%;
+	background-color: var(--color-primary-transparent);
+	border-radius: var(--border-radius);
+	min-width: 15vw;
+	z-index: 2;
+}
+
+main {
+	flex-grow: 1;
+	margin: 1%;
+	background-color: var(--color-primary-transparent);
+	border-radius: var(--border-radius);
+	z-index: 2;
+}
+
+.border {
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.box {
+	padding-left: 30%;
+	padding-right: 30%;
+	text-align: center;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer {
+	flex-basis: 5vh;
+	position: relative;
+}
+
+header {
+	flex-basis: 20vh;
+}
+
+#hero-body {
+	display: flex;
+	flex-direction: row;
+	gap: 1%;
+	width: 100%;
+	align-items: center;
+	font-family: "Viaoda Libre";
+	min-height: 0;
+	z-index: 2;
+	margin: unset;
+}
+
+
+#header-image {
+	transform: scaleX(-1);
+	max-height: 15vh;
+}
+
+section {
+	margin: 1%;
+}
+
+.quotes{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.heading {
+	background-image: var(--bg-gradient-left);
+	padding: 2%;
+	border-radius: var(--border-radius);
+	font-family: "Viaoda Libre";
+	border-top: 0.01rem solid var(--border-color);
+	border-bottom: 0.01rem solid var(--border-color);
+	margin-bottom: 1%;
+	margin-top: 1%;
+	width: 100%;
+}
+
+.title {
+	text-transform: uppercase;
+	font-family: "Viaoda Libre";
+	margin-top: 1%;
+	margin-bottom: 0.5%;
+}
+
+.subtitle {
+	margin-left: 0.5%;
+}
+
+article {
+	width: 100%;
+	min-height: var(--min-column-height);
+	padding: 1%;
+	position: relative;
+	z-index: 2;
+}
+
+.disclaimer {
+	border-style: dotted;
+	border-width: 0.3rem;
+	text-align: center;
+	padding: 1%;
+	border-radius: var(--border-radius);
+}
+
+.round-link {
+	border-style: dotted;
+	border-width: 0.1rem;
+	border-radius: 1rem;
+	padding: 0.5%;
+	margin-bottom: 1%;
+	background-color: var(--color-accent);
+}
+
+.link-list {
+	line-height: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.link-list li {
+	margin-bottom: 0.5rem;
+}
+
+.link-list a {
+	display: inline-block;
+	width: 100%;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+
+.round-image {
+	border-radius: 50%;
+	margin: 0.1rem;
+}
+
+.horizontal {
+	padding: 0;
+	margin-left: 0.51vw;
+	margin-right: 0.5vw;
+	line-height: 1.5rem;
+	li {
+		display: inline;
+	}
+}
+
+.horizontal-decor {
+	li:after {
+		content: "●";
+		padding-right: 0.5rem;
+		padding-left: 0.8rem;
+	}
+
+	li:last-child:after {
+		content: "";
+		padding: 0;
+	}
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: default;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	padding: 0.25em 0.5em;
+	background-color: var(--color-dark);
+	color: #fff;
+	text-align: center;
+	border-radius: 0.25em;
+	white-space: nowrap;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 100%;
+	transition-property: visibility;
+	transition-delay: 0s;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	transition-delay: 0.3s;
+}
+
+.box-small {
+	padding-left: 40%;
+	padding-right: 40%;
+	text-align: center;
+}
+
+.side-right {
+	margin-right: 1%;
+	position: relative;
+	z-index: 2;
+}
+
+.side-left {
+	flex-basis: 15vw;
+	padding-left: 1%;
+	padding-right: 1%;
+	display: flex;
+	justify-content: center;
+}
+
+.columns {
+	display: flex;
+	gap: 1%;
+	align-content: space-around;
+}
+
+.column {
+	flex-basis: 50%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clickable-image {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clickable-image:hover {opacity: 0.7;}
+
+.footer-badges {
+	max-width: 88px;
+}

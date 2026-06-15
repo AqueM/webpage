@@ -1,0 +1,18 @@
+{
+  "name": "Aque's site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Aque",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "csv-parse": "^7.0.0"
+  }
+}
