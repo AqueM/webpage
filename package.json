@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx eleventy",
-    "serve": "npx eleventy --serve"
+    "build-local": "npx eleventy",
+    "serve-local": "npx eleventy --serve",
+    "build": "sudo npm run build",
+    "serve": "sudo npm run serve"
   },
   "keywords": [],
   "author": "Aque",
