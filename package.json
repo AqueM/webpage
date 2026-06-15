@@ -6,8 +6,8 @@
   "scripts": {
     "build-local": "npx eleventy",
     "serve-local": "npx eleventy --serve",
-    "build": "npx eleventy",
-    "serve": "npx eleventy --serve"
+    "build": "npm eleventy",
+    "serve": "npm eleventy --serve"
   },
   "keywords": [],
   "author": "Aque",
