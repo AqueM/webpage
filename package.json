@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx eleventy",
     "serve": "npx eleventy --serve",
-    "vercel-build": "sudo npx eleventy"
+    "vercel-build": "npm ci && npx eleventy"
   },
   "keywords": [],
   "author": "Aque",
