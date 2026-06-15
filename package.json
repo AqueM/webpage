@@ -6,8 +6,7 @@
   "scripts": {
     "build-local": "npx eleventy",
     "serve-local": "npx eleventy --serve",
-    "start": "npm install eleventy",
-    "build": "npx eleventy",
+    "vercel-build": "npm ci && npm run build",
     "serve": "npx eleventy --serve"
   },
   "keywords": [],
