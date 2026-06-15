@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-local": "npx eleventy",
-    "serve-local": "npx eleventy --serve",
-    "vercel-build": "chmod +x node_modules/.bin/eleventy && npx eleventy"
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "vercel-build": "sudo npx eleventy"
   },
   "keywords": [],
   "author": "Aque",
