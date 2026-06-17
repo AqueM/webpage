@@ -1,27 +1,76 @@
 module.exports = async function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("assets");
 
-    // // Copy `css/fonts/` to `_site/css/fonts/`
-    // // Keeps the same directory structure.
-    // eleventyConfig.addPassthroughCopy("css/fonts");
+    // SETUP
 
-    // // Copy any .jpg file to `_site`, via Glob pattern
-    // // Keeps the same directory structure.
-    // eleventyConfig.addPassthroughCopy("**/*.jpg");
+    eleventyConfig.addPassthroughCopy("_src/assets");
+    eleventyConfig.setInputDirectory("_src");
 
-    const { parse } = require("csv-parse/sync");
+    // add markdown attributes lib
+    let markdownIt = require("markdown-it");
+    var markdownItAttrs = require('markdown-it-attrs');
+    let mdOptions = {
+        html: true,
+        breaks: true,
+        linkify: true
+    };
+    let markdownLib = markdownIt(mdOptions).use(markdownItAttrs);
+    eleventyConfig.setLibrary("md", markdownLib);
 
-    eleventyConfig.addDataExtension("csv", (contents) => {
-        const records = parse(contents, {
-            columns: true,
-            skip_empty_lines: true,
-            relax_column_count: true,
-            delimiter: ";",
-            trim: true,
+    eleventyConfig.addFilter("order", function (collection) {
+        return collection.sort(function (a, b) {
+            return a.data.order - b.data.order;
         });
-        return records;
     });
 
+    // SHORTCODES
+
+    // shortcodes for styled content
+    eleventyConfig.addShortcode("heading", function (size, title, subtitle) {
+        let sub = '';
+        if (typeof subtitle !== 'undefined') {
+            sub = `<span class="subtitle">
+				${subtitle}
+				</span>`
+        };
+        return `<div class="heading">
+				<${size} class="title">${title}</${size}>`
+            + sub +
+            `</div>`;
+    });
+    eleventyConfig.addPairedShortcode("columns", function (content) {
+        return `<section class="columns">
+        ${content}
+        </section>`;
+    });
+    eleventyConfig.addPairedShortcode("column", function (content) {
+        return `<div class="column">
+        ${content}
+        </div>`;
+    });
+    eleventyConfig.addPairedShortcode("columns-spaced", function (content) {
+        return `<div class="columns columns-spaced">
+        ${content}
+        </div>`;
+    });
+    eleventyConfig.addPairedShortcode("column-side", function (content) {
+        return `<div class="column-side">
+        ${content}
+        </div>`;
+    });
+
+    eleventyConfig.addPairedShortcode("fancy-border", function (content) {
+        return `<div class="fancy-border">
+			<div class="corner top left"></div>
+			<div class="corner top right"></div>
+			<div class="corner bottom left"></div>
+			<div class="corner bottom right"></div>
+        ${content}
+        </div>`;
+    });
+
+    // FILTERS
+
+    // date filters
     const options = {
         year: 'numeric', month: 'numeric', day: 'numeric',
         hour: undefined,
@@ -40,6 +89,9 @@ module.exports = async function (eleventyConfig) {
         minute: undefined,
         second: undefined,
     };
+    eleventyConfig.addFilter("readableDate", dateObj => {
+        return dateObj.toLocaleString("en-GB", options)
+    });
     eleventyConfig.addFilter("readableMonth", dateObj => {
         return dateObj.toLocaleString("en-GB", optionsMonth)
     });

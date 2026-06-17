@@ -1,0 +1,42 @@
+@import url("/assets/css/theme.css");
+
+footer {
+	flex-basis: 5vh;
+	position: relative;
+	z-index: 2;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-badges {
+	max-width: 88px !important;
+}
+
+#footer-bg {
+	background-color: var(--color-secondrary);
+	border-radius: var(--border-radius);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-basis: 5vh;
+	padding-left: 2%;
+}
+
+.footer-right {
+	margin-right: 1%;
+	position: relative;
+	z-index: 2;
+}
+
+.footer-left {
+	flex-basis: 15vw;
+	padding-left: 1%;
+	padding-right: 1%;
+	display: flex;
+	justify-content: center;
+}

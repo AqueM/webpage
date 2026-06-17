@@ -1,0 +1,32 @@
+﻿[
+  {
+    "name": "discord",
+    "url": "https://discordapp.com/users/266450416005283851",
+    "icon": "fab fa-discord"
+  },
+  {
+    "name": "tumblr",
+    "url": "https://iriascend.tumblr.com/",
+    "icon": "fab fa-tumblr"
+  },
+  {
+    "name": "Reddit",
+    "url": "https://www.reddit.com/user/AqueM/",
+    "icon": "fab fa-reddit"
+  },
+  {
+    "name": "Archive of Our Own",
+    "url": "https://archiveofourown.org/users/Iriascend/profile",
+    "icon": "fas fa-question-circle"
+  },
+  {
+    "name": "BlueSky",
+    "url": "https://bsky.app/profile/iriascend.bsky.social",
+    "icon": "fas fa-question-circle"
+  },
+  {
+    "name": "Twitter / X",
+    "url": "https://x.com/iriascend",
+    "icon": "fab fa-twitter"
+  }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "date": "17/06/2026",
+        "log": "added content to Technology pages"
+    },
+    {
+        "date": "15/06/2026",
+        "log": "ported to Eleventy!"
+    },
+    {
+        "date": "27/05/2026",
+        "log": "js layout loading + all pages are now styled!"
+    },
+    {
+        "date": "20/05/2026",
+        "log": "final version of the layout and colors"
+    },
+    {
+        "date": "10/05/2022",
+        "log": "version alpha of the webpage"
+    }
+]

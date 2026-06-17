@@ -1,0 +1,45 @@
+.link-list {
+	line-height: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+}
+
+.link-list li {
+	margin-bottom: 0.5rem;
+}
+
+.link-list a {
+	display: inline-block;
+	width: 100%;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+
+.horizontal {
+	padding: 0;
+	margin-left: 0.51vw;
+	margin-right: 0.5vw;
+	line-height: 1.5rem;
+	list-style-type: none;
+
+	li {
+		display: inline;
+	}
+}
+
+.horizontal-decor {
+	li:after {
+		content: "●";
+		padding-right: 0.5rem;
+		padding-left: 0.8rem;
+	}
+
+	li:last-child:after {
+		content: "";
+		padding: 0;
+	}
+}

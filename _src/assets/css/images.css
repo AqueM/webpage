@@ -1,0 +1,46 @@
+/* general use */
+
+.clickable-image {
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.clickable-image:hover {
+	opacity: 0.7;
+}
+
+.round-image {
+	border-radius: 50%;
+	margin: 0.1rem;
+}
+
+/* specific page use */
+
+#nav-layout-image {
+	position: absolute;
+	top: -1%;
+	left: 1%;
+	z-index: 1;
+	/* left: -10%;
+	transform: scaleX(-1); */
+}
+
+#header-logo-image {
+	transform: scaleX(-1);
+	max-height: 15vh;
+}
+
+#header-layout-image {
+	position: absolute;
+	top: -3%;
+	right: 0;
+	z-index: 1;
+	/* transform: scaleX(-1); */
+}
+
+#footer-layout-image {
+	position: absolute;
+	bottom: 12%;
+	right: 0;
+	z-index: 1;
+}

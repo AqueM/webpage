@@ -1,0 +1,47 @@
+---
+date: Last Modified
+eleventyComputed:
+  title: "{{site.title}} {% if tags!=undefined %}| {{tags}} {% endif %}| {{displayName}}"
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="{{site.description}}">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/layout/favicon.ico">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        {% include "_header.html" %}
+
+        <!-- viewport -->
+        <div id="viewport">
+
+            {% include "_nav.html" %}
+
+            <!-- main content -->
+            <main id="main-bg" class="fancy-border">
+                <div class="corner top left"></div>
+                <div class="corner top right"></div>
+                <div class="corner bottom left"></div>
+                <div class="corner bottom right"></div>
+
+                {{content}}
+                
+            </main>
+            <!-- main content end -->
+
+        </div>
+
+        {% include "_footer.html" %}
+
+    </div>
+
+</html>
