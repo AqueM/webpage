@@ -1,6 +1,3 @@
-@import url("/assets/css/theme.css");
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
-
 .heading {
 	background-image: var(--bg-gradient-left);
 	padding: 1rem;

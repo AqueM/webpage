@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
+
 :root {
 	--color-light: #dafbd5;
 	--color-dark: rgb(28, 74, 29);
@@ -20,8 +22,6 @@
 	--color-accent-transparent: color-mix(in srgb, var(--color-accent) var(--transparency), transparent);
 	--color-light-transparent: color-mix(in srgb, var(--color-light) var(--transparency), transparent);
 }
-@import url("/assets/css/theme.css");
-
 img:not(.noformat) {
 	max-width: 10vw;
 }
@@ -84,26 +84,6 @@ summary:not(.noformat) {
 
 
 
-@import url("/assets/css/theme.css");
-
-@import url("/assets/css/defaults.css");
-
-@import url("/assets/css/nav.css");
-@import url("/assets/css/nav-mobile.css");
-@import url("/assets/css/header.css");
-@import url("/assets/css/footer.css");
-@import url("/assets/css/layout.css");
-
-@import url("/assets/css/elements.css");
-@import url("/assets/css/images.css");
-@import url("/assets/css/placement.css");
-@import url("/assets/css/lists.css");
-@import url("/assets/css/accessibility.css");
-
-@import url("/assets/css/art-deco-card.css");
-
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
-
 * {
 	box-sizing: border-box;
 }
@@ -122,9 +102,6 @@ body {
 		overflow-x: hidden !important;
 	}
 }
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
-@import url("/assets/css/theme.css");
-
 nav {
 	flex-basis: 20vw;
 	background-color: var(--color-primary);
@@ -215,6 +192,7 @@ nav details[open] summary::after {
 	z-index: 4;
 	border-radius: var(--border-radius);
 	background-color: var(--color-primary);
+	border-bottom: 1px solid var(--border-color);
 
 	@media only screen and (min-width: 800px) {
 		transform: unset;
@@ -222,6 +200,7 @@ nav details[open] summary::after {
 		background-color: unset;
 		padding: unset;
 		border-radius: unset;
+		border-bottom: unset;
 	}
 }
 
@@ -304,8 +283,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
-
-@import url("/assets/css/theme.css");
 
 .navigation-mobile {
     padding: 0;
@@ -395,9 +372,6 @@ nav .label {
 .label h2 {
     margin: unset;
 }
-@import url("/assets/css/theme.css");
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
-
 header {
 	flex-basis: 20vh;
 }
@@ -423,13 +397,11 @@ header {
 	z-index: 2;
 	margin: unset;
 }
-@import url("/assets/css/theme.css");
-
 footer {
 	flex-basis: 5vh;
 	position: relative;
 	z-index: 2;
-	transform-style: preserve-3d;
+	/* transform-style: preserve-3d; */
 }
 
 .footer {
@@ -517,9 +489,6 @@ footer {
 	}
 }
 
-@import url("/assets/css/theme.css");
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
-
 .heading {
 	background-image: var(--bg-gradient-left);
 	padding: 1rem;
@@ -605,8 +574,6 @@ footer {
 		padding: 0;
 	}
 }
-@import url("/assets/css/theme.css");
-
 #page {
 	position: relative;
 	display: flex;
@@ -625,13 +592,14 @@ main {
 	border-radius: var(--border-radius);
 	z-index: 3;
 	transform-style: preserve-3d;
+		transform: translateZ(3rem);
 }
 
 #page-contents {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	/* transform-style: preserve-3d; */
+	transform-style: preserve-3d;
 
 	@media only screen and (min-width: 600px) {
 		flex-direction: row;
@@ -741,7 +709,7 @@ section {
 	bottom: 0;
 	right: 0;
 	z-index: 1;
-	transform: translateZ(0rem);
+	transform: translateZ(1rem);
 	display: none;
 
 	@media only screen and (min-width: 300px) {
@@ -783,9 +751,6 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
-@import url("/assets/css/theme.css");
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
 
 :root {
 	--border-color: var(--color-dark);

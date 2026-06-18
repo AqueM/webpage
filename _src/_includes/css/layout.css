@@ -1,5 +1,3 @@
-@import url("/assets/css/theme.css");
-
 #page {
 	position: relative;
 	display: flex;
@@ -18,13 +16,14 @@ main {
 	border-radius: var(--border-radius);
 	z-index: 3;
 	transform-style: preserve-3d;
+		transform: translateZ(3rem);
 }
 
 #page-contents {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	/* transform-style: preserve-3d; */
+	transform-style: preserve-3d;
 
 	@media only screen and (min-width: 600px) {
 		flex-direction: row;

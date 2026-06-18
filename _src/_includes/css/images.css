@@ -55,7 +55,7 @@
 	bottom: 0;
 	right: 0;
 	z-index: 1;
-	transform: translateZ(0rem);
+	transform: translateZ(1rem);
 	display: none;
 
 	@media only screen and (min-width: 300px) {

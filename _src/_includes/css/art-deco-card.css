@@ -8,9 +8,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  */
 
 
-@import url("/assets/css/theme.css");
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
-
 :root {
 	--border-color: var(--color-dark);
 	--button-hover: var(--color-secondrary);
