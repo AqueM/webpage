@@ -1,4 +1,8 @@
 [
+        {
+        "date": "19/05/2022",
+        "log": "functional mobile menu!"
+    },
     {
         "date": "17/06/2026",
         "log": "added content to Technology pages"
@@ -14,9 +18,5 @@
     {
         "date": "20/05/2026",
         "log": "final version of the layout and colors"
-    },
-    {
-        "date": "10/05/2022",
-        "log": "version alpha of the webpage"
     }
 ]

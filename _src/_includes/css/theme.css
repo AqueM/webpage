@@ -19,6 +19,4 @@
 	--color-secondrary-transparent: color-mix(in srgb, var(--color-secondrary) var(--transparency), transparent);
 	--color-accent-transparent: color-mix(in srgb, var(--color-accent) var(--transparency), transparent);
 	--color-light-transparent: color-mix(in srgb, var(--color-light) var(--transparency), transparent);
-
-	--min-viewport-width: 600px;
 }

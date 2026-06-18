@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta description="Personal website and central online hub of the person named Aque">
-    <title>Aque's pond | bio | About</title>
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <meta name="description" content="Personal website and central online hub of the person named Aque">
+    <meta name="robots" content="noai, noimageai">
+    <title>Aque's pond | about | Bio</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/x-icon" href="/assets/images/layout/favicon.ico">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 </head>
@@ -36,7 +37,7 @@
 </header>
 
         <!-- viewport -->
-        <div id="viewport">
+        <div id="page-contents">
 
             <div id="nav-layout-image"><img src="/assets/images/layout/canva-vines1.webp" class="noformat" alt="menu vines"></div>
 <nav class="fancy-border">
@@ -44,121 +45,239 @@
 	<div class="corner top right"></div>
 	<div class="corner bottom left"></div>
 	<div class="corner bottom right"></div>
-	<div class="sidebar" id="menu">
+	<div class="navigation">
 		<div class="heading">
 				<h2 class="title">Menu</h2></div>
-		<div>
-			<ul class="noformat menu-list">
-				<li><a class="menu-item" href="/">Home</a></li>
-			</ul>
-		</div>
-		<details class="noformat open" 
-			open>
-			<summary class="noformat">
-				<h4 class="menu-label open-category"><span class="icon"><i
-							class="fas fa-address-card"></i></span><span class="category-name">bio</span>
-				</h4>
-			</summary>
-			<ul class="noformat menu-list"><li><a class="menu-item active-link"
-						href="/about/"
-						target="">About</a></li><li><a class="menu-item"
-						href="/about/links/"
-						target="">Other Platforms</a></li><li><a class="menu-item"
-						href="/about/reccs/"
-						target="">Recs</a></li>
-			</ul>
-		</details><details class="noformat" >
-			<summary class="noformat">
-				<h4 class="menu-label"><span class="icon"><i
-							class="fas fa-folder-open"></i></span><span class="category-name">resources</span>
-				</h4>
-			</summary>
-			<ul class="noformat menu-list"><li><a class="menu-item"
-						href="/resources/interview-questions/"
-						target="">Interview Questions</a></li><li><a class="menu-item"
-						href="/resources/characters/"
-						target="">Characters</a></li><li><a class="menu-item"
-						href="/resources/misc/"
-						target="">Misc</a></li>
-			</ul>
-		</details><details class="noformat" >
-			<summary class="noformat">
-				<h4 class="menu-label"><span class="icon"><i
-							class="fas fa-file-alt"></i></span><span class="category-name">creations</span>
-				</h4>
-			</summary>
-			<ul class="noformat menu-list"><li><a class="menu-item"
-						href="https://konstellarium.neocities.org/"
-						target="_blank">Konstellarium</a></li><li><a class="menu-item"
-						href="/creations/poetry/"
-						target="">Poetry</a></li><li><a class="menu-item"
-						href="/creations/prose/"
-						target="">Prose</a></li><li><a class="menu-item"
-						href="/creations/art/"
-						target="">Art</a></li>
-			</ul>
-		</details><details class="noformat" >
-			<summary class="noformat">
-				<h4 class="menu-label"><span class="icon"><i
-							class="fas fa-shapes"></i></span><span class="category-name">collections</span>
-				</h4>
-			</summary>
-			<ul class="noformat menu-list"><li><a class="menu-item"
-						href="https://raw-quotes.nekoweb.org/"
-						target="_blank">Raw Quotes</a></li><li><a class="menu-item"
-						href="/collections/treasures/"
-						target="">Tomb Treasures</a></li><li><a class="menu-item"
-						href="/collections/shinies/"
-						target="">Shinies</a></li><li><a class="menu-item"
-						href="/collections/commissions/"
-						target="">Commissions</a></li>
-			</ul>
-		</details><details class="noformat" >
-			<summary class="noformat">
-				<h4 class="menu-label"><span class="icon"><i
-							class="fas fa-layer-group"></i></span><span class="category-name">technology</span>
-				</h4>
-			</summary>
-			<ul class="noformat menu-list"><li><a class="menu-item"
-						href="/tech/edc/"
-						target="">EDC</a></li><li><a class="menu-item"
-						href="/tech/hardware/"
-						target="">Hardware</a></li><li><a class="menu-item"
-						href="/tech/software/"
-						target="">Software</a></li>
-			</ul>
-		</details><details class="noformat" >
-			<summary class="noformat">
-				<h4 class="menu-label"><span class="icon"><i
-							class="fas fa-newspaper"></i></span><span class="category-name">longer letters</span>
-				</h4>
-			</summary>
-			<ul class="noformat menu-list"><li><a class="menu-item"
-						href="https://www.youtube.com/@LongerLetters"
-						target="_blank">Channel</a></li><li><a class="menu-item"
-						href="/longerletters/essays/"
-						target="">Essays</a></li><li><a class="menu-item"
-						href="/longerletters/transcripts/"
-						target="">Transcripts</a></li>
-			</ul>
-		</details>
-	</div>
-	<div class="sidebar"><div class="heading">
+		<div class="sidebar" id="menu">
+    <div>
+        <ul class="noformat menu-list">
+            <li><a class="menu-item" href="/">Home</a></li>
+        </ul>
+    </div>
+    <details class="noformat open"  open>
+        <summary class="noformat">
+            <h4 class="menu-label open-category"><span class="icon"><i
+                        class="fas fa-address-card"></i></span><span class="category-name">about</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item active-link"
+                    href="/about/"
+                    target="">Bio</a></li><li><a class="menu-item"
+                    href="/about/links/"
+                    target="">Other Platforms</a></li><li><a class="menu-item"
+                    href="/about/community/"
+                    target="">Community</a></li><li><a class="menu-item"
+                    href="/about/reccs/"
+                    target="">Recs</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-folder-open"></i></span><span class="category-name">resources</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="/resources/characters/"
+                    target="">Characters</a></li><li><a class="menu-item"
+                    href="/resources/interview-questions/"
+                    target="">Interview Questions</a></li><li><a class="menu-item"
+                    href="/resources/misc/"
+                    target="">Misc</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-file-alt"></i></span><span class="category-name">creations</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="https://konstellarium.neocities.org/"
+                    target="_blank">Konstellarium</a></li><li><a class="menu-item"
+                    href="/creations/art/"
+                    target="">Art</a></li><li><a class="menu-item"
+                    href="/creations/poetry/"
+                    target="">Poetry</a></li><li><a class="menu-item"
+                    href="/creations/prose/"
+                    target="">Prose</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-shapes"></i></span><span class="category-name">collections</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="https://raw-quotes.nekoweb.org/"
+                    target="_blank">Raw Quotes</a></li><li><a class="menu-item"
+                    href="/collections/commissions/"
+                    target="">Commissions</a></li><li><a class="menu-item"
+                    href="/collections/shinies/"
+                    target="">Shinies</a></li><li><a class="menu-item"
+                    href="/collections/treasures/"
+                    target="">Tomb Treasures</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-layer-group"></i></span><span class="category-name">technology</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="/tech/edc/"
+                    target="">EDC</a></li><li><a class="menu-item"
+                    href="/tech/hardware/"
+                    target="">Hardware</a></li><li><a class="menu-item"
+                    href="/tech/software/"
+                    target="">Software</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-newspaper"></i></span><span class="category-name">longer letters</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="https://www.youtube.com/@LongerLetters"
+                    target="_blank">Channel</a></li><li><a class="menu-item"
+                    href="/longerletters/essays/"
+                    target="">Essays</a></li><li><a class="menu-item"
+                    href="/longerletters/transcripts/"
+                    target="">Transcripts</a></li>
+        </ul>
+    </details>
+</div>
+		<div class="sidebar"><div class="heading">
 				<h3 class="title">Updates</h3><span class="subtitle">
 				Last updated: <strong>06/2026</strong>
 				</span></div>
-		<ul class="logs"><li>
-				<strong>17/06/2026</strong> - added content to Technology pages
-			</li><li>
-				<strong>15/06/2026</strong> - ported to Eleventy!
-			</li><li>
-				<strong>27/05/2026</strong> - js layout loading + all pages are now styled!
-			</li><li>
-				<strong>20/05/2026</strong> - final version of the layout and colors
-			</li><li>
-				<strong>10/05/2022</strong> - version alpha of the webpage
-			</li>
-		</ul>
+			<ul class="logs"><li>
+					<strong>19/05/2022</strong> - functional mobile menu!
+				</li><li>
+					<strong>17/06/2026</strong> - added content to Technology pages
+				</li><li>
+					<strong>15/06/2026</strong> - ported to Eleventy!
+				</li><li>
+					<strong>27/05/2026</strong> - js layout loading + all pages are now styled!
+				</li><li>
+					<strong>20/05/2026</strong> - final version of the layout and colors
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="navigation-mobile">
+		<div class="hamburger-toggle">
+			<div>
+				<input class="checkbox" type="checkbox" name="" id="" />
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+			</div>
+			<div class="label">
+				<h2>Menu</h2>
+			</div>
+		</div>
+
+		<div class="sidebar" id="menu">
+    <div>
+        <ul class="noformat menu-list">
+            <li><a class="menu-item" href="/">Home</a></li>
+        </ul>
+    </div>
+    <details class="noformat open"  open>
+        <summary class="noformat">
+            <h4 class="menu-label open-category"><span class="icon"><i
+                        class="fas fa-address-card"></i></span><span class="category-name">about</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item active-link"
+                    href="/about/"
+                    target="">Bio</a></li><li><a class="menu-item"
+                    href="/about/links/"
+                    target="">Other Platforms</a></li><li><a class="menu-item"
+                    href="/about/community/"
+                    target="">Community</a></li><li><a class="menu-item"
+                    href="/about/reccs/"
+                    target="">Recs</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-folder-open"></i></span><span class="category-name">resources</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="/resources/characters/"
+                    target="">Characters</a></li><li><a class="menu-item"
+                    href="/resources/interview-questions/"
+                    target="">Interview Questions</a></li><li><a class="menu-item"
+                    href="/resources/misc/"
+                    target="">Misc</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-file-alt"></i></span><span class="category-name">creations</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="https://konstellarium.neocities.org/"
+                    target="_blank">Konstellarium</a></li><li><a class="menu-item"
+                    href="/creations/art/"
+                    target="">Art</a></li><li><a class="menu-item"
+                    href="/creations/poetry/"
+                    target="">Poetry</a></li><li><a class="menu-item"
+                    href="/creations/prose/"
+                    target="">Prose</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-shapes"></i></span><span class="category-name">collections</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="https://raw-quotes.nekoweb.org/"
+                    target="_blank">Raw Quotes</a></li><li><a class="menu-item"
+                    href="/collections/commissions/"
+                    target="">Commissions</a></li><li><a class="menu-item"
+                    href="/collections/shinies/"
+                    target="">Shinies</a></li><li><a class="menu-item"
+                    href="/collections/treasures/"
+                    target="">Tomb Treasures</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-layer-group"></i></span><span class="category-name">technology</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="/tech/edc/"
+                    target="">EDC</a></li><li><a class="menu-item"
+                    href="/tech/hardware/"
+                    target="">Hardware</a></li><li><a class="menu-item"
+                    href="/tech/software/"
+                    target="">Software</a></li>
+        </ul>
+    </details><details class="noformat" >
+        <summary class="noformat">
+            <h4 class="menu-label"><span class="icon"><i
+                        class="fas fa-newspaper"></i></span><span class="category-name">longer letters</span>
+            </h4>
+        </summary>
+        <ul class="noformat menu-list"><li><a class="menu-item"
+                    href="https://www.youtube.com/@LongerLetters"
+                    target="_blank">Channel</a></li><li><a class="menu-item"
+                    href="/longerletters/essays/"
+                    target="">Essays</a></li><li><a class="menu-item"
+                    href="/longerletters/transcripts/"
+                    target="">Transcripts</a></li>
+        </ul>
+    </details>
+</div>
+
 	</div>
 </nav>
 
@@ -252,6 +371,11 @@
 				<span class="left"></span>
 				<span class="right"></span>
 				© 2026 Aque
+			</button>
+			<button class="fancy-highlight" style="background-color:transparent;" disabled>
+				<span class="left"></span>
+				<span class="right"></span>
+				<a href="mailto:aque.iriascend+AreYouHuman@gmail.com?body=[Remember to edit the e-mail address if you're not an AI!]" target="_blank">Contact me</a>
 			</button>
 		</div>
 		<div class="footer-right">

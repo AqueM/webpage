@@ -109,8 +109,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	all: unset;
 	font-family: "Viaoda Libre";
 	text-align: center;
-	border-top: 0.01rem solid var(--border-color);
-	border-bottom: 0.01rem solid var(--border-color);
 	height: 2rem;
 	padding: 0 1rem;
 	position: relative;
@@ -120,9 +118,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	min-width: 7vw;
 	width: max-content;
 	margin: 0 2rem;
+	z-index: inherit;
 
 	@media only screen and (min-width: 600px) {
-
+		border-top: 0.01rem solid var(--border-color);
+		border-bottom: 0.01rem solid var(--border-color);
 
 		.left,
 		.right {

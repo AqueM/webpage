@@ -3,15 +3,6 @@
     
        
         <url>
-            <loc>http://www.aque.fyi/tech/edc/</loc>
-            <lastmod>2026-06-16T19:31:40.491Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
             <loc>http://www.aque.fyi.</loc>
             <lastmod>2026-06-16T20:51:52.181Z</lastmod>
             <changefreq>yearly</changefreq>
@@ -30,15 +21,6 @@
     
        
         <url>
-            <loc>http://www.aque.fyi/404.html</loc>
-            <lastmod>2026-06-16T21:02:26.856Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
             <loc>http://www.aque.fyi.</loc>
             <lastmod>2026-06-16T21:23:15.991Z</lastmod>
             <changefreq>yearly</changefreq>
@@ -48,44 +30,8 @@
     
        
         <url>
-            <loc>http://www.aque.fyi/resources/interview-questions/</loc>
-            <lastmod>2026-06-17T09:20:25.262Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/resources/characters/lyrebird/</loc>
-            <lastmod>2026-06-17T09:38:19.709Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/resources/characters/sorin/</loc>
-            <lastmod>2026-06-17T09:39:03.180Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/resources/characters/</loc>
-            <lastmod>2026-06-17T13:26:44.820Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/resources/characters/inkarra/</loc>
-            <lastmod>2026-06-17T13:55:37.058Z</lastmod>
+            <loc>http://www.aque.fyi/404.html</loc>
+            <lastmod>2026-06-18T22:48:56.023Z</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.5</priority>
         </url>
@@ -94,7 +40,7 @@
        
         <url>
             <loc>http://www.aque.fyi/</loc>
-            <lastmod>2026-06-17T14:10:30.465Z</lastmod>
+            <lastmod>2026-06-18T22:48:56.023Z</lastmod>
             <changefreq>always</changefreq>
             <priority>0.8</priority>
         </url>
@@ -102,8 +48,8 @@
     
        
         <url>
-            <loc>http://www.aque.fyi/about/queerness/</loc>
-            <lastmod>2026-06-17T15:10:33.631Z</lastmod>
+            <loc>http://www.aque.fyi/about/community/</loc>
+            <lastmod>2026-06-18T22:48:56.032Z</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.5</priority>
         </url>
@@ -111,8 +57,26 @@
     
        
         <url>
-            <loc>http://www.aque.fyi/collections/treasures/</loc>
-            <lastmod>2026-06-17T15:11:20.352Z</lastmod>
+            <loc>http://www.aque.fyi/about/</loc>
+            <lastmod>2026-06-18T22:48:56.032Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.7</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/about/links/</loc>
+            <lastmod>2026-06-18T22:48:56.032Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.7</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/about/queerness/</loc>
+            <lastmod>2026-06-18T22:48:56.032Z</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.5</priority>
         </url>
@@ -121,88 +85,7 @@
        
         <url>
             <loc>http://www.aque.fyi/about/reccs/</loc>
-            <lastmod>2026-06-17T15:11:27.763Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/collections/shinies/</loc>
-            <lastmod>2026-06-17T15:11:31.872Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/creations/poetry/</loc>
-            <lastmod>2026-06-17T15:11:34.337Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/longerletters/essays/</loc>
-            <lastmod>2026-06-17T15:11:36.677Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/longerletters/transcripts/</loc>
-            <lastmod>2026-06-17T15:11:41.581Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/creations/prose/</loc>
-            <lastmod>2026-06-17T15:11:44.430Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/tech/hardware/</loc>
-            <lastmod>2026-06-17T15:11:50.402Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/tech/software/</loc>
-            <lastmod>2026-06-17T15:11:54.507Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/resources/misc/</loc>
-            <lastmod>2026-06-17T15:11:56.874Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/creations/art/</loc>
-            <lastmod>2026-06-17T15:12:01.446Z</lastmod>
+            <lastmod>2026-06-18T22:48:56.032Z</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.5</priority>
         </url>
@@ -211,7 +94,7 @@
        
         <url>
             <loc>http://www.aque.fyi/collections/commissions/</loc>
-            <lastmod>2026-06-17T15:12:25.839Z</lastmod>
+            <lastmod>2026-06-18T22:48:56.050Z</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.5</priority>
         </url>
@@ -219,19 +102,154 @@
     
        
         <url>
-            <loc>http://www.aque.fyi/about/links/</loc>
-            <lastmod>2026-06-17T15:12:29.674Z</lastmod>
+            <loc>http://www.aque.fyi/collections/shinies/</loc>
+            <lastmod>2026-06-18T22:48:56.050Z</lastmod>
             <changefreq>yearly</changefreq>
-            <priority>0.7</priority>
+            <priority>0.5</priority>
         </url>
         
     
        
         <url>
-            <loc>http://www.aque.fyi/about/</loc>
-            <lastmod>2026-06-17T15:13:09.687Z</lastmod>
+            <loc>http://www.aque.fyi/collections/treasures/</loc>
+            <lastmod>2026-06-18T22:48:56.050Z</lastmod>
             <changefreq>yearly</changefreq>
-            <priority>0.7</priority>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/creations/art/</loc>
+            <lastmod>2026-06-18T22:48:56.050Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/creations/poetry/</loc>
+            <lastmod>2026-06-18T22:48:56.050Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/creations/prose/</loc>
+            <lastmod>2026-06-18T22:48:56.050Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/longerletters/essays/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/longerletters/transcripts/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/resources/characters/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/resources/characters/inkarra/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/resources/characters/lyrebird/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/resources/characters/sorin/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/resources/interview-questions/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/resources/misc/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/tech/edc/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/tech/hardware/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/tech/software/</loc>
+            <lastmod>2026-06-18T22:48:56.059Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/assets/css/style.css</loc>
+            <lastmod>2026-06-18T22:52:00.559Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
         </url>
         
     

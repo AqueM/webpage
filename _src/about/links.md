@@ -1,6 +1,6 @@
 ---
 layout: _page.html
-tags: bio
+tags: about
 displayName: Other Platforms
 order: 2
 priority: 0.7

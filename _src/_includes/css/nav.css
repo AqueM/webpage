@@ -3,12 +3,27 @@
 
 nav {
 	flex-basis: 20vw;
-	margin: 1%;
-	padding: 1%;
-	background-color: var(--color-primary-transparent);
+	background-color: var(--color-primary);
 	border-radius: var(--border-radius);
-	z-index: 2;
+	z-index: 3;
 	min-width: fit-content;
+	height: 1px;
+	transform-style: preserve-3d;
+
+	@media only screen and (min-width: 800px) {
+		background-color: var(--color-primary-transparent);
+		height: unset;
+		margin: 1%;
+		padding: 1%;
+	}
+}
+
+.navigation {
+	display: none;
+
+	@media only screen and (min-width: 800px) {
+		display: block;
+	}
 }
 
 #nav-bg {
@@ -24,9 +39,6 @@ nav details {
 nav details summary {
 	/* Pin the custom marker to the container */
 	position: relative;
-
-	/* Register summary as an anchor element */
-	/* anchor-name: --summary; */
 
 	&::marker {
 		content: "";
@@ -53,7 +65,6 @@ nav details summary {
 
 	/* Rotate just the ::after line to create a "+"" shape */
 	&::after {
-
 		transform: rotate(90deg);
 		transform-origin: 50%;
 	}
@@ -69,11 +80,25 @@ nav details[open] summary::after {
 }
 
 #menu {
+	transform: translate(-150%);
+	transition: transform 0.5s ease-in-out;
 	display: flex;
 	flex-direction: column;
 	gap: 0.2rem;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	position: relative;
+	z-index: 4;
+	border-radius: var(--border-radius);
+	background-color: var(--color-primary);
 
-	@media only screen and (min-width: var(--min-viewport-width)) {}
+	@media only screen and (min-width: 800px) {
+		transform: unset;
+		margin-top: unset;
+		background-color: unset;
+		padding: unset;
+		border-radius: unset;
+	}
 }
 
 .menu-label {
@@ -142,8 +167,8 @@ nav details[open] summary::after {
 }
 
 .logs {
-	max-width: 20vw;
-	font-size:small;
+	max-width: 90%;
+	font-size: small;
 	line-height: 1rem;
-    padding-inline-start: 1rem;
+	padding-inline-start: 1rem;
 }

@@ -1,7 +1,7 @@
 ---
 layout: _page.html
-tags: bio
-displayName: About
+tags: about
+displayName: Bio
 order: 1
 priority: 0.7
 ---

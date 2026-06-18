@@ -4,44 +4,39 @@
 	<div class="corner top right"></div>
 	<div class="corner bottom left"></div>
 	<div class="corner bottom right"></div>
-	<div class="sidebar" id="menu">
+	<div class="navigation">
 		{% heading "h2", "Menu" %}
-		<div>
-			<ul class="noformat menu-list">
-				<li><a class="menu-item{% if page.url=='/' %} active{% endif %}" href="/">Home</a></li>
-			</ul>
-		</div>
-		{% capture pageTags %}{{tags}}{% endcapture %}
-		{%- for category in nav.categories -%}
-		<details class="noformat{% if pageTags == category.name %} open{% endif %}" {% if pageTags==category.name %}
-			open{% endif %}>
-			<summary class="noformat">
-				<h4 class="menu-label{% if pageTags == category.name %} open-category{% endif %}"><span class="icon"><i
-							class="{{category.icon}}"></i></span><span class="category-name">{{category.name}}</span>
-				</h4>
-			</summary>
-			<ul class="noformat menu-list">
-				{%- assign links = collections[category.name] | order -%}
-				{%- for element in links -%}
-				<li><a class="menu-item{% if element.url==page.url %} active-link{% endif %}"
-						href="{% if element.url %}{{ element.url }}{% else %}{{ element.data.link }}{% endif %}"
-						target="{{element.data.target}}">{{element.data.displayName}}</a></li>
+		{% include "_menu.html" %}
+		<div class="sidebar">
+			{%- assign date = page.date | readableMonth -%}
+			{%- assign subtitle = "Last updated: <strong>" | append: date | append:
+				"</strong>"-%}
+			{% heading "h3", "Updates", subtitle %}
+			<ul class="logs">
+				{%- for element in nav.changelog -%}
+				<li>
+					<strong>{{element.date | readableDate}}</strong> - {{element.log}}
+				</li>
 				{%- endfor %}
 			</ul>
-		</details>
-		{%- endfor %}
+		</div>
 	</div>
-	<div class="sidebar">
-		{%- assign date = page.date | readableMonth -%}
-		{%- assign subtitle = "Last updated: <strong>" | append: date | append:
-			"</strong>"-%}
-		{% heading "h3", "Updates", subtitle %}
-		<ul class="logs">
-			{%- for element in nav.changelog -%}
-			<li>
-				<strong>{{element.date | readableDate}}</strong> - {{element.log}}
-			</li>
-			{%- endfor %}
-		</ul>
+	<div class="navigation-mobile">
+		<div class="hamburger-toggle">
+			<div>
+				<input class="checkbox" type="checkbox" name="" id="" />
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+			</div>
+			<div class="label">
+				<h2>Menu</h2>
+			</div>
+		</div>
+
+		{% include "_menu.html" %}
+
 	</div>
 </nav>

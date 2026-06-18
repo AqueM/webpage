@@ -1,8 +1,8 @@
 ---
 layout: _page.html
-tags: bio
+tags: about
 displayName: Recs
-order: 3
+order: 4
 ---
 {% heading "h2", "Recommendations" %}
 

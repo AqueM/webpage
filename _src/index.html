@@ -46,15 +46,6 @@ priority: 0.8
 
         <div class="column">
             <div>
-                {% heading "h2", "neighbours", "cool websites from non-corporate web" %}
-                <ul class="horizontal">
-                    {%- for badge in home.neighbours -%}
-                    <li><a href="{{badge.url}}" target="_blank"><img src="{{badge.img}}" alt="{{badge.alt}}"></a>
-                    </li>
-                    {%- endfor %}
-                </ul>
-            </div>
-            <div>
                 {% heading "h2", "Credits", "Resources used to create this website" %}
                 <ul>
                     {%- for link in home.credits -%}

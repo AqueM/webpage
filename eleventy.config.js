@@ -3,6 +3,8 @@ module.exports = async function (eleventyConfig) {
     // SETUP
 
     eleventyConfig.addPassthroughCopy("_src/assets");
+    eleventyConfig.addPassthroughCopy("_src/robots.txt");
+    eleventyConfig.addPassthroughCopy("_src/ai.txt");
     eleventyConfig.setInputDirectory("_src");
 
     // add markdown attributes lib
