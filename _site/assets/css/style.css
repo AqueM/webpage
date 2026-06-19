@@ -108,12 +108,12 @@ nav {
 	border-radius: var(--border-radius);
 	z-index: 3;
 	min-width: fit-content;
-	height: 1px;
+	max-height: 4rem;
 	transform-style: preserve-3d;
 
 	@media only screen and (min-width: 800px) {
 		background-color: var(--color-primary-transparent);
-		height: unset;
+		max-height: unset;
 		margin: 1%;
 		padding: 1%;
 	}
@@ -292,8 +292,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    z-index: 4;
     transform: translateZ(4rem);
+    z-index: 4;
 
     @media only screen and (min-width: 800px) {
         display: none;
@@ -416,7 +416,7 @@ footer {
 	border-radius: var(--border-radius);
 	padding-left: 2rem;
 
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 800px) {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -590,9 +590,12 @@ main {
 	margin: 1%;
 	background-color: var(--color-primary-transparent);
 	border-radius: var(--border-radius);
-	z-index: 3;
 	transform-style: preserve-3d;
-		transform: translateZ(3rem);
+	transform: translateZ(3rem);
+
+	@media only screen and (min-width: 1000px) {
+		z-index: 3;
+	}
 }
 
 #page-contents {
@@ -601,7 +604,7 @@ main {
 	flex-direction: column;
 	transform-style: preserve-3d;
 
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 1000px) {
 		flex-direction: row;
 		gap: 1rem;
 	}
@@ -628,7 +631,7 @@ section {
 	justify-content: space-around;
 	flex-direction: column;
 
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 1000px) {
 		flex-direction: row;
 	}
 }
@@ -708,12 +711,15 @@ section {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	z-index: 1;
 	transform: translateZ(1rem);
 	display: none;
 
 	@media only screen and (min-width: 300px) {
 		display: inline;
+	}
+
+	@media only screen and (min-width: 800px) {
+		z-index: 1;
 	}
 }
 

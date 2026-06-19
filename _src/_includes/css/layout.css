@@ -14,9 +14,12 @@ main {
 	margin: 1%;
 	background-color: var(--color-primary-transparent);
 	border-radius: var(--border-radius);
-	z-index: 3;
 	transform-style: preserve-3d;
-		transform: translateZ(3rem);
+	transform: translateZ(3rem);
+
+	@media only screen and (min-width: 1000px) {
+		z-index: 3;
+	}
 }
 
 #page-contents {
@@ -25,7 +28,7 @@ main {
 	flex-direction: column;
 	transform-style: preserve-3d;
 
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 1000px) {
 		flex-direction: row;
 		gap: 1rem;
 	}
@@ -52,7 +55,7 @@ section {
 	justify-content: space-around;
 	flex-direction: column;
 
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 1000px) {
 		flex-direction: row;
 	}
 }

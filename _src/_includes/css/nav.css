@@ -4,12 +4,12 @@ nav {
 	border-radius: var(--border-radius);
 	z-index: 3;
 	min-width: fit-content;
-	height: 1px;
+	max-height: 4rem;
 	transform-style: preserve-3d;
 
 	@media only screen and (min-width: 800px) {
 		background-color: var(--color-primary-transparent);
-		height: unset;
+		max-height: unset;
 		margin: 1%;
 		padding: 1%;
 	}
