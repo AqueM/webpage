@@ -4,6 +4,9 @@
 	--color-primary: #c6f9be;
 	--color-secondrary: #96d98c;
 	--color-accent: #FFE6FF;
+	--color-blue: #7FFFD4;
+	--color-yellow: #FFE284;
+	--color-blue-transparent: color-mix(in srgb, var(--color-blue) 50%, transparent);
 	--border-radius: 1rem;
 	--color-transparent: transparent;
 	--transparency: 60%;
@@ -11,6 +14,8 @@
 	--bg-gradient-left: linear-gradient(to right, var(--color-accent) 10%, var(--color-transparent));
 	--bg-gradient-right: linear-gradient(to left, var(--color-secondrary), var(--color-transparent));
 	--bg-gradient-top: linear-gradient(to bottom, var(--color-accent), var(--color-transparent));
+	--bg-gradient-bottom: linear-gradient(to top, var(--color-blue), var(--color-transparent) 70%, var(--color-blue-transparent));
+	--bg-gradient-sun: linear-gradient(320deg,var(--color-transparent) 90%, var(--color-yellow) 100%);
 	--font-color: var(--color-dark);
 	--min-column-height: 70rem;
 	--border-color: var(--color-dark);

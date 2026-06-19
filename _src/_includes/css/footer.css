@@ -42,3 +42,7 @@ footer {
 		justify-content: center;
 	}
 }
+
+.fancy-highlight.contact{
+	background-color: var(--color-accent);
+}

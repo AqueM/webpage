@@ -110,7 +110,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	padding: 0 1rem;
 	position: relative;
 	transition: background 200ms ease-in-out;
-	background-color: var(--color-primary);
 	border-radius: var(--border-radius);
 	min-width: 7vw;
 	width: max-content;
@@ -161,5 +160,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			transform: rotate(-135deg);
 		}
 	}
-
 }

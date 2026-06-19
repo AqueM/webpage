@@ -2,17 +2,24 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: var(--color-light);
-}
-
 html,
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+}
+
+html {
+	background-color: var(--color-light);
+}
+body {
+	background-color: var(--bg-gradient-top);
 
 	@media only screen and (min-width: 600px) {
-		overflow-x: hidden !important;
+		/* overflow-x: hidden !important; */
+		background-position: 0% 100%;
+		background-image: var(--bg-gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--bg-gradient-bottom);
+		background-repeat: repeat-x;
+		background-position: 0% 100%;
 	}
 }
