@@ -44,7 +44,7 @@ nav .hamburger-lines .line {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: var(--color-dark);
+    background: var(--element-dark);
 }
 
 nav .hamburger-lines .line1 {
@@ -61,7 +61,7 @@ nav .hamburger-lines .line3 {
     transition: transform 0.4s ease-in-out;
 }
 
-.navigation-mobile:has(input[type="checkbox"]:checked) #menu {
+.navigation-mobile:has(input[type="checkbox"]:checked) .menu {
     transform: translateX(0);
 }
 

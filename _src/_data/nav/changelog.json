@@ -1,5 +1,9 @@
 [
         {
+        "date": "21/05/2022",
+        "log": "functional accessibility toggles"
+    },
+        {
         "date": "19/05/2022",
         "log": "functional mobile menu!"
     },
@@ -14,9 +18,5 @@
     {
         "date": "27/05/2026",
         "log": "js layout loading + all pages are now styled!"
-    },
-    {
-        "date": "20/05/2026",
-        "log": "final version of the layout and colors"
     }
 ]

@@ -13,7 +13,7 @@ footer {
 }
 
 #footer-bg {
-	background-color: var(--color-secondrary);
+	background-color: var(--element-secondrary-transparent);
 	border-radius: var(--border-radius);
 	padding-left: 2rem;
 
@@ -44,5 +44,5 @@ footer {
 }
 
 .fancy-highlight.contact{
-	background-color: var(--color-accent);
+	background-color: var(--element-accent);
 }

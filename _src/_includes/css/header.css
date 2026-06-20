@@ -1,20 +1,31 @@
 #hero-bg {
-	background-color: var(--color-secondrary);
+	background-color: var(--element-secondrary-transparent);
 	border-radius: var(--border-radius);
 	padding: 1%;
-	display: flex;
-	align-items: baseline;
-	justify-content: space-around;
 }
 
 #hero-body {
+	min-height: 0;
+	z-index: 2;
+	margin: unset;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	z-index: 3;
+}
+
+.logo {
 	display: flex;
 	flex-direction: row;
 	gap: 1%;
 	width: 100%;
 	align-items: center;
-	font-family: "Viaoda Libre";
-	min-height: 0;
-	z-index: 2;
-	margin: unset;
+	font-family: var(--font-title);
+}
+
+.accessibility-btns {
+	display: flex;
+	flex-direction: row;
+	align-self: end;
+	/* flex-wrap: wrap; */
 }

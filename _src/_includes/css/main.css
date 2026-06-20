@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+
 }
 
 html,
@@ -11,14 +12,15 @@ body {
 }
 
 html {
-	background-color: var(--color-light);
+	background-color: var(--element-light);
 }
-body {
-	background-color: var(--bg-gradient-top);
 
-	@media only screen and (min-width: 600px) {
+body {
+	background-color: var(--gradient-top);
+
+	@media only screen and (min-width: 600px){
 		background-position: 0% 100%;
-		background-image: var(--bg-gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--bg-gradient-bottom);
+		background-image: var(--gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--gradient-bottom);
 		background-repeat: repeat-x;
 		background-position: 0% 100%;
 	}

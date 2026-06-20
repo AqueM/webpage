@@ -1,31 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Viaoda+Libre&display=swap");
 
-:root {
+:root, html,
+body {
+	/* vars */
+	--border-radius: 1rem;
+	--transparency: 60%;
+
+	/* colors */
 	--color-light: #dafbd5;
 	--color-dark: rgb(28, 74, 29);
 	--color-primary: #c6f9be;
 	--color-secondrary: #96d98c;
 	--color-accent: #FFE6FF;
+
 	--color-blue: #7FFFD4;
 	--color-yellow: #FFE284;
-	--color-blue-transparent: color-mix(in srgb, var(--color-blue) 50%, transparent);
-	--border-radius: 1rem;
 	--color-transparent: transparent;
-	--transparency: 60%;
-	--test-color: red;
-	--bg-gradient-left: linear-gradient(to right, var(--color-accent) 10%, var(--color-transparent));
-	--bg-gradient-right: linear-gradient(to left, var(--color-secondrary), var(--color-transparent));
-	--bg-gradient-top: linear-gradient(to bottom, var(--color-accent), var(--color-transparent));
-	--bg-gradient-bottom: linear-gradient(to top, var(--color-blue), var(--color-transparent) 70%, var(--color-blue-transparent));
-	--bg-gradient-sun: linear-gradient(320deg,var(--color-transparent) 90%, var(--color-yellow) 100%);
+
+	/* accessibility colors */
+	--color-darkest: #121212;
+	--color-lightest: #fcf9f5;
+	--color-middle: #323335;
+	--color-contrast: #FFD700;
+
+	/* fonts */
+	--font1:"Viaoda Libre";
+	--font2:"Poiret";
+
+	/* gradients */
+	--gradient-left: linear-gradient(to right, var(--element-accent) 10%, var(--color-transparent));
+	--gradient-right: linear-gradient(to left, var(--element-secondrary), var(--color-transparent));
+	--gradient-top: linear-gradient(to bottom, var(--element-accent), var(--color-transparent));
+	--gradient-bottom: linear-gradient(to top, var(--color-blue), var(--color-transparent) 70%, var(--element-blue-transparent));
+	--gradient-sun: linear-gradient(320deg, var(--color-transparent) 90%, var(--color-yellow) 100%);
+
+	/* setup */
 	--font-color: var(--color-dark);
-	--min-column-height: 70rem;
 	--border-color: var(--color-dark);
+	--fancy-border-color: var(--element-dark);
+	--button-hover: var(--element-secondrary);
+	--element-light: var(--color-light);
+	--element-dark: var(--color-dark);
+	--element-primary: var(--color-primary);
+	--element-secondrary: var(--color-secondrary);
+	--element-accent: var(--color-accent);
 	color: var(--font-color);
-	--color-primary-transparent: color-mix(in srgb, var(--color-primary) var(--transparency), transparent);
-	--color-secondrary-transparent: color-mix(in srgb, var(--color-secondrary) var(--transparency), transparent);
-	--color-accent-transparent: color-mix(in srgb, var(--color-accent) var(--transparency), transparent);
-	--color-light-transparent: color-mix(in srgb, var(--color-light) var(--transparency), transparent);
+
+	--element-primary-transparent: color-mix(in srgb, var(--element-primary) var(--transparency), transparent);
+	--element-secondrary-transparent: color-mix(in srgb, var(--element-secondrary) var(--transparency), transparent);
+	--element-accent-transparent: color-mix(in srgb, var(--element-accent) var(--transparency), transparent);
+	--element-light-transparent: color-mix(in srgb, var(--element-light) var(--transparency), transparent);
+	--element-blue-transparent: color-mix(in srgb, var(--color-blue) 50%, transparent);
+
+	--font-title: var(--font1);
+	--font-subtitle: var(--font2);
 }
 img:not(.noformat) {
 	max-width: 10vw;
@@ -50,8 +78,8 @@ ul:not(.noformat) {
 a:not(.noformat) {
 	position: relative;
 	text-decoration: none;
-	color: var(--color-dark);
-	background-color: var(--color-accent-transparent);
+	color: var(--element-dark);
+	background-color: var(--element-accent-transparent);
 	border-radius: 1rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
@@ -70,7 +98,7 @@ a:not(.noformat)[target="_blank"]::after {
 h1:not(.noformat),
 h2:not(.noformat),
 h3:not(.noformat) {
-	font-family: "Viaoda Libre";
+	font-family: var(--font-title);
 }
 
 details:not(.noformat) {
@@ -84,13 +112,14 @@ summary:not(.noformat) {
 	border-radius: 1rem;
 	padding: 0.5%;
 	margin-bottom: 1%;
-	background-color: var(--color-accent);
+	background-color: var(--element-accent);
 }
 
 
 
 * {
 	box-sizing: border-box;
+
 }
 
 html,
@@ -102,21 +131,22 @@ body {
 }
 
 html {
-	background-color: var(--color-light);
+	background-color: var(--element-light);
 }
-body {
-	background-color: var(--bg-gradient-top);
 
-	@media only screen and (min-width: 600px) {
+body {
+	background-color: var(--gradient-top);
+
+	@media only screen and (min-width: 600px){
 		background-position: 0% 100%;
-		background-image: var(--bg-gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--bg-gradient-bottom);
+		background-image: var(--gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--gradient-bottom);
 		background-repeat: repeat-x;
 		background-position: 0% 100%;
 	}
 }
 nav {
 	flex-basis: 20vw;
-	background-color: var(--color-primary);
+	background-color: var(--element-primary);
 	border-radius: var(--border-radius);
 	z-index: 3;
 	min-width: fit-content;
@@ -124,7 +154,7 @@ nav {
 	transform-style: preserve-3d;
 
 	@media only screen and (min-width: 800px) {
-		background-color: var(--color-primary-transparent);
+		background-color: var(--element-primary-transparent);
 		max-height: unset;
 		margin: 1%;
 		padding: 1%;
@@ -140,7 +170,7 @@ nav {
 }
 
 #nav-bg {
-	background-color: var(--color-primary);
+	background-color: var(--element-primary);
 }
 
 /* Hide marker */
@@ -163,7 +193,7 @@ nav details summary {
 		/* Custom marker dimensions */
 		content: "";
 		z-index: 3;
-		border-block-start: 0.1rem solid var(--color-dark);
+		border-block-start: 0.1rem solid var(--element-dark);
 		height: 0;
 		width: 1rem;
 		margin-right: 0.5rem;
@@ -204,7 +234,7 @@ nav details[open] summary::after {
 	position: relative;
 	z-index: 4;
 	border-radius: var(--border-radius);
-	background-color: var(--color-primary);
+	background-color: var(--element-primary);
 	border-bottom: 1px solid var(--border-color);
 
 	@media only screen and (min-width: 800px) {
@@ -219,12 +249,12 @@ nav details[open] summary::after {
 
 .menu-label {
 	padding: 0.5rem 1rem;
-	background-image: var(--bg-gradient-left);
+	background-image: var(--gradient-left);
 	border-radius: var(--border-radius);
 	margin: 0;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	font-family: "Viaoda Libre";
+	font-family: var(--font-title);
 	font-size: 1.1rem;
 	font-weight: bold;
 	min-width: max-content;
@@ -232,7 +262,7 @@ nav details[open] summary::after {
 }
 
 .open-category {
-	background-color: var(--color-accent) !important;
+	background-color: var(--element-accent) !important;
 }
 
 .category-name {
@@ -251,7 +281,7 @@ nav details[open] summary::after {
 	display: inline-block;
 	font-size: 1rem;
 	margin-bottom: 0.2rem;
-	background-color: var(--color-secondrary-transparent);
+	background-color: var(--element-secondrary-transparent);
 	padding: 0.5rem;
 	padding-left: 1rem;
 	border-radius: var(--border-radius);
@@ -259,20 +289,20 @@ nav details[open] summary::after {
 	width: 100%;
 	border-top: 0.01rem solid var(--border-color);
 	border-bottom: 0.01rem solid var(--border-color);
-	font-family: "Poiret One";
+	font-family: var(--font-subtitle);
 	font-weight: bold;
 }
 
 .active-link {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	font-family: "Viaoda Libre" !important;
+	font-family: var(--font-title) !important;
 	font-weight: bolder;
-	background-color: var(--color-secondrary) !important;
+	background-color: var(--element-secondrary) !important;
 }
 
 .open[open] {
-	background-image: var(--bg-gradient-top);
+	background-image: var(--gradient-top);
 	border-radius: var(--border-radius);
 }
 
@@ -334,7 +364,7 @@ nav .hamburger-lines .line {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: var(--color-dark);
+    background: var(--element-dark);
 }
 
 nav .hamburger-lines .line1 {
@@ -351,7 +381,7 @@ nav .hamburger-lines .line3 {
     transition: transform 0.4s ease-in-out;
 }
 
-.navigation-mobile:has(input[type="checkbox"]:checked) #menu {
+.navigation-mobile:has(input[type="checkbox"]:checked) .menu {
     transform: translateX(0);
 }
 
@@ -386,24 +416,35 @@ nav .label {
     margin: unset;
 }
 #hero-bg {
-	background-color: var(--color-secondrary);
+	background-color: var(--element-secondrary-transparent);
 	border-radius: var(--border-radius);
 	padding: 1%;
-	display: flex;
-	align-items: baseline;
-	justify-content: space-around;
 }
 
 #hero-body {
+	min-height: 0;
+	z-index: 2;
+	margin: unset;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	z-index: 3;
+}
+
+.logo {
 	display: flex;
 	flex-direction: row;
 	gap: 1%;
 	width: 100%;
 	align-items: center;
-	font-family: "Viaoda Libre";
-	min-height: 0;
-	z-index: 2;
-	margin: unset;
+	font-family: var(--font-title);
+}
+
+.accessibility-btns {
+	display: flex;
+	flex-direction: row;
+	align-self: end;
+	/* flex-wrap: wrap; */
 }
 footer {
 	flex-basis: 5vh;
@@ -420,7 +461,7 @@ footer {
 }
 
 #footer-bg {
-	background-color: var(--color-secondrary);
+	background-color: var(--element-secondrary-transparent);
 	border-radius: var(--border-radius);
 	padding-left: 2rem;
 
@@ -451,7 +492,7 @@ footer {
 }
 
 .fancy-highlight.contact{
-	background-color: var(--color-accent);
+	background-color: var(--element-accent);
 }
 
 .tooltip {
@@ -492,20 +533,100 @@ footer {
 	}
 }
 
-@media (prefers-contrast: high) {}
+@media (prefers-contrast: high) {
 
-@media screen and (prefers-color-scheme: dark) {
+	:root,
+	html,
 	body {
-		--bg-color: black;
-		--text-color: white;
+		--font-color: var(--color-darkest);
+		--element-dark: var(--color-darkest);
+		--element-primary: var(--color-contrast);
+		--element-secondrary: var(--color-contrast);
+		--element-accent: var(--color-contrast);
 	}
 }
 
+.contrast {
+	--font-color: var(--color-darkest) !important;
+	--element-dark: var(--color-darkest) !important;
+	--element-light: var(--color-darkest) !important;
+	--element-primary: var(--color-contrast) !important;
+	--element-secondrary: var(--color-contrast) !important;
+	--element-accent: var(--color-contrast) !important;
+}
+
+.normal-contrast {
+	--font-color: var(--color-dark);
+	--element-light: var(--color-light);
+	--element-dark: var(--color-dark);
+	--element-primary: var(--color-primary);
+	--element-secondrary: var(--color-secondrary);
+	--element-accent: var(--color-accent);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+	:root,
+	html,
+	body {
+		--font-color: var(--color-lightest);
+		--element-light: var(--color-darkest);
+		--element-dark: var(--color-lightest);
+		--element-primary: var(--color-darkest);
+		--element-secondrary: var(--color-middle);
+		--element-accent: var(--color-middle);
+	}
+
+	img {
+		filter: brightness(.8) contrast(1.2);
+	}
+
+	.light-mode {
+		filter: unset;
+	}
+}
+
+.light-mode {
+	--font-color: var(--color-dark);
+	--element-light: var(--color-light);
+	--element-dark: var(--color-dark);
+	--element-primary: var(--color-primary);
+	--element-secondrary: var(--color-secondrary);
+	--element-accent: var(--color-accent);
+}
+
+.dark-mode {
+	--font-color: var(--color-lightest);
+	--element-light: var(--color-darkest);
+	--element-dark: var(--color-lightest);
+	--element-primary: var(--color-darkest);
+	--element-secondrary: var(--color-middle);
+	--element-accent: var(--color-middle);
+}
+
+.dark-mode img {
+	filter: brightness(.8) contrast(1.2);
+}
+
+.hide {
+	display: none !important;
+}
+
+.reduce-complexity {
+	border-width: 0 !important;
+}
+
+.normal-font{
+	--font-subtitle:system-ui;
+	--font-title: system-ui;
+	font-family: system-ui;
+}
+
 .heading {
-	background-image: var(--bg-gradient-left);
+	background-image: var(--gradient-left);
 	padding: 1rem;
 	border-radius: var(--border-radius);
-	font-family: "Viaoda Libre";
+	font-family: var(--font-title);
 	border-top: 0.01rem solid var(--border-color);
 	border-bottom: 0.01rem solid var(--border-color);
 	margin-bottom: 1%;
@@ -515,13 +636,15 @@ footer {
 
 .title {
 	text-transform: uppercase;
-	font-family: "Viaoda Libre";
+	font-family: var(--font-title);
 	margin-top: 1%;
 	margin-bottom: 0.5%;
 }
 
 .subtitle {
 	margin-left: 0.5%;
+	display: flex;
+	flex-direction: column;
 }
 
 .disclaimer {
@@ -538,7 +661,7 @@ footer {
 	border-radius: 1rem;
 	padding: 0.2rem;
 	margin-bottom: 0.2rem;
-	background-color: var(--color-accent);
+	background-color: var(--element-accent);
 }
 
 .link-list {
@@ -600,7 +723,7 @@ footer {
 main {
 	flex-grow: 1;
 	margin: 1%;
-	background-color: var(--color-primary-transparent);
+	background-color: var(--element-primary-transparent);
 	border-radius: var(--border-radius);
 	transform-style: preserve-3d;
 	transform: translateZ(3rem);
@@ -711,7 +834,7 @@ section {
 	position: absolute;
 	top: -3%;
 	right: 0;
-	z-index: 1;
+	z-index: 2;
 	display: none;
 
 	@media only screen and (min-width: 600px) {
@@ -766,14 +889,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
-:root {
-	--border-color: var(--color-dark);
-	--button-hover: var(--color-secondrary);
-}
-
 .fancy-border {
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--fancy-border-color);
 	position: relative;
 	padding: 1rem;
 	margin: 1rem;
@@ -784,7 +901,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		@media only screen and (min-width: 600px) {
 			width: 0.5rem;
 			height: 0.5rem;
-			border: 1px solid var(--border-color);
+			border: 1px solid var(--fancy-border-color);
 
 			&::after,
 			&::before {
@@ -807,12 +924,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					left: calc(-2px + 1rem);
-					border-left: 1px solid var(--border-color);
+					border-left: 1px solid var(--fancy-border-color);
 				}
 
 				&::before {
 					left: -1px;
-					border-left: 1px solid var(--border-color);
+					border-left: 1px solid var(--fancy-border-color);
 				}
 			}
 
@@ -821,12 +938,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					right: calc(-2px + 1rem);
-					border-right: 1px solid var(--border-color);
+					border-right: 1px solid var(--fancy-border-color);
 				}
 
 				&::before {
 					right: -1px;
-					border-right: 1px solid var(--border-color);
+					border-right: 1px solid var(--fancy-border-color);
 				}
 			}
 
@@ -835,12 +952,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					top: -1px;
-					border-top: 1px solid var(--border-color);
+					border-top: 1px solid var(--fancy-border-color);
 				}
 
 				&::before {
 					top: calc(-2px + 1rem);
-					border-top: 1px solid var(--border-color);
+					border-top: 1px solid var(--fancy-border-color);
 				}
 			}
 
@@ -849,12 +966,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					bottom: -1px;
-					border-bottom: 1px solid var(--border-color);
+					border-bottom: 1px solid var(--fancy-border-color);
 				}
 
 				&::before {
 					bottom: calc(-2px + 1rem);
-					border-bottom: 1px solid var(--border-color);
+					border-bottom: 1px solid var(--fancy-border-color);
 				}
 			}
 		}
@@ -863,7 +980,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .fancy-highlight {
 	all: unset;
-	font-family: "Viaoda Libre";
+	font-family: var(--font-title);
 	text-align: center;
 	height: 2rem;
 	padding: 0 1rem;
@@ -876,23 +993,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	z-index: inherit;
 
 	@media only screen and (min-width: 600px) {
-		border-top: 0.01rem solid var(--border-color);
-		border-bottom: 0.01rem solid var(--border-color);
+		border-top: 0.01rem solid var(--fancy-border-color);
+		border-bottom: 0.01rem solid var(--fancy-border-color);
 
 		.left,
 		.right {
 			position: absolute;
 			width: 1.45rem;
 			height: 1.45rem;
-			border-bottom: 0.01rem solid var(--border-color);
-			border-left: 0.01rem solid var(--border-color);
+			border-bottom: 0.01rem solid var(--fancy-border-color);
+			border-left: 0.01rem solid var(--fancy-border-color);
 			transition: background 200ms ease-in-out;
 
 			&::before {
 				content: "";
 				width: 0.75rem;
 				height: 0.75rem;
-				border: 0.01rem solid var(--border-color);
+				border: 0.01rem solid var(--fancy-border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0.4rem - 0.01rem);
@@ -902,7 +1019,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				content: "";
 				width: 0.5rem;
 				height: 0.5rem;
-				background: var(--border-color);
+				background: var(--fancy-border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0rem - 0.01rem);
@@ -919,4 +1036,153 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			transform: rotate(-135deg);
 		}
 	}
+}
+/* Copyright (c) 2026 by Álvaro (https://codepen.io/alvarotrigo/pen/jOaXGKy)
+Fork of an original work Toggle Switch (https://codepen.io/kunduzyazilim/pen/yPzvwz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-primary);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-lightest);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: var(--color-secondrary);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px var(--color-secondrary);
+}
+
+.slider-dark {
+  background-color: var(--color-middle);
+}
+
+input:checked+.slider-dark {
+  background-color: var(--color-darkest);
+}
+
+input:focus+.slider-dark {
+  box-shadow: 0 0 1px var(--color-darkest);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider-yellow {
+  background-color: var(--color-yellow);
+}
+
+input:checked+.slider-yellow {
+  background-color: var(--color-contrast);
+}
+
+input:focus+.slider-yellow {
+  box-shadow: 0 0 1px var(--color-contrast);
+}  
+
+input:checked+.slider-yellow:before{
+  background-color: var(--color-darkest);
+}
+
+/* https://jsfiddle.net/BumU5/3/ */
+
+
+[data-tip] {
+  font-family: system-ui;
+	position:relative;
+
+}
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid var(--color-darkest);	
+	position:absolute;
+	top:30px;
+	left:35px;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:35px;
+	left:0px;
+	padding:5px 8px;
+	background:var(--color-darkest);
+	color:var(--color-lightest);
+	z-index:9;
+	font-size: 0.75em;
+	height:18px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:block;
 }

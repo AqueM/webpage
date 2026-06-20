@@ -36,11 +36,91 @@
 	}
 }
 
-@media (prefers-contrast: high) {}
+@media (prefers-contrast: high) {
+
+	:root,
+	html,
+	body {
+		--font-color: var(--color-darkest);
+		--element-dark: var(--color-darkest);
+		--element-primary: var(--color-contrast);
+		--element-secondrary: var(--color-contrast);
+		--element-accent: var(--color-contrast);
+	}
+}
+
+.contrast {
+	--font-color: var(--color-darkest) !important;
+	--element-dark: var(--color-darkest) !important;
+	--element-light: var(--color-darkest) !important;
+	--element-primary: var(--color-contrast) !important;
+	--element-secondrary: var(--color-contrast) !important;
+	--element-accent: var(--color-contrast) !important;
+}
+
+.normal-contrast {
+	--font-color: var(--color-dark);
+	--element-light: var(--color-light);
+	--element-dark: var(--color-dark);
+	--element-primary: var(--color-primary);
+	--element-secondrary: var(--color-secondrary);
+	--element-accent: var(--color-accent);
+}
 
 @media screen and (prefers-color-scheme: dark) {
+
+	:root,
+	html,
 	body {
-		--bg-color: black;
-		--text-color: white;
+		--font-color: var(--color-lightest);
+		--element-light: var(--color-darkest);
+		--element-dark: var(--color-lightest);
+		--element-primary: var(--color-darkest);
+		--element-secondrary: var(--color-middle);
+		--element-accent: var(--color-middle);
 	}
+
+	img {
+		filter: brightness(.8) contrast(1.2);
+	}
+
+	.light-mode {
+		filter: unset;
+	}
+}
+
+.light-mode {
+	--font-color: var(--color-dark);
+	--element-light: var(--color-light);
+	--element-dark: var(--color-dark);
+	--element-primary: var(--color-primary);
+	--element-secondrary: var(--color-secondrary);
+	--element-accent: var(--color-accent);
+}
+
+.dark-mode {
+	--font-color: var(--color-lightest);
+	--element-light: var(--color-darkest);
+	--element-dark: var(--color-lightest);
+	--element-primary: var(--color-darkest);
+	--element-secondrary: var(--color-middle);
+	--element-accent: var(--color-middle);
+}
+
+.dark-mode img {
+	filter: brightness(.8) contrast(1.2);
+}
+
+.hide {
+	display: none !important;
+}
+
+.reduce-complexity {
+	border-width: 0 !important;
+}
+
+.normal-font{
+	--font-subtitle:system-ui;
+	--font-title: system-ui;
+	font-family: system-ui;
 }

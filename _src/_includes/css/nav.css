@@ -1,6 +1,6 @@
 nav {
 	flex-basis: 20vw;
-	background-color: var(--color-primary);
+	background-color: var(--element-primary);
 	border-radius: var(--border-radius);
 	z-index: 3;
 	min-width: fit-content;
@@ -8,7 +8,7 @@ nav {
 	transform-style: preserve-3d;
 
 	@media only screen and (min-width: 800px) {
-		background-color: var(--color-primary-transparent);
+		background-color: var(--element-primary-transparent);
 		max-height: unset;
 		margin: 1%;
 		padding: 1%;
@@ -24,7 +24,7 @@ nav {
 }
 
 #nav-bg {
-	background-color: var(--color-primary);
+	background-color: var(--element-primary);
 }
 
 /* Hide marker */
@@ -47,7 +47,7 @@ nav details summary {
 		/* Custom marker dimensions */
 		content: "";
 		z-index: 3;
-		border-block-start: 0.1rem solid var(--color-dark);
+		border-block-start: 0.1rem solid var(--element-dark);
 		height: 0;
 		width: 1rem;
 		margin-right: 0.5rem;
@@ -88,7 +88,7 @@ nav details[open] summary::after {
 	position: relative;
 	z-index: 4;
 	border-radius: var(--border-radius);
-	background-color: var(--color-primary);
+	background-color: var(--element-primary);
 	border-bottom: 1px solid var(--border-color);
 
 	@media only screen and (min-width: 800px) {
@@ -103,12 +103,12 @@ nav details[open] summary::after {
 
 .menu-label {
 	padding: 0.5rem 1rem;
-	background-image: var(--bg-gradient-left);
+	background-image: var(--gradient-left);
 	border-radius: var(--border-radius);
 	margin: 0;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	font-family: "Viaoda Libre";
+	font-family: var(--font-title);
 	font-size: 1.1rem;
 	font-weight: bold;
 	min-width: max-content;
@@ -116,7 +116,7 @@ nav details[open] summary::after {
 }
 
 .open-category {
-	background-color: var(--color-accent) !important;
+	background-color: var(--element-accent) !important;
 }
 
 .category-name {
@@ -135,7 +135,7 @@ nav details[open] summary::after {
 	display: inline-block;
 	font-size: 1rem;
 	margin-bottom: 0.2rem;
-	background-color: var(--color-secondrary-transparent);
+	background-color: var(--element-secondrary-transparent);
 	padding: 0.5rem;
 	padding-left: 1rem;
 	border-radius: var(--border-radius);
@@ -143,20 +143,20 @@ nav details[open] summary::after {
 	width: 100%;
 	border-top: 0.01rem solid var(--border-color);
 	border-bottom: 0.01rem solid var(--border-color);
-	font-family: "Poiret One";
+	font-family: var(--font-subtitle);
 	font-weight: bold;
 }
 
 .active-link {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	font-family: "Viaoda Libre" !important;
+	font-family: var(--font-title) !important;
 	font-weight: bolder;
-	background-color: var(--color-secondrary) !important;
+	background-color: var(--element-secondrary) !important;
 }
 
 .open[open] {
-	background-image: var(--bg-gradient-top);
+	background-image: var(--gradient-top);
 	border-radius: var(--border-radius);
 }
 

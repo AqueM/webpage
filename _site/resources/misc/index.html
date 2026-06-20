@@ -11,26 +11,49 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/x-icon" href="/assets/images/layout/favicon.ico">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script defer src="/assets/javascript/accessibility.js"></script>
 </head>
 
 <body>
     <div id="page">
-        <div id="header-layout-image"><img src="/assets/images/layout/canva-vines2.webp" class="noformat" alt="header vines"></div>
+        <div id="header-layout-image"><img src="/assets/images/layout/canva-vines2.webp" class="noformat layout-image"
+		alt="header vines">
+</div>
 <header id="hero-bg" class="fancy-border">
 	<div class="corner top left"></div>
 	<div class="corner top right"></div>
 	<div class="corner bottom left"></div>
 	<div class="corner bottom right"></div>
 	<div id="hero-body" class="heading">
-		<img src="/assets/images/layout/canva-frog.webp" class="noformat" id="header-logo-image"
-			alt="cute cartoon frog image in the site header">
-		<div>
-			<h1 class="title">Broadly in favor of humanity</h1>
-			<div class="subtitle">
-				<span>Do it scared.</span><br>
-				<span>Do it weird.</span><br>
-				<span>Kill the cop inside your head.</span>
+		<div class="logo">
+			<img src="/assets/images/layout/canva-frog.webp" class="noformat layout-image" id="header-logo-image"
+				alt="cute cartoon frog image in the site header">
+			<div>
+				<h1 class="title">Broadly in favor of humanity</h1>
+				<div class="subtitle">
+					<span>Do it scared.</span>
+					<span>Do it weird.</span>
+					<span>Kill the cop inside your head.</span>
+				</div>
 			</div>
+		</div>
+		<div class="accessibility-btns">
+			<label class="switch dark-toggle" data-tip="Toggle Dark mode">
+				<input type="checkbox">
+				<span class="slider slider-dark round"></span>
+			</label>
+			<label class="switch contrast-toggle" data-tip="Toggle Contrast mode">
+				<input type="checkbox" title="Contrast mode">
+				<span class="slider slider-yellow round"></span>
+			</label>
+			<label class="switch complexity-toggle" data-tip="Reduce visual complexity">
+				<input type="checkbox">
+				<span class="slider round"></span>
+			</label>
+			<label class="switch font-toggle" data-tip="Disable special fonts">
+				<input type="checkbox">
+				<span class="slider round"></span>
+			</label>
 		</div>
 		
 	</div>
@@ -39,7 +62,7 @@
         <!-- viewport -->
         <div id="page-contents">
 
-            <div id="nav-layout-image"><img src="/assets/images/layout/canva-vines1.webp" class="noformat" alt="menu vines"></div>
+            <div id="nav-layout-image"><img src="/assets/images/layout/canva-vines1.webp" class="noformat layout-image" alt="menu vines"></div>
 <nav class="fancy-border">
 	<div class="corner top left"></div>
 	<div class="corner top right"></div>
@@ -48,7 +71,7 @@
 	<div class="navigation">
 		<div class="heading">
 				<h2 class="title">Menu</h2></div>
-		<div class="sidebar" class="menu">
+		<div class="sidebar menu">
     <div>
     
         <ul class="noformat menu-list">
@@ -151,6 +174,8 @@
 				Last updated: <strong>06/2026</strong>
 				</span></div>
 			<ul class="logs"><li>
+					<strong>21/05/2022</strong> - functional accessibility toggles
+				</li><li>
 					<strong>19/05/2022</strong> - functional mobile menu!
 				</li><li>
 					<strong>17/06/2026</strong> - added content to Technology pages
@@ -158,8 +183,6 @@
 					<strong>15/06/2026</strong> - ported to Eleventy!
 				</li><li>
 					<strong>27/05/2026</strong> - js layout loading + all pages are now styled!
-				</li><li>
-					<strong>20/05/2026</strong> - final version of the layout and colors
 				</li>
 			</ul>
 		</div>
@@ -179,7 +202,7 @@
 			</div>
 		</div>
 
-		<div class="sidebar" class="menu">
+		<div class="sidebar menu">
     <div>
     
         <ul class="noformat menu-list">
@@ -388,7 +411,7 @@
         <footer>
 	<!-- <div id="bottom-layout-image"><img src="/assets/images/layout/nadebrag-grass-7318026.png" class="noformat"
 			alt="white flower"></div> -->
-	<div id="footer-layout-image"><img src="/assets/images/layout/canva-flowers.webp" class="noformat"
+	<div id="footer-layout-image"><img src="/assets/images/layout/canva-flowers.webp" class="noformat layout-image"
 			alt="white flower"></div>
 	<div id="footer-bg" class="fancy-border">
 		<div class="corner top left"></div>
@@ -397,13 +420,13 @@
 		<div class="corner bottom right"></div>
 		<div class="footer-left">
 			<button class="fancy-highlight" disabled>
-				<span class="left"></span>
-				<span class="right"></span>
+				<span class="side left"></span>
+				<span class="side right"></span>
 				© 2026 Aque
 			</button>
 			<button class="fancy-highlight contact" disabled>
-				<span class="left"></span>
-				<span class="right"></span>
+				<span class="side left"></span>
+				<span class="side right"></span>
 				<a href="mailto:aque.iriascend+AreYouHuman@gmail.com?body=Remember to edit the e-mail address if you're not an AI!"
 					target="_blank">Contact me</a>
 			</button>

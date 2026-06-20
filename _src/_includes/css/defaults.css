@@ -21,8 +21,8 @@ ul:not(.noformat) {
 a:not(.noformat) {
 	position: relative;
 	text-decoration: none;
-	color: var(--color-dark);
-	background-color: var(--color-accent-transparent);
+	color: var(--element-dark);
+	background-color: var(--element-accent-transparent);
 	border-radius: 1rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
@@ -41,7 +41,7 @@ a:not(.noformat)[target="_blank"]::after {
 h1:not(.noformat),
 h2:not(.noformat),
 h3:not(.noformat) {
-	font-family: "Viaoda Libre";
+	font-family: var(--font-title);
 }
 
 details:not(.noformat) {
@@ -55,6 +55,6 @@ summary:not(.noformat) {
 	border-radius: 1rem;
 	padding: 0.5%;
 	margin-bottom: 1%;
-	background-color: var(--color-accent);
+	background-color: var(--element-accent);
 }
 

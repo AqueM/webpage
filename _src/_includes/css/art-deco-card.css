@@ -7,14 +7,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
-:root {
-	--border-color: var(--color-dark);
-	--button-hover: var(--color-secondrary);
-}
-
 .fancy-border {
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--fancy-border-color);
 	position: relative;
 	padding: 1rem;
 	margin: 1rem;
@@ -25,7 +19,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		@media only screen and (min-width: 600px) {
 			width: 0.5rem;
 			height: 0.5rem;
-			border: 1px solid var(--border-color);
+			border: 1px solid var(--fancy-border-color);
 
 			&::after,
 			&::before {
@@ -48,12 +42,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					left: calc(-2px + 1rem);
-					border-left: 1px solid var(--border-color);
+					border-left: 1px solid var(--fancy-border-color);
 				}
 
 				&::before {
 					left: -1px;
-					border-left: 1px solid var(--border-color);
+					border-left: 1px solid var(--fancy-border-color);
 				}
 			}
 
@@ -62,12 +56,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					right: calc(-2px + 1rem);
-					border-right: 1px solid var(--border-color);
+					border-right: 1px solid var(--fancy-border-color);
 				}
 
 				&::before {
 					right: -1px;
-					border-right: 1px solid var(--border-color);
+					border-right: 1px solid var(--fancy-border-color);
 				}
 			}
 
@@ -76,12 +70,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					top: -1px;
-					border-top: 1px solid var(--border-color);
+					border-top: 1px solid var(--fancy-border-color);
 				}
 
 				&::before {
 					top: calc(-2px + 1rem);
-					border-top: 1px solid var(--border-color);
+					border-top: 1px solid var(--fancy-border-color);
 				}
 			}
 
@@ -90,12 +84,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					bottom: -1px;
-					border-bottom: 1px solid var(--border-color);
+					border-bottom: 1px solid var(--fancy-border-color);
 				}
 
 				&::before {
 					bottom: calc(-2px + 1rem);
-					border-bottom: 1px solid var(--border-color);
+					border-bottom: 1px solid var(--fancy-border-color);
 				}
 			}
 		}
@@ -104,7 +98,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .fancy-highlight {
 	all: unset;
-	font-family: "Viaoda Libre";
+	font-family: var(--font-title);
 	text-align: center;
 	height: 2rem;
 	padding: 0 1rem;
@@ -117,23 +111,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	z-index: inherit;
 
 	@media only screen and (min-width: 600px) {
-		border-top: 0.01rem solid var(--border-color);
-		border-bottom: 0.01rem solid var(--border-color);
+		border-top: 0.01rem solid var(--fancy-border-color);
+		border-bottom: 0.01rem solid var(--fancy-border-color);
 
 		.left,
 		.right {
 			position: absolute;
 			width: 1.45rem;
 			height: 1.45rem;
-			border-bottom: 0.01rem solid var(--border-color);
-			border-left: 0.01rem solid var(--border-color);
+			border-bottom: 0.01rem solid var(--fancy-border-color);
+			border-left: 0.01rem solid var(--fancy-border-color);
 			transition: background 200ms ease-in-out;
 
 			&::before {
 				content: "";
 				width: 0.75rem;
 				height: 0.75rem;
-				border: 0.01rem solid var(--border-color);
+				border: 0.01rem solid var(--fancy-border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0.4rem - 0.01rem);
@@ -143,7 +137,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				content: "";
 				width: 0.5rem;
 				height: 0.5rem;
-				background: var(--border-color);
+				background: var(--fancy-border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0rem - 0.01rem);
