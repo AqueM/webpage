@@ -39,25 +39,7 @@
     
        
         <url>
-            <loc>http://www.aque.fyi/about/community/</loc>
-            <lastmod>2026-06-18T22:48:56.032Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
             <loc>http://www.aque.fyi/about/</loc>
-            <lastmod>2026-06-18T22:48:56.032Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.7</priority>
-        </url>
-        
-    
-       
-        <url>
-            <loc>http://www.aque.fyi/about/links/</loc>
             <lastmod>2026-06-18T22:48:56.032Z</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.7</priority>
@@ -246,8 +228,26 @@
     
        
         <url>
+            <loc>http://www.aque.fyi/about/links/</loc>
+            <lastmod>2026-06-20T10:00:04.757Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.7</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/about/community/</loc>
+            <lastmod>2026-06-20T10:04:47.277Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+    
+       
+        <url>
             <loc>http://www.aque.fyi/</loc>
-            <lastmod>2026-06-19T22:34:04.205Z</lastmod>
+            <lastmod>2026-06-20T10:06:20.126Z</lastmod>
             <changefreq>always</changefreq>
             <priority>0.8</priority>
         </url>

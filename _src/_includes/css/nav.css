@@ -30,6 +30,7 @@ nav {
 /* Hide marker */
 nav details {
 	cursor: pointer;
+	margin-bottom: 0.1rem;
 }
 
 /* code courtesy of https://css-tricks.com/using-styling-the-details-element/ */
@@ -76,7 +77,7 @@ nav details[open] summary::after {
 	margin-bottom: 1rem;
 }
 
-#menu {
+.menu {
 	transform: translate(-150%);
 	transition: transform 0.5s ease-in-out;
 	display: flex;
