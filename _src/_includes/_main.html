@@ -14,7 +14,8 @@ eleventyComputed:
     <meta name="robots" content="noai, noimageai">
     <title>{{title}}</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/images/layout/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/images/layout/favicon.ico" />
+    <link rel="stylesheet" href="/assets/photoswipe/photoswipe.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
     <script defer src="/assets/javascript/accessibility.js"></script>
 </head>
@@ -45,5 +46,14 @@ eleventyComputed:
         {% include "_footer.html" %}
 
     </div>
+    <script type="module">
+     import PhotoSwipeLightbox from '/assets/photoswipe/photoswipe-lightbox.esm.js';
+     const lightbox = new PhotoSwipeLightbox({
+         gallery: '#gallery',
+         children: 'a',
+         pswpModule: () => import('/assets/photoswipe/photoswipe.esm.js')
+     });
+     lightbox.init();
+    </script>
 </body>
 </html>
