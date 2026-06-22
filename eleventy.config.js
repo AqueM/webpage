@@ -6,8 +6,8 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("_src/robots.txt");
     eleventyConfig.addPassthroughCopy("_src/ai.txt");
     eleventyConfig.addPassthroughCopy({
-      "node_modules/photoswipe/dist": "assets/photoswipe"
-     });
+        "node_modules/photoswipe/dist": "assets/photoswipe"
+    });
     eleventyConfig.setInputDirectory("_src");
 
     // add markdown attributes lib
@@ -73,44 +73,30 @@ module.exports = async function (eleventyConfig) {
         </div>`;
     });
 
-    // source https://www.bash.lk/posts/tech/1-elventy-image-gallery/
-    
-    const sharp = require('sharp');
-    const Image = require('@11ty/eleventy-img');
+    eleventyConfig.addPairedShortcode("gallery", function (content) {
+        return `<div id="gallery" class="pswp-gallery">
+                    ${content}
+                </div>`;
+    });
 
-    const GALLERY_IMAGE_WIDTH = 192;
-    const LANDSCAPE_LIGHTBOX_IMAGE_WIDTH = 2000;
-    const PORTRAIT_LIGHTBOX_IMAGE_WIDTH = 720;
-
-    async function galleryImageShortcode(src, alt) {
-        let lightboxImageWidth = LANDSCAPE_LIGHTBOX_IMAGE_WIDTH;
-
-        const metadata = await sharp(src).metadata();
-
-        if (metadata.height > metadata.width) {
-            lightboxImageWidth = PORTRAIT_LIGHTBOX_IMAGE_WIDTH;
-        }
-
-        const options = {
-            formats: ['jpeg'],
-            widths: [GALLERY_IMAGE_WIDTH, lightboxImageWidth],
-            urlPath: "/assets/images/commissions",
-            outputDir: './_site/assets/images/commissions/'
-        }
-
-        const genMetadata = await Image(src, options);
-
-        return `
-        <a href="${genMetadata.jpeg[1].url}" 
-        data-pswp-width="${genMetadata.jpeg[1].width}" 
-        data-pswp-height="${genMetadata.jpeg[1].height}" 
-        target="_blank">
-            <img src="${genMetadata.jpeg[0].url}" alt="${alt}" />
+    eleventyConfig.addShortcode("image", function (image) {
+        return `<div><figure class="pswp-gallery__item">
+        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" /></a>
         </a>
-    `.replace(/(\r\n|\n|\r)/gm, "");;
-    }
+        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>${image.caption}, by <cite><a href="${image.authorLink}" target="_blank">${image.artist}</a></cite></p>
+        <p class="image-caption">${image.alt}</p></figcaption>
+        </figure></div>`;
+    });
 
-    eleventyConfig.addLiquidShortcode('galleryImage', galleryImageShortcode);
+        eleventyConfig.addShortcode("imageMine", function (image) {
+        return `<div><figure class="pswp-gallery__item">
+        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" /></a>
+        </a>
+        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><cite>${image.caption}</cite></figcaption>
+        </figure></div>`;
+    });
 
     // FILTERS
 

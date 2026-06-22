@@ -1,23 +1,26 @@
 #gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
-}
-
-#gallery a {
-  display: block;
-  text-decoration: none;
+  grid-template-columns: repeat(auto-fill, minmax(200px, min-content));
+  grid-template-rows: repeat(auto-fill, minmax(200px, min-content));
+  gap: 1rem 1rem;
+  justify-content: center;
 }
 
 #gallery img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   transition: transform 0.2s;
+  cursor: pointer;
+}
+
+#gallery figure {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 #gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
 }

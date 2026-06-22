@@ -1,15 +1,27 @@
 ---
-layout: _page.html
+layout: _gallery.html
 tags: collections
 displayName: Commissions
 ---
-
-// based on https://stefanbohacek.com/blog/making-a-free-image-gallery-with-neocities-org/
-<div id="gallery">
-    {% for image in myCollections.commissions %}<figure class="pswp-gallery__item">
-        <a href="{{image.src}}" data-pswp-width="{{image.width}}" data-pswp-height="{{image.height}}" target="_blank">
-            <img src="{{image.src}}" title="{{image.title}}" alt="{{image.alt}}" /></a>
-            <figcaption class="pswp-caption-content">{{image.caption}}, by <a href="{{image.authorLink}}" target="_blank">{{image.artist}}</a></figcaption>
-        </a>
-    </figure>{% endfor %}
-</div>
+{% heading "h1", "Art I've commissioned" %}
+Click on the image to see a bigger version and details, including artist and year of purchase.
+<section>
+{% heading "h2", "DnD characters" %}
+{% gallery %}{% for item in myCollections.commissions.dnd %}{% image item %}{% endfor %}{% endgallery %}
+</section>
+<section>
+{% heading "h2", "OCs" %}
+{% gallery  %}{% for item in myCollections.commissions.ocs %}{% image item %}{% endfor %}{% endgallery %}
+</section>
+<section>
+{% heading "h2", "Other RPG characters" %}
+{% gallery  %}{% for item in myCollections.commissions.rpg %}{% image item %}{% endfor %}{% endgallery %}
+</section>
+<!-- <section>
+{% heading "h2", "Batman-related fanart" %}
+{% gallery %}{% for item in myCollections.commissions.batfam %}{% image item %}{% endfor %}{% endgallery %}
+</section>
+<section>
+{% heading "h2", "Misc" %}
+{% gallery %}{% for item in myCollections.commissions.misc %}{% image item %}{% endfor %}{% endgallery %}
+</section> -->
