@@ -1,9 +1,13 @@
 [
-        {
+    {
+        "date": "23/06/2022",
+        "log": "added gallery code and most of the commissions art!"
+    },
+    {
         "date": "21/06/2022",
         "log": "functional accessibility toggles"
     },
-        {
+    {
         "date": "19/06/2022",
         "log": "functional mobile menu!"
     },
@@ -14,9 +18,5 @@
     {
         "date": "15/06/2026",
         "log": "ported to Eleventy!"
-    },
-    {
-        "date": "27/05/2026",
-        "log": "js layout loading + all pages are now styled!"
     }
 ]

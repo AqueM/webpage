@@ -5,6 +5,9 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("_src/assets");
     eleventyConfig.addPassthroughCopy("_src/robots.txt");
     eleventyConfig.addPassthroughCopy("_src/ai.txt");
+    eleventyConfig.addPassthroughCopy({
+        "node_modules/photoswipe/dist": "assets/photoswipe"
+    });
     eleventyConfig.setInputDirectory("_src");
 
     // add markdown attributes lib
@@ -68,6 +71,31 @@ module.exports = async function (eleventyConfig) {
 			<div class="corner bottom right"></div>
         ${content}
         </div>`;
+    });
+
+    eleventyConfig.addPairedShortcode("gallery", function (content) {
+        return `<div id="gallery" class="pswp-gallery">
+                    ${content}
+                </div>`;
+    });
+
+    eleventyConfig.addShortcode("image", function (image) {
+        return `<div><figure class="pswp-gallery__item">
+        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" /></a>
+        </a>
+        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>${image.caption}, by <cite><a href="${image.authorLink}" target="_blank">${image.artist}</a></cite></p>
+        <p class="image-caption">${image.alt}</p></figcaption>
+        </figure></div>`;
+    });
+
+        eleventyConfig.addShortcode("imageMine", function (image) {
+        return `<div><figure class="pswp-gallery__item">
+        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" /></a>
+        </a>
+        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><cite>${image.caption}</cite></figcaption>
+        </figure></div>`;
     });
 
     // FILTERS

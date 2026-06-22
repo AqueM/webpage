@@ -84,7 +84,7 @@
 		filter: brightness(.8) contrast(1.2);
 	}
 
-	.light-mode {
+	.light-mode img {
 		filter: unset;
 	}
 }
@@ -119,8 +119,8 @@
 	border-width: 0 !important;
 }
 
-.normal-font{
-	--font-subtitle:system-ui;
+.normal-font {
+	--font-subtitle: system-ui;
 	--font-title: system-ui;
 	font-family: system-ui;
 }
