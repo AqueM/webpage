@@ -70,7 +70,8 @@ module.exports = async function (eleventyConfig) {
         </div>`;
     });
 
-    // https://stefanbohacek.com/blog/making-a-free-image-gallery-with-neocities-org/
+    // source https://www.bash.lk/posts/tech/1-elventy-image-gallery/
+    
     const sharp = require('sharp');
     const Image = require('@11ty/eleventy-img');
 
