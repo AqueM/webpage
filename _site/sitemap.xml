@@ -66,15 +66,6 @@
     
        
         <url>
-            <loc>http://www.aque.fyi/collections/commissions/</loc>
-            <lastmod>2026-06-18T22:48:56.050Z</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-    
-       
-        <url>
             <loc>http://www.aque.fyi/collections/shinies/</loc>
             <lastmod>2026-06-18T22:48:56.050Z</lastmod>
             <changefreq>yearly</changefreq>
@@ -247,9 +238,18 @@
        
         <url>
             <loc>http://www.aque.fyi/</loc>
-            <lastmod>2026-06-20T10:06:20.126Z</lastmod>
+            <lastmod>2026-06-20T23:42:10.767Z</lastmod>
             <changefreq>always</changefreq>
             <priority>0.8</priority>
+        </url>
+        
+    
+       
+        <url>
+            <loc>http://www.aque.fyi/collections/commissions/</loc>
+            <lastmod>2026-06-22T17:12:22.360Z</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.5</priority>
         </url>
         
     
