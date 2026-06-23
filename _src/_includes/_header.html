@@ -19,24 +19,10 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="accessibility-btns">
-			<label class="switch dark-toggle" data-tip="Toggle Dark mode">
-				<input type="checkbox">
-				<span class="slider slider-dark round"></span>
-			</label>
-			<label class="switch contrast-toggle" data-tip="Toggle Contrast mode">
-				<input type="checkbox" title="Contrast mode">
-				<span class="slider slider-yellow round"></span>
-			</label>
-			<label class="switch complexity-toggle" data-tip="Reduce visual complexity">
-				<input type="checkbox">
-				<span class="slider round"></span>
-			</label>
-			<label class="switch font-toggle" data-tip="Disable special fonts">
-				<input type="checkbox">
-				<span class="slider round"></span>
-			</label>
+			{% include "_toggles.html" %}
+			{% if page.data.print %} test {% include "_print.html" %}{% endif %}
 		</div>
-		{% if page.data.print %} test {% include "_print.html" %}{% endif %}
 	</div>
 </header>

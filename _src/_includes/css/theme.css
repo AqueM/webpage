@@ -23,7 +23,7 @@ body {
 
 	/* fonts */
 	--font1:"Viaoda Libre";
-	--font2:"Poiret";
+	--font2: "Poiret One";
 
 	/* gradients */
 	--gradient-left: linear-gradient(to right, var(--element-accent) 10%, var(--color-transparent));

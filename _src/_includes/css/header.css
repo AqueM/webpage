@@ -4,14 +4,23 @@
 	padding: 1%;
 }
 
+#hero-content {
+	display: flex;
+}
+
 #hero-body {
 	min-height: 0;
 	z-index: 2;
 	margin: unset;
 	display: flex;
-	flex-direction: row;
 	position: relative;
+	justify-content: space-between;
 	z-index: 3;
+	flex-direction: column;
+
+	@media only screen and (min-width: 800px) {
+		flex-direction: row;
+	}
 }
 
 .logo {
@@ -27,5 +36,12 @@
 	display: flex;
 	flex-direction: row;
 	align-self: end;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
+	z-index: 3;
+	gap: 0.1rem;
+	justify-content: baseline;
+}
+
+.accessibility-btns span {
+	display: inline;
 }
