@@ -1,22 +1,12 @@
 [
   {
-    "src": "/assets/images/commissions/OCs/LiZheng_sinnamonaleks.webp",
-    "width": 979,
-    "height": 766,
-    "title": "Li Zheng Zhi",
-    "alt": "TBD",
-    "caption": "a gift; author and date hard to pinpoint - it's from before I started organizing art I got from others, but probably circa 2016",
-    "artist": "SinnamonAlex",
-    "authorLink": "https://sinnamonaleks.carrd.co/"
-  },
-  {
     "src": "/assets/images/commissions/OCs/LiZheng_piltoverjayce.webp",
     "width": 1280,
     "height": 1280,
     "title": "Li Zheng Zhi",
     "alt": "TBD",
-    "caption": "a gift; author and date hard to pinpoint - it's from before I started organizing art I got from others, but probably circa 2016",
-    "artist": "tumblr ask-blog by the name PiltoverJayce, now deleted",
+    "caption": "a gift; author and date hard to pinpoint - it's from before I started organizing art I got from others, but probably circa 2016,",
+    "artist": "tumblr ask-blog by the name AskPiltoverJayce",
     "authorLink": "https://legacyofheart-blog.tumblr.com/post/142286485744/askpiltoverjayce-legacyofheart-drawn-for"
   },
   {
@@ -39,14 +29,24 @@
     "artist": "Steex",
     "authorLink": "https://steexosaurus.tumblr.com/"
   },
-    {
+  {
+    "src": "/assets/images/commissions/OCs/LiZheng_sinna.webp",
+    "width": 979,
+    "height": 766,
+    "title": "Li Zheng Zhi",
+    "alt": "TBD",
+    "caption": "2020",
+    "artist": "Sinna",
+    "authorLink": "https://www.tiktok.com/@sinnamoonbvn"
+  },
+  {
     "src": "/assets/images/commissions/OCs/erikun_cieplutko.webp",
     "width": 1061,
     "height": 857,
     "title": "Erikun",
     "alt": "TBD",
     "caption": "2020",
-    "artist": "maurycy",
+    "artist": "maurycy, author's socials are deleted, last known",
     "authorLink": "https://jejciu.tumblr.com/"
   },
   {
@@ -59,13 +59,13 @@
     "artist": "Hyacinth Tsao",
     "authorLink": "https://www.pixiv.net/en/users/62671666"
   },
-    {
+  {
     "src": "/assets/images/commissions/OCs/senna_miyaarte.webp",
     "width": 1135,
     "height": 1637,
     "title": "Senna de Samantha",
     "alt": "TBD",
-    "caption": "2024",
+    "caption": "2023",
     "artist": "Miya",
     "authorLink": "https://www.tumblr.com/gotham-gargoyle"
   }
