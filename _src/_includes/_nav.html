@@ -5,12 +5,10 @@
 	<div class="corner bottom left"></div>
 	<div class="corner bottom right"></div>
 	<div class="navigation">
-		{% heading "h2", "Menu" %}
 		{% include "_menu.html" %}
 		<div class="sidebar">
 			{%- assign date = page.date | readableMonth -%}
-			{%- assign subtitle = "Last updated: <strong>" | append: date | append:
-				"</strong>"-%}
+			{%- assign subtitle = "Last updated: <strong>" | append: date | append: "</strong>"-%}
 			{% heading "h3", "Updates", subtitle %}
 			<ul class="logs">
 				{%- for element in nav.changelog -%}

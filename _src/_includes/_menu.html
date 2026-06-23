@@ -1,10 +1,4 @@
 <div class="sidebar menu">
-    <div>
-    {% capture pageTags %}{{tags}}{% endcapture %}
-        <ul class="noformat menu-list">
-            <li><a class="menu-item{% if pageTags=='home' %} active-link{% endif %}" href="/">Home</a></li>
-        </ul>
-    </div>
     {%- for category in nav.categories -%}
     <details class="noformat{% if pageTags == category.name %} open{% endif %}" {% if pageTags==category.name %} open{%
         endif %}>

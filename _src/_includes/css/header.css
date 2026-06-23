@@ -23,6 +23,10 @@
 	}
 }
 
+#hero-body a {
+	background-color: unset;
+}
+
 .logo {
 	display: flex;
 	flex-direction: row;
@@ -43,4 +47,10 @@
 
 .accessibility-btns span {
 	display: inline;
+}
+
+#hero-body .subtitle {
+	flex-direction: column;
+	gap: unset;
+
 }

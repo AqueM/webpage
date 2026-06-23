@@ -1,4 +1,4 @@
-#gallery {
+.gallery {
   display: grid;
   gap: 1rem 1rem;
   justify-content: center;
@@ -6,12 +6,12 @@
   grid-template-columns: repeat(auto-fill, minmax(10rem, min-content));
 }
 
-#gallery div {
+.gallery div {
   margin: 0;
   padding: 0;
 }
 
-#gallery img {
+.gallery img {
   width: 100%;
   height: 15rem;
   object-fit: cover;
@@ -20,10 +20,10 @@
   cursor: pointer;
 }
 
-#gallery figure {
+.gallery figure {
   margin: 0;
 }
 
-#gallery img:hover {
+.gallery img:hover {
   transform: scale(1.2);
 }

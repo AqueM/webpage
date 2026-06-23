@@ -74,7 +74,7 @@ module.exports = async function (eleventyConfig) {
     });
 
     eleventyConfig.addPairedShortcode("gallery", function (content) {
-        return `<div id="gallery" class="pswp-gallery">
+        return `<div class="gallery pswp-gallery">
                     ${content}
                 </div>`;
     });
