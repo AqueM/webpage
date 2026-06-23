@@ -39,7 +39,6 @@
 	flex-wrap: wrap;
 	z-index: 3;
 	gap: 0.1rem;
-	justify-content: baseline;
 }
 
 .accessibility-btns span {
