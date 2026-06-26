@@ -1,9 +1,8 @@
 nav {
-	flex-basis: 20vw;
+	flex-basis: 10vw;
 	background-color: var(--element-primary);
 	border-radius: var(--border-radius);
 	z-index: 3;
-	min-width: fit-content;
 	max-height: 4rem;
 	transform-style: preserve-3d;
 
@@ -167,8 +166,7 @@ nav details[open] summary::after {
 }
 
 .logs {
-	max-width: 90%;
 	font-size: small;
-	line-height: 1rem;
+	line-height: 1.2rem !important;
 	padding-inline-start: 1rem;
 }
