@@ -30,7 +30,7 @@
 
 #header-logo-image {
 	transform: scaleX(-1);
-	max-width: 15vh;
+	max-width: 10vw;
 	display: none;
 
 	@media only screen and (min-width: 600px) {
