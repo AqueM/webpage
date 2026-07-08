@@ -64,22 +64,22 @@
 .accessibility-btns {
 	background-color: var(--element-accent-transparent);
 	border-radius: var(--border-radius);
-	padding: 0.5rem;
+	flex-basis: 18vw;
 	display: flex;
 	flex-direction: column;
 	align-self: end;
 	flex-wrap: wrap;
 	z-index: 3;
 	gap: 0.1rem;
-	justify-content: center;
-	align-self: center;
+	justify-content: top;
+	align-self: flex-start;
 }
 
 .toggles {
 	display: grid;
 	gap: 0.2rem 0.1rem;
 	grid-template-columns: 1fr 1fr;
-	min-width: max-content;
+
 }
 
 .toggle {
@@ -92,10 +92,23 @@
 	padding: 0.25rem;
 }
 
+.accessibility-btns details {
+	border: none;
+	padding: 0.25rem;
+	min-width: max-content;
+}
+
+.accessibility-btns summary {
+	background-color: var(--element-accent-transparent);
+	padding: 0.5rem;
+}
+
+.accessibility-btns summary,
 .accessibility-btns span {
 	text-transform: uppercase;
 	font-size: 1rem;
 	word-spacing: 0.25rem;
+	min-width: max-content;
 }
 
 .toggle span {
