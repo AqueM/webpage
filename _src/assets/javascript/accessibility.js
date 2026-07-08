@@ -4,8 +4,9 @@ const btnComplex = document.querySelector("#complexity-toggle");
 const btnFonts = document.querySelector("#font-toggle");
 const btnAnimation = document.querySelector("#animation-toggle");
 const btnDyslexia = document.querySelector("#dyslexia-toggle");
+const btnFontSize = document.querySelector("#fontsize-toggle");
 
-const cookies = { 'darkmode': [btnDark, 'data-theme'], 'contrast': [btnContrast, 'high-contrast'], 'motion': [btnAnimation, 'motion'], 'complexity': [btnComplex, 'complexity'], 'special-fonts': [btnFonts, 'special-font'], 'dyslexia': [btnDyslexia, 'dyslexic-font'] };
+const cookies = { 'darkmode': [btnDark, 'data-theme'], 'contrast': [btnContrast, 'high-contrast'], 'motion': [btnAnimation, 'motion'], 'complexity': [btnComplex, 'complexity'], 'special-fonts': [btnFonts, 'special-font'], 'dyslexia': [btnDyslexia, 'dyslexic-font'], 'bigger-text': [btnFontSize, 'large-font']  };
 const systemPreferences = { 'darkmode': '(prefers-color-scheme: dark)', 'contrast': '(prefers-contrast: high)', 'motion': '(prefers-reduced-motion: reduce)' };
 const defaultOn = ['motion', 'complexity', 'special-fonts'];
 
@@ -113,4 +114,7 @@ btnAnimation.addEventListener("change", function () {
 });
 btnDyslexia.addEventListener("change", function () {
     handleSimpleToggleChange('dyslexia');
+});
+btnFontSize.addEventListener("change", function () {
+    handleSimpleToggleChange('bigger-text');
 });

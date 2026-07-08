@@ -86,7 +86,7 @@
 	display: none !important;
 }
 
-.hide-toggle{
+.hide-toggle {
 	display: none !important;
 }
 
@@ -104,4 +104,12 @@
 	font-family: var(--dyslexic-font);
 	--font-title: var(--dyslexic-font);
 	--font-subtitle: var(--dyslexic-font);
+}
+
+.large-font {
+	font-size: larger;
+}
+
+.accessability {
+	font-family: system-ui;
 }
