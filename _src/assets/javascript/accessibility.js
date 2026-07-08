@@ -34,9 +34,7 @@ function setTheme(isDark) {
 
     document.documentElement.removeAttribute('data-theme');
     darkModeIcons.forEach(element => {
-        console.log(element)
         element.classList.toggle("hide-toggle");
-        console.log(element)
     });
     if (isDark) {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -94,7 +92,6 @@ btnComplex.addEventListener("change", function () {
     });
 
     if (!currentStatus) {
-        console.log(currentStatus);
         document.body.removeAttribute("style");
     } else {
         document.body.style.cssText = "background-image: none";

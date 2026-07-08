@@ -95,13 +95,14 @@
 }
 
 .special-font {
-	font-family: unset;
-	--font-title: var(--font1);
-	--font-subtitle: var(--font2);
+	font-family: var(--base-font);
+	--font-title: var(--font-base-title);
+	--font-subtitle: var(--font-base-subtitle);
 }
 
 .dyslexic-font {
-	font-family: var(--dyslexic-font);
+	font-family: var(--acceessible-font);
+	--acceessible-font: var(--dyslexic-font);
 	--font-title: var(--dyslexic-font);
 	--font-subtitle: var(--dyslexic-font);
 }
@@ -111,5 +112,5 @@
 }
 
 .accessability {
-	font-family: system-ui;
+	font-family: var(--acceessible-font);
 }

@@ -104,7 +104,7 @@ input:focus+#slider-dark {
 
 
 [data-tip] {
-  font-family: system-ui;
+  font-family:  var(--acceessible-font);
   position: relative;
 }
 
