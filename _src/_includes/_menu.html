@@ -3,9 +3,8 @@
     <details class="noformat{% if pageTags == category.name %} open{% endif %}" {% if pageTags==category.name %} open{%
         endif %}>
         <summary class="noformat">
-            <h4 class="menu-label{% if pageTags == category.name %} open-category{% endif %}"><span class="icon"><i
-                        class="{{category.icon}}"></i></span><span class="category-name">{{category.name}}</span>
-            </h4>
+            <div class="menu-label{% if pageTags == category.name %} open-category{% endif %}"><span class="icon" style="background-image: url('/assets/images/layout/font-awesome/{{category.icon}}.svg');"></span><span class="category-name">{{category.name}}</span>
+            </div>
         </summary>
         <ul class="noformat menu-list">
             {%- assign links = collections[category.name] | order -%}

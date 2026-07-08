@@ -29,9 +29,11 @@ a:not(.noformat) {
 }
 
 a:not(.noformat)[target="_blank"]::after {
-	content: "⭧";
+	content: url('/assets/images/layout/font-awesome/arrow-up-right-from-square-solid-full.svg');
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 0.8em;
 	margin-left: 0.3rem;
-	text-decoration: none;
 }
 
 .icon:not(.noformat) {
@@ -57,4 +59,3 @@ summary:not(.noformat) {
 	margin-bottom: 1%;
 	background-color: var(--element-accent);
 }
-

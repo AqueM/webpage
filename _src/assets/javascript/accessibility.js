@@ -1,87 +1,107 @@
-const btnDark = document.querySelector(".dark-toggle");
-const btnContrast = document.querySelector(".contrast-toggle");
-const btnComplex = document.querySelector(".complexity-toggle");
-const btnFont = document.querySelector(".font-toggle");
+const btnDark = document.querySelector("#dark-toggle");
+const btnContrast = document.querySelector("#contrast-toggle");
+const btnComplex = document.querySelector("#complexity-toggle");
+const btnFonts = document.querySelector("#font-toggle");
+const iconMoon = document.querySelector("#moon");
+const iconSun = document.querySelector("#sun");
+const btnAnimation = document.querySelector("#animation-toggle");
 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const prefersHighContrast = window.matchMedia("(prefers-contrast: high)").matches;
+const cookies = { 'darkmode': [btnDark, 'data-theme'], 'contrast': [btnContrast, 'high-contrast'], 'motion': [btnAnimation, 'motion'], 'complexity': [btnComplex, 'complexity'], 'special-fonts': [btnFonts, 'special-font'] };
+const systemPreferences = { 'darkmode': '(prefers-color-scheme: dark)', 'contrast': '(prefers-contrast: high)', 'motion': '(prefers-reduced-motion: reduce)' };
+const defaultOn = ['motion', 'complexity', 'special-fonts'];
 
-document.addEventListener("DOMContentLoaded", function () {
-    if (prefersDarkScheme) {
-        btnDark.querySelector('input').checked = true;
-    }
-    if (prefersHighContrast) {
-        btnContrast.querySelector('input').checked = true;
-    }
-});
-
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-    document.body.classList.add("dark-theme");
+function saveSettingPreference(cookieName) {
+    localStorage.setItem(cookieName, cookies[cookieName][0].querySelector('input').checked);
 }
 
-// btn.addEventListener("click", function () {
-//   document.body.classList.toggle("dark-theme");
+function loadPreference(cookieName) {
+    const savedPreference = localStorage.getItem(cookieName);
 
-//   let theme = "light";
-//   if (document.body.classList.contains("dark-theme")) {
-//     theme = "dark";
-//   }
-//   localStorage.setItem("theme", theme);
-// });
-
-
-btnDark.addEventListener("change", function () {
-    let elementsToHide = [...document.getElementsByClassName("moon"), ...document.getElementsByClassName("sun")];
-    // If the OS is set to dark mode...
-    if (prefersDarkScheme) {
-        // ...then apply the .light-theme class to override those styles
-        document.body.classList.toggle("light-mode");
-        document.documentElement.classList.toggle("light-mode");
-        // Otherwise...
+    if (savedPreference != undefined) {
+        cookies[cookieName][0].querySelector('input').checked = savedPreference // Apply the saved setting
+    } else if (systemPreferences[cookieName] != undefined) { //if no setting, check if eligible for system preferences
+        if (window.matchMedia(matchMedia) === true) { //if system preference is true, apply
+            cookies[cookieName][0].querySelector('input').checked = true;
+        }
     } else {
-        // ...apply the .dark-theme class to override the default light styles
-        document.body.classList.toggle("dark-mode");
-        document.documentElement.classList.toggle("dark-mode");
-    };
-
-    for (const element of elementsToHide) {
-        element.classList.toggle("hide");
+        defaultOn.forEach(defaultCookie => {
+            cookies[defaultCookie][0].querySelector('input').checked = true;
+        });
     }
-});
-
-btnContrast.addEventListener("change", function () {
-    // If the OS is set to dark mode...
-    if (prefersHighContrast) {
-        // ...then apply the .light-theme class to override those styles
-        document.body.classList.toggle("normal-contrast");
-        document.documentElement.classList.toggle("normal-contrast");
-        // Otherwise...
+    if (cookieName === 'darkmode') {
+        setTheme(cookies[cookieName][0].querySelector('input').checked)
     } else {
-        // ...apply the .dark-theme class to override the default light styles
-        document.body.classList.toggle("contrast");
-        document.documentElement.classList.toggle("contrast");
-    };
+        setPreference(cookieName);
+    }
+};
+
+function setTheme(isDark) {
+    // Clear all custom classes and attributes
+    document.documentElement.removeAttribute('data-theme');
+    iconSun.classList.remove("hide");
+    iconMoon.classList.add("hide");
+    if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        iconSun.classList.add("hide");
+        iconMoon.classList.remove("hide");
+    }
+};
+
+function setPreference(cookieName) {
+    document.documentElement.classList.remove(cookies[cookieName][1]);
+    if (cookies[cookieName][0].querySelector('input').checked) {
+        document.documentElement.classList.add(cookies[cookieName][1]);
+    }
+};
+
+function handleToggleChange(cookieName) {
+    setPreference(cookieName);
+    saveSettingPreference(cookieName);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    Object.keys(cookies).forEach((key) => {
+        loadPreference(key);
+    });
 });
 
+btnDark.addEventListener('change', () => {
+    setTheme(btnDark.querySelector('input').checked);
+    saveSettingPreference('darkmode');
+});
+btnContrast.addEventListener('change', () => {
+    handleToggleChange('contrast');
+});
+btnFonts.addEventListener("change", function () {
+    handleToggleChange('special-fonts');
+});
 btnComplex.addEventListener("change", function () {
+    handleToggleChange('complexity');
     let elementsToHide = [...document.getElementsByClassName("corner"), ...document.getElementsByClassName("side"), ...document.getElementsByClassName("icon"), ...document.getElementsByClassName("layout-image")];
     for (const element of elementsToHide) {
         element.classList.toggle("hide");
+    }
+    let elementsToOverride = [...document.getElementsByClassName("darkmode-icon")]
+    for (const element of elementsToOverride) {
+        element.classList.toggle("hide-override");
     }
 
     let elementsToChange = document.getElementsByClassName("disclaimer");
     for (const element of elementsToChange) {
         element.classList.toggle("reduce-complexity");
     }
-    if (document.body.getAttribute("style") !== 'null') {
-        document.body.setAttribute("style", "background-image: none");
-    } else {
-        document.body.removeAttribute("style");
-    }
+    document.body.removeAttribute("style");
+    document.body.setAttribute("style", "background-image: none");
 });
-
-btnFont.addEventListener("change", function () {
-    document.body.classList.toggle("normal-font");
-    document.documentElement.classList.toggle("normal-font");
+btnAnimation.addEventListener("change", function () {
+    handleToggleChange('motion');
+    let imgAnimated = [...document.getElementsByClassName("animated")];
+    for (const element of imgAnimated) {
+        var ogSrc = element.getAttribute("src")
+        if (localStorage.getItem("motion")) {
+            element.setAttribute("src", ogSrc.split(".")[0] + "_static." + ogSrc.split(".")[1]);
+        } else {
+            element.setAttribute("src", ogSrc.replace("_static", ""));
+        }
+    }
 });

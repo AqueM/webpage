@@ -1,5 +1,12 @@
 /* general use */
 
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: baseline;
+}
+
 .clickable-image {
 	cursor: pointer;
 	transition: 0.3s;
@@ -65,6 +72,7 @@
 
 .footer-badges img {
 	max-width: 20vw !important;
+	animation-play-state: paused;
 
 	@media only screen and (min-width: 600px) {
 		max-width: 88px !important;

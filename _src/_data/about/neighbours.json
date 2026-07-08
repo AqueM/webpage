@@ -1,12 +1,17 @@
 ﻿[
   {
-    "img": "https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif",
+    "img": "/assets/images/neighbours/petrapixel.gif",
     "url": "https://petrapixel.neocities.org/",
-    "alt": "petrapixel"
+    "alt": "petrapixel button"
   },
     {
     "img": "/assets/images/neighbours/shen-88x31-ritual-green.gif",
     "url": "https://worldwideshen.neocities.org/",
-    "alt": "shen's world"
+    "alt": "shen's world button"
+  },
+    {
+    "img": "/assets/images/neighbours/snailstown.gif",
+    "url": "https://snails.town/",
+    "alt": "snails town button"
   }
 ]

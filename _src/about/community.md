@@ -19,5 +19,5 @@ order: 3
 
 {% heading "h2", "neighbours", "cool websites from non-corporate web" %}
 {% columns %}{%- for badge in about.neighbours -%}
-    <div><a href="{{badge.url}}" target="_blank"><img src="{{badge.img}}" alt="{{badge.alt}}"></a>
+    <div><a href="{{badge.url}}" target="_blank"><img class="animated" src="{{badge.img}}" alt="{{badge.alt}}"></a>
     </div>{%- endfor %}{% endcolumns %}

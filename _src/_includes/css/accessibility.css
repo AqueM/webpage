@@ -27,100 +27,76 @@
 	transition-delay: 0.3s;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-	* {
-		/* Very short durations means JavaScript that relies on events still works */
-		animation-duration: 0.001ms !important;
-		animation-iteration-count: 1 !important;
-		transition-duration: 0.001ms !important;
+.motion {
+	/* Very short durations means JavaScript that relies on events still works */
+	animation-duration: unset;
+	animation-iteration-count: unset;
+	transition-duration: unset;
+}
+
+/* Light Mode */
+[data-theme="light"] {
+	color-scheme: light;
+
+	img {
+		filter: unset;
+	}
+
+	a:not(.noformat)[target="_blank"]::after,
+	.icon {
+		filter: unset;
 	}
 }
 
-@media (prefers-contrast: high) {
+/* Dark Mode */
+[data-theme="dark"] {
+	color-scheme: dark;
 
-	:root,
-	html,
-	body {
-		--font-color: var(--color-darkest);
-		--element-dark: var(--color-darkest);
-		--element-primary: var(--color-contrast);
-		--element-secondrary: var(--color-contrast);
-		--element-accent: var(--color-contrast);
+	img {
+		filter: brightness(.8) contrast(1.2);
+	}
+
+	a:not(.noformat)[target="_blank"]::after,
+	.icon {
+		filter: invert(1);
 	}
 }
 
-.contrast {
+.high-contrast {
 	--font-color: var(--color-darkest) !important;
 	--element-dark: var(--color-darkest) !important;
 	--element-light: var(--color-darkest) !important;
 	--element-primary: var(--color-contrast) !important;
 	--element-secondrary: var(--color-contrast) !important;
 	--element-accent: var(--color-contrast) !important;
-}
-
-.normal-contrast {
-	--font-color: var(--color-dark);
-	--element-light: var(--color-light);
-	--element-dark: var(--color-dark);
-	--element-primary: var(--color-primary);
-	--element-secondrary: var(--color-secondrary);
-	--element-accent: var(--color-accent);
-}
-
-@media screen and (prefers-color-scheme: dark) {
-
-	:root,
-	html,
-	body {
-		--font-color: var(--color-lightest);
-		--element-light: var(--color-darkest);
-		--element-dark: var(--color-lightest);
-		--element-primary: var(--color-darkest);
-		--element-secondrary: var(--color-middle);
-		--element-accent: var(--color-middle);
-	}
 
 	img {
-		filter: brightness(.8) contrast(1.2);
-	}
-
-	.light-mode img {
 		filter: unset;
 	}
-}
 
-.light-mode {
-	--font-color: var(--color-dark);
-	--element-light: var(--color-light);
-	--element-dark: var(--color-dark);
-	--element-primary: var(--color-primary);
-	--element-secondrary: var(--color-secondrary);
-	--element-accent: var(--color-accent);
-}
+	.icon {
+		filter: unset;
+	}
 
-.dark-mode {
-	--font-color: var(--color-lightest);
-	--element-light: var(--color-darkest);
-	--element-dark: var(--color-lightest);
-	--element-primary: var(--color-darkest);
-	--element-secondrary: var(--color-middle);
-	--element-accent: var(--color-middle);
-}
-
-.dark-mode img {
-	filter: brightness(.8) contrast(1.2);
+	a:not(.noformat)[target="_blank"]::after {
+		filter: unset;
+	}
 }
 
 .hide {
 	display: none !important;
 }
 
-.reduce-complexity {
+.hide-override {
+	display: none !important;
+}
+
+.complexity {
 	border-width: 0 !important;
 }
 
-.normal-font {
-	--font-subtitle: system-ui;
-	--font-title: system-ui;
-	font-family: system-ui;
+.special-font {
+	font-family: unset;
+	--font-title: var(--font1);
+	--font-subtitle: var(--font2);
 }

@@ -97,35 +97,4 @@ module.exports = async function (eleventyConfig) {
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><cite>${image.caption}</cite></figcaption>
         </figure></div>`;
     });
-
-    // FILTERS
-
-    // date filters
-    const options = {
-        year: 'numeric', month: 'numeric', day: 'numeric',
-        hour: undefined,
-        minute: undefined,
-        second: undefined,
-    };
-    const optionsMonth = {
-        year: 'numeric', month: 'numeric', day: undefined,
-        hour: undefined,
-        minute: undefined,
-        second: undefined,
-    };
-    const optionsYear = {
-        year: 'numeric', month: undefined, day: undefined,
-        hour: undefined,
-        minute: undefined,
-        second: undefined,
-    };
-    eleventyConfig.addFilter("readableDate", dateObj => {
-        return dateObj.toLocaleString("en-GB", options)
-    });
-    eleventyConfig.addFilter("readableMonth", dateObj => {
-        return dateObj.toLocaleString("en-GB", optionsMonth)
-    });
-    eleventyConfig.addFilter("readableYear", dateObj => {
-        return dateObj.toLocaleString("en-GB", optionsYear)
-    });
 }

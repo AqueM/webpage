@@ -1,7 +1,7 @@
 ---
 layout: _page.html
 tags: about
-displayName: Other Platforms
+displayName: Outlinks
 order: 2
 priority: 0.7
 ---

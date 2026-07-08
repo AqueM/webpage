@@ -19,7 +19,7 @@ It's a community tradition, to show your "pocket dump" to inspire others or shar
 
 Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/)
 
-{%- assign date = page.date | readableMonth -%}
+{%- assign date = page.date | date: "%m/%Y" -%}
 {%- assign subtitle = "Last updated: <strong>" | append: date | append:
     "</strong>"-%}
 {% heading "h2", "Current EDC", subtitle %}

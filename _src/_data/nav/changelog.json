@@ -1,22 +1,22 @@
 [
+        {
+        "date": "08/07/2026",
+        "log": "added labels to accessibility toggles, added motion reduction, added cookies to save settings!"
+    },
     {
-        "date": "23/06/2022",
+        "date": "23/06/2026",
         "log": "added gallery code, all of my archived commissions and links to artists"
     },
     {
-        "date": "21/06/2022",
+        "date": "21/06/2026",
         "log": "functional accessibility toggles"
     },
     {
-        "date": "19/06/2022",
+        "date": "19/06/2026",
         "log": "functional mobile menu!"
     },
     {
         "date": "17/06/2026",
         "log": "added content to Technology pages"
-    },
-    {
-        "date": "15/06/2026",
-        "log": "ported to Eleventy!"
     }
 ]

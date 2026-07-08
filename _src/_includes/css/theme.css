@@ -1,12 +1,11 @@
-:root, html,
-body {
+:root {
 	/* vars */
 	--border-radius: 1rem;
 	--transparency: 60%;
 
 	/* colors */
 	--color-light: #dafbd5;
-	--color-dark: rgb(28, 74, 29);
+	--color-dark: #1C4A1D;
 	--color-primary: #c6f9be;
 	--color-secondrary: #96d98c;
 	--color-accent: #FFE6FF;
@@ -16,14 +15,15 @@ body {
 	--color-transparent: transparent;
 
 	/* accessibility colors */
-	--color-darkest: #121212;
+	--color-darkest: #0f2810;
 	--color-lightest: #fcf9f5;
-	--color-middle: #323335;
+	--color-middle: #643f4f;
 	--color-contrast: #FFD700;
 
 	/* fonts */
-	--font1:"Viaoda Libre";
+	--font1: "Viaoda Libre";
 	--font2: "Poiret One";
+	--default-font: system-ui;
 
 	/* gradients */
 	--gradient-left: linear-gradient(to right, var(--element-accent) 10%, var(--color-transparent));
@@ -33,16 +33,16 @@ body {
 	--gradient-sun: linear-gradient(320deg, var(--color-transparent) 90%, var(--color-yellow) 100%);
 
 	/* setup */
-	--font-color: var(--color-dark);
-	--border-color: var(--color-dark);
-	--fancy-border-color: var(--element-dark);
-	--button-hover: var(--element-secondrary);
-	--element-light: var(--color-light);
-	--element-dark: var(--color-dark);
-	--element-primary: var(--color-primary);
-	--element-secondrary: var(--color-secondrary);
-	--element-accent: var(--color-accent);
+	--font-color: light-dark(var(--color-dark), var(--color-lightest));
+	--border-color: light-dark(var(--color-dark), var(--color-lightest));
+	--button-hover: light-dark(var(--color-secondrary), var(--color-middle));
+	--element-light: light-dark(var(--color-light), var(--color-darkest));
+	--element-dark: light-dark(var(--color-darkest), var(--color-lightest));
+	--element-primary: light-dark(var(--color-primary), var(--color-darkest));
+	--element-secondrary: light-dark(var(--color-secondrary), var(--color-middle));
+	--element-accent: light-dark(var(--color-accent), var(--color-middle));
 	color: var(--font-color);
+	--fancy-border-color: var(--element-dark);
 
 	--element-primary-transparent: color-mix(in srgb, var(--element-primary) var(--transparency), transparent);
 	--element-secondrary-transparent: color-mix(in srgb, var(--element-secondrary) var(--transparency), transparent);
@@ -50,6 +50,12 @@ body {
 	--element-light-transparent: color-mix(in srgb, var(--element-light) var(--transparency), transparent);
 	--element-blue-transparent: color-mix(in srgb, var(--color-blue) 50%, transparent);
 
-	--font-title: var(--font1);
-	--font-subtitle: var(--font2);
+	font-family: var(--default-font);
+	--font-title: var(--default-font);
+	--font-subtitle: var(--default-font);
+
+	/* Very short durations means JavaScript that relies on events still works */
+	animation-duration: 0.001ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.001ms !important;
 }

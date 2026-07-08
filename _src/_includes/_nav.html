@@ -7,13 +7,14 @@
 	<div class="navigation">
 		{% include "_menu.html" %}
 		<div class="sidebar">
-			{%- assign date = page.date | readableMonth -%}
+
+			{%- assign date = "now" | date: "%m/%Y" -%}
 			{%- assign subtitle = "Last updated: <strong>" | append: date | append: "</strong>"-%}
 			{% heading "h3", "Updates", subtitle %}
 			<ul class="logs">
 				{%- for element in nav.changelog -%}
 				<li>
-					<strong>{{element.date | readableDate}}</strong> - {{element.log}}
+					<strong>{{element.date | date: "%d/%m/%Y"}}</strong> - {{element.log}}
 				</li>
 				{%- endfor %}
 			</ul>

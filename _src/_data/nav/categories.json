@@ -1,26 +1,26 @@
 ﻿[
   {
     "name": "about",
-    "icon": "fas fa-address-card"
+    "icon": "address-card-solid-full"
   },
   {
     "name": "resources",
-    "icon": "fas fa-folder-open"
+    "icon": "folder-open-solid-full"
   },
   {
     "name": "creations",
-    "icon": "fas fa-file-alt"
+    "icon": "file-lines-solid-full"
   },
   {
     "name": "collections",
-    "icon": "fas fa-shapes"
+    "icon": "shapes-solid-full"
   },
   {
     "name": "technology",
-    "icon": "fas fa-layer-group"
+    "icon": "layer-group-solid-full"
   },
   {
     "name": "longer letters",
-    "icon": "fas fa-newspaper"
+    "icon": "newspaper-solid-full"
   }
 ]
