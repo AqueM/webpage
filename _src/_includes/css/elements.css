@@ -15,7 +15,10 @@
 	font-family: var(--font-title);
 	margin-top: 1%;
 	margin-bottom: 0.5%;
-	font-family: var(--font-title);
+}
+
+div.title {
+	font-size: xx-large;
 }
 
 .subtitle {
