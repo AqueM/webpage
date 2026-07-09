@@ -1,6 +1,9 @@
 ---
 layout: _gallery.html
-tags: collections
+category: collections
+tags: 
+  - nav
+  - gallery
 displayName: Commissions
 ---
 {% heading "h1", "Art I've commissioned" %}

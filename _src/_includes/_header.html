@@ -1,6 +1,4 @@
-<div id="header-layout-image"><img src="/assets/images/layout/canva-vines2.webp" class="noformat layout-image"
-		alt="header vines">
-</div>
+<div class="layout-image" id="header-layout-image"></div>
 <header id="hero-bg" class="fancy-border">
 	<div class="corner top left"></div>
 	<div class="corner top right"></div>
@@ -23,10 +21,14 @@
 			</div>
 			</a>
 		</div>
-
-		<div class="accessibility-btns accessibility">
-			{% include "_toggles.html" %}
-			{% if page.data.print %} test {% include "_print.html" %}{% endif %}
+		<div class="aside">
+			<div class="accessibility-btns accessibility">
+				{% include "_toggles.html" %}
+			</div>
+			<div id="print-btn">
+				{% include "_print.html" %}<span class="icon tooltip-icon" data-tip="better print interface - allows to remove elements before print"></span>
+			</div>
 		</div>
 	</div>
+	<div id="nav-layout-image" class="layout-image"></div>
 </header>

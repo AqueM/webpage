@@ -1,7 +1,8 @@
 ---
 date: Last Modified
+order: 100
 eleventyComputed:
-  title: "{{site.title}} {% if tags!=undefined %}| {{tags}} {% endif %}| {{displayName}}"
+  title: "{{site.title}} | {{category}} | {{displayName}}"
 ---
 <!doctype html>
 <html lang="en">
@@ -24,7 +25,6 @@ eleventyComputed:
 <body>
     <div id="page">
         {% include "_header.html" %}
-
         <!-- viewport -->
         <div id="page-contents">
 
@@ -43,9 +43,7 @@ eleventyComputed:
             <!-- main content end -->
 
         </div>
-
         {% include "_footer.html" %}
-
     </div>
 </body>
 

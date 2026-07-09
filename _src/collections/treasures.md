@@ -1,6 +1,9 @@
 ---
 layout: _page.html
-tags: collections
+category: collections
+tags: 
+  - nav
+  - gallery
 displayName: Tomb Treasures
 ---
 ## Tombs Treasures

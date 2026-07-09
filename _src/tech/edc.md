@@ -2,7 +2,9 @@
 layout: _longform.html
 date: Last Modified
 changeFreq: yearly
-tags: technology
+category: technology
+tags: 
+  - nav
 displayName: EDC
 ---
 {% heading "h1", "Everyday Carry" %}

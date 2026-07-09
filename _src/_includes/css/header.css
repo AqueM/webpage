@@ -6,13 +6,12 @@
 
 #hero-body {
 	min-height: 0;
-	z-index: 2;
 	margin: unset;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	justify-content: space-between;
-	z-index: 3;
+	z-index: 5;
 	align-items: stretch;
 	height: 100%;
 
@@ -23,7 +22,6 @@
 
 #hero-body a {
 	background-color: unset;
-	/* height: 100%; */
 }
 
 #page-header {
@@ -32,23 +30,6 @@
 	gap: 1%;
 	align-items: stretch;
 	height: inherit;
-}
-
-#page-logo {
-	width: 10vw;
-	height: 100%;
-	background-size: 10vw;
-	background-repeat: no-repeat;
-	background-image: url("/assets/images/layout/canva-frog.webp");
-	background-position: center;
-
-	@media only screen and (max-width: 800px) {
-		display: none;
-	}
-
-	@media only screen and (min-width: 1800px) {
-		background-position: unset;
-	}
 }
 
 #page-title {
@@ -64,15 +45,6 @@
 .accessibility-btns {
 	background-color: var(--element-accent-transparent);
 	border-radius: var(--border-radius);
-	flex-basis: 18vw;
-	display: flex;
-	flex-direction: column;
-	align-self: end;
-	flex-wrap: wrap;
-	z-index: 3;
-	gap: 0.1rem;
-	justify-content: top;
-	align-self: flex-start;
 }
 
 .toggles {
@@ -113,4 +85,21 @@
 
 .toggle span {
 	font-size: 0.75rem;
+}
+
+#hero-body .aside {
+	flex-basis: 20vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 3;
+	gap: 0.1rem;
+	justify-content: space-between;
+}
+
+#print-btn {
+	background-color: var(--element-accent-transparent);
+	border-radius: var(--border-radius);
+	align-self: flex-end;
+	padding: 0.25rem;
 }

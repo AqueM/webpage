@@ -1,8 +1,10 @@
 ---
 layout: _page.html
-tags: about
+category: about
+tags: 
+  - nav
 displayName: Bio
-order: 1
+order: 0
 priority: 0.7
 ---
 {% heading "h1", "Basics about Aque" %}

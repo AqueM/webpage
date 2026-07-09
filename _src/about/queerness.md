@@ -1,6 +1,10 @@
 ---
 layout: _longform.html
 displayName: My queerness
+category: about
+tags: 
+  - thoughts
+  - queer
 ---
 <div class="disclaimer">
 We are not going to debate whenever the term "queer" is a slur. Grow up.

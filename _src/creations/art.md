@@ -1,6 +1,7 @@
 ---
 layout: _page.html
-tags: creations
+category: creations
+tags: nav
 displayName: Art
 ---
 Under construction: Archive of my own arts and crafts.

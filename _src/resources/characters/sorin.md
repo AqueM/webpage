@@ -2,6 +2,7 @@
 layout: _longform
 date: Last Modified
 changeFreq: yearly
+category: resources
 tags: characters
 print: yes
 displayName: Sorin, the Indomitable Will

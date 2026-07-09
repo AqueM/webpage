@@ -1,6 +1,8 @@
 ---
 layout: _page.html
-tags: about
+category: about
+tags: 
+  - nav
 displayName: Community
 order: 3
 ---

@@ -1,6 +1,8 @@
 ---
 layout: _main.html
-tags: resources
+category: resources
+tags: nav
+order: 1
 displayName: Characters
 ---
 {% heading "h1", "Characters" %}

@@ -1,7 +1,7 @@
 ---
 layout: _page.html
-tags: "longer letters"
+category: "longer letters"
+tags: nav
 displayName: Essays
-
 ---
 Archive of my long-form non-fiction.

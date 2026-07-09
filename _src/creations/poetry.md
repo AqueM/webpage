@@ -1,6 +1,7 @@
 ---
 layout: _page.html
-tags: creations
+category: creations
+tags: nav
 displayName: Poetry
 ---
 Under construction: Archive of my poetry.

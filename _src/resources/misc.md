@@ -1,6 +1,7 @@
 ---
 layout: _page.html
-tags: resources
+category: resources
+tags: nav
 displayName: Misc
 ---
 {% heading "h1", "Miscellanous resources" %}

@@ -1,30 +1,57 @@
-.tooltip {
+/* data-tip tooltips from */
+/* https://jsfiddle.net/BumU5/3/ */
+
+[data-tip] {
+	font-family: var(--accessible-font);
 	position: relative;
-	display: inline-block;
-	cursor: default;
+	z-index: 10;
+
 }
 
-.tooltip .tooltiptext {
-	visibility: hidden;
-	padding: 0.25em 0.5em;
-	background-color: var(--color-dark);
-	color: #fff;
-	text-align: center;
-	border-radius: 0.25em;
-	white-space: nowrap;
-
-	/* Position the tooltip */
+[data-tip]:before {
+	content: '';
+	/* hides the tooltip when not hovered */
+	display: none;
+	content: '';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid var(--color-darkest);
 	position: absolute;
-	z-index: 1;
-	top: 100%;
-	left: 100%;
-	transition-property: visibility;
-	transition-delay: 0s;
+	top: 2.2rem;
+	left: 1rem;
+	z-index: 10;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
 }
 
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	transition-delay: 0.3s;
+[data-tip]:after {
+	display: none;
+	content: attr(data-tip);
+	position: absolute;
+	top: 2.5rem;
+	left: 0px;
+	padding: 0.25rem 0.5rem;
+	background: var(--color-darkest);
+	color: var(--color-lightest);
+	z-index: 10;
+	font-size: 0.75em;
+	height: fit-content;
+	width: 200%;
+	min-width: fit-content;
+	line-height: 1rem;
+	-webkit-border-radius: 0.2rem;
+	-moz-border-radius: 0.2rem;
+	border-radius: 0.2rem;
+	/* white-space: normal;
+  word-wrap: normal;
+  overflow-wrap: normal; */
+}
+
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display: block;
 }
 
 .motion {
@@ -101,8 +128,8 @@
 }
 
 .dyslexic-font {
-	font-family: var(--acceessible-font);
-	--acceessible-font: var(--dyslexic-font);
+	font-family: var(--accessible-font);
+	--accessible-font: var(--dyslexic-font);
 	--font-title: var(--dyslexic-font);
 	--font-subtitle: var(--dyslexic-font);
 }
@@ -112,5 +139,5 @@
 }
 
 .accessibility {
-	font-family: var(--acceessible-font);
+	font-family: var(--accessible-font);
 }

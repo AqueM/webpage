@@ -1,5 +1,6 @@
 ---
 layout: _longform.html
+category: resources
 tags: characters
 displayName:  Inkarra, the Guiding Star
 ---

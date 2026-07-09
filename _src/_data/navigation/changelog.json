@@ -1,5 +1,9 @@
 [
-        {
+    {
+        "date": "09/07/2026",
+        "log": "added print button, moved all layout images to CSS for accessibility, fixed navigation behaviour"
+    },
+    {
         "date": "08/07/2026",
         "log": "added labels to accessibility toggles, added motion reduction, added cookies to save settings!"
     },
@@ -14,9 +18,5 @@
     {
         "date": "19/06/2026",
         "log": "functional mobile menu!"
-    },
-    {
-        "date": "17/06/2026",
-        "log": "added content to Technology pages"
     }
 ]

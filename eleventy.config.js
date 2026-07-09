@@ -89,7 +89,7 @@ module.exports = async function (eleventyConfig) {
         </figure></div>`;
     });
 
-        eleventyConfig.addShortcode("imageMine", function (image) {
+    eleventyConfig.addShortcode("imageMine", function (image) {
         return `<div class="pswp-gallery__item"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
             <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat"/></a>
@@ -97,4 +97,5 @@ module.exports = async function (eleventyConfig) {
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><cite>${image.caption}</cite></figcaption>
         </figure></div>`;
     });
+
 }

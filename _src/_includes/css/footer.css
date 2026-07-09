@@ -1,7 +1,7 @@
 footer {
 	flex-basis: 5vh;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 }
 
 .footer {
@@ -20,21 +20,20 @@ footer {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		flex-basis: 5vh;
 	}
 }
 
 .footer-right {
 	margin-right: 1rem;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 }
 
 .footer-left {
 	flex-basis: 15vw;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	z-index: 2;
+	z-index: 3;
 
 	@media only screen and (min-width: 600px) {
 		display: flex;
@@ -42,6 +41,6 @@ footer {
 	}
 }
 
-.fancy-highlight.contact{
+.fancy-highlight.contact {
 	background-color: var(--element-accent);
 }
