@@ -72,3 +72,10 @@ section {
 	flex-direction: column;
 	gap: 1rem;
 }
+
+.stack{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items:center;
+}

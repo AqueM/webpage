@@ -19,6 +19,7 @@
 
 div.title {
 	font-size: xx-large;
+	color: var(--font-color);
 }
 
 .subtitle {
@@ -44,4 +45,8 @@ div.title {
 	padding: 0.2rem;
 	margin-bottom: 0.2rem;
 	background-color: var(--element-accent);
+}
+
+textarea {
+	width: 20vw;
 }
