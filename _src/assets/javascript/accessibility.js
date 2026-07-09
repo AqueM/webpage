@@ -84,9 +84,6 @@ btnComplex.addEventListener("change", function () {
     elementsToHide.forEach(element => {
         element.classList.toggle("hide", currentStatus);
     });
-    // elementsToOverride.forEach(element => {
-    //     element.classList.toggle("hide-override", currentStatus);
-    // });
     elementsToChange.forEach(element => {
         element.classList.toggle("reduce-complexity", currentStatus);
     });
@@ -103,7 +100,7 @@ btnAnimation.addEventListener("change", function () {
     for (const element of imgAnimated) {
         var ogSrc = element.getAttribute("src")
         if (!(localStorage.getItem("motion") === 'true')) {
-            element.setAttribute("src", ogSrc.split(".")[0] + "_static." + ogSrc.split(".")[1]);
+            element.setAttribute("src", ogSrc.slice(0, ogSrc.lastIndexOf(".")) + "_static" + ogSrc.slice(ogSrc.lastIndexOf(".")));
         } else {
             element.setAttribute("src", ogSrc.replace("_static", ""));
         }

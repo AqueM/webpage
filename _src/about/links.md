@@ -41,13 +41,13 @@ If you want to link back, you can use these buttons :) I recommend uploading the
 <div class="columns">
 	<div class="stack">
 	<span>static version</span>
-	<a href="https://aque.fyi/" target="_blank" class="noformat"><img src="https://aque.fyi/assets/images/by-aque/site-buttons/aques_pond_button_88x33_static.gif" alt="Aque's pond" class="noformat"></a>
-	<textarea class="code-textarea" rows="5" aria-label="link-back code"><a href="https://aque.fyi/" target="_blank"><img src="https://aque.fyi/assets/images/by-aque/site-buttons/aques_pond_button_88x33_static.gif" alt="Aque's pond"></a></textarea>
+	<a href="https://aque.fyi/" target="_blank" class="noformat"><img src="https://aque.fyi/assets/images/by-aque/site-buttons/aques_pond_button_88x33_static.gif" alt="Aque's pond button" title="Aque's pond" class="noformat"></a>
+	<textarea class="code-textarea" rows="5" aria-label="link-back code"><a href="https://aque.fyi/" target="_blank"><img src="https://aque.fyi/assets/images/by-aque/site-buttons/aques_pond_button_88x33_static.gif" alt="Aque's pond button" title="Aque's pond"></a></textarea>
 	</div>
 	<div class="stack">
 	<span>animated version</span>
-	<a href="https://aque.fyi/" target="_blank" class="noformat"><img src="https://aque.fyi/assets/images/by-aque/site-buttons/aques_pond_button_88x33.gif" alt="Aque's pond" class="animated noformat"></a>
-	<textarea class="code-textarea" rows="5" aria-label="link-back code"><a href="https://aque.fyi/" target="_blank"><img src="https://aque.fyi/assets/images/by-aque/site-buttons/aques_pond_button_88x33.gif" alt="Aque's pond"></a></textarea>
+	<a href="https://aque.fyi/" target="_blank" class="noformat"><img src="https://aque.fyi/assets/images/by-aque/site-buttons/aques_pond_button_88x33.gif" alt="Aque's pond button" title="Aque's pond" class="animated noformat"></a>
+	<textarea class="code-textarea" rows="5" aria-label="link-back code"><a href="https://aque.fyi/" target="_blank"><img src="https://aque.fyi/assets/images/by-aque/site-buttons/aques_pond_button_88x33.gif" alt="Aque's pond button" title="Aque's pond"></a></textarea>
 	</div>
 </div>
 
