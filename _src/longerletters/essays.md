@@ -4,4 +4,5 @@ category: "longer letters"
 tags: nav
 displayName: Essays
 ---
-Archive of my long-form non-fiction.
+{% heading "h1", "Essays" %}
+Under construction: Archive of my long-form non-fiction.

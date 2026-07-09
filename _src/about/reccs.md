@@ -5,7 +5,7 @@ tags: nav
 displayName: Recs
 order: 4
 ---
-{% heading "h2", "Recommendations" %}
+{% heading "h1", "Recommendations" %}
 
 Things I liked and probably regularly return to.
 {% columns %}

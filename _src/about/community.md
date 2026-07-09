@@ -6,7 +6,7 @@ tags:
 displayName: Community
 order: 3
 ---
-{% heading "h1", "online community" %}
+{% heading "h1", "Other people online" %}
 {% heading "h2", "Webrings", "that I am a part of" %}
 {% columns %}<div>
 <map name="noaitxtwidget">

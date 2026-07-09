@@ -6,7 +6,7 @@ tags:
   - gallery
 displayName: Tomb Treasures
 ---
-## Tombs Treasures
+{% heading "h1", "Tomb Treasures" %}
 
 WIP
 
