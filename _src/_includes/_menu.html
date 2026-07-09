@@ -1,18 +1,18 @@
 <div class="sidebar menu">
-    {%- for category in navigation.categories -%}
-    <details class="noformat{% if categories contains category.name %} open{% endif %}" {% if categories contains
-        category.name %} open{% endif %}>
+    {%- for navCat in navigation.categories -%}
+    <details class="noformat{% if category contains navCat.name %} open{% endif %}" {% if category contains
+        navCat.name %} open{% endif %}>
         <summary class="noformat">
-            <div class="menu-label{% if categories contains category.name %} open-category{% endif %}"><span
+            <div class="menu-label{% if category contains navCat.name %} open-category{% endif %}"><span
                     class="icon"
-                    style="background-image: url('/assets/images/layout/font-awesome/{{category.icon}}.svg');"></span><span
-                    class="category-name">{{category.name}}</span>
+                    style="background-image: url('/assets/images/layout/font-awesome/{{navCat.icon}}.svg');"></span><span
+                    class="category-name">{{navCat.name}}</span>
             </div>
         </summary>
         <ul class="noformat menu-list">
             {%- assign links = collections.nav | order -%}
             {%- for element in links -%}
-            {%- if element.data.category == category.name %}
+            {%- if element.data.category == navCat.name %}
             <li><a class="menu-item{% if element.url==page.url %} active-link{% endif %}"
                     href="{% if element.url %}{{ element.url }}{% else %}{{ element.data.link }}{% endif %}"
                     target="{{element.data.target}}">{{element.data.displayName}}</a></li>
