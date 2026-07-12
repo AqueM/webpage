@@ -29,7 +29,7 @@ a:not(.noformat) {
 }
 
 a:not(.noformat)[target="_blank"]::after {
-	content: url('/assets/images/layout/font-awesome/arrow-up-right-from-square-solid-full.svg');
+	content: url('/_assets/images/layout/font-awesome/arrow-up-right-from-square-solid-full.svg');
 	background-repeat: no-repeat;
 	display: inline-block;
 	width: 0.8em;

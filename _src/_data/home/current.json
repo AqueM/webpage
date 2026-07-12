@@ -1,0 +1,44 @@
+﻿[
+  {
+    "verb": "playing",
+    "items": [
+      {
+        "name": "Vintage Story",
+        "comment": "ver 1.22.3, modded"
+      },
+      {
+        "name": "League of Legends",
+        "comment": "casual ARAMs"
+      }
+    ]
+  },
+  {
+    "verb": "watching",
+    "items": [
+      {
+        "name": "Saros",
+        "type": "videogame Let's Play",
+        "author": "Galm HD",
+        "comment": ""
+      },
+      {
+        "name": "Leviathan",
+        "type": "anime"
+      },
+      {
+        "name": "Love in the Clouds",
+        "type": "chinese Drama"
+      }
+    ]
+  },
+  {
+    "verb": "reading",
+    "items": [
+      {
+        "name": "'Platform Decay'",
+        "author": "Martha Wells",
+        "comment": ""
+      }
+    ]
+  }
+]

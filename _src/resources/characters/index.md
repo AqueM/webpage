@@ -1,5 +1,5 @@
 ---
-layout: _main.html
+layout: layouts/_main.html
 category: resources
 tags: nav
 order: 1
@@ -11,7 +11,7 @@ These are characters I've designed to be used in fantasy settings as gods, spiri
 
 For free use them in non-commercial projects like fiction, worldbuilding or role-playing games.
 
-{% include "_CC-disclaimer.html" %}
+{% include "content/_CC-disclaimer.html" %}
 
 <ul class="link-list noformat">{%- for element in collections.characters -%}
     <li class="round-link">

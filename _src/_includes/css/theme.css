@@ -1,25 +1,25 @@
 
 @font-face {
 	font-family: 'im-fell';
-	src: url('/assets/fonts/IMFellEnglish-Regular.ttf');
+	src: url('/_assets/fonts/IMFellEnglish-Regular.ttf');
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'vioda-libre';
-	src: url('/assets/fonts/ViaodaLibre-Regular.ttf');
+	src: url('/_assets/fonts/ViaodaLibre-Regular.ttf');
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'poiret-one';
-	src: url('/assets/fonts/PoiretOne-Regular.ttf');
+	src: url('/_assets/fonts/PoiretOne-Regular.ttf');
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'open-dyslexic';
-	src: url('/assets/fonts/OpenDyslexic-Regular.otf');
+	src: url('/_assets/fonts/OpenDyslexic-Regular.otf');
 	font-style: normal;
 	font-weight: normal;
 }

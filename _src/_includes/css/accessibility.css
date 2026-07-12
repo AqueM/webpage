@@ -4,8 +4,6 @@
 [data-tip] {
 	font-family: var(--accessible-font);
 	position: relative;
-	z-index: 10;
-
 }
 
 [data-tip]:before {

@@ -1,5 +1,8 @@
 [
     {
+        "date": "12/07/2026",
+        "log": "updated folders and files, addes Webmastery page and homepage content, added last commission image"
+    },{
         "date": "09/07/2026",
         "log": "added print button, moved all layout images to CSS for accessibility, fixed navigation behaviour"
     },

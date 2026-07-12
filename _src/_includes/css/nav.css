@@ -164,9 +164,3 @@ nav details[open] summary::after {
 	display: none;
 	overflow: hidden;
 }
-
-.logs {
-	font-size: small;
-	line-height: 1.2rem !important;
-	padding-inline-start: 1rem;
-}

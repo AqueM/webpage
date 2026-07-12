@@ -1,5 +1,5 @@
 ---
-layout: _longform.html
+layout: layouts/_longform.html
 category: resources
 tags: nav
 displayName: Interview Questions

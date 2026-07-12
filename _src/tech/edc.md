@@ -1,5 +1,5 @@
 ---
-layout: _longform.html
+layout: layouts/_longform.html
 date: Last Modified
 changeFreq: yearly
 category: technology

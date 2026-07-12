@@ -1,5 +1,5 @@
 ---
-layout: _page.html
+layout: layouts/_page.html
 category: resources
 tags: nav
 displayName: Misc

@@ -1,10 +1,10 @@
 ---
-layout: _longform.html
+layout: layouts/_longform.html
 category: resources
 tags: characters
 displayName: Lyrebird, Kin of the Wayward
 ---
-{% include "_CC-disclaimer.html" %}
+{% include "content/_CC-disclaimer.html" %}
 {% heading "h1", "Lyrebird", "Kin of the Wayward" %}
 
 {% fancy-border %}

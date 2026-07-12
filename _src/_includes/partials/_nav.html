@@ -4,18 +4,10 @@
 	<div class="corner bottom left"></div>
 	<div class="corner bottom right"></div>
 	<div class="navigation">
-		{% include "_menu.html" %}
+		{% include "partials/_menu.html" %}
 		<div class="sidebar">
 			{%- assign date = "now" | date: "%m/%Y" -%}
-			{%- assign subtitle = "Last updated: <strong>" | append: date | append: "</strong>"-%}
-			{% heading "h3", "Updates", subtitle %}
-			<ul class="logs">
-				{%- for element in navigation.changelog -%}
-				<li>
-					<strong>{{element.date}}</strong> - {{element.log}}
-				</li>
-				{%- endfor %}
-			</ul>
+			{% heading "h4", "Last updated", date %}
 		</div>
 	</div>
 	<div class="navigation-mobile">
@@ -32,8 +24,7 @@
 				<h2>Menu</h2>
 			</div>
 		</div>
-
-		{% include "_menu.html" %}
+		{% include "partials/_menu.html" %}
 
 	</div>
 </nav>

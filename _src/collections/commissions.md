@@ -1,13 +1,16 @@
 ---
-layout: _gallery.html
+layout: layouts/_gallery.html
 category: collections
 tags: 
   - nav
   - gallery
 displayName: Commissions
 ---
-{% heading "h1", "Art I've commissioned" %}
-Click on the image to see a bigger version and details, including artist and year of purchase.
+{% heading "h1", "Art from others" %}
+
+This is a gallery of all the art I've gotten from others, including commissions, gifts and exchanges.
+
+Click on the image to see a bigger version and details, including artist and year of acquisition.
 <section>
 {% heading "h2", "DnD characters" %}
 {% gallery %}{% for item in myCollections.commissions.dnd %}{% image item %}{% endfor %}{% endgallery %}

@@ -1,12 +1,12 @@
 module.exports = async function (eleventyConfig) {
 
     // SETUP
-
-    eleventyConfig.addPassthroughCopy("_src/assets");
+eleventyConfig.addPassthroughCopy("_src/_assets");
+    eleventyConfig.addPassthroughCopy("_src/_assets");
     eleventyConfig.addPassthroughCopy("_src/robots.txt");
     eleventyConfig.addPassthroughCopy("_src/ai.txt");
     eleventyConfig.addPassthroughCopy({
-        "node_modules/photoswipe/dist": "assets/photoswipe"
+        "node_modules/photoswipe/dist": "_assets/photoswipe"
     });
     eleventyConfig.setInputDirectory("_src");
 
