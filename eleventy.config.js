@@ -49,6 +49,11 @@ module.exports = async function (eleventyConfig) {
         ${content}
         </section>`;
     });
+        eleventyConfig.addPairedShortcode("columns-wrap", function (content) {
+        return `<section class="columns wrap">
+        ${content}
+        </section>`;
+    });
     eleventyConfig.addPairedShortcode("column", function (content) {
         return `<div class="column">
         ${content}

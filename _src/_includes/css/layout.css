@@ -59,6 +59,14 @@ section {
 	flex-grow: 1;
 }
 
+.wrap {
+	flex-wrap: wrap;
+}
+
+.wrap .item {
+	margin-bottom: 1rem;
+}
+
 .column-side {
 	flex-shrink: 1;
 }
@@ -73,7 +81,7 @@ section {
 	gap: 1rem;
 }
 
-.stack{
+.stack {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
