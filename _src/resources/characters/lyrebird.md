@@ -20,6 +20,7 @@ Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, tro
 	- **plants:** grapes, wheat, roses
 
 {% heading "h2", "Summary" %}
+
 Lyrebird is a shapeshifting deity that protects those that are renounced by others. They claim everyone that wishes for their patronage and provide for anyone that doesn’t feel at home anywhere.
 
 Other than that, Lyrebird isn’t interested much in mortal affairs, and mortals outside of their sphere of influence aren’t usually interested in Lyrebird, either. 
@@ -50,8 +51,8 @@ However, one would be hard-pressed to find a lawful deity being particularly fon
 
 ### Followers
 There are no organised cults worshipping Lyrebird, though many groups have them as their main — or even only — patron. This is because Lyrebird poses themselves as more of a familial figure, like a sibling or a parent, rather than someone to be revered. They aim to be a friend and a protector of their people instead of their leader. So, though Lyrebird would not abandon people just because they want to worship them as a “proper” deity, they certainly favour groups who have a more close and personal approach.
-Temples and priests
 
+### Temples and priests
 There are no grand temples dedicated solely to Lyrebird, and in fact it’s hard to find anything more than a shrine. Sometimes, places of worship dedicated to deities of arts, music and theatre will also feature a spot for Lyrebird, but that’s about it.
 
 It has nothing to do with the size of Lyrebird’s following. It is simply that in accordance with Lyrebird’s tenets, places of community are built instead of places of worship. What would usually go towards giant temple halls, in the case of Lyrebird will create soup kitchens and shelters, as well as libraries or performance stages.
