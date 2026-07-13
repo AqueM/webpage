@@ -2,9 +2,7 @@ nav {
 	flex-basis: 10vw;
 	background-color: var(--element-primary);
 	border-radius: var(--border-radius);
-	z-index: 3;
 	max-height: 4rem;
-	transform-style: preserve-3d;
 
 	@media only screen and (min-width: 800px) {
 		background-color: var(--element-primary-transparent);
@@ -86,7 +84,7 @@ nav details[open] summary::after {
 	padding: 0.5rem;
 	position: relative;
 	z-index: 4;
-	border-radius: var(--border-radius);
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
 	background-color: var(--element-primary);
 	border-bottom: 1px solid var(--border-color);
 
