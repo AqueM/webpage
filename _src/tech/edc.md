@@ -27,7 +27,7 @@ Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/){target=_b
 
 ### Containers
 
-{% gallery %}{% for item in tech.edc.containers %}{% photoMine item %}{% endfor %}{% endgallery %}
+{% gallery %}{% for item in tech.edc.images.containers %}{% photoMine item %}{% endfor %}{% endgallery %}
 
 ### Hardware
 {% columns-spaced %}{% column %}
@@ -35,7 +35,7 @@ DAP, headphones, phone with a [Tech-Protect C6S Rope Wrist Strap](https://tech-p
 
 Powerbank with a short USB to USB-C cable (randomly chosen, this is the one thing I was too lazy to research into)
 {% endcolumn %}{% column-side %}
-{% gallery %}{% photoMine tech.edc.edc.hardware %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
+{% gallery %}{% photoMine tech.edc.images.edc.hardware %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
 
 ### Wallet
 {% columns-spaced %}{% column %}
@@ -45,41 +45,22 @@ I carry three bundles of cards: loyalty cards I use often, loyalty cards I don't
 The payment cards live in a pull-out compartment that was originally a part of a wallet, which I've ditched in favor of carrying bundles of cards, as I don't use cash a lot.  When I need cash on hand, I either stash a bill under my phonecase, or use the adorable froggy coin purse (which I don't usually carry with me, it lives in my gym bag, 'cause my gym prefers cash payments).
 
 {% endcolumn %}{% column-side %}
-{% gallery %}{% photoMine tech.edc.edc.wallet %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
+{% gallery %}{% photoMine tech.edc.images.edc.wallet %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
 
 ### Misc
 {% columns-spaced %}{% column %}
-
-*   flashlight: ARSA GO 6w, including a magnet, bottle opener and a stand support
-*   small blade (from Aliexpress)  
-*   bottle opener (redundant now with the flashlight, will probably get rid of it)    
-*   shopping cart token (from Aliexpress)    
-*   survival card (sort-of redundant these days)    
-*   pen   
-*   pocket notebook  
-*   some bandaids    
-*   antibacterial gel    
-*   hand cream    
-*   lip balm 
-*   mint mouth spray
-*   glasses-cleaning cloth
-*   perfume
-*   wrist brace
-*   my house keys, which I will not photograph
-
+<ul>
+{% for item in tech.edc.misc-list %}<li>{{item | markdown }}</li>{% endfor %}
+</ul>
 {% endcolumn %}{% column-side %}
-{% gallery %}{% photoMine tech.edc.edc.misc %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
+{% gallery %}{% photoMine tech.edc.images.edc.misc %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
 
 ### Decor
 {% columns-spaced %}{% column %}
-
-*   [Ace of Spades keychain](/about/queerness) (from Aliexpress)
-*   Bee and honeycomb keychain (from Aliexpress)
-*   Butterfly wing keychain from a [Hel city Butterfly House](https://motylarnia-hel.pl/){target=_blank}, made out of a real (ethically sourced) butterfly wing! 
-*   Dice phone charm (from Aliexpress)   
-*   Persimmon phone charm (from Aliexpress)
-
+<ul>
+{% for item in tech.edc.decor-list %}<li>{{item | markdown }}</li>{% endfor %}
+</ul>
 {% endcolumn %}{% column-side %}
-{% gallery %}{% photoMine tech.edc.edc.decor %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
+{% gallery %}{% photoMine tech.edc.images.edc.decor %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
   
 {% include "partials/_photoswipe-script.html" %}

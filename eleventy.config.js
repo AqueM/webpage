@@ -10,15 +10,18 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.setInputDirectory("_src");
 
     // add markdown attributes lib
-    let markdownIt = require("markdown-it");
-    var markdownItAttrs = require('markdown-it-attrs');
-    let mdOptions = {
+    const markdown = require("markdown-it")({
         html: true,
         breaks: true,
-        linkify: true
-    };
-    let markdownLib = markdownIt(mdOptions).use(markdownItAttrs);
+        linkify: true,
+    });
+    var markdownItAttrs = require('markdown-it-attrs');
+    let markdownLib = markdown.use(markdownItAttrs);
     eleventyConfig.setLibrary("md", markdownLib);
+
+    eleventyConfig.addFilter("markdown", function (rawString) {
+        return markdown.renderInline(rawString);
+    });
 
     eleventyConfig.addFilter("order", function (collection) {
         return collection.sort(function (a, b) {
@@ -89,20 +92,28 @@ module.exports = async function (eleventyConfig) {
     });
 
     eleventyConfig.addShortcode("imageMine", function (image) {
+        return `<div class="pswp-gallery__item"><figure>
+        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat"/></a>
+        </a>
+        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>${image.date}</p></figcaption>
+        </figure></div>`;
+    });
+    eleventyConfig.addShortcode("imageMineSquare", function (image) {
         return `<div class="pswp-gallery__item square"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
             <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat"/></a>
         </a>
-        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p><cite>{{image.author}}</cite> <span>${image.caption}</span></p></figcaption>
+        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>by Aque, ${image.date}</p></figcaption>
         </figure></div>`;
     });
     eleventyConfig.addShortcode("photoMine", function (image) {
         let title = image.title;
-        if (image.url){
+        if (image.url) {
             title = `<a href="${image.url}" target="_blank">${image.title}</a>`;
         }
         let caption = "";
-        if (image.caption){
+        if (image.caption) {
             caption = `<span>${image.caption}</span>`;
         }
         return `<div class="pswp-gallery__item square"><figure>
