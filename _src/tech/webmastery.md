@@ -4,8 +4,12 @@ category: technology
 tags: 
   - nav
 displayName: Webmastery
+order: 1
 ---
 {% heading "h1", "About this website" %}
+
+If you want to link back to me, check [Outlinks](/about/links/)!
+
 <div>
 {% heading "h2", "Credits", "resources used to create this website" %}
 <ul>

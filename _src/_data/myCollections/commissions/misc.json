@@ -1,6 +1,6 @@
 [
   {
-    "src": "/_assets/images/commissions/misc/jayce_asobu.webp",
+    "src": "/assets/images/commissions/misc/jayce_asobu.webp",
     "width": 500,
     "height": 500,
     "title": "slavic Jayce Giopara",
@@ -10,7 +10,7 @@
     "authorLink": "https://x.com/NecroAsobu"
   },
     {
-    "src": "/_assets/images/commissions/misc/rosol_wereszczynski.webp",
+    "src": "/assets/images/commissions/misc/rosol_wereszczynski.webp",
     "width": 1536,
     "height": 1049,
     "title": "Rosół",
@@ -20,7 +20,7 @@
     "authorLink": "https://www.etsy.com/shop/breadgods"
   }, 
     {
-    "src": "/_assets/images/commissions/misc/frog_enat.webp",
+    "src": "/assets/images/commissions/misc/frog_enat.webp",
     "width": 1000,
     "height": 1003,
     "title": "Pride frog avatar",
@@ -30,7 +30,7 @@
     "authorLink": "https://x.com/eNat666"
   }, 
     {
-    "src": "/_assets/images/commissions/misc/laika_valyen.webp",
+    "src": "/assets/images/commissions/misc/laika_valyen.webp",
     "width": 1800,
     "height": 1273,
     "title": "Saint Laika of one-way trips",

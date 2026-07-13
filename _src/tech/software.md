@@ -14,7 +14,12 @@ List of the programs and apps that I currently use and thus I can reccommend at 
 * Image editor: [Paint Tool Sai](https://painttool-sai.en.softonic.com/){target=_blank} PAID - I bought a lifetime license for version 2 on sale.
 * Web browser: [Zen Browser](https://zen-browser.app/){target=_blank}
 * Screen adjuster: [f.lux](https://justgetflux.com/){target=_blank}
-  
+
+### Music
+
+* music player: [VLC](https://www.videolan.org/vlc/){target=_blank}
+* tag editors: [foobar200](https://www.foobar2000.org/){target=_blank} for tag sanitizing and management, [mp3tag](https://www.mp3tag.de/en/index.html){target=_blank} for filename edition and tag databases interface
+
 
 ### Code editors
 
@@ -45,4 +50,5 @@ List of the programs and apps that I currently use and thus I can reccommend at 
 
 {% heading "h2", "Apps" %}
 
-WIP
+* [Daylio](https://daylio.net/){target=_blank} for tracking moods and symptoms, so good I have the Premium version
+* [Better Weight](https://play.google.com/store/apps/details?id=com.betterweightapp){target=_blank} for tracking weight

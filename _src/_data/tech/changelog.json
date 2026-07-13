@@ -1,8 +1,12 @@
 [
     {
+        "date": "13/07/2026",
+        "log": "added photos to EDC page, added content to the Tomb Treasures page"
+    },{
         "date": "12/07/2026",
         "log": "updated folders and files, addes Webmastery page and homepage content, added last commission image"
-    },{
+    },
+    {
         "date": "09/07/2026",
         "log": "added print button, moved all layout images to CSS for accessibility, fixed navigation behaviour"
     },
@@ -17,9 +21,5 @@
     {
         "date": "21/06/2026",
         "log": "functional accessibility toggles"
-    },
-    {
-        "date": "19/06/2026",
-        "log": "functional mobile menu!"
     }
 ]

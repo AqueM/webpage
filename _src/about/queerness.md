@@ -31,7 +31,7 @@ Which is why I usually opt to simplify it into calling myself "queer" - as an um
 
 ### Buckle up. 
 
-![meme image of a man explaining a red-string conspiracy board with a crazed look in his eyes](/_assets/images/memes/red-string-conspiracy-meme.webp)
+![meme image of a man explaining a red-string conspiracy board with a crazed look in his eyes](/assets/images/memes/red-string-conspiracy-meme.webp)
 </div>
 
 While I can say confidently that - based on what others told me and what I saw people do - I don't experience sexual attraction the way everyone else does, my approach to romance is... well. Nobody really has been able to define the difference between romantic love and platonic love with sex attached to me, so I can't really say if I'm even *capable* of experiencing romantic love the way people do as an asexual. This sort of proclamation would probably be a very hot topic among other queer people, though. So, for clarity's sake, I've taken to claiming both labels and calling myself **aro-ace**.

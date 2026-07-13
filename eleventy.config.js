@@ -1,12 +1,11 @@
 module.exports = async function (eleventyConfig) {
 
     // SETUP
-eleventyConfig.addPassthroughCopy("_src/_assets");
-    eleventyConfig.addPassthroughCopy("_src/_assets");
+    eleventyConfig.addPassthroughCopy({ "_src/_assets": "assets" });
     eleventyConfig.addPassthroughCopy("_src/robots.txt");
     eleventyConfig.addPassthroughCopy("_src/ai.txt");
     eleventyConfig.addPassthroughCopy({
-        "node_modules/photoswipe/dist": "_assets/photoswipe"
+        "node_modules/photoswipe/dist": "assets/photoswipe"
     });
     eleventyConfig.setInputDirectory("_src");
 
@@ -80,7 +79,7 @@ eleventyConfig.addPassthroughCopy("_src/_assets");
     });
 
     eleventyConfig.addShortcode("image", function (image) {
-        return `<div class="pswp-gallery__item"><figure>
+        return `<div class="pswp-gallery__item square"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
             <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat" /></a>
         </a>
@@ -90,11 +89,37 @@ eleventyConfig.addPassthroughCopy("_src/_assets");
     });
 
     eleventyConfig.addShortcode("imageMine", function (image) {
-        return `<div class="pswp-gallery__item"><figure>
+        return `<div class="pswp-gallery__item square"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
             <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat"/></a>
         </a>
-        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><cite>${image.caption}</cite></figcaption>
+        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p><cite>{{image.author}}</cite> <span>${image.caption}</span></p></figcaption>
+        </figure></div>`;
+    });
+    eleventyConfig.addShortcode("photoMine", function (image) {
+        let title = image.title;
+        if (image.url){
+            title = `<a href="${image.url}" target="_blank">${image.title}</a>`;
+        }
+        let caption = "";
+        if (image.caption){
+            caption = `<span>${image.caption}</span>`;
+        }
+        return `<div class="pswp-gallery__item square"><figure>
+        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat"/></a>
+        </a>
+        <figcaption class="pswp-caption-content"><p><strong>`+ title + `</strong></p>` + caption + `</figcaption>
+        </figure></div>`;
+    });
+    eleventyConfig.addShortcode("treasure", function (image) {
+        return `<div class="pswp-gallery__item square"><figure>
+        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat" /></a>
+        </a>
+        <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong><br>(${image.date})</p><p>by <cite>${image.artist}</cite></p>
+        <p><a href="${image.link}" target="_blank">source</a>
+        <p class="image-caption">${image.alt}</p></figcaption>
         </figure></div>`;
     });
 

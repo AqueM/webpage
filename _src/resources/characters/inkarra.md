@@ -62,13 +62,7 @@ Despite not having her own place of worship, she regularly visits the mortal pla
 She is usually portrayed with her eyes closed and head tilted upwards. With her open arms outstretched to the sides and legs joined and straight, her body forms the four-point star of her symbol.
 
 Sometimes, candles are added at the feet of her statues or affixed to her hair, mimicking her signature stars, and illustrating her glow or the light of knowledge she brings. {% endcolumn %}{% column-side %}
-<!-- <div id="gallery" class="pswp-gallery"><figure class="pswp-gallery__item">
-	<a href="{{myArt.2023.Inkarra.src}}" data-pswp-width="{{myArt.2023.Inkarra.width}}" data-pswp-height="{{myArt.2023.Inkarra.height}}" class="noformat">
-		<img loading="lazy" src="{{myArt.myArt.2023.Inkarra.src}}" title="{{myArt.2023.Inkarra.title}}" alt="{{myArt.2023.Inkarra.alt}}" /></a>
-	</a>
-	<figcaption class="pswp-caption-content"><p><strong>{{myArt.2023.Inkarra.title}}</strong></p>
-	<p class="image-caption">{{myArt.2023.Inkarra.alt}}</p></figcaption>
-</figure></div> -->
+
 {% gallery %}{% imageMine myArt.2023.inkarra %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
 
 ### Rituals

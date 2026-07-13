@@ -20,7 +20,7 @@ body {
 
 	@media only screen and (min-width: 600px){
 		background-position: 0% 100%;
-		background-image: var(--gradient-sun), url("/_assets/images/layout/grass-border.webp"), url("/_assets/images/layout/water-border.webp"), var(--gradient-bottom);
+		background-image: var(--gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--gradient-bottom);
 		background-repeat: repeat-x;
 		background-position: 0% 100%;
 	}

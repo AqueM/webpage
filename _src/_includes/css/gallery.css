@@ -3,7 +3,8 @@
   gap: 1rem 1rem;
   justify-content: center;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, min-content));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, min-content));
+  place-items: center;
 }
 
 .gallery div {
@@ -20,10 +21,18 @@
   cursor: pointer;
 }
 
+.gallery .square {
+    width: 15rem;
+  height: 15rem;
+}
+
 .gallery figure {
   margin: 0;
 }
 
 .gallery img:hover {
   transform: scale(1.2);
+}
+.pswp__dynamic-caption--aside a {
+  white-space: nowrap;
 }

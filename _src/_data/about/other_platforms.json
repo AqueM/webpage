@@ -2,31 +2,31 @@
   {
     "name": "discord",
     "url": "https://discordapp.com/users/266450416005283851",
-    "icon": "/_assets/images/layout/font-awesome/discord-brands-solid-full.svg"
+    "icon": "/assets/images/layout/font-awesome/discord-brands-solid-full.svg"
   },
   {
     "name": "tumblr",
     "url": "https://iriascend.tumblr.com/",
-    "icon": "/_assets/images/layout/font-awesome/tumblr-brands-solid-full.svg"
+    "icon": "/assets/images/layout/font-awesome/tumblr-brands-solid-full.svg"
   },
   {
     "name": "Reddit",
     "url": "https://www.reddit.com/user/AqueM/",
-    "icon": "/_assets/images/layout/font-awesome/reddit-brands-solid-full.svg"
+    "icon": "/assets/images/layout/font-awesome/reddit-brands-solid-full.svg"
   },
   {
     "name": "Archive of Our Own",
     "url": "https://archiveofourown.org/users/Iriascend/profile",
-    "icon": "/_assets/images/layout/ao3-mono.svg"
+    "icon": "/assets/images/layout/ao3-mono.svg"
   },
   {
     "name": "BlueSky",
     "url": "https://bsky.app/profile/iriascend.bsky.social",
-    "icon": "/_assets/images/layout/font-awesome/bluesky-brands-solid-full.svg"
+    "icon": "/assets/images/layout/font-awesome/bluesky-brands-solid-full.svg"
   },
   {
     "name": "Twitter / X",
     "url": "https://x.com/iriascend",
-    "icon": "/_assets/images/layout/font-awesome/twitter-brands-solid-full.svg"
+    "icon": "/assets/images/layout/font-awesome/twitter-brands-solid-full.svg"
   }
 ]

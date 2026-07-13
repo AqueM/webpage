@@ -34,7 +34,7 @@
 }
 
 .tooltip-icon {
-	background-image: url('/_assets/images/layout/font-awesome/circle-question-regular-full.svg');
+	background-image: url('/assets/images/layout/font-awesome/circle-question-regular-full.svg');
 	vertical-align: top;
 }
 
@@ -43,7 +43,7 @@
 #nav-layout-image {
 	position: absolute;
 	z-index: 1;
-	background-image: url('/_assets/images/layout/canva-vines1.webp');
+	background-image: url('/assets/images/layout/canva-vines1.webp');
 	width: 100%;
 	height: 100%;
 	background-position: 0% 0%;
@@ -52,7 +52,7 @@
 
 #page-logo {
 	background-size: 10vw;
-	background-image: url("/_assets/images/layout/canva-frog.webp");
+	background-image: url("/assets/images/layout/canva-frog.webp");
 	width: 10vw;
 	height: 100%;
 
@@ -66,7 +66,7 @@
 	top: 0;
 	right: 0;
 	z-index: 1;
-	background-image: url('/_assets/images/layout/canva-vines2.webp');
+	background-image: url('/assets/images/layout/canva-vines2.webp');
 	background-position: 100% 0%;
 	width: 100%;
 	height: 100%;
@@ -82,7 +82,7 @@
 	right: 0;
 	height: 500px;
 	width: 100%;
-	background-image: url('/_assets/images/layout/canva-flowers.webp');
+	background-image: url('/assets/images/layout/canva-flowers.webp');
 	background-position: 100% 0%;
 }
 

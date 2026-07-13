@@ -1,0 +1,47 @@
+﻿[
+  {
+    "name": "Dwarf Fortress",
+    "type": "story generator, colony builder, fantasy",
+    "url": "https://www.bay12games.com/dwarves/"
+  },
+  {
+    "name": "Rimworld",
+    "type": "story generator, colony builder, SF",
+    "url": "https://rimworldgame.com/"
+  },
+  {
+    "name": "Stardew Valley",
+    "type": "farming simulator",
+    "url": "https://www.stardewvalley.net/"
+  },
+  {
+    "name": "Planet Zoo",
+    "type": "tycoon, educational, builder",
+    "url": "https://www.planetzoogame.com/"
+  },
+  {
+    "name": "Portal",
+    "type": "puzzle, platforming, story",
+    "url": "https://store.steampowered.com/app/400/Portal/"
+  },
+  {
+    "name": "Portal 2",
+    "type": "puzzle, platforming, story",
+    "url": "https://store.steampowered.com/app/620/Portal_2/"
+  },
+  {
+    "name": "Copycat",
+    "type": "puzzle, platforming, story",
+    "url": "https://store.steampowered.com/app/1622350/Copycat/"
+  },
+  {
+    "name": "Unheard",
+    "type": "puzzle, story",
+    "url": "https://store.steampowered.com/app/942970/Unheard/"
+  },
+  {
+    "name": "The Witcher series",
+    "type": "RPG, fantasy",
+    "url": "https://www.thewitcher.com"
+  }
+]
