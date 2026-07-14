@@ -37,16 +37,16 @@ order: 3
 </tr>
 </table>
 </div>
-</div>
-
-### that I'm waiting to be added to
-<div class="stack">
 <div class="item"><div style="text-align: center; font-family: serif; font-size: 16px;">
   <a href="https://loominggrey.neocities.org/webring" style="color: #f472b6;">cupid's worst nightmare</a><br>
   <a href="https://loominggrey.neocities.org/webring?action=previous" style="color: #f472b6;">← prev</a> | 
   <a href="https://loominggrey.neocities.org/webring?action=random" style="color: #f472b6; text-decoration: none;">♡</a> | 
   <a href="https://loominggrey.neocities.org/webring?action=next" style="color: #f472b6;">next →</a>
 </div></div>
+</div>
+
+### that I'm waiting to be added to
+<div class="stack">
 <div class="item"><center id="digital-collections">
 Part of the<br />
 <a href="https://birdrobot.party/rings/collections/"><b>Digital Collections Ring</b></a><br />
