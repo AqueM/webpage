@@ -47,4 +47,9 @@ Turns out I'm not the only person to ponder these problems. Some come to the sam
 
 ### To summarise:
 
-Sex is overrated, romantic love is weird, I've traded my gender for a cool rock. 
+Sex is overrated, romantic love is weird, I've traded my gender for a cool rock.   
+<div class="blinkies">
+{%- for image in collections.queerImages -%}
+<img src="{{image}}">
+{%- endfor %}
+</div>

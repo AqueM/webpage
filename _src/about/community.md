@@ -9,8 +9,7 @@ order: 3
 {% heading "h1", "Other people online" %}
 {% heading "h2", "neighbours", "cool websites from non-corporate web" %}
 {% columns-wrap %}{%- for webring in about.neighbours -%}
-    {% neighbour webring %}{%- endfor %}{% endcolumns-wrap %}
-  
+    {% neighbour webring %}{%- endfor %}{% endcolumns-wrap %}  
 {% heading "h2", "Webrings & Databases" %}
 
 ### that I am a part of

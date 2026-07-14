@@ -28,6 +28,25 @@ module.exports = async function (eleventyConfig) {
             return a.data.order - b.data.order;
         });
     });
+    const fs = require('fs')
+
+
+    eleventyConfig.addCollection("queerImages", function (collectionApi) {
+        const files = fs.readdirSync('_src/_assets/images/blinkies/queer');
+        const targetPath = "/assets/images/blinkies/queer/";
+        files.forEach((x, i) => files[i] = targetPath.concat(x));
+        return files;
+    });
+
+    eleventyConfig.addCollection("blinkieImages", function (collectionApi) {
+        const files = fs.readdirSync('_src/_assets/images/blinkies');
+        const targetPath = "/assets/images/blinkies/";
+        const filesFiltered =
+            files.filter(
+                item => item.includes('.'));
+        filesFiltered.forEach((x, i) => filesFiltered[i] = targetPath.concat(x));
+        return filesFiltered;
+    });
 
     // SHORTCODES
 
@@ -49,7 +68,7 @@ module.exports = async function (eleventyConfig) {
         ${content}
         </section>`;
     });
-        eleventyConfig.addPairedShortcode("columns-wrap", function (content) {
+    eleventyConfig.addPairedShortcode("columns-wrap", function (content) {
         return `<section class="columns wrap">
         ${content}
         </section>`;
@@ -93,9 +112,9 @@ module.exports = async function (eleventyConfig) {
         if (neighbour.isAnimated) {
             className = "animated"
         };
-        if(neighbour.img){
+        if (neighbour.img) {
             return `<div class="badge"><a href="${neighbour.url}" target="_blank"><img class="${className}" src="${neighbour.img}" alt="${neighbour.alt}"></a></div>`
-        } 
+        }
         return `<div class="round-link"><a href="${neighbour.url}" target="_blank">${neighbour.alt}</a></div>`;
     });
 
