@@ -31,7 +31,7 @@ Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/){target=_b
 
 ### Hardware
 {% columns-spaced %}{% column %}
-DAP, headphones, phone with a [Tech-Protect C6S Rope Wrist Strap](https://tech-protect.eu/pl/products/tech-protect-c6s-rope-crossbody-cargo-khaki-165357.html?query_id=3){target=_blank} lanyard (can be swapped between 'bracelet' length or over the shoulder length). To see details, go to [Hardware](/tech/hardware)
+DAP, headphones, phone with a [Tech-Protect C6S Rope Wrist Strap](https://tech-protect.eu/pl/products/tech-protect-c6s-rope-crossbody-cargo-khaki-165357.html?query_id=3){target=_blank} lanyard (can be swapped between 'bracelet' length or over the shoulder length). To see details, go to [Hardware  →](/tech/hardware)
 
 Powerbank with a short USB to USB-C cable (randomly chosen, this is the one thing I was too lazy to research into)
 {% endcolumn %}{% column-side %}

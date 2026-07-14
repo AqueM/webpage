@@ -17,11 +17,11 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 {% endcolumn %}
 {% column-side %}
 
-- **Pronouns:** they/them in English, any in Polish
 - **Languages:** Polish, English, German
 - **Location:** Silesia, Poland, EU
 - **Age:** in my {{"now" | date: "%Y" | minus: 1991 | divided_by: 10  | floor | times: 10 }}s
-- **Sexuality/Gender:** triple-A human ([what? →](/about/queerness))<!-- - -    -->{% endcolumn-side %}{% endcolumns %}
+- **Pronouns:** they/them in English, any in Polish
+- **Identity:** triple-A human ([what? →](/about/queerness))<!-- - -    -->{% endcolumn-side %}{% endcolumns %}
 
 {% columns %}{% column %}{% heading "h2", "Interests", "Talking about any of these will almost always grab my attention" %}
 

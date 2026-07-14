@@ -10,5 +10,13 @@
   {
     "name": "add content to the rest of the pages",
     "comment": ""
+  },
+  {
+    "name": "make blinkies stop or disappear with the motion toggle",
+    "comment": ""
+  },
+  {
+    "name": "add formatting to local links",
+    "comment": "I really like that ' →' at the end that I have some places"
   }
 ]
