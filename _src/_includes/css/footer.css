@@ -44,3 +44,7 @@ footer {
 .fancy-highlight.contact {
 	background-color: var(--element-accent);
 }
+
+.no-break {
+	min-width: max-content;
+}
