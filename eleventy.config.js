@@ -86,6 +86,19 @@ module.exports = async function (eleventyConfig) {
                 </div>`;
     });
 
+    // Shortcodes for content
+
+    eleventyConfig.addShortcode("neighbour", function (neighbour) {
+        let className = "";
+        if (neighbour.isAnimated) {
+            className = "animated"
+        };
+        if(neighbour.img){
+            return `<div class="badge"><a href="${neighbour.url}" target="_blank"><img class="${className}" src="${neighbour.img}" alt="${neighbour.alt}"></a></div>`
+        } 
+        return `<div class="round-link"><a href="${neighbour.url}" target="_blank">${neighbour.alt}</a></div>`;
+    });
+
     eleventyConfig.addShortcode("image", function (image) {
         return `<div class="pswp-gallery__item square"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">

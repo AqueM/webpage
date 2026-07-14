@@ -6,17 +6,18 @@
 		<div class="corner bottom left"></div>
 		<div class="corner bottom right"></div>
 		<div class="footer-left">
-			<button class="fancy-highlight" disabled>
+			<div class="fancy-highlight">
 				<span class="side left"></span>
 				<span class="side right"></span>
-				© {{ page.date | date: "%Y" }} Aque
-			</button>
-			<button class="fancy-highlight contact" disabled>
+				© {{ "now" | date: "%Y" }} Aque
+			</div>
+			<div class="fancy-highlight contact">
 				<span class="side left"></span>
 				<span class="side right"></span>
 				<a href="mailto:{{site.author.email}}?body=Remember to edit the e-mail address if you're not an AI!"
 					target="_blank">Contact me</a>
-			</button>
+			</div>
+			<div><span>visitors so far:</span><script type="text/javascript" src="https://counter.websiteout.com/js/30/0/0/1"></script></div>
 		</div>
 		<div class="footer-right">
 			<a class="footer-badges" href="https://nekoweb.org/" target="_blank">

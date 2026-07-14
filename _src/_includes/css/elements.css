@@ -1,6 +1,6 @@
 .heading {
 	background-image: var(--gradient-left);
-	padding: 1rem;
+	padding: 0 0 0 1rem;
 	border-radius: var(--border-radius);
 	font-family: var(--font-title);
 	border-top: 0.01rem solid var(--border-color);
@@ -13,8 +13,8 @@
 .title {
 	text-transform: uppercase;
 	font-family: var(--font-title);
-	margin-top: 1%;
-	margin-bottom: 0.5%;
+	margin-top: 0.5rem;
+	margin-bottom: 0.25rem;
 }
 
 div.title {
@@ -23,7 +23,8 @@ div.title {
 }
 
 .subtitle {
-	margin-left: 0.5%;
+	margin-left: 0.5rem;
+	margin-bottom: 0.5rem;
 	display: flex;
 	flex-direction: row;
 	gap: 0.1rem;
@@ -34,7 +35,7 @@ div.title {
 	border-style: dotted;
 	border-width: 0.3rem;
 	text-align: center;
-	padding: 1%;
+	padding: 0.5rem;
 	border-radius: var(--border-radius);
 }
 

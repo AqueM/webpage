@@ -42,7 +42,8 @@ a:not(.noformat)[target="_blank"]::after {
 
 h1:not(.noformat),
 h2:not(.noformat),
-h3:not(.noformat) {
+h3:not(.noformat),
+h4:not(.noformat) {
 	font-family: var(--font-title);
 }
 

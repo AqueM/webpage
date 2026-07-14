@@ -1,5 +1,17 @@
 ﻿[
   {
+    "name": "I'm a fucking webmaster",
+    "url": "https://justinjackson.ca/webmaster/",
+    "author": "Justin Jackson",
+    "type": "blogpost"
+  },
+  {
+    "name": "5 Ways to make your Neocities site more accessible",
+    "url": "https://sleepydev.neocities.org/posts/5%20Ways%20to%20make%20your%20Neocities%20site%20more%20accessible",
+    "author": "SleepyDev",
+    "type": "blogpost"
+  },
+  {
     "name": "Pop(over) the Balloons",
     "url": "https://codepen.io/undeadinstitute/pen/RwzPwRG",
     "author": "Undead Institute",

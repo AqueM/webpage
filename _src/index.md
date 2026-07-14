@@ -7,6 +7,8 @@ priority: 0.8
 <section>
 {% heading "h1", "Aque's pond" %}
 
+<img src="/assets/images/hello-grabill54.gif" alt="simplistic, blue icon of a person, animated to wave" class="animated round-image floated">
+
 Hi, welcome to my website! My name's Aque and I'm a mixed/multi-media artist mostly involved in various fandoms, fantasy worldbuilding and tabletop RPG. Among friends, I'm most known to love frogs and androids.
 
 If you'd like to learn more about me, go snoop through the **About** section. If you'd like to see what things I made for the benefit of others, see **Resources**. **Creations** are about what I've made, and **Collections** hold, well, my collections, both digital and physical.
