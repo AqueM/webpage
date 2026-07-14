@@ -75,6 +75,8 @@ Part of the<br />
 <script type="text/javascript" src="https://proshitter.nekoweb.org/onionring/onionring-widget.js"></script>
 <!-- <script>document.getElementById('theimage').src="IMAGEHERE";</script> -->
 </div></div>  
+<div class="item">
+<a href="https://webmasterwebring.netlify.app?aqe-previous">&larr;</a> <a href="https://webmasterwebring.netlify.app">Webmaster Webring</a> <a href="https://webmasterwebring.netlify.app?aqe-random">?</a> <a href="https://webmasterwebring.netlify.app?aqe-next">&rarr;</a></div>
 </div>
 
 
