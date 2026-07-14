@@ -25,6 +25,18 @@ order: 3
 </map>
 <img usemap="#noaitxtwidget" src="https://baccyflap.com/noai/txtwidget-light.gif" alt="a white rectangular box with a dashed outline with the words 'the no ai webring' in the centre, with a parenthetical question mark next to it and two arrows pointing left and right to either side">
 </div>
+<div class="item">
+<table style="width: 100%; text-align: center; border: #3f822e ridge 4px; background-color: #d0e975;">
+<tr>
+<th colspan="3" style="text-shadow: 2px 2px #a2b94f;"><a href="https://starry-knight.neocities.org/webring/verdant-webring" alt="Verdantville Home Page" title="Verdantville Home Page" style="color: #044810; text-decoration: none;">⚘ Verdantville ⚘</a></th>
+</tr>
+<tr>
+<td><a href="https://webri.ng/webring/verdantville/previous?via=https%3A%2F%2Fwww.aque.fyi" alt="Previous site" title="Previous site" style="color: #044810;">⬻ Back</a></td>
+<td><a href="https://webri.ng/webring/verdantville/random?via=https%3A%2F%2Fwww.aque.fyi" alt="Random site" title="Random site" style="color: #044810;">Random</a></td>
+<td><a href="https://webri.ng/webring/verdantville/next?via=https%3A%2F%2Fwww.aque.fyi" alt="Next site" title="Next site" style="color: #044810;">Next ⤖</a></td>
+</tr>
+</table>
+</div>
 </div>
 
 ### that I'm waiting to be added to
