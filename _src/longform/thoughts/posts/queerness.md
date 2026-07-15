@@ -6,6 +6,7 @@ category: about
 tags: 
   - thoughts
   - queer
+date: 2026-07-02
 ---
 <div class="disclaimer">
 We are not going to debate whenever the term "queer" is a slur. Grow up.
