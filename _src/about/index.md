@@ -1,5 +1,5 @@
 ---
-layout: layouts/_page.html
+layout: layouts/_page
 category: about
 tags: 
   - nav
@@ -21,7 +21,7 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - **Location:** Silesia, Poland, EU
 - **Age:** in my {{"now" | date: "%Y" | minus: 1991 | divided_by: 10  | floor | times: 10 }}s
 - **Pronouns:** they/them in English, any in Polish
-- **Identity:** triple-A human ([what? →](/about/queerness))<!-- - -    -->{% endcolumn-side %}{% endcolumns %}
+- **Identity:** triple-A human ([what? →](/longform/thoughts/2026/my-queerness.html))<!-- - -    -->{% endcolumn-side %}{% endcolumns %}
 
 {% columns %}{% column %}{% heading "h2", "Interests", "Talking about any of these will almost always grab my attention" %}
 

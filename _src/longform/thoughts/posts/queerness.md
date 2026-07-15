@@ -1,6 +1,7 @@
 ---
-layout: layouts/_longform.html
-displayName: My queerness
+layout: layouts/_thought
+displayName: my queerness
+subtitle: What is an Aque, anyway?
 category: about
 tags: 
   - thoughts
@@ -9,7 +10,6 @@ tags:
 <div class="disclaimer">
 We are not going to debate whenever the term "queer" is a slur. Grow up.
 </div>
-{% heading "h1", "My queerness", "What is an Aque, anyway?"%}
 
 The label I use most often when pressed is asexual <sup>([1](https://lgbtqia.wiki/wiki/Asexual), [2](https://en.wikipedia.org/wiki/Asexuality))</sup> with a good dash of aromanticism <sup>([1](https://lgbtqia.wiki/wiki/Aromantic), [2](https://en.wikipedia.org/wiki/Aromanticism))</sup>. I also proudly declare myself as nonbinary <sup>([1](https://lgbtqia.wiki/wiki/Non-Binary), [2](https://en.wikipedia.org/wiki/Non-binary))</sup> or even fully agender <sup>([1](https://lgbtqia.wiki/wiki/Agender), [2](https://en.wikipedia.org/wiki/Agender))</sup> (mostly non-binary because I like the flag better which is, if you didn't know, a valid and popular way to choose labels).
 
@@ -53,3 +53,5 @@ Sex is overrated, romantic love is weird, I've traded my gender for a cool rock.
 <img src="{{image}}">
 {%- endfor %}
 </div>
+
+<div class="box-small"><p class="round-link"><a href="/about"><< back to Bio</a></p></div>

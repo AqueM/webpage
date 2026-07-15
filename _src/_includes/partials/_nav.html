@@ -7,7 +7,9 @@
 		{% include "partials/_menu.html" %}
 		<div class="sidebar">
 			{%- assign date = "now" | date: "%m/%Y" -%}
-			{% heading "h4", "Last updated", date %}
+			{% assign subtitle = "<time>" | append: date | append: "</time>" %}
+			{% heading "h4", "Last updated", subtitle %}
+			<!-- <img src="/assets/images/layout/sitemap.gif" class="noformat"> -->
 		</div>
 	</div>
 	<div class="navigation-mobile">

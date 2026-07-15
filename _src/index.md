@@ -1,5 +1,5 @@
 ---
-layout: layouts/_longform.html
+layout: layouts/_longform
 category: home
 changeFreq: always
 priority: 0.8

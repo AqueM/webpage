@@ -72,3 +72,9 @@ textarea {
 .clear {
 	clear: both;
 }
+
+.taglist {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-around;
+}

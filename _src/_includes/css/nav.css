@@ -71,7 +71,10 @@ nav details[open] summary::after {
 }
 
 .sidebar {
-	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
 }
 
 .menu {
@@ -87,6 +90,7 @@ nav details[open] summary::after {
 	border-radius: 0 0 var(--border-radius) var(--border-radius);
 	background-color: var(--element-primary);
 	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 1rem;
 
 	@media only screen and (min-width: 800px) {
 		transform: unset;

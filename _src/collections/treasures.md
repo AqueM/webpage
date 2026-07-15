@@ -1,9 +1,8 @@
 ---
-layout: layouts/_gallery.html
+layout: layouts/_gallery
 category: collections
 tags: 
   - nav
-  - gallery
 displayName: Tomb Treasures
 ---
 {% heading "h1", "Tomb Treasures" %}

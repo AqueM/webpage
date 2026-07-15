@@ -1,5 +1,5 @@
 ---
-layout: layouts/_page.html
+layout: layouts/_page
 category: technology
 tags: 
   - nav

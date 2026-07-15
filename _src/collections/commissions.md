@@ -1,9 +1,8 @@
 ---
-layout: layouts/_gallery.html
+layout: layouts/_gallery
 category: collections
 tags: 
   - nav
-  - gallery
 displayName: Commissions
 ---
 {% heading "h1", "Art from others" %}

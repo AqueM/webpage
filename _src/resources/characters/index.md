@@ -1,5 +1,5 @@
 ---
-layout: layouts/_main.html
+layout: layouts/_page
 category: resources
 tags: nav
 order: 1

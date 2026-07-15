@@ -1,5 +1,5 @@
 ---
-layout: layouts/_longform.html
+layout: layouts/_longform
 category: resources
 tags: characters
 displayName: Lyrebird, Kin of the Wayward
