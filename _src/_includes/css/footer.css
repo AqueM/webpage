@@ -15,11 +15,15 @@ footer {
 	background-color: var(--element-secondrary-transparent);
 	border-radius: var(--border-radius);
 	padding-left: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 1rem;
 
 	@media only screen and (min-width: 800px) {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		flex-direction: row;
+		gap: unset;
 	}
 }
 
@@ -27,6 +31,14 @@ footer {
 	margin-right: 1rem;
 	position: relative;
 	z-index: 3;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+
+	@media only screen and (min-width: 600px) {
+		flex-direction: row;
+	}
 }
 
 .footer-left {
@@ -34,10 +46,13 @@ footer {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	z-index: 3;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
 
 	@media only screen and (min-width: 600px) {
-		display: flex;
-		justify-content: center;
+		flex-direction: row;
 	}
 }
 

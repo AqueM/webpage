@@ -1,5 +1,5 @@
 img:not(.noformat) {
-	max-width: 10vw;
+	max-width: 15vw;
 }
 
 p:not(.noformat, .menu-label) {
@@ -59,4 +59,8 @@ summary:not(.noformat) {
 	padding: 0.5%;
 	margin-bottom: 1%;
 	background-color: var(--element-accent);
+}
+
+sup {
+	font-size:xx-small;
 }

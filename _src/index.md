@@ -16,8 +16,8 @@ If you'd like to learn more about me, go snoop through the **About** section. If
 **Longer Letters** is a work-in-progress section for a Youtube channel that I'm in the proccess of making.
 
 **Technology** is the place to go if you'd like to see how I work, including info about the making of this page. 
-{% include "content/_access-disclaimer.html" %}
 </section>
+<section>{% include "content/_access-disclaimer.html" %}</section>
 <section>{% heading "h2", "current affairs"%}
 <div class="columns">
     <div class="column">

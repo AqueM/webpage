@@ -1,5 +1,7 @@
 /* general use */
-
+.medium {
+	max-width: 20vw;
+}
 .icon {
 	display: inline-block;
 	width: 1em;
@@ -38,6 +40,15 @@
 	vertical-align: top;
 }
 
+.layout-blinkie {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: baseline;
+	background-size: 1em;
+	background-repeat: no-repeat;
+}
+
 /* specific page use */
 
 #nav-layout-image {
@@ -48,7 +59,6 @@
 	height: 100%;
 	background-position: 0% 0%;
 }
-
 
 #page-logo {
 	background-size: 10vw;

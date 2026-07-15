@@ -41,6 +41,7 @@ article {
 
 section {
 	margin: 1%;
+	clear: both;
 }
 
 .columns {

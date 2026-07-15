@@ -32,6 +32,7 @@ div.title {
 }
 
 .disclaimer {
+
 	border-style: dotted;
 	border-width: 0.3rem;
 	text-align: center;
@@ -54,9 +55,20 @@ textarea {
 
 .blinkies {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 1rem;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
+
+	@media only screen and (min-width: 1000px) {
+		flex-direction: row;
+	}
+	img {
+		max-width: unset;
+	}
+}
+
+.clear {
+	clear: both;
 }

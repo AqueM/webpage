@@ -11,7 +11,7 @@ We are not going to debate whenever the term "queer" is a slur. Grow up.
 </div>
 {% heading "h1", "My queerness", "What is an Aque, anyway?"%}
 
-The label I use most often when pressed is asexual ([1](https://lgbtqia.wiki/wiki/Asexual), [2](https://en.wikipedia.org/wiki/Asexuality)) with a good dash of aromanticism ([1](https://lgbtqia.wiki/wiki/Aromantic), [2](https://en.wikipedia.org/wiki/Aromanticism)). I also proudly declare myself as nonbinary ([1](https://lgbtqia.wiki/wiki/Non-Binary), [2](https://en.wikipedia.org/wiki/Non-binary)) or even fully agender ([1](https://lgbtqia.wiki/wiki/Agender), [2](https://en.wikipedia.org/wiki/Agender)) (mostly non-binary because I like the flag better which is, if you didn't know, a valid and popular way to choose labels).
+The label I use most often when pressed is asexual <sup>([1](https://lgbtqia.wiki/wiki/Asexual), [2](https://en.wikipedia.org/wiki/Asexuality))</sup> with a good dash of aromanticism <sup>([1](https://lgbtqia.wiki/wiki/Aromantic), [2](https://en.wikipedia.org/wiki/Aromanticism))</sup>. I also proudly declare myself as nonbinary <sup>([1](https://lgbtqia.wiki/wiki/Non-Binary), [2](https://en.wikipedia.org/wiki/Non-binary))</sup> or even fully agender <sup>([1](https://lgbtqia.wiki/wiki/Agender), [2](https://en.wikipedia.org/wiki/Agender))</sup> (mostly non-binary because I like the flag better which is, if you didn't know, a valid and popular way to choose labels).
 
 
 All that to say there's a lot of terms that in the end mean:
@@ -43,7 +43,7 @@ This leads me to believe nobody has any idea what gender is, really.
 
 And to make the water even more murky, I'm also autistic. Gender is a profoundly weird concept, as we've just seen, that's heavily rooted in social interactions. Which autism causes one to be shit at. It also causes you to be shit at introspection. So perhaps I am some kind of gender after all, I'm just too neurodivergent to figure what it is? Which doesn't sound very *intrinsic* of gender, actually, so maybe me just asking these questions means I am not completely cis-gender? 
 
-Turns out I'm not the only person to ponder these problems. Some come to the same conclusions as I did - which is to throw the entire concept out the window - and some swerved wildly in the other direction and that's how we got the term **autigender** ([1](https://lgbtqia.wiki/wiki/Autigender), [2](https://en.wikipedia.org/wiki/Autism_and_LGBTQ_people)). Which is, if you ask me, the same thing with extra steps and extra disclosure. 
+Turns out I'm not the only person to ponder these problems. Some come to the same conclusions as I did - which is to throw the entire concept out the window - and some swerved wildly in the other direction and that's how we got the term **autigender** <sup>([1](https://lgbtqia.wiki/wiki/Autigender), [2](https://en.wikipedia.org/wiki/Autism_and_LGBTQ_people))</sup>. Which is, if you ask me, the same thing with extra steps and extra disclosure. 
 
 ### To summarise:
 
