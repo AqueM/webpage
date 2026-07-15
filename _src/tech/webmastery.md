@@ -25,7 +25,7 @@ If you want to link back to me, check [Outlinks](/about/links/)!
 <ul class="logs">
     {%- for element in tech.changelog -%}
     <li>
-        <strong>{{element.date}}</strong> - {{element.log}}
+        <time><strong>{{element.date}}</strong></time> - {{element.log}}
     </li>
     {%- endfor %}
 </ul>

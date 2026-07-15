@@ -22,7 +22,7 @@ It's a community tradition, to show your "pocket dump" to inspire others or shar
 Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/){target=_blank}
 
 {%- assign date = page.date | date: "%m/%Y" -%}
-{%- capture subtitle %}Last updated: <strong>{{date}}</strong> {% endcapture %}
+{%- capture subtitle %}Last updated: <time><strong>{{date}}</strong></time> {% endcapture %}
 {% heading "h2", "Current EDC", subtitle %}
 
 ### Containers
