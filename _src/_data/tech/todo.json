@@ -18,5 +18,25 @@
   {
     "name": "add formatting to local links",
     "comment": "I really like that ' →' at the end that I have some places"
+  },
+  {
+    "name": "standardize how I implement styling in markup content",
+    "comment": ""
+  },
+  {
+    "name": "refactor and standardize CSS",
+    "comment": ""
+  },
+  {
+    "name": "change base text font to something more readable at small sizes",
+    "comment": ""
+  },
+  {
+    "name": "add a Clap button",
+    "comment": "or another way to leave kudos, maybe even a guestbook?"
+  },
+  {
+    "name": "add 'currently online' counter'",
+    "comment": ""
   }
 ]
