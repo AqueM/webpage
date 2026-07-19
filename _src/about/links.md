@@ -9,7 +9,7 @@ priority: 0.7
 ---
 {% heading "h1", "Aque online" %}
 
-Here are some places you can find me, from most to least likely that I'll be responsive and active there. They all open in a new tab.
+Here are some places you can find me, from most to least likely that I'll be responsive and active there. They all open in a new tab!
 
 <div class="box">
 	<div class="link-list">
