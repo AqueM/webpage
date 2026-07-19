@@ -119,8 +119,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		border-top: 0.01rem solid var(--deco-border-color);
 		border-bottom: 0.01rem solid var(--deco-border-color);
 
-		.design__border-block__decor--left,
-		.design__border-block__decor--right {
+		.design__border-block__decor {
 			position: absolute;
 			width: 1.45rem;
 			height: 1.45rem;

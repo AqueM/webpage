@@ -7,7 +7,7 @@
 }
 
 @font-face {
-	font-family: 'vioda-libre';
+	font-family: 'viaoda-libre';
 	src: url('/assets/fonts/ViaodaLibre-Regular.ttf');
 	font-style: normal;
 	font-weight: normal;
@@ -23,6 +23,20 @@
 @font-face {
 	font-family: 'open-dyslexic';
 	src: url('/assets/fonts/OpenDyslexic-Regular.otf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'amarante';
+	src: url('/assets/fonts/Amarante-Regular.ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'faculty-glyphic';
+	src: url('/assets/fonts/FacultyGlyphic-Regular.ttf');
 	font-style: normal;
 	font-weight: normal;
 }

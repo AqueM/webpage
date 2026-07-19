@@ -1,8 +1,11 @@
 ---
-layout: layouts/_longform
+layout: layouts/_thought
+tags:
+  - queer
 displayName: My queerness
+date: 2026-06-02
 ---
-<div class="disclaimer">
+<div class="design__disclaimer">
 We are not going to debate whenever the term "queer" is a slur. Grow up.
 </div>
 {% heading "h1", "My queerness", "What is an Aque, anyway?"%}
@@ -43,9 +46,6 @@ Turns out I'm not the only person to ponder these problems. Some come to the sam
 
 ### To summarise:
 
-<<<<<<< Updated upstream:_src/about/queerness.md
-Sex is overrated, romantic love is weird, I've traded my gender for a cool rock. 
-=======
 Sex is overrated, romantic love is weird, I've traded my gender for a cool rock.   
 <div class="blinkies layout__flex-block__row layout__flex-block--space-between">
 {%- for image in collections.queerImages -%}
@@ -54,4 +54,3 @@ Sex is overrated, romantic love is weird, I've traded my gender for a cool rock.
 </div>
 
 <div class="design__box--small"><p class="design__link--round"><a href="/about"><< back to Bio</a></p></div>
->>>>>>> Stashed changes:_src/longform/thoughts/posts/queerness.md

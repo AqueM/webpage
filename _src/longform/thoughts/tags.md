@@ -8,7 +8,8 @@ pagination:
   - thoughts
 permalink: "longform/thoughts/tags/{{tag | slugify}}.html"
 ---
-<div class="theme__heading layout__flex-block__stack theme__block--accent--gradient theme__card--border"><h1 class="theme__heading__title">thoughts tagged '{{tag}}'</h1></div>
+{%- capture title -%}thoughts tagged '{{tag}}'{%- endcapture -%}
+{% heading "h1", title %}
 
 <ol>
 {% for post in collections[tag] | reverse %}

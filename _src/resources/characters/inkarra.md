@@ -1,9 +1,10 @@
 ---
 layout: layouts/_longform
-tags: characters
+category: resources
+tags: deities
 displayName:  Inkarra, the Guiding Star
 ---
-{% include "_CC-disclaimer.html" %}
+{% include "content/_CC-disclaimer.html" %}
 {% heading "h1", "Inkarra", "the Guiding Star" %}
 {% theme__border-card -%}
 The wise man is blessed with knowledge but the fool is blessed to learn every day.
@@ -75,4 +76,4 @@ Sometimes, candles are added at the feet of her statues or affixed to her hair, 
 
 There are no codified or widely accepted rituals associated with worship of Inkarra, as she is a rather niche deity.
 
-{% include "_photoswipe-script.html" %}
+{% include "partials/_photoswipe-script.html" %}

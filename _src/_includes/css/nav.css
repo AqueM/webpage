@@ -1,20 +1,9 @@
-<<<<<<< Updated upstream
-nav {
-	flex-basis: 20vw;
-	background-color: var(--element-primary);
-	border-radius: var(--border-radius);
-	z-index: 3;
-	min-width: fit-content;
-	max-height: 4rem;
-	transform-style: preserve-3d;
-=======
 /* SITE NAVIGATION */
 
 .layout__sidebar {
 	flex-basis: 10vw;
 	max-height: 4rem;
 	flex-grow: 1;
->>>>>>> Stashed changes
 
 	@media only screen and (min-width: 800px) {
 		max-height: unset;
@@ -105,39 +94,7 @@ nav {
 	transform: rotate(0deg);
 }
 
-<<<<<<< Updated upstream
-.sidebar {
-	margin-bottom: 1rem;
-}
-
-.menu {
-	transform: translate(-150%);
-	transition: transform 0.5s ease-in-out;
-	display: flex;
-	flex-direction: column;
-	gap: 0.2rem;
-	margin-top: 1rem;
-	padding: 0.5rem;
-	position: relative;
-	z-index: 4;
-	border-radius: var(--border-radius);
-	background-color: var(--element-primary);
-	border-bottom: 1px solid var(--border-color);
-
-	@media only screen and (min-width: 800px) {
-		transform: unset;
-		margin-top: unset;
-		background-color: unset;
-		padding: unset;
-		border-radius: unset;
-		border-bottom: unset;
-	}
-}
-
-.menu-label {
-=======
 .sitenav__menu-category {
->>>>>>> Stashed changes
 	padding: 0.5rem 1rem;
 	border-radius: var(--border-radius);
 	margin: 0;
@@ -188,26 +145,4 @@ nav {
 	letter-spacing: 0.1rem;
 	font-family: var(--font-title);
 	font-weight: bolder;
-<<<<<<< Updated upstream
-	background-color: var(--element-secondrary) !important;
-}
-
-.open[open] {
-	background-image: var(--gradient-top);
-	border-radius: var(--border-radius);
-}
-
-.menu-panel {
-	padding: 0;
-	display: none;
-	overflow: hidden;
-}
-
-.logs {
-	max-width: 90%;
-	font-size: small;
-	line-height: 1rem;
-	padding-inline-start: 1rem;
-=======
->>>>>>> Stashed changes
 }

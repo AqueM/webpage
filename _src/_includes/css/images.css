@@ -1,7 +1,5 @@
 /* IMAGES */
 /* general use */
-<<<<<<< Updated upstream
-=======
 .image--medium {
 	max-width: 20vw;
 }
@@ -44,7 +42,6 @@
 		display: block;
 	}
 }
->>>>>>> Stashed changes
 
 .clickable-image {
 	cursor: pointer;
@@ -59,30 +56,6 @@
 	border-radius: 50%;
 }
 
-<<<<<<< Updated upstream
-/* specific page use */
-
-#nav-layout-image {
-	position: absolute;
-	top: -3%;
-	left: 1%;
-	z-index: 1;
-	display: none;
-
-	@media only screen and (min-width: 300px) {
-		display: inline;
-	}
-}
-
-#header-logo-image {
-	transform: scaleX(-1);
-	max-width: 15vh;
-	display: none;
-
-	@media only screen and (min-width: 600px) {
-		display: inline;
-	}
-=======
 .image__blinkie {
 	display: inline-block;
 	width: 1em;
@@ -113,7 +86,6 @@
 	/* @media only screen and (min-width: 1800px) {
 		background-position: unset;
 	} */
->>>>>>> Stashed changes
 }
 
 .layout__image__header {
@@ -128,27 +100,6 @@
 	}
 }
 
-<<<<<<< Updated upstream
-#footer-layout-image {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	transform: translateZ(1rem);
-	display: none;
-	z-index: 1;
-
-	@media only screen and (min-width: 300px) {
-		display: inline;
-	}
-}
-
-.footer-badges img {
-	max-width: 20vw !important;
-
-	@media only screen and (min-width: 600px) {
-		max-width: 88px !important;
-	}
-=======
 .layout__image__footer {
 	bottom: 0;
 	right: 0;
@@ -156,5 +107,4 @@
 	width: 100%;
 	background-image: url('/assets/images/layout/canva-flowers.webp');
 	background-position: 100% 0%;
->>>>>>> Stashed changes
 }

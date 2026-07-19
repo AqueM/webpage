@@ -1,6 +1,8 @@
 ---
 layout: layouts/_page
-tags: technology
+category: technology
+tags: 
+  - nav
 displayName: Software
 ---
 {% heading "h1", "Software" %}

@@ -1,6 +1,8 @@
 ---
 layout: layouts/_page
-tags: about
+category: about
+tags: 
+  - nav
 displayName: Recs
 order: 4
 ---

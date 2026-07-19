@@ -1,46 +1,3 @@
-<<<<<<< Updated upstream
-.heading {
-	background-image: var(--gradient-left);
-	padding: 1rem;
-	border-radius: var(--border-radius);
-	font-family: var(--font-title);
-	border-top: 0.01rem solid var(--border-color);
-	border-bottom: 0.01rem solid var(--border-color);
-	margin-bottom: 1%;
-	margin-top: 1%;
-	width: 100%;
-}
-
-.title {
-	text-transform: uppercase;
-	font-family: var(--font-title);
-	margin-top: 1%;
-	margin-bottom: 0.5%;
-}
-
-.subtitle {
-	margin-left: 0.5%;
-	display: flex;
-	flex-direction: column;
-}
-
-.disclaimer {
-	border-style: dotted;
-	border-width: 0.3rem;
-	text-align: center;
-	padding: 1%;
-	border-radius: var(--border-radius);
-}
-
-.round-link {
-	border-style: dotted;
-	border-width: 0.1rem;
-	border-radius: 1rem;
-	padding: 0.2rem;
-	margin-bottom: 0.2rem;
-	background-color: var(--element-accent);
-}
-=======
 /* ELEMENTS */
 .blinkies {
 	img {
@@ -76,4 +33,3 @@
 		padding: 0;
 	}
 }
->>>>>>> Stashed changes

@@ -1,45 +1,19 @@
-<<<<<<< Updated upstream
-:root, html,
-body {
-	/* vars */
-=======
 /* THEME */
 :root {
 	/* VARIABLES */
->>>>>>> Stashed changes
 	--border-radius: 1rem;
 	--base-transparency-value: 60%;
 
-<<<<<<< Updated upstream
-	/* colors */
-	--color-light: #dafbd5;
-	--color-dark: rgb(28, 74, 29);
-	--color-primary: #c6f9be;
-	--color-secondrary: #96d98c;
-	--color-accent: #FFE6FF;
-=======
 	/* COLORS */
 	--base-color-light: #dafbd5;
 	--base-color-dark: #1C4A1D;
 	--base-color-primary: #c6f9be;
 	--base-color-secondrary: #96d98c;
 	--base-color-accent: #FFE6FF;
->>>>>>> Stashed changes
 
 	--base-color-blue: #7FFFD4;
 	--base-color-yellow: #FFE284;
 
-<<<<<<< Updated upstream
-	/* accessibility colors */
-	--color-darkest: #121212;
-	--color-lightest: #fcf9f5;
-	--color-middle: #323335;
-	--color-contrast: #FFD700;
-
-	/* fonts */
-	--font1:"Viaoda Libre";
-	--font2:"Poiret";
-=======
 	/* ACCESSIBILITY COLORS */
 	--base-color-darkest: #0f2810;
 	--base-color-lightest: #fcf9f5;
@@ -47,12 +21,11 @@ body {
 	--base-color-contrast: #FFD700;
 
 	/* FONTS */
-	--base-font: "vioda-libre";
-	--font-base-title: "im-fell";
-	--font-base-subtitle: "poiret-one";
+	--base-font: "faculty-glyphic";
+	--font-base-title: "amarante";
+	--font-base-subtitle: "viaoda-libre";
 	--dyslexic-font: 'open-dyslexic';
 	--accessible-font: system-ui;
->>>>>>> Stashed changes
 
 	/* SETUP */
 	/* COLORS */
@@ -71,33 +44,11 @@ body {
 	--gradient-secondrary-right: linear-gradient(to left, var(--color-secondrary), transparent);
 	--gradient-accent-top: linear-gradient(to bottom, var(--color-accent), transparent);
 	--gradient-water: linear-gradient(to top, var(--base-color-blue), transparent 70%, var(--color-blue-transparent));
-	--gradient-sun: linear-gradient(320deg, var(--base-color-transparent) 90%, var(--base-color-yellow) 100%);
+	--gradient-sun: linear-gradient(320deg, transparent 90%, var(--base-color-yellow) 100%);
 	/* VARIABLES */
 	--font-color: light-dark(var(--base-color-dark), var(--base-color-lightest));
 	--border-color: light-dark(var(--base-color-dark), var(--base-color-lightest));
 
-<<<<<<< Updated upstream
-	/* setup */
-	--font-color: var(--color-dark);
-	--border-color: var(--color-dark);
-	--fancy-border-color: var(--element-dark);
-	--button-hover: var(--element-secondrary);
-	--element-light: var(--color-light);
-	--element-dark: var(--color-dark);
-	--element-primary: var(--color-primary);
-	--element-secondrary: var(--color-secondrary);
-	--element-accent: var(--color-accent);
-	color: var(--font-color);
-
-	--element-primary-transparent: color-mix(in srgb, var(--element-primary) var(--transparency), transparent);
-	--element-secondrary-transparent: color-mix(in srgb, var(--element-secondrary) var(--transparency), transparent);
-	--element-accent-transparent: color-mix(in srgb, var(--element-accent) var(--transparency), transparent);
-	--element-light-transparent: color-mix(in srgb, var(--element-light) var(--transparency), transparent);
-	--element-blue-transparent: color-mix(in srgb, var(--color-blue) 50%, transparent);
-
-	--font-title: var(--font1);
-	--font-subtitle: var(--font2);
-=======
 	/* DEFAULTS */
 	color: var(--font-color);
 	font-size: 100%;
@@ -111,5 +62,4 @@ body {
 	animation-duration: 0.001ms !important;
 	animation-iteration-count: 1 !important;
 	transition-duration: 0.001ms !important;
->>>>>>> Stashed changes
 }

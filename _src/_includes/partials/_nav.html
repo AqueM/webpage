@@ -1,26 +1,3 @@
-<<<<<<< Updated upstream:_src/_includes/_nav.html
-<div id="nav-layout-image"><img src="/assets/images/layout/canva-vines1.webp" class="noformat layout-image" alt="menu vines"></div>
-<nav class="fancy-border">
-	<div class="corner top left"></div>
-	<div class="corner top right"></div>
-	<div class="corner bottom left"></div>
-	<div class="corner bottom right"></div>
-	<div class="navigation">
-		{% heading "h2", "Menu" %}
-		{% include "_menu.html" %}
-		<div class="sidebar">
-			{%- assign date = page.date | readableMonth -%}
-			{%- assign subtitle = "Last updated: <strong>" | append: date | append:
-				"</strong>"-%}
-			{% heading "h3", "Updates", subtitle %}
-			<ul class="logs">
-				{%- for element in nav.changelog -%}
-				<li>
-					<strong>{{element.date | readableDate}}</strong> - {{element.log}}
-				</li>
-				{%- endfor %}
-			</ul>
-=======
 <div class="layout__sidebar theme__border-card theme__block--primary">
 	{% include "partials/_decor-corners.html" %}
 	<div class="layout__flex-block__stack sitenav layout__flex-block--space-between">
@@ -30,12 +7,12 @@
 		{% assign subtitle = "<time>" | append: date | append: "</time>" %}
 		{% heading "h4", "Last updated", subtitle %}
 		<!-- <img src="/assets/images/layout/sitemap.gif" class="noformat"> -->
+		{% include "content/_fc2clap.html" %}
 		</div>
 		<div class="design__border-block nav__contact-link layout__flex-item--center ">
 			{% include "partials/_decor-sides.html" %}
 			<a href="mailto:{{site.author.email}}?body=Remember to edit the e-mail address if you're not an AI!"
 				target="_blank">Contact me</a>
->>>>>>> Stashed changes:_src/_includes/partials/_nav.html
 		</div>
 	</div>
 	<div class="sitenav--mobile">
@@ -51,7 +28,7 @@
 			<div class="sitenav__mobile-label">Menu</div>
 		</div>
 
-		{% include "_menu.html" %}
+		{% include "partials/_menu.html" %}
 
 	</div>
 </div>

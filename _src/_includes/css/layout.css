@@ -66,7 +66,7 @@
 	align-self: center;
 }
 
-.layout__flex-item__column {
+.layout__flex-item {
 	flex: 2 1 10%;
 	align-self: stretch;
 }

@@ -1,23 +1,5 @@
 /* HEADER */
 
-<<<<<<< Updated upstream
-#hero-body {
-	min-height: 0;
-	z-index: 2;
-	margin: unset;
-	display: flex;
-	flex-direction: row;
-	position: relative;
-	z-index: 3;
-}
-
-.logo {
-	display: flex;
-	flex-direction: row;
-	gap: 1%;
-	width: 100%;
-	align-items: center;
-=======
 .layout__header {
 	position: relative;
 	z-index: 1;
@@ -40,7 +22,6 @@
 
 .header__page-title__text {
 	font-size: calc(1rem + 0.5vh);
->>>>>>> Stashed changes
 	font-family: var(--font-title);
 	color: var(--font-color);
 
@@ -50,15 +31,9 @@
 
 }
 
-<<<<<<< Updated upstream
-.accessibility-btns {
-	display: flex;
-	flex-direction: row;
-	align-self: end;
-	/* flex-wrap: wrap; */
-=======
 .header__page-title__title {
 	font-size: calc(1rem + 2vh);
+	text-transform: uppercase;
 }
 
 .header__page-title__subtitle {
@@ -66,8 +41,15 @@
 	gap: unset;
 }
 
+.header__link, .header__link:visited, .header__link:hover, .header__link:active {
+	text-decoration: none;
+	color: inherit;
+}
+
 .header__access-card {
 	z-index: 3;
+	flex-basis: 25%;
+	font-family: var(--accessible-font);
 }
 
 /* ACCESSIBILITY TOGGLES */
@@ -103,5 +85,4 @@
 
 .access__label--small {
 	font-size: 0.75rem;
->>>>>>> Stashed changes
 }

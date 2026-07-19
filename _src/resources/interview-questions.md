@@ -1,6 +1,8 @@
 ---
 layout: layouts/_longform
-tags: resources
+category: resources
+tags: 
+  - nav
 displayName: Interview Questions
 ---
 {% heading "h1", "Interview questions" %}

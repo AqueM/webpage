@@ -41,19 +41,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .switch__slider:before {
   position: absolute;
   content: "";
-<<<<<<< Updated upstream
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: var(--color-lightest);
-=======
   height: 1.5rem;
   width: 1.5rem;
   left: 0.25rem;
   bottom: 0.25rem;
   background-color: var(--base-color-lightest);
->>>>>>> Stashed changes
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -94,29 +86,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-<<<<<<< Updated upstream
-.slider-dark {
-  background-color: var(--color-middle);
-}
-
-input:checked+.slider-dark {
-  background-color: var(--color-darkest);
-}
-
-input:focus+.slider-dark {
-  box-shadow: 0 0 1px var(--color-darkest);
-}
-
-input:checked+.slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-=======
 .switch__input:checked+.switch__slider:before {
   -webkit-transform: translateX(1.5rem);
   -ms-transform: translateX(1.5rem);
@@ -130,7 +99,6 @@ input:checked+.slider:before {
   &:before {
     border-radius: 50%;
   }
->>>>>>> Stashed changes
 }
 
 /* COLOR SLIDERS */
@@ -138,72 +106,6 @@ input:checked+.slider:before {
   background-color: var(--base-color-yellow);
 }
 
-<<<<<<< Updated upstream
-.slider-yellow {
-  background-color: var(--color-yellow);
-}
-
-input:checked+.slider-yellow {
-  background-color: var(--color-contrast);
-}
-
-input:focus+.slider-yellow {
-  box-shadow: 0 0 1px var(--color-contrast);
-}  
-
-input:checked+.slider-yellow:before{
-  background-color: var(--color-darkest);
-}
-
-/* https://jsfiddle.net/BumU5/3/ */
-
-
-[data-tip] {
-  font-family: system-ui;
-	position:relative;
-
-}
-[data-tip]:before {
-	content:'';
-	/* hides the tooltip when not hovered */
-	display:none;
-	content:'';
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 5px solid var(--color-darkest);	
-	position:absolute;
-	top:30px;
-	left:35px;
-	z-index:8;
-	font-size:0;
-	line-height:0;
-	width:0;
-	height:0;
-}
-[data-tip]:after {
-	display:none;
-	content:attr(data-tip);
-	position:absolute;
-	top:35px;
-	left:0px;
-	padding:5px 8px;
-	background:var(--color-darkest);
-	color:var(--color-lightest);
-	z-index:9;
-	font-size: 0.75em;
-	height:18px;
-	line-height:18px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	white-space:nowrap;
-	word-wrap:normal;
-}
-[data-tip]:hover:before,
-[data-tip]:hover:after {
-	display:block;
-=======
 .switch__slider--dark {
   background-color: var(--base-color-primary);
->>>>>>> Stashed changes
 }

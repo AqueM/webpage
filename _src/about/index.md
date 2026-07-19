@@ -1,6 +1,8 @@
 ---
 layout: layouts/_page
-tags: about
+category: about
+tags: 
+  - nav
 displayName: Bio
 order: 1
 priority: 0.7
@@ -15,16 +17,16 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 {%- endflex-item -%}
 
 {%- flex-aside %}
+
 - **Languages:** Polish, English, German
 - **Location:** Silesia, Poland, EU
 - **Age:** in my {{"now" | date: "%Y" | minus: 1991 | divided_by: 10  | floor | times: 10 }}s
 - **Pronouns:** they/them in English, any in Polish
 - **Identity:** triple-A human ([what? →](/longform/thoughts/2026/my-queerness.html))
-{% endflex-aside -%}
 
+{%- endflex-aside %}
 {%- flex-break-newrow -%}
-
-{%- flex-item -%}
+{% flex-item %}
 {% heading "h2", "Interests", "Talking about any of these will almost always grab my attention" %}
 
 - **stories:** cartoons, fantasy, sci-fi, comics, anime/manga, worldbuilding
@@ -37,8 +39,9 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - **visual arts:** pencil drawing, digital drawing, anime style
 - character design
 - indie VTubers
-{% endflex-item -%}
-{%- flex-item -%}{% heading "h2", "Likes", "always appreciated as gifts or offerings" %}
+{%- endflex-item -%}
+{% flex-item %}
+{% heading "h2", "Likes", "always appreciated as gifts or offerings" %}
 
 - cats and frogs
 - rock music

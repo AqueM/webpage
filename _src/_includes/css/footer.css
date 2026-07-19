@@ -3,57 +3,13 @@
 .layout__footer {
 	flex-basis: 5vh;
 	position: relative;
-<<<<<<< Updated upstream
-	z-index: 2;
-	/* transform-style: preserve-3d; */
-=======
 	z-index: 3;
 	flex-grow: 1;
->>>>>>> Stashed changes
 }
 
 .footer {
 	padding: 0 2rem 0 2rem;
 	justify-content: space-between;
-<<<<<<< Updated upstream
-	align-items: center;
-}
-
-#footer-bg {
-	background-color: var(--element-secondrary-transparent);
-	border-radius: var(--border-radius);
-	padding-left: 2rem;
-
-	@media only screen and (min-width: 800px) {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		flex-basis: 5vh;
-	}
-}
-
-.footer-right {
-	margin-right: 1rem;
-	position: relative;
-	z-index: 2;
-}
-
-.footer-left {
-	flex-basis: 15vw;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	z-index: 2;
-
-	@media only screen and (min-width: 600px) {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-.fancy-highlight.contact{
-	background-color: var(--element-accent);
-=======
 	position: relative;
 	z-index: 3;
->>>>>>> Stashed changes
 }

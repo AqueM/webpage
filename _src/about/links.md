@@ -1,6 +1,8 @@
 ---
 layout: layouts/_page
-tags: about
+category: about
+tags: 
+  - nav
 displayName: Other Platforms
 order: 2
 priority: 0.7
@@ -11,7 +13,7 @@ priority: 0.7
 Here are some places you can find me, from most to least likely that I'll be responsive and active there. They all open in a new tab.
 
 {% flex-columns-centered -%}
-{%- for platform in about.other_platforms %}
+{% for platform in about.other_platforms %}
 <div class="design__link--round">
 	<a href="{{platform.url}}" target="_blank"><span class="icon icon--left" style="--layout-img: url('{{platform.icon}}');"></span>{{platform.name}}</a>
 </div>

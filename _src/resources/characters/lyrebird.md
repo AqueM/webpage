@@ -1,9 +1,10 @@
 ---
 layout: layouts/_longform
-tags: characters
+category: resources
+tags: deities
 displayName: Lyrebird, Kin of the Wayward
 ---
-{% include "_CC-disclaimer.html" %}
+{% include "content/_CC-disclaimer.html" %}
 {% heading "h1", "Lyrebird", "Kin of the Wayward" %}
 
 {% theme__border-card %}
