@@ -1,37 +1,20 @@
-.gallery {
-  display: grid;
-  gap: 1rem 1rem;
-  justify-content: center;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, min-content));
-  place-items: center;
-}
 
-.gallery div {
-  margin: 0;
-  padding: 0;
-}
-
-.gallery img {
+/* GALLERY */
+.gallery__item {
   width: 100%;
-  height: 15rem;
+  height: 200px;
   object-fit: cover;
   border-radius: var(--border-radius);
   transition: transform 0.2s;
   cursor: pointer;
-}
-
-.gallery .square {
-    width: 15rem;
-  height: 15rem;
-}
-
-.gallery figure {
   margin: 0;
-}
-
-.gallery img:hover {
+  &:hover {
   transform: scale(1.2);
+	}
+}
+.gallery__item--square {
+  width: 15rem;
+  height: 15rem;
 }
 .pswp__dynamic-caption--aside a {
   white-space: nowrap;

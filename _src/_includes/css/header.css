@@ -1,105 +1,88 @@
-#hero-bg {
-	background-color: var(--element-secondrary-transparent);
-	border-radius: var(--border-radius);
-	padding: 1%;
-}
+/* HEADER */
 
-#hero-body {
-	min-height: 0;
-	margin: unset;
-	display: flex;
-	flex-direction: column;
+.layout__header {
 	position: relative;
-	justify-content: space-between;
-	z-index: 5;
-	align-items: stretch;
-	height: 100%;
-
-	@media only screen and (min-width: 800px) {
-		flex-direction: row;
-	}
+	z-index: 1;
+	flex-grow: 1;
+	flex-basis: 20vh;
 }
 
-#hero-body a {
-	background-color: unset;
+.header {
+	padding: 1% 0.5rem 1% 0.5rem;
+	flex-wrap: nowrap;
+	width: 100%;
+	align-items: flex-start;
 }
 
-#page-header {
+.header__page-title {
 	display: flex;
-	flex-direction: row;
-	gap: 1%;
+	gap: 1rem;
 	align-items: stretch;
-	height: inherit;
 }
 
-#page-title {
+.header__page-title__text {
 	font-size: calc(1rem + 0.5vh);
 	font-family: var(--font-title);
+	color: var(--font-color);
+
+	@media only screen and (min-width: 800px) {
+		white-space: nowrap;
+	}
+
 }
 
-#hero-body .subtitle {
-	flex-direction: column;
+.header__page-title__title {
+	font-size: calc(1rem + 2vh);
+	text-transform: uppercase;
+}
+
+.header__page-title__subtitle {
+	justify-content: unset;
 	gap: unset;
 }
 
-.accessibility-btns {
-	background-color: var(--element-accent-transparent);
-	border-radius: var(--border-radius);
+.header__link, .header__link:visited, .header__link:hover, .header__link:active {
+	text-decoration: none;
+	color: inherit;
 }
 
-.toggles {
+.header__access-card {
+	z-index: 3;
+	flex-basis: 25%;
+	font-family: var(--accessible-font);
+}
+
+/* ACCESSIBILITY TOGGLES */
+.access-card__grid {
 	display: grid;
 	gap: 0.2rem 0.1rem;
 	grid-template-columns: 1fr 1fr;
-
 }
 
-.toggle {
+.access-card__grid__toggle {
 	display: flex;
 	gap: 0.1rem;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--element-accent-transparent);
-	border-radius: var(--border-radius);
 	padding: 0.25rem;
 }
 
-.accessibility-btns details {
-	border: none;
-	padding: 0.25rem;
+.access-card__accordion {
 	min-width: max-content;
 }
 
-.accessibility-btns summary {
-	background-color: var(--element-accent-transparent);
+.access__accordion__dropdown {
 	padding: 0.5rem;
+	font-size: 1rem;
+	cursor:pointer;
 }
 
-.accessibility-btns summary,
-.accessibility-btns span {
+.access__label {
 	text-transform: uppercase;
-	font-size: 1rem;
 	word-spacing: 0.25rem;
 	min-width: max-content;
 }
 
-.toggle span {
+.access__label--small {
 	font-size: 0.75rem;
-}
-
-#hero-body .aside {
-	flex-basis: 20vw;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	z-index: 3;
-	gap: 0.1rem;
-	justify-content: space-between;
-}
-
-#print-btn {
-	background-color: var(--element-accent-transparent);
-	border-radius: var(--border-radius);
-	align-self: flex-end;
-	padding: 0.25rem;
 }

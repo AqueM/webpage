@@ -1,7 +1,8 @@
 ---
 layout: layouts/_page
 category: creations
-tags: nav
+tags: 
+  - nav
 displayName: Poetry
 ---
 {% heading "h1", "My poetry" %}

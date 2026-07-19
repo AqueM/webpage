@@ -1,40 +1,64 @@
-nav {
+/* SITE NAVIGATION */
+
+.layout__sidebar {
 	flex-basis: 10vw;
-	background-color: var(--element-primary);
-	border-radius: var(--border-radius);
 	max-height: 4rem;
+	flex-grow: 1;
 
 	@media only screen and (min-width: 800px) {
-		background-color: var(--element-primary-transparent);
 		max-height: unset;
-		margin: 1%;
-		padding: 1%;
 	}
 }
 
-.navigation {
+.nav__contact-link {
+	background-color: var(--color-accent);
+}
+
+.sitenav {
 	display: none;
+	height: 100%;
 
 	@media only screen and (min-width: 800px) {
-		display: block;
+		display: flex;
 	}
 }
 
-#nav-bg {
-	background-color: var(--element-primary);
+.sitenav__menu {
+	transform: translate(-150%);
+	transition: transform 0.5s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+	position: relative;
+	z-index: 4;
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
+	background-color: var(--color-primary);
+	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 1rem;
+
+	@media only screen and (min-width: 800px) {
+		transform: unset;
+		margin-top: unset;
+		background-color: unset;
+		padding: unset;
+		border-radius: unset;
+		border-bottom: unset;
+	}
 }
 
-/* Hide marker */
-nav details {
+.sitenav__menu-category {
 	cursor: pointer;
 	margin-bottom: 0.1rem;
 }
 
 /* code courtesy of https://css-tricks.com/using-styling-the-details-element/ */
-nav details summary {
+.sitenav__menu-category__name {
 	/* Pin the custom marker to the container */
 	position: relative;
 
+	/* Hide original marker */
 	&::marker {
 		content: "";
 	}
@@ -44,7 +68,7 @@ nav details summary {
 		/* Custom marker dimensions */
 		content: "";
 		z-index: 3;
-		border-block-start: 0.1rem solid var(--element-dark);
+		border-block-start: 0.1rem solid var(--color-dark);
 		height: 0;
 		width: 1rem;
 		margin-right: 0.5rem;
@@ -66,45 +90,12 @@ nav details summary {
 }
 
 /* Rotate the line when open */
-nav details[open] summary::after {
+.sitenav__menu-category[open] .sitenav__menu-category__name::after {
 	transform: rotate(0deg);
 }
 
-.sidebar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
-}
-
-.menu {
-	transform: translate(-150%);
-	transition: transform 0.5s ease-in-out;
-	display: flex;
-	flex-direction: column;
-	gap: 0.2rem;
-	margin-top: 1rem;
-	padding: 0.5rem;
-	position: relative;
-	z-index: 4;
-	border-radius: 0 0 var(--border-radius) var(--border-radius);
-	background-color: var(--element-primary);
-	border-bottom: 1px solid var(--border-color);
-	margin-bottom: 1rem;
-
-	@media only screen and (min-width: 800px) {
-		transform: unset;
-		margin-top: unset;
-		background-color: unset;
-		padding: unset;
-		border-radius: unset;
-		border-bottom: unset;
-	}
-}
-
-.menu-label {
+.sitenav__menu-category {
 	padding: 0.5rem 1rem;
-	background-image: var(--gradient-left);
 	border-radius: var(--border-radius);
 	margin: 0;
 	text-transform: uppercase;
@@ -116,15 +107,18 @@ nav details[open] summary::after {
 	position: relative;
 }
 
-.open-category {
-	background-color: var(--element-accent) !important;
+.sitenav__menu-category--open {
+	/* background-color: var(--color-accent); */
+	background-image: var(--gradient-accent-top);
+	border-radius: var(--border-radius);
 }
 
-.category-name {
+.sitenav__menu-category__label {
 	margin-right: 1.5rem;
+	/* to add space for the nav + */
 }
 
-.menu-list {
+.sitenav__menu-list {
 	line-height: 1.2rem;
 	list-style-type: none;
 	border-inline-start: 1rem;
@@ -132,37 +126,23 @@ nav details[open] summary::after {
 	margin: 0.2rem 0.1rem 0.2rem 0.1rem;
 }
 
-.menu-list a {
+.sitenav__menu-link {
 	display: inline-block;
 	font-size: 1rem;
 	margin-bottom: 0.2rem;
-	background-color: var(--element-secondrary-transparent);
 	padding: 0.5rem;
 	padding-left: 1rem;
-	border-radius: var(--border-radius);
 	text-align: left;
 	width: 100%;
-	border-top: 0.01rem solid var(--border-color);
-	border-bottom: 0.01rem solid var(--border-color);
 	font-family: var(--font-subtitle);
 	font-weight: bold;
+	text-decoration: none;
+	color: var(--font-color);
 }
 
-.active-link {
+.sitenav__menu-link--active {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	font-family: var(--font-title) !important;
+	font-family: var(--font-title);
 	font-weight: bolder;
-	background-color: var(--element-secondrary) !important;
-}
-
-.open[open] {
-	background-image: var(--gradient-top);
-	border-radius: var(--border-radius);
-}
-
-.menu-panel {
-	padding: 0;
-	display: none;
-	overflow: hidden;
 }
