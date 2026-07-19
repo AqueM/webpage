@@ -3,7 +3,7 @@ layout: layouts/_page
 category: about
 tags: 
   - nav
-displayName: Other Platforms
+displayName: Outlinks
 order: 2
 priority: 0.7
 ---
