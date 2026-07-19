@@ -47,10 +47,10 @@ Turns out I'm not the only person to ponder these problems. Some come to the sam
 ### To summarise:
 
 Sex is overrated, romantic love is weird, I've traded my gender for a cool rock.   
-<div class="blinkies layout__flex-block__row layout__flex-block--space-between">
+<div class="design__blinkies layout__flex-block__row layout__flex-block--space-between">
 {%- for image in collections.queerImages -%}
 <img src="{{image}}">
 {%- endfor %}
 </div>
 
-<div class="design__box--small"><p class="design__link--round"><a href="/about"><< back to Bio</a></p></div>
+<div class="design__box--small"><p class="design__link--round"><a href="/about">back to Bio</a></p></div>

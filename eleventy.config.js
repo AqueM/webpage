@@ -76,26 +76,27 @@ module.exports = async function (eleventyConfig) {
         if (typeof subtitle !== 'undefined') {
             sub = `<span class="theme__heading__subtitle">${subtitle}</span>`
         };
+                        // <div class="design_decor design__decor--top"></div>
         return `<div class="theme__heading layout__flex-block__stack theme__block--accent theme__card--border">
 				<${size} class="theme__heading__title">${title}</${size}>` + sub + `</div>`;
     });
     eleventyConfig.addPairedShortcode("flex-columns", function (content) {
-        return `<section class="layout__flex-block__row layout__flex-block--space-around">
+        return `<div class="layout__flex-block__row layout__flex-block--space-around">
         ${content}
-        </section>`;
+        </div>`;
     });
     eleventyConfig.addPairedShortcode("flex-columns-centered", function (content) {
-        return `<section class="layout__flex-block__row layout__flex-block--center">
+        return `<div class="layout__flex-block__row layout__flex-block--center">
         ${content}
-        </section>`;
+        </div>`;
     });
     eleventyConfig.addPairedShortcode("flex-stack-centered", function (content) {
-        return `<section class="layout__flex-block__stack layout__flex-block--center">
+        return `<div class="layout__flex-block__stack layout__flex-block--center">
         ${content}
-        </section>`;
+        </div>`;
     });
     eleventyConfig.addPairedShortcode("flex-stack", function (content) {
-        return `<section class="layout__flex-block__stack layout__flex-block--center"> ${content}</section>`;
+        return `<div class="layout__flex-block__stack layout__flex-block--center"> ${content}</div>`;
     });
     
     eleventyConfig.addPairedShortcode("flex-item", function (content) {
@@ -137,7 +138,11 @@ module.exports = async function (eleventyConfig) {
         if (neighbour.img) {
             return `<a href="${neighbour.url}" target="_blank"><img class="${className}" src="${neighbour.img}" alt="${neighbour.alt}"></a>`
         }
-        return `<div class="design__link--round"><a href="${neighbour.url}" target="_blank">${neighbour.alt}</a></div>`;
+        return `<div class="design__link--round"><a href="${neighbour.url}" target="_blank" rel="external">${neighbour.alt}</a></div>`;
+    });
+
+    eleventyConfig.addShortcode("divider-center", function (content) {
+        return `<div class="design_decor design__divider--center"></div>`;
     });
 
     eleventyConfig.addShortcode("image", function (image) {

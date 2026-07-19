@@ -14,20 +14,20 @@ displayName: EDC
 
 EDC stands for Everyday Carry and refers to items you carry with you daily, or at least regularly. What should be included in that list differs extremely depending on who you ask; some are good with just their phone, some feel naked without fifteen gadgets and a knife.
 
-Here's a nice article about EDCs: [What is EDC? Everyday Carry: The Ultimate Beginner’s Guide](https://everydaycarry.com/what-is-edc-everyday-carry-guide/)
+Here's a nice article about EDCs: [What is EDC? Everyday Carry: The Ultimate Beginner’s Guide](https://everydaycarry.com/what-is-edc-everyday-carry-guide/){rel=external}{target=_blank}
 
 ## Why showcase it?
 
 It's a community tradition, to show your "pocket dump" to inspire others or share things that have worked for you. I also want to brag about my cute stuff, alright.
 
-Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/)
+Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/){rel=external}{target=_blank}
 </section>
 
 {%- assign date = page.date | date: "%m" -%}
 {%- assign subtitle = "Last updated: <strong>" | append: date | append:
     "</strong>"-%}
 {% heading "h2", "Current EDC", subtitle %}
-
+<section>
 {% flex-columns -%}
 {%- flex-item %}
 
@@ -42,7 +42,7 @@ Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/)
 
 ### Hardware
 
-DAP, headphones, phone with a [Tech-Protect C6S Rope Wrist Strap](https://tech-protect.eu/pl/products/tech-protect-c6s-rope-crossbody-cargo-khaki-165357.html?query_id=3){target=_blank} lanyard (can be swapped between 'bracelet' length or over the shoulder length). To see details, go to [Hardware  →](/tech/hardware)
+DAP, headphones, phone with a [Tech-Protect C6S Rope Wrist Strap](https://tech-protect.eu/pl/products/tech-protect-c6s-rope-crossbody-cargo-khaki-165357.html?query_id=3){target=_blank}{rel=external} lanyard (can be swapped between 'bracelet' length or over the shoulder length). To see details, go to [Hardware](/tech/hardware)
 
 Powerbank with a short USB to USB-C cable (randomly chosen, this is the one thing I was too lazy to research into)
 {%- endflex-item -%}
@@ -96,5 +96,6 @@ I do not carry any physical money in this wallet, curiously. When I need cash on
 {%- endflex-aside -%}
 
 {%- endflex-columns %}
+</section>
   
 {% include "partials/_photoswipe-script.html" %}

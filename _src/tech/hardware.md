@@ -6,18 +6,15 @@ tags:
 displayName: Hardware
 ---
 {% heading "h1", "Hardware" %}
+<section>
 
 List of the devices that I currently use and thus I can reccommend at least partially.
 
 Most were chosen based on price-to-quality ratio where quality was determined by extensive online research, that is comparing "Best [device] in [year]" articles and cross-referencing them with Reddit reviews, and occassionaly asking friends to explain specs terms to me. This approach has yet to let me down.
+
 {%- flex-columns -%}
-{%- flex-item %}
+{%- flex-item -%}
 {% heading "h2", "Personal" %}
-{%- endflex-item -%}
-
-{%- flex-break-newrow -%}
-
-{% flex-item %}
 
 - **Digital Audio Player (DAP):** [Snowsky Echo Mini](https://www.fiio.com/echomini){target=_blank}
 - **Headphones:** [Sennheiser HD 450BT](https://www.sennheiser.com/o/hd450bt){target=_blank}
@@ -61,3 +58,4 @@ In Case of Emergency, my house always contains the following:
 - **battery-powered radio with LW:** currently [Eltra Asia](https://eltra.pl/shop/asia-radio-kieszonkowe-model-810-czarny/){target=_blank}
 {%- endflex-item -%}
 {%- endflex-columns -%}
+</section>

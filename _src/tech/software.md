@@ -6,6 +6,7 @@ tags:
 displayName: Software
 ---
 {% heading "h1", "Software" %}
+<section>
 
 List of the programs and apps that I currently use and thus I can reccommend at least partially for some purposes. They're _mostly_ free.
 
@@ -83,3 +84,4 @@ List of the programs and apps that I currently use and thus I can reccommend at 
 * [Better Weight](https://play.google.com/store/apps/details?id=com.betterweightapp){target=_blank} for tracking weight
 {%- endflex-item -%}
 {%- endflex-columns -%}
+</section>

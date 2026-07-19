@@ -3,10 +3,12 @@
 	<div class="layout__flex-block__stack sitenav layout__flex-block--space-between">
 		<div>
 		{% include "partials/_menu.html" %}
+		{% divider-center %}
 		{%- assign date = "now" | date: "%m/%Y" -%}
 		{% assign subtitle = "<time>" | append: date | append: "</time>" %}
 		{% heading "h4", "Last updated", subtitle %}
 		<!-- <img src="/assets/images/layout/sitemap.gif" class="noformat"> -->
+		{% divider-center %}
 		{% include "content/_fc2clap.html" %}
 		</div>
 		<div class="design__border-block nav__contact-link layout__flex-item--center ">

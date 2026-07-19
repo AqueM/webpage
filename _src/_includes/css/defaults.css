@@ -47,12 +47,12 @@ ul:not(.noformat) {
 	line-height: 1.5rem;
 }
 
-a:not(.noformat) {
+a:not(.noformat, .sitenav__menu-link) {
 	position: relative;
 	text-decoration: none;
 	color: var(--color-dark);
 	background-color: var(--color-accent-transparent);
-	border-radius: 1rem;
+	border-radius: var(--border-radius);
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	line-height: 1em;
@@ -62,8 +62,21 @@ a:not(.noformat) {
 	}
 }
 
+.external-code:has(> a),
+a:not([rel~="external"], .noformat, .sitenav__menu-link)::after {
+	content: "→";
+	margin-left: 0.3rem;
+}
+
 a:not(.noformat)[target="_blank"]::after {
-	content: "⭧";
+	content: "";
+	background-image: url("/assets/images/layout/font-awesome/arrow-up-right-from-square-solid-full.svg");
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: center;
+	background-size: 1em;
+	background-repeat: no-repeat;
 	margin-left: 0.3rem;
 	text-decoration: none;
 }
@@ -76,13 +89,13 @@ h3:not(.noformat) {
 
 details:not(.noformat) {
 	border-style: dotted;
-	border-width: 0.1em;
+	border-width: calc(var(--border-width)*2);
 	border-radius: var(--border-radius);
 }
 
 summary:not(.noformat) {
-	border-radius: 1rem;
-	padding: 0.5%;
+	border-radius: var(--border-radius);
+	padding: 0.5rem;
 	background-color: var(--color-accent);
 	margin-bottom: 0.1em;
 }

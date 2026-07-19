@@ -3,6 +3,7 @@
 .image--medium {
 	max-width: 20vw;
 }
+
 .image--small {
 	max-width: 10vw;
 }
@@ -54,6 +55,9 @@
 
 .image--round {
 	border-radius: 50%;
+	outline: var(--color-secondrary) thick double;
+	outline-offset: -7px;
+	border: var(--border-width) solid var(--color-dark);
 }
 
 .image__blinkie {
@@ -90,10 +94,14 @@
 
 .layout__image__header {
 	position: absolute;
-	top: -3%;
+	background-position: 100% 0%;
+	top: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 1;
 	display: none;
+	background-image: url('/assets/images/layout/canva-vines2.webp');
+	width: 100%;
+	height: 30rem;
 
 	@media only screen and (min-width: 600px) {
 		display: inline;

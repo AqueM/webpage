@@ -10,7 +10,6 @@ const cookies = { 'darkmode': [btnDark, 'data-theme'], 'contrast': [btnContrast,
 const systemPreferences = { 'darkmode': '(prefers-color-scheme: dark)', 'contrast': '(prefers-contrast: high)', 'motion': '(prefers-reduced-motion: reduce)' };
 const defaultOn = ['motion', 'complexity', 'special-fonts'];
 
-const elementsToChange = [...document.getElementsByClassName("access__disclaimer")];
 const darkModeIcons = [...document.getElementsByClassName("darkmode-icon")];
 const elementsToHide = [...document.getElementsByClassName("design__border-card__decor"), ...document.getElementsByClassName("design__border-block"), ...document.getElementsByClassName("icon"), ...document.getElementsByClassName("layout__image")];
 
@@ -83,9 +82,6 @@ btnComplex.addEventListener("change", function () {
     let currentStatus = !(localStorage.getItem('complexity') === 'true');
     elementsToHide.forEach(element => {
         element.classList.toggle("theme--hide", currentStatus);
-    });
-    elementsToChange.forEach(element => {
-        element.classList.toggle("access--complexity", currentStatus);
     });
 
     if (!currentStatus) {

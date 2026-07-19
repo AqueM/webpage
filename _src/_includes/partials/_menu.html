@@ -12,7 +12,7 @@
             {%- assign links = collections.nav | order -%}
             {%- for element in links -%}
             {%- if element.data.category == navCat.name %}
-            <li><a class="noformat sitenav__menu-link theme__block--primary {% if element.url==page.url %} theme__block--secondrary sitenav__menu-link--active{% endif %}"
+            <li><a class="sitenav__menu-link theme__block--primary {% if element.url==page.url %} theme__block--secondrary sitenav__menu-link--active{% endif %}"
                     href="{% if element.url %}{{ element.url }}{% else %}{{ element.data.link }}{% endif %}"
                     target="{{element.data.target}}">{{element.data.displayName}}</a></li>
             {%- endif %}

@@ -11,7 +11,7 @@ priority: 0.7
 
 {%- flex-columns -%}
 {%- flex-item -%}
-<a href="https://picrew.me/en/image_maker/1322863" class="noformat design__floated--left"><img src="/assets/images/picrew.png" alt="cartoony portrait of a person with light skin and short brown hair, against the nonbinary flag background" title="click to go to the picrew used to make this!" class="noformat image--round image--small"></a>
+<a href="https://picrew.me/en/image_maker/1322863" rel="external" class="noformat design__floated--left"><img src="/assets/images/picrew.png" alt="cartoony portrait of a person with light skin and short brown hair, against the nonbinary flag background" title="click to go to the picrew used to make this!" class="noformat image--round image--small"></a>
 
 My main focus are various arts and crafts, and I'm always ready to help where I can. I'm a strong believer in universal human rights, including queer rights and intersectional feminism, evidence-based science and medicine, bodily autonomy, the separation of church and state, and generally in the concept that we should be good and understanding to each other.
 {%- endflex-item -%}
@@ -22,7 +22,7 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - **Location:** Silesia, Poland, EU
 - **Age:** in my {{"now" | date: "%Y" | minus: 1991 | divided_by: 10  | floor | times: 10 }}s
 - **Pronouns:** they/them in English, any in Polish
-- **Identity:** triple-A human ([what? →](/longform/thoughts/2026/my-queerness.html))
+- **Identity:** triple-A human ([what?](/longform/thoughts/2026/my-queerness.html))
 
 {%- endflex-aside %}
 {%- flex-break-newrow -%}
@@ -54,7 +54,7 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - window-shopping and browsing items (except clothing)
 - art noveau style{% endflex-item %}
 
-{%- flex-break-newrow -%}
+{% divider-center %}
 
 {%- flex-item -%}
 {%- flex-columns -%}

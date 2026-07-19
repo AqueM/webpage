@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  */
 
 .theme__border-card {
-	border: 1px solid var(--deco-border-color);
+	border: var(--border-width) solid var(--deco-border-color);
 	position: relative;
 	padding: 1rem;
 	margin: 1rem;
@@ -21,7 +21,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		@media only screen and (min-width: 600px) {
 			width: 0.5rem;
 			height: 0.5rem;
-			border: 1px solid var(--deco-border-color);
+			border: var(--border-width) solid var(--deco-border-color);
+			border-radius: 0.1rem;
 
 			&::after,
 			&::before {
@@ -132,7 +133,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				content: "";
 				width: 0.75rem;
 				height: 0.75rem;
-				border: 0.01rem solid var(--deco-border-color);
+				border: var(--border-width) solid var(--deco-border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0.4rem - 0.01rem);

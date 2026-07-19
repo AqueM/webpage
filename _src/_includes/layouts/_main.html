@@ -3,6 +3,7 @@ date: Last Modified
 eleventyComputed:
   title: "{{site.title}} | {{category}} | {{displayName}}"
   description: "{{site.description}}"
+order: 99
 ---
 <!doctype html>
 <html lang="en">
@@ -20,7 +21,7 @@ eleventyComputed:
     <meta name="description" content="{{page.data.description}}">
     <meta name="robots" content="noai, noimageai">
     <title>{{title}}</title>
-    <!-- <link rel="preload" href="/assets/css/fonts.css" as="style"/> -->
+    <link rel="preload" href="/assets/css/fonts.css" as="style"/>
      <link rel="style" href="/assets/css/fonts.css">
     <link rel="preload" href="/assets/javascript/accessibility.js" as="script" />
     <link rel="stylesheet" href="/assets/css/fonts.css" />
@@ -29,7 +30,6 @@ eleventyComputed:
     <link rel="stylesheet" href="/assets/photoswipe/photoswipe.css" />
     <link rel="stylesheet"
         href="https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
     <script defer src="/assets/javascript/accessibility.js"></script>
 </head>
 

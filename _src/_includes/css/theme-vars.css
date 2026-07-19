@@ -1,8 +1,9 @@
 /* THEME */
 :root {
 	/* VARIABLES */
-	--border-radius: 1rem;
+	--border-radius: 1rem 0.2rem 1rem 0.2rem ;
 	--base-transparency-value: 60%;
+	--border-width: 0px;
 
 	/* COLORS */
 	--base-color-light: #dafbd5;

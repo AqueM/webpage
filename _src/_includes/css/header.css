@@ -68,13 +68,13 @@
 }
 
 .access-card__accordion {
-	padding: 0.25rem;
 	min-width: max-content;
 }
 
 .access__accordion__dropdown {
 	padding: 0.5rem;
 	font-size: 1rem;
+	cursor:pointer;
 }
 
 .access__label {

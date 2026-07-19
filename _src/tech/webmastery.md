@@ -8,11 +8,15 @@ order: 1
 ---
 {% heading "h1", "About this website" %}
 <section>
-
-If you want to link back to me, check [Outlinks](/about/links/)!
-
 {%- flex-columns -%}
 {%- flex-item %}
+Looking for my buttons to link back?
+
+[Outlinks](/about/links/){class=design__link--round}
+
+{%- endflex-item -%}
+{%- flex-break-newrow -%}
+{%- flex-item -%}
 {% heading "h2", "Credits", "resources used to create this website" %}
 <ul>
     {%- for link in tech.credits -%}
@@ -23,7 +27,7 @@ If you want to link back to me, check [Outlinks](/about/links/)!
 
 {%- flex-break-newrow -%}
 
-{% flex-item %}
+{%- flex-item -%}
 {% heading "h2", "Changelog", "latest updates" %}
 <ul class="logs">
     {%- for element in tech.changelog -%}
