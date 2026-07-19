@@ -1,0 +1,30 @@
+{
+  "hardware": {
+    "src": "/assets/images/photos/edc/hardware_07-2026.webp",
+    "width": 795,
+    "height": 716,
+    "title": "my hardware",
+    "alt": "Photo of items propped against a velvet, padded purple background. It includes a white, rectangle powerbank with a short yellow cable beneath it; big, black, over-ear headphones; a rectangle music player in a green PU velvet case; a big smartphone with a green, military-fabrit strap."
+  },
+    "wallet": {
+    "src": "/assets/images/photos/edc/wallet_07-2026.webp",
+    "width": 1280,
+    "height": 960,
+    "title": "my wallet equivalent",
+    "alt": "Photo of items propped against a velvet, padded purple background. It includes a bright green coinpurse in the shape of a smiling frog head; a black PU leather card holder with a butterfly wing keychain; two top-closing card holders with clasps, in flower patterns. One of the flowery card holders is open to show that the inside pulls out."
+  },
+    "misc": {
+    "src": "/assets/images/photos/edc/misc_07-2026.webp",
+    "width": 1280,
+    "height": 960,
+    "title": "smaller items",
+    "alt": "Photo of items propped against a velvet, padded purple background. It includes a black, square flashlight with neon green LED in the middle; travel-size bottles of hand sanitizer, perfume, hand cream and mouth spray; lip balm; metal rectangle the size of a debit card with various useful tools cut into the edges, like a bottle opener, a ruler and a screwdriver end; a bottle opener keychain; a cart coin keychain; a small blade keychain; a blue cloth in a see-through plastic zipper pouch; a black wrist brace; a blue pen; a spiral notebook covered in stickers representing: cartoon frogs, cartoon cats, flowers, the Bureau of Balance logo from TAZ, a quote on a white ribbon surrounded in flowers, saying 'be your own hero'."
+  },
+    "decor": {
+    "src": "/assets/images/photos/edc/decor_07-2026.webp",
+    "width": 894,
+    "height": 799,
+    "title": "decorative items",
+    "alt": "Photo of items propped against a velvet, padded purple background. It includes a phone charm with two glass beads in the shape of persimmons and a green bead in the shape of a leaf; a butterfly wing keychain; a phone charm in the shape of a black six-sided die and a metal, four-point star; a keychain in the shape of a plastic playing card, the ace of spades; an enamel keychain in the shape of a bee and a piece of honeycomb."
+  }
+}

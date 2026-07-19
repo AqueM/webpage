@@ -2,31 +2,31 @@
   {
     "name": "discord",
     "url": "https://discordapp.com/users/266450416005283851",
-    "icon": "fab fa-discord"
+    "icon": "/assets/images/layout/font-awesome/discord-brands-solid-full.svg"
   },
   {
     "name": "tumblr",
     "url": "https://iriascend.tumblr.com/",
-    "icon": "fab fa-tumblr"
+    "icon": "/assets/images/layout/font-awesome/tumblr-brands-solid-full.svg"
   },
   {
     "name": "Reddit",
     "url": "https://www.reddit.com/user/AqueM/",
-    "icon": "fab fa-reddit"
+    "icon": "/assets/images/layout/font-awesome/reddit-brands-solid-full.svg"
   },
   {
     "name": "Archive of Our Own",
     "url": "https://archiveofourown.org/users/Iriascend/profile",
-    "icon": "fas fa-question-circle"
+    "icon": "/assets/images/layout/ao3-mono.svg"
   },
   {
     "name": "BlueSky",
     "url": "https://bsky.app/profile/iriascend.bsky.social",
-    "icon": "fas fa-question-circle"
+    "icon": "/assets/images/layout/font-awesome/bluesky-brands-solid-full.svg"
   },
   {
     "name": "Twitter / X",
     "url": "https://x.com/iriascend",
-    "icon": "fab fa-twitter"
+    "icon": "/assets/images/layout/font-awesome/twitter-brands-solid-full.svg"
   }
 ]

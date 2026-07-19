@@ -2,11 +2,12 @@
 layout: layouts/_longform
 date: Last Modified
 changeFreq: yearly
+category: resources
 tags: characters
 print: yes
 displayName: Sorin, the Indomitable Will
 ---
-{% include "_CC-disclaimer.html" %}
+{% include "content/_CC-disclaimer.html" %}
 {% heading "h1", "Sorin", "the Indomitable Will" %}
 
 {% theme__border-card %}

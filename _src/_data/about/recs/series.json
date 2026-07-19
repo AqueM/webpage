@@ -1,0 +1,22 @@
+﻿[
+  {
+    "name": "Ghost In The Shell",
+    "type": "animated, SF, philosophical, political, action",
+    "url": "https://en.wikipedia.org/wiki/Ghost_in_the_Shell"
+  },
+    {
+    "name": "Delicious in Dungeon",
+    "type": "animated, fantasy, cozy",
+    "url": "https://en.wikipedia.org/wiki/Delicious_in_Dungeon"
+  },
+    {
+    "name": "Apothecary Diaries",
+    "type": "animated, historical fiction, mystery, palace drama",
+    "url": "https://en.wikipedia.org/wiki/The_Apothecary_Diaries_(TV_series)"
+  },
+    {
+    "name": "Frieren: Beyond Journey's End",
+    "type": "animated, fantasy, cozy",
+    "url": "https://en.wikipedia.org/wiki/Frieren_(TV_series)"
+  }
+]

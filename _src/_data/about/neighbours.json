@@ -1,12 +1,62 @@
 ﻿[
   {
-    "img": "https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif",
+    "img": "/assets/images/neighbours/petrapixel.gif",
     "url": "https://petrapixel.neocities.org/",
-    "alt": "petrapixel"
+    "alt": "petrapixel",
+    "isAnimated": true
   },
-    {
+  {
     "img": "/assets/images/neighbours/shen-88x31-ritual-green.gif",
     "url": "https://worldwideshen.neocities.org/",
-    "alt": "shen's world"
+    "alt": "shen's world",
+    "isAnimated": true
+  },
+  {
+    "img": "/assets/images/neighbours/snailstown.gif",
+    "url": "https://snails.town/",
+    "alt": "snails town",
+    "isAnimated": true
+  },
+  {
+    "img": "/assets/images/neighbours/solaria.png",
+    "url": "https://solaria.neocities.org/",
+    "alt": "Solaria's Webspace",
+    "isAnimated": false
+  },
+  {
+    "img": "/assets/images/neighbours/lankartabutton.gif",
+    "url": "https://lankarta-project.neocities.org/",
+    "alt": "Lankarta Project",
+    "isAnimated": true
+  },
+  {
+    "url": "https://teasandcups.neocities.org/",
+    "alt": "Teas and Cups"
+  },
+  {
+    "img": "/assets/images/neighbours/suumelle.png",
+    "url": "https://suumelle.nekoweb.org/",
+    "alt": "Suumelle",
+    "isAnimated": false
+  },
+  {
+    "img": "/assets/images/neighbours/starbug88x31button.png",
+    "url": "https://starbug.neocities.org",
+    "alt": "Space Cadet",
+    "isAnimated": false
+  },
+  {
+    "url": "https://onnade.neocities.org/",
+    "alt": "In Women's Hand: Transmitting the Literature of Heian Japan"
+  },
+  {
+    "img": "/assets/images/neighbours/hekate.png",
+    "url": "https://hekate.neocities.org/",
+    "alt": "Hekate",
+    "isAnimated": false
+  },
+  {
+    "url": "https://pinkvampyr.leprd.space/accessiblenet/",
+    "alt": "Accessible Net Directory"
   }
 ]
