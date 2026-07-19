@@ -1,4 +1,50 @@
+/* IMAGES */
 /* general use */
+<<<<<<< Updated upstream
+=======
+.image--medium {
+	max-width: 20vw;
+}
+.image--small {
+	max-width: 10vw;
+}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: center;
+	background-size: 1em;
+	background-repeat: no-repeat;
+	background-image: var(--layout-img);
+}
+
+.icon--left {
+	margin-right: 0.3rem;
+}
+
+.icon--right {
+	margin-left: 0.3rem;
+}
+
+.icon__tooltip {
+	background-image: url('/assets/images/layout/font-awesome/circle-question-regular-full.svg');
+	vertical-align: top;
+}
+
+.layout__image {
+	position: absolute;
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+	background-image: var(--layout-img);
+
+	@media only screen and (min-width: 600px) {
+		display: block;
+	}
+}
+>>>>>>> Stashed changes
 
 .clickable-image {
 	cursor: pointer;
@@ -9,11 +55,11 @@
 	opacity: 0.7;
 }
 
-.round-image {
+.image--round {
 	border-radius: 50%;
-	margin: 0.1rem;
 }
 
+<<<<<<< Updated upstream
 /* specific page use */
 
 #nav-layout-image {
@@ -36,9 +82,41 @@
 	@media only screen and (min-width: 600px) {
 		display: inline;
 	}
+=======
+.image__blinkie {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: baseline;
+	background-size: 1em;
+	background-repeat: no-repeat;
 }
 
-#header-layout-image {
+/* specific page use */
+
+.layout__image__nav {
+	background-image: url('/assets/images/layout/canva-vines1.webp');
+	width: 100%;
+	height: 40rem;
+	background-position: 0% 0%;
+}
+
+.layout__image__logo {
+	background-image: url("/assets/images/layout/canva-frog.webp");
+	width: 10vw;
+	height: 20vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	margin-left: 1vw;
+
+	/* @media only screen and (min-width: 1800px) {
+		background-position: unset;
+	} */
+>>>>>>> Stashed changes
+}
+
+.layout__image__header {
 	position: absolute;
 	top: -3%;
 	right: 0;
@@ -50,6 +128,7 @@
 	}
 }
 
+<<<<<<< Updated upstream
 #footer-layout-image {
 	position: absolute;
 	bottom: 0;
@@ -69,4 +148,13 @@
 	@media only screen and (min-width: 600px) {
 		max-width: 88px !important;
 	}
+=======
+.layout__image__footer {
+	bottom: 0;
+	right: 0;
+	height: 500px;
+	width: 100%;
+	background-image: url('/assets/images/layout/canva-flowers.webp');
+	background-position: 100% 0%;
+>>>>>>> Stashed changes
 }

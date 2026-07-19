@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .heading {
 	background-image: var(--gradient-left);
 	padding: 1rem;
@@ -39,3 +40,40 @@
 	margin-bottom: 0.2rem;
 	background-color: var(--element-accent);
 }
+=======
+/* ELEMENTS */
+.blinkies {
+	img {
+		max-width: unset;
+	}
+}
+
+.list--horizontal {
+	padding: 0;
+	margin-left: 0.51vw;
+	margin-right: 0.5vw;
+	line-height: 1.5rem;
+	list-style-type: none;
+
+	li {
+		display: inline;
+	}
+
+	a {
+		white-space: wrap;
+	}
+}
+
+.list--horizontal--decor {
+	li:after {
+		content: "●";
+		padding-right: 0.5rem;
+		padding-left: 0.8rem;
+	}
+
+	li:last-child:after {
+		content: "";
+		padding: 0;
+	}
+}
+>>>>>>> Stashed changes

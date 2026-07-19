@@ -1,18 +1,29 @@
 ---
 date: Last Modified
 eleventyComputed:
-  title: "{{site.title}} {% if tags!=undefined %}| {{tags}} {% endif %}| {{displayName}}"
+  title: "{{site.title}} | {{category}} | {{displayName}}"
+  description: "{{site.description}}"
 ---
 <!doctype html>
 <html lang="en">
 
 <head>
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="{{site.description}}">
+    <meta name="description" content="{{page.data.description}}">
     <meta name="robots" content="noai, noimageai">
     <title>{{title}}</title>
+    <!-- <link rel="preload" href="/assets/css/fonts.css" as="style"/> -->
+     <link rel="style" href="/assets/css/fonts.css">
+    <link rel="preload" href="/assets/javascript/accessibility.js" as="script" />
+    <link rel="stylesheet" href="/assets/css/fonts.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" type="image/x-icon" href="/assets/images/layout/favicon.ico" />
     <link rel="stylesheet" href="/assets/photoswipe/photoswipe.css" />
@@ -23,20 +34,16 @@ eleventyComputed:
 </head>
 
 <body>
-    <div id="page">
-        {% include "_header.html" %}
-
+    <div class="layout__website layout__flex-block__stack layout__flex-block--space-around">
+        {% include "partials/_header.html" %}
         <!-- viewport -->
-        <div id="page-contents">
+        <div class="layout__page">
 
             {% include "_nav.html" %}
 
             <!-- main content -->
-            <main id="main-bg" class="fancy-border">
-                <div class="corner top left"></div>
-                <div class="corner top right"></div>
-                <div class="corner bottom left"></div>
-                <div class="corner bottom right"></div>
+            <main class="layout__content theme__border-card theme__block--primary">
+                {% include "partials/_decor-corners.html" %}
 
                 {{content}}
 

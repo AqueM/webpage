@@ -1,3 +1,5 @@
+/* ART DECO BORDERS */
+
 /* Copyright (c) 2026 by Mubanga (https://codepen.io/mubangadv/pen/MYgEPez)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -7,19 +9,19 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-.fancy-border {
-	border: 1px solid var(--fancy-border-color);
+.theme__border-card {
+	border: 1px solid var(--deco-border-color);
 	position: relative;
 	padding: 1rem;
 	margin: 1rem;
 
-	.corner {
+	.design__border-card__decor {
 		position: absolute;
 
 		@media only screen and (min-width: 600px) {
 			width: 0.5rem;
 			height: 0.5rem;
-			border: 1px solid var(--fancy-border-color);
+			border: 1px solid var(--deco-border-color);
 
 			&::after,
 			&::before {
@@ -37,67 +39,67 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				height: 2rem;
 			}
 
-			&.left {
+			&.design__border-card__decor--left {
 				left: -0.5rem;
 
 				&::after {
 					left: calc(-2px + 1rem);
-					border-left: 1px solid var(--fancy-border-color);
+					border-left: 1px solid var(--deco-border-color);
 				}
 
 				&::before {
 					left: -1px;
-					border-left: 1px solid var(--fancy-border-color);
+					border-left: 1px solid var(--deco-border-color);
 				}
 			}
 
-			&.right {
+			&.design__border-card__decor--right {
 				right: -0.5rem;
 
 				&::after {
 					right: calc(-2px + 1rem);
-					border-right: 1px solid var(--fancy-border-color);
+					border-right: 1px solid var(--deco-border-color);
 				}
 
 				&::before {
 					right: -1px;
-					border-right: 1px solid var(--fancy-border-color);
+					border-right: 1px solid var(--deco-border-color);
 				}
 			}
 
-			&.top {
+			&.design__border-card__decor--top {
 				top: -0.5rem;
 
 				&::after {
 					top: -1px;
-					border-top: 1px solid var(--fancy-border-color);
+					border-top: 1px solid var(--deco-border-color);
 				}
 
 				&::before {
 					top: calc(-2px + 1rem);
-					border-top: 1px solid var(--fancy-border-color);
+					border-top: 1px solid var(--deco-border-color);
 				}
 			}
 
-			&.bottom {
+			&.design__border-card__decor--bottom {
 				bottom: -0.5rem;
 
 				&::after {
 					bottom: -1px;
-					border-bottom: 1px solid var(--fancy-border-color);
+					border-bottom: 1px solid var(--deco-border-color);
 				}
 
 				&::before {
 					bottom: calc(-2px + 1rem);
-					border-bottom: 1px solid var(--fancy-border-color);
+					border-bottom: 1px solid var(--deco-border-color);
 				}
 			}
 		}
 	}
 }
 
-.fancy-highlight {
-	all: unset;
+.design__border-block {
+	box-sizing: unset;
 	font-family: var(--font-title);
 	text-align: center;
 	height: 2rem;
@@ -109,25 +111,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	width: max-content;
 	margin: 0 2rem;
 	z-index: inherit;
+	display: inline-block;
 
 	@media only screen and (min-width: 600px) {
-		border-top: 0.01rem solid var(--fancy-border-color);
-		border-bottom: 0.01rem solid var(--fancy-border-color);
+		border-top: 0.01rem solid var(--deco-border-color);
+		border-bottom: 0.01rem solid var(--deco-border-color);
 
-		.left,
-		.right {
+		.design__border-block__decor--left,
+		.design__border-block__decor--right {
 			position: absolute;
 			width: 1.45rem;
 			height: 1.45rem;
-			border-bottom: 0.01rem solid var(--fancy-border-color);
-			border-left: 0.01rem solid var(--fancy-border-color);
+			border-bottom: 0.01rem solid var(--deco-border-color);
+			border-left: 0.01rem solid var(--deco-border-color);
 			transition: background 200ms ease-in-out;
+			top: 0.25rem;
 
 			&::before {
 				content: "";
 				width: 0.75rem;
 				height: 0.75rem;
-				border: 0.01rem solid var(--fancy-border-color);
+				border: 0.01rem solid var(--deco-border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0.4rem - 0.01rem);
@@ -137,19 +141,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				content: "";
 				width: 0.5rem;
 				height: 0.5rem;
-				background: var(--fancy-border-color);
+				background: var(--deco-border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0rem - 0.01rem);
 			}
 		}
 
-		.left {
+		.design__border-block__decor--left {
 			left: -0.75rem;
 			transform: rotate(45deg);
 		}
 
-		.right {
+		.design__border-block__decor--right {
 			right: -0.75rem;
 			transform: rotate(-135deg);
 		}

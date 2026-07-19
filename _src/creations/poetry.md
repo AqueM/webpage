@@ -1,5 +1,5 @@
 ---
-layout: _page.html
+layout: layouts/_page
 tags: creations
 displayName: Poetry
 ---

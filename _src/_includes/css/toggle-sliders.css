@@ -1,3 +1,5 @@
+/* SLIDER SWITCHES */
+
 /* Copyright (c) 2026 by Álvaro (https://codepen.io/alvarotrigo/pen/jOaXGKy)
 Fork of an original work Toggle Switch (https://codepen.io/kunduzyazilim/pen/yPzvwz
 
@@ -20,42 +22,79 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 34px;
 }
 
-.switch input {
+.switch__input {
   display: none;
 }
 
-.slider {
+.switch__slider {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--color-primary);
+  background-color: var(--base-color-primary);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-.slider:before {
+.switch__slider:before {
   position: absolute;
   content: "";
+<<<<<<< Updated upstream
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: var(--color-lightest);
+=======
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: var(--base-color-lightest);
+>>>>>>> Stashed changes
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-input:checked+.slider {
-  background-color: var(--color-secondrary);
+.switch__input:checked {
+  +.switch__slider {
+    background-color: var(--base-color-secondrary);
+  }
+
+  +.switch__slider--yellow {
+    background-color: var(--base-color-contrast);
+
+    &:before {
+      background-color: var(--base-color-darkest);
+    }
+  }
+
+  +.switch__slider--dark {
+    background-color: var(--base-color-dark);
+
+    &:before {
+      background-color: var(--base-color-darkest);
+    }
+  }
 }
 
-input:focus+.slider {
-  box-shadow: 0 0 1px var(--color-secondrary);
+.switch__input:focus {
+  +.switch__slider {
+    box-shadow: 0 0 1px var(--base-color-secondrary);
+  }
+
+  +.switch__slider--yellow {
+    box-shadow: 0 0 1px var(--base-color-contrast);
+  }
+
+  +.switch__slider--dark {
+    box-shadow: 0 0 1px var(--base-color-darkest);
+  }
 }
 
+<<<<<<< Updated upstream
 .slider-dark {
   background-color: var(--color-middle);
 }
@@ -77,12 +116,29 @@ input:checked+.slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+=======
+.switch__input:checked+.switch__slider:before {
+  -webkit-transform: translateX(1.5rem);
+  -ms-transform: translateX(1.5rem);
+  transform: translateX(1.5rem);
 }
 
-.slider.round:before {
-  border-radius: 50%;
+/* ROUNDED SLIDER */
+.switch__slider--round {
+  border-radius: 1rem;
+
+  &:before {
+    border-radius: 50%;
+  }
+>>>>>>> Stashed changes
 }
 
+/* COLOR SLIDERS */
+.switch__slider--yellow {
+  background-color: var(--base-color-yellow);
+}
+
+<<<<<<< Updated upstream
 .slider-yellow {
   background-color: var(--color-yellow);
 }
@@ -146,4 +202,8 @@ input:checked+.slider-yellow:before{
 [data-tip]:hover:before,
 [data-tip]:hover:after {
 	display:block;
+=======
+.switch__slider--dark {
+  background-color: var(--base-color-primary);
+>>>>>>> Stashed changes
 }

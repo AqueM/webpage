@@ -1,90 +1,56 @@
-.tooltip {
-	position: relative;
-	display: inline-block;
-	cursor: default;
+/* ACCESSIBILITY */
+
+.access--motion {
+	animation-duration: unset;
+	animation-iteration-count: unset;
+	transition-duration: unset;
 }
 
-.tooltip .tooltiptext {
-	visibility: hidden;
-	padding: 0.25em 0.5em;
-	background-color: var(--color-dark);
-	color: #fff;
-	text-align: center;
-	border-radius: 0.25em;
-	white-space: nowrap;
+/* Light Mode */
+[data-theme="light"] {
+	color-scheme: light;
 
-	/* Position the tooltip */
-	position: absolute;
-	z-index: 1;
-	top: 100%;
-	left: 100%;
-	transition-property: visibility;
-	transition-delay: 0s;
-}
+	img {
+		filter: unset;
+	}
 
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	transition-delay: 0.3s;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-	* {
-		/* Very short durations means JavaScript that relies on events still works */
-		animation-duration: 0.001ms !important;
-		animation-iteration-count: 1 !important;
-		transition-duration: 0.001ms !important;
+	a:not(.noformat)[target="_blank"]::after,
+	.icon {
+		filter: unset;
 	}
 }
 
-@media (prefers-contrast: high) {
-
-	:root,
-	html,
-	body {
-		--font-color: var(--color-darkest);
-		--element-dark: var(--color-darkest);
-		--element-primary: var(--color-contrast);
-		--element-secondrary: var(--color-contrast);
-		--element-accent: var(--color-contrast);
-	}
-}
-
-.contrast {
-	--font-color: var(--color-darkest) !important;
-	--element-dark: var(--color-darkest) !important;
-	--element-light: var(--color-darkest) !important;
-	--element-primary: var(--color-contrast) !important;
-	--element-secondrary: var(--color-contrast) !important;
-	--element-accent: var(--color-contrast) !important;
-}
-
-.normal-contrast {
-	--font-color: var(--color-dark);
-	--element-light: var(--color-light);
-	--element-dark: var(--color-dark);
-	--element-primary: var(--color-primary);
-	--element-secondrary: var(--color-secondrary);
-	--element-accent: var(--color-accent);
-}
-
-@media screen and (prefers-color-scheme: dark) {
-
-	:root,
-	html,
-	body {
-		--font-color: var(--color-lightest);
-		--element-light: var(--color-darkest);
-		--element-dark: var(--color-lightest);
-		--element-primary: var(--color-darkest);
-		--element-secondrary: var(--color-middle);
-		--element-accent: var(--color-middle);
-	}
+/* Dark Mode */
+[data-theme="dark"] {
+	color-scheme: dark;
 
 	img {
 		filter: brightness(.8) contrast(1.2);
 	}
 
-	.light-mode img {
+	a:not(.noformat)[target="_blank"]::after,
+	.icon {
+		filter: invert(1);
+	}
+}
+
+.access--high-contrast {
+	--font-color: var(--base-color-darkest) !important;
+	--color-dark: var(--base-color-darkest) !important;
+	--color-light: var(--base-color-darkest) !important;
+	--color-primary: var(--base-color-contrast) !important;
+	--color-secondrary: var(--base-color-contrast) !important;
+	--color-accent: var(--base-color-contrast) !important;
+
+	img {
+		filter: unset;
+	}
+
+	.icon {
+		filter: unset;
+	}
+
+	a:not(.noformat)[target="_blank"]::after {
 		filter: unset;
 	}
 }
@@ -111,16 +77,27 @@
 	filter: brightness(.8) contrast(1.2);
 }
 
-.hide {
-	display: none !important;
-}
-
-.reduce-complexity {
+.access--complexity {
 	border-width: 0 !important;
 }
 
-.normal-font {
-	--font-subtitle: system-ui;
-	--font-title: system-ui;
-	font-family: system-ui;
+.access--special-font {
+	font-family: var(--base-font);
+	--font-title: var(--font-base-title);
+	--font-subtitle: var(--font-base-subtitle);
+}
+
+.access--dyslexic-font {
+	font-family: var(--accessible-font);
+	--accessible-font: var(--dyslexic-font);
+	--font-title: var(--dyslexic-font);
+	--font-subtitle: var(--dyslexic-font);
+}
+
+.access--large-font {
+	font-size: larger;
+}
+
+.access--font {
+	font-family: var(--accessible-font);
 }

@@ -1,0 +1,130 @@
+/* BASIC STYLING */
+
+.theme__block--primary {
+	background-color: var(--color-primary);
+	border-radius: var(--border-radius);
+
+	@media only screen and (min-width: 800px) {
+		background-color: var(--color-primary-transparent);
+	}
+}
+
+.theme__block--secondrary {
+	background-color: var(--color-secondrary);
+	border-radius: var(--border-radius);
+
+	@media only screen and (min-width: 800px) {
+		background-color: var(--color-secondrary-transparent);
+	}
+}
+
+.theme__block--accent--gradient {
+	background-image: var(--gradient-accent-left);
+	border-radius: var(--border-radius);
+}
+
+.theme__block--accent {
+	background-color: var(--color-accent-transparent);
+	border-radius: var(--border-radius);
+}
+
+.theme__card--border {
+	border-top: 0.01rem solid var(--border-color);
+	border-bottom: 0.01rem solid var(--border-color);
+}
+
+.theme__heading {
+	padding: 0 0 0 1rem;
+	font-family: var(--font-title);
+	margin-bottom: 1%;
+	margin-top: 1%;
+	width: 100%;
+	gap: unset;
+}
+
+.theme__heading__title {
+	text-transform: uppercase;
+	font-family: var(--font-title);
+	margin-top: 0.5rem;
+	margin-bottom: 0.25rem;
+}
+
+.theme__heading__subtitle {
+	margin-left: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-family: var(--font-subtitle);
+}
+
+.theme--hide {
+	display: none !important;
+}
+
+.theme--hide-toggled {
+	display: none !important;
+}
+
+.theme--no-break {
+	min-width: max-content;
+	display: inline-block;
+}
+
+/* DESIGN ELEMENTS */
+.design__disclaimer {
+	border-style: dotted;
+	border-width: 0.3rem;
+	text-align: center;
+	padding: 0.5rem;
+	border-radius: var(--border-radius);
+}
+
+.design__link--round {
+	border-style: dotted;
+	border-width: 0.1rem;
+	border-radius: 1rem;
+	padding: 0.2rem;
+	margin-bottom: 0.2rem;
+	background-color: var(--color-accent);
+}
+
+.design__box {
+	padding-left: 30%;
+	padding-right: 30%;
+	text-align: center;
+	margin: 1rem 0 1rem 0;
+}
+
+.design__box--small {
+	padding-left: 40%;
+	padding-right: 40%;
+}
+
+.design__box--big {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.design--center-align {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1%;
+}
+
+.design__floated--left {
+	float: left;
+	margin-right: 1rem;
+}
+
+.design__floated--right {
+	float: right;
+	margin-left: 1rem;
+}
+
+.design__float-clear {
+	clear: both;
+}
+
+.design--no-break{
+	min-width:max-content;
+	white-space: nowrap;
+}

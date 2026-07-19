@@ -1,14 +1,21 @@
-footer {
+/* FOOTER */
+
+.layout__footer {
 	flex-basis: 5vh;
 	position: relative;
+<<<<<<< Updated upstream
 	z-index: 2;
 	/* transform-style: preserve-3d; */
+=======
+	z-index: 3;
+	flex-grow: 1;
+>>>>>>> Stashed changes
 }
 
 .footer {
-	display: flex;
-	flex-direction: row;
+	padding: 0 2rem 0 2rem;
 	justify-content: space-between;
+<<<<<<< Updated upstream
 	align-items: center;
 }
 
@@ -45,4 +52,8 @@ footer {
 
 .fancy-highlight.contact{
 	background-color: var(--element-accent);
+=======
+	position: relative;
+	z-index: 3;
+>>>>>>> Stashed changes
 }

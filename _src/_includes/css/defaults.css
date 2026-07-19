@@ -1,11 +1,46 @@
+<<<<<<< Updated upstream
 img:not(.noformat) {
 	max-width: 10vw;
+=======
+/* DEFAULT STYLING */
+* {
+	box-sizing: border-box;
+
+>>>>>>> Stashed changes
 }
 
-p:not(.noformat, .menu-label) {
+html {
+	background-color: var(--color-light);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+
+	@media only screen and (min-width: 600px) {
+		background-position: 0% 100%;
+		background-image: var(--gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--gradient-water);
+		background-repeat: repeat-x;
+		background-position: 0% 100%;
+	}
+}
+
+img:not(.noformat) {
+	max-width: 30vw;
+}
+
+section {
+	margin: 1%;
+	clear: both;
+}
+
+p:not(.noformat) {
 	text-indent: 1%;
 	text-align: left;
 	line-height: 1.5rem;
+	min-width: fit-content;
 }
 
 iframe:not(.noformat) {
@@ -21,21 +56,22 @@ ul:not(.noformat) {
 a:not(.noformat) {
 	position: relative;
 	text-decoration: none;
-	color: var(--element-dark);
-	background-color: var(--element-accent-transparent);
+	color: var(--color-dark);
+	background-color: var(--color-accent-transparent);
 	border-radius: 1rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
+	line-height: 1em;
+
+	@media only screen and (min-width: 800px) {
+		white-space: nowrap;
+	}
 }
 
 a:not(.noformat)[target="_blank"]::after {
 	content: "⭧";
 	margin-left: 0.3rem;
 	text-decoration: none;
-}
-
-.icon:not(.noformat) {
-	margin-right: 0.3rem;
 }
 
 h1:not(.noformat),
@@ -46,15 +82,33 @@ h3:not(.noformat) {
 
 details:not(.noformat) {
 	border-style: dotted;
+<<<<<<< Updated upstream
 	border-width: 0.1rem;
 	padding: 1%;
+=======
+	border-width: 0.1em;
+>>>>>>> Stashed changes
 	border-radius: var(--border-radius);
 }
 
 summary:not(.noformat) {
 	border-radius: 1rem;
 	padding: 0.5%;
+<<<<<<< Updated upstream
 	margin-bottom: 1%;
 	background-color: var(--element-accent);
 }
 
+=======
+	background-color: var(--color-accent);
+	margin-bottom: 0.1em;
+}
+
+sup {
+	font-size: xx-small;
+}
+
+textarea {
+	width: 20vw;
+}
+>>>>>>> Stashed changes

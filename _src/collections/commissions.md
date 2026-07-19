@@ -1,5 +1,5 @@
 ---
-layout: _gallery.html
+layout: layouts/_gallery
 tags: collections
 displayName: Commissions
 ---

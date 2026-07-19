@@ -1,5 +1,5 @@
 ---
-layout: _longform.html
+layout: layouts/_longform
 displayName: My queerness
 ---
 <div class="disclaimer">
@@ -23,7 +23,7 @@ Which is why I usually opt to simplify it into calling myself "queer" - as an um
 ~~why? what are you, a cop?~~
 
 
-<div class="center">
+<div class="design--center-align">
 
 ### Buckle up. 
 
@@ -43,4 +43,15 @@ Turns out I'm not the only person to ponder these problems. Some come to the sam
 
 ### To summarise:
 
+<<<<<<< Updated upstream:_src/about/queerness.md
 Sex is overrated, romantic love is weird, I've traded my gender for a cool rock. 
+=======
+Sex is overrated, romantic love is weird, I've traded my gender for a cool rock.   
+<div class="blinkies layout__flex-block__row layout__flex-block--space-between">
+{%- for image in collections.queerImages -%}
+<img src="{{image}}">
+{%- endfor %}
+</div>
+
+<div class="design__box--small"><p class="design__link--round"><a href="/about"><< back to Bio</a></p></div>
+>>>>>>> Stashed changes:_src/longform/thoughts/posts/queerness.md

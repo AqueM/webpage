@@ -1,9 +1,6 @@
-#hero-bg {
-	background-color: var(--element-secondrary-transparent);
-	border-radius: var(--border-radius);
-	padding: 1%;
-}
+/* HEADER */
 
+<<<<<<< Updated upstream
 #hero-body {
 	min-height: 0;
 	z-index: 2;
@@ -20,12 +17,91 @@
 	gap: 1%;
 	width: 100%;
 	align-items: center;
-	font-family: var(--font-title);
+=======
+.layout__header {
+	position: relative;
+	z-index: 1;
+	flex-grow: 1;
+	flex-basis: 20vh;
 }
 
+.header {
+	padding: 1% 0.5rem 1% 0.5rem;
+	flex-wrap: nowrap;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.header__page-title {
+	display: flex;
+	gap: 1rem;
+	align-items: stretch;
+}
+
+.header__page-title__text {
+	font-size: calc(1rem + 0.5vh);
+>>>>>>> Stashed changes
+	font-family: var(--font-title);
+	color: var(--font-color);
+
+	@media only screen and (min-width: 800px) {
+		white-space: nowrap;
+	}
+
+}
+
+<<<<<<< Updated upstream
 .accessibility-btns {
 	display: flex;
 	flex-direction: row;
 	align-self: end;
 	/* flex-wrap: wrap; */
+=======
+.header__page-title__title {
+	font-size: calc(1rem + 2vh);
+}
+
+.header__page-title__subtitle {
+	justify-content: unset;
+	gap: unset;
+}
+
+.header__access-card {
+	z-index: 3;
+}
+
+/* ACCESSIBILITY TOGGLES */
+.access-card__grid {
+	display: grid;
+	gap: 0.2rem 0.1rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+.access-card__grid__toggle {
+	display: flex;
+	gap: 0.1rem;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.25rem;
+}
+
+.access-card__accordion {
+	padding: 0.25rem;
+	min-width: max-content;
+}
+
+.access__accordion__dropdown {
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+
+.access__label {
+	text-transform: uppercase;
+	word-spacing: 0.25rem;
+	min-width: max-content;
+}
+
+.access__label--small {
+	font-size: 0.75rem;
+>>>>>>> Stashed changes
 }

@@ -1,0 +1,5 @@
+/* UNHIDE HTML AFTER CONTENT IS STYLED */
+html {
+    visibility: visible;
+    opacity: 1;
+}

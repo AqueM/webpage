@@ -1,0 +1,23 @@
+<nav class="sitenav__menu">
+    {%- for navCat in navigation.categories -%}
+    <details class="noformat sitenav__menu-category__label theme__block--accent--gradient {% if category contains navCat.name %} sitenav__menu-category--open{% endif %}" {% if category contains
+        navCat.name %} open{% endif %}>
+        <summary class="noformat sitenav__menu-category__name">
+            <div class="sitenav__menu-category"><span
+                    class="icon icon--left"
+                    style="--layout-img: url('/assets/images/layout/font-awesome/{{navCat.icon}}.svg');"></span><span>{{navCat.name}}</span>
+            </div>
+        </summary>
+        <ul class="noformat sitenav__menu-list">
+            {%- assign links = collections.nav | order -%}
+            {%- for element in links -%}
+            {%- if element.data.category == navCat.name %}
+            <li><a class="noformat sitenav__menu-link theme__block--primary {% if element.url==page.url %} theme__block--secondrary sitenav__menu-link--active{% endif %}"
+                    href="{% if element.url %}{{ element.url }}{% else %}{{ element.data.link }}{% endif %}"
+                    target="{{element.data.target}}">{{element.data.displayName}}</a></li>
+            {%- endif %}
+            {%- endfor %}
+        </ul>
+    </details>
+    {%- endfor %}
+</nav>

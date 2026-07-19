@@ -1,25 +1,31 @@
 ---
-layout: _page.html
+layout: layouts/_page
 tags: about
 displayName: Bio
 order: 1
 priority: 0.7
 ---
 {% heading "h1", "Basics about Aque" %}
-{% columns %}
-{% column %}
+
+{%- flex-columns -%}
+{%- flex-item -%}
+<a href="https://picrew.me/en/image_maker/1322863" class="noformat design__floated--left"><img src="/assets/images/picrew.png" alt="cartoony portrait of a person with light skin and short brown hair, against the nonbinary flag background" title="click to go to the picrew used to make this!" class="noformat image--round image--small"></a>
 
 My main focus are various arts and crafts, and I'm always ready to help where I can. I'm a strong believer in universal human rights, including queer rights and intersectional feminism, evidence-based science and medicine, bodily autonomy, the separation of church and state, and generally in the concept that we should be good and understanding to each other.
-{% endcolumn %}
-{% column-side %}
+{%- endflex-item -%}
 
-- **Pronouns:** they/them in English, any in Polish
+{%- flex-aside %}
 - **Languages:** Polish, English, German
 - **Location:** Silesia, Poland, EU
-- **Age:** early 30s
-- **Sexuality/Gender:** triple-A human ([what? →](/about/queerness))<!-- - -    -->{% endcolumn-side %}{% endcolumns %}
+- **Age:** in my {{"now" | date: "%Y" | minus: 1991 | divided_by: 10  | floor | times: 10 }}s
+- **Pronouns:** they/them in English, any in Polish
+- **Identity:** triple-A human ([what? →](/longform/thoughts/2026/my-queerness.html))
+{% endflex-aside -%}
 
-{% columns %}{% column %}{% heading "h2", "Interests", "Talking about any of these will almost always grab my attention" %}
+{%- flex-break-newrow -%}
+
+{%- flex-item -%}
+{% heading "h2", "Interests", "Talking about any of these will almost always grab my attention" %}
 
 - **stories:** cartoons, fantasy, sci-fi, comics, anime/manga, worldbuilding
 - linguistics
@@ -30,9 +36,9 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - herbalism
 - **visual arts:** pencil drawing, digital drawing, anime style
 - character design
-- indie VTubers <!-- - - -->
-
-{% heading "h2", "Likes" %}
+- indie VTubers
+{% endflex-item -%}
+{%- flex-item -%}{% heading "h2", "Likes", "always appreciated as gifts or offerings" %}
 
 - cats and frogs
 - rock music
@@ -43,11 +49,15 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - the color blue
 - **the sea**, and swimming, and just being in water
 - window-shopping and browsing items (except clothing)
-- art noveau style <!-- - - -->{% endcolumn %}
+- art noveau style{% endflex-item %}
 
-{% column %}{% heading "h2", "Expertise", "Things I claim to have some knowledge in, or at least fixated on at some point in time" %}
+{%- flex-break-newrow -%}
 
-- **writing:** poetry, RPG, short novels, fanfiction, worldbuilding
-- **research:** information retrieval, cross-checking sources
-- **by virtue of lived experience:** gender theory, women's issues, neurodivergence
-- **by trade:** software development, software quality assurance, proofreading<!-- - - --> {% endcolumn %}{% endcolumns %}
+{%- flex-item -%}
+{%- flex-columns -%}
+{%- for image in collections.blinkieImages -%}
+<img src="{{image}}">
+{%- endfor -%}
+{%- endflex-columns -%}
+{%- endflex-item -%}
+{%- endflex-columns -%}

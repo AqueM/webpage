@@ -1,20 +1,35 @@
+<<<<<<< Updated upstream
 :root, html,
 body {
 	/* vars */
+=======
+/* THEME */
+:root {
+	/* VARIABLES */
+>>>>>>> Stashed changes
 	--border-radius: 1rem;
-	--transparency: 60%;
+	--base-transparency-value: 60%;
 
+<<<<<<< Updated upstream
 	/* colors */
 	--color-light: #dafbd5;
 	--color-dark: rgb(28, 74, 29);
 	--color-primary: #c6f9be;
 	--color-secondrary: #96d98c;
 	--color-accent: #FFE6FF;
+=======
+	/* COLORS */
+	--base-color-light: #dafbd5;
+	--base-color-dark: #1C4A1D;
+	--base-color-primary: #c6f9be;
+	--base-color-secondrary: #96d98c;
+	--base-color-accent: #FFE6FF;
+>>>>>>> Stashed changes
 
-	--color-blue: #7FFFD4;
-	--color-yellow: #FFE284;
-	--color-transparent: transparent;
+	--base-color-blue: #7FFFD4;
+	--base-color-yellow: #FFE284;
 
+<<<<<<< Updated upstream
 	/* accessibility colors */
 	--color-darkest: #121212;
 	--color-lightest: #fcf9f5;
@@ -24,14 +39,44 @@ body {
 	/* fonts */
 	--font1:"Viaoda Libre";
 	--font2:"Poiret";
+=======
+	/* ACCESSIBILITY COLORS */
+	--base-color-darkest: #0f2810;
+	--base-color-lightest: #fcf9f5;
+	--base-color-middle: #643f4f;
+	--base-color-contrast: #FFD700;
 
-	/* gradients */
-	--gradient-left: linear-gradient(to right, var(--element-accent) 10%, var(--color-transparent));
-	--gradient-right: linear-gradient(to left, var(--element-secondrary), var(--color-transparent));
-	--gradient-top: linear-gradient(to bottom, var(--element-accent), var(--color-transparent));
-	--gradient-bottom: linear-gradient(to top, var(--color-blue), var(--color-transparent) 70%, var(--element-blue-transparent));
-	--gradient-sun: linear-gradient(320deg, var(--color-transparent) 90%, var(--color-yellow) 100%);
+	/* FONTS */
+	--base-font: "vioda-libre";
+	--font-base-title: "im-fell";
+	--font-base-subtitle: "poiret-one";
+	--dyslexic-font: 'open-dyslexic';
+	--accessible-font: system-ui;
+>>>>>>> Stashed changes
 
+	/* SETUP */
+	/* COLORS */
+	--color-light: light-dark(var(--base-color-light), var(--base-color-darkest));
+	--color-dark: light-dark(var(--base-color-darkest), var(--base-color-lightest));
+	--color-primary: light-dark(var(--base-color-primary), var(--base-color-darkest));
+	--color-secondrary: light-dark(var(--base-color-secondrary), var(--base-color-middle));
+	--color-accent: light-dark(var(--base-color-accent), var(--base-color-middle));
+	/* TRANSPARENT COLOR VARIATIONS */
+	--color-primary-transparent: color-mix(in srgb, var(--color-primary) var(--base-transparency-value), transparent);
+	--color-secondrary-transparent: color-mix(in srgb, var(--color-secondrary) var(--base-transparency-value), transparent);
+	--color-accent-transparent: color-mix(in srgb, var(--color-accent) var(--base-transparency-value), transparent);
+	--color-blue-transparent: color-mix(in srgb, var(--base-color-blue) 50%, transparent);
+	/* GRADIENTS */
+	--gradient-accent-left: linear-gradient(to right, var(--color-accent) 10%, transparent);
+	--gradient-secondrary-right: linear-gradient(to left, var(--color-secondrary), transparent);
+	--gradient-accent-top: linear-gradient(to bottom, var(--color-accent), transparent);
+	--gradient-water: linear-gradient(to top, var(--base-color-blue), transparent 70%, var(--color-blue-transparent));
+	--gradient-sun: linear-gradient(320deg, var(--base-color-transparent) 90%, var(--base-color-yellow) 100%);
+	/* VARIABLES */
+	--font-color: light-dark(var(--base-color-dark), var(--base-color-lightest));
+	--border-color: light-dark(var(--base-color-dark), var(--base-color-lightest));
+
+<<<<<<< Updated upstream
 	/* setup */
 	--font-color: var(--color-dark);
 	--border-color: var(--color-dark);
@@ -52,4 +97,19 @@ body {
 
 	--font-title: var(--font1);
 	--font-subtitle: var(--font2);
+=======
+	/* DEFAULTS */
+	color: var(--font-color);
+	font-size: 100%;
+	/* 16px par défaut */
+	--deco-border-color: var(--border-color);
+	font-family: var(--accessible-font);
+	--font-title: var(--accessible-font);
+	--font-subtitle: var(--accessible-font);
+	/* MOTION */
+	/* Very short durations means JavaScript that relies on events still works */
+	animation-duration: 0.001ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.001ms !important;
+>>>>>>> Stashed changes
 }
