@@ -1,4 +1,11 @@
-﻿[
+﻿[{
+    "verb": "obsessing over",
+    "items": [
+      {
+        "name": "making websites"
+      }
+    ]
+  },
   {
     "verb": "playing",
     "items": [
@@ -41,6 +48,41 @@
       {
         "name": "'Platform Decay'",
         "author": "Martha Wells",
+        "comment": ""
+      }
+    ]
+  },
+  {
+    "verb": "working on",
+    "items": [
+      {
+        "name": "sorting my music library",
+        "comment": ""
+      },
+      {
+        "name": "exploring music recommended to me",
+        "comment": ""
+      },
+      {
+        "name": "this website",
+        "comment": ""
+      },
+      {
+        "name": "recording for Longer Letters first video",
+        "comment": ""
+      },
+      {
+        "name": "my OCs webpage",
+        "url": "http://konstellarium.neocities.org",
+        "comment": ""
+      },
+      {
+        "name": "my Raw Quotes page",
+        "url": "http://raw-quotes.nekoweb.org",
+        "comment": ""
+      },
+      {
+        "name": "my Raw Quotes notebook",
         "comment": ""
       }
     ]

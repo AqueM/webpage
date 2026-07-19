@@ -6,13 +6,12 @@ const btnAnimation = document.querySelector("#animation-toggle");
 const btnDyslexia = document.querySelector("#dyslexia-toggle");
 const btnFontSize = document.querySelector("#fontsize-toggle");
 
-const cookies = { 'darkmode': [btnDark, 'data-theme'], 'contrast': [btnContrast, 'high-contrast'], 'motion': [btnAnimation, 'motion'], 'complexity': [btnComplex, 'complexity'], 'special-fonts': [btnFonts, 'special-font'], 'dyslexia': [btnDyslexia, 'dyslexic-font'], 'bigger-text': [btnFontSize, 'large-font']  };
+const cookies = { 'darkmode': [btnDark, 'data-theme'], 'contrast': [btnContrast, 'access--high-contrast'], 'motion': [btnAnimation, 'access--motion'], 'complexity': [btnComplex, 'access--complexity'], 'special-fonts': [btnFonts, 'access--special-font'], 'dyslexia': [btnDyslexia, 'access--dyslexic-font'], 'bigger-text': [btnFontSize, 'access--large-font'] };
 const systemPreferences = { 'darkmode': '(prefers-color-scheme: dark)', 'contrast': '(prefers-contrast: high)', 'motion': '(prefers-reduced-motion: reduce)' };
 const defaultOn = ['motion', 'complexity', 'special-fonts'];
 
-const elementsToChange = [...document.getElementsByClassName("disclaimer")];
 const darkModeIcons = [...document.getElementsByClassName("darkmode-icon")];
-const elementsToHide = [...document.getElementsByClassName("corner"), ...document.getElementsByClassName("side"), ...document.getElementsByClassName("icon"), ...document.getElementsByClassName("layout-image")];
+const elementsToHide = [...document.getElementsByClassName("design__border-card__decor"), ...document.getElementsByClassName("design__border-block"), ...document.getElementsByClassName("icon"), ...document.getElementsByClassName("layout__image")];
 
 function saveSettingPreference(cookieName) {
     localStorage.setItem(cookieName, cookies[cookieName][0].querySelector('input').checked);
@@ -34,7 +33,7 @@ function setTheme(isDark) {
 
     document.documentElement.removeAttribute('data-theme');
     darkModeIcons.forEach(element => {
-        element.classList.toggle("hide-toggle");
+        element.classList.toggle("theme--hide-toggled");
     });
     if (isDark) {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -82,10 +81,7 @@ btnComplex.addEventListener("change", function () {
 
     let currentStatus = !(localStorage.getItem('complexity') === 'true');
     elementsToHide.forEach(element => {
-        element.classList.toggle("hide", currentStatus);
-    });
-    elementsToChange.forEach(element => {
-        element.classList.toggle("reduce-complexity", currentStatus);
+        element.classList.toggle("theme--hide", currentStatus);
     });
 
     if (!currentStatus) {

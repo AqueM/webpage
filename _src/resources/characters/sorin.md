@@ -3,16 +3,15 @@ layout: layouts/_longform
 date: Last Modified
 changeFreq: yearly
 category: resources
-tags: characters
-print: yes
+tags: deities
 displayName: Sorin, the Indomitable Will
 ---
 {% include "content/_CC-disclaimer.html" %}
 {% heading "h1", "Sorin", "the Indomitable Will" %}
 
-{% fancy-border %}
+{% theme__border-card %}
 May everyone sleep soundly, knowing what tomorrow will bring.
-{% endfancy-border %}
+{% endtheme__border-card %}
 
 - **Domains:** Law, Balance, Harmony
 - **Patronage:** officers of the law, deal-makers, leaders, judges, bureaucrats
@@ -23,6 +22,7 @@ May everyone sleep soundly, knowing what tomorrow will bring.
 	- **minerals:** metals, especially gold and bronze, carnelian, clear crystal
 
 {% heading "h2", "Summary" %}
+
 Sorin as a deity is said to be the manifestation of a primaeval force — the pure concept of Law, the Will that had created the rules of nature, and governs the universe and everything in it. There have been many incarnations of this force through the ages, and while his followers say that he’s the final form of the Indomitable Will, Sorin himself has not confirmed nor denied it.
 
 His main goal is to make the world perfectly balanced and completely deterministic (though endlessly complicated, so not entirely predictable). This is so that everyone could “sleep soundly”, i.e. understand what will be the consequences of their and other people’s actions, and what’s their duties and possibilities. In theory, this should allow everyone to focus on their own desires and hopes, instead of worrying about their future. 

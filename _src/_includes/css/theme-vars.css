@@ -1,0 +1,66 @@
+/* THEME */
+:root {
+	/* VARIABLES */
+	--border-radius: 1rem 0.2rem 1rem 0.2rem ;
+	--base-transparency-value: 60%;
+	--border-width: 0px;
+
+	/* COLORS */
+	--base-color-light: #dafbd5;
+	--base-color-dark: #1C4A1D;
+	--base-color-primary: #c6f9be;
+	--base-color-secondrary: #96d98c;
+	--base-color-accent: #FFE6FF;
+
+	--base-color-blue: #7FFFD4;
+	--base-color-yellow: #FFE284;
+
+	/* ACCESSIBILITY COLORS */
+	--base-color-darkest: #0f2810;
+	--base-color-lightest: #fcf9f5;
+	--base-color-middle: #643f4f;
+	--base-color-contrast: #FFD700;
+
+	/* FONTS */
+	--base-font: "faculty-glyphic";
+	--font-base-title: "amarante";
+	--font-base-subtitle: "viaoda-libre";
+	--dyslexic-font: 'open-dyslexic';
+	--accessible-font: system-ui;
+
+	/* SETUP */
+	/* COLORS */
+	--color-light: light-dark(var(--base-color-light), var(--base-color-darkest));
+	--color-dark: light-dark(var(--base-color-darkest), var(--base-color-lightest));
+	--color-primary: light-dark(var(--base-color-primary), var(--base-color-darkest));
+	--color-secondrary: light-dark(var(--base-color-secondrary), var(--base-color-middle));
+	--color-accent: light-dark(var(--base-color-accent), var(--base-color-middle));
+	/* TRANSPARENT COLOR VARIATIONS */
+	--color-primary-transparent: color-mix(in srgb, var(--color-primary) var(--base-transparency-value), transparent);
+	--color-secondrary-transparent: color-mix(in srgb, var(--color-secondrary) var(--base-transparency-value), transparent);
+	--color-accent-transparent: color-mix(in srgb, var(--color-accent) var(--base-transparency-value), transparent);
+	--color-blue-transparent: color-mix(in srgb, var(--base-color-blue) 50%, transparent);
+	/* GRADIENTS */
+	--gradient-accent-left: linear-gradient(to right, var(--color-accent) 10%, transparent);
+	--gradient-secondrary-right: linear-gradient(to left, var(--color-secondrary), transparent);
+	--gradient-accent-top: linear-gradient(to bottom, var(--color-accent), transparent);
+	--gradient-water: linear-gradient(to top, var(--base-color-blue), transparent 70%, var(--color-blue-transparent));
+	--gradient-sun: linear-gradient(320deg, transparent 90%, var(--base-color-yellow) 100%);
+	/* VARIABLES */
+	--font-color: light-dark(var(--base-color-dark), var(--base-color-lightest));
+	--border-color: light-dark(var(--base-color-dark), var(--base-color-lightest));
+
+	/* DEFAULTS */
+	color: var(--font-color);
+	font-size: 100%;
+	/* 16px par défaut */
+	--deco-border-color: var(--border-color);
+	font-family: var(--accessible-font);
+	--font-title: var(--accessible-font);
+	--font-subtitle: var(--accessible-font);
+	/* MOTION */
+	/* Very short durations means JavaScript that relies on events still works */
+	animation-duration: 0.001ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.001ms !important;
+}

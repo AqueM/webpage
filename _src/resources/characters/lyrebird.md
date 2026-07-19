@@ -1,15 +1,15 @@
 ---
 layout: layouts/_longform
 category: resources
-tags: characters
+tags: deities
 displayName: Lyrebird, Kin of the Wayward
 ---
 {% include "content/_CC-disclaimer.html" %}
 {% heading "h1", "Lyrebird", "Kin of the Wayward" %}
 
-{% fancy-border %}
+{% theme__border-card %}
 Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, troubadours; the strangers, the mad, the wanderers without harbour, for they teach us to see the world through different eyes. 
-{% endfancy-border %}
+{% endtheme__border-card %}
 
 - **Domains:** Change, Introspection and Self-Discovery, Community
 - **Patronage:** outcasts, artists, prophets and mystics
@@ -20,13 +20,11 @@ Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, tro
 	- **plants:** grapes, wheat, roses
 
 {% heading "h2", "Summary" %}
-
 Lyrebird is a shapeshifting deity that protects those that are renounced by others. They claim everyone that wishes for their patronage and provide for anyone that doesn’t feel at home anywhere.
 
 Other than that, Lyrebird isn’t interested much in mortal affairs, and mortals outside of their sphere of influence aren’t usually interested in Lyrebird, either. 
 
 {% heading "h2", "Attributes" %}
-
 ### Morals and values
 Lyrebird values just one thing in this world: being true to yourself. Anything that seeks to restrain one’s self-expression and freedom is frowned upon. As such, though they do not particularly *care* for rules or laws one way or another, Lyrebird and their followers often find themselves at odds with the local governments. Especially since Lyrebird has no issues with committing crimes (including lying, even if that seems contradictory to the dogma) if it’s what it takes to protect someone.
 
@@ -48,11 +46,10 @@ Lyrebird is on great terms with most deities specialising in music and various o
 However, one would be hard-pressed to find a lawful deity being particularly fond of Lyrebird. Most are neutral towards them at best, usually seeing them as a featherbrained clown. In some cases, there’s even outright hostility towards Lyrebird due to their patronage over people ostracised by law and society. 
 
 {% heading "h2", "Religion" %}
-
 ### Followers
 There are no organised cults worshipping Lyrebird, though many groups have them as their main — or even only — patron. This is because Lyrebird poses themselves as more of a familial figure, like a sibling or a parent, rather than someone to be revered. They aim to be a friend and a protector of their people instead of their leader. So, though Lyrebird would not abandon people just because they want to worship them as a “proper” deity, they certainly favour groups who have a more close and personal approach.
+Temples and priests
 
-### Temples and priests
 There are no grand temples dedicated solely to Lyrebird, and in fact it’s hard to find anything more than a shrine. Sometimes, places of worship dedicated to deities of arts, music and theatre will also feature a spot for Lyrebird, but that’s about it.
 
 It has nothing to do with the size of Lyrebird’s following. It is simply that in accordance with Lyrebird’s tenets, places of community are built instead of places of worship. What would usually go towards giant temple halls, in the case of Lyrebird will create soup kitchens and shelters, as well as libraries or performance stages.
@@ -70,13 +67,11 @@ Parties, in general, as well as performing art and creating any kind of arts or 
 Usually, Lyrebird’s followers think of themselves as one big family, and even the deity themself is referred to as one of their kin rather than a god. 
 
 {% heading "h2", "Related quotes" %}
-<div class="quotes">
-{% fancy-border %}“Hearts starve as well as bodies: Give us Bread, but give us Roses.”  
-(James Oppenheim, 1911) {% endfancy-border %}
-
-{% fancy-border %}“God blessed me by making me transsexual for the same reason God made wheat but not bread and fruit but not wine, so that humanity might share in the act of creation.”  
-(Julian K. Jarboe) {% endfancy-border %}
-
-{% fancy-border %}“My father had taught me to be nice first, because you can always be mean later, but once you've been mean to someone, they won't believe the nice anymore. So be nice, be nice, until it's time to stop being nice, then destroy them.”  
-(Laurell K. Hamilton, “A Stroke of Midnight”) {% endfancy-border %}
-</div>
+{%- flex-stack -%}
+{% theme__border-card %}“Hearts starve as well as bodies: Give us Bread, but give us Roses.”  
+(James Oppenheim, 1911) {% endtheme__border-card %}
+{% theme__border-card %}“God blessed me by making me transsexual for the same reason God made wheat but not bread and fruit but not wine, so that humanity might share in the act of creation.”  
+(Julian K. Jarboe) {% endtheme__border-card %}
+{% theme__border-card %}“My father had taught me to be nice first, because you can always be mean later, but once you've been mean to someone, they won't believe the nice anymore. So be nice, be nice, until it's time to stop being nice, then destroy them.”  
+(Laurell K. Hamilton, “A Stroke of Midnight”) {% endtheme__border-card %}
+{%- endflex-stack -%}

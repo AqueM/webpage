@@ -68,126 +68,133 @@ module.exports = async function (eleventyConfig) {
         return list.filter(el => el != excludeString)
     });
 
-// SHORTCODES
+    // SHORTCODES
 
-// shortcodes for styled content
-eleventyConfig.addShortcode("heading", function (size, title, subtitle) {
-    let sub = '';
-    if (typeof subtitle !== 'undefined') {
-        sub = `<span class="subtitle">
-				${subtitle}
-				</span>`
-    };
-    return `<div class="heading">
-				<${size} class="title">${title}</${size}>`
-        + sub +
-        `</div>`;
-});
-eleventyConfig.addPairedShortcode("columns", function (content) {
-    return `<section class="columns">
-        ${content}
-        </section>`;
-});
-eleventyConfig.addPairedShortcode("columns-wrap", function (content) {
-    return `<section class="columns wrap">
-        ${content}
-        </section>`;
-});
-eleventyConfig.addPairedShortcode("column", function (content) {
-    return `<div class="column">
+    // shortcodes for styled content
+    eleventyConfig.addShortcode("heading", function (size, title, subtitle) {
+        let sub = '';
+        if (typeof subtitle !== 'undefined') {
+            sub = `<span class="theme__heading__subtitle">${subtitle}</span>`
+        };
+                        // <div class="design_decor design__decor--top"></div>
+        return `<div class="theme__heading layout__flex-block__stack theme__block--accent theme__card--border">
+				<${size} class="theme__heading__title">${title}</${size}>` + sub + `</div>`;
+    });
+    eleventyConfig.addPairedShortcode("flex-columns", function (content) {
+        return `<div class="layout__flex-block__row layout__flex-block--space-around">
         ${content}
         </div>`;
-});
-eleventyConfig.addPairedShortcode("columns-spaced", function (content) {
-    return `<div class="columns columns-spaced">
+    });
+    eleventyConfig.addPairedShortcode("flex-columns-centered", function (content) {
+        return `<div class="layout__flex-block__row layout__flex-block--center">
         ${content}
         </div>`;
-});
-eleventyConfig.addPairedShortcode("column-side", function (content) {
-    return `<div class="column-side">
+    });
+    eleventyConfig.addPairedShortcode("flex-stack-centered", function (content) {
+        return `<div class="layout__flex-block__stack layout__flex-block--center">
         ${content}
         </div>`;
-});
-
-eleventyConfig.addPairedShortcode("fancy-border", function (content) {
-    return `<div class="fancy-border">
-			<div class="corner top left"></div>
-			<div class="corner top right"></div>
-			<div class="corner bottom left"></div>
-			<div class="corner bottom right"></div>
+    });
+    eleventyConfig.addPairedShortcode("flex-stack", function (content) {
+        return `<div class="layout__flex-block__stack layout__flex-block--center"> ${content}</div>`;
+    });
+    
+    eleventyConfig.addPairedShortcode("flex-item", function (content) {
+        return `<div class="layout__flex-item">
         ${content}
         </div>`;
-});
+    });
+    eleventyConfig.addPairedShortcode("flex-aside", function (content) {
+        return `<div class="layout__flex-item__aside">
+        ${content}
+        </div>`;
+    });
 
-eleventyConfig.addPairedShortcode("gallery", function (content) {
-    return `<div class="gallery pswp-gallery">
-                    ${content}
-                </div>`;
-});
+    eleventyConfig.addShortcode("flex-break-newrow", function (content) {
+        return `<div class="layout__flex-item-break-row"></div>`;
+    });
 
-// Shortcodes for content
+    eleventyConfig.addPairedShortcode("theme__border-card", function (content) {
+        return `<div class="theme__border-card">
+			<div class="design__border-card__decor design__border-card__decor--top design__border-card__decor--left"></div>
+			<div class="design__border-card__decor design__border-card__decor--top design__border-card__decor--right"></div>
+			<div class="design__border-card__decor design__border-card__decor--bottom design__border-card__decor--left"></div>
+			<div class="design__border-card__decor design__border-card__decor--bottom design__border-card__decor--right"></div>
+        ${content}
+        </div>`;
+    });
 
-eleventyConfig.addShortcode("neighbour", function (neighbour) {
-    let className = "";
-    if (neighbour.isAnimated) {
-        className = "animated"
-    };
-    if (neighbour.img) {
-        return `<div class="badge"><a href="${neighbour.url}" target="_blank"><img class="${className}" src="${neighbour.img}" alt="${neighbour.alt}"></a></div>`
-    }
-    return `<div class="round-link"><a href="${neighbour.url}" target="_blank">${neighbour.alt}</a></div>`;
-});
+    eleventyConfig.addPairedShortcode("gallery", function (content) {
+        return `<div class="gallery layout__grid-block pswp-gallery">${content}</div>`;
+    });
 
-eleventyConfig.addShortcode("image", function (image) {
-    return `<div class="pswp-gallery__item square"><figure>
+    // Shortcodes for content
+
+    eleventyConfig.addShortcode("neighbour", function (neighbour) {
+        let className = "";
+        if (neighbour.isAnimated) {
+            className = "animated"
+        };
+        if (neighbour.img) {
+            return `<a href="${neighbour.url}" target="_blank"><img class="${className}" src="${neighbour.img}" alt="${neighbour.alt}"></a>`
+        }
+        return `<div class="design__link--round"><a href="${neighbour.url}" target="_blank" rel="external">${neighbour.alt}</a></div>`;
+    });
+
+    eleventyConfig.addShortcode("divider-center", function (content) {
+        return `<div class="design_decor design__divider--center"></div>`;
+    });
+
+    eleventyConfig.addShortcode("image", function (image) {
+        return `<div class="pswp-gallery__item square"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
-            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat" /></a>
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item gallery__item--square"/></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>${image.caption}, by <cite><a href="${image.authorLink}" target="_blank">${image.artist}</a></cite></p>
         <p class="image-caption">${image.alt}</p></figcaption>
         </figure></div>`;
-});
+    });
 
-eleventyConfig.addShortcode("imageMine", function (image) {
-    return `<div class="pswp-gallery__item"><figure>
+    eleventyConfig.addShortcode("imageMine", function (image) {
+        return `<div class="pswp-gallery__item"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
-            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat"/></a>
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item"/></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>${image.date}</p></figcaption>
         </figure></div>`;
-});
-eleventyConfig.addShortcode("imageMineSquare", function (image) {
-    return `<div class="pswp-gallery__item square"><figure>
+    });
+    eleventyConfig.addShortcode("imageMineSquare", function (image) {
+        return `<div class="pswp-gallery__item"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
-            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat"/></a>
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item gallery__item--square"/></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>by Aque, ${image.date}</p></figcaption>
         </figure></div>`;
-});
-eleventyConfig.addShortcode("photoMine", function (image) {
-    let title = image.title;
-    if (image.url) {
-        title = `<a href="${image.url}" target="_blank">${image.title}</a>`;
-    }
-    let caption = "";
-    if (image.caption) {
-        caption = `<span>${image.caption}</span>`;
-    }
-    return `<div class="pswp-gallery__item square"><figure>
+    });
+    eleventyConfig.addShortcode("photoMine", function (image) {
+        let title = image.title;
+        if (image.url) {
+            title = `<a href="${image.url}" target="_blank">${image.title}</a>`;
+        }
+        let caption = "";
+        if (image.caption) {
+            caption = `<span>${image.caption}</span>`;
+        }
+        return `<div class="pswp-gallery__item"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
-            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat"/></a>
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item gallery__item--square"/></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>`+ title + `</strong></p>` + caption + `</figcaption>
         </figure></div>`;
-});
-eleventyConfig.addShortcode("treasure", function (image) {
-    return `<div class="pswp-gallery__item square"><figure>
+    });
+    eleventyConfig.addShortcode("treasure", function (image) {
+        return `<div class="pswp-gallery__item"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
-            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat" /></a>
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item gallery__item--square" /></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong><br>(${image.date})</p><p>by <cite>${image.artist}</cite></p>
         <p><a href="${image.link}" target="_blank">source</a>
         <p class="image-caption">${image.alt}</p></figcaption>
         </figure></div>`;
-});
+    });
 }

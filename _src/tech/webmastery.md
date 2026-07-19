@@ -7,37 +7,46 @@ displayName: Webmastery
 order: 1
 ---
 {% heading "h1", "About this website" %}
+<section>
+{%- flex-columns -%}
+{%- flex-item %}
+Looking for my buttons to link back?
 
-If you want to link back to me, check [Outlinks](/about/links/)!
+[Outlinks](/about/links/){class=design__link--round}
 
-<div>
+{%- endflex-item -%}
+{%- flex-break-newrow -%}
+{%- flex-item -%}
 {% heading "h2", "Credits", "resources used to create this website" %}
 <ul>
     {%- for link in tech.credits -%}
     <li><a href="{{link.url}}" target="_blank">{{link.name}}</a> {{ link.comment }}</li>
     {%- endfor %}
 </ul>
-</div>
-<section>
-<div class="columns">
-    <div class="column">
+{%- endflex-item -%}
+
+{%- flex-break-newrow -%}
+
+{%- flex-item -%}
 {% heading "h2", "Changelog", "latest updates" %}
 <ul class="logs">
     {%- for element in tech.changelog -%}
     <li>
         <time><strong>{{element.date}}</strong></time> - {{element.log}}
     </li>
-    {%- endfor %}
+    {%- endfor -%}
 </ul>
-</div>
-<div class="column">
+{%- endflex-item -%}
+
+{% flex-item %}
 {% heading "h2", "To-Do", "plans for the future" %}
 <ul class="logs">
     {%- for element in tech.todo -%}
     <li>
         {{element.name}}{% if element.comment !=blank %} - {{element.comment}}{%endif%}
     </li>
-    {%- endfor %}
+    {%- endfor -%}
 </ul>
-</div>
-</div>
+{%- endflex-item -%}
+{%- endflex-columns -%}
+</section>

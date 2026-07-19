@@ -58,5 +58,23 @@
   {
     "url": "https://pinkvampyr.leprd.space/accessiblenet/",
     "alt": "Accessible Net Directory"
+  },
+  {
+    "img": "/assets/images/neighbours/goblin-post.png",
+    "url": "https://avantgoblin.com",
+    "alt": "Avant Goblin",
+    "isAnimated": false
+  },
+  {
+    "img": "/assets/images/neighbours/cdbutton2-2.gif",
+    "url": "https://cyberneticdryad.neocities.org",
+    "alt": "Cybernetic Dryad",
+    "isAnimated": true
+  },
+  {
+    "img": "/assets/images/neighbours/whiona_button.png",
+    "url": "https://whiona.me",
+    "alt": "whiona",
+    "isAnimated": false
   }
 ]

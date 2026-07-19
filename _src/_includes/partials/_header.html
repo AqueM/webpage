@@ -1,31 +1,26 @@
-<div class="layout-image" id="header-layout-image"></div>
-<header id="hero-bg" class="fancy-border">
-	<div class="corner top left"></div>
-	<div class="corner top right"></div>
-	<div class="corner bottom left"></div>
-	<div class="corner bottom right"></div>
-	<div id="hero-body" class="heading">
-		<div id="page-header">
-			<a href="/" title="click to go to homepage">
-				<div id="page-logo" class="layout-image"></div>
+<div class="layout__image layout__image__header"></div>
+<header class="theme__border-card layout__header theme__block--secondrary">
+	{% include "partials/_decor-corners.html" %}
+	<div class="header layout__flex-block__row layout__flex-block__row--big layout__flex-block--space-between theme__block--accent theme__card--border">
+		<div class="layout__block">
+		<div class="header__page-title">
+			<a href="/" title="click to go to homepage" class="noformat header__link">
+				<div class="layout-image layout__image__logo"></div></a>
+				<div class="layout__flex-block__stack header__page-title__text">
+					<a href="/" title="click to go to homepage" class="noformat header__link">
+						<div class="header__page-title__title">Broadly in favor of humanity</div>
+						<div class="header__page-title__subtitle layout__flex-block__stack">
+							<span>Do it scared.</span>
+							<span>Do it weird.</span>
+							<span>Kill the cop inside your head.</span>
+						</div>
+					</a>
+				</div>
 			</a>
-			<div id="page-title">
-				<a href="/" title="click to go to homepage">
-					<div class="title">Broadly in favor of humanity</div>
-					<div class="subtitle">
-						<span>Do it scared.</span>
-						<span>Do it weird.</span>
-						<span>Kill the cop inside your head.</span>
-					</div>
-				</a>
-			</div>
-			</a>
-		</div>
-		<div class="aside">
-			<div class="accessibility-btns accessibility">
-				{% include "partials/_toggles.html" %}
-			</div>
+		</div></div>
+		<div class="layout__block layout__flex-item__aside header__access-card">
+			{% include "partials/_toggles.html" %}
 		</div>
 	</div>
-	<div id="nav-layout-image" class="layout-image"></div>
+	<div class="layout__image layout__image__nav"></div>
 </header>

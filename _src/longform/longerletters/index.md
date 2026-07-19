@@ -10,7 +10,7 @@ order: 1
 Archive of resources related to my Youtube Channel, Longer Letters.
 
 {% heading "h2", "Videos" %}
-<div class="box">
+<div class="design__box">
 <p>To view the videos online, go to <a href="https://www.youtube.com/@LongerLetters" target="_blank" class="round-link"><span class="icon" style="background-image: url('/assets/images/layout/font-awesome/youtube-brands-solid-full.svg"></span>channel</a></p>
 </div>
 

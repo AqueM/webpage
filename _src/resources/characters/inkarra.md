@@ -1,15 +1,16 @@
 ---
 layout: layouts/_longform
 category: resources
-tags: characters
+tags: deities
 displayName:  Inkarra, the Guiding Star
 ---
 {% include "content/_CC-disclaimer.html" %}
 {% heading "h1", "Inkarra", "the Guiding Star" %}
-
-{% fancy-border %}
+{% theme__border-card -%}
 The wise man is blessed with knowledge but the fool is blessed to learn every day.
-{% endfancy-border %}
+{%- endtheme__border-card -%}
+{%- flex-columns -%}
+{%- flex-item %}
 
 - **Domains:** Guidance, Knowledge, Innovation
 - **Patronage:** keepers of knowledge (librarians, skalds, wise women...), intellectuals, teachers
@@ -18,7 +19,16 @@ The wise man is blessed with knowledge but the fool is blessed to learn every da
 	- **colours:** rose gold
 	- **minerals:** gold, rose quartz
 
+{%- endflex-item -%}
+
+{%- flex-aside -%}
+{% gallery %}{% imageMine myArt.2023.inkarra %}{% endgallery %}
+{%- endflex-aside -%}
+
+{%- endflex-columns -%}
+
 {% heading "h2", "Summary" %}
+
 Inkarra is a lesser deity, usually described as a subordinate of some bigger power, that serves as a guiding spirit for mortal beings. Unlike many greater forces, she is keen on interacting — even directly — with mortals, regardless of if they worship her or not. Her only interest is providing answers and solutions and making sure that no knowledge is lost.
 
 Though she presents in a very gender-neutral way, she is always described in feminine terms. 
@@ -57,15 +67,13 @@ One is likely to find a shrine dedicated to the Guiding Star in almost all place
 
 Despite not having her own place of worship, she regularly visits the mortal plane in person to engage in philosophical debates and inspire scientific breakthroughs. Some say it is even possible to simply find her in some bigger schools or libraries, quietly browsing the books or dusting the shelves idly. 
 ### Portrayal
-{% columns-spaced %}
-{% column %}
+
 She is usually portrayed with her eyes closed and head tilted upwards. With her open arms outstretched to the sides and legs joined and straight, her body forms the four-point star of her symbol.
 
-Sometimes, candles are added at the feet of her statues or affixed to her hair, mimicking her signature stars, and illustrating her glow or the light of knowledge she brings. {% endcolumn %}{% column-side %}
-
-{% gallery %}{% imageMine myArt.2023.inkarra %}{% endgallery %}{% endcolumn-side %}{% endcolumns-spaced %}
+Sometimes, candles are added at the feet of her statues or affixed to her hair, mimicking her signature stars, and illustrating her glow or the light of knowledge she brings.
 
 ### Rituals
+
 There are no codified or widely accepted rituals associated with worship of Inkarra, as she is a rather niche deity.
 
 {% include "partials/_photoswipe-script.html" %}
