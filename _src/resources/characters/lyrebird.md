@@ -50,7 +50,8 @@ However, one would be hard-pressed to find a lawful deity being particularly fon
 
 ### Followers
 There are no organised cults worshipping Lyrebird, though many groups have them as their main — or even only — patron. This is because Lyrebird poses themselves as more of a familial figure, like a sibling or a parent, rather than someone to be revered. They aim to be a friend and a protector of their people instead of their leader. So, though Lyrebird would not abandon people just because they want to worship them as a “proper” deity, they certainly favour groups who have a more close and personal approach.
-Temples and priests
+
+### Temples and priests
 
 There are no grand temples dedicated solely to Lyrebird, and in fact it’s hard to find anything more than a shrine. Sometimes, places of worship dedicated to deities of arts, music and theatre will also feature a spot for Lyrebird, but that’s about it.
 
