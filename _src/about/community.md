@@ -18,14 +18,14 @@ order: 3
 
 ### that I am a part of
 
-{% flex-stack %}
+{% flex-stack-centered %}
 {% include "content/_webrings-active.html" %}
-{% endflex-stack %}
+{% endflex-stack-centered %}
 
 ### that I'm waiting to be added to
 
-{% flex-stack -%}
+{% flex-stack-centered -%}
 {% include "content/_webrings-inactive.html" %}
-{%- endflex-stack -%}
+{%- endflex-stack-centered -%}
 
 
