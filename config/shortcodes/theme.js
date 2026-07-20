@@ -4,8 +4,8 @@ module.exports = async function (eleventyConfig) {
         if (typeof subtitle !== 'undefined') {
             sub = `<span class="theme__heading__subtitle">${subtitle}</span>`
         };
-        // <div class="design_decor design__decor--top"></div>
-        return `<div class="theme__heading layout__flex-block__stack theme__block--accent theme__card--border">
+        // <div class="design__decor design__decor--top"></div>
+        return `<div class="theme__heading layout__flex-block__stack theme__block--accent theme__block--border">
 				<${size} class="theme__heading__title">${title}</${size}>` + sub + `</div>`;
     });
 
@@ -20,6 +20,6 @@ module.exports = async function (eleventyConfig) {
     });
     
     eleventyConfig.addShortcode("divider-center", function (content) {
-        return `<div class="design_decor design__divider--center"></div>`;
+        return `<div class="design__decor design__divider--center"></div>`;
     });
 }

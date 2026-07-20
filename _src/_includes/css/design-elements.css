@@ -43,6 +43,13 @@
 	border-radius: var(--border-radius);
 }
 
+.design__dislaimer-js {
+	padding: 0.5rem;
+	margin: 0.1rem;
+	border: 0.1rem var(--color-accent) solid;
+	border-radius: var(--border-radius);
+}
+
 .design__link--round {
 	border-style: dotted;
 	border-width: 0.1rem;
@@ -95,9 +102,9 @@
 	white-space: nowrap;
 }
 
-.design_decor {
+.design__decor {
 	position: relative;
-	z-index: 1;
+	z-index: inherit;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: var(--layout-img);

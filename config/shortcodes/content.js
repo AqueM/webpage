@@ -22,7 +22,7 @@ module.exports = async function (eleventyConfig) {
 
     eleventyConfig.addShortcode("imageMine", function (image) {
         return `<div class="pswp-gallery__item"><figure>
-        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
+        <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat" target="_blank">
             <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item"/></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>${image.date}</p></figcaption>
@@ -32,7 +32,7 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addShortcode("imageMineSquare", function (image) {
         return `<div class="pswp-gallery__item"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
-            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item gallery__item--square"/></a>
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" target="_blank" class="noformat gallery__item gallery__item--square"/></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong></p><p>by Aque, ${image.date}</p></figcaption>
         </figure></div>`;
@@ -49,7 +49,7 @@ module.exports = async function (eleventyConfig) {
         }
         return `<div class="pswp-gallery__item"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
-            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item gallery__item--square"/></a>
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" target="_blank" class="noformat gallery__item gallery__item--square"/></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>`+ title + `</strong></p>` + caption + `</figcaption>
         </figure></div>`;
@@ -58,7 +58,7 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addShortcode("treasure", function (image) {
         return `<div class="pswp-gallery__item"><figure>
         <a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" class="noformat">
-            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="noformat gallery__item gallery__item--square" /></a>
+            <img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" target="_blank" class="noformat gallery__item gallery__item--square" /></a>
         </a>
         <figcaption class="pswp-caption-content"><p><strong>${image.title}</strong><br>(${image.date})</p><p>by <cite>${image.artist}</cite></p>
         <p><a href="${image.link}" target="_blank">source</a>

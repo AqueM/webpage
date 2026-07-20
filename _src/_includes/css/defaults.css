@@ -53,8 +53,7 @@ a:not(.noformat, .sitenav__menu-link) {
 	color: var(--color-dark);
 	background-color: var(--color-accent-transparent);
 	border-radius: var(--border-radius);
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding: 0.2rem 0.5rem 0 0.5rem;
 	line-height: 1em;
 
 	@media only screen and (min-width: 800px) {

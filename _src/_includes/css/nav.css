@@ -4,9 +4,12 @@
 	flex-basis: 10vw;
 	max-height: 4rem;
 	flex-grow: 1;
+	z-index: 4;
+	background-color: var(--color-secondrary);
 
 	@media only screen and (min-width: 800px) {
 		max-height: unset;
+		background-color: var(--color-primary);
 	}
 }
 
@@ -32,9 +35,8 @@
 	margin-top: 0.5rem;
 	padding: 0.5rem;
 	position: relative;
-	z-index: 4;
 	border-radius: 0 0 var(--border-radius) var(--border-radius);
-	background-color: var(--color-primary);
+	background-color: var(--color-secondrary);
 	border-bottom: 1px solid var(--border-color);
 	margin-bottom: 1rem;
 
@@ -45,6 +47,7 @@
 		padding: unset;
 		border-radius: unset;
 		border-bottom: unset;
+		background-color: var(--color-primary);
 	}
 }
 
@@ -67,7 +70,6 @@
 	&::after {
 		/* Custom marker dimensions */
 		content: "";
-		z-index: 3;
 		border-block-start: 0.1rem solid var(--color-dark);
 		height: 0;
 		width: 1rem;

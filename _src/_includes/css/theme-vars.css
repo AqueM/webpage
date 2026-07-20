@@ -43,7 +43,7 @@
 	--color-blue-transparent: color-mix(in srgb, var(--base-color-blue) 50%, transparent);
 	/* GRADIENTS */
 	--gradient-accent-left: linear-gradient(to right, var(--color-accent) 10%, transparent);
-	--gradient-secondrary-right: linear-gradient(to left, var(--color-secondrary), transparent);
+	--gradient-secondrary-left: linear-gradient(to right, var(--color-secondrary), transparent);
 	--gradient-accent-top: linear-gradient(to bottom, var(--color-accent), transparent);
 	--gradient-water: linear-gradient(to top, var(--base-color-blue), transparent 70%, var(--color-blue-transparent));
 	--gradient-sun: linear-gradient(320deg, transparent 90%, var(--base-color-yellow) 100%);

@@ -4,14 +4,14 @@ tags:
 displayName: Recs
 order: 4
 ---
-{% heading "h2", "Recommendations" %}
+{% heading "h1", "Recommendations" %}
+<section>
 
 Things I liked and probably regularly return to.
 
 {%- flex-columns -%}
-{%- flex-item %}
-## Webcomics
-
+{%- flex-item -%}
+{% heading "h2", "Webcomics" %}
 <ul>
 {%- for link in about.recs.webcomics -%}
 <li><a href="{{link.url}}" target="_blank">{{link.name}}</a> ({{link.type}})</li>
@@ -21,7 +21,7 @@ Things I liked and probably regularly return to.
 
 {% flex-item %}
 
-## YouTube Channels
+{% heading "h2", "YouTube Channels" %}
 
 <ul>
 {%- for link in about.recs.youtube -%}
@@ -30,11 +30,10 @@ Things I liked and probably regularly return to.
 </ul>
 {%- endflex-item -%}
 
-{%- flex-break-newrow -%}
 
 {% flex-item %}
 
-## Books
+{% heading "h2", "Books" %}
 
 <ul>
 {%- for link in about.recs.books -%}
@@ -45,7 +44,7 @@ Things I liked and probably regularly return to.
 
 {% flex-item %}
 
-## Games
+{% heading "h2", "Games" %}
 <ul>
 {%- for link in about.recs.games -%}
 <li><a href="{{link.url}}" target="_blank">{{link.name}}</a> ({{link.type}})</li>
@@ -53,11 +52,10 @@ Things I liked and probably regularly return to.
 </ul>
 {%- endflex-item -%}
 
-{%- flex-break-newrow -%}
 
 {% flex-item %}
 
-## Movies
+{% heading "h2", "Movies" %}
 <ul>
 {%- for link in about.recs.movies -%}
 <li><a href="{{link.url}}" target="_blank">{{link.name}}</a> ({{link.type}})</li>
@@ -67,7 +65,7 @@ Things I liked and probably regularly return to.
 
 {% flex-item %}
 
-## Series
+{% heading "h2", "Series" %}
 <ul>
 {%- for link in about.recs.series -%}
 <li><a href="{{link.url}}" target="_blank">{{link.name}}</a> ({{link.type}})</li>
@@ -75,3 +73,4 @@ Things I liked and probably regularly return to.
 </ul>
 {%- endflex-item %}
 {%- endflex-columns -%}
+</section>
