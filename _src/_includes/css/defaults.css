@@ -62,8 +62,7 @@ a:not(.noformat, .sitenav__menu-link) {
 	}
 }
 
-.external-code:has(> a),
-a:not([rel~="external"], .noformat, .sitenav__menu-link)::after {
+a:not([rel~="external"], .noformat, .sitenav__menu-link, .external-code a)::after {
 	content: "→";
 	margin-left: 0.3rem;
 }
