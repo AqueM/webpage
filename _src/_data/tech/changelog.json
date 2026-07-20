@@ -1,5 +1,9 @@
 [
     {
+        "date": "20/07/2026",
+        "log": "added proper credits, cleaned up Eleventy config"
+    },
+    {
         "date": "19/07/2026",
         "log": "refactored the entire CSS code for funzies; also changed fonts and added some dividers"
     },

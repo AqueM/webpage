@@ -1,6 +1,4 @@
 ---
-layout: layouts/_page
-category: technology
 tags: 
   - nav
 displayName: Hardware

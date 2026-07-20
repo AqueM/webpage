@@ -1,6 +1,4 @@
 ---
-layout: layouts/_page
-category: about
 tags: 
   - nav
 displayName: Bio

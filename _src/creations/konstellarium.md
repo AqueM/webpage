@@ -1,5 +1,4 @@
 ---
-category: creations
 tags: nav
 displayName: Konstellarium
 link: https://konstellarium.neocities.org/

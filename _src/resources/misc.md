@@ -1,6 +1,4 @@
 ---
-layout: layouts/_page
-category: resources
 tags: 
   - nav
 displayName: Misc

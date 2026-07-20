@@ -1,6 +1,5 @@
 ---
 layout: layouts/_gallery
-category: collections
 tags: 
   - nav
 displayName: Commissions

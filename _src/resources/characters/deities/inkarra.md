@@ -1,7 +1,4 @@
 ---
-layout: layouts/_longform
-category: resources
-tags: deities
 displayName:  Inkarra, the Guiding Star
 ---
 {% include "content/_CC-disclaimer.html" %}

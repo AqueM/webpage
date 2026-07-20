@@ -1,6 +1,4 @@
 ---
-layout: layouts/_main
-category: resources
 tags: 
   - nav
 displayName: Characters

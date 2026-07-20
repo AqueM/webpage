@@ -68,7 +68,7 @@
 }
 
 .layout__flex-item {
-	flex: 2 1 10%;
+	flex: 2 1 30%;
 	align-self: stretch;
 }
 

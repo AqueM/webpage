@@ -1,6 +1,4 @@
 ---
-layout: layouts/_page
-category: creations
 tags: 
   - nav
 displayName: Poetry

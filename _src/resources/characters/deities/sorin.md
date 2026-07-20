@@ -1,9 +1,4 @@
 ---
-layout: layouts/_longform
-date: Last Modified
-changeFreq: yearly
-category: resources
-tags: deities
 displayName: Sorin, the Indomitable Will
 ---
 {% include "content/_CC-disclaimer.html" %}

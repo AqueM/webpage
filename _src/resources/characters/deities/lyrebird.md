@@ -1,7 +1,4 @@
 ---
-layout: layouts/_longform
-category: resources
-tags: deities
 displayName: Lyrebird, Kin of the Wayward
 ---
 {% include "content/_CC-disclaimer.html" %}

@@ -1,6 +1,4 @@
 ---
-layout: layouts/_page
-category: collections
 tags: 
   - nav
 displayName: Shinies

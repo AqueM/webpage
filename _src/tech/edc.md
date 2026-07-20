@@ -1,8 +1,4 @@
 ---
-layout: layouts/_longform
-date: Last Modified
-changeFreq: yearly
-category: technology
 tags: 
   - nav
 displayName: EDC

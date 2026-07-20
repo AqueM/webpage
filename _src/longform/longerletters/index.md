@@ -1,6 +1,4 @@
 ---
-layout: layouts/_page
-category: longform
 tags: nav
 displayName: Longer Letters
 order: 1

@@ -76,5 +76,21 @@
     "url": "https://whiona.me",
     "alt": "whiona",
     "isAnimated": false
+  },
+  {
+    "img": "/assets/images/neighbours/CozyBritt_pixelbutton.gif",
+    "url": "https://cozybritt.com/",
+    "alt": "CozyBritt",
+    "isAnimated": true
+  },
+  {
+    "img": "/assets/images/neighbours/P1xelGarden_Button.png",
+    "url": "https://p1xelgarden.com/",
+    "alt": "P1xel Garden",
+    "isAnimated": false
+  },
+  {
+    "url": "https://allaboutfrogs.org",
+    "alt": "FROGLAND"
   }
 ]

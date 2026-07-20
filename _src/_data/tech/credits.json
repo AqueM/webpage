@@ -1,41 +1,158 @@
-﻿[
-  {
-    "name": "Eleventy",
-    "url": "https://www.11ty.dev/",
-    "comment": "is the engine this is built with"
-  },{
-    "name": "Censorship Panda badge",
-    "url": "https://www.mabsland.com/Adoption.html",
-    "comment": "authored by Mabsland"
-  },
-  {
-    "name": "Listmatic",
-    "url": "https://css.maxdesign.com.au/listamatic/",
-    "comment": ""
-  },
-  {
-    "name": "W3Schools",
-    "url": "https://www.w3schools.com",
-    "comment": ""
-  },
-  {
-    "name": "CSSTricks",
-    "url": "https://css-tricks.com",
-    "comment": ""
-  },
-  {
-    "name": "Font Awesome",
-    "url": "https://fontawesome.com",
-    "comment": "provided the icons"
-  },
-  {
-    "name": "Canva",
-    "url": "https://www.canva.com/",
-    "comment": "provided the layout graphics"
-  },
-  {
-    "name": "Art Deco Card CSS code by Mubanga",
-    "url": "https://codepen.io/mubangadv/pen/MYgEPez",
-    "comment": "provided the styling for the fancy borders"
-  }
+[
+    {
+        "name": "Tutorials and guides",
+        "items": [
+            {
+                "name": "Listmatic",
+                "url": "https://css.maxdesign.com.au/listamatic/",
+                "comment": ""
+            },
+            {
+                "name": "W3Schools",
+                "url": "https://www.w3schools.com",
+                "comment": ""
+            },
+            {
+                "name": "CSSTricks",
+                "url": "https://css-tricks.com",
+                "comment": ""
+            },
+            {
+                "name": "scritchz",
+                "url": "https://www.reddit.com/user/scritchz/",
+                "comment": "figured out proper semantic HTML for gallery items"
+            },
+            {
+                "name": "Aankhen",
+                "url": "https://github.com/Aankhen",
+                "comment": "helped me tame Photoswipe"
+            }
+        ]
+    },
+    {
+        "name": "Code snippets and plugins",
+        "items": [
+            {
+                "name": "Mubanga",
+                "url": "https://codepen.io/mubangadv/pen/MYgEPez",
+                "comment": "Art Deco Card CSS code"
+            },
+            {
+                "name": "Álvaro",
+                "url": "https://codepen.io/alvarotrigo/pen/wvrzPWL",
+                "comment": "mobile navigation code"
+            },
+            {
+                "name": "Álvaro",
+                "url": "https://codepen.io/alvarotrigo/pen/jOaXGKy",
+                "comment": "toggles"
+            },
+            {
+                "name": "CSSTricks",
+                "url": "https://css-tricks.com/using-styling-the-details-element/",
+                "comment": "'details' tag styling"
+            },
+            {
+                "name": "Photoswipe",
+                "url": "https://photoswipe.com",
+                "comment": "gallery styling"
+            },
+            {
+                "name": "Dynamic caption plugin for PhotoSwipe",
+                "url": "https://github.com/dimsemenov/photoswipe-dynamic-caption-plugin",
+                "comment": "styling the dynamic caption in the gallery modal"
+            }
+        ] 
+    },
+    {
+        "name": "Widgets",
+        "items": [
+            {
+                "name": "FC2",
+                "url": "https://fc2.com/en/",
+                "comment": "clap button"
+            },
+            {
+                "name": "WebsiteOut",
+                "url": "https://www.websiteout.net/counter.php",
+                "comment": "visitor counter"
+            },
+            {
+                "name": "Snazzy Space",
+                "url": "https://www.snazzyspace.com/generators/viewer-counter/",
+                "comment": "visitor record counter"
+            }
+        ]
+    },
+    {
+        "name": "Badges",
+        "items": [
+            {
+                "name": "ID badges",
+                "url": "https://idbuttons.neocities.org/database/",
+                "comment": ""
+            },
+            {
+                "name": "Web Badges World",
+                "url": "https://web.badges.world/",
+                "comment": ""
+            },
+            {
+                "name": "other assorted badges",
+                "url": "",
+                "comment": "shamelessly snatched from other people's pages, where it was allowed to do so"
+            }
+        ]
+    },
+    {
+        "name": "Graphics",
+        "items": [
+            {
+                "name": "Canva",
+                "url": "https://www.canva.com/",
+                "comment": "layout graphics (except for the grass and water, which I made myself!)"
+            },
+            {
+                "name": "Saradika Graphics",
+                "url": "https://www.tumblr.com/saradika-graphics",
+                "comment": "art nouveau dividers"
+            },
+            {
+                "name": "Font Awesome",
+                "url": "https://fontawesome.com/",
+                "comment": "icons"
+            }
+        ]
+    }
+    ,
+    {
+        "name": "Fonts",
+        "items": [
+            {
+                "name": "Faculty Glyphic",
+                "url": "https://fonts.google.com/specimen/Faculty%20Glyphic",
+                "comment": "main text"
+            },
+            {
+                "name": "Amarante",
+                "url": "https://fonts.google.com/specimen/Amarante",
+                "comment": "titles"
+            },
+            {
+                "name": "Viaoda Libre",
+                "url": "https://fonts.google.com/specimen/Poiret+One",
+                "comment": "subtitles"
+            },
+            {
+                "name": "Open Dyslexic",
+                "url": "https://opendyslexic.org/",
+                "comment": "dyslexia font (accessibility toggles)"
+            },
+            {
+                "name": "Font Squirrel",
+                "url": "https://www.fontsquirrel.com",
+                "comment": "conversion to webfonts"
+            }
+        ]
+    }
 ]
