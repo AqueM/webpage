@@ -96,7 +96,7 @@ module.exports = async function (eleventyConfig) {
         </div>`;
     });
     eleventyConfig.addPairedShortcode("flex-stack", function (content) {
-        return `<div class="layout__flex-block__stack layout__flex-block--center"> ${content}</div>`;
+        return `<div class="layout__flex-block__stack"> ${content}</div>`;
     });
     
     eleventyConfig.addPairedShortcode("flex-item", function (content) {
