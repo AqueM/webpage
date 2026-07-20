@@ -25,6 +25,7 @@ Lyrebird is a shapeshifting deity that protects those that are renounced by othe
 Other than that, Lyrebird isn’t interested much in mortal affairs, and mortals outside of their sphere of influence aren’t usually interested in Lyrebird, either. 
 
 {% heading "h2", "Attributes" %}
+
 ### Morals and values
 Lyrebird values just one thing in this world: being true to yourself. Anything that seeks to restrain one’s self-expression and freedom is frowned upon. As such, though they do not particularly *care* for rules or laws one way or another, Lyrebird and their followers often find themselves at odds with the local governments. Especially since Lyrebird has no issues with committing crimes (including lying, even if that seems contradictory to the dogma) if it’s what it takes to protect someone.
 
@@ -46,6 +47,7 @@ Lyrebird is on great terms with most deities specialising in music and various o
 However, one would be hard-pressed to find a lawful deity being particularly fond of Lyrebird. Most are neutral towards them at best, usually seeing them as a featherbrained clown. In some cases, there’s even outright hostility towards Lyrebird due to their patronage over people ostracised by law and society. 
 
 {% heading "h2", "Religion" %}
+
 ### Followers
 There are no organised cults worshipping Lyrebird, though many groups have them as their main — or even only — patron. This is because Lyrebird poses themselves as more of a familial figure, like a sibling or a parent, rather than someone to be revered. They aim to be a friend and a protector of their people instead of their leader. So, though Lyrebird would not abandon people just because they want to worship them as a “proper” deity, they certainly favour groups who have a more close and personal approach.
 Temples and priests
