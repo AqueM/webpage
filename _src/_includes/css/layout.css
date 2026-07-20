@@ -41,6 +41,7 @@
 
 .layout__flex-block--stretch {
 	justify-content: stretch;
+	align-items: stretch;
 }
 .layout__flex-block--center {
 	justify-content: center;
