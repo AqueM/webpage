@@ -167,13 +167,14 @@
 	content: "⇦";
 	margin-right: 0.3rem;
 }
+
 .pagination__link--next::after {
 	content: "⇨";
 	margin-left: 0.3rem;
 }
 
 .design__indent {
-		text-indent: 1rem;
+	margin-left: 3rem;
 }
 
 .design__meta {
