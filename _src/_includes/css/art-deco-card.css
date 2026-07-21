@@ -14,6 +14,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	position: relative;
 	padding: 1rem;
 	margin: 1rem;
+	outline: var(--color-secondrary) var(--border-width) solid;
+	outline-offset: -0.5rem;
 
 	.design__border-card__decor {
 		position: absolute;
