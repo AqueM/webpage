@@ -1,10 +1,15 @@
 {
-    "filename": "/assets/pdf/pain_taste_sweet.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/38338642",
     "title": "Tase of pain (sweet version)",
     "warnings": [],
-    "genres": ["fanfiction", "Batfamily", "soulmates", "JayTim"],
+    "genres": [
+        "fanfiction",
+        "Batfamily",
+        "soulmates",
+        "JayTim"
+    ],
     "caption": "Soulmate AU where they share the sense of taste.",
     "date": "2022-04-12",
-"words": 2819
+    "words": 2819
 }

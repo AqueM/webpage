@@ -1,17 +1,20 @@
 ---
-layout: layouts/_longform
+layout: layouts/_page
 category: longform
 eleventyComputed:
-  permalink: "longform/thoughts/{{ page.date | date: '%Y'}}/{{displayName | slugify }}.html"
+permalink: "longform/thoughts/{{ page.date | date: '%Y'}}/{{linkName | slugify }}.html"
 tags:
-  - thoughts
+- thoughts
 ---
-{% heading "h1", displayName, subtitle %}
-<div class="design__box--small"><span><time>{{page.date | date: "%d/%m/%Y"}}</time>, tagged under:</span>
-<div class="layout__flex-block__row">{% assign taglist = tags | exclude: "thoughts" %}
-{% for tag in taglist %} 
-<a href="../tags/{{tag}}/"> {{tag}} </a>
-{% endfor %}</div></div>
-<div class="design__box--small"><p class="design__link--round"><a href="/longform/thoughts/page-1">back to Thoughts list</a></p></div>
+<div class="design__meta theme__border-square">
+  <span><time>{{page.date | date: "%d/%m/%Y"}}</time>, tagged
+    under:</span>
+  <div class="layout__flex-block__row">{% assign taglist = tags | exclude: "thoughts" %}
+    {% for tag in taglist %}
+    <a href="../tags/{{tag}}/"> {{tag}} </a>
+    {% endfor %}
+  </div>  
+</div>
+<div class="design__box--small"><div class="design__link--round"><a href="/longform/thoughts/page-1" class="pagination__link">back to Thoughts list</a></div></div>
 {% divider-center %}
 {{content}}

@@ -1,10 +1,16 @@
 {
-    "filename": "/assets/pdf/deus_homine.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/52093396",
     "title": "deus ex homine",
-    "warnings": ["NSFW"],
-    "genres": ["fanfiction", "Batfamily", "JayTim"],
-    "caption": "Gift for a friend. A story of two heavily dysphoric men finding peace in each other’s arms. Also has a related (illustration)[/collections/commissions]",
+    "warnings": [
+        "NSFW"
+    ],
+    "genres": [
+        "fanfiction",
+        "Batfamily",
+        "JayTim"
+    ],
+    "caption": "Gift for a friend. A story of two heavily dysphoric men finding peace in each other’s arms. Also has a related [illustration](/collections/commissions)",
     "date": "2023-12-07",
-"words": 19019
+    "words": 19019
 }

@@ -1,10 +1,14 @@
 {
-    "filename": "/assets/pdf/brief_love.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/35948710",
     "title": "No love, however brief, is wasted",
     "warnings": [],
-    "genres": ["fanfiction", "Batfamily", "omegaverse"],
+    "genres": [
+        "fanfiction",
+        "Batfamily",
+        "omegaverse"
+    ],
     "caption": "The idea was 'what if everyone was head-over-heels for Jason instead of angry/fearful when he got back, and he sort of short-circuits?' but it went off the rails pretty fast.",
     "date": "2021-12-25",
-"words": 6363
+    "words": 6363
 }

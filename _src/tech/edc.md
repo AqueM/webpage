@@ -1,9 +1,10 @@
 ---
 tags: 
   - nav
-displayName: EDC
+linkName: EDC
+eleventyComputed:
+  pageTitle: "Everyday Carry"
 ---
-{% heading "h1", "Everyday Carry" %}
 <section>
 
 ## What's an EDC?

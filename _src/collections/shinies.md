@@ -1,7 +1,6 @@
 ---
 tags: 
   - nav
-displayName: Shinies
+linkName: Shinies
 ---
-{% heading "h1", "Shinies" %}
 A page for all my shinies - rocks and gemstones, jewellry etc.

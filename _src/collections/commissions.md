@@ -2,9 +2,10 @@
 layout: layouts/_gallery
 tags: 
   - nav
-displayName: Commissions
+linkName: Commissions
+eleventyComputed:
+  pageTitle: "Art for me"
 ---
-{% heading "h1", "Art I've commissioned" %}
 Click on the image to see a bigger version and details, including artist and year of purchase.
 <section>
 {% heading "h2", "DnD characters" %}

@@ -1,5 +1,5 @@
 ---
-displayName: Thoughts
+linkName: Thoughts
 tags:
   - nav
 pagination:
@@ -8,14 +8,14 @@ pagination:
   alias: thoughts
   reverse: true
 eleventyComputed:
-  permalink: "longform/thoughts/page-{% if pagination.pageNumber==0 %}{{pagination.pageNumber | plus: 1}}{% else %}{{pagination.pageNumber | times: pagination.size | plus: 1}}{% endif %}/index.html"
+  permalink: "longform/thoughts/page-{{pagination.pageNumber | plus: 1}}/index.html"
+  subtitle: "longer-form non-fiction"
 ---
-{% heading "h1", "Thoughts", "longer-form non-fiction" %}
 {% include "partials/_pagination.html" %}
 
 <ul>
 {% assign thoughtsPage = thoughts | sort: "date" %}
 {% for post in thoughtsPage %}
-<li><a href="{{post.url}}">{{post.data.displayName}}</a> (<time>{{post.date | date: "%d/%m/%Y"}}</time>)</li>
+<li><a href="{{post.url}}">{{post.data.linkName}}</a> (<time>{{post.date | date: "%d/%m/%Y"}}</time>)</li>
 {% endfor %}
 </ul>

@@ -1,10 +1,15 @@
 {
-    "filename": "/assets/pdf/waterdhavian.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/70732541",
     "title": "Waterdhavian Polycule",
-    "warnings": ["NSFW"],
-    "genres": ["DnD", "fantasy"],
+    "warnings": [
+        "NSFW"
+    ],
+    "genres": [
+        "DnD",
+        "fantasy"
+    ],
     "caption": "Pure self-indulgent porn of original characters that originated in DnD campaign.",
     "date": "2025-09-12",
-"words": 1835
+    "words": 1835
 }

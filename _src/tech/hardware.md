@@ -1,9 +1,8 @@
 ---
 tags: 
   - nav
-displayName: Hardware
+linkName: Hardware
 ---
-{% heading "h1", "Hardware" %}
 <section>
 
 List of the devices that I currently use and thus I can reccommend at least partially.

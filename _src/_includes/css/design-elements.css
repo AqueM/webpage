@@ -37,10 +37,23 @@
 .design__disclaimer {
 	border-style: dotted;
 	border-width: calc(var(--border-width)*5);
-	border-color:var(--color-secondrary);
+	border-color: var(--color-secondrary);
 	text-align: center;
 	padding: 0.5rem;
 	border-radius: var(--border-radius);
+}
+
+.design__error {
+	background-color: var(--base-color-red);
+	padding: 0.25rem;
+	border-radius: var(--border-radius);
+}
+
+.design__warning {
+	background-color: var(--base-color-yellow);
+	padding: 0.25rem;
+	border-radius: var(--border-radius);
+	margin: 0 auto;
 }
 
 .design__dislaimer-js {
@@ -97,8 +110,8 @@
 	clear: both;
 }
 
-.design--no-break{
-	min-width:max-content;
+.design--no-break {
+	min-width: max-content;
 	white-space: nowrap;
 }
 
@@ -121,6 +134,7 @@
 	--layout-img: url("/assets/images/layout/divider-saradika-graphics_1.webp");
 	flex-basis: 100%;
 }
+
 /* 
 .design__decor--top{
 	background-repeat: no-repeat;
@@ -132,3 +146,40 @@
 	top: -2.5rem;
 	--layout-img: url("/assets/images/layout/divider-saradika-graphics.png");
 } */
+
+.link__download {
+	padding: 0;
+	background-color: unset;
+}
+
+.pagination__text {
+	text-align: center;
+}
+
+.pagination__link {
+	&::after {
+		content: unset;
+		margin: unset;
+	}
+}
+
+.pagination__link--prev::before {
+	content: "⇦";
+	margin-right: 0.3rem;
+}
+.pagination__link--next::after {
+	content: "⇨";
+	margin-left: 0.3rem;
+}
+
+.design__indent {
+		text-indent: 1rem;
+}
+
+.design__meta {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin: 1rem;
+	max-width: fit-content;
+}

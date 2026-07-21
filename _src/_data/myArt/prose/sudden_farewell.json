@@ -1,10 +1,14 @@
 {
-    "filename": "/assets/pdf/sudden_farewell.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/54888898",
     "title": "Sudden farewell",
     "warnings": [],
-    "genres": ["fanfiction", "Batfamily", "JayTim"],
-    "caption": "Inspired by (A final kiss)[https://x.com/dovaldraws/status/1745921742176956583] by XANT",
+    "genres": [
+        "fanfiction",
+        "Batfamily",
+        "JayTim"
+    ],
+    "caption": "Inspired by [A final kiss](https://x.com/dovaldraws/status/1745921742176956583){target=_blank}{rel=external} by XANT",
     "date": "2024-04-01",
-"words": 1339
+    "words": 1339
 }

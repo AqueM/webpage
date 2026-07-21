@@ -1,20 +1,20 @@
 <nav class="sitenav__menu">
     {%- for navCat in navigation.categories -%}
-    <details class="noformat sitenav__menu-category__label {% if category contains navCat.name %} sitenav__menu-category--open{% endif %}" {% if category contains
+    <details class="sitenav__menu-category__label {% if category contains navCat.name %} sitenav__menu-category--open{% endif %}" {% if category contains
         navCat.name %} open{% endif %}>
-        <summary class="noformat sitenav__menu-category__name theme__block--accent--gradient">
+        <summary class="sitenav__menu-category__name theme__block--accent--gradient">
             <div class="sitenav__menu-category"><span
                     class="icon icon--left"
                     style="--layout-img: url('/assets/images/layout/font-awesome/{{navCat.icon}}.svg');"></span><span>{{navCat.name}}</span>
             </div>
         </summary>
-        <ul class="noformat sitenav__menu-list ">
+        <ul class="sitenav__menu-list ">
             {%- assign links = collections.nav | sort -%}
             {%- for element in links -%}
             {%- if element.data.category == navCat.name %}
-            <li><a class="sitenav__menu-link theme__block--secondrary--gradient {% if element.url==page.url %} theme__block--border sitenav__menu-link--active{% endif %}"
+            <li><a class="sitenav__menu-link theme__block--secondrary--gradient {% if element.url==page.url %}theme__block--border sitenav__menu-link--active{% endif %}"
                     href="{% if element.url %}{{ element.url }}{% else %}{{ element.data.link }}{% endif %}"
-                    target="{{element.data.target}}">{{element.data.displayName}}</a></li>
+                    {% if element.data.target %}target="{{element.data.target}}"{% endif %}>{{element.data.linkName}}</a></li>
             {%- endif %}
             {%- endfor %}
         </ul>

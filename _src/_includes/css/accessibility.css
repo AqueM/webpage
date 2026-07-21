@@ -4,12 +4,9 @@
 [data-theme="light"] {
 	color-scheme: light;
 
-	img {
-		filter: unset;
-	}
-
-	a:not(.noformat)[target="_blank"]::after,
-	.icon {
+	[target="_blank"]::after,
+	[rel~="external"]::after,
+	.icon, img{
 		filter: unset;
 	}
 }
@@ -22,7 +19,8 @@
 		filter: brightness(.8) contrast(1.2);
 	}
 
-	a:not(.noformat)[target="_blank"]::after,
+	[target="_blank"]::after,
+	[rel~="external"]::after,
 	.icon {
 		filter: invert(1);
 	}
@@ -42,15 +40,8 @@
 	--color-secondrary: var(--base-color-contrast) !important;
 	--color-accent: var(--base-color-contrast) !important;
 
-	img {
-		filter: unset;
-	}
-
-	.icon {
-		filter: unset;
-	}
-
-	a:not(.noformat)[target="_blank"]::after {
+	[target="_blank"]::after,
+	[rel~="external"]::after, .icon, img {
 		filter: unset;
 	}
 }

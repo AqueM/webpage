@@ -8,16 +8,9 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "node_modules/photoswipe/dist": "assets/photoswipe"
     });
-
-    // add markdown attributes lib
-    const markdown = require("markdown-it")({
-        html: true,
-        breaks: true,
-        linkify: true,
-    });
-    var markdownItAttrs = require('markdown-it-attrs');
-    let markdownLib = markdown.use(markdownItAttrs);
-    eleventyConfig.setLibrary("md", markdownLib);
+    eleventyConfig.setLiquidOptions({
+		jsTruthy: true,
+	});
 
     require("./config/filters.js")(eleventyConfig);
     require("./config/file-reading.js")(eleventyConfig);

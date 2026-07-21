@@ -1,12 +1,18 @@
 {
-    "filename": "/assets/pdf/oh_fuck.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/25686478/chapters/62363842",
     "title": "Oh, fuck",
-    "warnings": ["NSFW"],
-    "genres": ["fanfiction", "Batfamily", "omegaverse"],
+    "warnings": [
+        "NSFW"
+    ],
+    "genres": [
+        "fanfiction",
+        "Batfamily",
+        "omegaverse"
+    ],
     "caption": "Fluffy-smutty intimacy within the complicated relationship of the three omegas of the Wayne pack as they fumble about trying to figure themselves out. Porn with plot - or rather plot with porn.",
     "date": "2020-08-03",
-"words": 12990,
-"series": "Omega Robins",
-"finished": false
+    "words": 12990,
+    "series": "Omega Robins",
+    "finished": false
 }

@@ -1,11 +1,9 @@
 ---
-layout: layouts/_longform
+layout: layouts/_page
 tags: 
   - nav
-displayName: Interview Questions
+linkName: Interview Questions
 ---
-{% heading "h1", "Interview questions" %}
-
 I put these together around 2020 when I was doing a lot of interviews for one reason or another.
 
 These are primarily geared towards my own industry - IT - and probably much more employee-centric than most other jobs, so they may not be useful to regular people. I figured they may come in handy to prep before interviews nonetheless.

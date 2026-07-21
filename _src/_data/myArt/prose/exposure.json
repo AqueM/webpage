@@ -1,9 +1,16 @@
 {
-    "filename": "/assets/pdf/Exposure_Therapy.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/42112665",
     "title": "Exposure Therapy",
-    "warnings": ["NSFW", "explicit"],
-    "genres": ["fanfiction", "Batfamily", "JayTim"],
+    "warnings": [
+        "NSFW"
+    ],
+    "genres": [
+        "fanfiction",
+        "Batfamily",
+        "JayTim"
+    ],
     "caption": "Kinktober gift exchange for a friend.",
-    "date": "2022/10/03"
+    "date": "2022/10/03",
+    "words": 4919
 }

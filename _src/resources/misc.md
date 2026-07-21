@@ -1,10 +1,11 @@
 ---
 tags: 
   - nav
-displayName: Misc
+linkName: Misc
+eleventyComputed:
+  pageTitle: "Miscellanous resources"
 ---
-{% heading "h1", "Miscellanous resources" %}
-
+<section>
 Things I made for others that don't fit anywhere else, and are too small to warrant a separate page.
 
 {% heading "h2", "EPIC the movie playlist" %} 
@@ -27,4 +28,4 @@ In case the Youtube playlist is somehow inaccessible, here's a list of links to 
 {% endfor %}
 </ul>
 </details>
-
+</section>

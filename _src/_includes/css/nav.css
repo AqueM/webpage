@@ -5,11 +5,13 @@
 	max-height: 4rem;
 	flex-grow: 1;
 	z-index: 4;
-	background-color: var(--color-secondrary);
+
+	@media only screen and (max-width: 800px) {
+		background-color: var(--color-secondrary);
+	}
 
 	@media only screen and (min-width: 800px) {
 		max-height: unset;
-		background-color: var(--color-primary);
 	}
 }
 
@@ -60,6 +62,8 @@
 .sitenav__menu-category__name {
 	/* Pin the custom marker to the container */
 	position: relative;
+	padding: unset;
+	margin-bottom: unset;
 
 	/* Hide original marker */
 	&::marker {
@@ -117,6 +121,9 @@
 
 .sitenav__menu-category__label {
 	margin-right: 1.5rem;
+	border-style: unset;
+	border-width: unset;
+	border-radius: unset;
 	/* to add space for the nav + */
 }
 
@@ -140,6 +147,13 @@
 	font-weight: bold;
 	text-decoration: none;
 	color: var(--font-color);
+}
+
+.sitenav__menu-link:not([target="_blank"]) {
+	&::after {
+		content: unset;
+		margin-left: unset;
+	}
 }
 
 .sitenav__menu-link--active {

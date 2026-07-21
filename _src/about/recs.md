@@ -1,10 +1,11 @@
 ---
 tags: 
   - nav
-displayName: Recs
+linkName: Recs
 order: 4
+eleventyComputed:
+  pageTitle: "Recommendations"
 ---
-{% heading "h1", "Recommendations" %}
 <section>
 
 Things I liked and probably regularly return to.

@@ -1,12 +1,14 @@
 ---
-displayName: Lyrebird, Kin of the Wayward
+linkName: Lyrebird, Kin of the Wayward
+eleventyComputed:
+  pageTitle: "Lyrebird"
+  subtitle: "Kin of the Wayward"
 ---
 {% include "content/_CC-disclaimer.html" %}
-{% heading "h1", "Lyrebird", "Kin of the Wayward" %}
 
-{% theme__border-card %}
+{% theme__border-square %}
 Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, troubadours; the strangers, the mad, the wanderers without harbour, for they teach us to see the world through different eyes. 
-{% endtheme__border-card %}
+{% endtheme__border-square %}
 
 - **Domains:** Change, Introspection and Self-Discovery, Community
 - **Patronage:** outcasts, artists, prophets and mystics
@@ -68,10 +70,10 @@ Usually, Lyrebird’s followers think of themselves as one big family, and even 
 
 {% heading "h2", "Related quotes" %}
 {%- flex-stack -%}
-{% theme__border-card %}“Hearts starve as well as bodies: Give us Bread, but give us Roses.”  
-(James Oppenheim, 1911) {% endtheme__border-card %}
-{% theme__border-card %}“God blessed me by making me transsexual for the same reason God made wheat but not bread and fruit but not wine, so that humanity might share in the act of creation.”  
-(Julian K. Jarboe) {% endtheme__border-card %}
-{% theme__border-card %}“My father had taught me to be nice first, because you can always be mean later, but once you've been mean to someone, they won't believe the nice anymore. So be nice, be nice, until it's time to stop being nice, then destroy them.”  
-(Laurell K. Hamilton, “A Stroke of Midnight”) {% endtheme__border-card %}
+{% theme__border-square %}“Hearts starve as well as bodies: Give us Bread, but give us Roses.”  
+(James Oppenheim, 1911) {% endtheme__border-square %}
+{% theme__border-square %}“God blessed me by making me transsexual for the same reason God made wheat but not bread and fruit but not wine, so that humanity might share in the act of creation.”  
+(Julian K. Jarboe) {% endtheme__border-square %}
+{% theme__border-square %}“My father had taught me to be nice first, because you can always be mean later, but once you've been mean to someone, they won't believe the nice anymore. So be nice, be nice, until it's time to stop being nice, then destroy them.”  
+(Laurell K. Hamilton, “A Stroke of Midnight”) {% endtheme__border-square %}
 {%- endflex-stack -%}

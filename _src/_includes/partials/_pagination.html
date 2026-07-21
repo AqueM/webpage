@@ -1,1 +1,8 @@
-<div class="design__box design__box--small"><span>Page {{pagination.pageNumber | plus: 1}} out of {{ pagination.pages.length}}</span><span>{% if pagination.href.previous %}<a href=" {{ pagination.href.previous }}" class="pagination__link pagination__link--prev">Previous</a>{% endif %}{% if pagination.href.next %} / <a href=" {{ pagination.href.next }}" class="pagination__link pagination__link--next">Next</a>{% endif %}</span></div>
+{% if pagination.pages.length > 1 %}
+<div class="design__box design__box--small pagination">
+    {% theme__border-square -%}
+    <p class="  pagination__text">Page {{pagination.pageNumber | plus: 1}} out of {{ pagination.pages.length}}</p><span>{% if pagination.href.previous %}<a href=" {{ pagination.href.previous }}" class="pagination__link pagination__link--prev" rel="prev">Previous</a>{% endif %} ✥ {% if pagination.href.next %}<a href=" {{ pagination.href.next }}" class="pagination__link pagination__link--next" rel="next">Next</a>{% endif %}</span>
+{%- endtheme__border-square -%}
+</div>
+
+{% endif %}

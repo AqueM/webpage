@@ -4,17 +4,29 @@ module.exports = async function (eleventyConfig) {
         breaks: true,
         linkify: true,
     });
+    var markdownItAttrs = require('markdown-it-attrs');
+    let markdownLib = markdown.use(markdownItAttrs);
+    eleventyConfig.setLibrary("md", markdownLib);
     eleventyConfig.addFilter("markdown", function (rawString) {
         return markdown.renderInline(rawString);
     });
 
-    eleventyConfig.addFilter("sort", function (collection) {
+    eleventyConfig.addFilter("sort", function (collection, sortable) {
+        if (!sortable) {
+            collection.sort(function (a, b) {
+                return a.data.order - b.data.order;
+            });
+        }
         return collection.sort(function (a, b) {
-            return a.data.order - b.data.order;
+            return a.sortable - b.sortable;
         });
     });
 
     eleventyConfig.addFilter("exclude", function (list, excludeString) {
         return list.filter(el => el != excludeString)
+    });
+
+    eleventyConfig.addFilter("underscorize", function (string) {
+        return string.replace(/[^a-zA-Z0-9 ]/g, '').split(' ').join('_')
     });
 }

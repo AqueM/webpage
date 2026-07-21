@@ -6,7 +6,7 @@ pagination:
   filter:
   - thoughts
 eleventyComputed:
-  displayName: "thoughts tagged '{{tag}}'"
+  linkName: "thoughts tagged '{{tag}}'"
   permalink: "longform/thoughts/tags/{{tag | slugify}}.html"
 ---
 {%- capture title -%}thoughts tagged '{{tag}}'{%- endcapture -%}
@@ -14,6 +14,6 @@ eleventyComputed:
 
 <ul>
 {% for post in collections[tag] | reverse %}
-<li><a href="{{post.url}}">{{post.data.displayName}}</a> ({{post.date | date: "%d/%m/%Y"}})</li>
+<li><a href="{{post.url}}">{{post.data.linkName}}</a> ({{post.date | date: "%d/%m/%Y"}})</li>
 {% endfor %}
 </ul>

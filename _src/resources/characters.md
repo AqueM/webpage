@@ -1,9 +1,8 @@
 ---
 tags: 
   - nav
-displayName: Characters
+linkName: Characters
 ---
-{% heading "h1", "Characters" %}
 <section>
 
 Here are some characters I've made, and think they might be useful for others - either as inspiration, or used wholesale as needed in projects like fiction, worldbuilding or role-playing games. 
@@ -19,8 +18,22 @@ These are characters I've designed to be used in fantasy settings as gods, spiri
 {% flex-columns -%}
 {%- for element in collections.deities -%}
 <div class="design__link--round">
-    <a href="{{element.url}}">{{element.data.displayName}}</a>
+    <a href="{{element.url}}">{{element.data.linkName}}</a>
 </div>
 {%- endfor -%}
 {%- endflex-columns -%}
+</section>
+<section>
+{% heading "h2", "Wanderers" %}
+
+These are characters are quirky, standalone characters that I simply have no desire to use, or they don't spark enough joy to rotate them further. They are ideal as supporting cast in a story, be it written or TTRPG.
+
+Still working on uploading them!
+</section>
+<section>
+{% heading "h2", "IPRE members" %}
+
+These are characters are all part of my fictional organization IPRE and are great if you are in need of some wacky scholars.
+
+Still working on uploading them!
 </section>

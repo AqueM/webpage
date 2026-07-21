@@ -1,17 +1,19 @@
 ---
 tags: 
   - nav
-displayName: Community
+linkName: Community
 order: 3
+pageTitle: "Other people online"
 ---
-{% heading "h1", "Other people online" %}
+<section>
 {% heading "h2", "neighbours", "cool websites from non-corporate web" %}
 {%- flex-columns -%}
 {%- for webring in about.neighbours -%}
     {% neighbour webring %}
 {%- endfor -%}
 {%- endflex-columns -%}  
-
+</section>
+<section>
 {% heading "h2", "Webrings & Databases" %}
 
 ### that I am a part of
@@ -25,5 +27,5 @@ order: 3
 {% flex-stack-centered -%}
 {% include "content/_webrings-inactive.html" %}
 {%- endflex-stack-centered -%}
-
+</section>
 

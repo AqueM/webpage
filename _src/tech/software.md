@@ -1,9 +1,8 @@
 ---
 tags: 
   - nav
-displayName: Software
+linkName: Software
 ---
-{% heading "h1", "Software" %}
 <section>
 
 List of the programs and apps that I currently use and thus I can reccommend at least partially for some purposes. They're _mostly_ free.

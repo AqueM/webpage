@@ -1,10 +1,13 @@
 {
-    "filename": "/assets/pdf/sibling_rivalry.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/39171996",
     "title": "Sibling rivalry",
     "warnings": [],
-    "genres": ["fanfiction", "Batfamily"],
-    "caption": "Inspired by ['Requiem'](https://archiveofourown.org/works/21542932) by scandalsavage",
+    "genres": [
+        "fanfiction",
+        "Batfamily"
+    ],
+    "caption": "Inspired by ['Requiem'](https://archiveofourown.org/works/21542932){target=_blank}{rel=external} by scandalsavage",
     "date": "2022-05-23",
-"words": 3404
+    "words": 3404
 }

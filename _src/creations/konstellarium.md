@@ -1,6 +1,6 @@
 ---
 tags: nav
-displayName: Konstellarium
+linkName: Konstellarium
 link: https://konstellarium.neocities.org/
 permalink: false
 target: _blank

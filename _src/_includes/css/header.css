@@ -47,6 +47,13 @@
 .header__link:active {
 	text-decoration: none;
 	color: inherit;
+	background-color: unset;
+	line-height: unset;
+
+	&::after {
+		content: unset;
+		margin-left: unset;
+	}
 }
 
 .header__access-card {

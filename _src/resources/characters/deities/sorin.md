@@ -1,12 +1,14 @@
 ---
-displayName: Sorin, the Indomitable Will
+linkName: Sorin, the Indomitable Will
+eleventyComputed:
+  pageTitle: "Sorin"
+  subtitle: "the Indomitable Will"
 ---
 {% include "content/_CC-disclaimer.html" %}
-{% heading "h1", "Sorin", "the Indomitable Will" %}
 
-{% theme__border-card %}
+{% theme__border-square %}
 May everyone sleep soundly, knowing what tomorrow will bring.
-{% endtheme__border-card %}
+{% endtheme__border-square %}
 
 - **Domains:** Law, Balance, Harmony
 - **Patronage:** officers of the law, deal-makers, leaders, judges, bureaucrats

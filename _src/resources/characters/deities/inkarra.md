@@ -1,11 +1,13 @@
 ---
-displayName:  Inkarra, the Guiding Star
+linkName:  Inkarra, the Guiding Star
+eleventyComputed:
+  pageTitle: "Inkarra"
+  subtitle: "the Guiding Star"
 ---
 {% include "content/_CC-disclaimer.html" %}
-{% heading "h1", "Inkarra", "the Guiding Star" %}
-{% theme__border-card -%}
+{% theme__border-square -%}
 The wise man is blessed with knowledge but the fool is blessed to learn every day.
-{%- endtheme__border-card -%}
+{%- endtheme__border-square -%}
 {%- flex-columns -%}
 {%- flex-item %}
 

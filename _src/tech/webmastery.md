@@ -1,10 +1,11 @@
 ---
 tags: 
   - nav
-displayName: Webmastery
+linkName: Webmastery
 order: 1
+eleventyComputed:
+  pageTitle: "About this website"
 ---
-{% heading "h1", "About this website" %}
 <section>
 
 Looking for my buttons to link back? [Outlinks](/about/links/){class=design__link--round}
@@ -26,7 +27,7 @@ Looking for my buttons to link back? [Outlinks](/about/links/){class=design__lin
 <ul class="logs">
     {%- for element in tech.todo -%}
     <li>
-        {{element.name}}{% if element.comment !=blank %} - {{element.comment}}{%endif%}
+        {{element.name}}{% if element.comment %} - {{element.comment}}{%endif%}
     </li>
     {%- endfor -%}
 </ul>
@@ -45,7 +46,7 @@ This website was made with the use of the following resources:
         {%- heading "h3", category.name -%}
         <ul>
         {%- for item in category.items -%}
-        <li><a href="{{item.url}}" target="_blank" rel="external">{{item.name}}</a>{% if item.comment != blank %} - {{item.comment}}{% endif %}</li>
+        <li><a href="{{item.url}}" target="_blank" rel="external">{{item.name}}</a>{% if item.comment %} - {{item.comment}}{% endif %}</li>
         {%- endfor -%}
         </ul>
         {%- endflex-item -%}

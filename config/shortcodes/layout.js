@@ -22,7 +22,12 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addShortcode("flex-break-newrow", function (content) {
         return `<div class="layout__flex-item-break-row"></div>`;
     });
+    
     eleventyConfig.addPairedShortcode("gallery", function (content) {
         return `<div class="gallery layout__grid-block pswp-gallery">${content}</div>`;
+    });
+
+    eleventyConfig.addPairedShortcode("indent", function (content) {
+        return `<div class="design__indent">${content}</div>`;
     });
 }

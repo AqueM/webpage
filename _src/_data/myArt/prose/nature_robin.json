@@ -1,10 +1,14 @@
 {
-    "filename": "/assets/pdf/nature_robin.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/59159590",
     "title": "Nature of a Robin",
     "warnings": [],
-    "genres": ["fanfiction", "Batfamily", "JayTim"],
+    "genres": [
+        "fanfiction",
+        "Batfamily",
+        "JayTim"
+    ],
     "caption": "2024 JayTim gift exchange.",
     "date": "2024-09-23",
-"words": 1368
+    "words": 1368
 }

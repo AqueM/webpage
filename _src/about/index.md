@@ -1,20 +1,21 @@
 ---
 tags: 
   - nav
-displayName: Bio
+linkName: Bio
 order: 1
 priority: 0.7
+eleventyComputed:
+  pageTitle: "Basics about Aque"
 ---
-{% heading "h1", "Basics about Aque" %}
-
 {%- flex-columns -%}
-{%- flex-item -%}
-<a href="https://picrew.me/en/image_maker/1322863" rel="external" class="noformat design__floated--left"><img src="/assets/images/picrew.png" alt="cartoony portrait of a person with light skin and short brown hair, against the nonbinary flag background" title="click to go to the picrew used to make this!" class="noformat image--round image--small"></a>
+
+{%- flex-item -%}<section>
+<a href="https://picrew.me/en/image_maker/1322863" rel="external" class="design__floated--left noformat"><img src="/assets/images/picrew.png" alt="cartoony portrait of a person with light skin and short brown hair, against the nonbinary flag background" title="click to go to the picrew used to make this!" class="image--round image--small"></a>
 
 My main focus are various arts and crafts, and I'm always ready to help where I can. I'm a strong believer in universal human rights, including queer rights and intersectional feminism, evidence-based science and medicine, bodily autonomy, the separation of church and state, and generally in the concept that we should be good and understanding to each other.
-{%- endflex-item -%}
+</section>{%- endflex-item -%}
 
-{%- flex-aside %}
+{%- flex-aside %}<section>
 
 - **Languages:** Polish, English, German
 - **Location:** Silesia, Poland, EU
@@ -22,9 +23,11 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - **Pronouns:** they/them in English, any in Polish
 - **Identity:** triple-A human ([what?](/longform/thoughts/2026/my-queerness.html))
 
-{%- endflex-aside %}
+</section>{%- endflex-aside %}
+
 {%- flex-break-newrow -%}
-{% flex-item %}
+
+{% flex-item %}<section>
 {% heading "h2", "Interests", "Talking about any of these will almost always grab my attention" %}
 
 - **stories:** cartoons, fantasy, sci-fi, comics, anime/manga, worldbuilding
@@ -37,8 +40,8 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - **visual arts:** pencil drawing, digital drawing, anime style
 - character design
 - indie VTubers
-{%- endflex-item -%}
-{% flex-item %}
+</section>{%- endflex-item -%}
+{% flex-item %}<section>
 {% heading "h2", "Likes", "always appreciated as gifts or offerings" %}
 
 - cats and frogs
@@ -50,15 +53,17 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - the color blue
 - **the sea**, and swimming, and just being in water
 - window-shopping and browsing items (except clothing)
-- art noveau style{% endflex-item %}
+- art noveau style</section>{% endflex-item %}
 
 {% divider-center %}
 
 {%- flex-item -%}
+<section>
 {%- flex-columns -%}
 {%- for image in collections.blinkieImages -%}
 <img src="{{image}}">
 {%- endfor -%}
 {%- endflex-columns -%}
+</section>
 {%- endflex-item -%}
 {%- endflex-columns -%}

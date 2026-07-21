@@ -1,11 +1,15 @@
 {
-    "filename": "/assets/pdf/trust_issues.pdf",
+    "downloadable": true,
     "ao3Src": "https://archiveofourown.org/works/29664558",
     "title": "Trust issues",
     "warnings": [],
-    "genres": ["fanfiction", "Batfamily", "omegaverse"],
+    "genres": [
+        "fanfiction",
+        "Batfamily",
+        "omegaverse"
+    ],
     "caption": "SFW omegaverse fluff of Damian and Tim trying to work through their issues a little.",
     "date": "2021-02-23",
-"words": 10836,
-"series": "Omega Robins"
+    "words": 10836,
+    "series": "Omega Robins"
 }

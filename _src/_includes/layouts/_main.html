@@ -1,8 +1,9 @@
 ---
 date: Last Modified
 eleventyComputed:
-  title: "{{site.title}} | {{category}} | {{displayName}}"
+  title: "{{site.title}} | {{category}} | {{linkName}}"
   description: "{{site.description}}"
+  pageTitle: "{{linkName}}"
 order: 99
 ---
 <!doctype html>
@@ -42,7 +43,7 @@ order: 99
             {% include "partials/_nav.html" %}
 
             <!-- main content -->
-            <main class="layout__content theme__border-card theme__block--primary">
+            <main class="layout__content theme__border-square theme__block--primary">
                 {% include "partials/_decor-corners.html" %}
 
                 {{content}}

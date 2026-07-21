@@ -9,16 +9,24 @@ module.exports = async function (eleventyConfig) {
 				<${size} class="theme__heading__title">${title}</${size}>` + sub + `</div>`;
     });
 
-    eleventyConfig.addPairedShortcode("theme__border-card", function (content) {
-        return `<div class="theme__border-card">
-			<div class="design__border-card__decor design__border-card__decor--top design__border-card__decor--left"></div>
-			<div class="design__border-card__decor design__border-card__decor--top design__border-card__decor--right"></div>
-			<div class="design__border-card__decor design__border-card__decor--bottom design__border-card__decor--left"></div>
-			<div class="design__border-card__decor design__border-card__decor--bottom design__border-card__decor--right"></div>
+    eleventyConfig.addPairedShortcode("theme__border-square", function (content) {
+        return `<div class="theme__border-square">
+			<div class="theme__border-square__decor theme__border-square__decor--top theme__border-square__decor--left"></div>
+			<div class="theme__border-square__decor theme__border-square__decor--top theme__border-square__decor--right"></div>
+			<div class="theme__border-square__decor theme__border-square__decor--bottom theme__border-square__decor--left"></div>
+			<div class="theme__border-square__decor theme__border-square__decor--bottom theme__border-square__decor--right"></div>
         ${content}
         </div>`;
     });
-    
+
+    eleventyConfig.addPairedShortcode("theme__border-oval", function (content) {
+        return `<div class="theme__border-oval">
+			<span class="theme__border-oval__decor theme__border-oval__decor--left"></span>
+            <span class="theme__border-oval__decor theme__border-oval__decor--right"></span>
+        ${content}
+        </div>`;
+    });
+
     eleventyConfig.addShortcode("divider-center", function (content) {
         return `<div class="design__decor design__divider--center"></div>`;
     });

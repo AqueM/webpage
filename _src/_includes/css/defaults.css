@@ -1,107 +1,158 @@
 /* DEFAULT STYLING */
-* {
-	box-sizing: border-box;
+@layer defaults {
+	* {
+		box-sizing: border-box;
+	}
 
-}
+	html {
+		background-color: var(--color-light);
+	}
 
-html {
-	background-color: var(--color-light);
-}
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		overflow-x: hidden;
 
-body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	overflow-x: hidden;
+		@media only screen and (min-width: 600px) {
+			background-position: 0% 100%;
+			background-image: var(--gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--gradient-water);
+			background-repeat: repeat-x;
+		}
+	}
 
-	@media only screen and (min-width: 600px) {
-		background-position: 0% 100%;
-		background-image: var(--gradient-sun), url("/assets/images/layout/grass-border.webp"), url("/assets/images/layout/water-border.webp"), var(--gradient-water);
-		background-repeat: repeat-x;
+	img {
+		max-width: 30vw;
+	}
+
+	section {
+		margin: 1%;
+		clear: both;
+	}
+
+	p {
+		text-indent: 1%;
+		text-align: left;
+		line-height: 1.5rem;
+		min-width: fit-content;
+	}
+
+	iframe {
+		max-height: 50vh;
+		max-width: 50vw;
+	}
+
+	ul,
+	ol {
+		line-height: 1.5rem;
+	}
+
+	ul {
+		list-style-type: circle;
+	}
+
+	a:not(.noformat) {
+		position: relative;
+		text-decoration: none;
+		color: var(--color-dark);
+		background-color: var(--color-accent-transparent);
+		border-radius: var(--border-radius);
+		padding: 0.2rem 0.5rem 0 0.5rem;
+		line-height: 1em;
+
+		&::after {
+			content: "→";
+			margin-left: 0.3rem;
+		}
+
+		@media only screen and (min-width: 800px) {
+			white-space: nowrap;
+		}
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: var(--font-title);
+	}
+
+	details {
+		border-style: dotted;
+		border-width: calc(var(--border-width)*2);
+		border-radius: var(--border-radius);
+	}
+
+	summary {
+		border-radius: var(--border-radius);
+		padding: 0.5rem;
+		background-color: var(--color-accent);
+		margin-bottom: 0.1em;
+	}
+
+	sup {
+		font-size: xx-small;
+	}
+
+	textarea {
+		width: 20vw;
+	}
+
+	table {
+		border: var(--border-width) solid var(--color-dark);
+		border-radius: var(--border-radius);
+	}
+
+	th {
+		border-right: var(--border-width) solid var(--color-dark);
+	}
+
+	td,
+	th {
+		border-bottom: var(--border-width) solid var(--color-dark);
+		border-right: var(--border-width) solid var(--color-dark);
+		padding: 0.5rem;
+	}
+
+	th {
+		background-color: var(--color-secondrary);
+		border-radius: var(--border-radius);
+	}
+
+	tr:nth-child(even) {
+		background-color: var(--color-accent-transparent);
+	}
+
+	tr:hover {
+		background-color: var(--color-secondrary-transparent);
 	}
 }
 
-img:not(.noformat) {
-	max-width: 30vw;
-}
+@layer utilities {
 
-section {
-	margin: 1%;
-	clear: both;
-}
-
-p:not(.noformat) {
-	text-indent: 1%;
-	text-align: left;
-	line-height: 1.5rem;
-	min-width: fit-content;
-}
-
-iframe:not(.noformat) {
-	max-height: 50vh;
-	max-width: 50vw;
-}
-
-ul:not(.noformat) {
-	list-style-type: circle;
-	line-height: 1.5rem;
-}
-
-a:not(.noformat, .sitenav__menu-link) {
-	position: relative;
-	text-decoration: none;
-	color: var(--color-dark);
-	background-color: var(--color-accent-transparent);
-	border-radius: var(--border-radius);
-	padding: 0.2rem 0.5rem 0 0.5rem;
-	line-height: 1em;
-
-	@media only screen and (min-width: 800px) {
-		white-space: nowrap;
+	/* improved with the help of https://codepen.io/heydon/pen/pgBBdR */
+	[target="_blank"],
+	[rel~="external"],
+	[href^="http"]:not([href*="aque.fyi"]) {
+		&::after {
+			content: '(external link)';
+			background-image: url("/assets/images/layout/font-awesome/arrow-up-right-from-square-solid-full.svg");
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+			background-position: center;
+			background-repeat: no-repeat;
+			text-decoration: none;
+			overflow: hidden;
+			text-indent: 1em;
+			white-space: nowrap;
+		}
 	}
 }
 
-a:not([rel~="external"], .noformat, .sitenav__menu-link, .external-code a)::after {
-	content: "→";
-	margin-left: 0.3rem;
-}
+.external-code a {
+	all: unset;
 
-a:not(.noformat)[target="_blank"]::after {
-	content: "";
-	background-image: url("/assets/images/layout/font-awesome/arrow-up-right-from-square-solid-full.svg");
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	vertical-align: center;
-	background-size: 1em;
-	background-repeat: no-repeat;
-	margin-left: 0.3rem;
-	text-decoration: none;
-}
-
-h1:not(.noformat),
-h2:not(.noformat),
-h3:not(.noformat) {
-	font-family: var(--font-title);
-}
-
-details:not(.noformat) {
-	border-style: dotted;
-	border-width: calc(var(--border-width)*2);
-	border-radius: var(--border-radius);
-}
-
-summary:not(.noformat) {
-	border-radius: var(--border-radius);
-	padding: 0.5rem;
-	background-color: var(--color-accent);
-	margin-bottom: 0.1em;
-}
-
-sup {
-	font-size: xx-small;
-}
-
-textarea {
-	width: 20vw;
+	&::after {
+		all: unset;
+	}
 }
