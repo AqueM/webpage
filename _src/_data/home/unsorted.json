@@ -1,10 +1,17 @@
 ﻿[
   {
+    "name": "The knack of interaction design",
+    "url": "https://miniver.blogspot.com/2018/05/the-knack-of-interaction-design.html?m=1",
+    "author": "Jonathan Korman",
+    "type": "blogpost"
+  },
+   {
     "name": "PicoPal",
     "url": "https://www.crowdsupply.com/khouly-computers/pico-pal",
     "author": "Khouly Computers",
     "type": "mobile device"
-  },{
+  },
+   {
     "name": "Cleaning House: Refactoring My Eleventy Config Into Modules",
     "url": "https://brennan.day/cleaning-house-refactoring-my-eleventy-config-into-modules/",
     "author": "Brennan Kenneth Brown",
