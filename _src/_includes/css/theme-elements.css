@@ -55,7 +55,7 @@
 	border-bottom: calc(var(--border-width)/100) solid var(--border-color);
 	border-radius: var(--border-radius);
 	outline: var(--color-secondrary) var(--border-width) solid;
-	outline-offset: 0.5rem;
+	outline-offset: -0.5rem;
 }
 
 .theme__heading {
