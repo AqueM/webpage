@@ -18,7 +18,8 @@ Here are some places you can find me, from most to least likely that I'll be res
 </div>
 {%- endfor -%}
 {% endflex-columns-centered %}
-
+</section>
+<section>
 
 I also have these sites! They're already linked in the sidebar menu, but here they are again.
 
@@ -30,7 +31,17 @@ I also have these sites! They're already linked in the sidebar menu, but here th
 {%- endfor -%}
 {%- endflex-columns-centered -%}
 </section>
+<section>
 
+Want to contact me directly?
+
+<div class="design__box"><div class="theme__border-oval nav__contact-link design__center">
+			{% include "partials/_decor-sides.html" %}
+			<a href="mailto:{{site.author.email}}?body=Remember to edit the e-mail address if you're not an AI!"
+				target="_blank">Email me</a>
+</div></div>
+
+</section>
 <section>
 {% heading "h2", "Link back" %}
 
