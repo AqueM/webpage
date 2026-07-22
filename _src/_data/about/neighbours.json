@@ -104,5 +104,29 @@
   {
     "url": "https://bugstamp.net/",
     "alt": "Daniel's Stamp Collection"
+  },
+  {
+    "img":"/assets/images/neighbours/snailgarden.png",
+    "url": "https://thesnailgarden.nekoweb.org",
+    "alt": "Daniel's Stamp Collection",
+    "isAnimated": false
+  },
+  {
+    "img":"/assets/images/neighbours/faelink.png",
+    "url": "https://faeraphim.net/",
+    "alt": "wisteria hollow",
+    "isAnimated": false
+  },
+  {
+    "img":"/assets/images/neighbours/mevdik-nekoweb-button.png",
+    "url": "https://mevdik.nekoweb.org/",
+    "alt": "Mevdik's Website!",
+    "isAnimated": false
+  },
+  {
+    "img":"/assets/images/neighbours/polyducks-88x31.gif",
+    "url": "https://polyducks.co.uk/",
+    "alt": "polyducks",
+    "isAnimated": true
   }
 ]
