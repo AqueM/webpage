@@ -12,10 +12,18 @@ eleventyComputed:
   permalink: "creations/prose/page-{{pagination.pageNumber | plus: 1}}/index.html"
 ---
 <section>
-Archive of fiction I've written, both fan fiction and original fiction. Mostly a mirror for Archive of Our Own. Mind the <span class="design__error">warnings</span> and <span class="design__warning">completion status</span>!
+{% if pagination.pageNumber==0 %}
+Archive of fiction I've written, both fan fiction and original fiction. Mostly a mirror for Archive of Our Own. 
+<div class="design__box--small">
 
+**Currently archived works:** {{collections.prose.length}}</div>
+</section>
+{%endif%}
+<section>
 {% include "partials/_pagination.html" %}
 
+
+Mind the <span class="design__error">warnings</span> and <span class="design__warning">completion status</span>!
 <table><thead>
   <tr>
     <th>Title</th>

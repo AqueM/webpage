@@ -24,6 +24,10 @@ Click on the image to see a bigger version and details, including artist and yea
 {% gallery %}{% for item in myCollections.commissions.batfam %}{% image item %}{% endfor %}{% endgallery %}
 </section>
 <section>
+{% heading "h2", "Fanart for me" %}
+{% gallery %}{% for item in myCollections.commissions.fanart %}{% image item %}{% endfor %}{% endgallery %}
+</section>
+<section>
 {% heading "h2", "Misc" %}
 {% gallery %}{% for item in myCollections.commissions.misc %}{% image item %}{% endfor %}{% endgallery %}
 </section>

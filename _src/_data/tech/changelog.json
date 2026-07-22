@@ -1,8 +1,13 @@
 [
     {
+        "date": "22/07/2026",
+        "log": "Finished adding all my poetry :D"
+    },
+    {
         "date": "21/07/2026",
         "log": "Major improvements to CSS and content handling, added all my prose and a bit of poetry, too!"
-    },{
+    },
+    {
         "date": "20/07/2026",
         "log": "added proper credits, cleaned up Eleventy config"
     },
