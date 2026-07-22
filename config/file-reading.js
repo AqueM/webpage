@@ -3,18 +3,40 @@ module.exports = async function (eleventyConfig) {
     let path = require("path");
 
     
-
-    eleventyConfig.addCollection("queerImages", function (collectionApi) {
-        const files = fs.readdirSync('_src/_assets/images/blinkies/queer');
-        const targetPath = "/assets/images/blinkies/queer/";
-        files.forEach((x, i) => files[i] = targetPath.concat(x));
-        return files;
+    eleventyConfig.addCollection("buttonImages", function (collectionApi) {
+        const files = fs.readdirSync('_src/_assets/images/badges/buttons');
+        const targetPath = "/assets/images/badges/buttons/";
+        const currentFolder = "./_src/_assets/images/badges/buttons/"
+        const filesFiltered =
+            files.filter(
+                item => fs.statSync(currentFolder + item).isFile());
+        filesFiltered.forEach((x, i) => filesFiltered[i] = targetPath.concat(x));
+        return filesFiltered;
     });
-
+    eleventyConfig.addCollection("idImages", function (collectionApi) {
+        const files = fs.readdirSync('_src/_assets/images/badges/id/');
+        const targetPath = "/assets/images/badges/id/";
+        const currentFolder = "./_src/_assets/images/badges/id/"
+        const filesFiltered =
+            files.filter(
+                item => fs.statSync(currentFolder + item).isFile());
+        filesFiltered.forEach((x, i) => filesFiltered[i] = targetPath.concat(x));
+        return filesFiltered;
+    });
+    eleventyConfig.addCollection("fandomImages", function (collectionApi) {
+        const files = fs.readdirSync('_src/_assets/images/badges/fandoms');
+        const targetPath = "/assets/images/badges/fandoms/";
+        const currentFolder = "./_src/_assets/images/badges/fandoms/"
+        const filesFiltered =
+            files.filter(
+                item => fs.statSync(currentFolder + item).isFile());
+        filesFiltered.forEach((x, i) => filesFiltered[i] = targetPath.concat(x));
+        return filesFiltered;
+    });
     eleventyConfig.addCollection("blinkieImages", function (collectionApi) {
-        const files = fs.readdirSync('_src/_assets/images/blinkies');
-        const targetPath = "/assets/images/blinkies/";
-        const currentFolder = "./_src/_assets/images/blinkies/"
+        const files = fs.readdirSync('_src/_assets/images/badges/blinkies');
+        const targetPath = "/assets/images/badges/blinkies/";
+        const currentFolder = "./_src/_assets/images/badges/blinkies/"
         const filesFiltered =
             files.filter(
                 item => fs.statSync(currentFolder + item).isFile());
