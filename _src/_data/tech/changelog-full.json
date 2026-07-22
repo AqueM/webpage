@@ -1,0 +1,78 @@
+[
+    {
+        "date": "22/07/2026",
+        "log": "Finished adding all my poetry :D"
+    },
+    {
+        "date": "21/07/2026",
+        "log": "Major improvements to CSS and content handling, added all my prose and a bit of poetry, too!"
+    },
+    {
+        "date": "20/07/2026",
+        "log": "added proper credits, cleaned up Eleventy config"
+    },
+    {
+        "date": "19/07/2026",
+        "log": "refactored the entire CSS code for funzies; also changed fonts and added some dividers"
+    },
+    {
+        "date": "15/07/2026",
+        "log": "finally formatted and added my essays, under the 'Thoughts' category"
+    },
+    {
+        "date": "15/07/2026",
+        "log": "added more buttons, webrings and blinkies!"
+    },
+    {
+        "date": "13/07/2026",
+        "log": "added photos to EDC page, added content to the Tomb Treasures page"
+    },
+    {
+        "date": "12/07/2026",
+        "log": "updated folders and files, addes Webmastery page and homepage content, added last commission image"
+    },
+    {
+        "date": "09/07/2026",
+        "log": "added print button, moved all layout images to CSS for accessibility, fixed navigation behaviour"
+    },
+    {
+        "date": "08/07/2026",
+        "log": "added labels to accessibility toggles, added motion reduction, added cookies to save settings!"
+    },
+    {
+        "date": "23/06/2026",
+        "log": "added gallery code, all of my archived commissions and links to artists"
+    },
+    {
+        "date": "21/06/2026",
+        "log": "functional accessibility toggles"
+    },
+    {
+        "date": "19/06/2026",
+        "log": "functional mobile menu!"
+    },
+    {
+        "date": "17/06/2026",
+        "log": "added content to Technology pages"
+    },
+    {
+        "date": "15/06/2026",
+        "log": "ported to Eleventy!"
+    },
+    {
+        "date": "27/05/2026",
+        "log": "js layout loading + all pages are now styled!"
+    },
+    {
+        "date": "20/05/2026",
+        "log": "final version of the layout and colors"
+    },
+    {
+        "date": "20/05/2026",
+        "log": "final version of the layout and colors"
+    },
+    {
+        "date": "10/05/2026",
+        "log": "version alpha of the webpage"
+    }
+]
