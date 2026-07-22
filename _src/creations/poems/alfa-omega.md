@@ -7,13 +7,13 @@ Początki bywają trudne i wie o tym każdy,
 zwłaszcza, gdy mowa o Alfie świata. 
 My mówimy: 
 na początku był Ład i Porządek
-- to nie ulega wątpliwości. 
+— to nie ulega wątpliwości. 
 Bóg stworzył niebo i ziemię
 (i to było dobre)
 rośliny i zwierzęta, 
 (i to było dobre)
 w końcu dodał na wierzch ciasta 
-wisienkę - człowieka...!
+wisienkę — człowieka...!
 (w tym też Bóg widział, że było dobre)
 i odpoczął. 
 Oni mówią:
@@ -45,7 +45,7 @@ choć żyjemy w jednym świecie
 Szkoda, że nikit nie widzi podobieństwa, które tkwi
 u podstawy istnienia:
  W bólu i krzyku
-- płacz
+— płacz
 Pierwszy haust powietrza,
 klaps
 Matczyne ramiona

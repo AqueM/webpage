@@ -12,7 +12,7 @@ Oczy już jedynie po to
 by płakać, dokoła ciemność.
 I tylko szorstkie oparcie fotela
 przypomina przez omdlałe dłonie
-że świat istnieje - choć bez sensu.
+że świat istnieje — choć bez sensu.
 
 Siedzę, jako żywy dowód 
 na resentyment
@@ -21,7 +21,7 @@ poszukująca prawdy i oświecenia
 przeświadczona o wyższości
 argumentu nad siłą, 
 logiki nad prawem
-(mimo - a może dlatego - 
+(mimo - a może dlatego — 
 że znów przegrałam)
 
 Dopóki czuję w stopach krew

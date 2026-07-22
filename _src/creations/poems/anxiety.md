@@ -14,6 +14,5 @@ gives me no warning before the wind rises
 changes into a gale, and then
 it becomes a storm
 
-
 I hear thunders ringing in my heart
 but no kind hunchback to make them sound

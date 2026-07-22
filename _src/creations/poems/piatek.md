@@ -6,7 +6,7 @@ lang: PL
 Boże, Boże
 za moje grzechy cierpiałeś
 dla mnie na krzyżu umarłeś
-- a oni...! 
+— a oni...! 
 
 Chrystus umiera, 
 a ludzie jak hosanna
@@ -31,7 +31,7 @@ słuchałam smętnych chórów anielskich
 i łkań niewiast ziemskich
 u nóg Raphaela przysiadłszy
 za rany Zbawiciela
- - płakałam... 
+— płakałam... 
 Dusza moja w połowie tak nie boleśnie
 jak Jego śmiertelne ręce
 krwawiła

@@ -14,6 +14,6 @@ i w nieskończonej
 mnie pogrąż ciszy. 
 
 Lecz nie pozwól im szlochać
-- zbyt dużo łez już przelano za mego żywotu. 
+— zbyt dużo łez już przelano za mego żywotu. 
 
 Na wieki wieków, Amen.

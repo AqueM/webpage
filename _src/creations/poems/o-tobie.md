@@ -12,12 +12,12 @@ przysypane nieboskłonne Twe lice,
 piegowane na policzkach z chmur
 podniebnymi stworzeniami - ptakami;
 słonecznych Twych ust
- - blasku pełnych - puls
+— blasku pełnych — puls
 wzniesiony ponad szczeciną brzóz
 na podbródka horyzoncie... 
 I jakoby niebo w niebie,
 serce nieba, raj sam
-- oczęta Twe lazurowe... 
+— oczęta Twe lazurowe... 
 Kędym ja godna Ciebie,
 jakoż mnie zapewniasz? 
 Mnie jedynie przydzielone

@@ -7,14 +7,17 @@ tags:
 - thoughts
 ---
 <div class="design__meta theme__border-square">
-  <span><time>{{page.date | date: "%d/%m/%Y"}}</time>, tagged
-    under:</span>
-  <div class="layout__flex-block__row">{% assign taglist = tags | exclude: "thoughts" %}
-    {% for tag in taglist %}
-    <a href="../tags/{{tag}}/"> {{tag}} </a>
-    {% endfor %}
-  </div>  
+      <time>{{page.date | date: "%d/%m/%Y"}}</time>
+    {% flex-stack-centered %}
+      {% assign taglist = tags | exclude: "thoughts" %}
+      <span>tagged under:</span><div>
+        {% for tag in taglist %}
+        <a href="../tags/{{tag}}/"> {{tag}} </a>
+        {% endfor %}</div>
+    {% endflex-stack-centered %}
+
+  <div class="design__link--round">
+    <a href="/longform/thoughts/page-1" class="pagination__link">back to Thoughts list</a>
+  </div>
 </div>
-<div class="design__box--small"><div class="design__link--round"><a href="/longform/thoughts/page-1" class="pagination__link">back to Thoughts list</a></div></div>
-{% divider-center %}
 {{content}}

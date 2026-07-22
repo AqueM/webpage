@@ -47,7 +47,7 @@ Let us finally sit down and relax.
 We’re not dying today.
 Nor tomorrow or the day after.
 We’re going to get old and crusty and
-- if you just let me -
+— if you just let me —
 happy.
 Stop resisting like a caged animal,
 like cornered prey. I’m no longer five.

@@ -11,7 +11,7 @@ Którzy czekali archaniołów z trąbami
 i gwiazd spadających 
 i piołunu w wodzie 
 i ognia 
-- będą je mieli. 
+— będą je mieli. 
 Co dnia na świat 
 miliony żarzących się gwiazd z żelaza, 
 spada, 

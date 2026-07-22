@@ -4,7 +4,7 @@ date: 2004-09-22
 lang: PL
 ---
 I znów 
-spowtorem 
+spowrotem 
 do ramion Królowej Śniegu 
 powrót 
 do klatki Samotności 

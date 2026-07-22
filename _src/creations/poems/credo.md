@@ -10,20 +10,20 @@ Pan życia i stworzenia
 Pan mój! jednak
 nie daje niczego nadaremno. 
 zawierzyłam Mu
-- sądziłam.
+— sądziłam.
 Czekałam finału
 połaci krwi, 
 ladacznicy, smoka,
 archaniołów z trąbami,
 gwiazd płomieni. 
-Wieszczyłam cicho - nadchodzą.
+Wieszczyłam cicho — nadchodzą.
 Nie nadchodzą. 
 Nauczycielu mój! 
 umiłowaną Zofią
 w ociemniały umysł
 w spopielałą duszę
 zstąp
-- wołałam.
+— wołałam.
 
 Iluminacja ducha 
 czasem męczy bardziej

@@ -5,11 +5,11 @@ lang: EN
 ---
 I’ve always felt small
 like my body was way bigger than my soul
-like - even if I wasn’t size 16 - 
+like — even if I wasn’t size 16 —
 there will always be much more of me than there’s supposed to be.
 
 And part of the reason is 
-I learned - not ‘was taught’ because
+I learned — not ‘was taught’ because
 who in their right mind
 teaches a child that they don’t deserve the space they occupy
 that they’re a waste of sustence they need to survive, to exist, 
@@ -30,7 +30,7 @@ keep your poems short, words short, thoughts short
 never sing, always do what you’re told. 
 And when you realise you’re taller than them all
 wider than them all
-- weep, because you being big is something that makes you afraid
+— weep, because you being big is something that makes you afraid
 of all the things you’ll have to give up to fit the form.
 And when you weep, weep quietly because
 you’ve learned that the care is pretended 

@@ -63,7 +63,7 @@ a jednak stoję tutaj.
 Nie przykuję Cię do siebie, 
 idź, jeśli chcesz. 
 Jednak rogu nie uda Ci się wyrzucić
- - a jeśli usłyszę jego czystą chęć skruchy,
+\- a jeśli usłyszę jego czystą chęć skruchy,
 wyciągnę rękę i znów
 opowiem Ci o stronach konfliktu,
 który tylko przeczuwasz.

@@ -13,15 +13,15 @@ złotą uzdą
 i Pater Noster. 
 Długo go szukałam:
 między wierszami Ars Poetica
- - nie znalazłam!
+— nie znalazłam!
 między wersetami Apokalipsy
-- nie znalazlam!
+— nie znalazlam!
 miedzy chmurami nieba
-- nie znalazłam! ...
+— nie znalazłam! ...
 miedzy drzewami lasów
-- nie znalazłam...! 
+— nie znalazłam...! 
 między ludźmi świata
-- też nie było śladu... 
+— też nie było śladu... 
 Raz jedno pióro złote
 na drodze tylko zobaczyłam,
 poszłam za nim. 

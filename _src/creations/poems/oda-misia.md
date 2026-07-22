@@ -4,19 +4,19 @@ date: 2007-01-01
 lang: PL
 ---
 Nie ma w tobie
-- ani krzty życia
-- ani odrobiny ciepła
-- ani iskry zrozumienia
-- ani żadnej myśli
-- ani jednego mięśnia
-- ani kropli krwi
+— ani krzty życia
+— ani odrobiny ciepła
+— ani iskry zrozumienia
+— ani żadnej myśli
+— ani jednego mięśnia
+— ani kropli krwi
 A jesteś przy mnie 
 Nie ma w tobie nic
 poza kawałkiem pluszu i
 guziczkami oczu
 A mimo to takiego 
 przyjaciela
-- tylko pozazdrościć 
+— tylko pozazdrościć 
 Zawsze
 jesteś
 wysłuchasz

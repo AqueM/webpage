@@ -8,13 +8,13 @@ Kocham!! i serce mięknie
 Kocham!!! aż do utraty tchu
 Kocham ciebie każdego wieczoru
 
-Dopiero teraz to mówię – przepraszam
-Że byłam oziębła – wybacz
-Iż odrzucałam – daruj
+Dopiero teraz to mówię — przepraszam
+Że byłam oziębła — wybacz
+Iż odrzucałam — daruj
 
 Bo choć mówię językami ludzi i aniołów
 choć prorokuję, a wiara moja
-może góry przenosić - 
+może góry przenosić — 
 dopiero teraz cokolwiek bym zyskała
 oddając całą majętność swoją na
 jałmużnę i wystawiając ciało na

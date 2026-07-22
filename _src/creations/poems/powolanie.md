@@ -13,7 +13,7 @@ tych harcujących w kwiatach pazi królowej;
 I góry śpiewające "Myśmy  dzieło Boże!"
 niesione dolin echem co je kryje mgła;
 bo...
-Artystę wołał Pan - powołał mnie na staż:
+Artystę wołał Pan — powołał mnie na staż:
 "Jasnością Moich słów rozgonić masz mroki
 upadek Babilonu bliski głosić masz" 
 

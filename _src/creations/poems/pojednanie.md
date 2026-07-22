@@ -24,6 +24,6 @@ Iż uraz wieczny nie musi być
 i czasem warto jest ustąpić. 
 
 
-*- Magdzie i Hance z miasta Wrocławia
- za to, że są i w podzięce, że przy mnie, 
-nawet kiedy nie chcę ich znać. Wsparłyście mnie, dziękuję. *
+— *Magdzie i Hance z miasta Wrocławia*
+*za to, że są i w podzięce, że przy mnie,*
+*nawet kiedy nie chcę ich znać. Wsparłyście mnie, dziękuję.*

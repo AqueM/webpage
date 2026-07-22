@@ -20,7 +20,7 @@ bym nie jękneła gestu skargi
 
 I jak glina dla rąk garncarza
 z radoscią wazą się staje
-Ja - niewiasta na łasce mocarza
+Ja — niewiasta na łasce mocarza
 miękkiej pieszczocie cicho się oddaję
 
 Tylko słodki, cynamonowy twój zapach

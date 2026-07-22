@@ -25,7 +25,7 @@ cokolwiek o nim sądzimy.
 
 Wszyscy boją się tych chwil
 i starają się ich nie doświadczyć
-- idą tropem Epikura albo hedonistów...
+— idą tropem Epikura albo hedonistów...
 Wszyscy chcą być szczęśliwi. 
 
 Nikt nigdy nie wspomina jednak
@@ -38,7 +38,7 @@ w imię wyższej moralności.
 Wtedy to, wbrew wszystkim myślicielom
 doświadcza człowiek rozumny
 najgorszego uczucia swego życia
-- wygranej. 
+— wygranej. 
 Poczucia, że wygrał z ludzką żądzą zemsty. 
 Dopiero bowiem w takiej chwili
 uświadamia sobie bezzasadność i ogrom
@@ -55,7 +55,7 @@ jak mawiają ludzie.
 I mają rację
 choć w ich teorii nikt 
 nie odważył się nazwać
-zwycięstwa - najgorszym uczuciem.  
+zwycięstwa — najgorszym uczuciem.  
 
 
 

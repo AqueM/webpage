@@ -5,7 +5,7 @@ lang: PL / EN
 ---
 To, o czym zapomniano
 to upewnić mnie
- — córkę zła, niechcianą, w niedogodnym momencie, — 
+— córkę zła, niechcianą, w niedogodnym momencie, — 
 
 To, o czym zapomniano
 wśród kłótni i wszystkich

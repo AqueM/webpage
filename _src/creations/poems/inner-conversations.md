@@ -25,7 +25,7 @@ coat;
 but she never heard,
 maybe she’d have smiled.
 Like that man who always takes the same train as me
-in the morning -
+in the morning —
 {% indent %}
 
 asked him if he likes comic books,
@@ -48,7 +48,7 @@ I was her mentor over the comic she was drawing
             you’d want a softer pencil to
             bring the darks out’;{% endindent %}
 
-I think she knew – saw how I watched
+I think she knew — saw how I watched
 
 {% indent %} 
 
@@ -75,7 +75,7 @@ one who taught me modern philosophy and
 middle-eastern affirmations and
 eloquent humour that I never use{% endindent %}
 
-one I meet every-so-often – he must live around -
+one I meet every-so-often — he must live around -
 ‘How are you, Professor’
 'Do you want me to help with those bags, Professor’
 'I read a book on psychology, I think you’d like it, Professor’

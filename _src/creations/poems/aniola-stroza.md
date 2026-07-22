@@ -8,7 +8,7 @@ gdzie się podziewasz?
 Czy nie widzisz, co się dzieje 
 ze mną, z ludźmi, ze światem? 
 Czy taki był plan Boży 
-- pokazać nam nasze błędy? 
+— pokazać nam nasze błędy? 
 Proszę, ty zawsze przy mnie stój! 
 Nie daj mi bluźnić, 
 wznieś me ręce do Pana... 

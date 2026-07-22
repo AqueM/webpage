@@ -1,7 +1,7 @@
 ---
 linkName: Scabandari
 date: 2007-01-01
-lang: EN
+lang: PL
 ---
 napisane z perspektywy postaci w RPG, o jej ukochanym.
 {% divider-center %}
@@ -36,7 +36,7 @@ krwi
 szlachetność jest pojęciem
 ci nieco obcym
 zbroję choć nie była złota
-miałeś – oddałeś w imię poświęcenia
+miałeś — oddałeś w imię poświęcenia
 wraz z biczem i mieczem
 koń twój nie jest śnieżnobiały
 wręcz przeciwnie wyłonił się z
