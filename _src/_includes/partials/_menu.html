@@ -3,10 +3,11 @@
     <details class="sitenav__menu-category__label {% if category contains navCat.name %} sitenav__menu-category--open{% endif %}" {% if category contains
         navCat.name %} open{% endif %}>
         <summary class="sitenav__menu-category__name theme__block--accent--gradient">
-            <div class="sitenav__menu-category"><span
+            <span class="sitenav__menu-category"><span
                     class="icon icon--left"
                     style="--layout-img: url('/assets/images/layout/font-awesome/{{navCat.icon}}.svg');"></span><span>{{navCat.name}}</span>
-            </div>
+            </span>
+            <span class="sitenav__plus-lines"></span>
         </summary>
         <ul class="sitenav__menu-list ">
             {%- assign links = collections.nav | sort -%}

@@ -51,7 +51,7 @@
 		list-style-type: circle;
 	}
 
-	a:not(.noformat) {
+	a:not(.noformat, .external-code *) {
 		position: relative;
 		text-decoration: none;
 		color: var(--color-dark);
@@ -64,6 +64,18 @@
 			content: "→";
 			margin-left: 0.3rem;
 		}
+
+		@media only screen and (min-width: 800px) {
+			white-space: nowrap;
+		}
+	}
+
+	a {
+		position: relative;
+		text-decoration: none;
+		color: var(--color-dark);
+		padding: 0.2rem 0.5rem 0 0.5rem;
+		line-height: 1em;
 
 		@media only screen and (min-width: 800px) {
 			white-space: nowrap;
@@ -97,63 +109,33 @@
 		width: 20vw;
 	}
 
-	table {
+	table:not(.external-code *) {
 		border: var(--border-width) solid var(--color-dark);
 		border-radius: var(--border-radius);
 		width: 100%;
 	}
 
-	th {
+	th:not(.external-code *) {
 		border-right: var(--border-width) solid var(--color-dark);
 	}
 
-	td,
-	th {
+	td:not(.external-code *),
+	th:not(.external-code *) {
 		border-bottom: var(--border-width) solid var(--color-dark);
 		border-right: var(--border-width) solid var(--color-dark);
 		padding: 0.5rem;
 	}
 
-	th {
+	th:not(.external-code *) {
 		background-color: var(--color-accent);
 		border-radius: var(--border-radius);
 	}
 
-	tr:nth-child(even) {
+	tr:nth-child(even):not(.external-code *) {
 		background-color: var(--color-secondrary-transparent);
 	}
 
-	tr:hover {
+	tr:hover:not(.external-code *) {
 		background-color: var(--color-secondrary);
-	}
-}
-
-@layer utilities {
-
-	/* improved with the help of https://codepen.io/heydon/pen/pgBBdR */
-	[target="_blank"],
-	[rel~="external"],
-	[href^="http"]:not([href*="aque.fyi"]) {
-		&::after {
-			content: '(external link)';
-			background-image: url("/assets/images/layout/font-awesome/arrow-up-right-from-square-solid-full.svg");
-			display: inline-block;
-			width: 1em;
-			height: 1em;
-			background-position: center;
-			background-repeat: no-repeat;
-			text-decoration: none;
-			overflow: hidden;
-			text-indent: 1em;
-			white-space: nowrap;
-		}
-	}
-}
-
-.external-code a {
-	all: unset;
-
-	&::after {
-		all: unset;
 	}
 }

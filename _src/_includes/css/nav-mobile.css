@@ -10,7 +10,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
 .sitenav--mobile {
-    padding: 0;
+    padding: 0.5rem;
     margin: 0;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     justify-content: space-between;
 }
 
-.sitenav__hamburger__lines {
+.sitenav__hamburger-lines {
     height: 26px;
     width: 32px;
     display: flex;
@@ -43,7 +43,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     justify-content: space-between;
 }
 
-.sitenav--mobile__hamburger__line {
+.sitenav--mobile__hamburger-line {
     display: block;
     height: 4px;
     width: 100%;
@@ -51,16 +51,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background: var(--color-dark);
 }
 
-.sitenav--mobile__hamburger_line1 {
+.sitenav--mobile__hamburger__line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
 }
 
-.sitenav--mobile__hamburger_line2 {
+.sitenav--mobile__hamburger__line2 {
     transition: transform 0.2s ease-in-out;
 }
 
-.sitenav--mobile__hamburger_line3 {
+.sitenav--mobile__hamburger__line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
 }
@@ -69,15 +69,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(0);
 }
 
-.sitenav__mobile-menu__toggle:checked~.sitenav__hamburger__lines .sitenav--mobile__hamburger_line1 {
+.sitenav__mobile-menu__toggle:checked~.sitenav__hamburger-lines .sitenav--mobile__hamburger__line1 {
     transform: rotate(45deg);
 }
 
-.sitenav__mobile-menu__toggle:checked~.sitenav__hamburger__lines .sitenav--mobile__hamburger_line2 {
+.sitenav__mobile-menu__toggle:checked~.sitenav__hamburger-lines .sitenav--mobile__hamburger__line2 {
     transform: scaleY(0);
 }
 
-.sitenav__mobile-menu__toggle:checked~.sitenav__hamburger__lines .sitenav--mobile__hamburger_line3 {
+.sitenav__mobile-menu__toggle:checked~.sitenav__hamburger-lines .sitenav--mobile__hamburger__line3 {
     transform: rotate(-45deg);
 }
 

@@ -24,7 +24,7 @@ Archive of fiction I've written, both fan fiction and original fiction. Mostly a
 
 
 Mind the <span class="design__error">warnings</span> and <span class="design__warning">completion status</span>!
-<table><thead>
+<table class="table__prose"><thead>
   <tr>
     <th>Title</th>
     <th>Notes</th>

@@ -5,6 +5,10 @@
 	z-index: 4;
 	flex-grow: 1;
 	flex-basis: 20vh;
+	margin: 0.3rem;
+		@media only screen and (min-width: 1000px) {
+		
+	}
 }
 
 .header {

@@ -1,33 +1,36 @@
-<div class="layout__image layout__image__header"></div>
-<header class="theme__border-square layout__header theme__block--secondrary">
-	{% include "partials/_decor-corners.html" %}
-	<div
-		class="header layout__flex-block__row layout__flex-block__row--big layout__flex-block--space-between theme__block--accent theme__block--border">
-		<div class="layout__block">
-			<div class="header__page-title">
-				<a href="/" title="click to go to homepage" class="header__link">
-					<div class="layout-image layout__image__logo"></div>
-				</a>
-				<div class="layout__flex-block__stack header__page-title__text">
+	<div class="layout__image layout__image__header"></div>
+<div class="layout__header">
+	<header class="theme__border-square theme__block--secondrary">
+		{% include "partials/_decor-corners.html" %}
+		<div
+			class="header layout__flex-block__row layout__flex-block__row--big layout__flex-block--space-between theme__block--accent theme__block--border">
+			<div class="layout__block">
+				<div class="header__page-title">
 					<a href="/" title="click to go to homepage" class="header__link">
-						<div class="header__page-title__title">Broadly in favor of humanity</div>
-						<div class="header__page-title__subtitle layout__flex-block__stack">
-							<span>Do it scared.</span>
-							<span>Do it weird.</span>
-							<span>Kill the cop inside your head.</span>
-						</div>
+						<div class="layout-image layout__image__logo"></div>
+					</a>
+					<div class="layout__flex-block__stack header__page-title__text">
+						<a href="/" title="click to go to homepage" class="header__link">
+							<div class="header__page-title__title">Broadly in favor of humanity</div>
+							<div class="header__page-title__subtitle layout__flex-block__stack">
+								<span>Do it scared.</span>
+								<span>Do it weird.</span>
+								<span>Kill the cop inside your head.</span>
+							</div>
+						</a>
+					</div>
 					</a>
 				</div>
-				</a>
+			</div>
+			<div class="layout__block layout__flex-item__aside header__access-card">
+				<noscript>
+					<div class="design__dislaimer-js">Your browser does not support JavaScript and as such the
+						accessibility toggles won't work. The site
+						you're seeing is stripped of decorations, but should be fully functional.</div>
+				</noscript>
+
+				{% include "partials/_toggles.html" %}
 			</div>
 		</div>
-		<div class="layout__block layout__flex-item__aside header__access-card">
-			<noscript>
-				<div class="design__dislaimer-js">Your browser does not support JavaScript and as such the accessibility toggles won't work. The site
-					you're seeing is stripped of decorations, but should be fully functional.</div>
-			</noscript>
-
-			{% include "partials/_toggles.html" %}
-		</div>
-	</div>
-</header>
+	</header>
+</div>

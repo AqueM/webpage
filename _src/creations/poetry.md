@@ -15,7 +15,7 @@ Poems dated to 01/01/2007 I also can't date properly, but they're even older, fr
 
 **Currently archived poems:** {{collections.poems.length}}</div>
 
-<table><thead>
+<table class="table__poetry"><thead>
   <tr>
     <th>Title</th>
     <th>Date</th>
