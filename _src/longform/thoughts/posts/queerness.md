@@ -47,10 +47,10 @@ Turns out I'm not the only person to ponder these problems. Some come to the sam
 ### To summarise:
 
 Sex is overrated, romantic love is weird, I've traded my gender for a cool rock.   
-{% flex-columns-centered %}
+<div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
 <img src="/assets/images/badges/id/queer/Asexual.png">
 <img src="/assets/images/badges/id/queer/Agender.png">
 <img src="/assets/images/badges/id/queer/Aromantic.png">
-{% endflex-columns-centered %}
+</div>
 
 <div class="design__box--small"><p class="design__link--round"><a href="/about" class="pagination__link">back to Bio</a></p></div>

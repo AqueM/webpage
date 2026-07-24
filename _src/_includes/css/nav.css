@@ -6,11 +6,11 @@
 	flex-grow: 1;
 	z-index: 4;
 
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 768px) {
 		background-color: var(--color-secondrary);
 	}
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		max-height: unset;
 	}
 }
@@ -23,7 +23,7 @@
 	display: none;
 	height: 100%;
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		display: flex;
 	}
 }
@@ -37,12 +37,12 @@
 	margin-top: 0.5rem;
 	padding: 0.5rem;
 	position: relative;
-	border-radius: 0 0 var(--border-radius) var(--border-radius);
+	border-radius: 0 0 var(--border-radius-single) var(--border-radius-single);
 	background-color: var(--color-secondrary);
 	border-bottom: 1px solid var(--border-color);
 	margin-bottom: 1rem;
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		transform: unset;
 		margin-top: unset;
 		background-color: unset;

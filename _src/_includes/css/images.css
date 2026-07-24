@@ -78,6 +78,11 @@
 	background-position: 0% 0%;
 	top: -1.55rem;
 	left: 1rem;
+	display: none;
+
+	@media only screen and (min-width: 768px) {
+		display: inline;
+	}
 }
 
 .layout__image__logo {
@@ -89,7 +94,7 @@
 	background-position: bottom right;
 	margin-left: 1vw;
 
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 768px) {
 		width: 25vw;
 	}
 }
@@ -116,4 +121,9 @@
 	width: 100%;
 	background-image: url('/assets/images/layout/canva-flowers.webp');
 	background-position: 100% 0%;
+	display: none;
+
+	@media only screen and (min-width: 768px) {
+		display: inline;
+	}
 }

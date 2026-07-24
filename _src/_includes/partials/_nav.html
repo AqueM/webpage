@@ -5,18 +5,13 @@
 		<div>
 			{% include "partials/_menu.html" %}
 			{% divider-center %}
-			{%- assign date = "now" | date: "%m/%Y" -%}
-			{% assign subtitle = "<time>" | append: date | append: "</time>" %}
-			{% heading "h4", "Last updated", subtitle %}
-			<!-- <img src="/assets/images/layout/sitemap.gif"> -->
-			{% divider-center %}
-			{% include "content/_appreciation.html" %}
+			{% include "partials/_sidebar.html" %}
 		</div>
 	</div>
 	<div class="sitenav--mobile">
 		<div class="sitenav__hamburger">
 			<div>
-				<input class="sitenav__mobile-menu__toggle" type="checkbox" name="" id="" />
+				<input class="sitenav__mobile-menu__toggle" type="checkbox" name="" id="">
 				<div class="sitenav__hamburger-lines">
 					<span class="sitenav--mobile__hamburger-line sitenav--mobile__hamburger__line1"></span>
 					<span class="sitenav--mobile__hamburger-line sitenav--mobile__hamburger__line2"></span>
@@ -25,8 +20,6 @@
 			</div>
 			<div class="sitenav__mobile-label">Menu</div>
 		</div>
-
 		{% include "partials/_menu.html" %}
-
 	</div>
 </aside>

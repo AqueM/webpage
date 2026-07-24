@@ -6,7 +6,7 @@
 	flex-grow: 1;
 	margin: 0.3rem;
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		margin: unset;
 	}
 }
@@ -16,4 +16,11 @@
 	justify-content: space-between;
 	position: relative;
 	z-index: 2;
+}
+
+.footer__sidebar {
+	display: block;
+	@media only screen and (min-width: 768px) {
+		display: none;
+	}
 }

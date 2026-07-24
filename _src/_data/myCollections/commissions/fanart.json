@@ -1,6 +1,6 @@
 [
   {
-    "src": "/assets/images/commissions/Fanart/holytim_snowzapped.webp",
+    "src": "/assets/images/commissions/Fanart/deus-ex_snowzapped.webp",
     "width": 1620,
     "height": 2025,
     "title": "Tim Drake as Saint Mary",
@@ -11,7 +11,7 @@
     "authorLink": "https://www.tumblr.com/snowzapped"
   },
   {
-    "src": "/assets/images/commissions/Fanart/kneworder.webp",
+    "src": "/assets/images/commissions/Fanart/our-capacity_kneworder.webp",
     "width": 1280,
     "height": 464,
     "title": "AI Tim",
@@ -20,5 +20,27 @@
     "caption": "fanart for my fanfic 'Our capacity for love increases with each person we cross paths with', 2021",
     "artist": "kneworder/ev",
     "authorLink": "https://kneworder.tumblr.com/post/657163461474795520/ive-become-obsessed-with-iriascends-incredible"
+  },
+  {
+    "src": "/assets/images/commissions/Fanart/our-capacity_nakamura.webp",
+    "width": 1280,
+    "height": 1280,
+    "title": "young Jason Todd, from AI Tim's perspective",
+    "alt": "",
+    "date": 2021,
+    "caption": "fanart for my fanfic 'Our capacity for love increases with each person we cross paths with', 2022",
+    "artist": "love-nakamura",
+    "authorLink": "https://www.tumblr.com/love-nakamura/700969633912635392/i-dont-know-where-this-art-style-came-from-or-if"
+  },
+  {
+    "src": "/assets/images/commissions/Fanart/not-good_nakamura.webp",
+    "width": 1534,
+    "height": 2048,
+    "title": "meahwile, the wild geese",
+    "alt": "",
+    "date": 2022,
+    "caption": "fanart for my fanfic 'You do not have to be good ', 2022",
+    "artist": "love-nakamura",
+    "authorLink": "https://www.tumblr.com/love-nakamura/700341042099175424/inspired-by-iriascend-s-fic-you-do-not-have-to"
   }
 ]

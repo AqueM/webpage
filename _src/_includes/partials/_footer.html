@@ -4,12 +4,12 @@
 	<div class="theme__border-square theme__block--secondrary">
 		{% include "partials/_decor-corners.html" %}
 		<div class="footer__content layout__flex-block__row">
-			<div class="layout__flex-block__row">
-				{% theme__border-oval %}
+			{%- flex-columns -%}
+				{%- theme__border-oval -%}
 					{% include "partials/_decor-sides.html" %}
-					{% assign currentYear = "now" | date: "%Y" %}					
+					{% assign currentYear = "now" | date: "%Y" %}
 					© {% if currentYear != "2026" %}2026 - {% endif %}{{currentYear}} Aque
-				{% endtheme__border-oval %}
+				{%- endtheme__border-oval -%}
 				<div class="theme--no-break"><span>visitors so far: </span>
 					<div class="external-code">
 						<script type="text/javascript" src="https://counter.websiteout.com/js/30/0/0/1"></script>
@@ -17,8 +17,8 @@
 				</div>
 				<img src="http://www.snazzyspace.com/generators/viewer-counter/counter.php/fid=1784368936/style=0/counter.png"
 					border="0">
-			</div>
-			<div class="layout__flex-block__row">
+			{%- endflex-columns -%}
+			{%- flex-columns -%}
 				<a href="https://nekoweb.org/" target="_blank" rel="external">
 					<img class="animated" src="/assets/images/layout/nekoweb.webp" alt="Nekoweb button">
 				</a>
@@ -28,6 +28,9 @@
 				<a href="https://notbyai.fyi" target="_blank" rel="external"><img
 						src="/assets/images/layout/Created-By-a-Human-Not-By-AI-Badge-white.png"
 						alt="'Created by a human not by AI' badge"></a>
+			{%- endflex-columns -%}
+			<div class="footer__sidebar">
+				{% include "partials/_sidebar.html" %}
 			</div>
 		</div>
 	</div>

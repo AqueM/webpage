@@ -6,7 +6,7 @@ permalink: "longform/thoughts/{{ page.date | date: '%Y'}}/{{linkName | slugify }
 tags:
 - thoughts
 ---
-<div class="design__meta theme__border-square">
+<div class="design__meta theme__border-square layout__flex-block__row">
       <time>{{page.date | date: "%d/%m/%Y"}}</time>
     {% flex-stack-centered %}
       {% assign taglist = tags | exclude: "thoughts" %}

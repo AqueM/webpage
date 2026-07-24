@@ -6,9 +6,6 @@
 	flex-grow: 1;
 	flex-basis: 20vh;
 	margin: 0.3rem;
-		@media only screen and (min-width: 1000px) {
-		
-	}
 }
 
 .header {
@@ -16,6 +13,10 @@
 	flex-wrap: nowrap;
 	width: 100%;
 	align-items: flex-start;
+
+	@media only screen and (min-width: 992px) {
+		flex-direction: row;
+	}
 }
 
 .header__page-title {
@@ -29,7 +30,7 @@
 	font-family: var(--font-title);
 	color: var(--font-color);
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		white-space: nowrap;
 	}
 
@@ -67,17 +68,7 @@
 
 /* ACCESSIBILITY TOGGLES */
 
-.access-card__accordion {
-	min-width: max-content;
-	width: 100%;
-
-	@media only screen and (min-width: 800px) {
-		position: absolute;
-		width: 15vw;
-	}
-}
-
-.access__accordion__dropdown {
+.access__accordion__summary {
 	padding: 0.5rem;
 	font-size: 1rem;
 	cursor: pointer;
@@ -85,6 +76,10 @@
 
 .access-card__container {
 	padding: 0.5rem;
+	position: absolute;
+	border-radius: 0 0 var(--border-radius-single) var(--border-radius-single);
+	background-color: var(--color-secondrary);
+	border-bottom: 1px solid var(--border-color);
 }
 
 .access-card__grid {

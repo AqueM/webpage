@@ -19,6 +19,16 @@ module.exports = async function (eleventyConfig) {
         </div>`;
     });
 
+    eleventyConfig.addPairedShortcode("theme__border-square--reduced", function (content) {
+        return `<div class="theme__border-square">
+			<div class="theme__border-square__decor theme__border-square__decor--top theme__border-square__decor--left"></div>
+			<div class="theme__border-square__decor theme__border-square__decor--top theme__border-square__decor--right"></div>
+			<div class="theme__border-square__decor theme__border-square__decor--bottom theme__border-square__decor--left"></div>
+			<div class="theme__border-square__decor theme__border-square__decor--bottom theme__border-square__decor--right"></div>
+        ${content}
+        </div>`;
+    });
+
     eleventyConfig.addPairedShortcode("theme__border-oval", function (content) {
         return `<div class="theme__border-oval">
 			<span class="theme__border-oval__decor theme__border-oval__decor--left"></span>

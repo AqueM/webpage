@@ -4,7 +4,7 @@
 	background-color: var(--color-primary);
 	border-radius: var(--border-radius);
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		background-color: var(--color-primary-transparent);
 	}
 }
@@ -13,7 +13,7 @@
 	background-color: var(--color-secondrary);
 	border-radius: var(--border-radius);
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		background-color: var(--color-secondrary-transparent);
 	}
 }
@@ -23,7 +23,7 @@
 	background-image: none;
 	border-radius: var(--border-radius);
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		background-image: var(--gradient-secondrary-left);
 		background-color: unset;
 	}
@@ -39,7 +39,7 @@
 	background-image: none;
 	border-radius: var(--border-radius);
 
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 768px) {
 		background-image: var(--gradient-accent-left);
 		background-color: unset;
 	}
@@ -69,13 +69,11 @@
 .theme__heading__title {
 	text-transform: uppercase;
 	font-family: var(--font-title);
-	margin-top: 0.5rem;
-	margin-bottom: 0.25rem;
+	margin: 0.5rem 0.25rem 0.5rem 0.25rem;
 }
 
 .theme__heading__subtitle {
-	margin-left: 0.5rem;
-	margin-bottom: 0.5rem;
+	margin: 0.5rem 0.25rem 0.5rem 0.25rem;
 	font-family: var(--font-subtitle);
 }
 

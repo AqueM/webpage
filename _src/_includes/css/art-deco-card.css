@@ -14,7 +14,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	position: relative;
 	outline: var(--color-secondrary) var(--border-width) solid;
 	outline-offset: -0.25rem;
-	padding: 0.5rem;
+	padding: 1rem;
 	margin: 0;
 
 	@media only screen and (min-width: 600px) {
@@ -54,12 +54,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					left: calc(-2px + 1rem);
-					border-left: 1px solid var(--deco-border-color);
+					border-left: var(--border-width) solid var(--deco-border-color);
 				}
 
 				&::before {
 					left: -1px;
-					border-left: 1px solid var(--deco-border-color);
+					border-left: var(--border-width) solid var(--deco-border-color);
 				}
 			}
 
@@ -68,12 +68,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					right: calc(-2px + 1rem);
-					border-right: 1px solid var(--deco-border-color);
+					border-right: var(--border-width) solid var(--deco-border-color);
 				}
 
 				&::before {
 					right: -1px;
-					border-right: 1px solid var(--deco-border-color);
+					border-right: var(--border-width) solid var(--deco-border-color);
 				}
 			}
 
@@ -82,12 +82,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					top: -1px;
-					border-top: 1px solid var(--deco-border-color);
+					border-top: var(--border-width) solid var(--deco-border-color);
 				}
 
 				&::before {
 					top: calc(-2px + 1rem);
-					border-top: 1px solid var(--deco-border-color);
+					border-top: var(--border-width) solid var(--deco-border-color);
 				}
 			}
 
@@ -96,12 +96,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					bottom: -1px;
-					border-bottom: 1px solid var(--deco-border-color);
+					border-bottom: var(--border-width) solid var(--deco-border-color);
 				}
 
 				&::before {
 					bottom: calc(-2px + 1rem);
-					border-bottom: 1px solid var(--deco-border-color);
+					border-bottom: var(--border-width) solid var(--deco-border-color);
 				}
 			}
 		}
@@ -126,15 +126,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	display: inline-block;
 
 	@media only screen and (min-width: 600px) {
-		border-top: 0.01rem solid var(--deco-border-color);
-		border-bottom: 0.01rem solid var(--deco-border-color);
+		border-top: var(--border-width) solid var(--deco-border-color);
+		border-bottom: var(--border-width) solid var(--deco-border-color);
 
 		.theme__border-oval__decor {
 			position: absolute;
 			width: 1.45rem;
 			height: 1.45rem;
-			border-bottom: 0.01rem solid var(--deco-border-color);
-			border-left: 0.01rem solid var(--deco-border-color);
+			border-bottom: var(--border-width) solid var(--deco-border-color);
+			border-left: var(--border-width)solid var(--deco-border-color);
 			transition: background 200ms ease-in-out;
 			top: 0.25rem;
 

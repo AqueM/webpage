@@ -1,0 +1,16 @@
+
+{%- flex-columns -%}
+    {%- assign date = "now" | date: "%m/%Y" -%}
+    {% assign subtitle = "<time>" | append: date | append: "</time>" %}
+    {% heading "h4", "Last updated", subtitle %}
+    {% divider-center %}
+    {%- flex-columns -%}
+        <div><a href="http://users4.smartgb.com/g/g.php?a=s&i=g44-83776-8b" target="_blank" rel="external">Guestbook</a>
+        <small>want to tell me something? leave a comment!</small></div>
+
+        <div><!-- FC2 Clap tag starts here -->
+        <a href="//clap.fc2.com/post/aquefyiclap/?url=https%3A%2F%2Faque.fyi&title=Aque%27s+pond" target="_blank" title="Web Clap by FC2"><img src="//clap.fc2.com/images/button/pink/aquefyiclap?url=https%3A%2F%2Faque.fyi&amp;lang=en" alt="Web Clap by FC2" style="border:none;"></a>
+        <!-- FC2 Clap tag ends here -->
+        <small>just want to show appreciation? click the button to clap for me!</small></div>
+    {%- endflex-columns -%}
+{%- endflex-columns -%}

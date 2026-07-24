@@ -11,25 +11,25 @@ eleventyComputed:
 
 Here are some places you can find me, from most to least likely that I'll be responsive and active there. They all open in a new tab!
 
-{% flex-columns-centered -%}
+<div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
 {% for platform in about.other_platforms %}
 <div class="design__link--round">
 	<a href="{{platform.url}}" target="_blank"><span class="icon icon--left" style="--layout-img: url('{{platform.icon}}');"></span>{{platform.name}}</a>
 </div>
 {%- endfor -%}
-{% endflex-columns-centered %}
+</div>
 </section>
 <section>
 
 I also have these sites! They're already linked in the sidebar menu, but here they are again.
 
-{%- flex-columns-centered -%}
+<div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
 {%- for link in about.other_sites %}
 <div class="design__link--round">
 	<a href="{{link.url}}" target="_blank">{{link.name}} [{{link.hosting}}]</a>
 </div>
 {%- endfor -%}
-{%- endflex-columns-centered -%}
+</div>
 </section>
 <section>
 

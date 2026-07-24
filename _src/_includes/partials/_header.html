@@ -1,4 +1,4 @@
-	<div class="layout__image layout__image__header"></div>
+<div class="layout__image layout__image__header"></div>
 <div class="layout__header">
 	<header class="theme__border-square theme__block--secondrary">
 		{% include "partials/_decor-corners.html" %}
@@ -27,6 +27,13 @@
 					<div class="design__dislaimer-js">Your browser does not support JavaScript and as such the
 						accessibility toggles won't work. The site
 						you're seeing is stripped of decorations, but should be fully functional.</div>
+					<style>
+						.access-card__grid__toggle {
+							opacity: 0.8;
+							filter: grayscale(100%);
+							pointer-events: none;
+						}
+					</style>
 				</noscript>
 
 				{% include "partials/_toggles.html" %}
