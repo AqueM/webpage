@@ -1,5 +1,5 @@
 ---
-tags: nav
+mainMenu: true
 linkName: Longer Letters
 order: 1
 ---

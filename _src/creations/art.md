@@ -1,8 +1,7 @@
 ---
 layout: layouts/_page
 category: creations
-tags: 
-  - nav
+mainMenu: true
 linkName: Art
 eleventyComputed:
   pageTitle: "My art"

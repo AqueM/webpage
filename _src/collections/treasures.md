@@ -1,15 +1,13 @@
 ---
 layout: layouts/_gallery
-tags: 
-  - nav
+mainMenu: true
 linkName: Tomb Treasures
 pagination:
   data: myCollections.tomb_treasures
   size: 10
-  alias: treasuresPage
+  alias: pageItems
 eleventyComputed:
   permalink: "collections/treasures/page-{% if pagination.pageNumber==0 %}{{pagination.pageNumber | plus: 1}}{% else %}{{pagination.pageNumber | times: pagination.size | plus: 1}}{% endif %}/index.html"
-
 ---
 {% if pagination.pageNumber==0 %}
 <section>
@@ -23,7 +21,7 @@ Click on the image to see a bigger version and details.
 <section>
 {% include "partials/_pagination.html" %}
 
-{% gallery %}{% for item in treasuresPage %}{% treasure item %}{% endfor %}{% endgallery %}
+{% gallery %}{% for item in pageItems %}{% treasure item %}{% endfor %}{% endgallery %}
 
 {% include "partials/_pagination.html" %}
 </section>

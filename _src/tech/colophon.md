@@ -1,7 +1,6 @@
 ---
 category: technology
-tags: 
-  - nav
+mainMenu: true
 linkName: Colophon
 order: 1
 eleventyComputed:
@@ -9,20 +8,22 @@ eleventyComputed:
 permalink: /colophon/index.html
 ---
 <section>
-<figure><dfn>colophon</dfn> (noun) is a page or section (typically in a footer) of a site that describes how the site is made, with what tools, supporting what technologies, and often published on personal sites at a top level <code>/colophon</code> page.
+<figure>
+
+<dfn>colophon</dfn> (noun) is a page or section (typically in a footer) of a site that describes how the site is made, with what tools, supporting what technologies, and often published on personal sites at a top level <code>/colophon</code> page.
 
 <figcaption><cite>
 
-[IndieWeb](https://indieweb.org/colophon){target=_blank}{rel=external}</cite></figcaption></figure>
+— [IndieWeb](https://indieweb.org/colophon){target=_blank}{rel=external}</cite></figcaption></figure>
 
 This website was created out of the desire to archive my online presence in one place and provide one address at which I would always be findable. I have lived through many site takedowns and fandom collapses, and lost plenty of friends, artwork and memories due to social media or other corporate services going down (or simply going out of fashion). In that sense, I loosely follow the principles of [IndieWeb](https://indieweb.org/why){target=_blank}{rel=external} — aim to own my data and reclaim my agency on the web. 
 
-It's also sort of a arts&crafts project for me.
+It's also sort of a arts&crafts project for me. I just enjoy tinkering with code.
 </section>
 <section>
 {% flex-columns -%}
 {%- flex-item %}
-{% heading "h2", "Latest updates" %}
+{% heading "h2", "Changelog", "last 5 updates" %}
 
 <ul class="logs">
     {%- for element in tech.changelog limit: 5 -%}
@@ -87,16 +88,14 @@ If you interact with me and my art on your own accord and you later find out abo
 </div>
 <h2>Other</h2>
 
-- There was no AI/LLM used in creation of this website at any point
+- there was no AI/LLM used in creation of this website at any point
 - javascript is used sparsely and [graceful degradation](https://en.wikipedia.org/wiki/Fault_tolerance){rel="external nofollow"}{target=_blank} of it is prioritized
-- Following proper licensing; all external resources are credited and linked to their original authors. If that's not possible (authorship lost to time), it is also stated.
+- the author cares about following proper licensing; all external resources are credited and linked to their original authors. If that's not possible (authorship lost to time), it is also stated.
 {% endflex-item -%}
 {%- endflex-columns -%}
 </section>
 <section>
 {% heading "h2", "Credits", "resources used to create this website" %}
-
-This website was made with the use of the following resources:
 
 - **Static Site Generator:** [Eleventy v.3.1.6](https://www.11ty.dev/){rel="external nofollow"}{target=_blank}
 - **Hosting:** [Vercel](https://vercel.com){rel="external nofollow"}{target=_blank}
@@ -107,7 +106,7 @@ This website was made with the use of the following resources:
         {%- heading "h3", category.name -%}
         <ul>
         {%- for item in category.items -%}
-        <li><div {% if item.font-face %}style="font-family:{{item.font-face}};"{% endif %}><a href="{{item.url}}" target="_blank" rel="external">{{item.name}}</a>{% if item.comment %} — {{item.comment}}{% endif %}</div></li>
+        <li><div {% if item.font-face %}style="font-family:{{item.font-face}};"{% endif %}>{% if item.url %}<a href="{{item.url}}" target="_blank" rel="external">{{item.name}}</a>{% else %}{{item.name}}{% endif %}{% if item.comment %} — {{item.comment}}{% endif %}</div></li>
         {%- endfor -%}
         </ul>
         {%- endflex-item -%}

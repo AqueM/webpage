@@ -1,6 +1,5 @@
 ---
-tags: 
-  - nav
+mainMenu: true
 linkName: Software
 ---
 <section>

@@ -1,7 +1,6 @@
 ---
 layout: layouts/_gallery
-tags: 
-  - nav
+mainMenu: true
 linkName: Commissions
 eleventyComputed:
   pageTitle: "Art for me"

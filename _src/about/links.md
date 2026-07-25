@@ -1,6 +1,5 @@
 ---
-tags: 
-  - nav
+mainMenu: true
 linkName: Outlinks
 order: 2
 priority: 0.7

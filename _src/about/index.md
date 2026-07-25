@@ -1,6 +1,5 @@
 ---
-tags: 
-  - nav
+mainMenu: true
 linkName: Bio
 order: 1
 priority: 0.7

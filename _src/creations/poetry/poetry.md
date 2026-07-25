@@ -1,6 +1,5 @@
 ---
-tags: 
-  - nav
+mainMenu: true
 linkName: Poetry
 eleventyComputed:
   pageTitle: "My poetry"

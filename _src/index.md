@@ -1,8 +1,8 @@
 ---
 layout: layouts/_page
-category: home
 changeFreq: always
 priority: 0.8
+category: home
 linkName: ""
 eleventyComputed:
   pageTitle:  "Aque's Pond"
@@ -17,6 +17,13 @@ If you'd like to learn more about me, go snoop through the **About** section. If
 **Longform** is a section for my longer, essay-ish thoughts, as well as an archive for a Youtube channel that I'm in the proccess of making.
 
 **Technology** is the place to go if you'd like to see how I work, including info about the making of this page. 
+{% for item in collections.menuPages %}
+main {{item.url}}
+{% endfor %}
+{% for item in collections.meta.posts.categories['creations'] %}
+test {{item.url}}
+{% endfor %}
+
 </section>
 
 <section>{% divider-center %}{% include "content/_access-disclaimer.html" %}{% divider-center %}</section>
@@ -32,7 +39,6 @@ If you'd like to learn more about me, go snoop through the **About** section. If
     </ul>
 {%- endflex-item -%}
 {%- endfor -%}
-
 
 {% divider-center %}
 

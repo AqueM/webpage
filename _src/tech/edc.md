@@ -1,6 +1,5 @@
 ---
-tags: 
-  - nav
+mainMenu: true
 linkName: EDC
 eleventyComputed:
   pageTitle: "Everyday Carry"

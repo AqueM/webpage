@@ -1,21 +1,21 @@
 <nav class="sitenav__menu">
-    {%- for navCat in navigation.categories -%}
-    <details class="sitenav__menu-category__label {% if category contains navCat.name %} sitenav__menu-category--open{% endif %}" {% if category contains
-        navCat.name %} open{% endif %}>
+    {%- for navigationCategory in navCategories -%}
+    <details class="sitenav__menu-category__label {% if category contains navigationCategory %} sitenav__menu-category--open{% endif %}" {% if category contains
+        navigationCategory %} open{% endif %}>
         <summary class="sitenav__menu-category__name theme__block--accent--gradient">
             <span class="sitenav__menu-category"><span
                     class="icon icon--left"
-                    style="--layout-img: url('/assets/images/layout/font-awesome/{{navCat.icon}}.svg');"></span><span>{{navCat.name}}</span>
+                    style="--layout-img: url('/assets/images/layout/font-awesome/categories/{{navigationCategory}}.svg');"></span><span>{{navigationCategory}}</span>
             </span>
             <span class="sitenav__plus-lines"></span>
         </summary>
         <ul class="sitenav__menu-list ">
-            {%- assign links = collections.nav | sort -%}
-            {%- for element in links -%}
-            {%- if element.data.category == navCat.name %}
-            <li><a class="sitenav__menu-link theme__block--secondrary--gradient {% if element.url==page.url %}theme__block--border sitenav__menu-link--active{% endif %}"
-                    href="{% if element.url %}{{ element.url }}{% else %}{{ element.data.link }}{% endif %}"
-                    {% if element.data.target %}target="{{element.data.target}}"{% endif %}>{{element.data.linkName}}</a></li>
+            {%- assign menuLinks = collections.menuPages | sort -%}
+            {%- for link in menuLinks -%}
+            {%- if link.data.category == navigationCategory %}
+            <li><a class="sitenav__menu-link theme__block--secondrary--gradient {% if link.url==page.url %}theme__block--border sitenav__menu-link--active{% endif %}"
+                    href="{% if link.url %}{{ link.url }}{% else %}{{ link.data.link }}{% endif %}"
+                    {% if link.data.target %}target="{{link.data.target}}"{% endif %}>{{link.data.linkName}}</a></li>
             {%- endif %}
             {%- endfor %}
         </ul>

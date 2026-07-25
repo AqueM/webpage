@@ -1,0 +1,5 @@
+{
+    "layout": "layouts/_thought",
+    "category": "longform",
+    "permalink": "/longform/thoughts/{{date | date: '%Y'}}/{{linkName | slugify}}/index.html"
+}

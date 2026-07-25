@@ -1,6 +1,5 @@
 ---
-tags: 
-  - nav
+mainMenu: true
 linkName: Community
 order: 3
 pageTitle: "Other people online"

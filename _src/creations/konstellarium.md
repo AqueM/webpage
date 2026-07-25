@@ -1,5 +1,5 @@
 ---
-tags: nav
+mainMenu: true
 linkName: Konstellarium
 link: https://konstellarium.neocities.org/
 permalink: false

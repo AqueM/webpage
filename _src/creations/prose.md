@@ -1,11 +1,10 @@
 ---
-tags: 
-  - nav
+mainMenu: true
 linkName: Prose
 pagination:
   data: collections.prose
   size: 20
-  alias: pageProse
+  alias: pageItems
   reverse: true
 eleventyComputed:
   pageTitle: "My prose"
@@ -37,7 +36,7 @@ Mind the <span class="design__error">warnings</span> and <span class="design__wa
     <th>Date</th>
   </tr></thead>
 <tbody>
-{%- for item in pageProse -%}
+{%- for item in pageItems -%}
 {%- assign basePath = "/assets/pdf/prose/" -%}
   <tr>
     <td><cite>"{{item.title}}"</cite> {% if item.finished == false %}<p class="design__warning">unfinished!</p>{% endif %}</td>
