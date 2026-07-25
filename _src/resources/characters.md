@@ -2,6 +2,7 @@
 tags: 
   - nav
 linkName: Characters
+order: 1
 ---
 <section>
 
@@ -28,12 +29,29 @@ These are characters I've designed to be used in fantasy settings as gods, spiri
 
 These are characters are quirky, standalone characters that I simply have no desire to use, or they don't spark enough joy to rotate them further. They are ideal as supporting cast in a story, be it written or TTRPG.
 
-Still working on uploading them!
+**WIP!**
+
+{% flex-columns -%}
+{%- for element in collections.wanderers -%}
+<div class="design__link--round">
+    <a href="{{element.url}}">{{element.data.linkName}}</a>
+</div>
+{%- endfor -%}
+{%- endflex-columns -%}
 </section>
 <section>
 {% heading "h2", "IPRE members" %}
 
-These are characters are all part of my fictional organization IPRE and are great if you are in need of some wacky scholars.
+These are characters are all part of my fictional organization <abbr title="Interplanar Partnership for Research and Exploration">IPRE</abbr> and are great if you are in need of some wacky scholars.
 
-Still working on uploading them!
+**WIP!**
+
+{% flex-columns -%}
+{% assign ipre = collections.ipre | sort %}
+{%- for element in ipre -%}
+<div class="design__link--round">
+    <a href="{{element.url}}">{{element.data.linkName}}</a>
+</div>
+{%- endfor -%}
+{%- endflex-columns -%}
 </section>

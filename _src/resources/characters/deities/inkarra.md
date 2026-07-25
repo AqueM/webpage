@@ -4,7 +4,6 @@ eleventyComputed:
   pageTitle: "Inkarra"
   subtitle: "the Guiding Star"
 ---
-{% include "content/_CC-disclaimer.html" %}
 {% theme__border-square -%}
 The wise man is blessed with knowledge but the fool is blessed to learn every day.
 {%- endtheme__border-square -%}

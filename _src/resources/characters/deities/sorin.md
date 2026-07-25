@@ -4,8 +4,6 @@ eleventyComputed:
   pageTitle: "Sorin"
   subtitle: "the Indomitable Will"
 ---
-{% include "content/_CC-disclaimer.html" %}
-
 {% theme__border-square %}
 May everyone sleep soundly, knowing what tomorrow will bring.
 {% endtheme__border-square %}

@@ -138,4 +138,13 @@
 	tr:hover:not(.external-code *) {
 		background-color: var(--color-secondrary);
 	}
+
+	dfn{
+		font-weight: bold;
+	}
+
+	figure:not(.pswp-gallery__item *){
+		border: var(--border-width) dashed var(--color-secondrary);
+		padding: 0.5rem;
+	}
 }

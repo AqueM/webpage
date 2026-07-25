@@ -14,7 +14,7 @@ Hi, welcome to my website! My name's Aque and I'm a mixed/multi-media artist mos
 
 If you'd like to learn more about me, go snoop through the **About** section. If you'd like to see what things I made for the benefit of others, see **Resources**. **Creations** are about what I've made, and **Collections** hold, well, my collections, both digital and physical.
 
-**Longform** is a section for my longer, essay-sh thoughts, as well as an archive for a Youtube channel that I'm in the proccess of making.
+**Longform** is a section for my longer, essay-ish thoughts, as well as an archive for a Youtube channel that I'm in the proccess of making.
 
 **Technology** is the place to go if you'd like to see how I work, including info about the making of this page. 
 </section>

@@ -131,27 +131,32 @@
             {
                 "name": "Faculty Glyphic",
                 "url": "https://fonts.google.com/specimen/Faculty%20Glyphic",
-                "comment": "main text"
+                "comment": "main text",
+                "font-face": "faculty-glyphic"
             },
             {
                 "name": "Amarante",
                 "url": "https://fonts.google.com/specimen/Amarante",
-                "comment": "titles"
+                "comment": "titles",
+                "font-face": "amarante"
             },
             {
                 "name": "Viaoda Libre",
                 "url": "https://fonts.google.com/specimen/Poiret+One",
-                "comment": "subtitles"
+                "comment": "subtitles",
+                "font-face": "viaoda-libre"
             },
             {
                 "name": "Open Dyslexic",
                 "url": "https://opendyslexic.org/",
-                "comment": "dyslexia font (accessibility toggles)"
+                "comment": "dyslexia font (accessibility toggles)",
+                "font-face": "open-dyslexic"
             },
             {
                 "name": "Font Squirrel",
                 "url": "https://www.fontsquirrel.com",
                 "comment": "conversion to webfonts"
+
             }
         ]
     }

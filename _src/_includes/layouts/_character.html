@@ -1,0 +1,13 @@
+---
+layout: layouts/_main
+---
+<article>
+    <section>
+        {% include "content/_CC-disclaimer.html" %}
+        {% if dnd %}{% include "content/_dnd-disclaimer.html" %}{% endif %}
+    </section>
+    {% heading "h1", pageTitle, subtitle %}
+    <section>
+        {{content}}
+    </section>
+</article>

@@ -4,8 +4,6 @@ eleventyComputed:
   pageTitle: "Lyrebird"
   subtitle: "Kin of the Wayward"
 ---
-{% include "content/_CC-disclaimer.html" %}
-
 {% theme__border-square %}
 Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, troubadours; the strangers, the mad, the wanderers without harbour, for they teach us to see the world through different eyes. 
 {% endtheme__border-square %}

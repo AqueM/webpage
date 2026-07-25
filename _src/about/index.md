@@ -58,7 +58,7 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - the color blue
 - **the sea**, and swimming, and just being in water
 - window-shopping and browsing items (except clothing)
-- art noveau style</section>{% endflex-item %}
+- art nouveau style</section>{% endflex-item %}
  
 <div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
 {%- for image in collections.fandomImages -%}
