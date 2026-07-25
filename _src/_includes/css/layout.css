@@ -58,6 +58,7 @@
 	justify-content: stretch;
 	align-items: stretch;
 }
+
 .layout__flex-block--center {
 	justify-content: center;
 	align-items: center;
@@ -86,8 +87,13 @@
 	gap: 1rem 1rem;
 	justify-content: center;
 	margin: 0 auto;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, min-content));
 	place-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(min-content, 30vw));
+
+	@media only screen and (min-width: 768px) {
+		grid-template-columns: repeat(auto-fit, minmax(20vw, min-content));
+
+	}
 }
 
 .layout__website {

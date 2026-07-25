@@ -10,24 +10,47 @@
 }
 
 .gallery__item {
-  width: 100%;
-  height: 200px;
   object-fit: cover;
   border-radius: var(--border-radius);
   transition: transform 0.2s;
   cursor: pointer;
   margin: 0;
+  width: 100%;
+  height: 40vw;
+
+  @media only screen and (min-width: 768px) {
+    height: 25vw;
+  }
+
+}
+
+.gallery__item--scale {
 
   &:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     transform: scale(1.2);
   }
 }
 
 .gallery__item--square {
-  width: 15rem;
-  height: 15rem;
+  width: 30vw;
+  height: 30vw;
+
+  @media only screen and (min-width: 768px) {
+    width: 20vw;
+    height: 20vw;
+  }
 }
 
 .pswp__dynamic-caption--aside a {
   white-space: nowrap;
+}
+
+.pswp-gallery__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
