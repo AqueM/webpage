@@ -46,8 +46,8 @@ These are characters are all part of my fictional organization <abbr title="Inte
 
 **WIP!**
 
-{% flex-columns -%}
-{% assign ipre = collections.ipre | sort %}
+{%- flex-columns -%}
+{%- assign ipre = collections.ipre | sort -%}
 {%- for element in ipre -%}
 <div class="design__link--round">
     <a href="{{element.url}}">{{element.data.linkName}}</a>
