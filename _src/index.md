@@ -17,12 +17,6 @@ If you'd like to learn more about me, go snoop through the **About** section. If
 **Longform** is a section for my longer, essay-ish thoughts, as well as an archive for a Youtube channel that I'm in the proccess of making.
 
 **Technology** is the place to go if you'd like to see how I work, including info about the making of this page. 
-{% for item in collections.menuPages %}
-main {{item.url}}
-{% endfor %}
-{% for item in collections.meta.posts.categories['creations'] %}
-test {{item.url}}
-{% endfor %}
 
 </section>
 
