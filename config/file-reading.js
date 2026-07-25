@@ -2,7 +2,7 @@ module.exports = async function (eleventyConfig) {
     const fs = require('fs');
     let path = require("path");
 
-    
+
     eleventyConfig.addCollection("buttonImages", function (collectionApi) {
         const files = fs.readdirSync('_src/_assets/images/badges/buttons');
         const targetPath = "/assets/images/badges/buttons/";
@@ -71,4 +71,17 @@ module.exports = async function (eleventyConfig) {
     //         })
     //         return poetry;
     //     });
+
+    // const indexifier = require('indexifier');
+    // eleventyConfig.addShortcode("generateSitemap", function (image) {
+    //     console.log(__dirname);
+    //     const tree = indexifier("./_site", {
+    //         fileTypes: ['.html'],
+    //         exclude: "assets",
+    //         isHtml: true,            
+    //         linkFolders: false
+    //     });
+    //     console.log(tree);
+    //     return tree;
+    // });
 }

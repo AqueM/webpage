@@ -5,6 +5,8 @@ pagination:
   alias: tag
   filter:
   - thoughts
+  addAllPagesToCollections: true
+tags: thoughtsTag
 eleventyComputed:
   linkName: "thoughts tagged '{{tag}}'"
   permalink: "longform/thoughts/tags/{{tag | slugify}}.html"
