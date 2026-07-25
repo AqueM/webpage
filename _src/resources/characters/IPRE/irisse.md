@@ -1,7 +1,6 @@
 ---
 linkName: Irisse Vanima
 eleventyComputed:
-  pageTitle: "Irisse Vanima"
   subtitle: "half-elf, abjuration wizard"
 ---
 Half-elf linguist based in [Waterdeep](https://forgottenrealms.fandom.com/wiki/Waterdeep){target=_blank}{rel="external nofollow"}, working as a librarian at the prestigious [Blackstaff Academy](https://forgottenrealms.fandom.com/wiki/Blackstaff_Academy){target=_blank}{rel="external nofollow"}. She's rather young, and doesn't seem to be particularly pressed about furthering her career. Instead, she focuses on getting the most out of life, as a frequent visitor at waterdhavian festhalls. Despite that, she is well-respected among Blackstaff students — and begrudgingly appreciated by the faculty — for her talent for teaching. Many young mages grasped one difficult arcane concept or another only thanks to her coaching and helpful tips. 
