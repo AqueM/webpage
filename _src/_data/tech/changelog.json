@@ -1,8 +1,13 @@
 [
     {
+        "date": "26/07/2026",
+        "log": "added another Tomb Treasure, fixed galley hover behaviour, added gracefulness to gallery js deprecation"
+    },
+    {
         "date": "25/07/2026",
         "log": "changed 'Webmastery' to Colophon and added a lot of info on website meta, added more Characters to Resources"
-    },{
+    },
+    {
         "date": "24/07/2026",
         "log": "added two more fanarts, minor fixes to responsive display"
     },
