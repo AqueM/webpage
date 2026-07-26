@@ -7,7 +7,7 @@ pagination:
   size: 10
   alias: pageItems
 eleventyComputed:
-  permalink: "collections/treasures/page-{{pagination.pageNumber | plus: 1}}/index.html"
+  permalink: "/collections/treasures/page-{{pagination.pageNumber | plus: 1}}/index.html"
 ---
 {% if pagination.pageNumber==0 %}
 <section>

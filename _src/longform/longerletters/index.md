@@ -7,7 +7,7 @@ Archive of resources related to my Youtube Channel, Longer Letters.
 <section>
 {% heading "h2", "Videos" %}
 <div class="design__box">
-<p>To view the videos online, go to <a href="https://www.youtube.com/@LongerLetters" target="_blank" class="round-link"><span class="icon" style="background-image: url('/assets/images/layout/font-awesome/youtube-brands-solid-full.svg"></span>channel</a></p>
+<p>To view the videos online, go to <a href="https://www.youtube.com/@LongerLetters" target="_blank" class="design__lin--round"><span class="icon" style="background-image: url('/assets/images/layout/font-awesome/youtube-brands-solid-full.svg"></span>channel</a></p>
 </div>
 
 If you want to view them offline, here's a list of downloadable files.

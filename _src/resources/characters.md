@@ -2,12 +2,11 @@
 mainMenu: true
 linkName: Characters
 order: 1
+CC: true
 ---
 <section>
 
 Here are some characters I've made, and think they might be useful for others - either as inspiration, or used wholesale as needed in projects like fiction, worldbuilding or role-playing games. 
-
-{% include "content/_CC-disclaimer.html" %}
 </section>
 
 <section>
@@ -46,7 +45,7 @@ These are characters are all part of my fictional organization <abbr title="Inte
 **WIP!**
 
 {%- flex-columns -%}
-{% assign ipre = collections.ipre | sort %}
+{% assign ipre = collections.ipre | sort: "data.order" %}
 {%- for element in ipre %}
 <div class="design__link--round">
     <a href="{{element.url}}">{{element.data.linkName}}</a>

@@ -138,6 +138,8 @@
 }
 
 .sitenav__menu-link {
+	border: unset;
+	box-shadow: unset;
 	display: inline-block;
 	font-size: 1rem;
 	margin-bottom: 0.2rem;

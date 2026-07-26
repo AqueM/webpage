@@ -1,21 +1,23 @@
 ---
 layout: layouts/_page
-category: longform
+category: resources
+eleventyComputed:
+  permalink: "/resources/tutorials/{{linkName | slugify }}.html"
 tags:
-- thoughts
+- tutorials
 ---
 <div class="design__meta theme__border-square layout__flex-block__row">
       <time>{{page.date | date: "%d/%m/%Y"}}</time>
     {% flex-stack-centered %}
-      {% assign taglist = tags | exclude: "thoughts" %}
+      {% assign taglist = tags | exclude: "tutorials" %}
       <span>tagged under:</span><div>
         {% for tag in taglist %}
-        <a href="/longform/thoughts/tags/{{tag}}/"> {{tag}} </a>
+        <a href="/resources/tutorials/tags/{{tag}}/"> {{tag}} </a>
         {% endfor %}</div>
     {% endflex-stack-centered %}
 
   <div class="design__link--round">
-    <a href="/longform/thoughts/page-1" class="pagination__link">back to Thoughts list</a>
+    <a href="/resources/tutorials" class="pagination__link">back to Tutorials</a>
   </div>
 </div>
 {{content}}

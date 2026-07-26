@@ -11,16 +11,6 @@ module.exports = async function (eleventyConfig) {
         return markdown.renderInline(rawString);
     });
 
-    eleventyConfig.addFilter("sort", function (collection, sortable) {
-        if (!sortable) {
-            collection.sort(function (a, b) {
-                return a.data.order - b.data.order;
-            });
-        }
-        return collection.sort(function (a, b) {
-            return a.sortable - b.sortable;
-        });
-    });
 
     eleventyConfig.addFilter("exclude", function (list, excludeString) {
         return list.filter(el => el != excludeString)

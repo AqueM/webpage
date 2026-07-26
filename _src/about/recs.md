@@ -1,7 +1,6 @@
 ---
 mainMenu: true
 linkName: Recs
-order: 4
 eleventyComputed:
   pageTitle: "Recommendations"
 ---

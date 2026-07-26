@@ -3,8 +3,10 @@ layout: layouts/_main
 ---
 <article>
     <section>
-        {% include "content/_CC-disclaimer.html" %}
-        {% if dnd %}{% include "content/_dnd-disclaimer.html" %}{% endif %}
+        <div class="design__box design__box--big">
+        {% if disclaimers contains "CC" %}{% include "content/_CC-disclaimer.html" %}{% endif %}
+        {% if disclaimers contains "dnd" %}{% include "content/_dnd-disclaimer.html" %}{% endif %}
+        </div>
     </section>
     {% heading "h1", pageTitle, subtitle %}
     <section>

@@ -8,7 +8,7 @@ eleventyComputed:
 permalink: /colophon/index.html
 ---
 <section>
-<figure>
+<figure class="design__disclaimer">
 
 <dfn>colophon</dfn> (noun) is a page or section (typically in a footer) of a site that describes how the site is made, with what tools, supporting what technologies, and often published on personal sites at a top level <code>/colophon</code> page.
 
@@ -73,12 +73,9 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
 <section>
 {% heading "h2", "Disclaimers" %}
 {% flex-columns -%}
-{%- flex-item %}
 {% include "content/_access-disclaimer.html" %}
-{% endflex-item -%}
-{%- flex-item %}
-<div class="design__disclaimer">
-<h2>Content warnings</h2>
+<div class="design__disclaimer layout__flex-item">
+<h2 class="design__disclaimer__title">Content warnings</h2>
 
 This site is safe for work and for minors. However, since this is also an archive of my art, some pages may contain links to sensitive material, including of sexual nature. That content is clearly marked.
 
@@ -86,12 +83,13 @@ I’m what people call a <dfn>pro-shipper</dfn>, that is, I’m against censorsh
 
 If you interact with me and my art on your own accord and you later find out about this opinion of mine, and you don’t like it — that’s a *you* problem.
 </div>
-<h2>Other</h2>
+<div class="design__disclaimer layout__flex-item">
+<h2 class="design__disclaimer__title">Other</h2>
 
 - there was no AI/LLM used in creation of this website at any point
 - javascript is used sparsely and [graceful degradation](https://en.wikipedia.org/wiki/Fault_tolerance){rel="external nofollow"}{target=_blank} of it is prioritized
 - the author cares about following proper licensing; all external resources are credited and linked to their original authors. If that's not possible (authorship lost to time), it is also stated.
-{% endflex-item -%}
+</div>
 {%- endflex-columns -%}
 </section>
 <section>

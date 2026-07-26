@@ -8,7 +8,7 @@ pagination:
   reverse: true
 eleventyComputed:
   pageTitle: "My prose"
-  permalink: "creations/prose/page-{{pagination.pageNumber | plus: 1}}/index.html"
+  permalink: "/creations/prose/page-{{pagination.pageNumber | plus: 1}}/index.html"
 ---
 <section>
 {% if pagination.pageNumber==0 %}

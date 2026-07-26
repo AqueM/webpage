@@ -2,12 +2,30 @@ module.exports = async function (eleventyConfig) {
     eleventyConfig.addCollection("thoughtsTagList", function (collectionApi) {
         const tagList = new Set();
         collectionApi.getFilteredByTags("thoughts").map(item => {
+            item.data.tags.map(tag => tagList.add(tag))
+        });
+        return Array.from(tagList);
+    });
+
+    eleventyConfig.addCollection("tutorialsTagList", function (collectionApi) {
+        const tagList = new Set();
+        collectionApi.getFilteredByTags("tutorials").map(item => {
             if (item.data.tags) { // handle pages that don't have tags
                 item.data.tags.map(tag => tagList.add(tag))
             }
         });
         return Array.from(tagList);
     });
+
+    //     eleventyConfig.addCollection("eleventyTutorials", function (collectionApi) {
+    //     const collection = new Set();
+    //     collectionApi.getFilteredByTags("eleventy").map(item => {
+    //         if (item.data.tags) { // handle pages that don't have tags
+    //             item.data.tags.map(tag => collection.add(tag))
+    //         }
+    //     });
+    //     return Array.from(collection);
+    // });
 
     eleventyConfig.addCollection("menuPages", function (collectionApi) {
         return collectionApi.getAll().filter((item) => item.data.mainMenu);
@@ -42,4 +60,16 @@ module.exports = async function (eleventyConfig) {
         collection.tags = [...tags].sort();
         return collection;
     });
+
+
+    // eleventyConfig.addCollection('categories', (collectionApi) => {
+    //     const categories = new Set();
+    //     const pages = collectionApi.getAll();
+    //     pages.forEach((page) => {
+    //         if (page.data.category) {
+    //             categories.add(page.data.category);
+    //         }
+    //     });
+    //     return Array.from(categories);
+    // });
 }

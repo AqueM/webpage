@@ -8,6 +8,17 @@ eleventyComputed:
 Things I made for others that don't fit anywhere else, and are too small to warrant a separate page.
 </section>
 <section>
+{% heading "h2", "Webmastery resources" %} 
+
+Need help coding? Looking for assets? Here's where I get mine.
+
+<ul>
+{% for item in misc.web-links %}
+<li><a href="{{item.url}}" target="_blank">{{item.name}}</a></li>
+{% endfor %}
+</ul>
+</section>
+<section>
 {% heading "h2", "EPIC the movie playlist" %} 
 
 I've made playlist of fan-made animatics for the [EPIC musical](https://en.wikipedia.org/wiki/EPIC:_The_Musical){target=_blank} by Jorge Rivera-Herrans, arranged in song order so that it can be viewed as if it was a continous movie. 

@@ -47,7 +47,7 @@
   },
   {
     "url": "https://onnade.neocities.org/",
-    "alt": "In Women's Hand: Transmitting the Literature of Heian Japan"
+    "alt": "In Women's Hand"
   },
   {
     "img": "/assets/images/neighbours/hekate.png",
@@ -128,5 +128,13 @@
     "url": "https://polyducks.co.uk/",
     "alt": "polyducks",
     "isAnimated": true
+  },
+  {
+    "url": "https://grassfields.neocities.org",
+    "alt": "Grassfields"
+  },
+  {
+    "url": "https://aharon.varady.net/omphalos/hulloa",
+    "alt": "Aharon's Omphalos"
   }
 ]

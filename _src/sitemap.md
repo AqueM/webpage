@@ -12,6 +12,8 @@ linkName: "sitemap"
 {% assign deities = collections.deities %}
 {% assign ipre = collections.ipre %}
 {% assign wanderers = collections.wanderers %}
+{% assign tutorials = collections.tutorials %}
+{% assign tutorialsTags = collections.tutorialsTag %}
 
 - <a href="/">homepage/index</a>
 - <a href="/colophon">colophon</a>
@@ -31,6 +33,12 @@ linkName: "sitemap"
 {%- for item in wanderers %}
         - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}
   - <a href="/resources/misc/">misc</a>
+  - <a href="/resources/tutorials/">tutorials</a>
+{%- for item in tutorials %}
+    - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}
+    - tags
+    {%- for item in tutorialsTags %}
+      - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}
 - tech
   - <a href="/tech/changelog/">changelog</a>
   - <a href="/tech/edc/">edc</a>
@@ -49,7 +57,7 @@ linkName: "sitemap"
 {%- for item in poems %}
         - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}
 - longform
-  - <a href="/longform/longerletters/">longerletters</a>
+  - <a href="/longform/longerletters/">longer letters</a>
   - <a href="/longform/thoughts/page-1/">thoughts</a>
 {%- for item in thoughts %}
       - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}

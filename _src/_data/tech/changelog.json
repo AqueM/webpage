@@ -1,5 +1,9 @@
 [
     {
+        "date": "27/07/2026",
+        "log": "added Eleventy notes/tutorials and new link styling :)"
+    },
+    {
         "date": "26/07/2026",
         "log": "added another Tomb Treasure, fixed gallery hover behaviour, added gracefulness to gallery js deprecation"
     },

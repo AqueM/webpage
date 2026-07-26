@@ -5,29 +5,31 @@
 		{% include "partials/_decor-corners.html" %}
 		<div class="footer__content layout__flex-block__row">
 			{%- flex-columns -%}
-				{%- theme__border-oval -%}
-					{% include "partials/_decor-sides.html" %}
-					{% assign currentYear = "now" | date: "%Y" %}
-					© {% if currentYear != "2026" %}2026 - {% endif %}{{currentYear}} Aque
-				{%- endtheme__border-oval -%}
-				<div class="theme--no-break"><span>visitors so far: </span>
-					<div class="external-code">
-						<script type="text/javascript" src="https://counter.websiteout.com/js/30/0/0/1"></script>
-					</div>
+			{%- theme__border-oval -%}
+			{% include "partials/_decor-sides.html" %}
+			{% assign currentYear = "now" | date: "%Y" %}
+			© {% if currentYear != "2026" %}2026 - {% endif %}{{currentYear}} Aque
+			{%- endtheme__border-oval -%}
+			<div class="theme--no-break"><span>visitors so far: </span>
+				<div class="external-code">
+					<script type="text/javascript" src="https://counter.websiteout.com/js/30/0/0/1"></script>
 				</div>
-				<img src="http://www.snazzyspace.com/generators/viewer-counter/counter.php/fid=1784368936/style=0/counter.png"
-					border="0">
+			</div>
+			<img src="http://www.snazzyspace.com/generators/viewer-counter/counter.php/fid=1784368936/style=0/counter.png"
+				border="0">
 			{%- endflex-columns -%}
 			{%- flex-columns -%}
-				<a href="https://nekoweb.org/" target="_blank" rel="external">
-					<img class="animated" src="/assets/images/layout/nekoweb.webp" alt="Nekoweb button">
-				</a>
-				<a class="footer-badges" href="https://neocities.org/" target="_blank" rel="external">
-					<img src="/assets/images/layout/neocities-button_88x31.webp" alt="Neocities button">
-				</a>
-				<a href="https://notbyai.fyi" target="_blank" rel="external"><img
-						src="/assets/images/layout/Created-By-a-Human-Not-By-AI-Badge-white.png"
-						alt="'Created by a human not by AI' badge"></a>
+			<a href="https://www.mabsland.com/Adoption.html" target="_blank" rel="external"><img
+					src="/assets/images/layout/Censor_PGc.gif"
+					title="this site self-rated as PG: contains little or mild offensive materials"
+					alt="blue-haired anthropomorphic panda portrait, on blue background, next to the words 'Web PG'"></a>
+			<a href="https://nekoweb.org/" target="_blank" rel="external">
+				<img class="animated" src="/assets/images/layout/nekoweb.webp" alt="Nekoweb button"></a>
+			<a class="footer-badges" href="https://neocities.org/" target="_blank" rel="external">
+				<img src="/assets/images/layout/neocities-button_88x31.webp" alt="Neocities button"></a>
+			<a href="https://notbyai.fyi" target="_blank" rel="external"><img
+					src="/assets/images/layout/Created-By-a-Human-Not-By-AI-Badge-white.png"
+					alt="'Created by a human not by AI' badge"></a>
 			{%- endflex-columns -%}
 			<div class="footer__sidebar">
 				{% include "partials/_sidebar.html" %}

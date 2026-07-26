@@ -7,7 +7,7 @@ pagination:
   alias: pageItems
   reverse: true
 eleventyComputed:
-  permalink: "longform/thoughts/page-{{pagination.pageNumber | plus: 1}}/index.html"
+  permalink: "/longform/thoughts/page-{{pagination.pageNumber | plus: 1}}/index.html"
   subtitle: "longer-form non-fiction"
 ---
 {% include "partials/_pagination.html" %}

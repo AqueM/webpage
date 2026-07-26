@@ -55,6 +55,11 @@
 	background-color: unset;
 	line-height: unset;
 
+	border-radius: unset;
+	background-color: unset;
+	border: unset;
+	box-shadow: unset;
+
 	&::after {
 		content: unset;
 		margin-left: unset;
@@ -67,6 +72,10 @@
 }
 
 /* ACCESSIBILITY TOGGLES */
+
+.access__accordion {
+	border-radius: var(--border-radius-single);
+}
 
 .access__accordion__summary {
 	padding: 0.5rem;
