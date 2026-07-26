@@ -238,5 +238,15 @@
         "artist": "Stig Lindberg",
         "date": "circa 1950",
         "link": "https://www.mothersweden.com/stig-lindberg-horse.html"
+    },
+    {
+        "src": "/assets/images/photos/tomb_treasures/fish_bisonwares.webp",
+        "width": 1542,
+        "height": 2048,
+        "title": "felt fish sculpture (various)",
+        "alt": "Several hanging sculptures of colorful fish, laying on a wooden floor. The fish are realistic felt patchwork, hanging from a glass buoy covered in thin rope net.",
+        "artist": "BisonWares",
+        "date": "modern/ongoing",
+        "link": "https://linktr.ee/bisonwares"
     }
 ]

@@ -27,9 +27,7 @@
 .gallery__item--scale {
 
   &:hover {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 10;
     transform: scale(1.2);
   }
@@ -52,5 +50,4 @@
 .pswp-gallery__item {
   width: 100%;
   height: 100%;
-  position: relative;
 }
