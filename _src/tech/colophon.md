@@ -62,7 +62,7 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
 {% endflex-item -%}
 {% flex-item %}
 
-- [complete accessibility checklisty](https://learntheweb.courses/topics/accessibility-checklist/){rel="external nofollow"}{target=_blank} at Learn the Web
+- [complete accessibility checklists](https://learntheweb.courses/topics/accessibility-checklist/){rel="external nofollow"}{target=_blank} at Learn the Web
 - [good AIM score](https://wave.webaim.org/report#/aque.fyi){rel="external nofollow"}{target=_blank} according to WAVE
 - [complete accessibility checklists](https://www.ashleysheridan.co.uk/a11y-checklist){rel="external nofollow"}{target=_blank} at Ashley Sheridan​ A11ty Checklist
 - [good contrast](https://webaim.org/resources/contrastchecker/){rel="external nofollow"}{target=_blank} according to WebAIM
