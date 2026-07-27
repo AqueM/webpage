@@ -9,7 +9,7 @@ pagination:
 tags: tutorialsTag
 eleventyComputed:
   linkName: "tutorials tagged '{{tag}}'"
-  permalink: "/resources/tutorials/tags/{{tag | slugify}}.html"
+  permalink: "/resources/webmastery/tags/{{tag | slugify}}.html"
 ---
 {%- capture title -%}tutorials tagged '{{tag}}'{%- endcapture -%}
 <ul>

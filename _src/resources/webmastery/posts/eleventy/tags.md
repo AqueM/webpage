@@ -1,5 +1,5 @@
 ---
-linkName: all about tags
+linkName: tags and tag pages
 tags: liquidJS
 disclaimers: liquidJS
 ---

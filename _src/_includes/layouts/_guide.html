@@ -2,7 +2,7 @@
 layout: layouts/_page
 category: resources
 eleventyComputed:
-  permalink: "/resources/tutorials/{{linkName | slugify }}.html"
+  permalink: "/resources/webmastery/{{linkName | slugify }}.html"
 tags:
 - tutorials
 ---
@@ -12,7 +12,7 @@ tags:
       {% assign taglist = tags | exclude: "tutorials" %}
       <span>tagged under:</span><div>
         {% for tag in taglist %}
-        <a href="/resources/tutorials/tags/{{tag}}/"> {{tag}} </a>
+        <a href="/resources/webmastery/tags/{{tag}}/"> {{tag}} </a>
         {% endfor %}</div>
     {% endflex-stack-centered %}
 

@@ -33,7 +33,7 @@ linkName: "sitemap"
 {%- for item in wanderers %}
         - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}
   - <a href="/resources/misc/">misc</a>
-  - <a href="/resources/tutorials/">tutorials</a>
+  - <a href="/resources/webmastery/">webmastery</a>
 {%- for item in tutorials %}
     - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}
     - tags

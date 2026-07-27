@@ -1,5 +1,5 @@
 ---
-linkName: sorting/ordering tips
+linkName: sorting and ordering
 tags: liquidJS
 disclaimers: liquidJS
 ---

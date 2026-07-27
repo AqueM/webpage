@@ -1,5 +1,5 @@
 ---
-linkName: dates tips
+linkName: dates
 tags: liquidJS
 disclaimers: liquidJS
 ---
