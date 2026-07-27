@@ -2,5 +2,5 @@
     "layout": "layouts/_character",
     "category": "resources",
     "tags": "characters",
-    "disclaimers": "CC"
+    "disclaimers": ["CC"]
 }

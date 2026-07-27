@@ -1,8 +1,8 @@
 ---
-linkName: Changelog
+linkName: site changelog
 ---
 <ul class="logs">
-    {%- for element in tech.changelog -%}
+    {%- for element in tools.changelog -%}
     <li>
         <time><strong>{{element.date}}</strong></time> - {{element.log}}
     </li>

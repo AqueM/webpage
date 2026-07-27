@@ -38,7 +38,7 @@ First, create a category collection. You can do that either by sticking a json f
 [
     "about",
     "resources",
-    "technology",
+    "tools",
     "collections",
     "creations",
     "longform"

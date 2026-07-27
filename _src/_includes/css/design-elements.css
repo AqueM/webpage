@@ -35,6 +35,7 @@
 	background-color: var(--color-accent-transparent);
 	box-shadow: 0 0 0 calc(var(--border-width)*5) var(--color-accent-transparent);
 	margin: calc(var(--border-width)*20);
+	max-width: fit-content;
 }
 
 :nth-child(even of .design__disclaimer) {

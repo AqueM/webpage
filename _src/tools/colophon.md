@@ -1,5 +1,5 @@
 ---
-category: technology
+category: tools
 mainMenu: true
 linkName: Colophon
 order: 1
@@ -26,21 +26,21 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
 {% heading "h2", "Changelog", "last 5 updates" %}
 
 <ul class="logs">
-    {%- for element in tech.changelog limit: 5 -%}
+    {%- for element in tools.changelog limit: 5 -%}
     <li>
         <time><strong>{{element.date}}</strong></time> - {{element.log}}
     </li>
     {%- endfor -%}
 </ul>
 
-[see entire changelog](/tech/changelog)
+[see entire changelog](/tools/changelog)
 
 {%- endflex-item -%}
 
 {%- flex-item -%}
 {% heading "h2", "To-Do", "plans for the future" %}
 <ul class="logs">
-    {%- for element in tech.todo -%}
+    {%- for element in tools.todo -%}
     <li>
         {{element.name}}{% if element.comment %} - {{element.comment}}{%endif%}
     </li>
@@ -100,7 +100,7 @@ If you interact with me and my art on your own accord and you later find out abo
 
 
 {% flex-columns -%}
-        {%- for category in tech.credits -%}{%- flex-item %}
+        {%- for category in tools.credits -%}{%- flex-item %}
         {%- heading "h3", category.name -%}
         <ul>
         {%- for item in category.items -%}

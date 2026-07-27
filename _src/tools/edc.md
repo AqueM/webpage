@@ -29,7 +29,7 @@ Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/){rel=exter
 
 ### Containers
 
-{% gallery %}{% for item in tech.edc.images.containers %}{% photoMine item %}{% endfor %}{% endgallery %}
+{% gallery %}{% for item in tools.edc.images.containers %}{% photoMine item %}{% endfor %}{% endgallery %}
 {%- endflex-item -%}
 
 {%- flex-break-newrow -%}
@@ -38,13 +38,13 @@ Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/){rel=exter
 
 ### Hardware
 
-DAP, headphones, phone with a [Tech-Protect C6S Rope Wrist Strap](https://tech-protect.eu/pl/products/tech-protect-c6s-rope-crossbody-cargo-khaki-165357.html?query_id=3){target=_blank}{rel=external} lanyard (can be swapped between 'bracelet' length or over the shoulder length). To see details, go to [Hardware](/tech/hardware)
+DAP, headphones, phone with a [Tech-Protect C6S Rope Wrist Strap](https://tech-protect.eu/pl/products/tech-protect-c6s-rope-crossbody-cargo-khaki-165357.html?query_id=3){target=_blank}{rel=external} lanyard (can be swapped between 'bracelet' length or over the shoulder length). To see details, go to [Hardware](/tools/hardware)
 
 Powerbank with a short USB to USB-C cable (randomly chosen, this is the one thing I was too lazy to research into)
 {%- endflex-item -%}
 
 {%- flex-aside -%}
-{% gallery %}{% photoMine tech.edc.images.edc.hardware %}{% endgallery %}
+{% gallery %}{% photoMine tools.edc.images.edc.hardware %}{% endgallery %}
 {%- endflex-aside -%}
 
 {%- flex-break-newrow -%}
@@ -59,7 +59,7 @@ I do not carry any physical money in this wallet, curiously. When I need cash on
 {%- endflex-item -%}
 
 {%- flex-aside -%}
-{% gallery %}{% photoMine tech.edc.images.edc.wallet %}{% endgallery %}
+{% gallery %}{% photoMine tools.edc.images.edc.wallet %}{% endgallery %}
 {%- endflex-aside -%}
 
 {%- flex-break-newrow -%}
@@ -68,12 +68,12 @@ I do not carry any physical money in this wallet, curiously. When I need cash on
 ### Misc
 
 <ul>
-{% for item in tech.edc.misc-list %}<li>{{item | markdown }}</li>{% endfor %}
+{% for item in tools.edc.misc-list %}<li>{{item | markdown }}</li>{% endfor %}
 </ul>
 {%- endflex-item -%}
 
 {%- flex-aside -%}
-{% gallery %}{% photoMine tech.edc.images.edc.misc %}{% endgallery %}
+{% gallery %}{% photoMine tools.edc.images.edc.misc %}{% endgallery %}
 {%- endflex-aside -%}
 
 {%- flex-break-newrow -%}
@@ -83,12 +83,12 @@ I do not carry any physical money in this wallet, curiously. When I need cash on
 ### Decor
 
 <ul>
-{% for item in tech.edc.decor-list %}<li>{{item | markdown }}</li>{% endfor %}
+{% for item in tools.edc.decor-list %}<li>{{item | markdown }}</li>{% endfor %}
 </ul>
 {%- endflex-item -%}
 
 {%- flex-aside -%}
-{% gallery %}{% photoMine tech.edc.images.edc.decor %}{% endgallery %}
+{% gallery %}{% photoMine tools.edc.images.edc.decor %}{% endgallery %}
 {%- endflex-aside -%}
 
 {%- endflex-columns %}

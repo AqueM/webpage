@@ -59,7 +59,7 @@ People worshipping Sorin are expected to uphold the law and be just in everythin
 
 This leads to followers of Sorin having lives wildly different than one would expect from someone worshipping a god of order. A good portion of them are law enforcers or rulers, yes, but there’s also an abundance of decadents who praise Sorin for creating a balanced and orderly world in which they don’t have to worry much. This mix of devotees is a mirror of Sorin’s own lifestyle.
 
-One rather prominent cult that worships Sorin consists of engineers and mages focused on technology. There’s a lot of overlap between the rigidity of Sorin’s laws, and the workings of machinery. Therefore this particular cult’s focal point is spreading Sorin’s order by making technological advancements and incorporating more machines into various nations and cultures, which they predict will make them more organised and orderly. 
+One rather prominent cult that worships Sorin consists of engineers and mages focused on tools. There’s a lot of overlap between the rigidity of Sorin’s laws, and the workings of machinery. Therefore this particular cult’s focal point is spreading Sorin’s order by making technological advancements and incorporating more machines into various nations and cultures, which they predict will make them more organised and orderly. 
 
 ### Temples and priests
 Temples of Indomitable Will very much look the part of a place where a sun god of law and order is worshipped. They all have a feeling of grandiosity, even if the building itself is small, and are usually made out of marble or another white stone, adorned with geometric metal decorations.

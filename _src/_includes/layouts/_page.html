@@ -1,12 +1,11 @@
 ---
 layout: layouts/_main
 ---
-    <section class="disclaimers">
-        <div class="design__box design__box--big">
-        {% if disclaimers contains "CC" %}{% include "content/_CC-disclaimer.html" %}{% endif %}
-        {% if disclaimers contains "liquidJS" %}{% include "content/_liquidJS-disclaimer.html" %}{% endif %}
-        </div>
-    </section>
+<section class="disclaimers layout__flex-block__row layout__flex-block--space-around">
+    {% for disclaimer in disclaimers %}
+    {% include "content/_{{disclaimer}}-disclaimer.html" %}
+{% endfor %}
+</section>
 {% heading "h1", pageTitle, subtitle %}
 <article>
     {{content}}

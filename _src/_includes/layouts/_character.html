@@ -1,27 +1,21 @@
 ---
-layout: layouts/_main
+layout: layouts/_page
 ---
-<article>
-    <section>
-        <div class="design__box design__box--big">
-        {% if disclaimers contains "CC" %}{% include "content/_CC-disclaimer.html" %}{% endif %}
-        {% if disclaimers contains "dnd" %}{% include "content/_dnd-disclaimer.html" %}{% endif %}
-        </div>
-    </section>
-    {% heading "h1", pageTitle, subtitle %}
-    {% if DnDcharsheet %}
-    <section>
-        {% flex-stack %}
-        <strong>Files available: </strong>
-        <p>DnD 5e character sheet <a href="/assets/pdf/{{DnDcharsheet}}" target="_blank" class="link__download"><img src="/assets/images/layout/download.gif" alt="download link" title="{{DnDcharsheet}}"></a></p>
-        {% endflex-stack %}
+{% if DnDcharsheet %}
+<section>
+    {% flex-stack %}
+    <strong>Files available: </strong>
+    <p>DnD 5e character sheet <a href="/assets/pdf/{{DnDcharsheet}}" target="_blank" class="link__download"><img
+                src="/assets/images/layout/download.gif" alt="download link" title="{{DnDcharsheet}}"></a></p>
+    {% endflex-stack %}
 </section>{% endif %}
-    <section>
-        {{content}}
-    </section>
-    <section>
-        {% divider-center %}
-        <div class="design__box design__box--small">
-          <p class="design__link--round"><a href="/resources/characters" class="pagination__link">back to Characters page</a></p></div>
-    </section>
-</article>
+<section>
+    {{content}}
+</section>
+<section>
+    {% divider-center %}
+    <div class="design__box design__box--small">
+        <p class="design__link--round"><a href="/resources/characters" class="pagination__link">back to Characters
+                page</a></p>
+    </div>
+</section>

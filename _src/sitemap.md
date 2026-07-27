@@ -39,11 +39,11 @@ linkName: "sitemap"
     - tags
     {%- for item in tutorialsTags %}
       - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}
-- tech
-  - <a href="/tech/changelog/">changelog</a>
-  - <a href="/tech/edc/">edc</a>
-  - <a href="/tech/hardware/">hardware</a>
-  - <a href="/tech/software/">software</a>
+- tools
+  - <a href="/tools/changelog/">site changelog</a>
+  - <a href="/tools/edc/">edc</a>
+  - <a href="/tools/hardware/">hardware</a>
+  - <a href="/tools/software/">software</a>
 - collections
   - <a href="/collections/commissions/">commissions</a>
   - <a href="/collections/shinies/">shinies</a>
