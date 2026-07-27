@@ -13,7 +13,7 @@ eleventyComputed:
 <section>
 {% if pagination.pageNumber==0 %}
 Archive of fiction I've written, both fan fiction and original fiction. Mostly a mirror for Archive of Our Own. 
-<div class="design__box--small">
+<div class="design__box design__box--small">
 
 **Currently archived works:** {{collections.prose.length}}</div>
 </section>
