@@ -11,13 +11,15 @@ Things I made for others that don't fit anywhere else, and are too small to warr
 <section>
 {% heading "h2", "EPIC the movie playlist" %} 
 
-I've made playlist of fan-made animatics for the [EPIC musical](https://en.wikipedia.org/wiki/EPIC:_The_Musical){target=_blank} by Jorge Rivera-Herrans, arranged in song order so that it can be viewed as if it was a continous movie. 
+I've made playlist of fan-made animatics for the [EPIC musical](https://en.wikipedia.org/wiki/EPIC:_The_Musical){target=_blank}{rel="external nofollow"} by Jorge Rivera-Herrans, arranged in song order so that it can be viewed as if it was a continous movie. 
 
 <div class="design__box">
-<p>Here's the link directly to the <a href="https://youtube.com/playlist?list=PLB39U-vzXdiM&si=YKsy1NWDjCw3P6Of" target="_blank" class="design__link--round"><span class="icon icon--left" style="--layout-img: url('/assets/images/layout/font-awesome/youtube-brands-solid-full.svg"></span>Youtube Playlist</a></p>
+<p>Here's the link directly to the</p><div class="theme__border-oval desing__decor-link design__center">
+			{% include "partials/_decor-sides.html" %} <a href="https://youtube.com/playlist?list=PLB39U-vzXdiM&si=YKsy1NWDjCw3P6Of" target="_blank" rel="external nofollow"><span class="icon icon--left" style="--layout-img: url('/assets/images/layout/font-awesome/youtube-brands-solid-full.svg"></span>Youtube Playlist</a></div>
 </div>
 
-A similar concept in one video is this [compilation by Danneymation](https://www.youtube.com/watch?v=jJ9vtKtilG8){target=_blank}
+A similar concept in one video is this [compilation by Danneymation](https://www.youtube.com/watch?v=jJ9vtKtilG8){target=_blank}{rel="external nofollow"}
+{% divider-lines %}
 
 ### List of videos
 In case the Youtube playlist is somehow inaccessible, here's a list of links to individual videos in it. 

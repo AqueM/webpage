@@ -3,10 +3,6 @@ linkName: Mechanical tears
 date: 2023-11-07
 lang: EN
 ---
-originally posted on {% ao3Link 'https://archiveofourown.org/works/51423124' %} as part of fanfiction series
-<cite>"Once more, from the top, this time with androids"</cite>
-{% divider-center %}
-
 There's a robot on the ground,
 and he tries to cry but he can't—
 {% indent %}
@@ -34,3 +30,7 @@ and there are none for what he feels.
 There's a robot on the ground,
 staring up at the ceiling, where nobody looks.
 And he tries to cry but he can't.
+{% divider-center %}
+<div class="design__floated--right">
+originally posted on {% ao3Link 'https://archiveofourown.org/works/51423124' %} as part of fanfiction series
+<cite>"Once more, from the top, this time with androids"</cite></div>

@@ -9,11 +9,11 @@
             </span>
             <span class="sitenav__plus-lines"></span>
         </summary>
-        <ul class="sitenav__menu-list ">
+        <ul class="sitenav__menu-list">
             {%- assign menuLinks = collections.menuPages | sort: "data.order" -%}
             {%- for link in menuLinks -%}
             {%- if link.data.category == navigationCategory %}
-            <li><a class="sitenav__menu-link theme__block--secondrary--gradient {% if link.url==page.url %}theme__block--border sitenav__menu-link--active{% endif %}"
+            <li><a class="sitenav__menu-link theme__block--secondrary--gradient {% if link.url==page.url %}sitenav__menu-link--active{% endif %}"
                     href="{% if link.url %}{{ link.url }}{% else %}{{ link.data.link }}{% endif %}"
                     {% if link.data.target %}target="{{link.data.target}}"{% endif %}>{{link.data.linkName}}</a></li>
             {%- endif %}

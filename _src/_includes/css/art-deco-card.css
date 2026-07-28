@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  */
 
 .theme__border-square {
-	border: var(--border-width) solid var(--deco-border-color);
+	border: var(--border-width) solid var(--border-color);
 	position: relative;
 	outline: var(--color-secondrary) var(--border-width) solid;
 	outline-offset: -0.25rem;
@@ -30,7 +30,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 			width: 0.5rem;
 			height: 0.5rem;
-			border: var(--border-width) solid var(--deco-border-color);
+			border: var(--border-width) solid var(--border-color);
 			border-radius: 0.1rem;
 
 			&::after,
@@ -54,12 +54,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					left: calc(-2px + 1rem);
-					border-left: var(--border-width) solid var(--deco-border-color);
+					border-left: var(--border-width) solid var(--border-color);
 				}
 
 				&::before {
 					left: -1px;
-					border-left: var(--border-width) solid var(--deco-border-color);
+					border-left: var(--border-width) solid var(--border-color);
 				}
 			}
 
@@ -68,12 +68,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					right: calc(-2px + 1rem);
-					border-right: var(--border-width) solid var(--deco-border-color);
+					border-right: var(--border-width) solid var(--border-color);
 				}
 
 				&::before {
 					right: -1px;
-					border-right: var(--border-width) solid var(--deco-border-color);
+					border-right: var(--border-width) solid var(--border-color);
 				}
 			}
 
@@ -82,12 +82,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					top: -1px;
-					border-top: var(--border-width) solid var(--deco-border-color);
+					border-top: var(--border-width) solid var(--border-color);
 				}
 
 				&::before {
 					top: calc(-2px + 1rem);
-					border-top: var(--border-width) solid var(--deco-border-color);
+					border-top: var(--border-width) solid var(--border-color);
 				}
 			}
 
@@ -96,12 +96,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				&::after {
 					bottom: -1px;
-					border-bottom: var(--border-width) solid var(--deco-border-color);
+					border-bottom: var(--border-width) solid var(--border-color);
 				}
 
 				&::before {
 					bottom: calc(-2px + 1rem);
-					border-bottom: var(--border-width) solid var(--deco-border-color);
+					border-bottom: var(--border-width) solid var(--border-color);
 				}
 			}
 		}
@@ -121,20 +121,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	border-radius: var(--border-radius-single);
 	min-width: 7vw;
 	width: max-content;
-	margin: 0 2rem;
+	margin: 0.25rem 2rem;
 	z-index: inherit;
 	display: inline-block;
 
+	& a {
+		display: block;
+
+	}
+
 	@media only screen and (min-width: 600px) {
-		border-top: var(--border-width) solid var(--deco-border-color);
-		border-bottom: var(--border-width) solid var(--deco-border-color);
+		border-top: var(--border-width) solid var(--border-color);
+		border-bottom: var(--border-width) solid var(--border-color);
 
 		.theme__border-oval__decor {
 			position: absolute;
 			width: 1.45rem;
 			height: 1.45rem;
-			border-bottom: var(--border-width) solid var(--deco-border-color);
-			border-left: var(--border-width)solid var(--deco-border-color);
+			border-bottom: var(--border-width) solid var(--border-color);
+			border-left: var(--border-width)solid var(--border-color);
 			transition: background 200ms ease-in-out;
 			top: 0.25rem;
 
@@ -142,7 +147,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				content: "";
 				width: 0.75rem;
 				height: 0.75rem;
-				border: var(--border-width) solid var(--deco-border-color);
+				border: var(--border-width) solid var(--border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0.4rem - 0.01rem);
@@ -152,7 +157,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				content: "";
 				width: 0.5rem;
 				height: 0.5rem;
-				background: var(--deco-border-color);
+				background: var(--border-color);
 				position: absolute;
 				top: calc(1rem - 0.01rem);
 				left: calc(-0rem - 0.01rem);

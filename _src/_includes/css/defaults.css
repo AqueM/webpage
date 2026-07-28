@@ -53,7 +53,7 @@
 
 	a:not(.noformat, .external-code *, .theme__border-oval *) {
 		position: relative;
-		color: var(--color-dark);
+		color: var(--color-darkest);
 		padding: 0.2rem 0.5rem 0 0.5rem;
 		line-height: 1em;
 
@@ -78,7 +78,7 @@
 			transform: scale(1.1);
 			border-radius: var(--border-radius-single);
 			background-color: var(--color-accent-transparent);
-			border: var(--border-width) dashed var(--color-secondrary);
+			/* border: var(--border-width) solid var(--color-accent-transparent); */
 			box-shadow: 0 0 0 calc(var(--border-width)*5) var(--color-accent-transparent);
 		}
 
@@ -89,7 +89,7 @@
 
 	a {
 		position: relative;
-		color: var(--color-dark);
+		color: var(--color-darkest);
 		text-decoration: underline dotted;
 	}
 
@@ -103,13 +103,14 @@
 		border-style: dotted;
 		border-width: calc(var(--border-width)*2);
 		border-radius: var(--border-radius-single);
+		padding: 0.2rem;
 	}
 
 	summary {
 		border-radius: var(--border-radius-single);
 		padding: 0.5rem;
-		background-color: var(--color-accent);
-		margin-bottom: 0.1em;
+		background-color: var(--color-secondrary-transparent);
+		width: max-content;
 	}
 
 	sup {
@@ -121,19 +122,19 @@
 	}
 
 	table:not(.external-code *) {
-		border: var(--border-width) solid var(--color-dark);
+		border: var(--border-width) solid var(--color-darkest);
 		border-radius: var(--border-radius);
 		width: 100%;
 	}
 
 	th:not(.external-code *) {
-		border-right: var(--border-width) solid var(--color-dark);
+		border-right: var(--border-width) solid var(--color-darkest);
 	}
 
 	td:not(.external-code *),
 	th:not(.external-code *) {
-		border-bottom: var(--border-width) solid var(--color-dark);
-		border-right: var(--border-width) solid var(--color-dark);
+		border-bottom: var(--border-width) solid var(--color-darkest);
+		border-right: var(--border-width) solid var(--color-darkest);
 		padding: 0.5rem;
 	}
 

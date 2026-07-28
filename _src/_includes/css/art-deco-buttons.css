@@ -1,0 +1,760 @@
+/* 
+  Copyright (c) 2026 by Toc (https://codepen.io/ol-ivier/pen/azBqZgG)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
+
+.btn-deco {
+    /* background: transparent; */
+    border: none;
+    padding: 0;
+    /* padding: calc(var(--border-width)*14) calc(var(--border-width)*24); */
+    /* font-family: 'Arial Black', 'Impact', 'Franklin Gothic Heavy', sans-serif;
+    font-size: 1calc(var(--border-width)*3);
+    font-weight: 900;
+    text-transform: uppercase;
+
+    cursor: pointer; */
+    /* transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1); */
+    width: 100%;
+    text-align: center;
+    /* background-color: var(--color-secondrary-transparent); */
+    position: relative;
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+}
+
+/* STYLE 1 */
+.style-1::before {
+    content: '';
+    position: absolute;
+    top: -calc(var(--border-width)*6);
+    bottom: -calc(var(--border-width)*6);
+    left: 0;
+    right: 0;
+    border-left: var(--border-width) solid var(--border-color);
+    border-right: var(--border-width) solid var(--border-color);
+    transition: all 0.32s ease-out;
+}
+
+.style-1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -calc(var(--border-width)*6);
+    right: -calc(var(--border-width)*6);
+    border-top: var(--border-width) solid var(--border-color);
+    border-bottom: var(--border-width) solid var(--border-color);
+    transition: all 0.32s ease-out;
+}
+
+/* 
+.style-1:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    letter-spacing: calc(var(--border-width)*4);
+    transform: scale(0.98);
+} */
+/* 
+.style-1:hover::before {
+    top: 0;
+    bottom: 0;
+    border-left-color: var(--color-accent);
+    border-right-color: var(--color-accent);
+}
+
+.style-1:hover::after {
+    left: 0;
+    right: 0;
+    border-top-color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+} */
+
+/* STYLE 2 */
+.style-2 {
+    border: var(--border-width) solid var(--border-color);
+    box-shadow: 0 0 0 calc(var(--border-width)*3) var(--color-accent), 0 0 0 5px var(--border-color), 0 0 0  calc(var(--border-width)*8) var(--color-accent), 0 0 0 9px var(--border-color);
+    transition: box-shadow 0.3s ease, background-color 0.25s, color 0.2s, transform 0.2s;
+}
+
+/* 
+.style-2:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    transform: scale(0.97);
+    box-shadow: 0 0 0 calc(var(--border-width)*3) var(--border-color), 0 0 0 5px var(--color-accent), 0 0 0  calc(var(--border-width)*8) var(--border-color), 0 0 0 calc(var(--border-width)*10) var(--color-accent);
+    letter-spacing: 4.calc(var(--border-width)*2);
+} */
+
+/* STYLE 3 */
+.style-3 {
+    border: var(--border-width) solid var(--border-color);
+    transition: background-color 0.25s, color 0.25s, border-color 0.2s;
+}
+
+.style-3::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border-width)*6);
+    bottom: calc(var(--border-width)*6);
+    left: calc(var(--border-width)*-7);
+    width: calc(var(--border-width)*3);
+    background-color: var(--border-color);
+    transition: all 0.25s ease;
+}
+
+.style-3::after {
+    content: '';
+    position: absolute;
+    top: calc(var(--border-width)*6);
+    bottom: calc(var(--border-width)*6);
+    right: -calc(var(--border-width)*7);
+    width: calc(var(--border-width)*3);
+    background-color: var(--border-color);
+    transition: all 0.25s ease;
+}
+
+/* 
+.style-3:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: translateY(-calc(var(--border-width)*2));
+    box-shadow: 0 calc(var(--border-width)*10) 18px -8px rgba(0, 0, 0, 0.4);
+}
+
+.style-3:hover::before,
+.style-3:hover::after {
+    background-color: #63351d;
+    width: calc(var(--border-width)*4);
+    top: calc(var(--border-width)*2);
+    bottom: calc(var(--border-width)*2);
+}
+
+.style-3:hover::before {
+    left: -9px;
+}
+
+.style-3:hover::after {
+    right: -9px;
+} */
+
+/* STYLE 4 */
+.style-4 {
+    border: var(--border-width) solid var(--border-color);
+}
+
+.style-4::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border-width)*-6);
+    bottom: calc(var(--border-width)*-6);
+    left: calc(var(--border-width)*-6);
+    right: calc(var(--border-width)*-6);
+    background-image:
+        linear-gradient(to right, var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2)),
+        linear-gradient(to bottom, var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2)),
+        linear-gradient(to left, var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2)),
+        linear-gradient(to bottom, var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2)),
+        linear-gradient(to right, var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2)),
+        linear-gradient(to top, var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2)),
+        linear-gradient(to left, var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2)),
+        linear-gradient(to top, var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2));
+    background-position:
+        top left, top left,
+        top right, top right,
+        bottom left, bottom left,
+        bottom right, bottom right;
+    background-size: 1calc(var(--border-width)*2) 1calc(var(--border-width)*2);
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+/* .style-4:hover::before {
+    transform: scale(1.01);
+}
+
+.style-4:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+} */
+
+/* STYLE 5 */
+.style-5 {
+    border-left: var(--border-width) solid var(--border-color);
+    border-right: var(--border-width) solid var(--border-color);
+}
+
+.style-5::before,
+.style-5::after {
+    content: '';
+    position: absolute;
+    left: calc(var(--border-width)*-4);
+    right: calc(var(--border-width)*-4);
+    height: calc(var(--border-width)*6);
+    border-top: var(--border-width) solid var(--border-color);
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.style-5::before {
+    top: -calc(var(--border-width)*4);
+}
+
+.style-5::after {
+    bottom: -calc(var(--border-width)*4);
+}
+
+/* 
+.style-5:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-left-color: var(--color-accent);
+    border-right-color: var(--color-accent);
+}
+
+.style-5:hover::before,
+.style-5:hover::after {
+    border-top-color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+} */
+
+/* STYLE 6 */
+.style-6 {
+    border: calc(var(--border-width)*3) solid var(--border-color);
+}
+
+.style-6::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border-width)*4);
+    bottom: calc(var(--border-width)*4);
+    left: calc(var(--border-width)*4);
+    right: calc(var(--border-width)*4);
+    border: var(--border-width) solid var(--border-color);
+}
+
+.style-6::after {
+    content: '';
+    position: absolute;
+    top: calc(var(--border-width)*-3);
+    bottom: calc(var(--border-width)*-3);
+    left: calc(var(--border-width)*-3);
+    right: calc(var(--border-width)*-3);
+    background-image:
+        linear-gradient(var(--border-color), var(--border-color)),
+        linear-gradient(var(--border-color), var(--border-color)),
+        linear-gradient(var(--border-color), var(--border-color)),
+        linear-gradient(var(--border-color), var(--border-color));
+    background-position: top left, top right, bottom left, bottom right;
+    background-size:  calc(var(--border-width)*8)  calc(var(--border-width)*8);
+    background-repeat: no-repeat;
+}
+
+/* 
+.style-6:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-6:hover::before {
+    border-color: var(--color-accent);
+}
+
+.style-6:hover::after {
+    background-image:
+        linear-gradient(var(--color-accent), var(--color-accent)),
+        linear-gradient(var(--color-accent), var(--color-accent)),
+        linear-gradient(var(--color-accent), var(--color-accent)),
+        linear-gradient(var(--color-accent), var(--color-accent));
+} */
+
+/* STYLE 7 */
+.style-7 {
+    border: calc(var(--border-width)*3) solid var(--border-color);
+    background: var(--color-accent);
+}
+
+.style-7::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border-width)*4);
+    bottom: calc(var(--border-width)*4);
+    left: calc(var(--border-width)*4);
+    right: calc(var(--border-width)*4);
+    border: var(--border-width) solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+.style-7::after {
+    content: '';
+    position: absolute;
+    top: -calc(var(--border-width)*3);
+    bottom: -calc(var(--border-width)*3);
+    left: 1calc(var(--border-width)*6);
+    right: 1calc(var(--border-width)*6);
+    border-top: calc(var(--border-width)*3) solid var(--border-color);
+    border-bottom: calc(var(--border-width)*3) solid var(--border-color);
+    background-color: #f9f9f9;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.style-7 {
+    z-index: 2;
+}
+
+/* 
+.style-7:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+}
+
+.style-7:hover::before {
+    border-color: var(--color-accent);
+}
+
+.style-7:hover::after {
+    background-color: var(--border-color);
+    border-top-color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+} */
+
+/* STYLE 8 */
+.style-8 {
+    border: var(--border-width) solid var(--border-color);
+}
+
+.style-8::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: 5px;
+    right: 5px;
+    border-left: var(--border-width) solid var(--border-color);
+    border-right: var(--border-width) solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.style-8::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: -5px;
+    right: -5px;
+    border-top: var(--border-width) solid var(--border-color);
+    border-bottom: var(--border-width) solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+/* 
+.style-8:hover {
+    background: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-8:hover::before {
+    border-left-color: var(--color-accent);
+    border-right-color: var(--color-accent);
+}
+
+.style-8:hover::after {
+    border-top-color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+} */
+
+/* STYLE 9 */
+.style-9 {
+    border: var(--border-width) solid var(--border-color);
+}
+
+.style-9::before,
+.style-9::after {
+    content: '';
+    position: absolute;
+    width: calc(var(--border-width)*6);
+    height: calc(var(--border-width)*6);
+    border-style: solid;
+    border-color: var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.style-9::before {
+    top: -calc(var(--border-width)*4);
+    left: -calc(var(--border-width)*4);
+    border-width: var(--border-width) 0 0 calc(var(--border-width)*2);
+    box-shadow: -calc(var(--border-width)*2) -calc(var(--border-width)*2) 0 var(--color-accent);
+}
+
+.style-9::after {
+    bottom: -calc(var(--border-width)*4);
+    right: -calc(var(--border-width)*4);
+    border-width: 0 var(--border-width) calc(var(--border-width)*2) 0;
+    box-shadow: var(--border-width) calc(var(--border-width)*2) 0 var(--color-accent);
+}
+
+/* 
+.style-9:hover {
+    background: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-9:hover::before {
+    border-color: var(--color-accent);
+}
+
+.style-9:hover::after {
+    border-color: var(--color-accent);
+} */
+
+/* STYLE 10 */
+.style-10 {
+    border: var(--border-width) solid var(--border-color);
+}
+
+.style-10::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border-width)*4);
+    left: calc(var(--border-width)*4);
+    right: calc(var(--border-width)*4);
+    bottom: calc(var(--border-width)*4);
+    border: var(--border-width) solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.style-10::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(45deg, var(--border-color) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--border-color) 25%, transparent 25%),
+        linear-gradient(135deg, var(--border-color) 25%, transparent 25%),
+        linear-gradient(-135deg, var(--border-color) 25%, transparent 25%);
+    background-size:  calc(var(--border-width)*8)  calc(var(--border-width)*8);
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right, top left, top right;
+    transition: all 0.3s ease;
+}
+
+/* 
+.style-10:hover {
+    background: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-10:hover::before {
+    border-color: var(--color-accent);
+}
+
+.style-10:hover::after {
+    background-image:
+        linear-gradient(45deg, var(--color-accent) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--color-accent) 25%, transparent 25%),
+        linear-gradient(135deg, var(--color-accent) 25%, transparent 25%),
+        linear-gradient(-135deg, var(--color-accent) 25%, transparent 25%);
+} */
+
+/* STYLE 11 */
+.style-11 {
+    border: var(--border-width) solid var(--border-color);
+    outline: calc(var(--border-width)*4) solid var(--border-color);
+    outline-offset: -8px;
+}
+
+/* 
+.style-11:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    outline-color: var(--color-accent);
+    border-color: var(--color-accent);
+} */
+
+/* STYLE 12 */
+.style-12 {
+    border: var(--border-width) solid var(--border-color);
+}
+
+.style-12::before,
+.style-12::after {
+    content: '';
+    position: absolute;
+    left: calc(var(--border-width)*10);
+    right: calc(var(--border-width)*10);
+    border-top: var(--border-width) solid var(--border-color);
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.style-12::before {
+    top: calc(var(--border-width)*-6);
+    bottom: calc(var(--border-width)*-6);
+    margin: 0 calc(var(--border-width)*10);
+}
+
+.style-12::after {
+    top: calc(var(--border-width)*-12);
+    bottom: calc(var(--border-width)*-12);
+    margin: 0 20px;
+}
+
+/* .style-12:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-12:hover::before,
+.style-12:hover::after {
+    border-color: var(--color-accent);
+}  */
+
+/* STYLE 13 */
+.style-13 {
+    border: var(--border-width) solid var(--border-color);
+    outline: var(--border-width) solid var(--border-color);
+    outline-offset: calc(var(--border-width)*4);
+}
+
+.style-13::before,
+.style-13::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: calc(var(--border-width)*10) solid transparent;
+    border-right: calc(var(--border-width)*10) solid transparent;
+}
+
+.style-13::before {
+    top: calc(var(--border-width)*-12);
+    border-bottom: calc(var(--border-width)*10) solid var(--border-color);
+}
+
+.style-13::after {
+    bottom: calc(var(--border-width)*-12);
+    border-top: calc(var(--border-width)*10) solid var(--border-color);
+}
+
+/* 
+.style-13:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    outline-color: var(--color-accent);
+}
+
+.style-13:hover::before {
+    border-bottom-color: var(--color-accent);
+}
+
+.style-13:hover::after {
+    border-top-color: var(--color-accent);
+} */
+
+/* STYLE 14 */
+.style-14 {
+    clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+    background: repeating-linear-gradient(0deg, var(--border-color), var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2), transparent calc(var(--border-width)*4));
+    padding: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-14 span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--color-accent);
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(14% 0%, 86% 0%, 98% 50%, 86% 100%, 14% 100%, 2% 50%);
+    transition: background 0.2s;
+    font-family: 'Arial Black', 'Impact', 'Franklin Gothic Heavy', sans-serif;
+    font-size: 1calc(var(--border-width)*3);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: calc(var(--border-width)*3);
+}
+
+/* 
+.style-14:hover {
+    background: repeating-linear-gradient(0deg, var(--color-accent), var(--color-accent) calc(var(--border-width)*2), #333 calc(var(--border-width)*2), #333 calc(var(--border-width)*4));
+}
+
+.style-14:hover span {
+    background: var(--border-color);
+    color: var(--color-accent);
+} */
+
+/* STYLE 15 */
+.style-15 {
+    border: var(--border-width) solid var(--border-color);
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+}
+
+.style-15::before {
+    content: '';
+    position: absolute;
+    inset: calc(var(--border-width)*4);
+    border: var(--border-width) solid var(--border-color);
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background: transparent;
+}
+
+/* 
+.style-15:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-15:hover::before {
+    border-color: var(--color-accent);
+}
+
+/* STYLE 16 */
+.style-16 {
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 0;
+    clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0 80%, 0 20%);
+}
+
+.style-16::before {
+    content: '';
+    position: absolute;
+    inset: calc(var(--border-width)*6);
+    border: var(--border-width) solid var(--border-color);
+}
+
+.style-16:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-16:hover::before {
+    border-color: var(--color-accent);
+}
+
+*/
+
+/* STYLE 17 */
+.style-17 {
+    border: var(--border-width) solid var(--border-color);
+}
+
+.style-17::before {
+    content: '';
+    position: absolute;
+    top: -1calc(var(--border-width)*2);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: calc(var(--border-width)*10);
+    background: repeating-linear-gradient(90deg, var(--border-color), var(--border-color) calc(var(--border-width)*4), transparent calc(var(--border-width)*4), transparent  calc(var(--border-width)*8));
+}
+
+.style-17::after {
+    content: '';
+    position: absolute;
+    bottom: -1calc(var(--border-width)*2);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: calc(var(--border-width)*10);
+    background: repeating-linear-gradient(90deg, var(--border-color), var(--border-color) calc(var(--border-width)*4), transparent calc(var(--border-width)*4), transparent  calc(var(--border-width)*8));
+}
+
+/* 
+.style-17:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-17:hover::before,
+.style-17:hover::after {
+    background: repeating-linear-gradient(90deg, var(--color-accent), var(--color-accent) calc(var(--border-width)*4), #aaa calc(var(--border-width)*4), #aaa  calc(var(--border-width)*8));
+} */
+
+/* STYLE 18 */
+.style-18 {
+    border-top: var(--border-width) solid var(--border-color);
+    border-bottom: var(--border-width) solid var(--border-color);
+    border-radius: 20px / calc(var(--border-width)*10);
+}
+
+.style-18::before,
+.style-18::after {
+    content: '';
+    position: absolute;
+    top: calc(var(--border-width)*10);
+    bottom: calc(var(--border-width)*10);
+    width: 1calc(var(--border-width)*2);
+}
+
+.style-18::before {
+    left: -calc(var(--border-width)*4);
+    border-radius: 50% 0 0 50%;
+    background: repeating-linear-gradient(0deg, var(--border-color), var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2), transparent calc(var(--border-width)*4));
+}
+
+.style-18::after {
+    right: -calc(var(--border-width)*4);
+    border-radius: 0 50% 50% 0;
+    background: repeating-linear-gradient(0deg, var(--border-color), var(--border-color) calc(var(--border-width)*2), transparent calc(var(--border-width)*2), transparent calc(var(--border-width)*4));
+}
+
+/* 
+.style-18:hover {
+    background-color: var(--border-color);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.style-18:hover::before,
+.style-18:hover::after {
+    background: repeating-linear-gradient(0deg, var(--color-accent), var(--color-accent) calc(var(--border-width)*2), #aaa calc(var(--border-width)*2), #aaa calc(var(--border-width)*4));
+} */
+
+@media (max-width: 768px) {
+    .btn-deco {
+        padding: 1calc(var(--border-width)*2) 1calc(var(--border-width)*6);
+        font-size: 11px;
+        letter-spacing: calc(var(--border-width)*2);
+    }
+
+    /* .style-14 span {
+        font-size: 11px;
+        letter-spacing: calc(var(--border-width)*2);
+    } */
+}
+
+/* 
+.btn-deco:active {
+    transform: scale(0.96);
+    transition: transform 0.08s;
+}
+
+.btn-deco:focus-visible {
+    outline: var(--border-width) solid var(--color-accent);
+    outline-offset: calc(var(--border-width)*4);
+    border-radius: 0px;
+} */

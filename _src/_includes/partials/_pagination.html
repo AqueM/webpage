@@ -1,8 +1,29 @@
 {% if pagination.pages.length > 1 %}
-<div class="design__box design__box--small pagination">
-    {% theme__border-square -%}
-    <p class="pagination__text">Page {{pagination.pageNumber | plus: 1}} out of {{ pagination.pages.length}}</p><span>{% if pagination.href.previous %}<a href=" {{ pagination.href.previous }}" class="pagination__link pagination__link--prev" rel="prev">Previous</a>{% endif %} ✥ {% if pagination.href.next %}<a href=" {{ pagination.href.next }}" class="pagination__link pagination__link--next" rel="next">Next</a>{% endif %}</span>
-{%- endtheme__border-square -%}
+<div class="design__box theme__art-deco-container corners-deco-container pagination">
+<div class="theme__art-deco__content">
+    <p class="pagination__text">Page {{pagination.pageNumber | plus: 1}} out of {{ pagination.pages.length}}</p>
+    <p class="pagination__text">{%
+    if pagination.href.previous %}<a href=" {{ pagination.href.previous }}"
+        class="pagination__link pagination__link--prev" rel="prev">Previous</a>{% endif %} ✥ {% if
+    pagination.href.next %}<a href=" {{ pagination.href.next }}" class="pagination__link pagination__link--next"
+        rel="next">Next</a>{% endif %}</p>
+    </div>
+<div class="square-left-top"></div>
+<div class="square-left-bottom"></div>
+<div class="square-right-top"></div>
+<div class="square-right-bottom"></div>
+<div class="vertical-edge-left"></div>
+<div class="vertical-edge-right"></div>
+<div class="horizontal-edge-left"></div>
+<div class="horizontal-edge-right"></div>
+<div class="left-outer"></div>
+<div class="right-outer"></div>
+<div class="top-outer"></div>
+<div class="bottom-outer"></div>
+<div class="left-inner"></div>
+<div class="right-inner"></div>
+<div class="top-inner"></div>
+<div class="bottom-inner"></div>
 </div>
 
 {% endif %}

@@ -11,7 +11,7 @@ const systemPreferences = { 'darkmode': '(prefers-color-scheme: dark)', 'contras
 const defaultOn = ['motion', 'complexity', 'special-fonts'];
 
 const darkModeIcons = [...document.getElementsByClassName("darkmode-icon")];
-const elementsToHide = [...document.getElementsByClassName("theme__border-square__decor"), ...document.getElementsByClassName("theme__border-oval"), ...document.getElementsByClassName("icon"), ...document.getElementsByClassName("layout__image")];
+const elementsToHide = [...document.getElementsByClassName("theme__border-square__decor"), ...document.getElementsByClassName("icon"), ...document.getElementsByClassName("layout__image")];
 
 function saveSettingPreference(cookieName) {
     localStorage.setItem(cookieName, cookies[cookieName][0].querySelector('input').checked);

@@ -22,21 +22,19 @@ Check out other pocket dumps at [r/EDC](https://www.reddit.com/r/EDC/){rel=exter
 {%- assign date = page.date | date: "%m / %Y" -%}
 {%- assign subtitle = "Last updated: <strong>" | append: date | append:
     "</strong>"-%}
+  <section>
 {% heading "h2", "Current EDC", subtitle %}
-<section>
+
 {% flex-columns -%}
 {%- flex-item %}
-
-### Containers
+{% subheading "h3", "Containers" %}
 
 {% gallery %}{% for item in tools.edc.images.containers %}{% photoMine item %}{% endfor %}{% endgallery %}
 {%- endflex-item -%}
 
 {%- flex-break-newrow -%}
-
+{% subheading "h3", "Hardware" %}
 {%- flex-item %}
-
-### Hardware
 
 DAP, headphones, phone with a [Tech-Protect C6S Rope Wrist Strap](https://tech-protect.eu/pl/products/tech-protect-c6s-rope-crossbody-cargo-khaki-165357.html?query_id=3){target=_blank}{rel=external} lanyard (can be swapped between 'bracelet' length or over the shoulder length). To see details, go to [Hardware](/tools/hardware)
 
@@ -48,9 +46,8 @@ Powerbank with a short USB to USB-C cable (randomly chosen, this is the one thin
 {%- endflex-aside -%}
 
 {%- flex-break-newrow -%}
-
+{% subheading "h3", "Wallet" %}
 {%- flex-item %}
-### Wallet
 
 Debit card, IDs and loyalty cards, of course, but also note with my social number, note with my phone number.
 
@@ -63,9 +60,8 @@ I do not carry any physical money in this wallet, curiously. When I need cash on
 {%- endflex-aside -%}
 
 {%- flex-break-newrow -%}
-
+{% subheading "h3", "Misc" %}
 {%- flex-item %}
-### Misc
 
 <ul>
 {% for item in tools.edc.misc-list %}<li>{{item | markdown }}</li>{% endfor %}
@@ -77,10 +73,8 @@ I do not carry any physical money in this wallet, curiously. When I need cash on
 {%- endflex-aside -%}
 
 {%- flex-break-newrow -%}
-
+{% subheading "h3", "Decor" %}
 {%- flex-item %}
-
-### Decor
 
 <ul>
 {% for item in tools.edc.decor-list %}<li>{{item | markdown }}</li>{% endfor %}

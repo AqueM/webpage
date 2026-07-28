@@ -35,7 +35,7 @@
             {
                 "name": "Mubanga",
                 "url": "https://codepen.io/mubangadv/pen/MYgEPez",
-                "comment": "Art Deco Card CSS code"
+                "comment": "art deco borders (sections and buttons)"
             },
             {
                 "name": "Álvaro",
@@ -50,7 +50,7 @@
             {
                 "name": "CSSTricks",
                 "url": "https://css-tricks.com/using-styling-the-details-element/",
-                "comment": "'details' tag styling"
+                "comment": "'details' tag styling guide"
             },
             {
                 "name": "Photoswipe",
@@ -61,6 +61,16 @@
                 "name": "Dynamic caption plugin for PhotoSwipe",
                 "url": "https://github.com/dimsemenov/photoswipe-dynamic-caption-plugin",
                 "comment": "styling the dynamic caption in the gallery modal"
+            },
+            {
+                "name": "thewildmage",
+                "url": "https://codepen.io/thewildmage/pen/ayewQw",
+                "comment": "art deco borders (page titles)"
+            },
+            {
+                "name": "Toc",
+                "url": "https://codepen.io/ol-ivier/pen/azBqZgG",
+                "comment": "art deco borders (smaller titles)"
             }
         ] 
     },

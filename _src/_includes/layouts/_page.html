@@ -6,7 +6,10 @@ layout: layouts/_main
     {% include "content/_{{disclaimer}}-disclaimer.html" %}
 {% endfor %}
 </section>
-{% heading "h1", pageTitle, subtitle %}
+<div class="theme__heading theme__block--accent layout__flex-block__stack btn-deco btn-deco style-13">
+    <h1 class="theme__heading__title">{{pageTitle}}</h1>
+    {% if subtitle %}<span class="theme__heading__subtitle">{{subtitle}}</span>{% endif %}
+</div>
 <article>
     {{content}}
 </article>

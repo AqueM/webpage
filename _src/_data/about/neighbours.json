@@ -136,5 +136,17 @@
   {
     "url": "https://aharon.varady.net/omphalos/hulloa",
     "alt": "Aharon's Omphalos"
+  },
+  {
+    "img":"/assets/images/neighbours/vivarism_02.png",
+    "url": "https://vivarism.net/",
+    "alt": "Vivarism",
+    "isAnimated": false
+  },
+  {
+    "img":"/assets/images/neighbours/frills.png",
+    "url": "https://frills.dev/",
+    "alt": "Frills",
+    "isAnimated": false
   }
 ]

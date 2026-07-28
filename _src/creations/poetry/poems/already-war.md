@@ -3,9 +3,6 @@ linkName: “There’s not going to be any war”
 date: 2017-02-07
 lang: EN
 ---
-originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/157482869097' %}
-{% divider-center %}
-
 The trembling quakes through
 my soul with the rage
 of a thousand suns
@@ -31,3 +28,7 @@ about being like my grandmother on her dying bed
 of violence, soldiers and fear
 about the fact that
 This Is Already War.
+{% divider-center %}
+<div class="design__floated--right">
+originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/157482869097' %}
+</div>

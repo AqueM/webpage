@@ -1,5 +1,9 @@
 [
     {
+        "date": "28/07/2026",
+        "log": "changed header styling, added new neighbours, rearranged Outlinks"
+    },
+    {
         "date": "27/07/2026",
         "log": "added Eleventy notes/tutorials and new link styling :)"
     },

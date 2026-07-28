@@ -57,7 +57,7 @@
 	border-radius: 50%;
 	outline: var(--color-secondrary) thick double;
 	outline-offset: -7px;
-	border: var(--border-width) solid var(--color-dark);
+	border: var(--border-width) solid var(--color-darkest);
 }
 
 .image__blinkie {

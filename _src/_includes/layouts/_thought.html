@@ -4,6 +4,7 @@ category: longform
 tags:
 - thoughts
 ---
+<section>
 <div class="design__meta theme__border-square layout__flex-block__row">
       <time>{{page.date | date: "%d/%m/%Y"}}</time>
     {% flex-stack-centered %}
@@ -14,9 +15,11 @@ tags:
         {% endfor %}</div>
     {% endflex-stack-centered %}
 
-  <div class="design__link--round">
+<div class="theme__border-oval desing__decor-link design__center">
+			{% include "partials/_decor-sides.html" %}
     <a href="/longform/thoughts/page-1" class="pagination__link">back to Thoughts list</a>
   </div>
 </div>
 {% divider-center %}
+</section>
 {{content}}

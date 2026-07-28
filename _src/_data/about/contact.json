@@ -1,0 +1,12 @@
+[
+    {
+        "name": "discord",
+        "url": "https://discordapp.com/users/266450416005283851",
+        "icon": "/assets/images/layout/font-awesome/discord-brands-solid-full.svg"
+    },
+    {
+        "name": "e-mail",
+        "url": "mailto:{{site.author.email}}?body=Remember to edit the e-mail address if you're not an AI!",
+        "icon": "/assets/images/layout/font-awesome/envelope-solid-full.svg"
+    }
+]

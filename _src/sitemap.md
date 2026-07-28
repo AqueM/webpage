@@ -2,8 +2,6 @@
 layout: layouts/_page
 linkName: "sitemap"
 ---
-<section>
-
 **Last updated:** <time>{{page.date | date: "%m/%Y"}}</time>
 
 {% assign poems = collections.poems | sort | reverse %}
@@ -66,5 +64,3 @@ linkName: "sitemap"
       - <a href="{{item.url}}">{{item.data.pageTitle}}</a> {% endfor %}
 - <a href="/404.html">404.html</a>
 - <a href="/sitemap/">sitemap</a> (you're here!)
-
-</section>

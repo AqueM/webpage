@@ -3,9 +3,6 @@ linkName: I can’t afford a breakdown
 date: 2018-04-12
 lang: EN
 ---
-originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/172859480877' %}
-{% divider-center %}
-
 hold it together just
 a little more
 hold it together, with glue if you must
@@ -25,3 +22,7 @@ hold it together, with strings if so be it
 though you fall apart bit by bit
 hold it together, alone, on your own
 otherwise, you’re dragging everybody down
+{% divider-center %}
+<div class="design__floated--right">
+originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/172859480877' %}
+</div>

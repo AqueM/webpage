@@ -47,7 +47,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: var(--color-dark);
+    background: var(--color-darkest);
 }
 
 .sitenav--mobile__hamburger__line1 {

@@ -7,7 +7,10 @@ module.exports = async function (eleventyConfig) {
         if (neighbour.img) {
             return `<a href="${neighbour.url}" target="_blank" rel="external"><img class="${className}" src="${neighbour.img}" alt="${neighbour.alt}"></a>`
         }
-        return `<div class="design__link--round"><a href="${neighbour.url}" target="_blank" rel="external">${neighbour.alt}</a></div>`;
+        return `<div class="theme__border-oval desing__decor-link design__center">
+			<span class="theme__border-oval__decor theme__border-oval__decor--left"></span>
+<span class="theme__border-oval__decor theme__border-oval__decor--right"></span>
+            <a href="${neighbour.url}" target="_blank" rel="external">${neighbour.alt}</a></div>`;
     });
 
     eleventyConfig.addShortcode("image", function (image) {

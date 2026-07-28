@@ -28,7 +28,6 @@
 .header__page-title__text {
 	font-size: calc(1rem + 0.5vh);
 	font-family: var(--font-title);
-	color: var(--font-color);
 
 	@media only screen and (min-width: 768px) {
 		white-space: nowrap;
@@ -75,12 +74,14 @@
 
 .access__accordion {
 	border-radius: var(--border-radius-single);
+	border: none;
 }
 
 .access__accordion__summary {
 	padding: 0.5rem;
 	font-size: 1rem;
 	cursor: pointer;
+	width: 100%;
 }
 
 .access-card__container {

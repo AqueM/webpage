@@ -3,11 +3,14 @@ layout: layouts/_page
 category: creations
 tags: poems
 ---
-<div class="design__box">
-    {{content}}
-</div>
-{% divider-center %}
+<section>
 <div class="design__meta theme__border-square">
       <time>{{page.date | date: "%d/%m/%Y"}}</time>
-  <p class="design__link--round"><a href="/creations/poetry" class="pagination__link">back to Poems list</a></p>
+  <div class="theme__border-oval desing__decor-link design__center">
+			{% include "partials/_decor-sides.html" %}<a href="/creations/poetry" class="pagination__link">back to Poems</a></div>
+</div>
+{% divider-center %}
+</section>
+<div class="design__box">
+    {{content}}
 </div>

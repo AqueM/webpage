@@ -18,8 +18,7 @@ eleventyComputed:
 {% endfor %}
 </ul>
 
-<div class="design__box--small">
-  <div class="design__link--round">
+<div class="theme__border-oval desing__decor-link design__center">
+			{% include "partials/_decor-sides.html" %}
     <a href="/longform/thoughts/page-1" class="pagination__link">back to Thoughts list</a>
-  </div>
 </div>

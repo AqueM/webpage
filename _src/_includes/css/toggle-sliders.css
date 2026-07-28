@@ -56,7 +56,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   +.switch__slider--yellow {
-    background-color: var(--base-color-contrast);
+    background-color: var(--base-color-yellow);
 
     &:before {
       background-color: var(--base-color-darkest);
@@ -64,10 +64,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   +.switch__slider--dark {
-    background-color: var(--base-color-dark);
+    background-color: var(--base-color-darkest);
 
     &:before {
-      background-color: var(--base-color-darkest);
+      background-color: var(--base-color-lightest);
     }
   }
 }

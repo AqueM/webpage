@@ -33,7 +33,7 @@
 	/* SETUP */
 	/* COLORS */
 	--color-light: light-dark(var(--base-color-light), var(--base-color-darkest));
-	--color-dark: light-dark(var(--base-color-darkest), var(--base-color-lightest));
+	--color-darkest: light-dark(var(--base-color-darkest), var(--base-color-lightest));
 	--color-primary: light-dark(var(--base-color-primary), var(--base-color-darkest));
 	--color-secondrary: light-dark(var(--base-color-secondrary), var(--base-color-middle));
 	--color-accent: light-dark(var(--base-color-accent), var(--base-color-middle));
@@ -49,14 +49,14 @@
 	--gradient-water: linear-gradient(to top, var(--base-color-blue), transparent 70%, var(--color-blue-transparent));
 	--gradient-sun: linear-gradient(320deg, transparent 90%, var(--base-color-yellow) 100%);
 	/* VARIABLES */
-	--font-color: light-dark(var(--base-color-dark), var(--base-color-lightest));
-	--border-color: light-dark(var(--base-color-dark), var(--base-color-lightest));
+	--color-font: light-dark(var(--base-color-dark), var(--base-color-lightest));
+	--color-borders: light-dark(var(--base-color-dark), var(--base-color-lightest));
 
 	/* DEFAULTS */
-	color: var(--font-color);
+	color: var(--color-font);
 	font-size: 100%;
-	/* 16px par défaut */
-	--deco-border-color: var(--border-color);
+	/* 16px default */
+	--border-color: transparent;
 	font-family: var(--accessible-font);
 	--font-title: var(--accessible-font);
 	--font-subtitle: var(--accessible-font);

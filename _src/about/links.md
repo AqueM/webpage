@@ -12,20 +12,9 @@ Here are some places you can find me, from most to least likely that I'll be res
 
 <div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
 {% for platform in about.other_platforms %}
-<div class="design__link--round">
+<div class="theme__border-oval desing__decor-link design__center">
+			{% include "partials/_decor-sides.html" %}
 	<a href="{{platform.url}}" target="_blank"><span class="icon icon--left" style="--layout-img: url('{{platform.icon}}');"></span>{{platform.name}}</a>
-</div>
-{%- endfor -%}
-</div>
-</section>
-<section>
-
-I also have these sites! They're already linked in the sidebar menu, but here they are again.
-
-<div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
-{%- for link in about.other_sites %}
-<div class="design__link--round">
-	<a href="{{link.url}}" target="_blank">{{link.name}} [{{link.hosting}}]</a>
 </div>
 {%- endfor -%}
 </div>
@@ -34,12 +23,28 @@ I also have these sites! They're already linked in the sidebar menu, but here th
 
 Want to contact me directly?
 
-<div class="design__box"><div class="theme__border-oval nav__contact-link design__center">
+<div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
+{% for contact in about.contact %}
+<div class="theme__border-oval desing__decor-link design__center">
 			{% include "partials/_decor-sides.html" %}
-			<a href="mailto:{{site.author.email}}?body=Remember to edit the e-mail address if you're not an AI!"
-				target="_blank">Email me</a>
-</div></div>
+			<a href="{{contact.url}}" target="_blank"><span class="icon icon--left" style="--layout-img: url('{{contact.icon}}');"></span>{{contact.name}}</a>
+</div>
+{%- endfor -%}
+</div>
+</section>
+<section>
 
+I also have these sites! They're already linked in the sidebar menu, but here they are again.
+
+
+<div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
+{%- for link in about.other_sites %}
+<div class="theme__border-oval desing__decor-link design__center">
+			{% include "partials/_decor-sides.html" %}
+	<a href="{{link.url}}" target="_blank">{{link.name}} [{{link.hosting}}]</a>
+</div>
+{%- endfor -%}
+</div>
 </section>
 <section>
 {% include "content/_link-back.html" %}

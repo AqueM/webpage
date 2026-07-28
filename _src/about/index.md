@@ -8,7 +8,7 @@ eleventyComputed:
 ---
 {%- flex-columns -%}
 
-{%- flex-item -%}<section>
+<section class="layout__flex-item">
 <a href="https://picrew.me/en/image_maker/1322863" rel="external" class="design__floated--left noformat"><img src="/assets/images/picrew.png" alt="cartoony portrait of a person with light skin and short brown hair, against the nonbinary flag background" title="click to go to the picrew used to make this!" class="image--round image--small"></a>
 
 My main focus are various arts and crafts, and I'm always ready to help where I can. I'm a strong believer in universal human rights, including queer rights and intersectional feminism, evidence-based science and medicine, bodily autonomy, the separation of church and state, and generally in the concept that we should be good and understanding to each other.
@@ -17,9 +17,9 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 <img src="{{image}}">
 {%- endfor -%}
 </div>
-</section>{%- endflex-item -%}
+</section>
 
-{%- flex-aside %}<section>
+<section class="layout__flex-item--aside">
 
 - **Languages:** Polish, English, German
 - **Location:** Silesia, Poland, EU
@@ -27,11 +27,11 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - **Pronouns:** they/them in English, any in Polish
 - **Identity:** triple-A human ([what?](/longform/thoughts/2026/my-queerness))
 
-</section>{%- endflex-aside %}
+</section>
 
 {%- flex-break-newrow -%}
 
-{% flex-item %}<section>
+<section class="layout__flex-item">
 {% heading "h2", "Interests", "Talking about any of these will almost always grab my attention" %}
 
 - **stories:** cartoons, fantasy, sci-fi, comics, anime/manga, worldbuilding
@@ -44,8 +44,8 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - **visual arts:** pencil drawing, digital drawing, anime style
 - character design
 - indie VTubers
-</section>{%- endflex-item -%}
-{% flex-item %}<section>
+</section>
+<section class="layout__flex-item">
 {% heading "h2", "Likes", "always appreciated as gifts or offerings" %}
 
 - cats and frogs
@@ -57,7 +57,7 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 - the color blue
 - **the sea**, and swimming, and just being in water
 - window-shopping and browsing items (except clothing)
-- art nouveau style</section>{% endflex-item %}
+- art nouveau style</section>
  
 <div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
 {%- for image in collections.fandomImages -%}

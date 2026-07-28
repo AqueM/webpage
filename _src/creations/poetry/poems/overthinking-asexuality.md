@@ -3,9 +3,6 @@ linkName: overthinking asexuality
 date: 2017-03-01
 lang: EN
 ---
-originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/157857054827' %}
-{% divider-center %}
-
 Nobody thought twice about it
 even me.
 Just lonely, just solitary, just nerd.
@@ -46,3 +43,6 @@ not thinking twice about it
 and thinking ten thousand times.
 Nobody has an answer
 even me.
+{% divider-center %}
+<div class="design__floated--right">
+originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/157857054827' %}</div>

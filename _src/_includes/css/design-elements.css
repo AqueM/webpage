@@ -28,6 +28,11 @@
 	}
 }
 
+.design__list-no-decor {
+	list-style-type: none;
+
+}
+
 .design__disclaimer {
 	border-radius: var(--border-radius-single);
 	border: calc(var(--border-width)*2) dashed var(--color-secondrary);
@@ -64,25 +69,24 @@
 	margin: 0 auto;
 }
 
+.design__success {
+	background-color: var(--base-color-secondrary);
+	padding: 0.5rem;
+	border-radius: var(--border-radius-single);
+	margin: 0 auto;
+}
+
 .design__dislaimer--js {
 	border-width: 0.25rem;
 	border-color: var(--base-color-red);
 }
 
-.design__link--round {
-	border: var(--border-width) dashed var(--color-secondrary);
-	border-radius: var(--border-radius-single);
-	padding: 0.2rem;
+
+.desing__decor-link {
 	background-color: var(--color-accent-transparent);
-	box-shadow: 0 0 0 calc(var(--border-width)*5) var(--color-accent-transparent);
-	margin: calc(var(--border-width)*20);
 
-	& a {
-		border: unset;
-
-		&:hover {
-			text-transform: uppercase;
-		}
+	&:hover {
+		text-transform: uppercase;
 	}
 }
 
@@ -116,10 +120,17 @@
 	}
 }
 
-.design--center-align {
+.design--center-align-vertical {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	gap: 1%;
+}
+
+.design--center-align {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 1%;
 }
 
@@ -246,10 +257,10 @@
 	content: "yaml";
 }
 
-.language-javascript::before{
-	content:"javascript";
+.language-javascript::before {
+	content: "javascript";
 }
 
-.language-json::before{
-	content:"json";
+.language-json::before {
+	content: "json";
 }

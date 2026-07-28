@@ -4,8 +4,7 @@ linkName: Webmastery
 subtitle: tutorials, links, code snippets
 ---
 {%- flex-columns -%}
-{%- flex-item -%}
-<section>
+<section class="layout__flex-item">
 {% heading "h2", "Notes: Eleventy" %}
 
 There's a lot of good Eleventy tutorials out there. But they're also usually complicated and expect you to have much more coding knowledge than I would expect from a typical fledgling indie webmaster. They surely proved difficult with my limited expertise with javascript! So I decided to take notes as I go about making this website, and share them.
@@ -16,9 +15,7 @@ There's a lot of good Eleventy tutorials out there. But they're also usually com
 {% endfor %}
 </ul>
 </section>
-{%- endflex-item -%}
-<!-- {% flex-item %}
-<section>
+<!-- <section class="layout__flex-item">
 {% heading "h2", "Notes: JavaScript" %}
 
 I am by no means an expert in JS, but I did learn a lot while trying to solve my problems during development.
@@ -28,11 +25,9 @@ I am by no means an expert in JS, but I did learn a lot while trying to solve my
 <li><a href="{{post.url}}">{{post.data.linkName}}</a> (<time>{{post.date | date: "%d/%m/%Y"}}</time>)</li>
 {% endfor %}
 </ul>
-</section>
-{%- endflex-item %} -->
-{%- endflex-columns -%}
-
-<section>
+</section> -->
+{%- flex-break-newrow -%}
+<section class="layout__flex-item">
 {% heading "h2", "Resources", "useful links" %} 
 
 Need help coding? Looking for assets? Here's where I get mine.
@@ -43,3 +38,4 @@ Need help coding? Looking for assets? Here's where I get mine.
 {% endfor %}
 </ul>
 </section>
+{%- endflex-columns -%}

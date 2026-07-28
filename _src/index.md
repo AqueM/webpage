@@ -20,8 +20,6 @@ If you'd like to learn more about me, go snoop through the **About** section. If
 
 </section>
 
-<section>{% divider-center %}{% include "content/_access-disclaimer.html" %}{% divider-center %}</section>
-
 <section>
 {% heading "h2", "current affairs", "I am..." %}
 {%- flex-columns %}
@@ -37,7 +35,7 @@ If you'd like to learn more about me, go snoop through the **About** section. If
 {% divider-center %}
 
 {%- flex-item -%}
-{% heading "h2", "unsorted", "internet things I recently found interesting" %}
+{% subheading "h3", "unsorted", "internet things I recently found interesting" %}
 <ul class="design__list--horizontal design__list--horizontal--decor">
 {%- for link in home.unsorted -%}
     <li><a href="{{link.url}}" target="_blank">{{link.name}}</a> by {{link.author}} [{{link.type}}]</li>

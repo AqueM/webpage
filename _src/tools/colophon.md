@@ -20,9 +20,9 @@ This website was created out of the desire to archive my online presence in one 
 
 It's also sort of a arts&crafts project for me. I just enjoy tinkering with code.
 </section>
-<section>
+
 {% flex-columns -%}
-{%- flex-item %}
+<section class="layout__flex-item">
 {% heading "h2", "Changelog", "last 5 updates" %}
 
 <ul class="logs">
@@ -35,9 +35,9 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
 
 [see entire changelog](/tools/changelog)
 
-{%- endflex-item -%}
+</section>
 
-{%- flex-item -%}
+<section class="layout__flex-item">
 {% heading "h2", "To-Do", "plans for the future" %}
 <ul class="logs">
     {%- for element in tools.todo -%}
@@ -46,9 +46,8 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
     </li>
     {%- endfor -%}
 </ul>
-{%- endflex-item -%}
-{%- endflex-columns -%}
 </section>
+{%- endflex-columns -%}
 
 <section>
 {% heading "h2", "Standards", "that I'm working on meeting" %}
@@ -75,13 +74,30 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
 {% flex-columns -%}
 {% include "content/_access-disclaimer.html" %}
 <div class="design__disclaimer layout__flex-item">
-<h2 class="design__disclaimer__title">Content warnings</h2>
+<h2 class="design__disclaimer__title">Rating</h2>
 
-This site is safe for work and for minors. However, since this is also an archive of my art, some pages may contain links to sensitive material, including of sexual nature. That content is clearly marked.
+This site is safe for work and for minors. However, since this is also an archive of my art, some pages **may** contain links to sensitive material, including of **sexual nature**. That content is clearly marked.
 
-I’m what people call a <dfn>pro-shipper</dfn>, that is, I’m against censorship of dark fiction and ‘problematic’ art. If you have a problem with that or any other opinion I may express here, please keep that to yourself. If you can do that, you’re free to stay — otherwise please leave the site. 
+<p class="design--center-align-vertical"><a href="https://www.mabsland.com/Adoption.html" target="_blank" rel="external"><img
+					src="/assets/images/layout/Censor_PGc.gif"
+					title="this site self-rated as PG: contains little or mild offensive materials"
+					alt="blue-haired anthropomorphic panda portrait, on blue background, next to the words 'Web PG'"></a></p>
+{% divider-center %}
+<div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
+<span class="design__warning">may contain sexual content</span>
+<span class="design__warning">may contain swearing</span>
+<span class="design__success">no gore</span>
+</div>
+</div>
+<div class="design__disclaimer layout__flex-item">
+<h2 class="design__disclaimer__title">Content warning</h2>
+
+I’m what people call a <dfn title="a person pro (for) freedom of shipping. Not 'problematic shipper'">pro-shipper</dfn>, that is, I’m against censorship of dark fiction and ‘problematic’ art. If you have a problem with that or any other opinion I may express here, please keep that to yourself. If you can do that, you’re free to stay — otherwise please leave the site. 
 
 If you interact with me and my art on your own accord and you later find out about this opinion of mine, and you don’t like it — that’s a *you* problem.
+
+**Learn more:** <a hre="https://fanlore.org/wiki/Pro-shipper" target="_blank" rel="external">"Pro-shipper" at Fanlore wiki</a>, <a href="https://en.wikipedia.org/wiki/Shipping_ethics_controversy_in_fanfiction" target="_blank" rel="external">"Shipping ethics controversy in fanfiction" at Wikipedia</a>
+
 </div>
 <div class="design__disclaimer layout__flex-item">
 <h2 class="design__disclaimer__title">Other</h2>
@@ -101,7 +117,7 @@ If you interact with me and my art on your own accord and you later find out abo
 
 {% flex-columns -%}
         {%- for category in tools.credits -%}{%- flex-item %}
-        {%- heading "h3", category.name -%}
+        {%- subheading "h3", category.name -%}
         <ul>
         {%- for item in category.items -%}
         <li><div {% if item.font-face %}style="font-family:{{item.font-face}};"{% endif %}>{% if item.url %}<a href="{{item.url}}" target="_blank" rel="external">{{item.name}}</a>{% else %}{{item.name}}{% endif %}{% if item.comment %} — {{item.comment}}{% endif %}</div></li>

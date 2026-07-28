@@ -15,10 +15,6 @@
 	}
 }
 
-.nav__contact-link {
-	background-color: var(--color-accent);
-}
-
 .sitenav {
 	display: none;
 	height: 100%;
@@ -63,6 +59,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0 0.5rem 0 0;
+	min-width: 100%;
 
 	/* Hide original marker */
 	&::marker {
@@ -73,7 +70,7 @@
 
 .sitenav__plus-lines {
 	/* Custom marker dimensions */
-	/* border-top: 0.1rem solid var(--color-dark); */
+	/* border-top: 0.1rem solid var(--color-darkest); */
 	height: 1rem;
 	width: 1rem;
 	align-self: center;
@@ -83,7 +80,7 @@
 	&::after {
 		/* Custom marker dimensions */
 		content: "";
-		border-block-start: 0.1rem solid var(--color-dark);
+		border-block-start: 0.1rem solid var(--color-darkest);
 		height: 0;
 		width: 1rem;
 		position: absolute;
@@ -126,7 +123,7 @@
 .sitenav__menu-category__label {
 	border-style: unset;
 	border-width: unset;
-	/* to add space for the nav + */
+	cursor: pointer;
 }
 
 .sitenav__menu-list {
@@ -138,7 +135,6 @@
 }
 
 .sitenav__menu-link {
-	border: unset;
 	box-shadow: unset;
 	display: inline-block;
 	font-size: 1rem;
@@ -151,6 +147,12 @@
 	font-weight: bold;
 	text-decoration: none;
 	color: var(--font-color);
+	border-top: calc(var(--border-width)/100) solid var(--border-color);
+	border-bottom: calc(var(--border-width)/100) solid var(--border-color);
+
+	@media only screen and (min-width: 768px) {
+		border: unset;
+	}
 }
 
 .sitenav__menu-link:not([target="_blank"]) {
@@ -165,4 +167,6 @@
 	letter-spacing: 0.1rem;
 	font-family: var(--font-title);
 	font-weight: bolder;
+	border-top: calc(var(--border-width)/100) solid var(--border-color);
+	border-bottom: calc(var(--border-width)/100) solid var(--border-color);
 }
