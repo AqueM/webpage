@@ -4,26 +4,6 @@ tags: liquidJS
 disclaimers: liquidJS
 ---
 <section>
-{% heading "h2", "tag list" %}
-
-This is what lives at the top of every page of mine where I use tags for categorizin content — including this one!
-
-{% raw %}
-```liquidJS
-<div class="tags">
-    <span>tagged under:</span>
-    <div class="tagList">
-        {% for tag in tags %} 
-        <a href="../tags/{{tag}}/">{{tag}}</a>
-        {% endfor %}
-    </div>
-</div>
-```
-{% endraw %}
-
-There's a lot that one can be confused about when it comes to Eleventy's tags, so hopefully this snippet can help you. Take note of the `src` of the tag link — you'll have to adjust it for your folder structure! And, of course, you will need tag pages to link to.
-</section>
-<section>
 {% heading "h2", "tag pages" %}
 
 You will need to start by getting a collection of your tags. To get it, you need this in your *eleventy.config.js* file:
@@ -68,6 +48,26 @@ And then the page content can be something like this:
 </ol>
 ```
 {% endraw %}
+</section>
+<section>
+{% heading "h2", "tag list" %}
+
+This is what lives at the top of every page of mine where I use tags for categorizin content — including this one!
+
+{% raw %}
+```liquidJS
+<div class="tags">
+    <span>tagged under:</span>
+    <div class="tagList">
+        {% for tag in tags %} 
+        <a href="../tags/{{tag}}/">{{tag}}</a>
+        {% endfor %}
+    </div>
+</div>
+```
+{% endraw %}
+
+There's a lot that one can be confused about when it comes to Eleventy's tags, so hopefully this snippet can help you. Take note of the `src` of the tag link — you'll have to adjust it for your folder structure! And, of course, you will need tag pages to link to.
 </section>
 <section>
 {% heading "h2", "taglist with excluded tags" %}
