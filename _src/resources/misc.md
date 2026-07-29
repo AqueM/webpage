@@ -26,7 +26,7 @@ In case the Youtube playlist is somehow inaccessible, here's a list of links to 
 <details>
 <summary>Expand</summary>
 <ul>
-{% for video in misc.epic-playlist %}
+{% for video in resources.epic-playlist %}
 <li><a href="http://www.youtube.com/watch?v={{video.id}}" target="_blank">"{{video.title}}" by {{video.channel}}</a></li>
 {% endfor %}
 </ul>

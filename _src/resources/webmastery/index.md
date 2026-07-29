@@ -33,7 +33,7 @@ I am by no means an expert in JS, but I did learn a lot while trying to solve my
 Need help coding? Looking for assets? Here's where I get mine.
 
 <ul>
-{% for item in misc.web-links %}
+{% for item in resources.web-links %}
 <li><a href="{{item.url}}" target="_blank">{{item.name}}</a></li>
 {% endfor %}
 </ul>

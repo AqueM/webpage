@@ -30,7 +30,6 @@ function loadPreference(cookieName) {
 };
 
 function setTheme(isDark) {
-
     document.documentElement.removeAttribute('data-theme');
     darkModeIcons.forEach(element => {
         element.classList.toggle("theme--hide-toggled");

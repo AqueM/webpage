@@ -59,7 +59,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0 0.5rem 0 0;
-	min-width: 100%;
+	width: 100%;
 
 	/* Hide original marker */
 	&::marker {
@@ -124,6 +124,7 @@
 	border-style: unset;
 	border-width: unset;
 	cursor: pointer;
+	max-width: unset;
 }
 
 .sitenav__menu-list {
@@ -132,6 +133,7 @@
 	border-inline-start: 1rem;
 	padding-inline-start: 1rem;
 	margin: 0.2rem 0.1rem 0.2rem 0.1rem;
+	max-width: unset;
 }
 
 .sitenav__menu-link {
@@ -139,6 +141,7 @@
 	display: inline-block;
 	font-size: 1rem;
 	margin-bottom: 0.2rem;
+	padding: unset;
 	padding: 0.5rem;
 	padding-left: 1rem;
 	text-align: left;
