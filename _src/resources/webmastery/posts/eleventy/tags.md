@@ -67,7 +67,7 @@ This is what lives at the top of every page of mine where I use tags for categor
 ```
 {% endraw %}
 
-There's a lot that one can be confused about when it comes to Eleventy's tags, so hopefully this snippet can help you. Take note of the `src` of the tag link — you'll have to adjust it for your folder structure! And, of course, you will need tag pages to link to.
+There's a lot that one can be confused about when it comes to Eleventy's tags, so hopefully this snippet can help you. Take note of the `href` of the tag link — you'll have to adjust it for your folder structure! And, of course, you will need tag pages to link to.
 </section>
 <section>
 {% heading "h2", "taglist with excluded tags" %}
