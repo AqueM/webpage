@@ -1,8 +1,13 @@
 [
     {
+        "date": "02/08/2026",
+        "log": "new misc resource, added cookie disclaimer"
+    },
+    {
         "date": "29/07/2026",
         "log": "new tomb treasure :D"
-    },{
+    },
+    {
         "date": "28/07/2026",
         "log": "changed header styling, added new neighbours, rearranged Outlinks"
     },
