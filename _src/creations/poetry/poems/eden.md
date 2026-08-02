@@ -28,7 +28,7 @@ I że są ziarna, co plonu nie dadzą
 i zakopane są talenty
 Że za nimi dzieci Twe nie płaczą
 lecz o wojenne się  k ł ó c ą  fronty
-Że teraz miast miłosierdzia - słyszę m s z e
+Że teraz miast miłosierdzia — słyszę m s z e
 {% indent %}— Przykro mi, Ojcze! {% endindent %}
 
 

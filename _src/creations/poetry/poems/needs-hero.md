@@ -13,7 +13,7 @@ how to say sorry over and over again
 I need me some anger
 I need to yell, to scream, 
 break things and let it all out
-I need to allow myself to feel - no, I need to FEEL
+I need to allow myself to feel — no, I need to FEEL
 the rage of a thousand suns
 I need to get myself some aggression
 learn to fight

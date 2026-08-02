@@ -28,7 +28,7 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
 <ul class="logs">
     {%- for element in tools.changelog limit: 5 -%}
     <li>
-        <time><strong>{{element.date}}</strong></time> - {{element.log}}
+        <time><strong>{{element.date}}</strong></time> — {{element.log}}
     </li>
     {%- endfor -%}
 </ul>
@@ -42,7 +42,7 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
 <ul class="logs">
     {%- for element in tools.todo -%}
     <li>
-        {{element.name}}{% if element.comment %} - {{element.comment}}{%endif%}
+        {{element.name}}{% if element.comment %} — {{element.comment}}{%endif%}
     </li>
     {%- endfor -%}
 </ul>

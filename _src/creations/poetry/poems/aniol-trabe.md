@@ -4,7 +4,7 @@ date: 2007-01-01
 lang: PL
 ---
 Czuję w sercu, jak się zbliża 
-od lat już wiem - nadejdzie 
+od lat już wiem — nadejdzie 
 Nie uświadczę jej finału ja, me dzieci, wnuki 
 ale każdy zobaczy na pewno 
 Którzy czekali archaniołów z trąbami 

@@ -10,7 +10,7 @@ Boskim oddechem porwanych
 piór obłoków włosiem ozłoconym
 przysypane nieboskłonne Twe lice,
 piegowane na policzkach z chmur
-podniebnymi stworzeniami - ptakami;
+podniebnymi stworzeniam — ptakami;
 słonecznych Twych ust
 — blasku pełnych — puls
 wzniesiony ponad szczeciną brzóz

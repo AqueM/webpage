@@ -29,7 +29,7 @@ stworzył ziemię
 i czlowieka też. 
 
 Końce również do najłatwiejszych nie należą,
-a najmniej łatwym z nich - powszechna Omega. 
+a najmniej łatwym z nich — powszechna Omega. 
 Albo:
 w potrójne biada z plagami i Bestią, 
 potem Sąd Ostateczny i Nowe Jeruzalem 

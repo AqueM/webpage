@@ -7,8 +7,8 @@ Boisz się.
 Mnie też strach
 by obleciał
 na Twoim miejscu.
-Przed Tobą ogromna armia - 
-zastępy  Zniechęceń
+Przed Tobą ogromna armia — 
+zastępy Zniechęceń
 pułki Pokus
 odziały Obaw
 drużyny Drżeń
@@ -22,7 +22,7 @@ czy podołasz.
 
 Co ja?
 Ja już nie znam trwogi.
-Myślisz - że bez sojuszników? 
+Myślisz — że bez sojuszników? 
 Mylisz się!
 Nie, nie ja. 
 Ten blask, co ode mnie niby
@@ -63,7 +63,7 @@ a jednak stoję tutaj.
 Nie przykuję Cię do siebie, 
 idź, jeśli chcesz. 
 Jednak rogu nie uda Ci się wyrzucić
-\- a jeśli usłyszę jego czystą chęć skruchy,
+— a jeśli usłyszę jego czystą chęć skruchy,
 wyciągnę rękę i znów
 opowiem Ci o stronach konfliktu,
 który tylko przeczuwasz.

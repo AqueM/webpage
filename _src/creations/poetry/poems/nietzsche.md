@@ -21,7 +21,7 @@ poszukująca prawdy i oświecenia
 przeświadczona o wyższości
 argumentu nad siłą, 
 logiki nad prawem
-(mimo - a może dlatego — 
+(mimo — a może dlatego — 
 że znów przegrałam)
 
 Dopóki czuję w stopach krew

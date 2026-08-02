@@ -11,7 +11,7 @@ List of the programs and apps that I currently use and thus I can reccommend at 
 
 {% subheading "h3", "Misc" %}
 
-* Image editor: [Paint Tool Sai](https://painttool-sai.en.softonic.com/){target=_blank}{rel="external nofollow"} PAID - I bought a lifetime license for version 2 on sale.
+* Image editor: [Paint Tool Sai](https://painttool-sai.en.softonic.com/){target=_blank}{rel="external nofollow"} PAID — I bought a lifetime license for version 2 on sale.
 * Web browser: [Zen Browser](https://zen-browser.app/){target=_blank}{rel="external nofollow"}
 * Screen adjuster: [f.lux](https://justgetflux.com/){target=_blank}{rel="external nofollow"}
 {%- endflex-item -%}

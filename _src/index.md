@@ -27,7 +27,7 @@ If you'd like to learn more about me, go snoop through the **About** section. If
 {%- flex-item -%}
     <ul> <strong>...{{item.verb}}:</strong>
         {%- for thing in item.items -%}
-        <li>{{thing.name}}{% if thing.author %} by {{thing.author}}{%endif%}{% if thing.type %} ({{thing.type}}){%endif%}{% if thing.comment %} - {{thing.comment}}{%endif%}</li>        {%- endfor %}
+        <li>{{thing.name}}{% if thing.author %} by {{thing.author}}{%endif%}{% if thing.type %} ({{thing.type}}){%endif%}{% if thing.comment %} — {{thing.comment}}{%endif%}</li>        {%- endfor %}
     </ul>
 {%- endflex-item -%}
 {%- endfor -%}

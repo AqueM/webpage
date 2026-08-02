@@ -91,5 +91,5 @@ These are primarily geared towards my own industry — IT — and probably much 
 - Jak duży jest zespół, do którego będę należeć?
 - Jakie są następne kroki rekrutacji? Kiedy mogę spodziewać się odzewu?
 - Ile kobiet jest zatrudnionych w zespole, w którym będę pracować, lub na podobnym stanowisku?
-- Jak firma odnosi się do kwestii różnorodności pracowników - zatrudniania osób niepełnosprawnych, z innych krajów lub kultur? -->
+- Jak firma odnosi się do kwestii różnorodności pracowników — zatrudniania osób niepełnosprawnych, z innych krajów lub kultur? -->
 </section>

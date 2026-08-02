@@ -37,8 +37,8 @@ jako dorosłych
 waszym zasranym obowiązkiem było — 
 
 Choćbym nigdy nie została
-lingwistką - nauczyć mówić
-biegaczką - nauczyć chodzić…
+lingwistką — nauczyć mówić
+biegaczką — nauczyć chodzić…
 choćby żadnego z was nie obchodził mój los
 — nauczyć kochać, i być kochaną
 
@@ -80,7 +80,7 @@ as adults
 your fucking duty was —
 
 Even if I’d never become 
-a linguist - teach me to talk
-a runner - teach me to walk...
+a linguist — teach me to talk
+a runner — teach me to walk...
 even if none of you cared for me
 — teach me to love, and be loved.
