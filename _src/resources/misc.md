@@ -17,7 +17,7 @@ I came up with this for a Dungeons and Dragons campaign. The intention was to as
 2. What is their general disposition? Their poise, composure, their way of being, their ***aura***?
 3. Are there any accessories, trinkets, jewelry that your Character wears usually? Colors that stand out in their outfits?
 4. What are your Character's sleeping/trancing habits, usual position?
-5. What are their habits around food? preferred foods, habits around snacking, quirks around eating?
+5. What are their habits around food? Preferred foods, habits around snacking, quirks around eating?
 6. How does your Character laugh, if they laugh at all? What makes them laugh?
 7. How do they treat their equipment? Is it well-taken off?
 8. Does your Character have any unusual equipment or tools?
