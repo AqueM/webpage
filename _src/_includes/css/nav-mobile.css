@@ -64,7 +64,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transition: transform 0.4s ease-in-out;
 }
 
-.sitenav--mobile:has(.sitenav__mobile-menu__toggle:checked:checked) .sitenav__menu {
+.sitenav--mobile:has(.sitenav__mobile-menu__toggle:checked) .sitenav__menu {
     transform: translateX(0);
 }
 

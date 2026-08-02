@@ -202,8 +202,6 @@
 .pagination__link--prev::before {
 	content: '(pagination link to next)';
 	display: inline-block;
-	width: 1em;
-	height: 1em;
 	background-position: center;
 	background-repeat: no-repeat;
 	text-decoration: none;
@@ -212,7 +210,13 @@
 	white-space: nowrap;
 	vertical-align: center;
 	margin-left: 0.2em;
-	background-image: url("/assets/images/layout/font-awesome/angles-left-solid-full.svg");
+	width: 0.1em;
+	height: 1em;
+
+	@media only screen and (max-width: 600px) {
+		width: 1em;
+		background-image: url("/assets/images/layout/font-awesome/angles-left-solid-full.svg");
+	}
 }
 
 .pagination__link--prev::after {
@@ -233,7 +237,14 @@
 	white-space: nowrap;
 	vertical-align: center;
 	margin-left: 0.2em;
-	background-image: url("/assets/images/layout/font-awesome/angles-right-solid-full.svg");
+	width: 0.1em;
+	height: 1em;
+
+	@media only screen and (max-width: 600px) {
+		width: 1em;
+		background-image: url("/assets/images/layout/font-awesome/angles-right-solid-full.svg");
+	}
+
 }
 
 .design__indent {

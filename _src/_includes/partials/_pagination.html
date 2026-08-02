@@ -3,10 +3,10 @@
 <div class="theme__art-deco__content">
     <p class="pagination__text">Page {{pagination.pageNumber | plus: 1}} out of {{ pagination.pages.length}}</p>
     <p class="pagination__text">{%
-    if pagination.href.previous %}<a href=" {{ pagination.href.previous }}"
-        class="pagination__link pagination__link--prev" rel="prev">Previous</a>{% endif %} ✥ {% if
-    pagination.href.next %}<a href=" {{ pagination.href.next }}" class="pagination__link pagination__link--next"
-        rel="next">Next</a>{% endif %}</p>
+    if pagination.href.previous %}<div class="theme__border-oval"><span class="theme__border-oval__decor theme__border-oval__decor--left"></span><a href=" {{ pagination.href.previous }}"
+        class="pagination__link pagination__link--prev" rel="prev">Previous</a></div>{% endif %} ✥ {% if
+    pagination.href.next %}<div class="theme__border-oval"><span class="theme__border-oval__decor theme__border-oval__decor--right"></span><a href=" {{ pagination.href.next }}" class="pagination__link pagination__link--next"
+        rel="next">Next</a></div>{% endif %}</p>
     </div>
 <div class="square-left-top"></div>
 <div class="square-left-bottom"></div>

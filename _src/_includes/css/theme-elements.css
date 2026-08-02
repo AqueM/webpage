@@ -50,6 +50,11 @@
 	border-radius: var(--border-radius);
 }
 
+.theme__block--accent--full {
+	background-color: var(--color-accent);
+	border-radius: var(--border-radius);
+}
+
 .theme__block--border {
 	border-top: calc(var(--border-width)/100) solid var(--border-color);
 	border-bottom: calc(var(--border-width)/100) solid var(--border-color);

@@ -5,7 +5,8 @@
 	color-scheme: light;
 
 	a::after,
-	.icon, img{
+	.icon,
+	img {
 		filter: unset;
 	}
 }
@@ -37,9 +38,11 @@
 	--color-primary: var(--base-color-contrast) !important;
 	--color-secondrary: var(--base-color-contrast) !important;
 	--color-accent: var(--base-color-contrast) !important;
-	--color-borders:  var(--base-color-darkest) !important;
+	--color-borders: var(--base-color-darkest) !important;
 
-	a::after, .icon, img {
+	a::after,
+	.icon,
+	img {
 		filter: unset;
 	}
 }
