@@ -60,12 +60,12 @@
 		padding: 0 0.5rem;
 	}
 
-	li:nth-child(even):not(.sitenav__menu-list *, :has(ul)) {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.2)), var(--gradient-secondrary-left);
+	li:nth-child(even):not(.sitenav__menu-list *, :has(ul), :has(.theme__border-oval)) {
+		background-image: var(--gradient-emphasis);
 		border-radius: var(--border-radius-single);
 	}
 
-	a:not(.noformat, .external-code *, .theme__border-oval *) {
+	a:not(.noformat, .external-code *, .theme__border-oval *, .pagination__link) {
 		position: relative;
 		color: var(--color-darkest);
 		padding: 0.2rem 0.5rem 0 0.5rem;
@@ -124,7 +124,7 @@
 	summary {
 		border-radius: var(--border-radius-single);
 		padding: 0.5rem;
-		background-image: linear-gradient(rgba(255, 255, 255, 0.2)), var(--gradient-secondrary-left);
+		background-image: var(--gradient-emphasis);
 		width: max-content;
 	}
 

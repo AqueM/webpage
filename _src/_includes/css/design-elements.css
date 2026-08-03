@@ -193,6 +193,16 @@
 	text-align: center;
 }
 
+.pagination__link {
+	display: inline-block;
+	max-width: fit-content;
+	padding: 0;
+
+	&:hover {
+		text-transform: uppercase;
+	}
+}
+
 .pagination__link::after {
 	background-image: unset;
 	width: 0;
@@ -244,7 +254,6 @@
 		width: 1em;
 		background-image: url("/assets/images/layout/font-awesome/angles-right-solid-full.svg");
 	}
-
 }
 
 .design__indent {

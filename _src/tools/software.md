@@ -20,7 +20,9 @@ List of the programs and apps that I currently use and thus I can reccommend at 
 {% subheading "h3", "Music" %}
 
 * music player: [VLC](https://www.videolan.org/vlc/){target=_blank}{rel="external nofollow"}
-* tag editors: [foobar200](https://www.foobar2000.org/){target=_blank}{rel="external nofollow"} for tag sanitizing and management, [mp3tag](https://www.mp3tag.de/en/index.html){target=_blank}{rel="external nofollow"} for filename edition and tag databases interface
+* tag editors: 
+  * [foobar200](https://www.foobar2000.org/){target=_blank}{rel="external nofollow"} for tag sanitizing and management
+  * [mp3tag](https://www.mp3tag.de/en/index.html){target=_blank}{rel="external nofollow"} for filename edition and tag databases interface
 {%- endflex-item -%}
 
 {% flex-item %}

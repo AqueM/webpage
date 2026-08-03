@@ -48,6 +48,7 @@
 	--gradient-accent-top: linear-gradient(to bottom, var(--color-accent), transparent);
 	--gradient-water: linear-gradient(to top, var(--base-color-blue), transparent 70%, var(--color-blue-transparent));
 	--gradient-sun: linear-gradient(320deg, transparent 90%, var(--base-color-yellow) 100%);
+	--gradient-emphasis: linear-gradient(to right, transparent 1%, var(--color-secondrary-transparent) 15%, transparent 60%);
 	/* VARIABLES */
 	--color-font: light-dark(var(--base-color-dark), var(--base-color-lightest));
 	--color-borders: light-dark(var(--base-color-dark), var(--base-color-lightest));
