@@ -137,6 +137,7 @@
 	width: 2rem;
 	position: relative;
 	margin-right: 0.5rem;
+	overflow: hidden;
 }
 
 .layout__cookie-info__toggle {
@@ -159,7 +160,9 @@
 	transform: translate(1000%);
 	transition: transform 0.5s ease-in-out;
 }
-
+.layout__cookie-info:has(.layout__cookie-info__toggle:checked){
+	overflow: visible;
+}
 .layout__cookie-info:has(.layout__cookie-info__toggle:checked) .layout__cookie-info__content {
 	transform: translateX(0);
 }
