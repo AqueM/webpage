@@ -92,7 +92,6 @@ A finished, filled-out gallery block with two images would look something like t
 
 {% raw %}
 ```HTML
-//all images go inside this gallery div
 <div class="gallery">
 
 	<div class="pswp-gallery__item">
