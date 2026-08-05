@@ -1,5 +1,5 @@
 ---
-linkName: tags and tag pages
+linkName: "eleventy: tags and tag pages"
 tags: liquidJS
 disclaimers: liquidJS
 ---
