@@ -269,24 +269,24 @@
 }
 
 
-.language-liquidJS::before {
+pre(has:.language-liquidJS)::before {
 	content: "liquidJS";
 }
 
-.language-yaml::before {
+pre(has:.language-yaml)::before {
 	content: "yaml";
 }
 
-.language-javascript::before {
+pre(has:.language-javascript)::before {
 	content: "javascript";
 }
 
-.language-json::before {
+pre(has:.language-json)::before {
 	content: "json";
 }
-.language-HTML::before {
+pre(has:.language-HTML)::before {
 	content: "HTML";
 }
-.language-CSS::before {
+pre(has:.language-CSS)::before {
 	content: "CSS";
 }
