@@ -1,6 +1,8 @@
 ---
 linkName: "eleventy: navigation"
-tags: liquidJS
+tags: 
+  - liquidJS
+  - javascript
 disclaimers: liquidJS
 ---
 <section>
