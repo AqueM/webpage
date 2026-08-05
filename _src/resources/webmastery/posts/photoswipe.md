@@ -95,27 +95,40 @@ A finished, filled-out gallery block with two images would look something like t
 <div class="gallery">
 
 	<div class="pswp-gallery__item">
-	<figure>
-        	<a href="/assets/images/by-aque/inkarra-23march2023.webp" data-pswp-width="1200" data-pswp-height="2000" target="_blank">
-            	<img loading="lazy" src="/assets/images/by-aque/inkarra-23march2023.webp" title="Inkarra, the Guiding Star" alt="Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair."></a>
-        	</a>
-        	<figcaption class="pswp-caption-content"><p>Inkarra, the Guiding Star</p><p>2023</p><p>Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.</p></figcaption>
-        	<noscript>
-			<figcaption><p>Inkarra, the Guiding Star</p><p>2023</p><p>Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.</p></figcaption>
-		</noscript>
-        </figure>
+		<figure>
+			<a href="/assets/images/by-aque/inkarra-23march2023.webp" data-pswp-width="1200" data-pswp-height="2000" target="_blank">
+				<img loading="lazy" src="/assets/images/by-aque/inkarra-23march2023.webp" title="Inkarra, the Guiding Star" alt="Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.">
+			</a>
+			<figcaption class="pswp-caption-content">
+				<p>Inkarra, the Guiding Star</p>
+				<p>2023</p>
+				<p>Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.</p>
+			</figcaption>
+			<noscript>
+				<figcaption>
+					<p>Inkarra, the Guiding Star</p><p>2023</p><p>Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.
+					</p>
+				</figcaption>
+			</noscript>
+		</figure>
 	</div>
 
 	<div class="pswp-gallery__item">
 		<figure>
-	        	<a href="/assets/images/commissions/RPG/sorin_ares-xix.webp" data-pswp-width="1719" data-pswp-height="1215" target="_blank">
+			<a href="/assets/images/commissions/RPG/sorin_ares-xix.webp" data-pswp-width="1719" data-pswp-height="1215" target="_blank">
 	            	<img loading="lazy" src="/assets/images/commissions/RPG/sorin_ares-xix.webp" title="Sorin the White" alt="Digital illustration of a fantasy character, from the hips up, in limited palette of greyscale, gold and red against a grey background. There is a golden sun disc behind the character's head. The character is leaning against a decorative wrought iron railing and looking to the right with a smile. He has two feathery wings, one black and one white. He also has two sets of black horns, one set on the forehead curling back, and one above ears, curling to the front like ram horns. He is dressed in dark shirt with loose sleeves and dark pants. He has a lot off gold jewelry and accessories, as well as a white cravat with a big, red gemstone decorating it. His hair is long and black. He has shiny scales on his cheeks. His eyes are red."></a>
-	        	</a>
-	        	<figcaption class="pswp-caption-content"><p>Sorin the White</p><p>2017, by <cite><a href="https://www.patreon.com/ares_xix" target="_blank">Ares XIX</a></cite></p>
-        <p>Digital illustration of a fantasy character, from the hips up, in limited palette of greyscale, gold and red against a grey background. There is a golden sun disc behind the character's head. The character is leaning against a decorative wrought iron railing and looking to the right with a smile. He has two feathery wings, one black and one white. He also has two sets of black horns, one set on the forehead curling back, and one above ears, curling to the front like ram horns. He is dressed in dark shirt with loose sleeves and dark pants. He has a lot off gold jewelry and accessories, as well as a white cravat with a big, red gemstone decorating it. His hair is long and black. He has shiny scales on his cheeks. His eyes are red.</p></figcaption>
-	        	<noscript>
-				<figcaption><p>Sorin the White</p><p>2017, by <cite><a href="https://www.patreon.com/ares_xix" target="_blank">Ares XIX</a></cite></p>
-        <p>Digital illustration of a fantasy character, from the hips up, in limited palette of greyscale, gold and red against a grey background. There is a golden sun disc behind the character's head. The character is leaning against a decorative wrought iron railing and looking to the right with a smile. He has two feathery wings, one black and one white. He also has two sets of black horns, one set on the forehead curling back, and one above ears, curling to the front like ram horns. He is dressed in dark shirt with loose sleeves and dark pants. He has a lot off gold jewelry and accessories, as well as a white cravat with a big, red gemstone decorating it. His hair is long and black. He has shiny scales on his cheeks. His eyes are red.</p></figcaption>
+			</a>
+			<figcaption class="pswp-caption-content">
+				<p>Sorin the White</p>
+				<p>2017, by <cite><a href="https://www.patreon.com/ares_xix" target="_blank">Ares XIX</a></cite></p>
+        		<p>Digital illustration of a fantasy character, from the hips up, in limited palette of greyscale, gold and red against a grey background. There is a golden sun disc behind the character's head. The character is leaning against a decorative wrought iron railing and looking to the right with a smile. He has two feathery wings, one black and one white. He also has two sets of black horns, one set on the forehead curling back, and one above ears, curling to the front like ram horns. He is dressed in dark shirt with loose sleeves and dark pants. He has a lot off gold jewelry and accessories, as well as a white cravat with a big, red gemstone decorating it. His hair is long and black. He has shiny scales on his cheeks. His eyes are red.</p>
+			</figcaption>
+			<noscript>
+				<figcaption>
+					<p>Sorin the White</p>
+					<p>2017, by <cite><a href="https://www.patreon.com/ares_xix" target="_blank">Ares XIX</a></cite></p>
+        			<p>Digital illustration of a fantasy character, from the hips up, in limited palette of greyscale, gold and red against a grey background. There is a golden sun disc behind the character's head. The character is leaning against a decorative wrought iron railing and looking to the right with a smile. He has two feathery wings, one black and one white. He also has two sets of black horns, one set on the forehead curling back, and one above ears, curling to the front like ram horns. He is dressed in dark shirt with loose sleeves and dark pants. He has a lot off gold jewelry and accessories, as well as a white cravat with a big, red gemstone decorating it. His hair is long and black. He has shiny scales on his cheeks. His eyes are red.</p>
+				</figcaption>
 			</noscript>
 	        </figure>
 		</div>
