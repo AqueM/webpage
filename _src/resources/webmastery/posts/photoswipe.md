@@ -106,8 +106,9 @@ A finished, filled-out gallery block with two images would look something like t
 			</figcaption>
 			<noscript>
 				<figcaption>
-					<p>Inkarra, the Guiding Star</p><p>2023</p><p>Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.
-					</p>
+					<p>Inkarra, the Guiding Star</p>
+					<p>2023</p>
+					<p>Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.</p>
 				</figcaption>
 			</noscript>
 		</figure>
