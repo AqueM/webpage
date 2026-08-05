@@ -20,5 +20,5 @@ eleventyComputed:
 
 <div class="theme__border-oval desing__decor-link design__center">
 			{% include "partials/_decor-sides.html" %}
-    <a href="/resources/tutorials" class="pagination__link">back to Tutorials</a>
+    <a href="/resources/webmastery" class="pagination__link">back to Webmastery</a>
 </div>
