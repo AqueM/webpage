@@ -1,5 +1,5 @@
 ---
-linkName: dates
+linkName: eleventy: dates
 tags: liquidJS
 disclaimers: liquidJS
 ---
