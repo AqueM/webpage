@@ -284,3 +284,9 @@
 .language-json::before {
 	content: "json";
 }
+.language-HTML::before {
+	content: "HTML";
+}
+.language-CSS::before {
+	content: "CSS";
+}
