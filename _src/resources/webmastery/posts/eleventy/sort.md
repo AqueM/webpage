@@ -1,5 +1,5 @@
 ---
-linkName: sorting and ordering
+linkName: "eleventy: sorting and ordering"
 tags: liquidJS
 disclaimers: liquidJS
 ---
