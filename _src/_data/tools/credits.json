@@ -123,14 +123,34 @@
                 "comment": "layout graphics (except for the grass and water, which I made myself!)"
             },
             {
-                "name": "Saradika Graphics",
-                "url": "https://www.tumblr.com/saradika-graphics",
-                "comment": "art nouveau dividers"
-            },
-            {
                 "name": "Font Awesome",
                 "url": "https://fontawesome.com/",
                 "comment": "icons"
+            },
+            {
+                "name": "Bonnibel's Graphic Collection",
+                "url": "https://graphic.neocities.org",
+                "comment": "some of the wide gifs, original authors unknown"
+            },
+            {
+                "name": "Betty's Graphics",
+                "url": "https://bettysgraphics.neocities.org/",
+                "comment": "some of the wide gifs, original authors unknown"
+            },
+            {
+                "name": "Pixel Safari",
+                "url": "https://pixelsafari.neocities.org/",
+                "comment": "some of the wide and small gifs, original authors unknown"
+            },
+            {
+                "name": "Pixel Soup",
+                "url": "https://pixel-soup.tumblr.com/",
+                "comment": "some of all sizes of gifs I used, original authors unknown"
+            },
+            {
+                "name": "yuichan1306 Geocities at Internet Archive",
+                "url": "https://web.archive.org/web/20091026235257/http://asia.geocities.com/yuichan1306/emoticon.html",
+                "comment": "some of the small gifs, original authors unknown"
             }
         ]
     }

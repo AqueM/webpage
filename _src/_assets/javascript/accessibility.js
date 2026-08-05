@@ -11,7 +11,6 @@ const systemPreferences = { 'darkmode': '(prefers-color-scheme: dark)', 'contras
 const defaultOn = ['motion', 'complexity', 'special-fonts'];
 
 const darkModeIcons = [...document.getElementsByClassName("darkmode-icon")];
-const elementsToHide = [...document.getElementsByClassName("theme__border-square__decor"), ...document.getElementsByClassName("icon"), ...document.getElementsByClassName("layout__image")];
 
 function saveSettingPreference(cookieName) {
     localStorage.setItem(cookieName, cookies[cookieName][0].querySelector('input').checked);
@@ -72,34 +71,49 @@ btnDark.addEventListener('change', () => {
 btnContrast.addEventListener('change', () => {
     handleSimpleToggleChange('contrast');
 });
-btnFonts.addEventListener("change", function () {
+btnFonts.addEventListener('change', function () {
     handleSimpleToggleChange('special-fonts');
 });
-btnComplex.addEventListener("change", function () {
+btnComplex.addEventListener('change', function () {
     handleSimpleToggleChange('complexity');
 
-    let currentStatus = !(localStorage.getItem('complexity') === 'true');
+    let shouldDisplay = (localStorage.getItem('complexity') === 'true');
+
+    let elementsToHide = [...document.getElementsByClassName("theme__border-square__decor"), ...document.getElementsByClassName("icon"), ...document.getElementsByClassName("layout__image")];
     elementsToHide.forEach(element => {
-        element.classList.toggle("theme--hide", currentStatus);
+        element.classList.toggle("theme--hide", !shouldDisplay);
     });
 
-    if (!currentStatus) {
+    if (shouldDisplay) {
         document.body.removeAttribute("style");
     } else {
         document.body.style.cssText = "background-image: none";
     }
 });
-btnAnimation.addEventListener("change", function () {
+btnAnimation.addEventListener('change', function () {
     handleSimpleToggleChange('motion');
+    let shouldDisplayAnimated = (localStorage.getItem('motion') === 'true');
+    let layoutImages = [...document.getElementsByClassName("layout__image")];
+    let blinkies = [...document.getElementsByClassName("image__blinkie")];
+    let imagesFiltered =
+        layoutImages.filter(
+            item => item.currentStyle || window.getComputedStyle(item, false).backgroundImage.includes("_anim"));
+    imagesFiltered.forEach(element => {
+        element.classList.toggle("theme--hide-toggled", !shouldDisplayAnimated);
+    });
+    blinkies.forEach(element => {
+        element.classList.toggle("theme--hide-toggled", !shouldDisplayAnimated);
+    });
     let imgAnimated = [...document.getElementsByClassName("animated")];
-    for (const element of imgAnimated) {
+    imgAnimated.forEach(element => {
         var ogSrc = element.getAttribute("src")
-        if (!(localStorage.getItem("motion") === 'true')) {
+        if (!shouldDisplayAnimated) {
             element.setAttribute("src", ogSrc.slice(0, ogSrc.lastIndexOf(".")) + "_static" + ogSrc.slice(ogSrc.lastIndexOf(".")));
         } else {
             element.setAttribute("src", ogSrc.replace("_static", ""));
         }
-    }
+    });
+
 });
 btnDyslexia.addEventListener("change", function () {
     handleSimpleToggleChange('dyslexia');

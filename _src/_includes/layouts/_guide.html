@@ -7,7 +7,7 @@ tags:
 - tutorials
 ---
 <section>
-<div class="design__meta theme__border-square layout__flex-block__row">
+<div class="design__meta btn-deco btn-deco style-15 layout__flex-block__row">
       <time>{{page.date | date: "%d/%m/%Y"}}</time>
     {% flex-stack-centered %}
       {% assign taglist = tags | exclude: "tutorials" %}
@@ -22,5 +22,5 @@ tags:
     <a href="/resources/webmastery" class="pagination__link">back to Webmastery</a>
   </div>
 </div>
-{% divider-center %}</section>
+{% divider-lines %}</section>
 {{content}}

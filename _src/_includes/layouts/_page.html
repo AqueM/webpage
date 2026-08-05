@@ -4,11 +4,13 @@ layout: layouts/_main
 <section class="disclaimers layout__flex-block__row layout__flex-block--space-around">
     {% for disclaimer in disclaimers %}
     {% include "content/_{{disclaimer}}-disclaimer.html" %}
-{% endfor %}
+    {% endfor %}
 </section>
 <div class="theme__heading theme__block--accent layout__flex-block__stack btn-deco btn-deco style-13">
-    <h1 class="theme__heading__title">{{pageTitle}}</h1>
+    <h1 class="theme__heading__title">{% pixel-decor-small %}{{pageTitle}}{% pixel-decor-small %}</h1>
     {% if subtitle %}<span class="theme__heading__subtitle">{{subtitle}}</span>{% endif %}
+    <div class="layout__image layout__image--positioned layout__image-pixel layout__image__main"
+        style="--layout-img: url({% pixel-decor-tall %});"></div>
 </div>
 <article>
     {{content}}

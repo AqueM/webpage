@@ -27,7 +27,7 @@ angry thorns in paw pads still heartachingly soft?
 
 Even the sun eater deserves a second chance
 if you have loved him but once.
-{% divider-center %}
+{% divider-lines %}
 <div class="design__floated--right">
 originally posted on {% ao3Link 'https://archiveofourown.org/works/57220516' %} as a fan-work from the perspective of Jason Todd of the Batman comics
 </div>

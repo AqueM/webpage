@@ -149,7 +149,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .square-deco-container .square-deco-inner {
     grid-area: mid;
-    border: var(--border-width) solid var(--border-color);
+    border: var(--border-width) solid var(--color-accent);
     background-color: var(--color-secondrary-transparent);
 }
 
@@ -267,6 +267,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /********* TRIPLE DIAMOND DIVIDER *********/
 .triple-diamond-deco-container {
     flex-basis: 100%;
+    margin-top: 1rem;
     width: 100%;
     display: grid;
     grid-template-columns:
@@ -453,89 +454,115 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /******** TITLE ********/
 .title-deco-container {
-    /* 120 60 20 */
-    display: grid;
-    grid-template-columns:
-        [start] 1fr [mid-start] calc(var(--border-width)*20) [small-start] calc(var(--border-width)*10) [main-start] calc(var(--border-width)*5) [inner-start] calc(var(--border-width)*5) [small-end] calc(var(--border-width)*20) [mid-end] calc(var(--border-width)*80) [mid-start] calc(var(--border-width)*20) [small-start] calc(var(--border-width)*5) [inner-end] calc(var(--border-width)*5) [main-end] calc(var(--border-width)*10) [small-end] calc(var(--border-width)*20) [mid-end] 1fr [end];
-    grid-template-rows:
-        [main-start] calc(var(--border-width)*5) [inner-start] 1calc(var(--border-width)*5) [small-start] calc(var(--border-width)*20) [mid-start small-end] calc(var(--border-width)*10) [dot-start] calc(var(--border-width)*5) [content-start] calc(var(--border-width)*30) [content-end] calc(var(--border-width)*5) [dot-end] calc(var(--border-width)*10) [mid-end small-start] calc(var(--border-width)*20) [small-end] 1calc(var(--border-width)*5) [inner-end] calc(var(--border-width)*5) [main-end];
+  /* 120 60 20 */
+  display: grid;
+  grid-template-columns:    
+    [start]       1fr
+    [mid-start]   20px
+    [small-start] 10px
+    [main-start]  5px
+    [inner-start] 5px
+    [small-end]   20px
+    [mid-end]     80px
+    [mid-start]   20px
+    [small-start] 5px
+    [inner-end]   5px
+    [main-end]    10px
+    [small-end]   20px
+    [mid-end]     1fr
+    [end]
+  ;
+  grid-template-rows:
+    [main-start]    5px
+    [inner-start]   15px
+    [small-start]   20px
+    [mid-start small-end]     10px
+    [dot-start]     5px
+    [content-start] 30px
+    [content-end]   5px
+    [dot-end]       10px
+    [mid-end small-start]   20px
+    [small-end]     15px
+    [inner-end]     5px
+    [main-end]
+  ;
 }
 
-.title-deco-container .theme__art-deco__content {
-    grid-column: start / end;
-    grid-row: content-start / content-end;
-    z-index: 100;
-    border-top: var(--border-width) solid var(--border-color);
-    border-bottom: var(--border-width) solid var(--border-color);
+.title-deco-container .content {
+  grid-column: start / end;
+  grid-row: content-start / content-end;
+  z-index: 100;
+  border-top: 1px solid sandybrown;
+  border-bottom: 1px solid sandybrown;
 }
 
-.title-deco-container .theme__art-deco__content-dot {
-    grid-column: start / end;
-    grid-row: dot-start / dot-end;
-    border-top: var(--border-width) dotted var(--border-color);
-    border-bottom: var(--border-width) dotted var(--border-color);
+.title-deco-container .content-dot {
+  grid-column: start / end;
+  grid-row: dot-start / dot-end;
+  border-top: 1px dotted green;
+  border-bottom: 1px dotted green;
 }
 
 .title-deco-container .main-diamond-outer {
-    grid-area: main;
-    transform: rotate(45deg);
-    z-index: 50;
-    border: var(--border-width) solid var(--border-color);
-    background-color: var(--color-secondrary-transparent);
+  grid-area: main;
+  transform: rotate(45deg);
+  z-index: 50;
+  border: 1px solid aquamarine;
+  background-color: #000;
 }
 
 .title-deco-container .main-diamond-inner {
-    grid-area: inner;
-    transform: rotate(45deg);
-    z-index: 60;
-    border: var(--border-width) dotted var(--border-color);
+  grid-area: inner;
+  transform: rotate(45deg);
+  z-index: 60;
+  border: 1px dotted green;
 }
 
 .title-deco-container .mid-diamond-left {
-    grid-column: mid-start 1 / mid-end 1;
-    grid-row: mid-start / mid-end;
-    transform: rotate(45deg);
-    z-index: 40;
-    /*   z-index: 999; */
-    border: var(--border-width) solid var(--border-color);
-    background-color: var(--color-secondrary-transparent);
+  grid-column: mid-start 1 / mid-end 1;
+  grid-row: mid-start / mid-end;
+  transform: rotate(45deg);
+  z-index: 40;
+/*   z-index: 999; */
+  border: 1px solid lightcoral;
+  background-color: #000;
 }
 
 .title-deco-container .mid-diamond-right {
-    grid-column: mid-start 2 / mid-end 2;
-    grid-row: mid-start / mid-end;
-    transform: rotate(45deg);
-    z-index: 40;
-    /*   z-index: 30; */
-    border: var(--border-width) solid var(--border-color);
-    background-color: var(--color-secondrary-transparent);
+  grid-column: mid-start 2 / mid-end 2;
+  grid-row: mid-start / mid-end;
+  transform: rotate(45deg);
+  z-index: 40;
+/*   z-index: 30; */
+  border: 1px solid lightcoral;
+  background-color: #000;
 }
 
 .title-deco-container .small-diamond-left-top {
-    grid-column: small-start 1 / small-end 1;
-    grid-row: small-start 1 / small-end 1;
-    transform: rotate(45deg);
-    /*   z-index: 1000; */
-    border: var(--border-width) dotted var(--border-color);
+  grid-column: small-start 1 / small-end 1;
+  grid-row: small-start 1 / small-end 1;
+  transform: rotate(45deg);
+/*   z-index: 1000; */
+  border: 1px dotted plum;
 }
 
 .title-deco-container .small-diamond-left-bottom {
-    grid-column: small-start 1 / small-end 1;
-    grid-row: small-start 2 / small-end 2;
-    transform: rotate(45deg);
-    border: var(--border-width) dotted var(--border-color);
+  grid-column: small-start 1 / small-end 1;
+  grid-row: small-start 2 / small-end 2;
+  transform: rotate(45deg);
+  border: 1px dotted plum;
 }
 
 .title-deco-container .small-diamond-right-top {
-    grid-column: small-start 2 / small-end 2;
-    grid-row: small-start 1 / small-end 1;
-    transform: rotate(45deg);
-    border: var(--border-width) dotted var(--border-color);
+  grid-column: small-start 2 / small-end 2;
+  grid-row: small-start 1 / small-end 1;
+  transform: rotate(45deg);
+  border: 1px dotted plum;
 }
 
 .title-deco-container .small-diamond-right-bottom {
-    grid-column: small-start 2 / small-end 2;
-    grid-row: small-start 2 / small-end 2;
-    transform: rotate(45deg);
-    border: var(--border-width) dotted var(--border-color);
+  grid-column: small-start 2 / small-end 2;
+  grid-row: small-start 2 / small-end 2;
+  transform: rotate(45deg);
+  border: 1px dotted plum;
 }

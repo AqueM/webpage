@@ -5,7 +5,7 @@ tags:
 - thoughts
 ---
 <section>
-<div class="design__meta theme__border-square layout__flex-block__row">
+<div class="design__meta btn-deco btn-deco style-15 layout__flex-block__row">
       <time>{{page.date | date: "%d/%m/%Y"}}</time>
     {% flex-stack-centered %}
       {% assign taglist = tags | exclude: "thoughts" %}
@@ -20,6 +20,6 @@ tags:
     <a href="/longform/thoughts/page-1" class="pagination__link">back to Thoughts list</a>
   </div>
 </div>
-{% divider-center %}
+{% divider-lines %}
 </section>
 {{content}}

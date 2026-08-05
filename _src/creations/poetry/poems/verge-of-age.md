@@ -11,6 +11,6 @@ It’s so abstract, I don’t have any advice, I barely made it out alive myself
 
 It’s so abstract, how I look forward to being that adult that can take the challenge on.
 
-{% divider-center %}
+{% divider-lines %}
 <div class="design__floated--right">
 originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/115402340827' %}</div>

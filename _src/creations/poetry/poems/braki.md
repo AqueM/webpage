@@ -42,7 +42,7 @@ biegaczką — nauczyć chodzić…
 choćby żadnego z was nie obchodził mój los
 — nauczyć kochać, i być kochaną
 
-{% divider-center %}
+{% divider-lines %}
 
 {% heading "h2", "Shortcomings in parenting" %}
 

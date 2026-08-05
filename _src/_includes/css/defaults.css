@@ -2,6 +2,7 @@
 @layer defaults {
 	* {
 		box-sizing: border-box;
+		scrollbar-color: var(--color-accent) var(--color-primary);
 	}
 
 	html {

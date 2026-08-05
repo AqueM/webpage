@@ -82,7 +82,7 @@ This site is safe for work and for minors. However, since this is also an archiv
 					src="/assets/images/layout/Censor_PGc.gif"
 					title="this site self-rated as PG: contains little or mild offensive materials"
 					alt="blue-haired anthropomorphic panda portrait, on blue background, next to the words 'Web PG'"></a></p>
-{% divider-center %}
+{% divider-lines %}
 <div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
 <span class="design__warning">may contain sexual content</span>
 <span class="design__warning">may contain swearing</span>

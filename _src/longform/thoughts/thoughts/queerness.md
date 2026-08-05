@@ -53,7 +53,7 @@ Sex is overrated, romantic love is weird, I've traded my gender for a cool rock.
 <img src="/assets/images/badges/id/queer/Aromantic.png">
 </div>
 
-{% divider-center %}
+{% divider-lines %}
 <div class="design__box"><div class="design__floated--right">
 <div class="theme__border-oval desing__decor-link design__center">
 			{% include "partials/_decor-sides.html" %}<a href="/about" class="pagination__link">back to Bio</a></div>

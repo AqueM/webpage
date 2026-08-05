@@ -77,7 +77,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* STYLE 2 */
 .style-2 {
     border: var(--border-width) solid var(--border-color);
-    box-shadow: 0 0 0 calc(var(--border-width)*3) var(--color-accent), 0 0 0 5px var(--border-color), 0 0 0  calc(var(--border-width)*8) var(--color-accent), 0 0 0 9px var(--border-color);
+    box-shadow: 0 0 0 calc(var(--border-width)*3) var(--color-accent), 0 0 0 5px var(--border-color), 0 0 0 calc(var(--border-width)*8) var(--color-accent), 0 0 0 9px var(--border-color);
     transition: box-shadow 0.3s ease, background-color 0.25s, color 0.2s, transform 0.2s;
 }
 
@@ -251,7 +251,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         linear-gradient(var(--border-color), var(--border-color)),
         linear-gradient(var(--border-color), var(--border-color));
     background-position: top left, top right, bottom left, bottom right;
-    background-size:  calc(var(--border-width)*8)  calc(var(--border-width)*8);
+    background-size: calc(var(--border-width)*8) calc(var(--border-width)*8);
     background-repeat: no-repeat;
 }
 
@@ -374,6 +374,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* STYLE 9 */
 .style-9 {
     border: var(--border-width) solid var(--border-color);
+    border-radius: 0;
+    padding: 0.5rem;
 }
 
 .style-9::before,
@@ -388,15 +390,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .style-9::before {
-    top: -calc(var(--border-width)*4);
-    left: -calc(var(--border-width)*4);
+    top: calc(var(--border-width)*-4);
+    left: calc(var(--border-width)*-4);
     border-width: var(--border-width) 0 0 calc(var(--border-width)*2);
-    box-shadow: -calc(var(--border-width)*2) -calc(var(--border-width)*2) 0 var(--color-accent);
+    box-shadow: calc(var(--border-width)*-2) calc(var(--border-width)*-2) 0 var(--color-accent);
 }
 
 .style-9::after {
-    bottom: -calc(var(--border-width)*4);
-    right: -calc(var(--border-width)*4);
+    bottom: calc(var(--border-width)*-4);
+    right: calc(var(--border-width)*-4);
     border-width: 0 var(--border-width) calc(var(--border-width)*2) 0;
     box-shadow: var(--border-width) calc(var(--border-width)*2) 0 var(--color-accent);
 }
@@ -418,7 +420,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* STYLE 10 */
 .style-10 {
-    border: var(--border-width) solid var(--border-color);
+    padding: 1rem;
+    border-radius: 0;
+    border: calc(var(--border-width)*2) solid var(--border-color);
 }
 
 .style-10::before {
@@ -444,7 +448,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         linear-gradient(-45deg, var(--border-color) 25%, transparent 25%),
         linear-gradient(135deg, var(--border-color) 25%, transparent 25%),
         linear-gradient(-135deg, var(--border-color) 25%, transparent 25%);
-    background-size:  calc(var(--border-width)*8)  calc(var(--border-width)*8);
+    background-size: calc(var(--border-width)*8) calc(var(--border-width)*8);
     background-repeat: no-repeat;
     background-position: bottom left, bottom right, top left, top right;
     transition: all 0.3s ease;
@@ -524,9 +528,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* STYLE 13 */
 .style-13 {
-    border: var(--border-width) solid var(--border-color);
+    border: calc(var(--border-width)*2)  solid var(--border-color);
     outline: var(--border-width) solid var(--border-color);
     outline-offset: calc(var(--border-width)*4);
+    border-radius: var(--border-radius-single);
 }
 
 .style-13::before,
@@ -605,6 +610,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* STYLE 15 */
 .style-15 {
+    padding: 1rem 20% 1rem 20%;
+    background-color: var(--color-primary);
     border: var(--border-width) solid var(--border-color);
     clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
 }
@@ -617,17 +624,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
     background: transparent;
 }
-
 /* 
+
 .style-15:hover {
-    background-color: var(--border-color);
+    background-color: var(--color-secondrary);
     color: var(--color-accent);
     border-color: var(--color-accent);
 }
 
 .style-15:hover::before {
     border-color: var(--color-accent);
-}
+} */
 
 /* STYLE 16 */
 .style-16 {
@@ -668,7 +675,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-50%);
     width: 80px;
     height: calc(var(--border-width)*10);
-    background: repeating-linear-gradient(90deg, var(--border-color), var(--border-color) calc(var(--border-width)*4), transparent calc(var(--border-width)*4), transparent  calc(var(--border-width)*8));
+    background: repeating-linear-gradient(90deg, var(--border-color), var(--border-color) calc(var(--border-width)*4), transparent calc(var(--border-width)*4), transparent calc(var(--border-width)*8));
 }
 
 .style-17::after {
@@ -679,7 +686,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-50%);
     width: 80px;
     height: calc(var(--border-width)*10);
-    background: repeating-linear-gradient(90deg, var(--border-color), var(--border-color) calc(var(--border-width)*4), transparent calc(var(--border-width)*4), transparent  calc(var(--border-width)*8));
+    background: repeating-linear-gradient(90deg, var(--border-color), var(--border-color) calc(var(--border-width)*4), transparent calc(var(--border-width)*4), transparent calc(var(--border-width)*8));
 }
 
 /* 

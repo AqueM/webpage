@@ -97,6 +97,6 @@ and
 the train seat{% endindent %}
 hear.
 
-{% divider-center %}
+{% divider-lines %}
 <div class="design__floated--right">
 originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/102473408497' %}</div>

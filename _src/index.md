@@ -32,7 +32,7 @@ If you'd like to learn more about me, go snoop through the **About** section. If
 {%- endflex-item -%}
 {%- endfor -%}
 
-{% divider-center %}
+{% divider-lines %}
 
 {%- flex-item -%}
 {% subheading "h3", "unsorted", "internet things I recently found interesting" %}

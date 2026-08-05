@@ -1,9 +1,21 @@
-<div class="layout__image layout__image__header"></div>
+<div class="layout__image layout__image--positioned layout__image__header"></div>
 <div class="layout__header">
 	<header class="theme__border-square theme__block--secondrary">
 		{% include "partials/_decor-corners.html" %}
 		<div
 			class="header layout__flex-block__row layout__flex-block__row--big layout__flex-block--space-between theme__block--accent theme__block--border">
+			<!-- <span class="layout__image layout__image--positioned layout__image-pixel layout__image__header-pixel"
+				style="--layout-img: url('/assets/images/pixels/vivarium/mossyrock.png'); right: 0.5rem;"></span>
+			<span class="layout__image layout__image--positioned layout__image-pixel layout__image__header-pixel"
+				style="--layout-img: url('/assets/images/pixels/vivarium/flower_white.png'); right: 2rem;"></span>
+			<span class="layout__image layout__image--positioned layout__image-pixel layout__image__header-pixel"
+				style="--layout-img: url('/assets/images/pixels/vivarium/lotus.png'); right: 4rem;"></span>
+			<span class="layout__image layout__image--positioned layout__image-pixel layout__image__header-pixel"
+				style="--layout-img: url('/assets/images/pixels/vivarium/mossyrock_bigger.png'); left: 0.5rem;"></span>
+			<span class="layout__image layout__image--positioned layout__image-pixel layout__image__header-pixel"
+				style="--layout-img: url('/assets/images/pixels/vivarium/flower_yellow.png'); left: 2rem;"></span>
+			<span class="layout__image layout__image--positioned layout__image-pixel layout__image__header-pixel"
+				style="--layout-img: url('/assets/images/pixels/vivarium/lotus.png'); left: 4rem;"></span> -->
 			<div class="layout__block">
 				<div class="header__page-title">
 					<a href="/" title="click to go to homepage" class="header__link">
@@ -22,9 +34,11 @@
 					</a>
 				</div>
 			</div>
-			<div class="layout__block layout__flex-item__aside header__access-card layout__flex-block__row layout__flex-block--space-between theme__block--primary--full">
+			<div
+				class="layout__block layout__flex-item__aside header__access-card layout__flex-block__row layout__flex-block--space-between theme__block--primary--full">
 				<noscript>
-					<div class="design__disclaimer design__dislaimer--js">Your browser does not allow JavaScript and as such the
+					<div class="design__disclaimer design__dislaimer--js">Your browser does not allow JavaScript and as
+						such the
 						accessibility toggles won't work. The site
 						you're seeing is stripped of decorations, but should be fully functional.</div>
 					<style>
@@ -37,7 +51,11 @@
 				</noscript>
 
 				{% include "partials/_toggles.html" %}
-				    <div class="layout__cookie-info theme__block--accent--full" title="click to learn about cookie use"><input class="layout__cookie-info__toggle" type="checkbox" id="" name=""><div class="layout__cookie-info__content theme__block--accent--full theme__block--border">This site uses local storage to save your display preferences.</div></div>
+				<div class="layout__cookie-info theme__block--accent--full" title="click to learn about cookie use">
+					<input class="layout__cookie-info__toggle" type="checkbox" id="" name="">
+					<div class="layout__cookie-info__content theme__block--accent--full theme__block--border">This site
+						uses local storage to save your display preferences.</div>
+				</div>
 
 			</div>
 		</div>

@@ -43,6 +43,6 @@ not thinking twice about it
 and thinking ten thousand times.
 Nobody has an answer
 even me.
-{% divider-center %}
+{% divider-lines %}
 <div class="design__floated--right">
 originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/157857054827' %}</div>

@@ -1,5 +1,5 @@
 <footer class="layout__footer">
-	<div class="layout__image layout__image__footer" style="--layout-img: '/assets/images/layout/canva-flowers.webp';">
+	<div class="layout__image layout__image--positioned layout__image__footer" style="--layout-img: '/assets/images/layout/canva-flowers.webp';">
 	</div>
 	<div class="theme__border-square theme__block--secondrary">
 		{% include "partials/_decor-corners.html" %}
@@ -17,6 +17,11 @@
 			</div>
 			<img src="http://www.snazzyspace.com/generators/viewer-counter/counter.php/fid=1784368936/style=0/counter.png"
 				border="0">
+			{%- endflex-columns -%}
+			{%- flex-columns -%}
+				{% pixel-decor-wide %}
+				{% pixel-decor-wide %}
+				{% pixel-decor-wide %}
 			{%- endflex-columns -%}
 			{%- flex-columns -%}
 			<a href="https://www.mabsland.com/Adoption.html" target="_blank" rel="external"><img

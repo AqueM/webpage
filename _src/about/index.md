@@ -66,7 +66,7 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 </div>
 {%- endflex-columns -%}
 
-{% divider-center %}
+{% divider-lines %}
 
 
 <section>
@@ -80,7 +80,7 @@ My main focus are various arts and crafts, and I'm always ready to help where I 
 
 <div class="layout__flex-block__row layout__flex-block__row--small layout__flex-block--space-around">
 {%- for image in collections.blinkieImages -%}
-<img src="{{image}}">
+<img src="{{image}}" class="image__blinkie">
 {%- endfor -%}
 </div>
 </section>

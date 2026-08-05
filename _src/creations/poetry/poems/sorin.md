@@ -4,7 +4,7 @@ date: 2015-06-30
 lang: PL
 ---
 oryginalnie udostępnione na {% tumblrLink 'https://iriascend.tumblr.com/post/122838098697' %}, o [Sorinie](/resources/characters/deities/sorin)
-{% divider-center %}
+{% divider-lines %}
 
 Budowałem wieże z kart
 dwa eony lat

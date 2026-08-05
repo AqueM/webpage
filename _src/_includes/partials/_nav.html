@@ -1,4 +1,4 @@
-<div class="layout__image layout__image__nav"></div>
+<div class="layout__image layout__image--positioned layout__image__nav"></div>
 <aside class="layout__sidebar theme__border-square theme__block--primary">
 	{% include "partials/_decor-corners.html" %}
 	<div class="layout__flex-block__stack sitenav layout__flex-block--space-between">
@@ -6,6 +6,7 @@
 			{% include "partials/_menu.html" %}
 			{% include "partials/_sidebar.html" %}
 		</div>
+		{% pixel-decor-big %}
 	</div>
 	<div class="sitenav--mobile">
 		<div class="sitenav__hamburger">

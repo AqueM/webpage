@@ -13,7 +13,7 @@ it becomes a storm
 
 I hear thunders ringing in my heart
 but no kind hunchback to make them sound
-{% divider-center %}
+{% divider-lines %}
 <div class="design__floated--right">
 originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/174593846702' %}
 </div>

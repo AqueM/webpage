@@ -1,7 +1,10 @@
 [
     {
+        "date": "06/08/2026",
+        "log": "added pixel art throught the page, updated credits"
+    },{
         "date": "05/08/2026",
-        "log": "add Photoswipe tutorial, fix cookie info overflow"
+        "log": "added Photoswipe tutorial, fixed cookie info overflow"
     },{
         "date": "03/08/2026",
         "log": "improve default list styling and pagination styling"

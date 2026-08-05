@@ -4,7 +4,7 @@ date: 2007-01-01
 lang: PL
 ---
 napisane z perspektywy postaci w RPG, o jej ukochanym.
-{% divider-center %}
+{% divider-lines %}
 
 Z reguły 
 Książę z Bajki ma
