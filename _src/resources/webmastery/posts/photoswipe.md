@@ -17,7 +17,7 @@ For a demo of the effects, see [Tomb Treasures](/collections/treasures/page-1).
 <section>
 {% heading "h2", "Initialization imports" %}
 
-This script needs to be included *somewhere* on every page where you want to have a gallery. It uses javascript packages from [UNPKG](https://unpkg.com/){target=_blank}{rel="external nofollow"}, a site that hosts the library-related files for you so that you don't have to upload them to your site (thought it is advised if you can and know how to!). 
+This script needs to be included *somewhere* on every page where you want to have a gallery. It uses javascript packages from [UNPKG](https://unpkg.com/){target=_blank}{rel="external nofollow"}, a site that hosts the library-related files for you so that you don't have to upload them to your site (though it is advised if you can and know how to!). 
 
 {% raw %}
 ```
@@ -53,6 +53,7 @@ You will also need to include the basic CSS for the Photoswipe elements in your 
 ```
 {% endraw %}
 
+Also hosted on UNPKG as you see.
 </section>
 <section>
 {% heading "h2", "Gallery page" %}
@@ -61,7 +62,10 @@ This is how the code for the page where you want a gallery should look like.
 
 {% raw %}
 ```HTML
+//all images go inside this gallery div
 <div class="gallery">
+
+	//every image goes into a new pswp-gallery__item div
 	<div class="pswp-gallery__item">
 	<figure>
         	<a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" target="_blank">
@@ -73,22 +77,8 @@ This is how the code for the page where you want a gallery should look like.
 		</noscript>
         </figure>
 	</div>
-	<div class="pswp-gallery__item">
-	<figure>
-        	<a href="${image.src}" data-pswp-width="${image.width}" data-pswp-height="${image.height}" target="_blank">
-            	<img loading="lazy" src="${image.src}" title="${image.title}" alt="${image.alt}" class="gallery-image"></a>
-        	</a>
-        	<figcaption class="pswp-caption-content">${image.caption}</figcaption>
-        	<noscript>
-			<figcaption>${image.caption}</figcaption>
-		</noscript>
-        </figure>
-	</div>
-
-(repeat the 'pswp-gallery__item' div with however many images you want)
-
+// repeat the 'pswp-gallery__item' div with however many images you want
 </div>
-});
 ```
 {% endraw %}
 
@@ -96,11 +86,12 @@ Take note of the `${}` elements that is where you should put in your own data! A
 
 Note that this particular format is not set in stone, either. It is the `pswp` classes that make it work for Photoswipe, and the selectors you provided in the JS code mentioned earlier. Using `figure` tag is not obligatory, it's just good semantic HTML.
 
-See also that this code includes a `<noscript>` element. It is a fall-back for if javascript does not work (if it's turned off, for example). In that case, the lightbox wouldn't work, and the caption wouldn't be available. For that reason, the caption is displayed under the image if JS fails. It is also not a neccessary component. 
+See also that this code includes a `<noscript>` element. It is a fall-back for if javascript does not work (if it's turned off, for example). In that case, the lightbox wouldn't work, and the caption wouldn't be available. For that reason, the caption is displayed under the image if JS fails. This is also not a neccessary component, just proper accessibility. 
 </section>
 
 <section>
 {% heading "h2", "styling the gallery" %}
+
 You can style the `.gallery` element and the image-containing `figure` however you want. Here's an example of how I did it, to achieve the grid and enlargement on hover.
 
 {% raw %}
@@ -131,17 +122,17 @@ figure {
   transition: transform 0.2s;
   cursor: pointer;
   margin: 0;
-/* makes the images square and about 1/3 of the screen size */
+  /* makes the images square and about 1/3 of the screen size */
   width: 30vw;
   height: 30vw;
 
-/* makes the images only about 1/4 of screen size on bigger screens */
+  /* makes the images only about 1/4 of screen size on bigger screens */
   @media only screen and (min-width: 768px) {
     width: 20vw;
     height: 20vw;
   }
 
-/* enlarges the images when they're hovered over */
+  /* enlarges the images when they're hovered over */
   &:hover {
     position: relative;
     z-index: 10;
@@ -153,4 +144,11 @@ figure {
 {% endraw %}
 
 All you need to do for this to work is to include it in your CSS stylesheet somewhere. 
+</section>
+<section>
+{% heading "h2", "final notes" %}
+
+You can fit many images on one page with this setup, but remember that it will make the page very slow to load. I recommend dividing the gallery into separate pages and linking them together if you have a lot of pictures to display.
+
+Remember to also compress your image files! Converting to `webp` format can help the filesize a lot. Photoswipe is also not designed to handle images bigger than 3000x3000px, so scale your images down, too (nobody really needs to see the raw 5000x5000px uncompressed JPG of your drawing, to be honest).
 </section>
