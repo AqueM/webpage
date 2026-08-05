@@ -71,7 +71,6 @@
 	gap: 0.1rem;
 	flex-direction: column;
 	min-width: max-content;
-	overflow: hidden;
 
 	@media only screen and (min-width: 600px) {
 		flex-direction: row;
