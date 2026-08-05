@@ -56,7 +56,7 @@ The formatting follows rules of [strftime](https://strftime.net/){target=_blank}
 <section>
 {% heading "h2", "sort collection by date" %}
 
-Out of the box, Eleventy sadly doesn't seem to implement the "sort" LiquidJS filter. When you fetch a collection, though, it is sorted by `page.date` by default, so you don't need to worry about it. You can also slap a `reverse` filter on it to toggle between ascending/descending sort.
+When you fetch a collection, it is sorted by `page.date` by default, so you don't need to worry about it. You can also slap a `reverse` filter on it to toggle between ascending/descending sort.
 
 {% raw %}
 ```liquidJS
