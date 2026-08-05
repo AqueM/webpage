@@ -1,6 +1,8 @@
 ---
 linkName: "eleventy: tags and tag pages"
-tags: liquidJS
+tags: 
+  - liquidJS
+  - javascript
 disclaimers: liquidJS
 ---
 <section>
