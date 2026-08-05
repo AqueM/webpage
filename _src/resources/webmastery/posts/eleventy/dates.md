@@ -66,5 +66,5 @@ Out of the box, Eleventy sadly doesn't seem to implement the "sort" LiquidJS fil
 ```
 {% endraw %}
 
-Want to sort by something else than date? [Check out my other guides](/resources/tutorials)
+Want to sort by something else than date? [Check out my other guides](/resources/webmastery/eleventy-sorting-and-ordering.html)
 </section>
