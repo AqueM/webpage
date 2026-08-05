@@ -1,5 +1,5 @@
 ---
-linkName: navigation
+linkName: eleventy: navigation
 tags: liquidJS
 disclaimers: liquidJS
 ---
