@@ -178,11 +178,12 @@
 
 	pre {
 		display: flex;
+		position: relative;
 		
 		&:before {
 			position: absolute;
-			top: -1rem;
-			left: -0.8rem;
+			left: 15%;
+			z-index: 2;
 			font-size: 0.8rem;
 			font-family: system-ui;
 			background-color: var(--color-accent-transparent);
@@ -210,8 +211,7 @@
 		padding: 0.2rem;
 		border-radius: calc(var(--border-radius-single)/2);
 		max-width: 60vw;
-		word-break: break-word;
-		word-wrap: break-word;
+		overflow: scroll;
 	}
 
 	/* 
