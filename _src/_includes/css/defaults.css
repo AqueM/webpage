@@ -211,7 +211,8 @@
 		padding: 0.2rem;
 		border-radius: calc(var(--border-radius-single)/2);
 		max-width: 60vw;
-		overflow: scroll;
+		word-break: break-word;
+		word-wrap: break-word;
 	}
 
 	/* 
