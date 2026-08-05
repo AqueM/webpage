@@ -5,27 +5,17 @@ subtitle: tutorials, links, code snippets
 ---
 {%- flex-columns -%}
 <section class="layout__flex-item">
-{% heading "h2", "Notes: Eleventy" %}
+{% heading "h2", "Tutorials" %}
 
+### Note about Eleventy guides
 There's a lot of good Eleventy tutorials out there. But they're also usually complicated and expect you to have much more coding knowledge than I would expect from a typical fledgling indie webmaster. They surely proved difficult with my limited expertise with javascript! So I decided to take notes as I go about making this website, and share them.
 
 <ul>
-{% for post in collections.eleventy %}
+{% for post in collections.tutorials %}
 <li><a href="{{post.url}}">{{post.data.linkName}}</a> (<time>{{post.date | date: "%d/%m/%Y"}}</time>)</li>
 {% endfor %}
 </ul>
 </section>
-<!-- <section class="layout__flex-item">
-{% heading "h2", "Notes: JavaScript" %}
-
-I am by no means an expert in JS, but I did learn a lot while trying to solve my problems during development.
-
-<ul>
-{% for post in collections.javascript %}
-<li><a href="{{post.url}}">{{post.data.linkName}}</a> (<time>{{post.date | date: "%d/%m/%Y"}}</time>)</li>
-{% endfor %}
-</ul>
-</section> -->
 {%- flex-break-newrow -%}
 <section class="layout__flex-item">
 {% heading "h2", "Resources", "useful links" %} 
