@@ -28,5 +28,10 @@
     "name": "XKCD",
     "type": "episodic, science",
     "url": "https://xkcd.com/"
+  },
+  {
+    "name": "Tiger, Tiger",
+    "type": "story, fantasy, swashbuckling",
+    "url": "https://www.tigertigercomic.com/"
   }
 ]
