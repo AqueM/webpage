@@ -1,5 +1,8 @@
 [
     {
+        "date": "05/08/2026",
+        "log": "add Photoswipe tutorial, fix cookie info overflow"
+    },{
         "date": "03/08/2026",
         "log": "improve default list styling and pagination styling"
     },{
