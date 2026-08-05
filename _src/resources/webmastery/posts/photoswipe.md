@@ -20,7 +20,7 @@ For a demo of the effects, see [Tomb Treasures](/collections/treasures/page-1).
 This script needs to be included *somewhere* on every page where you want to have a gallery. It uses javascript packages from [UNPKG](https://unpkg.com/){target=_blank}{rel="external nofollow"}, a site that hosts the library-related files for you so that you don't have to upload them to your site (though it is advised if you can and know how to!). 
 
 {% raw %}
-```
+```HTML
 <script type="module">
     import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
     import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
