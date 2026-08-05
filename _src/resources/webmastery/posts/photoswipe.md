@@ -20,7 +20,7 @@ For a demo of the effects, see [Tomb Treasures](/collections/treasures/page-1).
 This script needs to be included *somewhere* on every page where you want to have a gallery. It uses javascript packages from [UNPKG](https://unpkg.com/){target=_blank}{rel="external nofollow"}, a site that hosts the library-related files for you so that you don't have to upload them to your site (though it is advised if you can and know how to!). 
 
 {% raw %}
-```HTML
+```javascript
 <script type="module">
     import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
     import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
@@ -82,11 +82,47 @@ This is how the code for the page where you want a gallery should look like.
 ```
 {% endraw %}
 
-Take note of the `${}` elements that is where you should put in your own data! At minimum, Photoswipe needs the URL (src) of the image and the dimensions (height and width). The title, alt and caption are optional.
+Take note of the `${}` elements — that is where you should put in your own data! At minimum, Photoswipe needs the URL (src) of the image and the dimensions (height and width). The title, alt and caption are optional.
 
 Note that this particular format is not set in stone, either. It is the `pswp` classes that make it work for Photoswipe, and the selectors you provided in the JS code mentioned earlier. Using `figure` tag is not obligatory, it's just good semantic HTML.
 
 See also that this code includes a `<noscript>` element. It is a fall-back for if javascript does not work (if it's turned off, for example). In that case, the lightbox wouldn't work, and the caption wouldn't be available. For that reason, the caption is displayed under the image if JS fails. This is also not a neccessary component, just proper accessibility. 
+
+A finished, filled-out gallery block with two images would look something like this:
+
+{% raw %}
+```HTML
+//all images go inside this gallery div
+<div class="gallery">
+
+	<div class="pswp-gallery__item">
+	<figure>
+        	<a href="/assets/images/by-aque/inkarra-23march2023.webp" data-pswp-width="1200" data-pswp-height="2000" target="_blank">
+            	<img loading="lazy" src="/assets/images/by-aque/inkarra-23march2023.webp" title="Inkarra, the Guiding Star" alt="Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair."></a>
+        	</a>
+        	<figcaption class="pswp-caption-content"><p>Inkarra, the Guiding Star</p><p>2023</p><p>Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.</p></figcaption>
+        	<noscript>
+			<figcaption><p>Inkarra, the Guiding Star</p><p>2023</p><p>Digital art illustration of a statue standing on an elevated boulder, with starry night sky behind. It portrays a feminine humanoid with no sex characteristics, naked, with arms apread ourtwards and head tilted up. She has long, flowing hair. There are lighted candles at her feet and on her hair.</p></figcaption>
+		</noscript>
+        </figure>
+	</div>
+
+	<div class="pswp-gallery__item">
+		<figure>
+	        	<a href="/assets/images/commissions/RPG/sorin_ares-xix.webp" data-pswp-width="1719" data-pswp-height="1215" target="_blank">
+	            	<img loading="lazy" src="/assets/images/commissions/RPG/sorin_ares-xix.webp" title="Sorin the White" alt="Digital illustration of a fantasy character, from the hips up, in limited palette of greyscale, gold and red against a grey background. There is a golden sun disc behind the character's head. The character is leaning against a decorative wrought iron railing and looking to the right with a smile. He has two feathery wings, one black and one white. He also has two sets of black horns, one set on the forehead curling back, and one above ears, curling to the front like ram horns. He is dressed in dark shirt with loose sleeves and dark pants. He has a lot off gold jewelry and accessories, as well as a white cravat with a big, red gemstone decorating it. His hair is long and black. He has shiny scales on his cheeks. His eyes are red."></a>
+	        	</a>
+	        	<figcaption class="pswp-caption-content"><p>Sorin the White</p><p>2017, by <cite><a href="https://www.patreon.com/ares_xix" target="_blank">Ares XIX</a></cite></p>
+        <p>Digital illustration of a fantasy character, from the hips up, in limited palette of greyscale, gold and red against a grey background. There is a golden sun disc behind the character's head. The character is leaning against a decorative wrought iron railing and looking to the right with a smile. He has two feathery wings, one black and one white. He also has two sets of black horns, one set on the forehead curling back, and one above ears, curling to the front like ram horns. He is dressed in dark shirt with loose sleeves and dark pants. He has a lot off gold jewelry and accessories, as well as a white cravat with a big, red gemstone decorating it. His hair is long and black. He has shiny scales on his cheeks. His eyes are red.</p></figcaption>
+	        	<noscript>
+				<figcaption><p>Sorin the White</p><p>2017, by <cite><a href="https://www.patreon.com/ares_xix" target="_blank">Ares XIX</a></cite></p>
+        <p>Digital illustration of a fantasy character, from the hips up, in limited palette of greyscale, gold and red against a grey background. There is a golden sun disc behind the character's head. The character is leaning against a decorative wrought iron railing and looking to the right with a smile. He has two feathery wings, one black and one white. He also has two sets of black horns, one set on the forehead curling back, and one above ears, curling to the front like ram horns. He is dressed in dark shirt with loose sleeves and dark pants. He has a lot off gold jewelry and accessories, as well as a white cravat with a big, red gemstone decorating it. His hair is long and black. He has shiny scales on his cheeks. His eyes are red.</p></figcaption>
+			</noscript>
+	        </figure>
+		</div>
+</div>
+```
+{% endraw %}
 </section>
 
 <section>
