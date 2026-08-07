@@ -41,6 +41,10 @@
 	}
 }
 
+.layout__flex-block--start{
+	justify-content: flex-start;
+}
+
 .layout__flex-block__row--small {
 	flex-wrap: wrap;
 	flex-direction: row;

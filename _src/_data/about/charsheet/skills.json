@@ -1,0 +1,87 @@
+﻿[
+  {
+    "name": "Acrobatics",
+    "prof": false,
+    "stat": "dex"
+  },
+  {
+    "name": "Animal Handling",
+    "prof": false,
+    "stat": "wis"
+  },
+  {
+    "name": "Arcana",
+    "prof": true,
+    "stat": "int"
+  },
+  {
+    "name": "Athletics",
+    "prof": false,
+    "stat": "str"
+  },
+  {
+    "name": "Deception",
+    "prof": true,
+    "stat": "cha"
+  },
+  {
+    "name": "History",
+    "prof": true,
+    "stat": "int"
+  },
+  {
+    "name": "Insight",
+    "prof": true,
+    "stat": "wis"
+  },
+  {
+    "name": "Intimidation",
+    "prof": false,
+    "stat": "cha"
+  },
+  {
+    "name": "Medicine",
+    "prof": true,
+    "stat": "wis"
+  },
+  {
+    "name": "Nature",
+    "prof": true,
+    "stat": "wis"
+  },
+  {
+    "name": "Perception",
+    "prof": false,
+    "stat": "wis"
+  },
+  {
+    "name": "Performance",
+    "prof": false,
+    "stat": "cha"
+  },
+  {
+    "name": "Persuasion",
+    "prof": false,
+    "stat": "cha"
+  },
+  {
+    "name": "Religion",
+    "prof": false,
+    "stat": "int"
+  },
+  {
+    "name": "Sleight of Hand",
+    "prof": false,
+    "stat": "dex"
+  },
+  {
+    "name": "Stealth",
+    "prof": false,
+    "stat": "dex"
+  },
+  {
+    "name": "Survival",
+    "prof": false,
+    "stat": "wis"
+  }
+]

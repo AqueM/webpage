@@ -51,6 +51,11 @@
 	ol {
 		line-height: 2rem;
 		max-width: max-content;
+		padding-inline-start: 0.5rem;
+
+		@media only screen and (min-width: 600px) {
+			margin-left: 1rem;
+		}
 	}
 
 	ul {
@@ -180,7 +185,7 @@
 	pre {
 		display: flex;
 		position: relative;
-		
+
 		&:before {
 			position: absolute;
 			left: 15%;
@@ -200,6 +205,7 @@
 		background-color: var(--color-secondrary-transparent);
 		padding: 1rem;
 		position: relative;
+
 		@media only screen and (min-width: 768px) {
 			margin: 1rem auto 1rem 10vw;
 		}

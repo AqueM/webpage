@@ -1,0 +1,10 @@
+﻿[
+  {
+    "name": "rings of marriage",
+    "text": "A pair of magical rings made of silver. One of them has an amber gemstone inset, the other is a plain band. A creature can only attune to them by participating in the spell <em>Ceremony</em>. When a creature is attuned to them, they provide the following benefits: +1 bonus to Armor Class and saving throws, they are unharmed by temperatures of 0 degrees Fahrenheit or lower."
+  },
+  {
+    "name": "Tablet of knowledge",
+    "text": "This magical item enables an attuned creature to retrieve information or use the spell <em>Sending</em> by expending a charge. The item regenerates 5d6 charges at dawn. Each time it is used, there's a 1d100 chance the user will receive 1d4 psychic damage."
+  }
+]
