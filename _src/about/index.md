@@ -110,7 +110,7 @@ pageTitle: "Basics about Aque"
       </div>
       <div
         class="character-sheet__block character-sheet__block--inner character-sheet_numbers layout__flex-item__aside">
-        <span class="character-sheet__label">AC</span><span class="character-sheet__stat--big">12</span>
+        <span class="character-sheet__label">AC</span><span class="character-sheet__stat--big">13</span>
       </div>
       <div
         class="character-sheet__block character-sheet__block--inner character-sheet_numbers layout__flex-item__aside">
