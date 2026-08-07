@@ -81,7 +81,7 @@
   },
   {
     "name": "Survival",
-    "prof": false,
+    "prof": true,
     "stat": "wis"
   }
 ]
