@@ -4,6 +4,7 @@ tags:
   - liquidJS
   - javascript
 disclaimers: liquidJS
+date: 2026-07-03
 ---
 <section>
 {% heading "h2", "active link styling" %}

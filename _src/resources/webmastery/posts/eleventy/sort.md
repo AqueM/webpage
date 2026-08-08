@@ -2,6 +2,7 @@
 linkName: "eleventy: sorting and ordering"
 tags: liquidJS
 disclaimers: liquidJS
+date: 2026-07-03
 ---
 <section>
 By default, all collections are sorted by *date* in Eleventy. 

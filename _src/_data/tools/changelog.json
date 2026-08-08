@@ -2,19 +2,24 @@
     {
         "date": "08/08/2026",
         "log": "added a tutorial for the Dnd Char sheet :)"
-    },{
+    },
+    {
         "date": "07/08/2026",
         "log": "added a DnD-style character sheet to Bio, inspired by Frills"
-    },{
+    },
+    {
         "date": "06/08/2026",
         "log": "added pixel art throught the page, updated credits"
-    },{
+    },
+    {
         "date": "05/08/2026",
         "log": "added Photoswipe tutorial, fixed cookie info overflow"
-    },{
+    },
+    {
         "date": "03/08/2026",
         "log": "improve default list styling and pagination styling"
-    },{
+    },
+    {
         "date": "02/08/2026",
         "log": "new misc resource, added cookie disclaimer, added new character: the Hunt, added new commission"
     },

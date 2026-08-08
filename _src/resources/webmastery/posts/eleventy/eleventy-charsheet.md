@@ -3,6 +3,8 @@ linkName: "eleventy code snippet: DnD Character Sheet"
 tags: 
   - liquidJS
   - 'code snippet'
+disclaimers: liquidJS
+date: 2026-08-08
 ---
 <section>
 

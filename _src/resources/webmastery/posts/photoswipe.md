@@ -5,6 +5,7 @@ tags:
   - javascript
   - css
   - 'code snippet'
+date: 2026-08-05
 ---
 <section>
 {% heading "h2", "What is Photoswipe?" %}

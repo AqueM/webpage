@@ -2,6 +2,7 @@
 linkName: "eleventy: dates"
 tags: liquidJS
 disclaimers: liquidJS
+date: 2026-07-03
 ---
 Here's some tricks about dealing with dates in Eleventy.
 

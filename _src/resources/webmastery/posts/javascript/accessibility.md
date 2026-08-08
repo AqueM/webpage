@@ -1,4 +1,0 @@
----
-linkName: accessibility toggles
----
-WIP!
