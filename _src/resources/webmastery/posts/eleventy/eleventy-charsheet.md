@@ -60,81 +60,7 @@ The others are simple dictionaries of key-value pairs, occassionally with a thir
     "prof": false,
     "stat": "wis"
   },
-  {
-    "name": "Arcana",
-    "prof": true,
-    "stat": "int"
-  },
-  {
-    "name": "Athletics",
-    "prof": false,
-    "stat": "str"
-  },
-  {
-    "name": "Deception",
-    "prof": true,
-    "stat": "cha"
-  },
-  {
-    "name": "History",
-    "prof": true,
-    "stat": "int"
-  },
-  {
-    "name": "Insight",
-    "prof": true,
-    "stat": "wis"
-  },
-  {
-    "name": "Intimidation",
-    "prof": false,
-    "stat": "cha"
-  },
-  {
-    "name": "Medicine",
-    "prof": true,
-    "stat": "wis"
-  },
-  {
-    "name": "Nature",
-    "prof": true,
-    "stat": "wis"
-  },
-  {
-    "name": "Perception",
-    "prof": false,
-    "stat": "wis"
-  },
-  {
-    "name": "Performance",
-    "prof": false,
-    "stat": "cha"
-  },
-  {
-    "name": "Persuasion",
-    "prof": false,
-    "stat": "cha"
-  },
-  {
-    "name": "Religion",
-    "prof": false,
-    "stat": "int"
-  },
-  {
-    "name": "Sleight of Hand",
-    "prof": false,
-    "stat": "dex"
-  },
-  {
-    "name": "Stealth",
-    "prof": false,
-    "stat": "dex"
-  },
-  {
-    "name": "Survival",
-    "prof": true,
-    "stat": "wis"
-  }
+  (etc ...)
 ]
 ```
 {% endraw %}
@@ -193,7 +119,7 @@ I wanted to calculate the skill bonus, which is ability score bonus for the rele
 ```
 {% endraw %}
 
-What's happening there is this: for each skill, I calculate the ability score bonus with the same equation I used, using square brackets [] to enable refering to the correct ability score based on what's in the 'stat' key of a skill. I capture that calculation into a variable within LiquidJS itself. Then, I use that captured value to add proficiency if applicable. I could technically do it all in one go as `+{{about.charsheet.stats[skill.stat] | minus: 10.5 | divided_by: 2 | round | plus: proficiency}}` but then I'd have to repeat it again to use in the non-proficient `else` right after. Like this I can just use `statNumber`.
+What's happening there is this: for each skill, I calculate the ability score bonus with the same equation I used, using square brackets [ ] to enable refering to the correct ability score based on what's in the 'stat' key of a skill. I capture that calculation into a variable within LiquidJS itself. Then, I use that captured value to add proficiency if applicable. I could technically do it all in one go as {% raw %}`+{{about.charsheet.stats[skill.stat] | minus: 10.5 | divided_by: 2 | round | plus: proficiency}}`{% endraw %} but then I'd have to repeat it again to use in the non-proficient `else` right after. Like this I can just use `statNumber`.
 
 </section>
 <section>
