@@ -4,6 +4,7 @@ tags:
   - html
   - javascript
   - css
+  - 'code snippet'
 ---
 <section>
 {% heading "h2", "What is Photoswipe?" %}

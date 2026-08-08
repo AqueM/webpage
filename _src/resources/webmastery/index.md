@@ -3,19 +3,25 @@ mainMenu: true
 linkName: Webmastery
 subtitle: tutorials, links, code snippets
 ---
-{%- flex-columns -%}
-<section class="layout__flex-item">
 {% heading "h2", "Tutorials" %}
-
-### Note about Eleventy guides
-There's a lot of good Eleventy tutorials out there. But they're also usually complicated and expect you to have much more coding knowledge than I would expect from a typical fledgling indie webmaster. They surely proved difficult with my limited expertise with javascript! So I decided to take notes as I go about making this website, and share them.
-
+{%- flex-columns -%}
+<div class="layout__flex-item layout__flex-block__row layout__flex-block--space-around">
+{% assign tutorials = collections.tutorials | reverse %}
 <ul>
-{% for post in collections.tutorials %}
+{% for post in tutorials %}
 <li><a href="{{post.url}}">{{post.data.linkName}}</a> (<time>{{post.date | date: "%d/%m/%Y"}}</time>)</li>
 {% endfor %}
 </ul>
-</section>
+
+<div class="disclaimers  layout__flex-item">
+    <div class="design__disclaimer">
+
+### Note about Eleventy guides
+    There's a lot of good Eleventy tutorials out there. But they're also usually complicated and expect you to have much more coding knowledge than I would expect from a typical fledgling indie webmaster. They surely proved difficult with my limited expertise with javascript! So I decided to take notes as I go about making this website, and share them.
+
+    </div>
+</div>
+</div>
 {%- flex-break-newrow -%}
 <section class="layout__flex-item">
 {% heading "h2", "Resources", "useful links" %} 

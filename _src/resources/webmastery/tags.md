@@ -12,8 +12,9 @@ eleventyComputed:
   permalink: "/resources/webmastery/tags/{{tag | slugify}}.html"
 ---
 {%- capture title -%}tutorials tagged '{{tag}}'{%- endcapture -%}
+{% assign guides = collections[tag] | reverse %}
 <ul>
-{% for post in collections[tag] | reverse %}
+{% for post in guides %}
 <li><a href="{{post.url}}">{{post.data.linkName}}</a> ({{post.date | date: "%d/%m/%Y"}})</li>
 {% endfor %}
 </ul>
