@@ -6,7 +6,7 @@
     },
     {
         "name": "e-mail",
-        "url": "mailto:{{site.author.email}}?body=Remember to edit the e-mail address if you're not an AI!",
+        "url": "?body=Remember to edit the e-mail address if you're not an AI!",
         "icon": "/assets/images/layout/font-awesome/envelope-solid-full.svg"
     }
 ]

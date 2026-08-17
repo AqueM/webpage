@@ -27,7 +27,8 @@ Want to contact me directly?
 {% for contact in about.contact %}
 <div class="theme__border-oval desing__decor-link design__center">
 			{% include "partials/_decor-sides.html" %}
-			<a href="{{contact.url}}" target="_blank"><span class="icon icon--left" style="--layout-img: url('{{contact.icon}}');"></span>{{contact.name}}</a>
+			{%- capture url -%}{% if contact.name == "e-mail" %}mailto:{{site.author.email}}{% endif %}{{contact.url}}{%- endcapture -%}
+			<a href="{{url}}" target="_blank"><span class="icon icon--left" style="--layout-img: url('{{contact.icon}}');"></span>{{contact.name}}</a>
 </div>
 {%- endfor -%}
 </div>
