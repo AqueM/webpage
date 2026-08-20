@@ -152,9 +152,11 @@
 	color: var(--font-color);
 	border-top: calc(var(--border-width)/100) solid var(--border-color);
 	border-bottom: calc(var(--border-width)/100) solid var(--border-color);
+	text-shadow: 2px 2px var(--color-accent);
 
 	@media only screen and (min-width: 768px) {
 		border: unset;
+		text-shadow: unset;
 	}
 }
 

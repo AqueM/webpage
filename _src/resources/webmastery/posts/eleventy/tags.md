@@ -55,7 +55,7 @@ And then the page content can be something like this:
 <section>
 {% heading "h2", "tag list" %}
 
-This is what lives at the top of every page of mine where I use tags for categorizin content — including this one!
+This is what lives at the top of every page of mine where I use tags for categorising content — including this one!
 
 {% raw %}
 ```liquidJS

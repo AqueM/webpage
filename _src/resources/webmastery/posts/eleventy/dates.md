@@ -9,7 +9,7 @@ Here's some tricks about dealing with dates in Eleventy.
 <section>
 {% heading "h2", "get the right date" %}
 
-Eleventy has some pre-made data in the front matter for each page it creates. That includes *date*, which is a very useful variable. But! There's two exposed in the page variables and you need to remember to use the right one. 
+Eleventy has some pre-made data in the front matter for each page it creates. That includes **date**, which is a very useful variable. But! There's two exposed in the page variables and you need to remember to use the right one. 
 
 {% raw %}`{{date}}`{% endraw %} resolves to *{{date}}* (the literal text) if you don't set the date yourself in front matter, like this:
 {% raw %}
@@ -49,7 +49,7 @@ Out of the box, Eleventy returns `page.date` as this long unweildy string: *{{pa
 ```
 {% endraw %}
 
-This means providing the *date* filter as well as the format in quotations. I usually use some variation of `"%d/%m/%Y"` for full dates or `"%m/%Y"` when I only need the month (like in my Last Updated tags). 
+This means providing the **date** filter as well as the format in quotations. I usually use some variation of `"%d/%m/%Y"` for full dates or `"%m/%Y"` when I only need the month (like in my Last Updated tags). 
 
 The formatting follows rules of [strftime](https://strftime.net/){target=_blank}{rel="external no follow"}, so you can really do some weird things with your dates if you want to. 
 </section>
