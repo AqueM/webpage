@@ -182,11 +182,18 @@
 		position: relative;
 	}
 
-	pre {
-		display: flex;
+	pre code {
+		margin: 1rem auto;
+		padding: 1rem;
 		position: relative;
-		min-width: 0;
+		font-size: 1rem;
+		max-width: 60vw;
+		display: block;
 
+		/* @media only screen and (min-width: 768px) {
+			margin: 1rem auto 1rem 10vw;
+			width: 60%;
+		} */
 		&:before {
 			position: absolute;
 			left: 15%;
@@ -198,18 +205,6 @@
 			box-shadow: 0 0 0 calc(var(--border-width)*2) var(--color-accent-transparent);
 			margin: var(--border-width);
 		}
-	}
-
-	pre code {
-		margin: 1rem auto;
-		padding: 1rem;
-		position: relative;
-		font-size: 1rem;
-
-		/* @media only screen and (min-width: 768px) {
-			margin: 1rem auto 1rem 10vw;
-			width: 60%;
-		} */
 	}
 
 	code {
