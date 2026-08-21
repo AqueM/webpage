@@ -183,11 +183,13 @@
 	}
 	pre {
 		position: relative;
+				margin: 1rem auto;
+				max-width: 60vw;
 	}
 
 	pre::before {
 			position: absolute;
-			left: 15vw;
+			left: 1rem;
 			z-index: 2;
 			font-size: 0.8rem;
 			background-color: var(--color-accent-transparent);
@@ -199,10 +201,9 @@
 		}
 	
 	pre code {
-		margin: 1rem auto;
+
 		padding: 1rem;
 		font-size: 1rem;
-		max-width: 60vw;
 		display: block;
 
 		/* @media only screen and (min-width: 768px) {
