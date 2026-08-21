@@ -181,6 +181,9 @@
 		margin: 0;
 		position: relative;
 	}
+	pre {
+		position: relative;
+	}
 
 	pre::before {
 			position: absolute;
@@ -198,7 +201,6 @@
 	pre code {
 		margin: 1rem auto;
 		padding: 1rem;
-		position: relative;
 		font-size: 1rem;
 		max-width: 60vw;
 		display: block;
