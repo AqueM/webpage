@@ -5,13 +5,13 @@ disclaimers: liquidJS
 date: 2026-07-03
 ---
 <section>
+
 By default, all collections are sorted by **date** in Eleventy. 
 
 If you want to sort a collection by any other sortable variable (like a name) your pages have, you'll have to use the LiquidJS filter `sort`. It allows you to sort a collection by any variable, including the custom ones you add to page front matter. 
-</section>
-<section>
-Here's how I sort my main menu pages to make sure they display in the order I want!
 
+Here's how I sort my main menu pages to make sure they display in the order I want!
+</section>
 {% heading "h2", "custom ordering" %}
 
 If a page doesn't have the variable I'm sorting for, it will default to 0, so first I set a different default one in my main template:
