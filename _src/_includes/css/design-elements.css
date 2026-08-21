@@ -269,7 +269,7 @@
 }
 
 
-pre:has(.language-liquidJS)::before {
+.language-liquidJS::before {
 	content: "liquidJS";
 }
 
