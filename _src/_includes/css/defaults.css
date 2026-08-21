@@ -182,6 +182,19 @@
 		position: relative;
 	}
 
+	pre::before {
+			position: absolute;
+			left: 15vw;
+			z-index: 2;
+			font-size: 0.8rem;
+			background-color: var(--color-accent-transparent);
+			border: var(--border-width) dashed var(--color-secondrary);
+			padding: 0.2rem;
+			box-shadow: 0 0 0 calc(var(--border-width)*2) var(--color-accent-transparent);
+			margin: var(--border-width);
+		top: -1rem;
+		}
+	
 	pre code {
 		margin: 1rem auto;
 		padding: 1rem;
@@ -194,17 +207,6 @@
 			margin: 1rem auto 1rem 10vw;
 			width: 60%;
 		} */
-		&:before {
-			position: absolute;
-			left: 15%;
-			z-index: 2;
-			font-size: 0.8rem;
-			background-color: var(--color-accent-transparent);
-			border: var(--border-width) dashed var(--color-secondrary);
-			padding: 0.2rem;
-			box-shadow: 0 0 0 calc(var(--border-width)*2) var(--color-accent-transparent);
-			margin: var(--border-width);
-		}
 	}
 
 	code {
