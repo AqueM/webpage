@@ -185,6 +185,7 @@
 	pre {
 		display: flex;
 		position: relative;
+		min-width: 0;
 
 		&:before {
 			position: absolute;
@@ -202,7 +203,6 @@
 
 	pre code {
 		margin: 1rem auto;
-		background-color: var(--color-secondrary-transparent);
 		padding: 1rem;
 		position: relative;
 
@@ -214,8 +214,6 @@
 
 	code {
 		background-color: var(--color-secondrary-transparent);
-		font-size: 1rem;
-		font-family: system-ui;
 		padding: 0.2rem;
 		border-radius: calc(var(--border-radius-single)/2);
 		overflow: scroll;
