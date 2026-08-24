@@ -3,7 +3,8 @@ linkName: Głos w sprawie konwenansów
 date: 2008-11-13
 lang: PL
 ---
-Sokratesowi nie wolno tańczyć.
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Sokratesowi nie wolno tańczyć.
 Pląsy nie przystają do zmarszczonego czoła, 
 zastygłego nad myślą posągowego oblicza
 naznaczonego odrobiną zaciekawionego zdziwienia. 
@@ -36,4 +37,4 @@ wieczny mistrz i uczeń...
 Tylko Ksantypa pamięta, 
 że lubił śmiać się, miał chwile smutku
 i zwątpienia, a wieczorami, w Dionizje
-tańczył, pokazując owłosione, stare nogi... 
+tańczył, pokazując owłosione, stare nogi... {% endblock %}
