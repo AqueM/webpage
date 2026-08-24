@@ -27,6 +27,9 @@ i czasem warto jest ustąpić.
 
 {% endblock %}
 {% block source %}
+
 — *Magdzie i Hance z miasta Wrocławia*
 *za to, że są i w podzięce, że przy mnie,*
-*nawet kiedy nie chcę ich znać. Wsparłyście mnie, dziękuję.*{% endblock %}
+*nawet kiedy nie chcę ich znać. Wsparłyście mnie, dziękuję.*
+
+{% endblock %}

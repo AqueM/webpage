@@ -32,6 +32,6 @@ i zakopane są talenty
 lecz o wojenne się  k ł ó c ą  fronty
 Że teraz miast miłosierdzia — słyszę m s z e
 {% indent %}— Przykro mi, Ojcze! {% endindent %}
-
-
+{% endblock %}
+{% block source %}
 *Złudzeniom Norwida.*{% endblock %}

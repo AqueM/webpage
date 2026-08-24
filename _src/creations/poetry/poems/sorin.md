@@ -19,4 +19,8 @@ ni szaroburych moich piór
 ni srebrnych twoich łez
 nie starczy aby wznieśc do chmur
 setki nieukończonych wież…{% endblock %}
-{% block source %}oryginalnie udostępnione na {% tumblrLink 'https://iriascend.tumblr.com/post/122838098697' %}, o [Sorinie](/resources/characters/deities/sorin){% endblock %}
+{% block source %}
+
+oryginalnie udostępnione na {% tumblrLink 'https://iriascend.tumblr.com/post/122838098697' %}, o [Sorinie](/resources/characters/deities/sorin)
+
+{% endblock %}

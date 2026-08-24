@@ -60,4 +60,7 @@ nie odważył się nazwać
 zwycięstwa — najgorszym uczuciem.  
 {% endblock %}
 {% block source %}
-*Po kłótni z bratem. *{% endblock %}
+
+*Po kłótni z bratem.*
+
+{% endblock %}
