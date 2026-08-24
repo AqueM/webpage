@@ -66,7 +66,6 @@ Parties, in general, as well as performing art and creating any kind of arts or 
 Usually, Lyrebird’s followers think of themselves as one big family, and even the deity themself is referred to as one of their kin rather than a god. 
 {% endblock %}
 {% block bonus %}
-{% heading "h2", "Related quotes" %}
 {%- flex-stack -%}
 {% theme__border-square %}“Hearts starve as well as bodies: Give us Bread, but give us Roses.”  
 (James Oppenheim, 1911) {% endtheme__border-square %}
