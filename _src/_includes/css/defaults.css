@@ -162,6 +162,7 @@
 		padding: 0.25rem;
 @media only screen and (min-width: 760px) {
 	padding: 0.5rem;
+}
 	}
 
 	th:not(.external-code *) {
