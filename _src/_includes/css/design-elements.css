@@ -95,7 +95,6 @@
 	padding-right: 10%;
 	text-align: center;
 	margin: 1rem 0 1rem 0;
-	min-width: fit-content;
 
 	@media only screen and (min-width: 768px) {
 		padding-left: 30%;
