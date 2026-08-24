@@ -3,7 +3,8 @@ linkName: Piątek 15:00
 date: 2008-03-21
 lang: PL
 ---
-Boże, Boże
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Boże, Boże
 za moje grzechy cierpiałeś
 dla mnie na krzyżu umarłeś
 — a oni...! 
@@ -43,4 +44,4 @@ Rzewniej płaczę jeszcze
 i za siebie, i za innych
 oddaję Ci dziś ofiarę
 nie tak czystą, świętą czy niewinną
-ale równie szczerą.  
+ale równie szczerą.  {% endblock %}
