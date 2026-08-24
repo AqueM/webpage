@@ -160,6 +160,7 @@
 				span {
 					display:block;
 			margin: 5%;
+					overflow-wrap: break-word;
 					overflow: hidden;
 					text-overflow: ellipsis;
 		}
