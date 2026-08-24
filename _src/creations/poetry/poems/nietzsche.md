@@ -3,7 +3,8 @@ linkName: Dlaczego Nietzsche miał trochę racji
 date: 2008-12-09
 lang: PL
 ---
-Puls z tyłu głowy. 
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Puls z tyłu głowy. 
 Ziemia zmieniła oś
 na moją potylicę, 
 miejsce, gdzie kłębią
@@ -29,4 +30,4 @@ i poruszam dłońmi
 Duma nie pozwala mi wstać
 potem jest
 drżenie, zimno, odrętwienie...
-Będzie płacz i zgrzytanie zębów. 
+Będzie płacz i zgrzytanie zębów. {% endblock %}
