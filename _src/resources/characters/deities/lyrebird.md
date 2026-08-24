@@ -6,9 +6,7 @@ eleventyComputed:
 bonusExists: true
 ---
 {% layout "layouts/_deity.liquid" %}
-{% block quote %}
-Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, troubadours; the strangers, the mad, the wanderers without harbour, for they teach us to see the world through different eyes. 
-{% endblock %}
+{% block quote %}Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, troubadours; the strangers, the mad, the wanderers without harbour, for they teach us to see the world through different eyes. {% endblock %}
 {% block list %}
 
 - **Domains:** Change, Introspection and Self-Discovery, Community
