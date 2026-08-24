@@ -3,7 +3,6 @@ linkName: Test
 eleventyComputed:
   pageTitle: "Test"
   subtitle: "Kin of the Wayward"
-layout: layouts/deity
 ---
 {% layout "_includes/layouts/deity.liquid" %}
 {% block quote %}
