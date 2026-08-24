@@ -3,7 +3,8 @@ linkName: Magnifikat 2
 date: 2007-08-25
 lang: PL
 ---
-Dziękuję ci, Boże
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Dziękuję ci, Boże
 Wszechmogący Panie
 co zsyłasz iluminację
 na ludzi swych pobożnych
@@ -30,4 +31,4 @@ Pozwalasz mi znaleźć czasem
 puch anioła na drodze życia
 Pozwalasz mi popełniać błędy
 i na nich uczyć się pokory... 
-Dziękuję. 
+Dziękuję. {% endblock %}
