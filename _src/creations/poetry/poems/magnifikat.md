@@ -3,7 +3,8 @@ linkName: Magnifikat 1
 date: 2005-06-10
 lang: PL
 ---
-I podziękować muszę Bogu
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}I podziękować muszę Bogu
 za to, że tak bardzo mi pomógł
 Bo choć życiowego testu nie zdałam
 z całych sił się starałam...
@@ -51,4 +52,4 @@ pozwoliłam wrogom zająć flanki...
 Nie wiem już, o co toczy się ta bitwa
 wśród zgiełku cel straciłam
 tonący brzytwy się chwyta
-a ja wiersze piszę...
+a ja wiersze piszę...{% endblock %}
