@@ -3,7 +3,8 @@ linkName: Pocałunek
 date: 2007-12-10
 lang: PL
 ---
-Lampka mała cichutko promieniami
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Lampka mała cichutko promieniami
 otulała Cię w ciemność
 próbowała stawić barierę między nami
 a dawała przyjemność
@@ -31,4 +32,4 @@ Nie poznałabym po innych znakach
 I już miałeś możność wstępu
 ku ust upragnionych koralu
 a ja do dwóch niebios zajrzawszy odmętu
-zapamiętam: oto smak raju... 
+zapamiętam: oto smak raju... {% endblock %}
