@@ -159,8 +159,8 @@
 		border-right: var(--border-width) solid var(--color-darkest);
 				span {
 					display:block;
-			margin: 5%;
-word-break: break-all;
+			margin: 2%;
+word-break: break-word;
 					hyphens: auto;
 					overflow: hidden;
 					text-overflow: ellipsis;
