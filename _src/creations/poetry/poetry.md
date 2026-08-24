@@ -10,7 +10,7 @@ Poems dated to 01/01/2009 are ones I lost the dates on. They're from my youth, p
 
 Poems dated to 01/01/2007 I also can't date properly, but they're even older, from my teenagehood, probably written in high school.
 
-<div class="design__box--small">
+<div class="design__box">
 
 **Currently archived poems:** {{collections.poems.length}}</div>
 <section>
