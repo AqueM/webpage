@@ -147,14 +147,12 @@
 		border: var(--border-width) solid var(--color-darkest);
 		border-radius: var(--border-radius);
 		width: 100%;
+		display:block;
+		overflow:scroll;
 	}
 
 	th:not(.external-code *) {
 		border-right: var(--border-width) solid var(--color-darkest);
-	}
-	tr:not(.external-code *) {
-		display:block;
-		overflow:scroll;
 	}
 
 	td:not(.external-code *),
