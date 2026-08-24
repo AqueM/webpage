@@ -3,7 +3,8 @@ linkName: Eden utracony
 date: 2008-03-07
 lang: PL
 ---
-Choć dla mnie stworzyłeś niebo i ziemię
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Choć dla mnie stworzyłeś niebo i ziemię
 i po tym niebie rozesłałeś anioły
 na sercu noszę tęskne  b r z e m i ę
 bez kraju lat dziecinnych duch samotny...
@@ -32,4 +33,4 @@ lecz o wojenne się  k ł ó c ą  fronty
 {% indent %}— Przykro mi, Ojcze! {% endindent %}
 
 
-*Złudzeniom Norwida.*
+*Złudzeniom Norwida.*{% endblock %}
