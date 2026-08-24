@@ -5,14 +5,12 @@
 <section>
 {%- flex-columns -%}{%- flex-item %}
 {% block summary %}{% endblock %}
+{% block list %}{% endblock %}
 {%- endflex-item -%}
 
-{%- flex-aside -%}
-{%- if portrait -%}{% gallery %}{% imageMine portrait %}{% endgallery %}{% endif %}
-
-{% block list %}{% endblock %}
-
-{% endflex-aside %}
+{%- if portrait -%}{%- flex-aside -%}
+{% gallery %}{% imageMine portrait %}{% endgallery %}
+{% endflex-aside %}{% endif %}
 {%- endflex-columns -%}
 </section>
 
