@@ -60,4 +60,13 @@ Things I liked and probably regularly return to.
 {%- endfor %}
 </ul>
 </section>
+
+<section class="layout__flex-item">
+{% heading "h2", "Other" %}
+<ul>
+{%- for link in about.recs.misc -%}
+<li><a href="{{link.url}}" target="_blank">{{link.name}}</a> ({{link.type}})</li>
+{%- endfor %}
+</ul>
+</section>
 {%- endflex-columns -%}
