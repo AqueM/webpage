@@ -3,7 +3,8 @@ linkName: O ironio
 date: 2009-01-01
 lang: PL
 ---
-O ironio! Matko satyryków, 
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}O ironio! Matko satyryków, 
 co śmiechem rozum nasz 
 ratujesz przed upadkiem 
 w obliczu głupoty
@@ -15,4 +16,4 @@ W pełnej poznaję krasie
 I opisuję, bo chołubię ciebie! 
 Ironio, nadzieji iskro,
 świadectwie władz umysłu, 
-zwiastunie 
+zwiastunie {% endblock %}
