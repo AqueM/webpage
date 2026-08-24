@@ -3,7 +3,8 @@ linkName: Modlitwa w intencji ludzkości
 date: 2007-01-01
 lang: PL
 ---
-Ojcze nasz, któryś jest w niebie 
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Ojcze nasz, któryś jest w niebie 
 a którego imienia nikt już nie pamięta 
 choć wzywamy je od wieków w chwilach 
 rozpaczy, zdziwienia 
@@ -33,4 +34,4 @@ Wskaż właściwą drogę im, jak pasterz dobry zagubionej trzodzie
 Nam, ludziom 
 Nam, grzesznikom 
 Nam, pokornym 
-— jako i my wybaczamy naszym winowajcom...
+— jako i my wybaczamy naszym winowajcom...{% endblock %}
