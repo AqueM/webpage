@@ -1,4 +1,5 @@
 {
     "permalink": "/creations/poetry/{{linkName | slugify}}/index.html",
-  "tags": "poems"
+  "tags": "poems",
+    "layout": "layouts/_poem.liquid"
 }
