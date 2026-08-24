@@ -3,8 +3,6 @@ linkName: Alfa i Omega
 date: 2008-09-03
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}
 Początki bywają trudne i wie o tym każdy,
 zwłaszcza, gdy mowa o Alfie świata. 
 My mówimy: 
@@ -51,4 +49,4 @@ u podstawy istnienia:
 Pierwszy haust powietrza,
 klaps
 Matczyne ramiona
-i spokój... {% endblock %}
+i spokój...

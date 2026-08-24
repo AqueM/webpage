@@ -3,6 +3,8 @@ linkName: Powołanie
 date: 2008-10-22
 lang: PL
 ---
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
 Spisałam: po niebie szumiące żurawie
 zostawiające te obłoków ogony;
 I rosy trawiastego oceanu plony
@@ -19,4 +21,4 @@ upadek Babilonu bliski głosić masz"
 
 Więc swymi piórami i krwistym atramentem
 z serca mojego przez Księcia utoczonym
-głoszę "carpe diem" i chronię przed przeklęciem... 
+głoszę "carpe diem" i chronię przed przeklęciem... {% endblock %}

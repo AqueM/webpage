@@ -3,8 +3,9 @@ linkName: Do T***
 date: 2007-01-01
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Kocham! tak brzmi pięknia
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Kocham! tak brzmi pięknia
 Kocham!! i serce mięknie
 Kocham!!! aż do utraty tchu
 Kocham ciebie każdego wieczoru

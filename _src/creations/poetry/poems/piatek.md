@@ -3,8 +3,9 @@ linkName: Piątek 15:00
 date: 2008-03-21
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Boże, Boże
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Boże, Boże
 za moje grzechy cierpiałeś
 dla mnie na krzyżu umarłeś
 — a oni...! 

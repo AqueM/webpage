@@ -3,6 +3,8 @@ linkName: Przyjaźń
 date: 2004-09-13
 lang: PL
 ---
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
 Samotność ma mnie dość —
 wyrzekła się najwierniejszej córy! 
 Samotność ma mnie dość
@@ -20,4 +22,4 @@ Nie wiedząc co począć
 ze sobą... 
 Samotność ma mnie dość — 
 I dobrze, 
-bo mam w ręku anielski puch...
+bo mam w ręku anielski puch...{% endblock %}

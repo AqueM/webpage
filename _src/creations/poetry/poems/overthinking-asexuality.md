@@ -3,8 +3,9 @@ linkName: overthinking asexuality
 date: 2017-03-01
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Nobody thought twice about it
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Nobody thought twice about it
 even me.
 Just lonely, just solitary, just nerd.
 Nobody thought to stop for a moment

@@ -3,8 +3,9 @@ linkName: O ironio
 date: 2009-01-01
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}O ironio! Matko satyryków, 
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+O ironio! Matko satyryków, 
 co śmiechem rozum nasz 
 ratujesz przed upadkiem 
 w obliczu głupoty

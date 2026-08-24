@@ -3,6 +3,8 @@ linkName: Reason why
 date: 2017-05-23
 lang: EN
 ---
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
 I’ve always felt small
 like my body was way bigger than my soul
 like — even if I wasn’t size 16 —
@@ -56,4 +58,4 @@ and can’t understand how I can act so big and feel so small
 Part of the reason why is
 it’s the children who choose what you reinforce
 and I only was safe when I was small, 
-but I only mattered when I was big.
+but I only mattered when I was big.{% endblock %}

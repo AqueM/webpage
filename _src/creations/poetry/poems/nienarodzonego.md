@@ -3,8 +3,9 @@ linkName: Do nienarodzonego
 date: 2009-03-22
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Boisz się.
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Boisz się.
 Mnie też strach
 by obleciał
 na Twoim miejscu.

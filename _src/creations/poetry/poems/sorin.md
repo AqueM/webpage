@@ -3,9 +3,8 @@ linkName: untitled
 date: 2015-06-30
 lang: PL
 ---
-oryginalnie udostępnione na {% tumblrLink 'https://iriascend.tumblr.com/post/122838098697' %}, o [Sorinie](/resources/characters/deities/sorin)
-{% divider-lines %}
-
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
 Budowałem wieże z kart
 dwa eony lat
 umoczyłem we krwi blat
@@ -19,4 +18,5 @@ budować chciałem móc?
 ni szaroburych moich piór
 ni srebrnych twoich łez
 nie starczy aby wznieśc do chmur
-setki nieukończonych wież…
+setki nieukończonych wież…{% endblock %}
+{% block source %}oryginalnie udostępnione na {% tumblrLink 'https://iriascend.tumblr.com/post/122838098697' %}, o [Sorinie](/resources/characters/deities/sorin){% endblock %}

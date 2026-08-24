@@ -3,8 +3,9 @@ linkName: I can’t afford a breakdown
 date: 2018-04-12
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}hold it together just
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+hold it together just
 a little more
 hold it together, with glue if you must
 don’t complain that you’re sore

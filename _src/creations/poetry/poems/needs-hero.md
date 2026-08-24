@@ -3,7 +3,7 @@ linkName: She needs a hero
 date: 2009-01-01
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %}
+{% layout "layouts/poem.liquid" %}
 {% block poem %}
 All I ever learned was 
 how to back out with my tail between my legs

@@ -3,8 +3,9 @@ linkName: "Pisałam wiersze miłosne.... Wstęp do Gloria Domini"
 date: 2008-02-21
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Pegaz stanął dęba
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Pegaz stanął dęba
 zdziwiony;
 zwiał.
 Zabrał motyle

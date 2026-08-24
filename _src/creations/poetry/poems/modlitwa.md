@@ -3,8 +3,9 @@ linkName: Modlitwa
 date: 2004-05-08
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Ojcze Nasz, który jesteś w Niebie
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Ojcze Nasz, który jesteś w Niebie
 
 Albo życie zmarnowane
 racz z historii świata wymazać

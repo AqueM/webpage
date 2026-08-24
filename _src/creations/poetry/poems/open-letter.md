@@ -3,8 +3,9 @@ linkName: Open letter to myself
 date: 2009-01-01
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Dear brain,
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Dear brain,
 I’ve had enough. 
 I’m not taking the best care of myself, 
 but I’ve seen people do worse, and live with it.

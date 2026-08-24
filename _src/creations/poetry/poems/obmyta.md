@@ -3,7 +3,7 @@ linkName: Obmyta strugami deszczu
 date: 2004-09-22
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
+{% layout "layouts/poem.liquid" %}
 {% block poem %}
 I znów 
 spowrotem 

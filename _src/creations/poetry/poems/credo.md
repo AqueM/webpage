@@ -3,8 +3,9 @@ linkName: Credo
 date: 2007-11-22
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Oświecenie świata
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Oświecenie świata
 czasem dręczy bardziej
 niźli błoga nieświatowość;
 Pan życia i stworzenia

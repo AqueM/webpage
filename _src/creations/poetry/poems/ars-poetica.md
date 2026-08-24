@@ -3,7 +3,7 @@ linkName: Ars poetica
 date: 2009-01-17
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
+{% layout "layouts/poem.liquid" %}
 {% block poem %}
 Jak nie było nigdy
 żadnej lutni

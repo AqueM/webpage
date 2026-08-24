@@ -3,6 +3,8 @@ linkName: Pojednanie
 date: 2007-01-01
 lang: PL
 ---
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
 Filozofom się nie śniło wcale
 Bóg nie wiedział nawet
 że wśród wzniesionych białych flag
@@ -23,7 +25,8 @@ I Dobry Wrocławiu, dziękuję ci
 Iż uraz wieczny nie musi być
 i czasem warto jest ustąpić. 
 
-
+{% endblock %}
+{% block source %}
 — *Magdzie i Hance z miasta Wrocławia*
 *za to, że są i w podzięce, że przy mnie,*
-*nawet kiedy nie chcę ich znać. Wsparłyście mnie, dziękuję.*
+*nawet kiedy nie chcę ich znać. Wsparłyście mnie, dziękuję.*{% endblock %}

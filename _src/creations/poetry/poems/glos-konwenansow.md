@@ -3,8 +3,9 @@ linkName: Głos w sprawie konwenansów
 date: 2008-11-13
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Sokratesowi nie wolno tańczyć.
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Sokratesowi nie wolno tańczyć.
 Pląsy nie przystają do zmarszczonego czoła, 
 zastygłego nad myślą posągowego oblicza
 naznaczonego odrobiną zaciekawionego zdziwienia. 

@@ -1,4 +1,3 @@
-{% layout "layouts/_poem.liquid" %}
 <section>
 <div class="design__meta btn-deco btn-deco style-15">
       <time>{{page.date | date: "%d/%m/%Y"}}</time>
@@ -9,11 +8,8 @@
 </section>
 <div class="design__box">
 {% block poem %}{% endblock %}
-{{content}}
 </div>
-{% if source %}
 {% divider-lines %}
 <div class="design__box">
 {% block source %}{% endblock %}
 </div>
-{% endif %}

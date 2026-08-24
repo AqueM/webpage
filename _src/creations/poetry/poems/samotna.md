@@ -3,6 +3,8 @@ linkName: Samotna
 date: 2007-01-01
 lang: PL
 ---
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
 To tak bardzo dużo boli
 być samotną
 Szukać ukojenia w zimnych
@@ -16,4 +18,4 @@ gwiazdom
 Pokornie znosić ciosy bez
 szansy na obronę
 Wiedzieć, że mimo wszystko
-i tak nikt mi nie pomoże
+i tak nikt mi nie pomoże{% endblock %}

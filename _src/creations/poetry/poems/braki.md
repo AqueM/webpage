@@ -1,10 +1,11 @@
 ---
-linkName: Braki w wychowaniu
+linkName: "Braki w wychowaniu / Shortcomings in parenting"
 date: 2009-01-01
 lang: PL / EN
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}To, o czym zapomniano
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+To, o czym zapomniano
 to upewnić mnie
 — córkę zła, niechcianą, w niedogodnym momencie, — 
 
@@ -44,8 +45,6 @@ choćby żadnego z was nie obchodził mój los
 — nauczyć kochać, i być kochaną
 
 {% divider-lines %}
-
-{% heading "h2", "Shortcomings in parenting" %}
 
 That, what was forgotten 
 was to ensure me

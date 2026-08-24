@@ -3,7 +3,7 @@ linkName: kolekcja haiku
 date: 2009-01-01
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
+{% layout "layouts/poem.liquid" %}
 {% block poem %}
 W lustrze widzę damy
 czyste serca i umysły

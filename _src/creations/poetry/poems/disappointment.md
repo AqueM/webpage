@@ -3,8 +3,9 @@ linkName: family disappointment
 date: 2015-04-04
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}I am the girl
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+I am the girl
 the girl who was supposed to be a son
 I am the girl
 the girl who was supposed to be polite

@@ -3,7 +3,7 @@ linkName: “There’s not going to be any war”
 date: 2017-02-07
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %} {% block poem %} 
+{% layout "layouts/poem.liquid" %} {% block poem %} 
 The trembling quakes through
 my soul with the rage
 of a thousand suns

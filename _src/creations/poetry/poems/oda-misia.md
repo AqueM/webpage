@@ -3,8 +3,9 @@ linkName: Oda do Misia
 date: 2007-01-01
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Nie ma w tobie
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Nie ma w tobie
 — ani krzty życia
 — ani odrobiny ciepła
 — ani iskry zrozumienia

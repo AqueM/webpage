@@ -3,8 +3,9 @@ linkName: Magnifikat 2
 date: 2007-08-25
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Dziękuję ci, Boże
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Dziękuję ci, Boże
 Wszechmogący Panie
 co zsyłasz iluminację
 na ludzi swych pobożnych

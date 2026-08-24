@@ -3,9 +3,8 @@ linkName: Scabandari
 date: 2007-01-01
 lang: PL
 ---
-napisane z perspektywy postaci w RPG, o jej ukochanym.
-{% divider-lines %}
-
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
 Z reguły 
 Książę z Bajki ma
 jasne włosy błękitne oczy
@@ -49,4 +48,5 @@ tak jak mój
 termin "Księcia z Bajki"
 Myślę że się dopasujemy 
 z czasem do siebie,
-Scabandari
+Scabandari{% endblock %}
+{% block source %}napisane z perspektywy postaci w RPG, o jej ukochanym.{% endblock %}

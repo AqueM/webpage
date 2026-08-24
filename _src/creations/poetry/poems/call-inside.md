@@ -3,8 +3,9 @@ linkName: the call is coming from inside the house
 date: 2024-07-08
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}What is justice if not a coward’s excuse
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+What is justice if not a coward’s excuse
 blindfold for repayment long overdue?
 What is justice but vengeance that befits you
 a sword dulled with grandiloquent values?

@@ -3,7 +3,7 @@ linkName: I pierwszy anioł zadął w trąbę
 date: 2007-01-01
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
+{% layout "layouts/poem.liquid" %}
 {% block poem %}
 Czuję w sercu, jak się zbliża 
 od lat już wiem — nadejdzie 

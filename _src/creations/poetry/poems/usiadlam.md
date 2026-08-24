@@ -3,6 +3,8 @@ linkName: Usiadłam i nad sobą płakałam
 date: 2008-10-20
 lang: PL
 ---
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
 Ludzie mają wiele teorii
 na najgorsze uczucie:
 wymieniają strach
@@ -56,7 +58,6 @@ I mają rację
 choć w ich teorii nikt 
 nie odważył się nazwać
 zwycięstwa — najgorszym uczuciem.  
-
-
-
-*Po kłótni z bratem. *
+{% endblock %}
+{% block source %}
+*Po kłótni z bratem. *{% endblock %}

@@ -162,8 +162,11 @@
 			display: block;
 			margin: 2%;
 			hyphens: auto;
-			overflow: scroll;
+			overflow: hidden;
 			text-overflow: ellipsis;
+			&:hover{
+				overflow:visible;
+			}
 		}
 	}
 

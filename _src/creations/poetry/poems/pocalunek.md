@@ -3,8 +3,9 @@ linkName: Pocałunek
 date: 2007-12-10
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Lampka mała cichutko promieniami
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Lampka mała cichutko promieniami
 otulała Cię w ciemność
 próbowała stawić barierę między nami
 a dawała przyjemność

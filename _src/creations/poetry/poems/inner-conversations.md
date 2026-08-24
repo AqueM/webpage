@@ -3,7 +3,7 @@ linkName: Inner conversations
 date: 2014-11-12
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %}
+{% layout "layouts/poem.liquid" %}
 {% block poem %}
 People think that we, those with absent faces,
 are silent.

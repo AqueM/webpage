@@ -3,8 +3,9 @@ linkName: Piosenka dziecięca
 date: 2009-01-01
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Kolorowe kredki w pudełeczku noszę
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Kolorowe kredki w pudełeczku noszę
 {% indent %}
 
 dziadek i ty także 

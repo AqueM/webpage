@@ -3,8 +3,9 @@ linkName: O Tobie
 date: 2008-01-15
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Dziecię archaniela Rafaela
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Dziecię archaniela Rafaela
 na ziemięś zstąpiło!
 Niebo Twym obliczem:
 Boskim oddechem porwanych 

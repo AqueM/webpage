@@ -3,8 +3,9 @@ linkName: Magnifikat 1
 date: 2005-06-10
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}I podziękować muszę Bogu
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+I podziękować muszę Bogu
 za to, że tak bardzo mi pomógł
 Bo choć życiowego testu nie zdałam
 z całych sił się starałam...

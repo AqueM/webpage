@@ -3,8 +3,9 @@ linkName: Dlaczego Nietzsche miał trochę racji
 date: 2008-12-09
 lang: PL
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}Puls z tyłu głowy. 
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+Puls z tyłu głowy. 
 Ziemia zmieniła oś
 na moją potylicę, 
 miejsce, gdzie kłębią

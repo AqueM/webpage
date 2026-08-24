@@ -3,8 +3,9 @@ linkName: Nursery rhyme
 date: 2009-01-01
 lang: EN
 ---
-{% layout "layouts/_poem.liquid" %}
-{% block poem %}A motherless child 
+{% layout "layouts/poem.liquid" %}
+{% block poem %}
+A motherless child 
 is like a blade of grass
 prone to every wind
 wishing for the time to pass
