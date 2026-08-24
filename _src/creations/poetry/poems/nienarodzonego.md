@@ -3,7 +3,8 @@ linkName: Do nienarodzonego
 date: 2009-03-22
 lang: PL
 ---
-Boisz się.
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Boisz się.
 Mnie też strach
 by obleciał
 na Twoim miejscu.
@@ -71,4 +72,4 @@ który tylko przeczuwasz.
 Być może Ty kiedyś usłyszysz mój róg
 (nie mówię, że mnie to nie sięga).
 Ale ja widzę armie, co stoją, widzę potyczki
-i widzę, kto trzyma chorągwie...
+i widzę, kto trzyma chorągwie...{% endblock %}
