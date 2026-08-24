@@ -3,6 +3,8 @@ linkName: I pierwszy anioł zadął w trąbę
 date: 2007-01-01
 lang: PL
 ---
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}
 Czuję w sercu, jak się zbliża 
 od lat już wiem — nadejdzie 
 Nie uświadczę jej finału ja, me dzieci, wnuki 
@@ -23,4 +25,4 @@ A ogień trawi nasze pola.
 Będzie Apokalipsa. 
 Nie dziś, nie jutro, lecz na pewno 
 Bo koniec świata czyni się 
-od jego początku. 
+od jego początku. {% endblock %}
