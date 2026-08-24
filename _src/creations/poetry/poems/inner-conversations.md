@@ -99,6 +99,4 @@ and
 the train seat{% endindent %}
 hear.
 {% endblock %}
-{% block source %}
-{% divider-lines %}
-originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/102473408497' %}{% endblock %}
+{% block source %}originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/102473408497' %}{% endblock %}
