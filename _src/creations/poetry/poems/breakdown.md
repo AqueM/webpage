@@ -3,7 +3,8 @@ linkName: I can’t afford a breakdown
 date: 2018-04-12
 lang: EN
 ---
-hold it together just
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}hold it together just
 a little more
 hold it together, with glue if you must
 don’t complain that you’re sore
@@ -22,7 +23,6 @@ hold it together, with strings if so be it
 though you fall apart bit by bit
 hold it together, alone, on your own
 otherwise, you’re dragging everybody down
-{% divider-lines %}
-<div class="design__floated--right">
-originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/172859480877' %}
-</div>
+{% endblock %}
+{% block source %}
+originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/172859480877' %}{% endblock %}
