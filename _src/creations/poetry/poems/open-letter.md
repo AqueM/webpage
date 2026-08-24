@@ -3,7 +3,8 @@ linkName: Open letter to myself
 date: 2009-01-01
 lang: EN
 ---
-Dear brain,
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Dear brain,
 I’ve had enough. 
 I’m not taking the best care of myself, 
 but I’ve seen people do worse, and live with it.
@@ -65,4 +66,4 @@ and I’ve waged it against myself
 because you two keep the real enemy hidden,
 if there even is one.
 So dear shadow, dear brain:
-Fuck you. Work with me. 
+Fuck you. Work with me. {% endblock %}
