@@ -1,5 +1,8 @@
 [
     {
+        "date": "24/08/2026",
+        "log": "reworked Characters/Deities pages to use content blocks instead of repeating the same code over and over"
+    },{
         "date": "21/08/2026",
         "log": "got added to a new webring!"
     },{
