@@ -3,7 +3,8 @@ linkName: "Pisałam wiersze miłosne.... Wstęp do Gloria Domini"
 date: 2008-02-21
 lang: PL
 ---
-Pegaz stanął dęba
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Pegaz stanął dęba
 zdziwiony;
 zwiał.
 Zabrał motyle
@@ -29,4 +30,4 @@ Zgubiłam złotą uzdę
 ... niech ktoś inny szuka z nią Pegaza. 
 Wyjełam z kieszemi Pater Noster
 i wzięłam Anioła za rękę.
-Potem zrodziłam "Credo"
+Potem zrodziłam "Credo"{% endblock %}
