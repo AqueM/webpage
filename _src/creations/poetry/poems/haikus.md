@@ -1,8 +1,10 @@
 ---
-linkName: haikus collection
+linkName: kolekcja haiku
 date: 2009-01-01
 lang: PL
 ---
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}
 W lustrze widzę damy
 czyste serca i umysły
 Lustra kłamią! 
@@ -46,4 +48,4 @@ O dziurawej zaporze...
 W czerwieni jedyni
 którzy potrafią
 pływać
-topiąc innych
+topiąc innych{% endblock %}
