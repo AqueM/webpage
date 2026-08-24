@@ -2,13 +2,12 @@
 layout: layouts/_page
 ---
 {% theme__border-square %}
-{{quote}}
+{% block quote %}{% endblock %}
 {% endtheme__border-square %}
 {% heading "h2", "Summary" %}
 <section>
 {%- flex-columns -%}{%- flex-item %}
 {% block summary %}{% endblock %}
-testing
 {%- endflex-item -%}
 
 {%- flex-aside -%}
