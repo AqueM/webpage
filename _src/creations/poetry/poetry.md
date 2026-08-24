@@ -15,17 +15,17 @@ Poems dated to 01/01/2007 I also can't date properly, but they're even older, fr
 </section>
 <table class="table__poetry"><thead>
   <tr>
-    <th>Title</th>
-    <th>Date</th>
-    <th>Language</th>
+    <th><span>Title</span></th>
+    <th><span>Date</span></th>
+    <th><span>Language</span></th>
   </tr></thead>
 <tbody>
 {% assign poetry = collections.poems | sort: "date" | reverse -%}
 {%- for item in poetry -%}
   <tr>
-    <td><cite><a href="{{item.url}}">{{item.data.linkName}}</a></cite></td>
-    <td><time>{{item.date | date: "%d/%m/%Y"}}</time></td>
-    <td>{{item.data.lang}}</td>
+    <td><span><cite><a href="{{item.url}}">{{item.data.linkName}}</a></cite></span></td>
+    <td><span><time>{{item.date | date: "%d/%m/%Y"}}</time></span></td>
+    <td><span>{{item.data.lang}}</span></td>
   </tr>
 {% endfor %}
 </tbody>
