@@ -154,6 +154,9 @@
 	th:not(.external-code *) {
 		border-right: var(--border-width) solid var(--color-darkest);
 	}
+	tbody:not(.external-code *) tr{
+		display:inline-block;
+	}
 
 	td:not(.external-code *),
 	th:not(.external-code *) {
