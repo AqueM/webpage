@@ -161,7 +161,7 @@
 		border-right: var(--border-width) solid var(--color-darkest);
 				span {
 					display:block;
-			padding: 5%;
+			margin: 5%;
 		}
 	}
 
