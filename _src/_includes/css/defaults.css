@@ -161,7 +161,7 @@
 					display:block;
 			margin: 5%;
 					overflow-wrap: break-word;
-					hyphens: manual;
+					hyphens: auto;
 					overflow: hidden;
 					text-overflow: ellipsis;
 		}
