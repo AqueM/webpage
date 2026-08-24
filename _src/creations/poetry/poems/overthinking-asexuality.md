@@ -3,7 +3,8 @@ linkName: overthinking asexuality
 date: 2017-03-01
 lang: EN
 ---
-Nobody thought twice about it
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Nobody thought twice about it
 even me.
 Just lonely, just solitary, just nerd.
 Nobody thought to stop for a moment
@@ -43,6 +44,6 @@ not thinking twice about it
 and thinking ten thousand times.
 Nobody has an answer
 even me.
-{% divider-lines %}
-<div class="design__floated--right">
-originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/157857054827' %}</div>
+{% endblock %}
+{% block source %}
+originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/157857054827' %}{% endblock %}
