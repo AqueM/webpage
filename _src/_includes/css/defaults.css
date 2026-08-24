@@ -3,6 +3,7 @@
 	* {
 		box-sizing: border-box;
 		scrollbar-color: var(--color-accent) var(--color-primary);
+		min-width: 0;
 	}
 
 	html {
