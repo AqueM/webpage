@@ -39,8 +39,8 @@ Mind the <span class="design__error">warnings</span> and <span class="design__wa
   <tr>
     <td><span><cite>"{{item.title}}"</cite></span> {% if item.finished == false %}<span class="design__warning">unfinished!</span>{% endif %}</td>
     <td><span>{{ item.caption | markdown }}</span></td>
-    <td>{% assign last = item.warnings | last %}{% for warning in item.warnings %}<span class="design__error">{{warning}}</span>{% if warning != last %}, {% endif %}{% endfor %}</td>
-    <td>{% assign last = item.genres | last %}{% for genre in item.genres %}<span>{{genre}}</span>{% if genre != last %}, {% endif %}{% endfor %}</td>
+    <td>{% assign last = item.warnings | last %}{% for warning in item.warnings %}<span class="design__error">{{warning}}</span>{% if warning != last %} {% endif %}{% endfor %}</td>
+    <td>{% assign last = item.genres | last %}{% for genre in item.genres %}<span>{{genre}}{% if genre != last %}, {% endif %}</span>{% endfor %}</td>
     <td><span>{{item.words}}</span></td>
     <td>{% if item.ao3Src %}{% ao3Link item.ao3Src %}{% endif %}</td>
     <td>{% if item.downloadable %}<a href="{{basePath}}{{item.title | underscorize}}.pdf" target="_blank" class="link__download"><img src="/assets/images/layout/download.gif" alt="download link"></a>{% endif %}</td>
