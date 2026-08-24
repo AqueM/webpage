@@ -8,7 +8,7 @@ are silent.
 But I talk to people a lot
 Just they can’t don’t hear (could if we tried, I think)
 
-Like that lady at the station -
+Like that lady at the station —
 complimented her beautiful
 {% indent %}patterned
 
@@ -36,7 +36,7 @@ with those big headphones;{% endindent %}
 but he never answers,
 maybe we’d have became commuting buddies.
 Like that girl in the evening train, stuffed in a corner seat
-with big glasses and a messy braid -
+with big glasses and a messy braid —
 I was her mentor over the comic she was drawing
 
 {% indent %}
@@ -72,7 +72,7 @@ one who taught me modern philosophy and
 middle-eastern affirmations and
 eloquent humour that I never use{% endindent %}
 
-one I meet every-so-often — he must live around -
+one I meet every-so-often — he must live around—
 ‘How are you, Professor’
 'Do you want me to help with those bags, Professor’
 'I read a book on psychology, I think you’d like it, Professor’
