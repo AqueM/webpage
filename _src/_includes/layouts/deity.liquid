@@ -8,10 +8,11 @@
 {%- endflex-item -%}
 
 {%- flex-aside -%}
-{%- if portrait -%}{% gallery %}{% imageMine portrait %}{% endgallery %}{%- endif -%}
+{%- if portrait -%}{% gallery %}{% imageMine portrait %}{% endgallery %}{% endif %}
 
 {% block list %}{% endblock %}
-{%- endflex-aside -%}
+
+{% endflex-aside %}
 {%- endflex-columns -%}
 </section>
 
