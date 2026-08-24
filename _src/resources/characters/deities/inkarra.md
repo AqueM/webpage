@@ -5,7 +5,7 @@ eleventyComputed:
   subtitle: "the Guiding Star"
 portrait: yes
 ---
-{% layout "layouts/deity.liquid" %}
+{% layout "layouts/_deity.liquid" %}
 {% assign portraitImage = myArt.2023.inkarra %}
 {% block quote %}
 The wise man is blessed with knowledge but the fool is blessed to learn every day.
