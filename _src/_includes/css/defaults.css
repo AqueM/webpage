@@ -157,12 +157,13 @@
 	th:not(.external-code *) {
 		border-bottom: var(--border-width) solid var(--color-darkest);
 		border-right: var(--border-width) solid var(--color-darkest);
-				span {
-					display:block;
+
+		span {
+			display: block;
 			margin: 2%;
-					hyphens: auto;
-					overflow: scroll;
-					text-overflow: ellipsis;
+			hyphens: auto;
+			overflow: scroll;
+			text-overflow: ellipsis;
 		}
 	}
 
@@ -188,25 +189,26 @@
 		margin: 0;
 		position: relative;
 	}
+
 	pre {
 		position: relative;
-				margin: 2rem auto 1rem;
-				max-width: 60vw;
+		margin: 2rem auto 1rem;
+		max-width: 60vw;
 	}
 
 	pre::before {
-			position: absolute;
-			left: 1rem;
-			z-index: 2;
-			font-size: 0.8rem;
-			background-color: var(--color-accent-transparent);
-			border: var(--border-width) dashed var(--color-secondrary);
-			padding: 0.2rem;
-			box-shadow: 0 0 0 calc(var(--border-width)*2) var(--color-accent-transparent);
-			margin: var(--border-width);
+		position: absolute;
+		left: 1rem;
+		z-index: 2;
+		font-size: 0.8rem;
+		background-color: var(--color-accent-transparent);
+		border: var(--border-width) dashed var(--color-secondrary);
+		padding: 0.2rem;
+		box-shadow: 0 0 0 calc(var(--border-width)*2) var(--color-accent-transparent);
+		margin: var(--border-width);
 		top: -1rem;
-		}
-	
+	}
+
 	pre code {
 
 		padding: 1rem;

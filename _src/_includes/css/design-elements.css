@@ -283,9 +283,11 @@ pre:has(.language-javascript)::before {
 pre:has(.language-json)::before {
 	content: "json";
 }
+
 pre:has(.language-HTML)::before {
 	content: "HTML";
 }
+
 pre:has(.language-CSS)::before {
 	content: "CSS";
 }
