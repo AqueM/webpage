@@ -1,11 +1,11 @@
 ---
 layout: layouts/_page
 ---
-<section>
 {% theme__border-square %}
 {{quote}}
 {% endtheme__border-square %}
 {% heading "h2", "Summary" %}
+<section>
 {%- flex-columns -%}{%- flex-item %}
 {% block summary %}{% endblock %}
 {{page.summary}}
@@ -46,7 +46,7 @@ test
 	
 {% heading "h2", "Religion" %}
 <section>
-<h3>Followers</h3>h3>
+<h3>Followers</h3>
 {{followers}}
 </section>
 	
