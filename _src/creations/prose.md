@@ -37,9 +37,9 @@ Mind the <span class="design__error">warnings</span> and <span class="design__wa
 {%- for item in pageItems -%}
 {%- assign basePath = "/assets/pdf/prose/" -%}
   <tr>
-    <td><span><cite>"{{item.title}}"</cite></span> {% if item.finished == false %}<span class="design__warning">unfinished!</span>{% endif %}</td>
+    <td><span><cite>"{{item.title}}"</cite></span> {% if item.finished == false %}<div class="design__warning">unfinished!</div>{% endif %}</td>
     <td><p>{{ item.caption | markdown }}</p></td>
-    <td>{% assign last = item.warnings | last %}{% for warning in item.warnings %}<span class="design__error">{{warning}}</span>{% if warning != last %} {% endif %}{% endfor %}</td>
+    <td>{% assign last = item.warnings | last %}{% for warning in item.warnings %}<div class="design__error">{{warning}}</div>{% if warning != last %} {% endif %}{% endfor %}</td>
     <td>{% assign last = item.genres | last %}{% for genre in item.genres %}<span>{{genre}}{% if genre != last %}, {% endif %}</span>{% endfor %}</td>
     <td><span>{{item.words}}</span></td>
     <td>{% if item.ao3Src %}{% ao3Link item.ao3Src %}{% endif %}</td>
