@@ -3,7 +3,8 @@ linkName: O Tobie
 date: 2008-01-15
 lang: PL
 ---
-Dziecię archaniela Rafaela
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Dziecię archaniela Rafaela
 na ziemięś zstąpiło!
 Niebo Twym obliczem:
 Boskim oddechem porwanych 
@@ -30,4 +31,4 @@ I serce schowane w
 mariańskim rowie...
 Jak tak daleko dotrzeć
 mają podmuchy Twych wiatrów?
-Za Bożym jeno przyzwoleniem...
+Za Bożym jeno przyzwoleniem...{% endblock %}
