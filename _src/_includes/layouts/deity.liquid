@@ -8,13 +8,12 @@ layout: layouts/_page
 <section>
 {%- flex-columns -%}{%- flex-item %}
 {% block summary %}{% endblock %}
-{{page.summary}}
 test
 {%- endflex-item -%}
 
 {%- flex-aside -%}
 {%- if portrait -%}{% gallery %}{% imageMine portrait %}{% endgallery %}{%- endif -%}
-{{list}}
+{% block list %}{% endblock %}
 {%- endflex-aside -%}
 {%- endflex-columns -%}
 </section>
@@ -23,25 +22,25 @@ test
 <section>
 <h3>Morals and values</h3>
 
-{{morals}}
+{% block morals %}{% endblock %}
 </section>
 	
 <section>
 <h3>Appearance</h3>
 	
-{{appearance}}
+{% block appearance %}{% endblock %}
 </section>
 	
 <section>
 <h3>Personality</h3>
 	
-{{personality}}
+{% block personality %}{% endblock %}
 </section>
 	
 <section>
 <h3>Relations</h3>
 	
-{{relations}}
+{% block relations %}{% endblock %}
 </section>
 	
 {% heading "h2", "Religion" %}
@@ -59,13 +58,13 @@ test
 <section>
 <h3>Portrayal</h3>
 
-{{portrayal}}
+{% block portrayal %}{% endblock %}
 </section>
 	
 <section>
 <h3>Rituals</h3>
 
-{{rituals}}
+{% block rituals %}{% endblock %}
 </section>
 
 <section>
