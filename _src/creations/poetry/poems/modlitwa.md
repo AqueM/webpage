@@ -3,7 +3,8 @@ linkName: Modlitwa
 date: 2004-05-08
 lang: PL
 ---
-Ojcze Nasz, który jesteś w Niebie
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Ojcze Nasz, który jesteś w Niebie
 
 Albo życie zmarnowane
 racz z historii świata wymazać
@@ -16,4 +17,4 @@ mnie pogrąż ciszy.
 Lecz nie pozwól im szlochać
 — zbyt dużo łez już przelano za mego żywotu. 
 
-Na wieki wieków, Amen.
+Na wieki wieków, Amen.{% endblock %}
