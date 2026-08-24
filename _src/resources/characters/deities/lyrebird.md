@@ -5,7 +5,7 @@ eleventyComputed:
   subtitle: "Kin of the Wayward"
 bonusExists: true
 ---
-{% layout "layouts/deity.liquid" %}
+{% layout "layouts/_deity.liquid" %}
 {% block quote %}
 Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, troubadours; the strangers, the mad, the wanderers without harbour, for they teach us to see the world through different eyes. 
 {% endblock %}
