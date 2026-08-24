@@ -67,11 +67,11 @@ Usually, Lyrebird’s followers think of themselves as one big family, and even 
 {% endblock %}
 {% block bonus %}
 {%- flex-stack -%}
-{% theme__border-square %}“Hearts starve as well as bodies: Give us Bread, but give us Roses.”  
-(James Oppenheim, 1911) {% endtheme__border-square %}
-{% theme__border-square %}“God blessed me by making me transsexual for the same reason God made wheat but not bread and fruit but not wine, so that humanity might share in the act of creation.”  
-(Julian K. Jarboe) {% endtheme__border-square %}
-{% theme__border-square %}“My father had taught me to be nice first, because you can always be mean later, but once you've been mean to someone, they won't believe the nice anymore. So be nice, be nice, until it's time to stop being nice, then destroy them.”  
-(Laurell K. Hamilton, “A Stroke of Midnight”) {% endtheme__border-square %}
+{% theme__border-square %}<figure><blockquote>“Hearts starve as well as bodies: Give us Bread, but give us Roses.”</blockquote>  
+<figcaption>(James Oppenheim, 1911)</figcaption></figure>{% endtheme__border-square %}
+{% theme__border-square %}<figure><blockquote>“God blessed me by making me transsexual for the same reason God made wheat but not bread and fruit but not wine, so that humanity might share in the act of creation.”</blockquote>  
+<figcaption>(Julian K. Jarboe)</figcaption></figure>{% endtheme__border-square %}
+{% theme__border-square %}<figure><blockquote>“My father had taught me to be nice first, because you can always be mean later, but once you've been mean to someone, they won't believe the nice anymore. So be nice, be nice, until it's time to stop being nice, then destroy them.”</blockquote>  
+<figcaption>(Laurell K. Hamilton, “A Stroke of Midnight”)</figcaption></figure>{% endtheme__border-square %}
 {%- endflex-stack -%}
 {% endblock %}
