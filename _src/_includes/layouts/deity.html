@@ -5,10 +5,11 @@ layout: layouts/_page
 {% theme__border-square %}
 {{quote}}
 {% endtheme__border-square %}
-{%- flex-columns -%}{%- flex-item %}
 {% heading "h2", "Summary" %}
-
+{%- flex-columns -%}{%- flex-item %}
+{% block summary %}{% endblock %}
 {{page.summary}}
+test
 {%- endflex-item -%}
 
 {%- flex-aside -%}
