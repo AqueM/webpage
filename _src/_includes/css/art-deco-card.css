@@ -15,7 +15,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	outline: var(--color-secondrary) var(--border-width) solid;
 	outline-offset: -0.25rem;
 	padding: 1rem;
-	margin: 0;
+	margin: 1rem 0;
 
 	@media only screen and (min-width: 600px) {
 		padding: 1rem;
