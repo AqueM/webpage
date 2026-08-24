@@ -98,5 +98,4 @@ the train seat{% endindent %}
 hear.
 
 {% divider-lines %}
-<div class="design__box">
-originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/102473408497' %}</div>
+originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/102473408497' %}
