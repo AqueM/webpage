@@ -1,5 +1,10 @@
 ﻿[
   {
+    "name": "Using Liquid Blocks in Eleventy Layouts",
+    "url": "https://www.raymondcamden.com/2021/08/19/using-liquid-blocks-in-eleventy-layouts",
+    "author": "Raymond Camden",
+    "type": "article"
+  },{
     "name": "Breaking to a new row with flexbox",
     "url": "https://tobiasahlin.com/blog/flexbox-break-to-new-row/",
     "author": "Tobias Ahlin Bjerrome",
