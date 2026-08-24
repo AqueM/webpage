@@ -1,3 +1,4 @@
 {
-    "tags": "deities"
+    "tags": "deities",
+    "layout": "layouts/deity.liquid"
 }
