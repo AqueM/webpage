@@ -159,6 +159,9 @@
 	th:not(.external-code *) {
 		border-bottom: var(--border-width) solid var(--color-darkest);
 		border-right: var(--border-width) solid var(--color-darkest);
+				span {
+			padding: 1%;
+		}
 	}
 
 	th:not(.external-code *) {
