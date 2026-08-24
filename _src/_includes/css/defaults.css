@@ -152,6 +152,10 @@
 	th:not(.external-code *) {
 		border-right: var(--border-width) solid var(--color-darkest);
 	}
+	tr:not(.external-code *) {
+		display:block;
+		overflow:scroll;
+	}
 
 	td:not(.external-code *),
 	th:not(.external-code *) {
