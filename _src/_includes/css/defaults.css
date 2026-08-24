@@ -161,7 +161,7 @@
 					display:block;
 			margin: 2%;
 					hyphens: auto;
-					overflow: hidden;
+					overflow: scroll;
 					text-overflow: ellipsis;
 		}
 	}
