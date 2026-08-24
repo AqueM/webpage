@@ -3,7 +3,8 @@ linkName: Braki w wychowaniu
 date: 2009-01-01
 lang: PL / EN
 ---
-To, o czym zapomniano
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}To, o czym zapomniano
 to upewnić mnie
 — córkę zła, niechcianą, w niedogodnym momencie, — 
 
@@ -83,4 +84,4 @@ Even if I’d never become
 a linguist — teach me to talk
 a runner — teach me to walk...
 even if none of you cared for me
-— teach me to love, and be loved.
+— teach me to love, and be loved.{% endblock %}
