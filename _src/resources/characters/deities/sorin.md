@@ -4,7 +4,7 @@ eleventyComputed:
   pageTitle: "Sorin"
   subtitle: "the Indomitable Will"
 ---
-{% layout "layouts/deity.liquid" %}
+{% layout "layouts/_deity.liquid" %}
 {% block quote %}
 May everyone sleep soundly, knowing what tomorrow will bring.
 {% endblock %}
