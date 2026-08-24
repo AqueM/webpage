@@ -4,7 +4,7 @@ eleventyComputed:
   pageTitle: "the Hunt"
   subtitle: "Archfey Triumvirate"
 ---
-{% layout "layouts/deity.liquid" %}
+{% layout "layouts/_deity.liquid" %}
 {% block quote %}
 The distinction between ‘god’ and ‘final boss’ is purely a matter of politics and strategy.
 {% endblock %}
