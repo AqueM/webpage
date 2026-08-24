@@ -9,6 +9,7 @@ eleventyComputed:
 Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, troubadours; the strangers, the mad, the wanderers without harbour, for they teach us to see the world through different eyes. 
 {% endblock %}
 {% block list %}
+
 - **Domains:** Change, Introspection and Self-Discovery, Community
 - **Patronage:** outcasts, artists, prophets and mystics
 - **Symbols:** peacock feather, lyre
@@ -16,6 +17,7 @@ Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, tro
 	- **colours:** rainbow
 	- **animals:** peacocks, lyrebirds, colourful birds of paradise
 	- **plants:** grapes, wheat, roses
+ 
 {% endblock %}
 {% block summary %}
 Lyrebird is a shapeshifting deity that protects those that are renounced by others. They claim everyone that wishes for their patronage and provide for anyone that doesn’t feel at home anywhere.
@@ -27,7 +29,7 @@ Lyrebird values just one thing in this world: being true to yourself. Anything t
 
 It is because the other facet of Lyrebird’s central tenet, an extension of it, is not judging others and thus welcoming everyone, regardless of how different from you they are, creating a sense of community. Being true to yourself comes to mean loyalty to your people, too. It is not a blind doctrine, though. Lyrebird does not obligate people to stay with those who hurt them; mindless commitment is the opposite of self-discovery, after all.
 {% endblock %}
-{% block attributes %}
+{% block appearance %}
 As a proud shapeshifter, Lyrebird does not possess a baseline for their appearance. They can look like anyone in the world. Though they tend to prefer a roughly humanoid body plan, it’s not unheard of for them to appear as a beast or a non-humanoid race. They also seem to have a penchant for jewellery and other adornments.
 
 Most of Lyrebird’s forms have one or two identifying elements that repeat consistently, though; the most common ones are: heterochromatic eyes and a nasty burn scar in a visible place. But it’s still not guaranteed that they will appear with any of these qualities.
