@@ -18,9 +18,10 @@ Blessed be the weird: the outcasts, the unruly, the misfits; poets, mystics, tro
 	- **plants:** grapes, wheat, roses
 {% endcapture %}
 {% capture summary %}
+{% block summary %}
 Lyrebird is a shapeshifting deity that protects those that are renounced by others. They claim everyone that wishes for their patronage and provide for anyone that doesn’t feel at home anywhere.
 
-Other than that, Lyrebird isn’t interested much in mortal affairs, and mortals outside of their sphere of influence aren’t usually interested in Lyrebird, either. 
+Other than that, Lyrebird isn’t interested much in mortal affairs, and mortals outside of their sphere of influence aren’t usually interested in Lyrebird, either. {% endblock %}
 {% endcapture %}
 {% capture morals %}
 Lyrebird values just one thing in this world: being true to yourself. Anything that seeks to restrain one’s self-expression and freedom is frowned upon. As such, though they do not particularly *care* for rules or laws one way or another, Lyrebird and their followers often find themselves at odds with the local governments. Especially since Lyrebird has no issues with committing crimes (including lying, even if that seems contradictory to the dogma) if it’s what it takes to protect someone.
