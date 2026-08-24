@@ -3,6 +3,8 @@ linkName: Inner conversations
 date: 2014-11-12
 lang: EN
 ---
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}
 People think that we, those with absent faces,
 are silent.
 But I talk to people a lot
@@ -96,6 +98,7 @@ the trees in the park
 and
 the train seat{% endindent %}
 hear.
-
+{% endblock %}
+{% block source %}
 {% divider-lines %}
-originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/102473408497' %}
+originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/102473408497' %}{% endblock %}
