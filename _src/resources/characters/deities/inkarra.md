@@ -3,9 +3,10 @@ linkName:  Inkarra, the Guiding Star
 eleventyComputed:
   pageTitle: "Inkarra"
   subtitle: "the Guiding Star"
-portrait: "myArt.2023.inkarra"
+portrait: yes
 ---
 {% layout "layouts/deity.liquid" %}
+{% assign portraitImage = myArt.2023.inkarra %}
 {% block quote %}
 The wise man is blessed with knowledge but the fool is blessed to learn every day.
 {% endblock %}
