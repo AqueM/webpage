@@ -1,5 +1,5 @@
 {
-    "layout": "layouts/_poem",
+    "layout": "layouts/_page",
     "permalink": "/creations/poetry/{{linkName | slugify}}/index.html",
   "tags": "poems"
 }
