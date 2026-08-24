@@ -3,7 +3,8 @@ linkName: Credo
 date: 2007-11-22
 lang: PL
 ---
-Oświecenie świata
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Oświecenie świata
 czasem dręczy bardziej
 niźli błoga nieświatowość;
 Pan życia i stworzenia
@@ -52,4 +53,4 @@ Dłoń w dłoni
 ramię w ramię
 Naprzód! 
 Niebo słoneczne nad nami
-Córki Zofii w nas. 
+Córki Zofii w nas. {% endblock %}
