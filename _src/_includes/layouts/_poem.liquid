@@ -9,7 +9,9 @@
 <div class="design__box">
 {% block poem %}{% endblock %}
 </div>
+{% if source %}
 {% divider-lines %}
 <div class="design__box">
 {% block source %}{% endblock %}
 </div>
+{% endif %}
