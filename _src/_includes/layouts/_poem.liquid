@@ -12,5 +12,6 @@ tags: poems
 {% divider-lines %}
 </section>
 <div class="design__box">
-    {{content}}
+{% block poem %}{% endblock %}
 </div>
+{% block source %}{% endblock %}
