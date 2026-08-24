@@ -3,7 +3,8 @@ linkName: Oda do Misia
 date: 2007-01-01
 lang: PL
 ---
-Nie ma w tobie
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}Nie ma w tobie
 — ani krzty życia
 — ani odrobiny ciepła
 — ani iskry zrozumienia
@@ -25,4 +26,4 @@ pocieszysz
 Nie żądasz nic w zamian
 oprócz cichej prośby
 o dobre słowo i
-utulenie we śnie...
+utulenie we śnie...{% endblock %}
