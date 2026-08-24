@@ -30,4 +30,5 @@ of violence, soldiers and fear
 about the fact that
 This Is Already War.
 {% endblock %}
+
 {% block source %}originally posted on {% tumblrLink 'https://iriascend.tumblr.com/post/157482869097' %}{% endblock %}
