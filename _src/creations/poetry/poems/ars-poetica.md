@@ -3,6 +3,8 @@ linkName: Ars poetica
 date: 2009-01-17
 lang: PL
 ---
+{% layout "layouts/_poem.liquid" %}
+{% block poem %}
 Jak nie było nigdy
 żadnej lutni
 która dźwięki wyda
@@ -12,4 +14,4 @@ Nie powinno nigdy
 być poety
 co tworzy liryki
 nie sięgnąwszy wprzódy
-czeladnictwa sztuki
+czeladnictwa sztuki{% endblock %}
