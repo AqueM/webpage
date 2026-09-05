@@ -25,9 +25,9 @@
 }
 
 .layout__image-pixel--small {
-	width: 1rem;
-	height: 1rem;
-	background-size: 1rem;
+	image-rendering: unset;
+	height: 16px;
+	width: 23px;
 	margin: 0 0.3em;
 	vertical-align: center;
 

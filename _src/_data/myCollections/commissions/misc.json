@@ -38,5 +38,15 @@
     "caption": "text on the picture means the same as the title, 2026; bought the physical painting",
     "artist": "Valyen Songbird",
     "authorLink": "https://www.instagram.com/valyensongbird/"
+  }, 
+    {
+    "src": "/assets/images/commissions/misc/pixels_vivarism.webp",
+    "width": 92,
+    "height": 64,
+    "title": "small pixel images for webpage layout",
+    "alt": "A 4 by 4 grid of small pixel images portraying: flowers, frogs, lilypads and lotuses in various colors.",
+    "caption": "specifically made for use on this website, 2026",
+    "artist": "Flonne Pocket",
+    "authorLink": "https://vivarism.net/"
   }
 ]

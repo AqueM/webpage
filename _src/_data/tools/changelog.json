@@ -1,5 +1,8 @@
 [
     {
+        "date": "05/09/2026",
+        "log": "finallya dded the pixels from Flonne!"
+    },{
         "date": "24/08/2026",
         "log": "reworked Characters/Deities pages to use content blocks instead of repeating the same code over and over"
     },{
