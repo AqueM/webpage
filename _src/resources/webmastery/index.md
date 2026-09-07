@@ -7,11 +7,14 @@ subtitle: tutorials, links, code snippets
 {%- flex-columns -%}
 <div class="layout__flex-item layout__flex-block__row layout__flex-block--space-around">
 {% assign tutorials = collections.tutorials | reverse %}
+Last 5 tutorials:
 <ul>
-{% for post in tutorials %}
+{% for post in tutorials limit: 5 %}
 <li><a href="{{post.url}}">{{post.data.linkName}}</a> (<time>{{post.date | date: "%d/%m/%Y"}}</time>)</li>
 {% endfor %}
 </ul>
+
+[see all](/resources/webmastery/guides)
 
 <div class="disclaimers  layout__flex-item">
     <div class="design__disclaimer">
