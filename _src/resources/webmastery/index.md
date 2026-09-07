@@ -23,7 +23,7 @@ Last 5 tutorials:
 ### Note about Eleventy guides
     There's a lot of good Eleventy tutorials out there. But they're also usually complicated and expect you to have much more coding knowledge than I would expect from a typical fledgling indie webmaster. They surely proved difficult with my limited expertise with javascript! So I decided to take notes as I go about making this website, and share them.
 
-    </div>
+</div>
 </div>
 </div>
 {%- flex-break-newrow -%}
