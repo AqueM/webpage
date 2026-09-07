@@ -6,6 +6,7 @@ subtitle: tutorials, links, code snippets
 {% heading "h2", "Tutorials" %}
 {%- flex-columns -%}
 <div class="layout__flex-item layout__flex-block__row layout__flex-block--space-around">
+    <div>
 {% assign tutorials = collections.tutorials | reverse %}
 Last 5 tutorials:
 <ul>
@@ -16,7 +17,7 @@ Last 5 tutorials:
 
 [see all](/resources/webmastery/guides)
 
-<div class="disclaimers  layout__flex-item">
+</div><div class="disclaimers  layout__flex-item">
     <div class="design__disclaimer">
 
 ### Note about Eleventy guides
