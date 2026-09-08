@@ -39,7 +39,7 @@ eleventyComputed:
           {%- endfor -%}
           </ul>
         {%- else -%}
-            {{subelements[1].first}} has first?
+            {{subelements[1]}} has first?
             {%- if subelements.link -%}
             <div class="infobox-element-title">- <a href="{{element[1].link}}">{{element[0]}}</a></div>
             <div class="infobox-element-content">-+ {{element[1].relation}}</div>
