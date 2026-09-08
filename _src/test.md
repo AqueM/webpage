@@ -48,7 +48,7 @@ eleventyComputed:
               {%-else-%}
               <div class="infobox-element-title">- {{element[0]}}</div>
               {%- endif -%}
-            <div class="infobox-element-content">-+ {{element[1].relation}}</div>
+            <div class="infobox-element-content">-+ {{element[1][1]}}</div>
             {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
