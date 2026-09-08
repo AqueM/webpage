@@ -45,7 +45,8 @@ eleventyComputed:
                   <li>{{listelement}}</li>
                 {%- endfor -%}
                 </ul>
-            {%- endif -%}    
+            {%- endif -%}   
+              {%- endif -%}
             {%- else -%}
               <div class="infobox-element-title">-- simple string within object {{subelement[0]}}</div>
               <div class="infobox-element-content">--+ {{subelement[1]}}</div>
