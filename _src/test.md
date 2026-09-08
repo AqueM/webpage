@@ -34,7 +34,7 @@ eleventyComputed:
           <div class="infobox-element-content">
           <ul class="infobox-list">
           {%- for subelement in element[1] -%}
-            <li>{{listelement}}</li>
+            <li>{{subelement}}</li>
           {%- endfor -%}
           </ul>
         {%- else -%}
