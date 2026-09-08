@@ -30,6 +30,7 @@ eleventyComputed:
   {%- for element in group[1] -%}
   <div class="infobox-element">
     {% assign subelements = element[1] %}
+    {{subelements}}
     {%- if subelements.first -%}
           <div class="infobox-element-title">{{element[0]}}</div>
           <div class="infobox-element-content">
@@ -40,7 +41,7 @@ eleventyComputed:
           </ul>
         {%- else -%}
           {%- if subelements.size > 2 %}
-            {%- if subelement[1].link -%}has link{%-else-%}
+            {%- if subelements.link -%}has link{%-else-%}
             <div class="infobox-element-title">- {{element[0]}}</div>
         <div class="infobox-element-content">-+ {{element[1].link}}</div>{%- endif -%}
             {%- else -%}
