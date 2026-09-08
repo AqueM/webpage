@@ -6,6 +6,7 @@
         "nick",
         "nick"
     ],
+    "data":{
     "bio": {
         "age": "age",
         "species": "race-species",
@@ -17,7 +18,6 @@
         "current residence": "current residence",
         "occupation": "job"
     },
-    "info": {
         "personality": {
             "alignment": "DnD alignment",
             "motivator": "primary motivator",
@@ -46,8 +46,7 @@
             "height": "height",
             "build": "weight/build",
             "complexion": "skin color"
-        }
-    },
+        },    
     "relations": {
         "name1": {
             "link": "url",
@@ -58,4 +57,5 @@
             "relation": "relation type"
         }
     }
+}
 }
