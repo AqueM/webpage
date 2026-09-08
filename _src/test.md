@@ -26,9 +26,7 @@ eleventyComputed:
 {%- endif -%}
 {%- for group in character.data -%}
   <div class="infobox-sub-title">{{group[0]}} - name</div>
-  {%- for element in group -%}
-  {{group[1]}} index - 
-  {{group}} no index
+  {%- for element in group[1] -%}
   <div class="infobox-element">
   {%- if element.first -%} is object
   <div class="infobox-element-content">
@@ -36,12 +34,12 @@ eleventyComputed:
       <ul class="infobox-list">
       {%- if subelement.first -%} is list
         {%- if subelement[1].link-%}
-        <li><a href="{{subelement[0].link}}"><em>{{subelement[0]}}</em></a> ({{subelement[1].relation}})</li>
+        <li><a href="{{subelement[0].link}}"><em>{{subelement[0]}}</em></a> ({{subelement.relation}})</li>
         {%- else -%} 
-        <li><em>{{subelement[0]}}</em> ({{subelement[1].relation}})</li>
+        <li><em>{{subelement[0]}}</em> ({{subelement.relation}})</li>
         {%- endif -%}
       {%- else -%}
-      <li>{{subelement[1]}}</li>
+      <li>{{subelement}}</li>
       {%- endif -%}
     </ul>
     {%- endfor -%}
