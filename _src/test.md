@@ -30,21 +30,20 @@ eleventyComputed:
   {%- for element in group[1] -%}
   <div class="infobox-element">
     {%- if element[1].first -%}!!!subelements!!!
-        {%- for subelement in element[1] -%}
-            <div class="infobox-element-title"><strong>{{element[0]}}</strong> no link subobject</div>
-            <div class="infobox-element-content">
-                <ul class="infobox-list">
-                {%- for listelement in subelement[1] -%}
-                  <li>{{listelement}}</li>
-                {%- endfor -%}
-                </ul>
-        {%- endfor -%} 
+          <div class="infobox-element-title"><strong>{{element[0]}}</strong> no link subobject</div>
+          <div class="infobox-element-content">
+          <ul class="infobox-list">
+          {%- for subelement in element[1] -%}
+            <li>{{listelement}}</li>
+          {%- endfor -%}
+          </ul>
         {%- else -%}
         <div class="infobox-element-title">- no subelements - {{element[0]}}</div>
         <div class="infobox-element-content">-+ {{element[1]}}</div>
-      {%- endif -%} 
-      {%- endfor -%}
-      </div>
+      {%- endif -%}
+    </div>
+    {%- endfor -%}
+
   </div>
 {%- endfor -%}
 
