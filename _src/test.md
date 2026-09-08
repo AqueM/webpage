@@ -38,12 +38,12 @@ eleventyComputed:
           {%- endfor -%}
           </ul>
         {%- else -%}
-          {%- if element[1][1] %}
-            <div class="infobox-element-title">- {{element[0]}} has link</div>
-        <div class="infobox-element-content">-+ {{element[1].link}}</div>
+          {%- if element[1][1].first %}
+            <div class="infobox-element-title">- {{element[0]}}</div>
+        <div class="infobox-element-content">-+ {{element[1]}}</div>
             {%- else -%}
         <div class="infobox-element-title">- {{element[0]}}</div>
-        <div class="infobox-element-content">-+ {{element[1]}}</div>
+        <div class="infobox-element-content">-+ {{element[1].link}}</div>
             {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
