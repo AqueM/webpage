@@ -48,9 +48,8 @@ eleventyComputed:
               <div class="infobox-element-title">- <a href="{{contents.link}}">{{name}}</a></div>
               {%-else-%}
               <div class="infobox-element-title">- {{name}}</div>
-              {%- endif -%}{%- assign contentNoLink = contents | reject: "link" -%}
-            {{contentNoLink}}
-            <div class="infobox-element-content">-+ {%- for element in contentNoLink -%}{{element[1]}} {%- endfor -%} - {%- for element in contents -%}{{element[1]}} {%- endfor -%}</div>
+              {%- endif -%}
+            <div class="infobox-element-content">-+ {%- for element in contents -%}{%-if element[0] != "link"}{{element[1]}}{%- endif -%} {%- endfor -%}</div>
             {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
