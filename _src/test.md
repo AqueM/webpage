@@ -29,8 +29,8 @@ eleventyComputed:
   <div class="infobox-sub-title"><strong>{{group[0]}}</strong></div>
   {%- for element in group[1] -%}
   <div class="infobox-element">
-    {%- if element[1].first -%}!!!subelements!!!
-          <div class="infobox-element-title"><strong>{{element[0]}}</strong> no link subobject</div>
+    {%- if element.first -%}
+          <div class="infobox-element-title"><em>{{element[0]}}</em></div>
           <div class="infobox-element-content">
           <ul class="infobox-list">
           {%- for subelement in element[1] -%}
