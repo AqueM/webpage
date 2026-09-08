@@ -27,9 +27,9 @@ eleventyComputed:
   
 {%- for group in character.data -%}
   <div class="infobox-sub-title"><strong>{{group[0]}}</strong></div>
-  {%- for element in group -%}
+  {%- for element in group[1] -%}
   <div class="infobox-element">
-    ${ assign subelements = element[1] %}
+    {% assign subelements = element[1] %}
     {%- if subelements.first -%}
           <div class="infobox-element-title">{{element[0]}}</div>
           <div class="infobox-element-content">
