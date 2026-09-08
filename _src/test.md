@@ -15,7 +15,7 @@ eleventyComputed:
 <div class="infobox-figure" style="background:url('{{portrait}}')"></div>
 <div class="infobox-element">
   <div class="infobox-element-title">Fullname</div>
-  <div class="infobox-element-content">{{character.name.first}} one letter?</div>
+  <div class="infobox-element-content">{{character.name}}</div>
 </div>
 {%- if character.alias -%}
   <div class="infobox-element">
@@ -24,11 +24,11 @@ eleventyComputed:
           {%- for alias in character.alias -%}<li>{{alias}}</li>{%- endfor -%}</ul>
   </div></div>
 {%- endif -%}
-{%- for object in character.data -%}
-  <div class="infobox-sub-title">{{object[0]}} - name</div>
-  {%- for element in object[1] -%}
-  {{object[1]}} index
-  {{object}} no index
+{%- for group in character.data -%}
+  <div class="infobox-sub-title">{{group[0]}} - name</div>
+  {%- for element in group -%}
+  {{group[1]}} index - 
+  {{group}} no index
   <div class="infobox-element">
   {%- if element.first -%} is object
   <div class="infobox-element-content">
