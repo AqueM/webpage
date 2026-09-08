@@ -38,7 +38,7 @@ eleventyComputed:
           {%- endfor -%}
           </ul>
         {%- else -%}
-          {%- if element[1].size > 2 %}
+          {%- if element.size > 2 %}
             {%- if element.link -%}has link{%-else-%}
             <div class="infobox-element-title">- {{element[0]}}</div>
         <div class="infobox-element-content">-+ {{element[1].link}}</div>{%- endif -%}
