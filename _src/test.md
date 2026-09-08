@@ -31,6 +31,7 @@ eleventyComputed:
   <div class="infobox-element">
     {%- if element[1].first -%}!!!subelements!!!
         {%- for subelement in element[1] -%}
+        {{subelement[0]}}
           {%- if subelement[1].first -%}
             {%- if subelement[1].link -%}
               <div class="infobox-element-title"><a href="{{subelement.link}}"><em>{{subelement[0]}}</em></a></div>
