@@ -40,7 +40,7 @@ eleventyComputed:
           </ul>
         {%- else -%}
         <div class="infobox-element-title">- {{element[0]}}</div>
-        <div class="infobox-element-content">-+ {{element[1]}.first}</div>
+        <div class="infobox-element-content">-+ {{element[1].link}}</div>
       {%- endif -%}
     {%- endfor -%}
     </div>
