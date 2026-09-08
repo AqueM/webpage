@@ -45,11 +45,11 @@ eleventyComputed:
               <div class="infobox-element-content">-+ {{contents}}</div>
             {%- else -%}
               {%- if contents.link -%}
-              <div class="infobox-element-title">- <a href="{{element.link}}">{{name}}</a></div>
+              <div class="infobox-element-title">- <a href="{{contents.link}}">{{name}}</a></div>
               {%-else-%}
               <div class="infobox-element-title">- {{name}}</div>
               {%- endif -%}
-            <div class="infobox-element-content">-+ {{subelements.relation}}</div>
+            <div class="infobox-element-content">-+ {{contents.relation}}</div>
             {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
