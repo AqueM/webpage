@@ -27,19 +27,20 @@ eleventyComputed:
   
 {%- for group in character.data -%}
   <div class="infobox-sub-title"><strong>{{group[0]}}</strong></div>
-  {%- for element in group[1] -%}
+  {%- for element in group -%}
   <div class="infobox-element">
-    {%- if element[1].first -%}
+    ${ assign subelements = element[1] %}
+    {%- if subelements.first -%}
           <div class="infobox-element-title">{{element[0]}}</div>
           <div class="infobox-element-content">
           <ul class="infobox-list">
-          {%- for subelement in element[1] -%}
+          {%- for subelement in subelements -%}
             <li>{{subelement}}</li>
           {%- endfor -%}
           </ul>
         {%- else -%}
-          {%- if element.size > 2 %}
-            {%- if element.link -%}has link{%-else-%}
+          {%- if subelements.size > 2 %}
+            {%- if subelement[1].link -%}has link{%-else-%}
             <div class="infobox-element-title">- {{element[0]}}</div>
         <div class="infobox-element-content">-+ {{element[1].link}}</div>{%- endif -%}
             {%- else -%}
