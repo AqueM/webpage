@@ -39,14 +39,17 @@ eleventyComputed:
           {%- endfor -%}
           </ul>
         {%- else -%}
-            {%- if subelements[1] -%}<div class="infobox-element-title">- {{element[0]}}</div>
-            <div class="infobox-element-content">-+ {{element[1]}}</div>{%- endif -%}
+            {%- if subelements[1] -%}
+              <div class="infobox-element-title">- {{element[0]}}</div>
+              <div class="infobox-element-content">-+ {{element[1]}}</div>
             {%- else -%}
-            {%- if subelements.link -%}
-            <div class="infobox-element-title">- <a href="{{element[1].link}}">{{element[0]}}</a></div>
-            {%-else-%}
-            <div class="infobox-element-title">- {{element[0]}}</div>{%- endif -%}
+              {%- if subelements.link -%}
+              <div class="infobox-element-title">- <a href="{{element[1].link}}">{{element[0]}}</a></div>
+              {%-else-%}
+              <div class="infobox-element-title">- {{element[0]}}</div>
+              {%- endif -%}
             <div class="infobox-element-content">-+ {{element[1].relation}}</div>
+            {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
     </div>
