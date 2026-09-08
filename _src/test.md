@@ -32,7 +32,7 @@ eleventyComputed:
 
         <div class="infobox-element-content"><ul class="infobox-list">
 
-{% for alias in character.alias } <li>{{alias}}</li> </ul></div></div>{% endif %}
+{% for alias in character.alias } <li>{{alias}}</li>{% endfor %}</ul></div></div>{% endif %}
 
 {% for object in character %}
 
