@@ -29,32 +29,32 @@ eleventyComputed:
   <div class="infobox-sub-title">{{group[0]}}</div>
   {%- for element in group[1] -%}
   <div class="infobox-element">
-    {%- if element[1].first -%} is object
+    {%- if element[1].first -%}
         {%- for subelement in element[1] -%}
-          {%- if subelement[1].first -%}is subobjectelement
-            {%- if subelement.link -%} and has link
+          {%- if subelement[1].first -%}
+            {%- if subelement.link -%}
               <div class="infobox-element-title"><a href="{{subelement.link}}"><em>{{subelement[0]}}</em></a></div>
               {%- else -%} no link
-              <div class="infobox-element-title"><em>{{subelement[0]}}</em></div>
+              <div class="infobox-element-title"><em>{{subelement[0]}}</em> no link subobject</div>
             {%- endif -%}
             <div class="infobox-element-content">
-            {%- if subelement.relation -%} and has relation
-              {{subelement.relation}}
-                {%- else -%} no relation
-                <ul class="infobox-list">
+            {%- if subelement.relation -%}
+              {{subelement.relation}} has relation
+                {%- else -%}
+                <ul class="infobox-list"> is listelement
                 {%- for listelement in subelement[1] -%}
                   <li>{{listelement}}</li>
                 {%- endfor -%}
                 </ul>
             {%- endif -%}    
-            {%- else -%} no subobject element
-              <div class="infobox-element-title">{{subelement[0]}}</div>
-              <div class="infobox-element-content">{{subelement[1]}}</div>
+            {%- else -%}
+              <div class="infobox-element-title">{{subelement[0]}}  no subobject element</div>
+              <div class="infobox-element-content">- {{subelement[1]}}</div>
           {%- endif -%} 
         {%- endfor -%} 
         {%- else -%} no subobject
-        <div class="infobox-element-title">{{element[0]}}</div>
-        <div class="infobox-element-content">{{element[1]}}</div>
+        <div class="infobox-element-title">{{element[0]}} not subobject</div>
+        <div class="infobox-element-content">- {{element[1]}}</div>
       {%- endif -%} 
       {%- endfor -%}
       </div>
