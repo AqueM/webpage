@@ -16,7 +16,7 @@ eleventyComputed:
 
 {% assign portrait = character.image %}
 
-{%- endif %}
+{%- endif -%}
 
 <div class="infobox-figure" style="background:url('{{portrait}}')"></div>
 
@@ -26,13 +26,13 @@ eleventyComputed:
 
         <div class="infobox-element-content">{{character.name}}</div></div>
 
-{%- if character.alias -%} <div class="infobox-element">
-
-        <div class="infobox-element-title">Aliases</div>
-
-        <div class="infobox-element-content"><ul class="infobox-list">
-
-{% for alias in character.alias } <li>{{alias}}</li>{% endfor %}</ul></div></div>{% endif %}
+{%- if character.alias -%}
+  <div class="infobox-element">
+          <div class="infobox-element-title">Aliases</div>
+          <div class="infobox-element-content"><ul class="infobox-list">
+          {% for alias in character.alias %}<li>{{alias}}</li>{% endfor %}</ul>
+  </div></div>
+{%- endif -%}
 
 {% for object in character %}
 
