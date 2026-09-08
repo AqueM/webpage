@@ -49,7 +49,7 @@ eleventyComputed:
               {%-else-%}
               <div class="infobox-element-title">- {{name}}</div>
               {%- endif -%}
-            <div class="infobox-element-content">-+ {%- for element in contents -%}{%- if element[0] != "link" -%}{{element[1]}}, {% endif -%}{%- endfor -%}</div>
+            <div class="infobox-element-content">-+ {%- for element in contents -%}{%- if element[0] != "link" -%}{{element[1]}}{%- endif %}{% if element != last %}, {% endif -%}{%- endfor -%}</div>
             {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
