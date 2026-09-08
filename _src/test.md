@@ -29,7 +29,7 @@ eleventyComputed:
   <div class="infobox-sub-title"><strong>{{group[0]}}</strong></div>
   {%- for element in group[1] -%}
   <div class="infobox-element">
-    {%- if element[1].first -%}
+    {%- if element[1].first -%}!!!subelements!!!
         {%- for subelement in element[1] -%}
           {%- if subelement[1].first -%}
             {%- if subelement.link -%}
@@ -49,12 +49,12 @@ eleventyComputed:
             {%- endif -%}    
             {%- else -%}
               <div class="infobox-element-title">-- simple string within object {{subelement[0]}}</div>
-              <div class="infobox-element-content">-- {{subelement[1]}}</div>
+              <div class="infobox-element-content">--+ {{subelement[1]}}</div>
           {%- endif -%} 
         {%- endfor -%} 
-        {%- else -%} no subobject
+        {%- else -%}
         <div class="infobox-element-title">- simple string - {{element[0]}}</div>
-        <div class="infobox-element-content">- {{element[1]}}</div>
+        <div class="infobox-element-content">-+ {{element[1]}}</div>
       {%- endif -%} 
       {%- endfor -%}
       </div>
