@@ -41,9 +41,8 @@ eleventyComputed:
         <div class="infobox-element-title">- no subelements - {{element[0]}}</div>
         <div class="infobox-element-content">-+ {{element[1]}}</div>
       {%- endif -%}
-    </div>
     {%- endfor -%}
-
+    </div>
   </div>
 {%- endfor -%}
 
