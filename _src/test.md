@@ -48,13 +48,13 @@ eleventyComputed:
                 </ul>
             {%- endif -%}    
             {%- else -%}
-              <div class="infobox-element-title">{{subelement[0]}}  no subobject element</div>
-              <div class="infobox-element-content">- {{subelement[1]}}</div>
+              <div class="infobox-element-title">{{subelement[0]}}  no subobject subelement</div>
+              <div class="infobox-element-content">- {{subelement}}</div>
           {%- endif -%} 
         {%- endfor -%} 
         {%- else -%} no subobject
         <div class="infobox-element-title">{{element[0]}} not subobject</div>
-        <div class="infobox-element-content">- {{element[1]}}</div>
+        <div class="infobox-element-content">- {{element}}</div>
       {%- endif -%} 
       {%- endfor -%}
       </div>
