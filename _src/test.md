@@ -29,26 +29,27 @@ eleventyComputed:
   <div class="infobox-sub-title"><strong>{{group[0]}}</strong></div>
   {%- for element in group[1] -%}
   <div class="infobox-element">
-    {% assign subelements = element[1] %}
-    {%- if subelements.first -%}
-          <div class="infobox-element-title">{{element[0]}}</div>
+    {% assign contents = element[1] %}
+    {%- assign name = element[0] -%}
+    {%- if contents.first -%}
+          <div class="infobox-element-title">{{name}}</div>
           <div class="infobox-element-content">
           <ul class="infobox-list">
-          {%- for subelement in subelements -%}
+          {%- for subelement in contents -%}
             <li>{{subelement}}</li>
           {%- endfor -%}
           </ul>
         {%- else -%}
-            {%- if subelements[1] -%}
-              <div class="infobox-element-title">- {{element[0]}}</div>
-              <div class="infobox-element-content">-+ {{element[1]}}</div>
+            {%- if contents[1] -%}
+              <div class="infobox-element-title">- {{name}}</div>
+              <div class="infobox-element-content">-+ {{contents}}</div>
             {%- else -%}
-              {%- if subelements.link -%}
-              <div class="infobox-element-title">- <a href="{{element[1].link}}">{{element[0]}}</a></div>
+              {%- if contents.link -%}
+              <div class="infobox-element-title">- <a href="{{element.link}}">{{name}}</a></div>
               {%-else-%}
-              <div class="infobox-element-title">- {{element[0]}}</div>
+              <div class="infobox-element-title">- {{name}}</div>
               {%- endif -%}
-            <div class="infobox-element-content">-+ {{element[1][1]}}</div>
+            <div class="infobox-element-content">-+ {{subelements.relation}}</div>
             {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
