@@ -15,7 +15,7 @@ eleventyComputed:
 <div class="infobox-figure" style="background:url('{{portrait}}')"></div>
 <div class="infobox-element">
   <div class="infobox-element-title">Fullname</div>
-  <div class="infobox-element-content">{{character.name}}</div>
+  <div class="infobox-element-content">{{character.name.first}} one letter?</div>
 </div>
 {%- if character.alias -%}
   <div class="infobox-element">
