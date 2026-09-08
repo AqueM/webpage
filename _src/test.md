@@ -29,7 +29,8 @@ eleventyComputed:
   <div class="infobox-sub-title"><strong>{{group[0]}}</strong></div>
   {%- for element in group[1] -%}
   <div class="infobox-element">
-    {{element[1].size}} size
+    {{element [1] | map: "" | join: "," | size }} size
+    {{element | size}}
     {%- if element[1].first -%}
           <div class="infobox-element-title">{{element[0]}}</div>
           <div class="infobox-element-content">
