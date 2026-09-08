@@ -54,7 +54,8 @@
         },
         "name2": {
             "link": "url",
-            "relation": "relation type"
+            "relation": "relation type",
+            "description": "some caption"
         },
         "name3": {
             "relation": "relation type"
