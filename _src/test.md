@@ -31,23 +31,13 @@ eleventyComputed:
   <div class="infobox-element">
     {%- if element[1].first -%}!!!subelements!!!
         {%- for subelement in element[1] -%}
-            {%- if element.link -%}
-              <div class="infobox-element-title"><a href="{{subelement.link}}"><em>{{element[0]}}</em></a></div>
-              {%- else -%}
-              <div class="infobox-element-title"><strong>{{element[0]}}</strong> no link subobject</div>
-            {%- endif -%}
+            <div class="infobox-element-title"><strong>{{element[0]}}</strong> no link subobject</div>
             <div class="infobox-element-content">
-            {%- if subelement.relation -%}
-              {{subelement.relation}} has relation
-                {%- else -%}
-                <ul class="infobox-list"> is listelement
-                {%- for listelement in subelement -%}
+                <ul class="infobox-list">
+                {%- for listelement in subelement[1] -%}
                   <li>{{listelement}}</li>
                 {%- endfor -%}
                 </ul>
-            {%- endif -%}    
-              <div class="infobox-element-title">-- simple string within object {{subelement[0]}}</div>
-              <div class="infobox-element-content">--+ {{subelement[1]}}</div>
         {%- endfor -%} 
         {%- else -%}
         <div class="infobox-element-title">- no subelements - {{element[0]}}</div>
