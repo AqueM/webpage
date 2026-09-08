@@ -40,11 +40,11 @@ eleventyComputed:
           </ul>
         {%- else -%}
             {%- if subelements.link -%}
-            <div class="infobox-element-title">- <a href="{{element.link}}>{{element[0]}}</a></div>
-            <div class="infobox-element-content">-+ {{element.relation}}</div>
+            <div class="infobox-element-title">- <a href="{{element[1].link}}>{{element[0]}}</a></div>
+            <div class="infobox-element-content">-+ {{element[1].relation}}</div>
             {%-else-%}
             <div class="infobox-element-title">- {{element[0]}}</div>
-            <div class="infobox-element-content">-+ {{element.relation}}</div>{%- endif -%}
+            <div class="infobox-element-content">-+ {{element[1].relation}}</div>{%- endif -%}
       {%- endif -%}
     {%- endfor -%}
     </div>
