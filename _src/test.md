@@ -28,30 +28,31 @@ eleventyComputed:
   <div class="infobox-sub-title">{{group[0]}}</div>
   {%- for element in group[1] -%}
   <div class="infobox-element">
-  {%- if element[1].first -%}
-      {%- for subelement in element[1] -%}
-        {%- if subelement[1].first -%}
-        {%- if subelement.link -%}
-          <div class="infobox-element-title">has link - <a href="{{subelement.link}}"><em>{{subelement[0]}}</em></a></div>
-          {%- else -%}
-          <div class="infobox-element-title">no link - <em>{{subelement[0]}}</em></div>
-        {%- endif -%}
-        <div class="infobox-element-content">
-          {%- if subelement.relation -%}
-          {{subelement.relation}}
-        {%- else -%}
-          <ul class="infobox-list">
-          {%- for listelement in subelement[1] -%}
-            <li>{{listelement}}</li>
-          {%- endfor -%}</ul>
-          {%- endif -%}
-      {%- endfor -%}        
-    {%- endfor -%}
-    </div>
-    {%- else -%}
-    <div class="infobox-element-title">{{element[0]}}</div>
-    <div class="infobox-element-content">{{element[1]}}</div>
+    {%- if element[1].first -%} is object
+        {%- for subelement in element[1] -%}
+          {%- if subelement[1].first -%}is subobject
+            {%- if subelement.link -%}
+              <div class="infobox-element-title">has link - <a href="{{subelement.link}}"><em>{{subelement[0]}}</em></a></div>
+              {%- else -%}
+              <div class="infobox-element-title">no link - <em>{{subelement[0]}}</em></div>
+            {%- endif -%}
+            <div class="infobox-element-content">
+              {%- if subelement.relation -%}
+                {{subelement.relation}}
+                  {%- else -%}
+                  <ul class="infobox-list">
+                  {%- for listelement in subelement[1] -%}
+                    <li>{{listelement}}</li>
+                  {%- endfor -%}
+                  </ul>
+              {%- endif -%}          
+        {%- endfor -%}        
+      {%- endfor -%}
+      </div>
+      {%- else -%}
+      <div class="infobox-element-title">{{element[0]}}</div>
+      <div class="infobox-element-content">{{element[1]}}</div>
     {%- endif -%}
-    </div>
-    {%- endfor -%}
+  </div>
+{%- endfor -%}
 {%- endfor -%}
