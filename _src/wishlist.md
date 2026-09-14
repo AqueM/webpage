@@ -3,6 +3,8 @@ layout: layouts/_page
 linkName: Lista życzeń
 permalink: /wishlist/index.html
 ---
+Używane rzeczy są zawsze OK (tam gdzie ma to sens).
+
 {%- assign wishlist = about.wishlist | sort: "cena" -%}
 <table><thead>
   <tr>
