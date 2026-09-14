@@ -13,7 +13,7 @@ permalink: /wishlist/index.html
 <tbody>
 {%- for item in about.wishlist -%}
   <tr>
-    <td><span>{{item.nazwa}</span></td>
+    <td><span>{{item.nazwa}}</span></td>
     <td><span>{{item.cena}}</span></td>
     <td>{% if item.link %}<a href="{{item.link}}">link</a>{% endif %}</td>
     <td><span>{{item.komentarz}}</span></td>
