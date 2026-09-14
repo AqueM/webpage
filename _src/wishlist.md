@@ -3,6 +3,7 @@ layout: layouts/_page
 linkName: Lista życzeń
 permalink: /wishlist/index.html
 ---
+{%- assign wishlist = about.wishlist | order: "cena" -%}
 <table><thead>
   <tr>
     <th><span>nazwa</span></th>
@@ -11,7 +12,7 @@ permalink: /wishlist/index.html
     <th><span>komentarz</span></th>   
   </tr></thead>
 <tbody>
-{%- for item in about.wishlist -%}
+{%- for item in wishlist -%}
   <tr>
     <td><span>{{item.nazwa}}</span></td>
     <td><span>{{item.cena}}</span></td>
