@@ -15,7 +15,7 @@ permalink: /wishlist/index.html
 {%- for item in wishlist -%}
   <tr>
     <td><span>{{item.nazwa}}</span></td>
-    <td><span>{{item.cena}}</span></td>
+    <td>{% if item.cena %}<span>{{item.cena}}+ PLN</span>{% endif %}</td>
     <td>{% if item.link %}<a href="{{item.link}}" target="_blank" rel="external nofollow">link</a>{% endif %}</td>
     <td><span>{{item.komentarz}}</span></td>
   </tr>
