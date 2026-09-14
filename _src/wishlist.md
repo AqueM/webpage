@@ -7,7 +7,7 @@ permalink: /wishlist/index.html
 <table><thead>
   <tr>
     <th><span>nazwa</span></th>
-    <th><span style="hyphens: unset;">orientacyjna cena</span></th>
+    <th><span style="hyphens: unset;">orientacyjna cena minimalna</span></th>
     <th><span>link</span></th>
     <th><span>komentarz</span></th>   
   </tr></thead>
