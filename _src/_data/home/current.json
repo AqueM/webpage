@@ -14,8 +14,7 @@
     "verb": "playing",
     "items": [
       {
-        "name": "Vintage Story",
-        "comment": "ver 1.22.3, modded"
+        "name": "Clanfolk"
       },
       {
         "name": "League of Legends",
@@ -24,10 +23,6 @@
       {
         "name": "Crusader Kings 3",
         "comment": "testing out newly-bought Roads to Power DLC"
-      },
-      {
-        "name": "Dwarf Fortress",
-        "comment": "what if I DIDN'T min-max?"
       }
     ]
   },
@@ -35,22 +30,12 @@
     "verb": "watching",
     "items": [
       {
-        "name": "The Alters",
-        "type": "videogame Let's Play",
-        "author": "Galm HD",
-        "comment": ""
-      },
-      {
         "name": "Leviathan",
         "type": "anime"
       },
       {
         "name": "Ghost In The Shell (2026)",
         "type": "anime"
-      },
-      {
-        "name": "Love in the Clouds",
-        "type": "chinese Drama"
       }
     ]
   },
