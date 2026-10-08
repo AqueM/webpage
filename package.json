@@ -10,7 +10,6 @@
   },
   "keywords": [],
   "author": "Aque",
-  "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "@11ty/eleventy-img": "^7.0.0",

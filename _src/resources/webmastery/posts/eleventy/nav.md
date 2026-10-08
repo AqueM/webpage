@@ -35,7 +35,7 @@ Note that you'll have to add styling for the `navigation-menu-active` class your
 
 If you, like me, like sorting things into categories — here's how to do it to your menu links.
 
-First, create a category collection. You can do that either by sticking a json file into your global *data* folder...
+First, create a category collection. You can do that by sticking a json file into your global *data* folder like so:
 {% raw %}
 ```json
 [
@@ -50,23 +50,6 @@ First, create a category collection. You can do that either by sticking a json f
 {% endraw %}
 
 (that's what I did, because it allows me to control the order in which they display more easily)
-
-...or create a collection dynamically from custom front matter in your *eleventy.config.js*:
-
-{% raw %}
-```javascript
-eleventyConfig.addCollection('categories', (collectionApi) => {
-    const categories = new Set();
-    const pages = collectionApi.getAll();
-    pages.forEach((page) => {
-        if (page.data.category) {
-            categories.add(page.data.category);
-        }
-    });
-    return Array.from(categories);
-});
-```
-{% endraw %}
 
 Then you can use it in your navigation:
 
