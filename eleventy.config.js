@@ -25,18 +25,17 @@ module.exports = async function (eleventyConfig) {
 
     // output image widths
     widths: ["auto"],
-    urlPath: "./images/",
+    urlPath: "./assets/images/",
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+
+      return `${name}-${width}w.${format}`;
+    },
 
     // optional, attributes assigned on <img> nodes override these values
     htmlOptions: {
       imgAttributes: {
-        filenameFormat: function (id, src, width, format, options) {
-          const extension = path.extname(src);
-          const name = path.basename(src, extension);
-          console.log(name);
-
-          return `${name}-${width}w.${format}`;
-        },
         alt: "",
         loading: "lazy",
         decoding: "async",
