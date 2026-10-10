@@ -1,178 +1,170 @@
 /* SITE NAVIGATION */
 
 .layout__sidebar {
-	flex-basis: 10vw;
-	max-height: 4rem;
-	flex-grow: 1;
-	z-index: 4;
-	min-width: unset;
+  flex-basis: 10vw;
+  max-height: 4rem;
+  flex-grow: 1;
+  z-index: 4;
+  min-width: unset;
 
-	@media only screen and (max-width: 768px) {
-		background-color: var(--color-secondrary);
-	}
+  @media only screen and (max-width: 768px) {
+    background-color: var(--color-secondrary);
+  }
 
-	@media only screen and (min-width: 768px) {
-		max-height: unset;
-	}
+  @media only screen and (min-width: 768px) {
+    max-height: unset;
+  }
 }
 
 .sitenav {
-	display: none;
-	height: 100%;
+  display: none;
+  height: 100%;
 
-	@media only screen and (min-width: 768px) {
-		display: flex;
-	}
+  @media only screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .sitenav__menu {
-	transform: translate(-150%);
-	transition: transform 0.5s ease-in-out;
-	display: flex;
-	flex-direction: column;
-	gap: 0.2rem;
-	margin-top: 0.5rem;
-	padding: 0.5rem;
-	position: relative;
-	border-radius: 0 0 var(--border-radius-single) var(--border-radius-single);
-	background-color: var(--color-secondrary);
-	border-bottom: 1px solid var(--border-color);
-	margin-bottom: 1rem;
+  transform: translate(-150%);
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  position: relative;
+  border-radius: 0 0 var(--border-radius-single) var(--border-radius-single);
+  background-color: var(--color-secondrary);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1rem;
 
-	@media only screen and (min-width: 768px) {
-		transform: unset;
-		margin-top: unset;
-		background-color: unset;
-		padding: unset;
-		border-radius: unset;
-		border-bottom: unset;
-		background-color: unset;
-	}
-}
-
-.sitenav__menu-category {
-	cursor: pointer;
-	margin-bottom: 0.1rem;
+  @media only screen and (min-width: 768px) {
+    transform: unset;
+    margin-top: unset;
+    background-color: unset;
+    padding: unset;
+    border-radius: unset;
+    border-bottom: unset;
+  }
 }
 
 /* code courtesy of https://css-tricks.com/using-styling-the-details-element/ */
 .sitenav__menu-category__name {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 0.5rem 0 0;
-	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem 0 0;
+  width: 100%;
 
-	/* Hide original marker */
-	&::marker {
-		content: "";
-	}
-
+  /* Hide original marker */
+  &::marker {
+    content: "";
+  }
 }
 
 .sitenav__plus-lines {
-	/* Custom marker dimensions */
-	/* border-top: 0.1rem solid var(--color-darkest); */
-	height: 1rem;
-	width: 1rem;
-	align-self: center;
-	position: relative;
+  /* Custom marker dimensions */
+  /* border-top: 0.1rem solid var(--color-darkest); */
+  height: 1rem;
+  width: 1rem;
+  align-self: center;
+  position: relative;
 
-	&::before,
-	&::after {
-		/* Custom marker dimensions */
-		content: "";
-		border-block-start: 0.1rem solid var(--color-darkest);
-		height: 0;
-		width: 1rem;
-		position: absolute;
-		left: 0;
-		top: 40%;
-	}
+  &::before,
+  &::after {
+    /* Custom marker dimensions */
+    content: "";
+    border-block-start: 0.1rem solid var(--color-darkest);
+    height: 0;
+    width: 1rem;
+    position: absolute;
+    left: 0;
+    top: 40%;
+  }
 
-	/* Rotate just the ::after line to create a "+"" shape */
-	&::after {
-		transform: rotate(90deg);
-		transform-origin: 50%;
-	}
-
+  /* Rotate just the ::after line to create a "+"" shape */
+  &::after {
+    transform: rotate(90deg);
+    transform-origin: 50%;
+  }
 }
 
 /* Rotate the line when open */
 .sitenav__menu-category__label[open] .sitenav__plus-lines::after {
-	transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .sitenav__menu-category {
-	padding: 0.5rem 1rem;
-	border-radius: var(--border-radius);
-	margin: 0;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	font-family: var(--font-title);
-	font-size: 1.1rem;
-	font-weight: bold;
-	min-width: max-content;
-	position: relative;
+  cursor: pointer;
+  margin-bottom: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-width: max-content;
+  position: relative;
 }
 
 .sitenav__menu-category--open {
-	border-radius: var(--border-radius);
-	background-image: var(--gradient-accent-top);
-
+  border-radius: var(--border-radius);
+  background-image: var(--gradient-accent-top);
 }
 
 .sitenav__menu-category__label {
-	border-style: unset;
-	border-width: unset;
-	cursor: pointer;
-	max-width: unset;
+  border-style: unset;
+  border-width: unset;
+  cursor: pointer;
+  max-width: unset;
 }
 
 .sitenav__menu-list {
-	line-height: 1.2rem;
-	list-style-type: none;
-	border-inline-start: 1rem;
-	padding-inline-start: 1rem;
-	margin: 0.2rem 0.1rem 0.2rem 0.1rem;
-	max-width: unset;
+  line-height: 1.2rem;
+  list-style-type: none;
+  border-inline-start: 1rem;
+  padding-inline-start: 1rem;
+  margin: 0.2rem 0.1rem 0.2rem 0.1rem;
+  max-width: unset;
 }
 
 .sitenav__menu-link {
-	box-shadow: unset;
-	display: inline-block;
-	font-size: 1rem;
-	margin-bottom: 0.2rem;
-	padding: unset;
-	padding: 0.5rem;
-	padding-left: 1rem;
-	text-align: left;
-	width: 100%;
-	font-family: var(--font-subtitle);
-	font-weight: bold;
-	text-decoration: none;
-	color: var(--font-color);
-	border-top: calc(var(--border-width)/100) solid var(--border-color);
-	border-bottom: calc(var(--border-width)/100) solid var(--border-color);
-	text-shadow: 2px 0 1px var(--color-accent);
+  box-shadow: unset;
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  text-align: left;
+  width: 100%;
+  font-family: var(--font-subtitle);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--font-color);
+  border-top: calc(var(--border-width) / 100) solid var(--border-color);
+  border-bottom: calc(var(--border-width) / 100) solid var(--border-color);
+  text-shadow: 2px 0 1px var(--color-accent);
 
-	@media only screen and (min-width: 768px) {
-		border: unset;
-		text-shadow: unset;
-	}
+  @media only screen and (min-width: 768px) {
+    border: unset;
+    text-shadow: unset;
+  }
 }
 
 .sitenav__menu-link:not([target="_blank"]) {
-	&::after {
-		content: unset;
-		margin-left: unset;
-	}
+  &::after {
+    content: unset;
+    margin-left: unset;
+  }
 }
 
 .sitenav__menu-link--active {
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	font-family: var(--font-title);
-	font-weight: bolder;
-	border-top: calc(var(--border-width)/100) solid var(--border-color);
-	border-bottom: calc(var(--border-width)/100) solid var(--border-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: var(--font-title);
+  font-weight: bolder;
+  border-top: calc(var(--border-width) / 100) solid var(--border-color);
+  border-bottom: calc(var(--border-width) / 100) solid var(--border-color);
 }

@@ -34,8 +34,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   right: 0;
   bottom: 0;
   background-color: var(--base-color-primary);
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .switch__slider:before {
@@ -46,16 +45,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   left: 0.25rem;
   bottom: 0.25rem;
   background-color: var(--base-color-lightest);
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .switch__input:checked {
-  +.switch__slider {
+  + .switch__slider {
     background-color: var(--base-color-secondrary);
   }
 
-  +.switch__slider--yellow {
+  + .switch__slider--yellow {
     background-color: var(--base-color-lightest);
 
     &:before {
@@ -63,7 +61,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
   }
 
-  +.switch__slider--dark {
+  + .switch__slider--dark {
     background-color: var(--base-color-darkest);
 
     &:before {
@@ -73,20 +71,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .switch__input:focus {
-  +.switch__slider {
+  + .switch__slider {
     box-shadow: 0 0 1px var(--base-color-secondrary);
   }
 
-  +.switch__slider--yellow {
+  + .switch__slider--yellow {
     box-shadow: 0 0 1px var(--base-color-contrast);
   }
 
-  +.switch__slider--dark {
+  + .switch__slider--dark {
     box-shadow: 0 0 1px var(--base-color-darkest);
   }
 }
 
-.switch__input:checked+.switch__slider:before {
+.switch__input:checked + .switch__slider:before {
   -webkit-transform: translateX(1.5rem);
   -ms-transform: translateX(1.5rem);
   transform: translateX(1.5rem);
