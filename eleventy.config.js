@@ -1,7 +1,7 @@
 module.exports = async function (eleventyConfig) {
   const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
   const path = require("node:path");
-  
+
   // SETUP
   eleventyConfig.setInputDirectory("_src");
   eleventyConfig.addPassthroughCopy({ "_src/assets": "assets" });
@@ -27,12 +27,11 @@ module.exports = async function (eleventyConfig) {
 
     // output image widths
     widths: ["auto"],
-    urlPath: "./assets/images/",
+    urlPath: "/assets/images/optimized/",
     filenameFormat: function (id, src, width, format, options) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
+      const name = path.basename(src, path.extname(src));
 
-      return `${name}-${width}w.${format}`;
+      return `${name}__${width}.${format}`;
     },
 
     // optional, attributes assigned on <img> nodes override these values
