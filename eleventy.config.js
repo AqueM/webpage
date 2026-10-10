@@ -1,5 +1,7 @@
 module.exports = async function (eleventyConfig) {
   const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+  const path = require("node:path");
+  
   // SETUP
   eleventyConfig.setInputDirectory("_src");
   eleventyConfig.addPassthroughCopy({ "_src/assets": "assets" });
