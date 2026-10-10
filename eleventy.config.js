@@ -23,7 +23,7 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // output image formats
-    formats: ["webp"],
+    formats: ["webp", "gif"],
 
     // output image widths
     widths: ["auto"],
