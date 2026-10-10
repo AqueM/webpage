@@ -43,7 +43,7 @@ Mind the <span class="design__error">warnings</span> and <span class="design__wa
     <td>{% assign last = item.genres | last %}{% for genre in item.genres %}<span>{{genre}}{% if genre != last %}, {% endif %}</span>{% endfor %}</td>
     <td><span>{{item.words}}</span></td>
     <td>{% if item.ao3Src %}{% ao3Link item.ao3Src %}{% endif %}</td>
-    <td>{% if item.downloadable %}<a href="{{basePath}}{{item.title | underscorize}}.pdf" target="_blank" class="link__download"><img src="/assets/images/layout/download.gif" alt="download link"></a>{% endif %}</td>
+    <td>{% if item.downloadable %}<a href="{{basePath}}{{item.title | underscorize}}.pdf" target="_blank" class="link__download"><img src="/assets/images/utils/download.gif" alt="download link"></a>{% endif %}</td>
     <td>{%if item.series %}<span><cite>"{{item.series}}"</cite></span>{% endif %}</td>
     <td><span><time>{{item.date}}</time></span></td>
   </tr>

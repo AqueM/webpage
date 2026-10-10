@@ -23,7 +23,7 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // output image formats
-    formats: ["webp", "gif"],
+    formats: ["webp"],
     sharpOptions: {
       animated: true,
     },
@@ -32,7 +32,7 @@ module.exports = async function (eleventyConfig) {
     widths: ["auto"],
     urlPath: "/assets/images/optimized/",
     filenameFormat: function (id, src, width, format, options) {
-      return `${path.basename(src, path.extname(src))}__${width}.${format}`;
+      return `${path.dirname(src)}_${path.basename(src, path.extname(src))}__${width}.${format}`;
     },
 
     // optional, attributes assigned on <img> nodes override these values

@@ -79,7 +79,7 @@ It's also sort of a arts&crafts project for me. I just enjoy tinkering with code
 This site is safe for work and for minors. However, since this is also an archive of my art, some pages **may** contain links to sensitive material, including of **sexual nature**. That content is clearly marked.
 
 <p class="design--center-align-vertical"><a href="https://www.mabsland.com/Adoption.html" target="_blank" rel="external"><img
-					src="/assets/images/layout/Censor_PGc.gif"
+					src="/assets/images/utils/Censor_PGc.gif"
 					title="this site self-rated as PG: contains little or mild offensive materials"
 					alt="blue-haired anthropomorphic panda portrait, on blue background, next to the words 'Web PG'"></a></p>
 {% divider-lines %}

@@ -33,7 +33,7 @@ I've made playlist of fan-made animatics for the [EPIC musical](https://en.wikip
 
 <div class="design__box">
 <p>Here's the link directly to the</p><div class="theme__border-oval desing__decor-link design__center">
-			{% include "partials/_decor-sides.html" %} <a href="https://youtube.com/playlist?list=PLB39U-vzXdiM&si=YKsy1NWDjCw3P6Of" target="_blank" rel="external nofollow"><span class="icon icon--left" style="--layout-img: url('/assets/images/layout/font-awesome/youtube-brands-solid-full.svg"></span>Youtube Playlist</a></div>
+			{% include "partials/_decor-sides.html" %} <a href="https://youtube.com/playlist?list=PLB39U-vzXdiM&si=YKsy1NWDjCw3P6Of" target="_blank" rel="external nofollow"><span class="icon icon--left" style="--layout-img: url('/assets/images/icons/font-awesome/youtube-brands-solid-full.svg"></span>Youtube Playlist</a></div>
 </div>
 
 A similar concept in one video is this [compilation by Danneymation](https://www.youtube.com/watch?v=jJ9vtKtilG8){target=_blank}{rel="external nofollow"}

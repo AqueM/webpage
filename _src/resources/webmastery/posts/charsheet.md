@@ -118,55 +118,55 @@ Want the Eleventy code that will calculate and populate stuff for you instead? [
           <span class="character-sheet__label character-sheet__label--big">skills</span>
           <ul class="design__list-no-decor">
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +1 Acrobatics</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +4 Animal Handling</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +5 Arcana</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +0 Athletics</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +3 Deception</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +5 History</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +7 Insight</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +0 Intimidation</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +7 Medicine</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +7 Nature</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +4 Perception</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +0 Performance</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +0 Persuasion</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +2 Religion</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +1 Sleight of Hand</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +1 Stealth</li>
             <li><span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +7 Survival</li>
           </ul>
         </div>

@@ -8,7 +8,7 @@ Archive of resources related to my Youtube Channel, Longer Letters.
 {% heading "h2", "Videos" %}
 <div class="design__box">
 <p>To view the videos online, go to <div class="theme__border-oval desing__decor-link">
-			{% include "partials/_decor-sides.html" %} <a href="https://www.youtube.com/@LongerLetters" target="_blank"><span class="icon icon--left" style="background-image: url('/assets/images/layout/font-awesome/youtube-brands-solid-full.svg"></span>channel</a></div></p>
+			{% include "partials/_decor-sides.html" %} <a href="https://www.youtube.com/@LongerLetters" target="_blank"><span class="icon icon--left" style="background-image: url('/assets/images/icons/font-awesome/youtube-brands-solid-full.svg"></span>channel</a></div></p>
 </div>
 
 If you want to view them offline, here's a list of downloadable files.
@@ -20,7 +20,7 @@ None yet!
 
 <ul>
 {% for video in collections.videos %}
-<li><a href="{{video.url}}" target="_blank" rel="external">{{video.linkName}}</a><img src="/assets/images/layout/download.gif"></li>
+<li><a href="{{video.url}}" target="_blank" rel="external">{{video.linkName}}</a><img src="/assets/images/utils/download.gif"></li>
 {% endfor %}
 </ul>
 </details>

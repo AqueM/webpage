@@ -110,8 +110,8 @@ I wanted to calculate the skill bonus, which is ability score bonus for the rele
     {%- for skill in about.charsheet.skills -%}
     {%- capture statNumber -%}{{about.charsheet.stats[skill.stat] | minus: 10.5 | divided_by: 2 | round}}{%- endcapture -%}
         <li>
-        {%- if skill.prof -%}<span class="icon icon--left"style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span> +{{statNumber | plus: proficiency}}
-        {%- else -%}<span class="icon icon--left" style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span> +{{statNumber}}{%- endif -%} {{skill.name}}
+        {%- if skill.prof -%}<span class="icon icon--left"style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span> +{{statNumber | plus: proficiency}}
+        {%- else -%}<span class="icon icon--left" style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span> +{{statNumber}}{%- endif -%} {{skill.name}}
         </li>
     {%- endfor -%}
     </ul>
@@ -297,9 +297,9 @@ Here's the whole code exactly as it is used by Eleventy, for your reference.
           <ul class="design__list-no-decor">{% for skill in about.charsheet.skills %}{% capture statNumber
             %}{{about.charsheet.stats[skill.stat] | minus: 10.5 | divided_by: 2 | round}}{% endcapture %}
             <li>{% if skill.prof %}<span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +{{statNumber | plus: proficiency}}{% else %}<span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +{{statNumber}}{%endif%} {{skill.name}}</li>{% endfor %}
           </ul>
         </div>

@@ -167,7 +167,7 @@
   display: block;
   position: relative;
   margin: 0.5rem 0 0.5rem;
-  --layout-img: url("/assets/images/layout/divider-saradika-graphics_1.webp");
+  --layout-img: url("/assets/images/utils/layout/divider-saradika-graphics_1.webp");
   flex-basis: 100%;
 }
 
@@ -180,7 +180,7 @@
 	display: block;
 	position: absolute;
 	top: -2.5rem;
-	--layout-img: url("/assets/images/layout/divider-saradika-graphics.png");
+	--layout-img: url("/assets/images/utils/layout/divider-saradika-graphics.png");
 } */
 
 .link__download {
@@ -223,7 +223,7 @@
 
   @media only screen and (max-width: 600px) {
     width: 1em;
-    background-image: url("/assets/images/layout/font-awesome/angles-left-solid-full.svg");
+    background-image: url("/assets/images/icons/font-awesome/angles-left-solid-full.svg");
   }
 }
 
@@ -248,7 +248,7 @@
 
   @media only screen and (max-width: 600px) {
     width: 1em;
-    background-image: url("/assets/images/layout/font-awesome/angles-right-solid-full.svg");
+    background-image: url("/assets/images/icons/font-awesome/angles-right-solid-full.svg");
   }
 }
 

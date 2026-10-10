@@ -8,7 +8,7 @@ eleventyComputed:
   pageTitle:  "Aque's Pond"
 ---
 <section>
-<img src="/assets/images/hello-grabill54.gif" alt="simplistic, blue icon of a person, animated to wave" class="animated image--round design__floated--left image--small">
+<img src="/assets/images/content/hello-grabill54.gif" alt="simplistic, blue icon of a person, animated to wave" class="animated image--round design__floated--left image--small">
 
 Hi, welcome to my website! My name's Aque and I'm a mixed/multi-media artist mostly involved in various fandoms, fantasy worldbuilding and tabletop RPG. Among friends, I'm most known to love frogs and androids.
 

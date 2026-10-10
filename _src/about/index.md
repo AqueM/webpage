@@ -10,7 +10,7 @@ pageTitle: "Basics about Aque"
 
 <section class="layout__flex-item">
   <a href="https://picrew.me/en/image_maker/1322863" rel="external" class="design__floated--left noformat"><img
-      src="/assets/images/picrew.png"
+      src="/assets/images/content/picrew.png"
       alt="cartoony portrait of a person with light skin and short brown hair, against the nonbinary flag background"
       title="click to go to the picrew used to make this!" class="image--round image--small"></a>
 
@@ -192,9 +192,9 @@ pageTitle: "Basics about Aque"
           <ul class="design__list-no-decor">{% for skill in about.charsheet.skills %}{% capture statNumber
             %}{{about.charsheet.stats[skill.stat] | minus: 10.5 | divided_by: 2 | round}}{% endcapture %}
             <li>{% if skill.prof %}<span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-solid-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-solid-full.svg');"></span>
               +{{statNumber | plus: proficiency}}{% else %}<span class="icon icon--left"
-                style="--layout-img: url('/assets/images/layout/font-awesome/circle-regular-full.svg');"></span>
+                style="--layout-img: url('/assets/images/icons/font-awesome/circle-regular-full.svg');"></span>
               +{{statNumber}}{%endif%} {{skill.name}}</li>{% endfor %}
           </ul>
         </div>

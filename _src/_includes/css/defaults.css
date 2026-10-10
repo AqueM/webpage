@@ -19,8 +19,8 @@
     @media only screen and (min-width: 600px) {
       background-position: 0% 100%;
       background-image:
-        var(--gradient-sun), url("/assets/images/layout/grass-border.webp"),
-        url("/assets/images/layout/water-border.webp"), var(--gradient-water);
+        var(--gradient-sun), url("/assets/images/utils/layout/grass-border.webp"),
+        url("/assets/images/utils/layout/water-border.webp"), var(--gradient-water);
       background-repeat: repeat-x;
     }
   }
@@ -87,7 +87,7 @@
 
     &::after {
       content: "(internal link)";
-      background-image: url("/assets/images/layout/font-awesome/right-to-bracket-solid-full.svg");
+      background-image: url("/assets/images/icons/font-awesome/right-to-bracket-solid-full.svg");
       display: inline-block;
       width: 1em;
       height: 1em;

@@ -2,24 +2,24 @@ module.exports = async function (eleventyConfig) {
     const fs = require('fs');
     let path = require("path");
     const smallPixels =
-        fs.readdirSync('_src/assets/images/pixels/small').filter(
-            item => fs.statSync("./_src/assets/images/pixels/small/" + item).isFile());
-    smallPixels.forEach((x, i) => smallPixels[i] = "/assets/images/pixels/small/".concat(x));
+        fs.readdirSync('_src/assets/images/utils/pixels/small').filter(
+            item => fs.statSync("./_src/assets/images/utils/pixels/small/" + item).isFile());
+    smallPixels.forEach((x, i) => smallPixels[i] = "/assets/images/utils/pixels/small/".concat(x));
 
     const widePixels =
-        fs.readdirSync('_src/assets/images/pixels/wide').filter(
-            item => fs.statSync("./_src/assets/images/pixels/wide/" + item).isFile());
-    widePixels.forEach((x, i) => widePixels[i] = "/assets/images/pixels/wide/".concat(x));
+        fs.readdirSync('_src/assets/images/utils/pixels/wide').filter(
+            item => fs.statSync("./_src/assets/images/utils/pixels/wide/" + item).isFile());
+    widePixels.forEach((x, i) => widePixels[i] = "/assets/images/utils/pixels/wide/".concat(x));
 
     const bigPixels =
-        fs.readdirSync('_src/assets/images/pixels/big').filter(
-            item => fs.statSync("./_src/assets/images/pixels/big/" + item).isFile());
-    bigPixels.forEach((x, i) => bigPixels[i] = "/assets/images/pixels/big/".concat(x));
+        fs.readdirSync('_src/assets/images/utils/pixels/big').filter(
+            item => fs.statSync("./_src/assets/images/utils/pixels/big/" + item).isFile());
+    bigPixels.forEach((x, i) => bigPixels[i] = "/assets/images/utils/pixels/big/".concat(x));
 
     const tallPixels =
-        fs.readdirSync('_src/assets/images/pixels/tall').filter(
-            item => fs.statSync("./_src/assets/images/pixels/tall/" + item).isFile());
-    tallPixels.forEach((x, i) => tallPixels[i] = "/assets/images/pixels/tall/".concat(x));
+        fs.readdirSync('_src/assets/images/utils/pixels/tall').filter(
+            item => fs.statSync("./_src/assets/images/utils/pixels/tall/" + item).isFile());
+    tallPixels.forEach((x, i) => tallPixels[i] = "/assets/images/utils/pixels/tall/".concat(x));
 
     eleventyConfig.addCollection("buttonImages", function (collectionApi) {
         const files = fs.readdirSync('_src/assets/images/badges/buttons');
