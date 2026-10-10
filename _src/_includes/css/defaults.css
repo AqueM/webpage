@@ -27,6 +27,7 @@
 
   img:not(.gallery *) {
     max-width: 30vw;
+    height: auto;
   }
 
   article {
