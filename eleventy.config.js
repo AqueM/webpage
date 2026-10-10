@@ -22,10 +22,10 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // output image formats
     formats: ["webp"],
-    outputDir: "./_site/assets/images/",
 
     // output image widths
     widths: ["auto"],
+    urlPath: "./images/",
 
     // optional, attributes assigned on <img> nodes override these values
     htmlOptions: {
@@ -33,6 +33,7 @@ module.exports = async function (eleventyConfig) {
         filenameFormat: function (id, src, width, format, options) {
           const extension = path.extname(src);
           const name = path.basename(src, extension);
+          console.log(name);
 
           return `${name}-${width}w.${format}`;
         },
