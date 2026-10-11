@@ -31,7 +31,7 @@ module.exports = async function (eleventyConfig) {
 
     // output image widths
     widths: ["auto"],
-    outputDir: "./assets/images/optimized/",
+    urlPath: "./assets/images/optimized/",
     filenameFormat: function (id, src, width, format, options) {
       return `${path.basename(src, path.extname(src))}.${format}`;
     },
