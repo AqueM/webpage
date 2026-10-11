@@ -27,7 +27,6 @@ module.exports = async function (eleventyConfig) {
     sharpOptions: {
       animated: true,
     },
-    transformOnRequest: true,
 
     // output image widths
     widths: ["auto"],
