@@ -7,14 +7,14 @@
 "snack","prażone migdały",,,
 "snack","prażone orzechy laskowe",,,
 "snack","śliwki w czekoladzie",,,
-"item","kryształowe kostki RPG","000200","https://rgfk.pl/k/210/kamienne-i-szklane","(link przykładowy)"
-"item","kamienie szlachetne/półszlachetne małe","0005",,"opisane swoimi nazwami"
-"item","opal","000200",,"maleńkie zaczynają się od około 200 pln, ale cena jest za gram i dochodzi do niebotycznych wartości. Do dostania na giełdach minerałów"
-"item","świece zapachowe","00050","https://www.yankeecandle.com/yankee-candle/accessories-gifts/accessories/candle-shades-toppers/candle-shades/","(link przykładowy) takie duże w słoikach, które pasują do lampki na świece od Yankee Candle"
+"item","kryształowe kostki RPG","0200","https://rgfk.pl/k/210/kamienne-i-szklane","(link przykładowy)"
+"item","kamienie szlachetne/półszlachetne małe","5",,"opisane swoimi nazwami"
+"item","opal","200",,"maleńkie zaczynają się od około 200 pln, ale cena jest za gram i dochodzi do niebotycznych wartości. Do dostania na giełdach minerałów"
+"item","świece zapachowe","50","https://www.yankeecandle.com/yankee-candle/accessories-gifts/accessories/candle-shades-toppers/candle-shades/","(link przykładowy) takie duże w słoikach, które pasują do lampki na świece od Yankee Candle"
 "bugs","ilustracje botaniczne, zoologiczne lub entomologiczne",,"http://sklep.lasiniebo.pl/pl/p/komplet-12-dekoracyjnych-kart-Kwiaty-polne-15cmx17cm/279","(link przykładowy) kartki, plakaty, kupne, ręczne, akwarele, ryciny, stare, nowe... cokolwiek :)"
 "bugs","przypinki, breloki i podobne z motywem motyli lub skrzydlatych insektów",,,"do kolekcji, którą ostatnio zaczełam"
-"bugs","motyle w gablotkach","00070","https://allegro.pl/listing?string=motyl%20w%20gablotce","(link przykładowy) do kupienia online lub czasem na kiermaszach rękodzieła, targach staroci czy giełdach minerałów"
-"digital","coś z listy życzeń na Steamie","00020","https://store.steampowered.com/wishlist/profiles/76561198059138153#sort=order",
+"bugs","motyle w gablotkach","70","https://allegro.pl/listing?string=motyl%20w%20gablotce","(link przykładowy) do kupienia online lub czasem na kiermaszach rękodzieła, targach staroci czy giełdach minerałów"
+"digital","coś z listy życzeń na Steamie","20","https://store.steampowered.com/wishlist/profiles/76561198059138153#sort=order",
 "book","Klucz do oznaczania roślin, Mowszowicz",,"http://lubimyczytac.pl/autor/68218/jakub-mowszowicz","Jest kilka książek z serii 'do rozpoznawania', każda dobra ;)"
 "book","Klucz do oznaczania roślin, Szafer",,"http://lubimyczytac.pl/ksiazka/160743/rosliny-polskie-opisy-i-klucze-do-oznaczania-wszystkich-gatunkow-roslin-naczyniowych-rosnacych-w-po",
 "book","'Mały Książę' w różnych językach i ciekawych wydaniach",,,"mam już: po śląsku, po polsku, audiobook"
@@ -30,8 +30,8 @@
 "coupon","wizyta w SPA",,,"dowolne miejsce, dowolny zabieg"
 "coupon","kurs śpiewu",,,
 "coupon","kurs gotowania",,,
-"order","figurka lub płaskorzeźba od Eredhes","000300","https://www.etsy.com/shop/Eredhes",
-"order","obrazek 'Spreadsheets' od WitchsGrove","00035","https://www.etsy.com/listing/1509336638/office-salt-trilogy-calligraphy-digital",
-"order","obrazek 'Read the Email' od WitchsGrove","00035","https://www.etsy.com/listing/1509336638/office-salt-trilogy-calligraphy-digital",
-"order","malowana muszla od RockyRoadsArtStudio","0001000","https://linktr.ee/RockyRoadArtStudio","sprzedawane tylko na aukcjach, tworzonych tylko raz na jakiś, około końca miesiąca"
-"order","ryba od BisonWares","0001000","https://bisonwares.com/pages/fish-market","dostępne tylko na zamówienie w określonych terminach"
+"order","figurka lub płaskorzeźba od Eredhes","300","https://www.etsy.com/shop/Eredhes",
+"order","obrazek 'Spreadsheets' od WitchsGrove","35","https://www.etsy.com/listing/1509336638/office-salt-trilogy-calligraphy-digital",
+"order","obrazek 'Read the Email' od WitchsGrove","35","https://www.etsy.com/listing/1509336638/office-salt-trilogy-calligraphy-digital",
+"order","malowana muszla od RockyRoadsArtStudio","1000","https://linktr.ee/RockyRoadArtStudio","sprzedawane tylko na aukcjach, tworzonych tylko raz na jakiś, około końca miesiąca"
+"order","ryba od BisonWares","1000","https://bisonwares.com/pages/fish-market","dostępne tylko na zamówienie w określonych terminach"
