@@ -5,7 +5,7 @@ permalink: /wishlist/index.html
 ---
 Używane rzeczy są zawsze OK (tam gdzie ma to sens).
 
-{%- assign wishlist = about.wishlist | sort: "kategoria" -%}
+{%- assign wishlist = about.wishlist | sort: "kategoria" | reverse -%}
 <table><thead>
   <tr>
     <th><span>nazwa</span></th>
