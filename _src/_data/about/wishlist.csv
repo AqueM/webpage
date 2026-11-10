@@ -1,37 +1,37 @@
-"nazwa","cena","link","komentarz"
-"pistacje",,,
-"nerkowce",,,
-"orzeszki pinii",,,
-"orzechy brazylijskie",,,
-"orzechy laskowe łuskane",,,
-"prażone migdały",,,
-"prażone orzechy laskowe",,,
-"śliwki w czekoladzie",,,
-"kryształowe kostki RPG","200","https://rgfk.pl/k/210/kamienne-i-szklane","(link przykładowy)"
-"kamienie szlachetne/półszlachetne małe","5",,"opisane swoimi nazwami"
-"opal","200",,"maleńkie zaczynają się od około 200 pln, ale cena jest za gram i dochodzi do niebotycznych wartości. Do dostania na giełdach minerałów"
-"świece zapachowe","50","https://www.yankeecandle.com/yankee-candle/accessories-gifts/accessories/candle-shades-toppers/candle-shades/","(link przykładowy) takie duże w słoikach, które pasują do lampki na świece od Yankee Candle"
-"ilustracje botaniczne, zoologiczne lub entomologiczne",,"http://sklep.lasiniebo.pl/pl/p/komplet-12-dekoracyjnych-kart-Kwiaty-polne-15cmx17cm/279","(link przykładowy) kartki, plakaty, kupne, ręczne, akwarele, ryciny, stare, nowe... cokolwiek :)"
-"przypinki, breloki i podobne z motywem motyli lub skrzydlatych insektów",,,"do kolekcji, którą ostatnio zaczełam"
-"motyle w gablotkach","70","https://allegro.pl/listing?string=motyl%20w%20gablotce","(link przykładowy) do kupienia online lub czasem na kiermaszach rękodzieła, targach staroci czy giełdach minerałów"
-"coś z listy życzeń na Steamie","20","https://store.steampowered.com/wishlist/profiles/76561198059138153#sort=order",
-"Klucz do oznaczania roślin, Mowszowicz",,"http://lubimyczytac.pl/autor/68218/jakub-mowszowicz","Jest kilka książek z serii 'do rozpoznawania', każda dobra ;)"
-"Klucz do oznaczania roślin, Szafer",,"http://lubimyczytac.pl/ksiazka/160743/rosliny-polskie-opisy-i-klucze-do-oznaczania-wszystkich-gatunkow-roslin-naczyniowych-rosnacych-w-po",
-"'Mały Książę' w różnych językach i ciekawych wydaniach",,,"mam już: po śląsku, po polsku, audiobook"
-"książki o teorii i analizie literatury (o tropach, motywach, poradniki pisania itp.)",,,
-"wycieczka do zoo",,,
-"wycieczka do ogrodu botanicznego",,,
-"wycieczka do palmiarni/oranżerii",,,
-"wycieczka do akwarium",,,
-"wycieczka do papugarni",,,
-"wyjazd na Pyrkon",,"https://pyrkon.pl/","sama opłacę co trzeba, ale nigdy nie umiem tego sobie zorganizować..."
-"kupon na wizytę u kosmetyczki",,,"dowolne miejsce, dowolny zabieg"
-"kupon na wizytę u masażysty",,,"dowolne miejsce, dowolny zabieg"
-"kupon na wizytę w SPA",,,"dowolne miejsce, dowolny zabieg"
-"kurs śpiewu",,,
-"kurs gotowania",,,
-"figurka lub płaskorzeźba od Eredhes","300","https://www.etsy.com/shop/Eredhes",
-"obrazek 'Spreadsheets' od WitchsGrove","35","https://www.etsy.com/listing/1509336638/office-salt-trilogy-calligraphy-digital",
-"obrazek 'Read the Email' od WitchsGrove","35","https://www.etsy.com/listing/1509336638/office-salt-trilogy-calligraphy-digital",
-"malowana muszla od RockyRoadsArtStudio","1000","https://linktr.ee/RockyRoadArtStudio","sprzedawane tylko na aukcjach, tworzonych tylko raz na jakiś, około końca miesiąca"
-"ryba od BisonWares","1000","https://bisonwares.com/pages/fish-market","dostępne tylko na zamówienie w określonych terminach"
+"kategoria","nazwa","cena","link","komentarz"
+"snack","pistacje",,,
+"snack","nerkowce",,,
+"snack","orzeszki pinii",,,
+"snack","orzechy brazylijskie",,,
+"snack","orzechy laskowe łuskane",,,
+"snack","prażone migdały",,,
+"snack","prażone orzechy laskowe",,,
+"snack","śliwki w czekoladzie",,,
+"item","kryształowe kostki RPG","200","https://rgfk.pl/k/210/kamienne-i-szklane","(link przykładowy)"
+"item","kamienie szlachetne/półszlachetne małe","5",,"opisane swoimi nazwami"
+"item","opal","200",,"maleńkie zaczynają się od około 200 pln, ale cena jest za gram i dochodzi do niebotycznych wartości. Do dostania na giełdach minerałów"
+"item","świece zapachowe","50","https://www.yankeecandle.com/yankee-candle/accessories-gifts/accessories/candle-shades-toppers/candle-shades/","(link przykładowy) takie duże w słoikach, które pasują do lampki na świece od Yankee Candle"
+"bugs","ilustracje botaniczne, zoologiczne lub entomologiczne",,"http://sklep.lasiniebo.pl/pl/p/komplet-12-dekoracyjnych-kart-Kwiaty-polne-15cmx17cm/279","(link przykładowy) kartki, plakaty, kupne, ręczne, akwarele, ryciny, stare, nowe... cokolwiek :)"
+"bugs","przypinki, breloki i podobne z motywem motyli lub skrzydlatych insektów",,,"do kolekcji, którą ostatnio zaczełam"
+"bugs","motyle w gablotkach","70","https://allegro.pl/listing?string=motyl%20w%20gablotce","(link przykładowy) do kupienia online lub czasem na kiermaszach rękodzieła, targach staroci czy giełdach minerałów"
+"digital","coś z listy życzeń na Steamie","20","https://store.steampowered.com/wishlist/profiles/76561198059138153#sort=order",
+"book","Klucz do oznaczania roślin, Mowszowicz",,"http://lubimyczytac.pl/autor/68218/jakub-mowszowicz","Jest kilka książek z serii 'do rozpoznawania', każda dobra ;)"
+"book","Klucz do oznaczania roślin, Szafer",,"http://lubimyczytac.pl/ksiazka/160743/rosliny-polskie-opisy-i-klucze-do-oznaczania-wszystkich-gatunkow-roslin-naczyniowych-rosnacych-w-po",
+"book","'Mały Książę' w różnych językach i ciekawych wydaniach",,,"mam już: po śląsku, po polsku, audiobook"
+"book","książki o teorii i analizie literatury (o tropach, motywach, poradniki pisania itp.)",,,
+"event","wycieczka do zoo",,,
+"event","wycieczka do ogrodu botanicznego",,,
+"event","wycieczka do palmiarni/oranżerii",,,
+"event","wycieczka do akwarium",,,
+"event","wycieczka do papugarni",,,
+"event","wyjazd na Pyrkon",,"https://pyrkon.pl/","sama opłacę co trzeba, ale nigdy nie umiem tego sobie zorganizować..."
+"coupon","wizyta kosmetyczki",,,"dowolne miejsce, dowolny zabieg"
+"coupon","wizyta masażysty",,,"dowolne miejsce, dowolny zabieg"
+"coupon","wizyta w SPA",,,"dowolne miejsce, dowolny zabieg"
+"coupon","kurs śpiewu",,,
+"coupon","kurs gotowania",,,
+"order","figurka lub płaskorzeźba od Eredhes","300","https://www.etsy.com/shop/Eredhes",
+"order","obrazek 'Spreadsheets' od WitchsGrove","35","https://www.etsy.com/listing/1509336638/office-salt-trilogy-calligraphy-digital",
+"order","obrazek 'Read the Email' od WitchsGrove","35","https://www.etsy.com/listing/1509336638/office-salt-trilogy-calligraphy-digital",
+"order","malowana muszla od RockyRoadsArtStudio","1000","https://linktr.ee/RockyRoadArtStudio","sprzedawane tylko na aukcjach, tworzonych tylko raz na jakiś, około końca miesiąca"
+"order","ryba od BisonWares","1000","https://bisonwares.com/pages/fish-market","dostępne tylko na zamówienie w określonych terminach"
