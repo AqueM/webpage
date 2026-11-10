@@ -9,7 +9,8 @@ Używane rzeczy są zawsze OK (tam gdzie ma to sens).
 {%- assign categories = wishlist.kategoria | uniq %}
 {{categories}}
 {%- for category in categories -%}
-{%- assign {{category}}items = wishlist | where: "kategoria", category -%}
+{%- assign items = wishlist | where: "kategoria", category -%}
+{{items}}
 {%- endfor -%}
 <table><thead>
   <tr>
