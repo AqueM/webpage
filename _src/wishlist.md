@@ -16,7 +16,6 @@ Używane rzeczy są zawsze OK (tam gdzie ma to sens).
 <tbody>
 {%- for item in wishlist -%}
   <tr>
-    <td><span>{{item.kategoria}}</span></td>
     <td><span>{{item.nazwa}}</span></td>
     <td><span>{% if item.cena %}{{item.cena}}+ PLN{% else %}—{% endif %}</span></td>
     <td>{% if item.link %}<a href="{{item.link}}" target="_blank" rel="external nofollow">link</a>{% else %}<span>—</span>{% endif %}</td>
