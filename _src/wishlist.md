@@ -18,7 +18,7 @@ Używane rzeczy są zawsze OK (tam gdzie ma to sens).
   <tr>
     <td><span>{{item.nazwa}}</span></td>
     <td><span>{% if item.cena %}{{item.cena}}+ PLN{% else %}—{% endif %}</span></td>
-    <td><span>{% if item.link %}<a href="{{item.link}}" target="_blank" rel="external nofollow">link</a>{% else %}—{% endif %}</span></td>
+    <td>{% if item.link %}<a href="{{item.link}}" target="_blank" rel="external nofollow">link</a>{% else %}<span>—</span>{% endif %}</td>
     <td><span>{% if item.komentarz %}{{item.komentarz}}{% else %}—{% endif %}</span></td>
   </tr>
 {%- endfor -%}
