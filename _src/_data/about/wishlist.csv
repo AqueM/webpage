@@ -1,12 +1,12 @@
 "kategoria","nazwa","cena","link","komentarz"
-"snack","pistacje",,,
-"snack","nerkowce",,,
-"snack","orzeszki pinii",,,
-"snack","orzechy brazylijskie",,,
-"snack","orzechy laskowe łuskane",,,
-"snack","prażone migdały",,,
-"snack","prażone orzechy laskowe",,,
-"snack","śliwki w czekoladzie",,,
+"0snack","pistacje",,,
+"0snack","nerkowce",,,
+"0snack","orzeszki pinii",,,
+"0snack","orzechy brazylijskie",,,
+"0snack","orzechy laskowe łuskane",,,
+"0snack","prażone migdały",,,
+"0snack","prażone orzechy laskowe",,,
+"0snack","śliwki w czekoladzie",,,
 "item","kryształowe kostki RPG","200","https://rgfk.pl/k/210/kamienne-i-szklane","(link przykładowy)"
 "item","kamienie szlachetne/półszlachetne małe","5",,"opisane swoimi nazwami"
 "item","opal","200",,"maleńkie zaczynają się od około 200 pln, ale cena jest za gram i dochodzi do niebotycznych wartości. Do dostania na giełdach minerałów"
