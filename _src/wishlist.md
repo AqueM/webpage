@@ -5,7 +5,7 @@ permalink: /wishlist/index.html
 ---
 Używane rzeczy są zawsze OK (tam gdzie ma to sens).
 
-{%- assign wishlist = about.wishlist | sort_natural: "cena" | map: ‘plus:0’ -%}
+{%- assign wishlist = about.wishlist | sort_natural: "cena" -%}
 <table><thead>
   <tr>
     <th><span>nazwa</span></th>
@@ -17,7 +17,7 @@ Używane rzeczy są zawsze OK (tam gdzie ma to sens).
 {%- for item in wishlist -%}
   <tr>
     <td><span>{{item.nazwa}}</span></td>
-    <td><span>{% if item.cena %}{{item.cena}}+ PLN{% else %}—{% endif %}</span></td>
+    <td><span>{% if item.cena %}{{item.cena | replace_first: "000", ""}}+ PLN{% else %}—{% endif %}</span></td>
     <td>{% if item.link %}<a href="{{item.link}}" target="_blank" rel="external nofollow">link</a>{% else %}<span>—</span>{% endif %}</td>
     <td><span>{% if item.komentarz %}{{item.komentarz}}{% else %}—{% endif %}</span></td>
   </tr>
