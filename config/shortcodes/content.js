@@ -70,7 +70,7 @@ module.exports = async function (eleventyConfig) {
     });
 
     eleventyConfig.addShortcode("ao3Link", function (link) {
-        return `<a href="${link}" target="_blank" rel="external"><span class="icon" style="--layout-img: url('/assets/images/utils/layout/ao3-mono.svg');"></span></a>`;
+        return `<a href="${link}" target="_blank" rel="external"><span class="icon" style="--layout-img: url('/assets/images/icons/ao3-mono.svg');"></span></a>`;
     });
     eleventyConfig.addShortcode("tumblrLink", function (link) {
         return `<a href="${link}" target="_blank" rel="external"><span class="icon" style="--layout-img: url('/assets/images/icons/font-awesome/tumblr-brands-solid-full.svg');"></span></a>`;

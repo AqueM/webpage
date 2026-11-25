@@ -1,10 +1,7 @@
 module.exports = async function (eleventyConfig) {
-  const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-  const path = require("node:path");
-
   // SETUP
   eleventyConfig.setInputDirectory("_src");
-  eleventyConfig.addPassthroughCopy({ "_src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "_src/_assets": "assets" });
   eleventyConfig.addPassthroughCopy("_src/robots.txt");
   eleventyConfig.addPassthroughCopy("_src/ai.txt");
   eleventyConfig.addPassthroughCopy({
@@ -20,29 +17,4 @@ module.exports = async function (eleventyConfig) {
   require("./config/shortcodes/theme.js")(eleventyConfig);
   require("./config/shortcodes/layout.js")(eleventyConfig);
   require("./config/collections.js")(eleventyConfig);
-
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // output image formats
-    formats: ["auto"],
-    sharpOptions: {
-      animated: true,
-    },
-
-    // output image widths
-    widths: ["auto"],
-    urlPath: "/assets/images/optimized/",
-    filenameFormat: function (id, src, width, format, options) {
-      return `${path.basename(src, path.extname(src))}.${format}`;
-    },
-
-    // optional, attributes assigned on <img> nodes override these values
-    htmlOptions: {
-      imgAttributes: {
-        alt: "",
-        loading: "lazy",
-        decoding: "async",
-      },
-      pictureAttributes: {},
-    },
-  });
 };

@@ -1,126 +1,154 @@
 module.exports = async function (eleventyConfig) {
-    const fs = require('fs');
-    let path = require("path");
-    const smallPixels =
-        fs.readdirSync('_src/assets/images/utils/pixels/small').filter(
-            item => fs.statSync("./_src/assets/images/utils/pixels/small/" + item).isFile());
-    smallPixels.forEach((x, i) => smallPixels[i] = "/assets/images/utils/pixels/small/".concat(x));
+  const fs = require("fs");
+  let path = require("path");
+  const smallPixels = fs
+    .readdirSync("_src/_assets/images/utils/pixels/small")
+    .filter((item) =>
+      fs.statSync("./_src/_assets/images/utils/pixels/small/" + item).isFile(),
+    );
+  smallPixels.forEach(
+    (x, i) => (smallPixels[i] = "/assets/images/utils/pixels/small/".concat(x)),
+  );
 
-    const widePixels =
-        fs.readdirSync('_src/assets/images/utils/pixels/wide').filter(
-            item => fs.statSync("./_src/assets/images/utils/pixels/wide/" + item).isFile());
-    widePixels.forEach((x, i) => widePixels[i] = "/assets/images/utils/pixels/wide/".concat(x));
+  const widePixels = fs
+    .readdirSync("_src/_assets/images/utils/pixels/wide")
+    .filter((item) =>
+      fs.statSync("./_src/_assets/images/utils/pixels/wide/" + item).isFile(),
+    );
+  widePixels.forEach(
+    (x, i) => (widePixels[i] = "/assets/images/utils/pixels/wide/".concat(x)),
+  );
 
-    const bigPixels =
-        fs.readdirSync('_src/assets/images/utils/pixels/big').filter(
-            item => fs.statSync("./_src/assets/images/utils/pixels/big/" + item).isFile());
-    bigPixels.forEach((x, i) => bigPixels[i] = "/assets/images/utils/pixels/big/".concat(x));
+  const bigPixels = fs
+    .readdirSync("_src/_assets/images/utils/pixels/big")
+    .filter((item) =>
+      fs.statSync("./_src/_assets/images/utils/pixels/big/" + item).isFile(),
+    );
+  bigPixels.forEach(
+    (x, i) => (bigPixels[i] = "/assets/images/utils/pixels/big/".concat(x)),
+  );
 
-    const tallPixels =
-        fs.readdirSync('_src/assets/images/utils/pixels/tall').filter(
-            item => fs.statSync("./_src/assets/images/utils/pixels/tall/" + item).isFile());
-    tallPixels.forEach((x, i) => tallPixels[i] = "/assets/images/utils/pixels/tall/".concat(x));
+  const tallPixels = fs
+    .readdirSync("_src/_assets/images/utils/pixels/tall")
+    .filter((item) =>
+      fs.statSync("./_src/_assets/images/utils/pixels/tall/" + item).isFile(),
+    );
+  tallPixels.forEach(
+    (x, i) => (tallPixels[i] = "/assets/images/utils/pixels/tall/".concat(x)),
+  );
 
-    eleventyConfig.addCollection("buttonImages", function (collectionApi) {
-        const files = fs.readdirSync('_src/assets/images/badges/buttons');
-        const targetPath = "/assets/images/badges/buttons/";
-        const currentFolder = "./_src/assets/images/badges/buttons/"
-        const filesFiltered =
-            files.filter(
-                item => fs.statSync(currentFolder + item).isFile());
-        filesFiltered.forEach((x, i) => filesFiltered[i] = targetPath.concat(x));
-        return filesFiltered;
-    });
-    eleventyConfig.addCollection("idImages", function (collectionApi) {
-        const files = fs.readdirSync('_src/assets/images/badges/id/');
-        const targetPath = "/assets/images/badges/id/";
-        const currentFolder = "./_src/assets/images/badges/id/"
-        const filesFiltered =
-            files.filter(
-                item => fs.statSync(currentFolder + item).isFile());
-        filesFiltered.forEach((x, i) => filesFiltered[i] = targetPath.concat(x));
-        return filesFiltered;
-    });
-    eleventyConfig.addCollection("fandomImages", function (collectionApi) {
-        const files = fs.readdirSync('_src/assets/images/badges/fandoms');
-        const targetPath = "/assets/images/badges/fandoms/";
-        const currentFolder = "./_src/assets/images/badges/fandoms/"
-        const filesFiltered =
-            files.filter(
-                item => fs.statSync(currentFolder + item).isFile());
-        filesFiltered.forEach((x, i) => filesFiltered[i] = targetPath.concat(x));
-        return filesFiltered;
-    });
-    eleventyConfig.addCollection("blinkieImages", function (collectionApi) {
-        const files = fs.readdirSync('_src/assets/images/badges/blinkies');
-        const targetPath = "/assets/images/badges/blinkies/";
-        const currentFolder = "./_src/assets/images/badges/blinkies/"
-        const filesFiltered =
-            files.filter(
-                item => fs.statSync(currentFolder + item).isFile());
-        filesFiltered.forEach((x, i) => filesFiltered[i] = targetPath.concat(x));
-        return filesFiltered;
-    });
+  eleventyConfig.addCollection("buttonImages", function (collectionApi) {
+    const files = fs.readdirSync("_src/_assets/images/badges/buttons");
+    const targetPath = "/assets/images/badges/buttons/";
+    const currentFolder = "./_src/_assets/images/badges/buttons/";
+    const filesFiltered = files.filter((item) =>
+      fs.statSync(currentFolder + item).isFile(),
+    );
+    filesFiltered.forEach((x, i) => (filesFiltered[i] = targetPath.concat(x)));
+    return filesFiltered;
+  });
+  eleventyConfig.addCollection("idImages", function (collectionApi) {
+    const files = fs.readdirSync("_src/_assets/images/badges/id/");
+    const targetPath = "/assets/images/badges/id/";
+    const currentFolder = "./_src/_assets/images/badges/id/";
+    const filesFiltered = files.filter((item) =>
+      fs.statSync(currentFolder + item).isFile(),
+    );
+    filesFiltered.forEach((x, i) => (filesFiltered[i] = targetPath.concat(x)));
+    return filesFiltered;
+  });
+  eleventyConfig.addCollection("fandomImages", function (collectionApi) {
+    const files = fs.readdirSync("_src/_assets/images/badges/fandoms");
+    const targetPath = "/assets/images/badges/fandoms/";
+    const currentFolder = "./_src/_assets/images/badges/fandoms/";
+    const filesFiltered = files.filter((item) =>
+      fs.statSync(currentFolder + item).isFile(),
+    );
+    filesFiltered.forEach((x, i) => (filesFiltered[i] = targetPath.concat(x)));
+    return filesFiltered;
+  });
+  eleventyConfig.addCollection("blinkieImages", function (collectionApi) {
+    const files = fs.readdirSync("_src/_assets/images/badges/blinkies");
+    const targetPath = "/assets/images/badges/blinkies/";
+    const currentFolder = "./_src/_assets/images/badges/blinkies/";
+    const filesFiltered = files.filter((item) =>
+      fs.statSync(currentFolder + item).isFile(),
+    );
+    filesFiltered.forEach((x, i) => (filesFiltered[i] = targetPath.concat(x)));
+    return filesFiltered;
+  });
 
-    eleventyConfig.addCollection("prose", function (collectionApi) {
-        let prose = [];
+  eleventyConfig.addCollection("prose", function (collectionApi) {
+    let prose = [];
 
-        fs.readdirSync('_src/_data/myArt/prose').forEach(function (file) {
-            let contents = require(path.resolve('_src/_data/myArt/prose/' + file));
-            prose.push(contents);
-        });
-
-        prose.sort((a, b) => {
-            return a.date > b.date ? 1 : -1;
-        })
-        return prose;
-    });
-
-    eleventyConfig.addShortcode("pixel-decor-small", function () {
-        var randomPixel = smallPixels[Math.floor((Math.random() * smallPixels.length))];
-        return `<div class="layout__image layout__image-pixel layout__image-pixel--small" style="--layout-img: url('${randomPixel}');"></div>`;
-    });
-    eleventyConfig.addShortcode("pixel-decor-wide", function () {
-        var randomPixel = widePixels[Math.floor((Math.random() * widePixels.length))];
-        return `<div class="layout__image layout__image-pixel layout__image-pixel--wide" style="--layout-img: url('${randomPixel}');"></div>`;
-    });
-    eleventyConfig.addShortcode("pixel-decor-big", function () {
-        var randomPixel = bigPixels[Math.floor((Math.random() * bigPixels.length))];
-        return `<div class="layout__image layout__image-pixel layout__image-pixel--big" style="--layout-img: url('${randomPixel}');"></div>`;
-    });
-    eleventyConfig.addShortcode("pixel-decor-tall", function () {
-        var randomPixel = tallPixels[Math.floor((Math.random() * tallPixels.length))];
-        return `'${randomPixel}'`;
+    fs.readdirSync("_src/_data/myArt/prose").forEach(function (file) {
+      let contents = require(path.resolve("_src/_data/myArt/prose/" + file));
+      prose.push(contents);
     });
 
-    // eleventyConfig.addCollection("poetry", function (collectionApi) {
-    //         let poetry = [];
+    prose.sort((a, b) => {
+      return a.date > b.date ? 1 : -1;
+    });
+    return prose;
+  });
+  eleventyConfig.addShortcode("pixel-decor-small", function () {
+    var randomPixel =
+      smallPixels[Math.floor(Math.random() * smallPixels.length)];
+    let animClass = "";
+    if (randomPixel.includes("anim")) {
+      animClass = " animated";
+    }
+    return `<div class="layout__image${animClass} layout__image-pixel layout__image-pixel--small" style="--layout-img: url('${randomPixel}');"></div>`;
+  });
+  eleventyConfig.addShortcode("pixel-decor-wide", function () {
+    var randomPixel = widePixels[Math.floor(Math.random() * widePixels.length)];
+    let animClass = "";
+    if (randomPixel.includes("anim")) {
+      animClass = " animated";
+    }
+    return `<div class="layout__image${animClass} layout__image-pixel layout__image-pixel--wide" style="--layout-img: url('${randomPixel}');"></div>`;
+  });
+  eleventyConfig.addShortcode("pixel-decor-big", function () {
+    var randomPixel = bigPixels[Math.floor(Math.random() * bigPixels.length)];
+    let animClass = "";
+    if (randomPixel.includes("anim")) {
+      animClass = " animated";
+    }
+    return `<div class="layout__image${animClass} layout__image-pixel layout__image-pixel--big" style="--layout-img: url('${randomPixel}');"></div>`;
+  });
+  eleventyConfig.addShortcode("pixel-decor-tall", function () {
+    var randomPixel = tallPixels[Math.floor(Math.random() * tallPixels.length)];
+    return `'${randomPixel}'`;
+  });
 
-    //         fs.readdirSync('_src/_data/myArt/poetry').forEach(function (file) {
-    //             let contents = require(path.resolve('_src/_data/myArt/poetry/' + file));
-    //             poetry.push(contents);
-    //         });
+  // eleventyConfig.addCollection("poetry", function (collectionApi) {
+  //         let poetry = [];
 
-    //         poetry.sort((a, b) => {
-    //             return a.date > b.date ? 1 : -1;
-    //         })
-    //         return poetry;
-    //     });
+  //         fs.readdirSync('_src/_data/myArt/poetry').forEach(function (file) {
+  //             let contents = require(path.resolve('_src/_data/myArt/poetry/' + file));
+  //             poetry.push(contents);
+  //         });
 
-    // const indexifier = require('indexifier');
-    // eleventyConfig.addShortcode("generateSitemap", function (image) {
-    //     console.log(__dirname);
-    //     const tree = indexifier("./_site", {
-    //         fileTypes: ['.html'],
-    //         exclude: "assets",
-    //         isHtml: true,            
-    //         linkFolders: false
-    //     });
-    //     console.log(tree);
-    //     return tree;
-    // });
+  //         poetry.sort((a, b) => {
+  //             return a.date > b.date ? 1 : -1;
+  //         })
+  //         return poetry;
+  //     });
 
-    const { parse } = require("csv-parse/sync");
+  // const indexifier = require('indexifier');
+  // eleventyConfig.addShortcode("generateSitemap", function (image) {
+  //     console.log(__dirname);
+  //     const tree = indexifier("./_site", {
+  //         fileTypes: ['.html'],
+  //         exclude: "assets",
+  //         isHtml: true,
+  //         linkFolders: false
+  //     });
+  //     console.log(tree);
+  //     return tree;
+  // });
+
+  const { parse } = require("csv-parse/sync");
 
   eleventyConfig.addDataExtension("csv", (contents) => {
     const records = parse(contents, {
@@ -132,5 +160,4 @@ module.exports = async function (eleventyConfig) {
     });
     return records;
   });
-    
-}
+};
